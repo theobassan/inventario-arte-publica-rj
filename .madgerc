@@ -1,6 +1,9 @@
 {
     "tsConfig": "./tsconfig.json",
     "baseDir": "./",
-    "fileExtensions": ["ts", "tsx"],
+    "fileExtensions": [
+        "ts",
+        "tsx"
+    ],
     "includeNpm": true
 }
