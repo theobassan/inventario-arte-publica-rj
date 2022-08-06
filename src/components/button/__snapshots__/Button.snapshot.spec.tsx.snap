@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> default snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "white",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "color": "white",
+        "fontFamily": "fontFamily",
+        "padding": 16,
+      },
+      false,
+    ]
+  }
+>
+  <Text>
+    test
+  </Text>
+</View>
+`;
+
+exports[`<Button /> pressed snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "white",
+        "borderColor": "white",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "color": "white",
+        "fontFamily": "fontFamily",
+        "padding": 16,
+      },
+      Object {
+        "backgroundColor": "black",
+        "borderColor": "black",
+        "color": "black",
+      },
+    ]
+  }
+>
+  <Text>
+    test
+  </Text>
+</View>
+`;
