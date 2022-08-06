@@ -1,14 +1,15 @@
 {
   "name": "inventario-arte-publica-rj",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.ts",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:web": "expo export:web"
-
+    "build:web": "expo export:web",
+    "lint": "eslint src && tsc --noemit && madge --circular .",
+    "lint:fix": "eslint --fix src && tsc --noemit && madge --circular ."
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.0",
@@ -24,6 +25,15 @@
     "@babel/core": "^7.18.10",
     "@types/react": "~18.0.15",
     "@types/react-native": "~0.69.5",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-universe": "^11.1.0",
+    "eslint-import-resolver-typescript": "^3.4.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "madge": "^5.0.1",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   },
   "private": true
