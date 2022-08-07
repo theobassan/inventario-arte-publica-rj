@@ -3,7 +3,7 @@ import { ReactTestInstance } from 'react-test-renderer';
 
 import NavigationContainer from './NavigationContainer';
 
-describe('<Button />', () => {
+describe('<NavigationContainer />', () => {
     it('should render title', () => {
         const { UNSAFE_getByType } = render(<NavigationContainer />);
 

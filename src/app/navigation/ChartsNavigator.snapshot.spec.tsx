@@ -13,4 +13,14 @@ describe('<ChartsNavigator />', () => {
 
         expect(json).toMatchSnapshot();
     });
+
+    it('chart1 snapshot', () => {
+        const json = create(
+            <NavigationContainer>
+                <ChartsNavigator testOnly_initialRouteName="Chart1" />
+            </NavigationContainer>,
+        ).toJSON();
+
+        expect(json).toMatchSnapshot();
+    });
 });

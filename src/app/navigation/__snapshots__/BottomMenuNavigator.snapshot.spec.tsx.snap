@@ -69,7 +69,15 @@ exports[`<BottomMenuNavigator /> default snapshot 1`] = `
             }
           }
         >
-          <View
+          <RNCSafeAreaView
+            edges={
+              Array [
+                "bottom",
+                "left",
+                "right",
+                "top",
+              ]
+            }
             style={
               Object {
                 "alignItems": "center",
@@ -91,7 +99,7 @@ exports[`<BottomMenuNavigator /> default snapshot 1`] = `
             >
               Home
             </Text>
-          </View>
+          </RNCSafeAreaView>
         </View>
       </View>
     </RNSScreen>
@@ -249,7 +257,10 @@ exports[`<BottomMenuNavigator /> default snapshot 1`] = `
               Object {
                 "fontSize": 10,
               },
-              undefined,
+              Object {
+                "fontSize": undefined,
+                "lineHeight": undefined,
+              },
             ]
           }
         >
@@ -359,7 +370,10 @@ exports[`<BottomMenuNavigator /> default snapshot 1`] = `
               Object {
                 "fontSize": 10,
               },
-              undefined,
+              Object {
+                "fontSize": undefined,
+                "lineHeight": undefined,
+              },
             ]
           }
         >
@@ -469,7 +483,10 @@ exports[`<BottomMenuNavigator /> default snapshot 1`] = `
               Object {
                 "fontSize": 10,
               },
-              undefined,
+              Object {
+                "fontSize": undefined,
+                "lineHeight": undefined,
+              },
             ]
           }
         >

@@ -11,7 +11,19 @@ jest.mock('expo-linking');
 
 jest.spyOn(useTheme, 'default').mockReturnValue({ theme });
 
-jest.mock('@react-navigation/bottom-tabs', () => jest.requireActual('@react-navigation/bottom-tabs'));
+jest.mock('@react-navigation/bottom-tabs', () => {
+    return {
+        ...jest.requireActual('@react-navigation/bottom-tabs'),
+        useBottomTabBarHeight: jest.fn,
+    };
+});
+jest.mock('@react-navigation/drawer', () => jest.requireActual('@react-navigation/drawer'));
+jest.mock('@react-navigation/elements', () => {
+    return {
+        ...jest.requireActual('@react-navigation/elements'),
+        useHeaderHeight: jest.fn,
+    };
+});
 jest.mock('@react-navigation/native', () => jest.requireActual('@react-navigation/native'));
 jest.mock('@react-navigation/stack', () => jest.requireActual('@react-navigation/stack'));
 

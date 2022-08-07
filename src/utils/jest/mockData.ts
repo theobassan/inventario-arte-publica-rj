@@ -33,4 +33,6 @@ export const theme = {
     fonts: { regular: {}, medium: {}, light: {}, thin: {} },
     button: buttonTheme,
     text: textTheme,
+    header: {},
+    bottomTab: {},
 } as unknown as Theme;

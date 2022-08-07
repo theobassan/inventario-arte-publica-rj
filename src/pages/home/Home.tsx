@@ -1,12 +1,13 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text } from '@components';
 
 function Home(): JSX.Element {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <Text>Home</Text>
-        </View>
+        </SafeAreaView>
     );
 }
 
@@ -17,4 +18,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 });
+
 export default Home;

@@ -32,6 +32,14 @@ const DarkTheme: Theme = {
         font: Platform.select(fonts).medium,
         textColor: '#FFFFFF',
     },
+    header: {
+        fontSize: 24,
+        lineHeight: 32,
+    },
+    bottomTab: {
+        fontSize: 12,
+        lineHeight: 12,
+    },
 };
 
 export default DarkTheme;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Map /> default snapshot 1`] = `
+<AIRMap
+  initialRegion={null}
+  onChange={[Function]}
+  onLayout={[Function]}
+  onMapReady={[Function]}
+  onMarkerPress={[Function]}
+  region={null}
+  style={
+    Object {
+      "height": NaN,
+      "width": 750,
+    }
+  }
+  testID="mapView"
+/>
+`;

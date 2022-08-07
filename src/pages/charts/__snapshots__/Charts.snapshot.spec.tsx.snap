@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Charts /> default snapshot 1`] = `
-<View
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
   style={
     Object {
       "alignItems": "center",
@@ -23,5 +31,5 @@ exports[`<Charts /> default snapshot 1`] = `
   >
     Charts
   </Text>
-</View>
+</RNCSafeAreaView>
 `;

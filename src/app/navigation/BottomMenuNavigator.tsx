@@ -1,9 +1,10 @@
 import { AntDesign, Feather } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
+import { StyleSheet } from 'react-native';
 
 import { Home } from '@pages';
-import { useTheme } from '@utils';
+import { Theme, useTheme } from '@utils';
 
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
 import { MapsNavigator, MapsNavigatorParamsList } from './MapsNavigator';
@@ -18,6 +19,8 @@ export type BottomMenuNavigatorParamList = {
 
 export function BottomMenuNavigator(): JSX.Element {
     const { theme } = useTheme();
+
+    const style = styles(theme);
 
     return (
         <BottomTab.Navigator
@@ -35,6 +38,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarIcon: ({ color }) => {
                         return <AntDesign name="home" size={24} color={color} />;
                     },
+                    tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
             <BottomTab.Screen
@@ -46,6 +50,7 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarIcon: ({ color }) => {
                         return <Feather name="map-pin" size={24} color={color} />;
                     },
+                    tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
             <BottomTab.Screen
@@ -57,8 +62,18 @@ export function BottomMenuNavigator(): JSX.Element {
                     tabBarIcon: ({ color }) => {
                         return <AntDesign name="barschart" size={24} color={color} />;
                     },
+                    tabBarLabelStyle: style.tabBarLabel,
                 }}
             />
         </BottomTab.Navigator>
     );
+}
+
+function styles(theme: Theme) {
+    return StyleSheet.create({
+        tabBarLabel: {
+            fontSize: theme.bottomTab.fontSize,
+            lineHeight: theme.bottomTab.lineHeight,
+        },
+    });
 }

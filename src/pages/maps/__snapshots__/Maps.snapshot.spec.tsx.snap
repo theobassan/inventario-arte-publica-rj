@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Maps /> default snapshot 1`] = `
-<View
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
   style={
     Object {
       "alignItems": "center",
@@ -10,18 +18,20 @@ exports[`<Maps /> default snapshot 1`] = `
     }
   }
 >
-  <Text
+  <AIRMap
+    initialRegion={null}
+    onChange={[Function]}
+    onLayout={[Function]}
+    onMapReady={[Function]}
+    onMarkerPress={[Function]}
+    region={null}
     style={
-      Array [
-        Object {
-          "color": "white",
-          "fontFamily": "fontFamily",
-        },
-        undefined,
-      ]
+      Object {
+        "height": NaN,
+        "width": 750,
+      }
     }
-  >
-    Maps
-  </Text>
-</View>
+    testID="mapView"
+  />
+</RNCSafeAreaView>
 `;

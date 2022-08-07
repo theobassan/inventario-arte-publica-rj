@@ -32,6 +32,16 @@ type TextTheme = {
     textColor: string;
 };
 
+type HeaderTheme = {
+    fontSize: number;
+    lineHeight: number;
+};
+
+type BottomTabTheme = {
+    fontSize: number;
+    lineHeight: number;
+};
+
 export type Theme = {
     dark: boolean;
     background: string;
@@ -39,4 +49,6 @@ export type Theme = {
     fonts: Fonts;
     button: ButtonTheme;
     text: TextTheme;
+    header: HeaderTheme;
+    bottomTab: BottomTabTheme;
 };

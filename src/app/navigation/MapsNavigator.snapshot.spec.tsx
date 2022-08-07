@@ -13,4 +13,14 @@ describe('<MapsNavigator />', () => {
 
         expect(json).toMatchSnapshot();
     });
+
+    it('map1 snapshot', () => {
+        const json = create(
+            <NavigationContainer>
+                <MapsNavigator testOnly_initialRouteName="Map1" />
+            </NavigationContainer>,
+        ).toJSON();
+
+        expect(json).toMatchSnapshot();
+    });
 });
