@@ -13,7 +13,7 @@ module.exports = {
         '^@utils': '<rootDir>/src/utils',
     },
     clearMocks: true,
-    collectCoverage: true,
+    collectCoverage: false,
     collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.(wip|wip.spec).{ts,tsx}'],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: ['index.ts', 'index.tsx', 'src/utils/theme-provider/domain', 'src/utils/theme-provider/themes'],

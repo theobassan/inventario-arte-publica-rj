@@ -1,13 +1,13 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { create } from 'react-test-renderer';
 
-import { BottomTabNavigator } from './BottomTabNavigator';
+import { BottomMenuNavigator } from './BottomMenuNavigator';
 
-describe('<BottomTabNavigator />', () => {
+describe('<BottomMenuNavigator />', () => {
     it('default snapshot', () => {
         const json = create(
             <NavigationContainer>
-                <BottomTabNavigator />
+                <BottomMenuNavigator />
             </NavigationContainer>,
         ).toJSON();
 

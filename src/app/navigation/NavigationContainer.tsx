@@ -20,7 +20,7 @@ function NavigationContainer({ children }: NavigationContainerProps): JSX.Elemen
             theme={{ colors: theme.navigation, dark: theme.dark }}
             linking={linking}
             documentTitle={{
-                formatter: () => `Copilot`,
+                formatter: () => `Inventário Arte Pública - RJ`,
             }}
         >
             {children}

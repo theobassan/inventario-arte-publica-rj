@@ -8,15 +8,15 @@ import { useTheme } from '@utils';
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
 import { MapsNavigator, MapsNavigatorParamsList } from './MapsNavigator';
 
-const BottomTab = createBottomTabNavigator<BottomTabNavigatorParamList>();
+const BottomTab = createBottomTabNavigator<BottomMenuNavigatorParamList>();
 
-export type BottomTabNavigatorParamList = {
+export type BottomMenuNavigatorParamList = {
     Home: undefined;
     Maps: NavigatorScreenParams<MapsNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
 };
 
-export function BottomTabNavigator(): JSX.Element {
+export function BottomMenuNavigator(): JSX.Element {
     const { theme } = useTheme();
 
     return (

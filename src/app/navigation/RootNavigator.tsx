@@ -3,10 +3,10 @@ import { createStackNavigator, HeaderStyleInterpolators } from '@react-navigatio
 
 import { NotFound, NoMatch } from '@pages';
 
-import { BottomTabNavigator, BottomTabNavigatorParamList } from './BottomTabNavigator';
+import { BottomMenuNavigator, BottomMenuNavigatorParamList } from './BottomMenuNavigator';
 
 export type RootNavigatorParamList = {
-    BottomTab: NavigatorScreenParams<BottomTabNavigatorParamList>;
+    BottomTab: NavigatorScreenParams<BottomMenuNavigatorParamList>;
     NotFound: undefined;
     NoMatch: undefined;
 };
@@ -20,7 +20,7 @@ export function RootNavigator(): JSX.Element {
                 headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
             }}
         >
-            <StackNavigator.Screen name="BottomTab" component={BottomTabNavigator} options={{ headerShown: false }} />
+            <StackNavigator.Screen name="BottomTab" component={BottomMenuNavigator} options={{ headerShown: false }} />
             <StackNavigator.Screen name="NotFound" component={NotFound} options={{ headerShown: false }} />
             <StackNavigator.Screen name="NoMatch" component={NoMatch} options={{ headerShown: false }} />
         </StackNavigator.Navigator>
