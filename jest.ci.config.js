@@ -16,7 +16,13 @@ module.exports = {
     collectCoverage: false,
     collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.(wip|wip.spec).{ts,tsx}'],
     coverageDirectory: '.coverage',
-    coveragePathIgnorePatterns: ['index.ts', 'index.tsx', 'src/utils/theme-provider/domain', 'src/utils/theme-provider/themes'],
+    coveragePathIgnorePatterns: [
+        'index.ts',
+        'index.tsx',
+        'src/utils/theme-provider/domain',
+        'src/utils/theme-provider/themes',
+        'src/components/map/Map.web.tsx',
+    ],
     coverageThreshold: {
         global: {
             branches: 100,
