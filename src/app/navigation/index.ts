@@ -1,1 +1,1 @@
-export { default as NavigationProvider } from './NavigationProvider.wip';
+export { default as NavigationProvider } from './NavigationProvider';

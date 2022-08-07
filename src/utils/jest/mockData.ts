@@ -28,6 +28,7 @@ export const textTheme = {
 
 export const theme = {
     dark: false,
+    navigation: {},
     colors: {},
     fonts: { regular: {}, medium: {}, light: {}, thin: {} },
     button: buttonTheme,

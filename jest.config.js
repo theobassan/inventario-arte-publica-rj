@@ -13,5 +13,26 @@ module.exports = {
         '^@utils': '<rootDir>/src/utils',
     },
     clearMocks: true,
-    collectCoverage: false,
+    collectCoverage: true,
+    collectCoverageFrom: ['src/**/*.{ts,tsx}', 'src/**/*.wip.{ts,tsx}'],
+    coverageDirectory: '.coverage/local',
+    coveragePathIgnorePatterns: ['index.ts', 'index.tsx', 'src/utils/theme-provider/domain', 'src/utils/theme-provider/themes'],
+    coverageThreshold: {
+        global: {
+            branches: 100,
+            functions: 100,
+            lines: 100,
+            statements: 100,
+        },
+    },
+    reporters: [
+        'default',
+        [
+            'jest-html-reporters',
+            {
+                publicPath: '.coverage/.report',
+                filename: 'report.html',
+            },
+        ],
+    ],
 };

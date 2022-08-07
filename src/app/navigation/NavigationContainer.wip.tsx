@@ -2,8 +2,8 @@ import { NavigationContainer as ReactNavigationContainer, createNavigationContai
 
 import { useTheme } from '@utils';
 
-import linking from './linking.wip';
-import { RootNavigatorParamList } from './RootNavigator.wip';
+import linking from './linking';
+import { RootNavigatorParamList } from './RootNavigator';
 
 type NavigationContainerProps = {
     children?: JSX.Element;

@@ -5,8 +5,8 @@ import { NavigatorScreenParams } from '@react-navigation/native';
 import { Home } from '@pages';
 import { useTheme } from '@utils';
 
-import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator.wip';
-import { MapsNavigator, MapsNavigatorParamsList } from './MapsNavigator.wip';
+import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
+import { MapsNavigator, MapsNavigatorParamsList } from './MapsNavigator';
 
 const BottomTab = createBottomTabNavigator<BottomTabNavigatorParamList>();
 

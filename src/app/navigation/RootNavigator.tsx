@@ -3,7 +3,7 @@ import { createStackNavigator, HeaderStyleInterpolators } from '@react-navigatio
 
 import { NotFound, NoMatch } from '@pages';
 
-import { BottomTabNavigator, BottomTabNavigatorParamList } from './BottomTabNavigator.wip';
+import { BottomTabNavigator, BottomTabNavigatorParamList } from './BottomTabNavigator';
 
 export type RootNavigatorParamList = {
     BottomTab: NavigatorScreenParams<BottomTabNavigatorParamList>;

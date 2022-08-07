@@ -1,7 +1,7 @@
 import { LinkingOptions } from '@react-navigation/native';
 import { createURL } from 'expo-linking';
 
-import { RootNavigatorParamList } from './RootNavigator.wip';
+import { RootNavigatorParamList } from './RootNavigator';
 
 const linking: LinkingOptions<RootNavigatorParamList> = {
     prefixes: [createURL('/')],

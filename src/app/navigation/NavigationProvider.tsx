@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { useTheme } from '@utils';
 
 import NavigationContainer from './NavigationContainer.wip';
-import { RootNavigator } from './RootNavigator.wip';
+import { RootNavigator } from './RootNavigator';
 
 function NavigationProvider(): JSX.Element {
     const { theme } = useTheme();
