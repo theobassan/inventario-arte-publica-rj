@@ -5,7 +5,7 @@ module.exports = {
     transformIgnorePatterns: [
         'node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)',
     ],
-    testMatch: ['**/*.(spec).(ts|tsx)', '!**/*.(wip.spec).(ts|tsx)'],
+    testMatch: ['**/*.(spec).(ts|tsx)'],
     moduleNameMapper: {
         '^@app': '<rootDir>/src/app',
         '^@components': '<rootDir>/src/components',
@@ -14,13 +14,15 @@ module.exports = {
     },
     clearMocks: true,
     collectCoverage: false,
-    collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.(wip|wip.spec).{ts,tsx}'],
+    collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/app/**/*.{ts,tsx}'],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: [
         'index.ts',
         'index.tsx',
         'src/utils/theme-provider/domain',
         'src/utils/theme-provider/themes',
+        'src/components/chart/ChartDark.web.tsx',
+        'src/components/chart/ChartLight.web.tsx',
         'src/components/map/Map.web.tsx',
     ],
     coverageThreshold: {

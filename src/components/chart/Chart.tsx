@@ -1,0 +1,18 @@
+import Highcharts from 'highcharts';
+
+import { useTheme } from '@utils';
+
+import ChartDark from './ChartDark';
+import ChartLight from './ChartLight';
+
+type ChartProps = {
+    options: Highcharts.Options;
+};
+
+function Chart({ options }: ChartProps): JSX.Element {
+    const { theme } = useTheme();
+
+    return theme.dark ? <ChartDark options={options} /> : <ChartLight options={options} />;
+}
+
+export default Chart;

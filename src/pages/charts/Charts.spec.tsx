@@ -4,10 +4,10 @@ import Charts from './Charts';
 
 describe('<Charts />', () => {
     it('should render', () => {
-        const { getByText } = render(<Charts />);
+        const { getAllByTestId } = render(<Charts />);
 
-        const text = getByText('Charts');
+        const charts = getAllByTestId('chart');
 
-        expect(text).toBeTruthy();
+        expect(charts.length).toEqual(2);
     });
 });
