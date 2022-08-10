@@ -1,5 +1,5 @@
 import Highcharts from 'highcharts';
-import { ScrollView } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@components';
 
@@ -233,8 +233,12 @@ const networkOptions: Highcharts.Options | unknown = {
 function Charts(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
-            <Chart options={lineOptions} />
-            <Chart options={networkOptions as Highcharts.Options} />
+            <View>
+                <Chart options={lineOptions} />
+            </View>
+            <View>
+                <Chart options={networkOptions as Highcharts.Options} />
+            </View>
         </ScrollView>
     );
 }

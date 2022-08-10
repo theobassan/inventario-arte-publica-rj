@@ -6,7 +6,6 @@ import MinimalAutoheightWebView from './MinimalAutoheightWebView';
 
 type ChartProps = {
     options: Highcharts.Options;
-    dark?: boolean;
 };
 
 function ChartDark({ options }: ChartProps): JSX.Element {

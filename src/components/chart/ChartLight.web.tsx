@@ -9,7 +9,6 @@ import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import Theme from 'highcharts/themes/brand-light';
-import { View } from 'react-native';
 
 HighchartsData(Highcharts);
 HighchartsSeriesLabel(Highcharts);
@@ -24,13 +23,10 @@ type ChartLightProps = {
 
 function ChartLight({ options }: ChartLightProps): JSX.Element {
     const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
+
     Theme(Highcharts);
 
-    return (
-        <View testID="chart">
-            <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />
-        </View>
-    );
+    return <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />;
 }
 
 export default ChartLight;

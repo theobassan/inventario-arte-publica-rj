@@ -7,6 +7,8 @@ import Chart from './Chart';
 
 describe('<Chart />', () => {
     it('should render light', () => {
+        jest.spyOn(useTheme, 'default').mockReturnValue({ theme: { dark: false } as Theme });
+
         const { getByTestId } = render(<Chart options={{}} />);
 
         const chart = getByTestId('chart');

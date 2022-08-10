@@ -9,7 +9,6 @@ import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import Theme from 'highcharts/themes/brand-dark';
-import { View } from 'react-native';
 
 HighchartsData(Highcharts);
 HighchartsSeriesLabel(Highcharts);
@@ -27,11 +26,7 @@ function ChartDark({ options }: ChartDarkProps): JSX.Element {
 
     Theme(Highcharts);
 
-    return (
-        <View testID="chart">
-            <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />
-        </View>
-    );
+    return <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />;
 }
 
 export default ChartDark;
