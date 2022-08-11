@@ -14,7 +14,7 @@ module.exports = {
     },
     clearMocks: true,
     collectCoverage: false,
-    collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/app/**/*.{ts,tsx}'],
+    collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/app/**/*.{ts,tsx}', '!src/components/map/**/*.{ts,tsx}', '!src/utils/export-as-image/**/*.{ts,tsx}'],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: [
         'index.ts',
