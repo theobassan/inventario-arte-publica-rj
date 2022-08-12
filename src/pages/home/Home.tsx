@@ -9,17 +9,20 @@ import * as obras from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function Test(): JSX.Element[] {
+    const typed_analisys_list_utils: Record<string, Obra[]> = analisys_list_utils;
+
     const result: JSX.Element[] = [];
 
     const style = styles();
 
     for (let index = 1500; index < 2030; index = index + 10) {
-        const obras_decada: Obra[] = analisys_list_utils[`all${index}`];
+        const obras_decada: Obra[] = typed_analisys_list_utils[`all${index}`];
 
         if (obras_decada.length > 0) {
             const tipologias_obras_decada: string[] = obras_decada.map((obra) => obra.Tipologia ?? 'Desconhecida');
             const naturezas_obras_decada: string[] = obras_decada.map((obra) => obra.Natureza ?? 'Desconhecida');
             const zonas_obras_decada: string[] = obras_decada.map((obra) => obra.Zona ?? 'Desconhecida');
+            const status_obras_decada: string[] = obras_decada.map((obra) => obra.Status ?? 'Desconhecida');
 
             const tipologias_obras_decada_total: { nome: string; total: number }[] = tipologias_obras_decada
                 .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -60,6 +63,37 @@ function Test(): JSX.Element[] {
                 }, [])
                 .sort((a, b) => (a.total < b.total ? 1 : -1));
 
+            const status_obras_decada_total: { nome: string; total: number; tipologias: { nome: string; total: number }[] }[] = status_obras_decada
+                .reduce<{ nome: string; total: number; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
+                    const r_top = r.find((top) => top.nome === a);
+                    if (!r_top) {
+                        const tipologias = obras_decada
+                            .filter((obra) => obra.Status === a || (a === 'Desconhecida' && obra.Status == null))
+                            .map((obra) => obra.Tipologia ?? 'Desconhecida');
+
+                        const tipologias_total: { nome: string; total: number }[] = tipologias
+                            .reduce<{ nome: string; total: number }[]>(function (r, a) {
+                                const r_top = r.find((top) => top.nome === a);
+                                if (!r_top) {
+                                    r.push({
+                                        nome: a,
+                                        total: tipologias.filter((top) => top === a).length,
+                                    });
+                                }
+                                return r;
+                            }, [])
+                            .sort((a, b) => (a.total < b.total ? 1 : -1));
+
+                        r.push({
+                            nome: a,
+                            total: status_obras_decada.filter((top) => top === a).length,
+                            tipologias: tipologias_total,
+                        });
+                    }
+                    return r;
+                }, [])
+                .sort((a, b) => (a.total < b.total ? 1 : -1));
+
             result.push(
                 <View key={index}>
                     <Text>
@@ -84,6 +118,18 @@ function Test(): JSX.Element[] {
                         <Rows data={zonas_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
                     </Table>
                     <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row data={[<Text>Status</Text>, <Text>Total</Text>, <Text>Tipologias</Text>]} style={style.head} />
+                        <Rows
+                            data={status_obras_decada_total.map((top) => [
+                                <Text>{top.nome}</Text>,
+                                <Text>{top.total}</Text>,
+                                <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
+                            ])}
+                        />
+                    </Table>
+                    <View style={{ height: 24 }} />
                 </View>,
             );
         }
@@ -93,12 +139,16 @@ function Test(): JSX.Element[] {
 }
 
 function Home(): JSX.Element {
+    const typed_obras: Record<string, Obra> = obras;
+    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
+
     const style = styles();
 
-    const tipologias: string[] = Object.keys(obras).map((key) => obras[key].TipologiaObra ?? 'Desconhecida');
-    const tipologias_artepublica: string[] = Object.keys(obra_artepublica).map((key) => obra_artepublica[key].Tipologia ?? 'Desconhecida');
-    const naturezas_artepublica: string[] = Object.keys(obra_artepublica).map((key) => obra_artepublica[key].Natureza ?? 'Desconhecida');
-    const zonas_artepublica: string[] = Object.keys(obra_artepublica).map((key) => obra_artepublica[key].Zona ?? 'Desconhecida');
+    const tipologias: string[] = Object.keys(typed_obras).map((key) => typed_obras[key].TipologiaObra ?? 'Desconhecida');
+    const tipologias_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
+    const naturezas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Natureza ?? 'Desconhecida');
+    const zonas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Zona ?? 'Desconhecida');
+    const status_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Status ?? 'Desconhecida');
 
     const all_topologias: string[] = [];
     Array.prototype.push.apply(all_topologias, tipologias);
@@ -156,6 +206,37 @@ function Home(): JSX.Element {
         }, [])
         .sort((a, b) => (a.total < b.total ? 1 : -1));
 
+    const status_artepublica_group_total: { nome: string; total: number; tipologias: { nome: string; total: number }[] }[] = status_artepublica
+        .reduce<{ nome: string; total: number; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
+            const r_top = r.find((top) => top.nome === a);
+            if (!r_top) {
+                const tipologias = Object.keys(typed_obra_artepublica)
+                    .filter((key) => typed_obra_artepublica[key].Status === a || (a === 'Desconhecida' && typed_obra_artepublica[key].Status == null))
+                    .map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
+
+                const tipologias_total: { nome: string; total: number }[] = tipologias
+                    .reduce<{ nome: string; total: number }[]>(function (r, a) {
+                        const r_top = r.find((top) => top.nome === a);
+                        if (!r_top) {
+                            r.push({
+                                nome: a,
+                                total: tipologias.filter((top) => top === a).length,
+                            });
+                        }
+                        return r;
+                    }, [])
+                    .sort((a, b) => (a.total < b.total ? 1 : -1));
+
+                r.push({
+                    nome: a,
+                    total: status_artepublica.filter((top) => top === a).length,
+                    tipologias: tipologias_total,
+                });
+            }
+            return r;
+        }, [])
+        .sort((a, b) => (a.total < b.total ? 1 : -1));
+
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
@@ -189,6 +270,18 @@ function Home(): JSX.Element {
                 <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
                     <Row data={[<Text>Zona</Text>, <Text>Total</Text>]} style={style.head} />
                     <Rows data={zonas_artepublica_group_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
+                </Table>
+                <View style={{ height: 24 }} />
+
+                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                    <Row data={[<Text>Status</Text>, <Text>Total</Text>, <Text>Tipologias</Text>]} style={style.head} />
+                    <Rows
+                        data={status_artepublica_group_total.map((top) => [
+                            <Text>{top.nome}</Text>,
+                            <Text>{top.total}</Text>,
+                            <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
+                        ])}
+                    />
                 </Table>
                 <View style={{ height: 24 }} />
 
