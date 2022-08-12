@@ -65,7 +65,7 @@ function MyMapComponent({
             <button
                 onClick={() => {
                     if (ref.current) {
-                        exportAsImage(ref.current, 'test');
+                        exportAsImage(ref.current, 'map');
                     }
                 }}
             >

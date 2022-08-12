@@ -11,7 +11,7 @@ const DrawerNavigator = createDrawerNavigator<MapsNavigatorParamsList>();
 
 export type MapsNavigatorParamsList = {
     Home: undefined;
-    Map1: undefined;
+    TodasObras: undefined;
 };
 
 type MapsNavigatorProps = {
@@ -46,13 +46,13 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 })}
             />
             <DrawerNavigator.Screen
-                name="Map1"
+                name="TodasObras"
                 component={MapaGeral}
                 options={({ navigation }) => ({
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Mapa Geral</Text>,
                     headerLeft: () => (
-                        <TouchableOpacity testID="map1-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />
                         </TouchableOpacity>
                     ),

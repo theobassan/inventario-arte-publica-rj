@@ -20,7 +20,7 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            Map1: {
+                            TodasObras: {
                                 path: 'mapageral',
                             },
                         },
@@ -31,8 +31,8 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            Chart1: {
-                                path: 'chart1',
+                            ObrasPorDecada: {
+                                path: 'obras-por-decada',
                             },
                         },
                     },

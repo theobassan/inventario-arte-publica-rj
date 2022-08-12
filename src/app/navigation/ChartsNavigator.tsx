@@ -4,14 +4,14 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@components';
-import { Charts } from '@pages';
+import { Charts, ObrasPorDecada } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
 
 export type ChartsNavigatorParamsList = {
     Home: undefined;
-    Chart1: undefined;
+    ObrasPorDecada: undefined;
 };
 
 type ChartsNavigatorProps = {
@@ -46,13 +46,17 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                 })}
             />
             <DrawerNavigator.Screen
-                name="Chart1"
-                component={Charts}
+                name="ObrasPorDecada"
+                component={ObrasPorDecada}
                 options={({ navigation }) => ({
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Chart1</Text>,
+                    headerTitle: () => <Text style={style.title}>Obras por Decada</Text>,
                     headerLeft: () => (
-                        <TouchableOpacity testID="chart1-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                        <TouchableOpacity
+                            testID="obras-por-decada-menu"
+                            style={{ paddingLeft: 16 }}
+                            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                        >
                             <Entypo name="menu" size={24} color={theme.text.textColor} />
                         </TouchableOpacity>
                     ),
