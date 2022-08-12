@@ -4,10 +4,10 @@ import ObrasPorDecada from './ObrasPorDecada';
 
 describe('<ObrasPorDecada />', () => {
     it('should render', () => {
-        const { getByTestId } = render(<ObrasPorDecada />);
+        const { getAllByTestId } = render(<ObrasPorDecada />);
 
-        const charts = getByTestId('chart');
+        const charts = getAllByTestId('chart');
 
-        expect(charts).toBeTruthy();
+        expect(charts.length).toEqual(2);
     });
 });

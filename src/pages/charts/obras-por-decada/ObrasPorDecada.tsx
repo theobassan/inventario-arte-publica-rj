@@ -1,81 +1,181 @@
-import Highcharts from 'highcharts';
+import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@components';
+import { Obra } from '@domain';
+import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 
-const lineOptions: Highcharts.Options = {
-    chart: {
-        type: 'line',
-    },
+function Line(): JSX.Element {
+    const all: Record<string, Obra[]> = analisys_list_utils.all;
 
-    title: {
-        text: 'Title',
-    },
+    const total = Object.keys(all)
+        .filter((key) => key !== 'null' && all[key].length > 0)
+        .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].length]);
 
-    subtitle: {
-        text: 'Subtitle',
-    },
+    const tipologias = Object.keys(all)
+        .filter((key) => key !== 'null' && all[key].length > 0)
+        .map((key) => all[key].map((obra) => obra.Tipologia ?? 'Desconhecida'))
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(r, l);
+            return r;
+        }, [])
+        .reduce<string[]>((r, e) => {
+            if (r.find((top) => top === e) == null) {
+                r.push(e);
+            }
 
-    yAxis: {
+            return r;
+        }, []);
+
+    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[][] }[]>((series, topolodia) => {
+        const total_tipologia = Object.keys(all)
+            .filter((key) => key !== 'null' && all[key].length > 0)
+            .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].filter((obra) => obra.Tipologia === topolodia).length]);
+
+        const serie = {
+            type: 'line',
+            name: topolodia,
+            data: total_tipologia,
+        };
+        series.push(serie);
+        return series;
+    }, []) as SeriesOptionsType[];
+
+    const series = [
+        {
+            type: 'line',
+            name: 'Total',
+            data: total,
+        } as SeriesOptionsType,
+    ];
+
+    Array.prototype.push.apply(series, total_tipologias);
+
+    const lineOptions: Highcharts.Options = {
+        chart: {
+            height: 800,
+            type: 'line',
+        },
         title: {
-            text: 'Number of Employees',
+            text: 'Obras por Década',
         },
-    },
-
-    xAxis: {
-        accessibility: {
-            rangeDescription: 'Range: 2010 to 2017',
-        },
-    },
-
-    legend: {
-        layout: 'horizontal',
-        align: 'center',
-    },
-
-    plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false,
+        yAxis: {
+            title: {
+                text: 'Total',
             },
-            pointStart: 2010,
+            min: 0,
         },
-    },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: {
+                // don't display the dummy year
+                month: '%Y',
+                year: '%Y',
+            },
+            title: {
+                text: 'Ano',
+            },
+        },
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
+        },
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false,
+                },
+                pointStart: 2010,
+            },
+        },
+        series,
+    };
 
-    series: [
-        {
-            type: 'line',
-            name: 'Installation',
-            data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+    return <Chart options={lineOptions} />;
+}
+
+function Block(): JSX.Element {
+    const all: Record<string, Obra[]> = analisys_list_utils.all;
+
+    const tipologias = Object.keys(all)
+        .filter((key) => key !== 'null' && all[key].length > 0)
+        .map((key) => all[key].map((obra) => obra.Tipologia ?? 'Desconhecida'))
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(r, l);
+            return r;
+        }, [])
+        .reduce<string[]>((r, e) => {
+            if (r.find((top) => top === e) == null) {
+                r.push(e);
+            }
+
+            return r;
+        }, []);
+
+    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[] }[]>((series, topolodia) => {
+        const total_tipologia = Object.keys(all)
+            .filter((key) => key !== 'null' && all[key].length > 0)
+            .map((key) => all[key].filter((obra) => obra.Tipologia === topolodia).length);
+
+        const serie = {
+            type: 'column',
+            name: topolodia,
+            data: total_tipologia,
+        };
+        series.push(serie);
+        return series;
+    }, []) as SeriesOptionsType[];
+
+    const lineOptions: Highcharts.Options = {
+        chart: {
+            height: 800,
+            type: 'column',
         },
-        {
-            type: 'line',
-            name: 'Manufacturing',
-            data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434],
+        title: {
+            text: 'Obras por Década',
         },
-        {
-            type: 'line',
-            name: 'Sales & Distribution',
-            data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387],
+        yAxis: {
+            title: {
+                text: 'Total',
+            },
+            min: 0,
+            stackLabels: {
+                enabled: true,
+                style: {
+                    //fontWeight: 'bold',
+                    textOutline: 'none',
+                },
+            },
         },
-        {
-            type: 'line',
-            name: 'Project Development',
-            data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227],
+        xAxis: {
+            categories: Object.keys(all).filter((key) => key !== 'null' && all[key].length > 0),
         },
-        {
-            type: 'line',
-            name: 'Other',
-            data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111],
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
         },
-    ],
-};
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                },
+            },
+        },
+        series: total_tipologias,
+    };
+
+    return <Chart options={lineOptions} />;
+}
 
 function Charts(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
             <View>
-                <Chart options={lineOptions} />
+                <Line />
+            </View>
+            <View style={{ paddingTop: 24 }}>
+                <Block />
             </View>
         </ScrollView>
     );
