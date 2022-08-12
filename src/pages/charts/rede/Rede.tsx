@@ -8,10 +8,7 @@ const networkOptions: Highcharts.Options | unknown = {
         type: 'networkgraph',
     },
     title: {
-        text: 'The Indo-European Language Tree',
-    },
-    subtitle: {
-        text: 'A Force-Directed Network Graph in Highcharts',
+        text: '',
     },
     plotOptions: {
         networkgraph: {

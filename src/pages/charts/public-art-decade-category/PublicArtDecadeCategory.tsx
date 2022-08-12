@@ -57,7 +57,7 @@ function Line(): JSX.Element {
             type: 'line',
         },
         title: {
-            text: 'Obras por Década',
+            text: '',
         },
         yAxis: {
             title: {
@@ -132,7 +132,7 @@ function Block(): JSX.Element {
             type: 'column',
         },
         title: {
-            text: 'Obras por Década',
+            text: '',
         },
         yAxis: {
             title: {
@@ -168,7 +168,7 @@ function Block(): JSX.Element {
     return <Chart options={lineOptions} />;
 }
 
-function ObrasPorDecadaEixos(): JSX.Element {
+function PublicArtDecadeCategory(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
             <View>
@@ -181,4 +181,4 @@ function ObrasPorDecadaEixos(): JSX.Element {
     );
 }
 
-export default ObrasPorDecadaEixos;
+export default PublicArtDecadeCategory;

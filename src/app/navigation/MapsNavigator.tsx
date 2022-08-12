@@ -52,6 +52,7 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 name="All"
                 component={MapAll}
                 options={({ navigation }) => ({
+                    title: 'Todas as Obras',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Todas as Obras</Text>,
                     headerLeft: () => (
@@ -65,6 +66,7 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 name="AllVsPublicArt"
                 component={MapAllVsPublicArt}
                 options={({ navigation }) => ({
+                    title: 'Todas as Obras x Arte Pública',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Todas as Obras x Arte Pública</Text>,
                     headerLeft: () => (
@@ -78,6 +80,7 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 name="PublicArt"
                 component={MapPublicArt}
                 options={({ navigation }) => ({
+                    title: ' Arte Pública',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Arte Pública</Text>,
                     headerLeft: () => (
@@ -91,6 +94,7 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 name="PublicArtVsCategory"
                 component={MapPublicArtVsCategory}
                 options={({ navigation }) => ({
+                    title: 'Arte Pública - Eixos',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Arte Pública - Eixos</Text>,
                     headerLeft: () => (

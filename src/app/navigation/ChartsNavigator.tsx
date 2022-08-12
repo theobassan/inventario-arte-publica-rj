@@ -4,15 +4,15 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@components';
-import { Charts, ObrasPorDecadaTipologias, ObrasPorDecadaEixos } from '@pages';
+import { Charts, PublicArtDecadeTypology, PublicArtDecadeCategory } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
 
 export type ChartsNavigatorParamsList = {
     Home: undefined;
-    ObrasPorDecadaTipologias: undefined;
-    ObrasPorDecadaEixos: undefined;
+    PublicArtDecadeCategory: undefined;
+    PublicArtDecadeTypology: undefined;
 };
 
 type ChartsNavigatorProps = {
@@ -47,11 +47,12 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                 })}
             />
             <DrawerNavigator.Screen
-                name="ObrasPorDecadaEixos"
-                component={ObrasPorDecadaEixos}
+                name="PublicArtDecadeCategory"
+                component={PublicArtDecadeCategory}
                 options={({ navigation }) => ({
+                    title: 'Arte Pública - Eixos por Década',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Eixos por Decada</Text>,
+                    headerTitle: () => <Text style={style.title}>Arte Pública - Eixos por Década</Text>,
                     headerLeft: () => (
                         <TouchableOpacity
                             testID="eixos-por-decada-menu"
@@ -64,11 +65,12 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                 })}
             />
             <DrawerNavigator.Screen
-                name="ObrasPorDecadaTipologias"
-                component={ObrasPorDecadaTipologias}
+                name="PublicArtDecadeTypology"
+                component={PublicArtDecadeTypology}
                 options={({ navigation }) => ({
+                    title: 'Arte Pública - Tipologias por Década',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Tipologias por Decada</Text>,
+                    headerTitle: () => <Text style={style.title}>Arte Pública - Tipologias por Década</Text>,
                     headerLeft: () => (
                         <TouchableOpacity
                             testID="tipologias-por-decada-menu"

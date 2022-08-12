@@ -40,11 +40,11 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            ObrasPorDecadaEixos: {
-                                path: 'eixos-por-decada',
+                            PublicArtDecadeCategory: {
+                                path: 'public-art-category-x-decade',
                             },
-                            ObrasPorDecadaTipologias: {
-                                path: 'tipologias-por-decada',
+                            PublicArtDecadeTypology: {
+                                path: 'public-art-typology-x-decade',
                             },
                         },
                     },
