@@ -4,7 +4,7 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@components';
-import { Maps } from '@pages';
+import { Maps, MapaGeral } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<MapsNavigatorParamsList>();
@@ -47,10 +47,10 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
             />
             <DrawerNavigator.Screen
                 name="Map1"
-                component={Maps}
+                component={MapaGeral}
                 options={({ navigation }) => ({
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Map1</Text>,
+                    headerTitle: () => <Text style={style.title}>Mapa Geral</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="map1-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

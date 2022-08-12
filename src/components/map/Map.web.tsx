@@ -7,17 +7,29 @@ import { exportAsImage } from '@utils';
 import MapPoint from './MapPoint.web';
 import Marker from './Marker.web';
 
-function MapWrapper(): JSX.Element {
-    const center = { lat: -34.397, lng: 150.644 };
-    const zoom = 4;
+type MapWrapperProps = {
+    markers?: { position: { latitude: string; longitude: string } }[];
+};
+
+function MapWrapper({ markers }: MapWrapperProps): JSX.Element {
+    const center = { lat: -22.910972, lng: -43.17156 };
+    const zoom = 12;
     return (
         <Wrapper apiKey="">
-            <MyMapComponent center={center} zoom={zoom} />
+            <MyMapComponent center={center} zoom={zoom} markers={markers} />
         </Wrapper>
     );
 }
 
-function MyMapComponent({ center, zoom }: { center?: google.maps.LatLngLiteral; zoom?: number }) {
+function MyMapComponent({
+    center,
+    zoom,
+    markers,
+}: {
+    center?: google.maps.LatLngLiteral;
+    zoom?: number;
+    markers?: { position: { latitude: string; longitude: string } }[];
+}) {
     const ref = useRef<HTMLDivElement>(null);
     const [map, setMap] = useState<google.maps.Map>();
 
@@ -32,21 +44,20 @@ function MyMapComponent({ center, zoom }: { center?: google.maps.LatLngLiteral; 
         }
     }, [ref, map]);
 
-    function markers() {
-        return (
-            map &&
-            center && (
-                <Marker map={map} position={center}>
+    function renderMarkers() {
+        if (map && markers) {
+            return markers.map((marker, index) => (
+                <Marker key={index} map={map} position={{ lat: parseFloat(marker.position.latitude), lng: parseFloat(marker.position.longitude) }}>
                     <MapPoint />
                 </Marker>
-            )
-        );
+            ));
+        }
     }
 
     return (
         <>
             <div style={{ width: '100%', height: '100%' }} ref={ref}>
-                {markers()}
+                {renderMarkers()}
             </div>
             <button
                 onClick={() => {

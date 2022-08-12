@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 const MapPoint = (): JSX.Element | null => {
     const [opened, setIsOpened] = useState<boolean>(false);
@@ -23,7 +23,7 @@ const MapPoint = (): JSX.Element | null => {
 
     return (
         <div ref={containerRef}>
-            {opened ? <AntDesign name="home" size={24} onPress={handleOnClose} /> : <AntDesign name="barschart" size={24} onPress={handleOnOpen} />}
+            {opened ? <FontAwesome name="map-marker" size={24} onPress={handleOnClose} /> : <FontAwesome name="map-marker" size={24} onPress={handleOnOpen} />}
         </div>
     );
 };

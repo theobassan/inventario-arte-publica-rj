@@ -20,6 +20,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
+                            Map1: {
+                                path: 'mapageral',
+                            },
                         },
                     },
                     Charts: {
@@ -27,6 +30,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                         screens: {
                             Home: {
                                 path: '',
+                            },
+                            Chart1: {
+                                path: 'chart1',
                             },
                         },
                     },

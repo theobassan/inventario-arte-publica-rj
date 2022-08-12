@@ -4,10 +4,10 @@ import Maps from './Maps';
 
 describe('<Maps />', () => {
     it('should render', () => {
-        const { getByTestId } = render(<Maps />);
+        const { getByText } = render(<Maps />);
 
-        const mapView = getByTestId('mapView');
+        const text = getByText('Maps Home');
 
-        expect(mapView).toBeTruthy();
+        expect(text).toBeTruthy();
     });
 });

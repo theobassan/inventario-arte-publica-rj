@@ -1,7 +1,7 @@
-import { Map } from '@components';
+import { Text } from '@components';
 
 function Maps(): JSX.Element {
-    return <Map />;
+    return <Text>Maps Home</Text>;
 }
 
 export default Maps;
