@@ -4,14 +4,15 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@components';
-import { Charts, ObrasPorDecada } from '@pages';
+import { Charts, ObrasPorDecadaTipologias, ObrasPorDecadaEixos } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
 
 export type ChartsNavigatorParamsList = {
     Home: undefined;
-    ObrasPorDecada: undefined;
+    ObrasPorDecadaTipologias: undefined;
+    ObrasPorDecadaEixos: undefined;
 };
 
 type ChartsNavigatorProps = {
@@ -46,14 +47,31 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                 })}
             />
             <DrawerNavigator.Screen
-                name="ObrasPorDecada"
-                component={ObrasPorDecada}
+                name="ObrasPorDecadaEixos"
+                component={ObrasPorDecadaEixos}
                 options={({ navigation }) => ({
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Obras por Decada</Text>,
+                    headerTitle: () => <Text style={style.title}>Eixos por Decada</Text>,
                     headerLeft: () => (
                         <TouchableOpacity
-                            testID="obras-por-decada-menu"
+                            testID="eixos-por-decada-menu"
+                            style={{ paddingLeft: 16 }}
+                            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
+                        >
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="ObrasPorDecadaTipologias"
+                component={ObrasPorDecadaTipologias}
+                options={({ navigation }) => ({
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Tipologias por Decada</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity
+                            testID="tipologias-por-decada-menu"
                             style={{ paddingLeft: 16 }}
                             onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
                         >

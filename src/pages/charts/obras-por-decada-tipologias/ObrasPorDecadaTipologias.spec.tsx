@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import ObrasPorDecada from './ObrasPorDecada';
+import ObrasPorDecadaTipologias from './ObrasPorDecadaTipologias';
 
-describe('<ObrasPorDecada />', () => {
+describe('<ObrasPorDecadaTipologias />', () => {
     it('should render', () => {
-        const { getAllByTestId } = render(<ObrasPorDecada />);
+        const { getAllByTestId } = render(<ObrasPorDecadaTipologias />);
 
         const charts = getAllByTestId('chart');
 

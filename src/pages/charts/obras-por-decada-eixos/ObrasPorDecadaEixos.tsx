@@ -12,9 +12,9 @@ function Line(): JSX.Element {
         .filter((key) => key !== 'null' && all[key].length > 0)
         .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].length]);
 
-    const tipologias = Object.keys(all)
+    const eixos = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => all[key].map((obra) => obra.Tipologia ?? 'Desconhecida'))
+        .map((key) => all[key].map((obra) => obra.Eixo ?? 'Desconhecida'))
         .reduce<string[]>((r, l) => {
             Array.prototype.push.apply(r, l);
             return r;
@@ -27,15 +27,15 @@ function Line(): JSX.Element {
             return r;
         }, []);
 
-    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[][] }[]>((series, topolodia) => {
-        const total_tipologia = Object.keys(all)
+    const total_eixos = eixos.reduce<{ type: string; name: string; data: number[][] }[]>((series, eixo) => {
+        const total_eixo = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].filter((obra) => obra.Tipologia === topolodia).length]);
+            .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].filter((obra) => obra.Eixo === eixo).length]);
 
         const serie = {
             type: 'line',
-            name: topolodia,
-            data: total_tipologia,
+            name: eixo,
+            data: total_eixo,
         };
         series.push(serie);
         return series;
@@ -49,7 +49,7 @@ function Line(): JSX.Element {
         } as SeriesOptionsType,
     ];
 
-    Array.prototype.push.apply(series, total_tipologias);
+    Array.prototype.push.apply(series, total_eixos);
 
     const lineOptions: Highcharts.Options = {
         chart: {
@@ -97,9 +97,9 @@ function Line(): JSX.Element {
 function Block(): JSX.Element {
     const all: Record<string, Obra[]> = analisys_list_utils.all;
 
-    const tipologias = Object.keys(all)
+    const eixos = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => all[key].map((obra) => obra.Tipologia ?? 'Desconhecida'))
+        .map((key) => all[key].map((obra) => obra.Eixo ?? 'Desconhecida'))
         .reduce<string[]>((r, l) => {
             Array.prototype.push.apply(r, l);
             return r;
@@ -112,15 +112,15 @@ function Block(): JSX.Element {
             return r;
         }, []);
 
-    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[] }[]>((series, topolodia) => {
-        const total_tipologia = Object.keys(all)
+    const total_eixos = eixos.reduce<{ type: string; name: string; data: number[] }[]>((series, eixo) => {
+        const total_eixo = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => all[key].filter((obra) => obra.Tipologia === topolodia).length);
+            .map((key) => all[key].filter((obra) => obra.Eixo === eixo).length);
 
         const serie = {
             type: 'column',
-            name: topolodia,
-            data: total_tipologia,
+            name: eixo,
+            data: total_eixo,
         };
         series.push(serie);
         return series;
@@ -162,13 +162,13 @@ function Block(): JSX.Element {
                 },
             },
         },
-        series: total_tipologias,
+        series: total_eixos,
     };
 
     return <Chart options={lineOptions} />;
 }
 
-function Charts(): JSX.Element {
+function ObrasPorDecadaEixos(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
             <View>
@@ -181,4 +181,4 @@ function Charts(): JSX.Element {
     );
 }
 
-export default Charts;
+export default ObrasPorDecadaEixos;

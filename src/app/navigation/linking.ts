@@ -31,8 +31,11 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            ObrasPorDecada: {
-                                path: 'obras-por-decada',
+                            ObrasPorDecadaEixos: {
+                                path: 'eixos-por-decada',
+                            },
+                            ObrasPorDecadaTipologias: {
+                                path: 'tipologias-por-decada',
                             },
                         },
                     },
