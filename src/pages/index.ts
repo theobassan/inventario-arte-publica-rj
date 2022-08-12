@@ -1,3 +1,4 @@
+export * from './category';
 export * from './charts';
 export * from './charts/public-art-decade-category';
 export * from './charts/public-art-decade-typology';

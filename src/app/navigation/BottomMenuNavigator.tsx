@@ -1,9 +1,9 @@
-import { AntDesign, Feather } from '@expo/vector-icons';
+import { AntDesign, Feather, MaterialIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 
-import { Home } from '@pages';
+import { Home, Category } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
@@ -15,6 +15,7 @@ export type BottomMenuNavigatorParamList = {
     Home: undefined;
     Maps: NavigatorScreenParams<MapsNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
+    Category: undefined;
 };
 
 export function BottomMenuNavigator(): JSX.Element {
@@ -45,7 +46,7 @@ export function BottomMenuNavigator(): JSX.Element {
                 name="Maps"
                 component={MapsNavigator}
                 options={{
-                    title: 'Maps',
+                    title: 'Mapas',
                     headerShown: false,
                     tabBarIcon: ({ color }) => {
                         return <Feather name="map-pin" size={24} color={color} />;
@@ -57,10 +58,22 @@ export function BottomMenuNavigator(): JSX.Element {
                 name="Charts"
                 component={ChartsNavigator}
                 options={{
-                    title: 'Charts',
+                    title: 'Gráficos',
                     headerShown: false,
                     tabBarIcon: ({ color }) => {
                         return <AntDesign name="barschart" size={24} color={color} />;
+                    },
+                    tabBarLabelStyle: style.tabBarLabel,
+                }}
+            />
+            <BottomTab.Screen
+                name="Category"
+                component={Category}
+                options={{
+                    title: 'Eixos',
+                    headerShown: false,
+                    tabBarIcon: ({ color }) => {
+                        return <MaterialIcons name="category" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}

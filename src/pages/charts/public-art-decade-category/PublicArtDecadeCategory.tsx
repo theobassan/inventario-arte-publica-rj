@@ -80,14 +80,6 @@ function Line(): JSX.Element {
             layout: 'horizontal',
             align: 'center',
         },
-        plotOptions: {
-            series: {
-                label: {
-                    connectorAllowed: false,
-                },
-                pointStart: 2010,
-            },
-        },
         series,
     };
 

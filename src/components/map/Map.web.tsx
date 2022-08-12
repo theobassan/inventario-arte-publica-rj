@@ -3,11 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Wrapper } from '@googlemaps/react-wrapper';
 import Constants from 'expo-constants';
 
-import { exportAsImage } from '@utils';
-
-import MapPoint from './MapPoint.web';
-import Marker from './Marker.web';
-
 type MapWrapperProps = {
     markers?: { position: { latitude: string; longitude: string }; color?: string }[];
 };
@@ -44,38 +39,28 @@ function MyMapComponent({
                 }),
             );
         }
-    }, [ref, map]);
 
-    function renderMarkers() {
         if (map && markers) {
-            console.log('markers', markers);
-            return markers.map((marker, index) => {
-                console.log('marker.color', marker.color);
-                return (
-                    <Marker key={index} map={map} position={{ lat: parseFloat(marker.position.latitude), lng: parseFloat(marker.position.longitude) }}>
-                        <MapPoint color={marker.color} />
-                    </Marker>
-                );
+            return markers.forEach((marker) => {
+                const markerG = new google.maps.Marker({
+                    position: { lat: parseFloat(marker.position.latitude), lng: parseFloat(marker.position.longitude) },
+                    icon: {
+                        path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+
+                        fillOpacity: 1,
+                        strokeColor: '#000',
+                        strokeWeight: 2,
+                        scale: 1,
+
+                        fillColor: marker.color ?? 'black',
+                    },
+                });
+                markerG.setMap(map);
             });
         }
-    }
+    }, [ref, map]);
 
-    return (
-        <>
-            <div style={{ width: '100%', height: '100%' }} ref={ref}>
-                {renderMarkers()}
-            </div>
-            <button
-                onClick={() => {
-                    if (ref.current) {
-                        exportAsImage(ref.current, 'map');
-                    }
-                }}
-            >
-                Capture Image
-            </button>
-        </>
-    );
+    return <div style={{ width: '100%', height: '100%' }} ref={ref} />;
 }
 
 export default MapWrapper;

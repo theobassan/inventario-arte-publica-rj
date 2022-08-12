@@ -1,4 +1,3 @@
-import { FontAwesome } from '@expo/vector-icons';
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useHeaderHeight } from '@react-navigation/elements';
 import { useWindowDimensions } from 'react-native';
@@ -23,11 +22,15 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             testID="mapView"
             style={{ height: height - headerHeight - bottomTabBarHeight, width }}
         >
-            {markers?.map((marker, index) => (
-                <Marker key={index} coordinate={{ latitude: parseFloat(marker.position.latitude), longitude: parseFloat(marker.position.longitude) }}>
-                    <FontAwesome name="map-marker" size={24} color={marker.color ?? 'black'} />
-                </Marker>
-            ))}
+            {markers
+                ?.filter((marker) => marker.position.latitude !== '' && marker.position.longitude !== '')
+                .map((marker, index) => (
+                    <Marker
+                        pinColor={marker.color ?? 'black'}
+                        key={index}
+                        coordinate={{ latitude: parseFloat(marker.position.latitude), longitude: parseFloat(marker.position.longitude) }}
+                    />
+                ))}
         </MapView>
     );
 }

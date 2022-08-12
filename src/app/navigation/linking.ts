@@ -48,6 +48,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                         },
                     },
+                    Category: {
+                        path: 'category',
+                    },
                 },
             },
             NotFound: '404',
