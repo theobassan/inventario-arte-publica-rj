@@ -1,5 +1,6 @@
-import { StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Text } from '@components';
 import * as obras from '@utils/data/obra';
@@ -24,13 +25,45 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total > b.total ? 1 : 0));
+        .sort((a, b) => (a.total < b.total ? 1 : -1));
+
+    const tipologias_artepublica_group: { nome: string; total: number }[] = tipologias_artepublica
+        .reduce<{ nome: string; total: number }[]>(function (r, a) {
+            const r_top = r.find((top) => top.nome === a);
+            if (!r_top) {
+                r.push({
+                    nome: a,
+                    total: tipologias_artepublica.filter((top) => top === a).length,
+                });
+            }
+            return r;
+        }, [])
+        .sort((a, b) => (a.total < b.total ? 1 : -1));
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Bem vinda ao inventário de arte pública do Rio de Janeiro</Text>
-            <Text>Total de Obras levantadas: {Object.keys(obras).length + Object.keys(obra_artepublica).length}</Text>
-            <Text>Tipologia: {topologias_group.map((top) => `${top.nome}: ${top.total}`).join(', ')}</Text>
+            <ScrollView style={{ width: '100%' }}>
+                <Text>Bem vinda ao inventário de arte pública do Rio de Janeiro</Text>
+                <View style={{ height: 24 }} />
+
+                <Text>Total de Obras levantadas: {Object.keys(obras).length + Object.keys(obra_artepublica).length}</Text>
+                <View style={{ height: 24 }} />
+
+                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                    <Row data={['Tipologia', 'Total']} style={styles.head} textStyle={styles.text} />
+                    <Rows data={topologias_group.map((top) => [top.nome, top.total])} textStyle={styles.text} />
+                </Table>
+                <View style={{ height: 24 }} />
+
+                <Text>Total Arte pública: {Object.keys(obra_artepublica).length}</Text>
+                <View style={{ height: 24 }} />
+
+                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                    <Row data={['Tipologia', 'Total']} style={styles.head} textStyle={styles.text} />
+                    <Rows data={tipologias_artepublica_group.map((top) => [top.nome, top.total])} textStyle={styles.text} />
+                </Table>
+                <View style={{ height: 24 }} />
+            </ScrollView>
         </SafeAreaView>
     );
 }
@@ -41,6 +74,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    head: { height: 40 },
+    text: { margin: 6, color: 'white' },
 });
 
 export default Home;
