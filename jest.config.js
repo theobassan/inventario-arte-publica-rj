@@ -7,10 +7,13 @@ module.exports = {
     ],
     testMatch: ['**/*.(spec).(ts|tsx)'],
     moduleNameMapper: {
+        '^@assets/(.*)$': '<rootDir>/src/assets/$1',
         '^@app': '<rootDir>/src/app',
         '^@components': '<rootDir>/src/components',
+        '^@domain': '<rootDir>/src/domain',
         '^@pages': '<rootDir>/src/pages',
         '^@utils': '<rootDir>/src/utils',
+        '^@utils/(.*)$': '<rootDir>/src/utils/$1',
     },
     clearMocks: true,
     collectCoverage: false,

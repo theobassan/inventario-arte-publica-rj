@@ -1,0 +1,55 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import Artista from './artista';
+import Data from './data';
+import Fato from './fato';
+
+type Obra = {
+    ID?: number;
+    Imagem?: any;
+    Artistas?: Artista[] | undefined;
+    Titulo?: string;
+    Material?: string;
+    Altura?: string;
+    Largura?: string;
+    Profundidade?: string;
+    Peso?: string;
+    ValorObra?: string;
+    DataInauguracao?: string;
+    DatasImportantes?: Data[];
+    Promotor?: string;
+    Financiamento?: string;
+    Propriedade?: string;
+    Zona?: string;
+    Bairro?: string;
+    Endereço?: string;
+    Latitude?: string;
+    Longitude?: string;
+    SuporteEspacial?: string;
+    Base?: string;
+    MaterialBase?: string;
+    Status?: string;
+    Descricao?: string;
+    Fatos?: Fato[];
+    Temporalidade?: string;
+    Eixo?: string;
+    Funcao?: string;
+    Natureza?: string;
+    Tipologia?: string;
+    Execucao?: boolean;
+    Classificacao?: string;
+    Categoria?: string;
+    TipologiaObra?: string;
+    PontoDeReferencia?: string;
+    Remocao?: boolean;
+    Realocacao?: boolean;
+    LugarRealocacao?: string;
+    ZonaRealocacao?: string;
+    BairroRealocacao?: string;
+    DataRealocacao?: string;
+    LatitudeRealocacao?: string;
+    LongitudeRealocacao?: string;
+    PontoDeReferenciaorealocacao?: string;
+    Lugar?: string;
+};
+
+export default Obra;
