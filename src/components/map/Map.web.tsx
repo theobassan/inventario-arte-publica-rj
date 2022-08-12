@@ -9,14 +9,13 @@ import MapPoint from './MapPoint.web';
 import Marker from './Marker.web';
 
 type MapWrapperProps = {
-    markers?: { position: { latitude: string; longitude: string } }[];
+    markers?: { position: { latitude: string; longitude: string }; color?: string }[];
 };
 
 function MapWrapper({ markers }: MapWrapperProps): JSX.Element {
     const center = { lat: -22.910972, lng: -43.17156 };
     const zoom = 12;
 
-    console.log('api', Constants.manifest?.extra?.googleMapsAPI);
     return (
         <Wrapper apiKey={Constants.manifest?.extra?.googleMapsAPI}>
             <MyMapComponent center={center} zoom={zoom} markers={markers} />
@@ -31,7 +30,7 @@ function MyMapComponent({
 }: {
     center?: google.maps.LatLngLiteral;
     zoom?: number;
-    markers?: { position: { latitude: string; longitude: string } }[];
+    markers?: { position: { latitude: string; longitude: string }; color?: string }[];
 }) {
     const ref = useRef<HTMLDivElement>(null);
     const [map, setMap] = useState<google.maps.Map>();
@@ -49,11 +48,15 @@ function MyMapComponent({
 
     function renderMarkers() {
         if (map && markers) {
-            return markers.map((marker, index) => (
-                <Marker key={index} map={map} position={{ lat: parseFloat(marker.position.latitude), lng: parseFloat(marker.position.longitude) }}>
-                    <MapPoint />
-                </Marker>
-            ));
+            console.log('markers', markers);
+            return markers.map((marker, index) => {
+                console.log('marker.color', marker.color);
+                return (
+                    <Marker key={index} map={map} position={{ lat: parseFloat(marker.position.latitude), lng: parseFloat(marker.position.longitude) }}>
+                        <MapPoint color={marker.color} />
+                    </Marker>
+                );
+            });
         }
     }
 

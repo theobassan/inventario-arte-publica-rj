@@ -20,8 +20,17 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            TodasObras: {
-                                path: 'mapageral',
+                            All: {
+                                path: 'all',
+                            },
+                            AllVsPublicArt: {
+                                path: 'all-vs-public-art',
+                            },
+                            PublicArt: {
+                                path: 'public-art',
+                            },
+                            PublicArtVsCategory: {
+                                path: 'public-art-vs-category',
                             },
                         },
                     },

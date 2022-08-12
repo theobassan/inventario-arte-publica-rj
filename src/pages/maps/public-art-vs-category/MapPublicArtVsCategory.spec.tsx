@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import Maps from './Geral';
+import MapPublicArtVsCategory from './MapPublicArtVsCategory';
 
-describe('<Maps />', () => {
+describe('<MapPublicArtVsCategory />', () => {
     it('should render', () => {
-        const { getByTestId } = render(<Maps />);
+        const { getByTestId } = render(<MapPublicArtVsCategory />);
 
         const mapView = getByTestId('mapView');
 

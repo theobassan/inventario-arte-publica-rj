@@ -4,14 +4,17 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@components';
-import { Maps, MapaGeral } from '@pages';
+import { Maps, MapAll, MapAllVsPublicArt, MapPublicArt, MapPublicArtVsCategory } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<MapsNavigatorParamsList>();
 
 export type MapsNavigatorParamsList = {
     Home: undefined;
-    TodasObras: undefined;
+    All: undefined;
+    AllVsPublicArt: undefined;
+    PublicArt: undefined;
+    PublicArtVsCategory: undefined;
 };
 
 type MapsNavigatorProps = {
@@ -46,11 +49,50 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 })}
             />
             <DrawerNavigator.Screen
-                name="TodasObras"
-                component={MapaGeral}
+                name="All"
+                component={MapAll}
                 options={({ navigation }) => ({
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Mapa Geral</Text>,
+                    headerTitle: () => <Text style={style.title}>Todas as Obras</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="AllVsPublicArt"
+                component={MapAllVsPublicArt}
+                options={({ navigation }) => ({
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Todas as Obras x Arte Pública</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="PublicArt"
+                component={MapPublicArt}
+                options={({ navigation }) => ({
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Arte Pública</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="PublicArtVsCategory"
+                component={MapPublicArtVsCategory}
+                options={({ navigation }) => ({
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Arte Pública - Eixos</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

@@ -5,7 +5,7 @@ import { useWindowDimensions } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 
 type MapWrapperProps = {
-    markers?: { position: { latitude: string; longitude: string } }[];
+    markers?: { position: { latitude: string; longitude: string }; color?: string }[];
 };
 
 function Map({ markers }: MapWrapperProps): JSX.Element {
@@ -25,7 +25,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
         >
             {markers?.map((marker, index) => (
                 <Marker key={index} coordinate={{ latitude: parseFloat(marker.position.latitude), longitude: parseFloat(marker.position.longitude) }}>
-                    <FontAwesome name="map-marker" size={24} color="black" />
+                    <FontAwesome name="map-marker" size={24} color={marker.color ?? 'black'} />
                 </Marker>
             ))}
         </MapView>

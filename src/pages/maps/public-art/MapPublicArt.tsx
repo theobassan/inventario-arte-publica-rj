@@ -2,7 +2,7 @@ import { Map } from '@components';
 import { Obra } from '@domain';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
-function Maps(): JSX.Element {
+function MapPublicArt(): JSX.Element {
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const markers = Object.keys(typed_obra_artepublica)
@@ -11,4 +11,4 @@ function Maps(): JSX.Element {
     return <Map markers={markers} />;
 }
 
-export default Maps;
+export default MapPublicArt;
