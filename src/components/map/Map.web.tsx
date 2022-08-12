@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { Wrapper } from '@googlemaps/react-wrapper';
+import Constants from 'expo-constants';
 
 import { exportAsImage } from '@utils';
 
@@ -14,8 +15,10 @@ type MapWrapperProps = {
 function MapWrapper({ markers }: MapWrapperProps): JSX.Element {
     const center = { lat: -22.910972, lng: -43.17156 };
     const zoom = 12;
+
+    console.log('api', Constants.manifest?.extra?.googleMapsAPI);
     return (
-        <Wrapper apiKey="">
+        <Wrapper apiKey={Constants.manifest?.extra?.googleMapsAPI}>
             <MyMapComponent center={center} zoom={zoom} markers={markers} />
         </Wrapper>
     );
