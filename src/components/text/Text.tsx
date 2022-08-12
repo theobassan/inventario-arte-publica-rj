@@ -4,7 +4,7 @@ import { Theme, useTheme } from '@utils';
 
 type TextProps = {
     testID?: string;
-    children?: string | number | null;
+    children?: string | number | (string | number)[] | null;
     numberOfLines?: number;
     style?: TextStyle | TextStyle[];
 };

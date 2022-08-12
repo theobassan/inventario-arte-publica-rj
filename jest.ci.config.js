@@ -23,6 +23,7 @@ module.exports = {
         '!src/components/map/**/*.{ts,tsx}',
         '!src/utils/export-as-image/**/*.{ts,tsx}',
         '!src/utils/data/**/*.{ts,tsx}',
+        '!src/pages/**/*.{ts,tsx}',
     ],
     coverageDirectory: '.coverage',
     coveragePathIgnorePatterns: [
