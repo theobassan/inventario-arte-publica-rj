@@ -14,7 +14,10 @@ export const ThemeContext = createContext<ThemeContextType>({} as ThemeContextTy
 function ThemeContextProvider({ children }: { children?: JSX.Element | JSX.Element[] }): JSX.Element {
     const colorScheme = useColorScheme();
 
-    const [theme, setTheme] = useState<Theme>(colorScheme === 'dark' ? DarkTheme : LightTheme);
+    const [
+        theme,
+        setTheme,
+    ] = useState<Theme>(colorScheme === 'dark' ? DarkTheme : LightTheme);
 
     useEffect(() => {
         if (colorScheme === 'dark' && !theme.dark) {

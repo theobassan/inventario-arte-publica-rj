@@ -15,7 +15,14 @@ function Text({ testID, children, numberOfLines, style }: TextProps): JSX.Elemen
     const textStyle = styles(theme);
 
     return (
-        <NativeText testID={testID} numberOfLines={numberOfLines} style={[textStyle.text, style]}>
+        <NativeText
+            testID={testID}
+            numberOfLines={numberOfLines}
+            style={[
+                textStyle.text,
+                style,
+            ]}
+        >
             {children}
         </NativeText>
     );

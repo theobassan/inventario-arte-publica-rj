@@ -9,16 +9,28 @@ function MapAllVsPublicArt(): JSX.Element {
 
     const markers_obra = Object.keys(typed_obra)
         .filter((key) => typed_obra[key].Latitude != null && typed_obra[key].Longitude != null)
-        .map((key) => ({ position: { latitude: typed_obra[key].Latitude ?? '0', longitude: typed_obra[key].Longitude ?? '0' }, color: 'black' }));
+        .map((key) => ({
+            position: {
+                latitude: typed_obra[key].Latitude ?? '0',
+                longitude: typed_obra[key].Longitude ?? '0',
+            },
+            color: 'black',
+        }));
 
     const markers_obra_artepublica = Object.keys(typed_obra_artepublica)
         .filter((key) => typed_obra_artepublica[key].Latitude != null && typed_obra_artepublica[key].Longitude != null)
         .map((key) => ({
-            position: { latitude: typed_obra_artepublica[key].Latitude ?? '0', longitude: typed_obra_artepublica[key].Longitude ?? '0' },
+            position: {
+                latitude: typed_obra_artepublica[key].Latitude ?? '0',
+                longitude: typed_obra_artepublica[key].Longitude ?? '0',
+            },
             color: 'blue',
         }));
 
-    const markers: { position: { latitude: string; longitude: string }; color?: string }[] = [];
+    const markers: {
+        position: { latitude: string; longitude: string };
+        color?: string;
+    }[] = [];
     Array.prototype.push.apply(markers, markers_obra);
     Array.prototype.push.apply(markers, markers_obra_artepublica);
 

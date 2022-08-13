@@ -14,7 +14,14 @@ function Button({ children, onPress, testOnly_pressed }: ButtonProps): JSX.Eleme
     const style = styles(theme);
 
     const button = (
-        <Pressable onPress={onPress} style={({ pressed }) => [style.button, pressed && style.pressed]} testOnly_pressed={testOnly_pressed}>
+        <Pressable
+            onPress={onPress}
+            style={({ pressed }) => [
+                style.button,
+                pressed && style.pressed,
+            ]}
+            testOnly_pressed={testOnly_pressed}
+        >
             <Text>{children?.toLowerCase()}</Text>
         </Pressable>
     );

@@ -645,7 +645,11 @@ export const HelenaMariaPortoSeverodaCosta: Pessoa = {
             '01/01/1997',
             'Secretária Municipal de Cultura, Turismo e Esportes',
             'Exonera-se no cargo de Secretária Municipal de Cultura',
-            [pessoas.CesarEpitacioMaia, pessoas.VaniaDrumondBonelli, pessoas.EverardoMiranda],
+            [
+                pessoas.CesarEpitacioMaia,
+                pessoas.VaniaDrumondBonelli,
+                pessoas.EverardoMiranda,
+            ],
             'Rio de Janeiro',
         ),
         new Fato(
@@ -676,7 +680,10 @@ export const EverardoMiranda: Pessoa = {
             '1995',
             'Secretaria Municipal de Cultura',
             'Assesor Especial',
-            [pessoas.HelenaMariaPortoSeverodaCosta, pessoas.DanielaPedras],
+            [
+                pessoas.HelenaMariaPortoSeverodaCosta,
+                pessoas.DanielaPedras,
+            ],
             'Rio de Janeiro',
         ),
         new Fato('1990', '1993', 'Secretaria Municipal de Cultura/ RioArte', 'Diretor de Artes Visuais', [], 'Rio de Janeiro'),
@@ -700,7 +707,10 @@ export const DanielaPedras: Pessoa = {
             '',
             'Secretaria Municipal de Cultura',
             'Gerente Projetos Especiais',
-            [pessoas.HelenaMariaPortoSeverodaCosta, pessoas.EverardoMiranda],
+            [
+                pessoas.HelenaMariaPortoSeverodaCosta,
+                pessoas.EverardoMiranda,
+            ],
             'Rio de Janeiro',
         ),
         new Fato('', '', '', '', [], 'Rio de Janeiro'),
@@ -723,7 +733,10 @@ export const VaniaDrumondBonelli: Pessoa = {
             '01/01/1997',
             'Substituta Secretária Municipal de Cultura',
             '',
-            [pessoas.CesarEpitacioMaia, pessoas.HelenaMariaPortoSeverodaCosta],
+            [
+                pessoas.CesarEpitacioMaia,
+                pessoas.HelenaMariaPortoSeverodaCosta,
+            ],
             'Rio de Janeiro',
         ),
         new Fato(
@@ -747,7 +760,9 @@ export const MauroMonizFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', 'Secretário Especial de Monumentos Públicos', [], 'Rio de Janeiro')],
+    Fatos: [
+        new Fato('', '', '', 'Secretário Especial de Monumentos Públicos', [], 'Rio de Janeiro'),
+    ],
 };
 export const VillaLobos: Pessoa = {
     ID: undefined,
@@ -817,7 +832,10 @@ export const CesarEpitacioMaia: Pessoa = {
             '31/12/1996',
             'Prefeito',
             'Prefeitura Municipal do Rio de Janeiro',
-            [pessoas.LuizPauloFernandezConde, pessoas.HelenaMariaPortoSeverodaCosta],
+            [
+                pessoas.LuizPauloFernandezConde,
+                pessoas.HelenaMariaPortoSeverodaCosta,
+            ],
             'Rio de Janeiro',
         ),
         new Fato('01/01/2001', '01/01/2009', 'Prefeito', 'Prefeitura Municiapl do Rio de Janeiro', [], 'Rio de Janeiro'),
@@ -843,7 +861,11 @@ export const LuizPauloFernandezConde: Pessoa = {
             '30/05/1996',
             'Secretário Municipal de Urbanismo e Meio Ambiente',
             'Exonera-se do cargo de Secretário Municipal de Urbanismo',
-            [pessoas.CesarEpitacioMaia, pessoas.MariaMadalenaSaintMartinAstacio, pessoas.MauroBarataSoaresdeFigueiredo],
+            [
+                pessoas.CesarEpitacioMaia,
+                pessoas.MariaMadalenaSaintMartinAstacio,
+                pessoas.MauroBarataSoaresdeFigueiredo,
+            ],
             'Rio de Janeiro',
         ),
         new Fato('01/01/1997', '31/12/2000', 'Prefeito', 'Prefeitura Municipal do RIo de Janeiro', [pessoas.EiderDantas], 'Rio de Janeiro'),
@@ -860,7 +882,9 @@ export const AndreaAlbuquerqueGarciaRedondo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('30/05/1996', '30/12/1996', 'Secretário Municipal de Urbanismo', '', [], '')],
+    Fatos: [
+        new Fato('30/05/1996', '30/12/1996', 'Secretário Municipal de Urbanismo', '', [], ''),
+    ],
 };
 
 export const VicenteOrnelas: Pessoa = {
@@ -2603,7 +2627,9 @@ export const MarioAgostinelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('1953', '1953', 'Fundador', 'Foi fundador da Petit Galerie', [], 'Rio de Janeiro')],
+    Fatos: [
+        new Fato('1953', '1953', 'Fundador', 'Foi fundador da Petit Galerie', [], 'Rio de Janeiro'),
+    ],
 };
 
 export const DecioVilares: Pessoa = {
@@ -2849,7 +2875,9 @@ export const JorgeSelaron: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('1983', '1983', 'Mudança', 'O artista chileno muda-se para o Rio de Janeiro.', [], 'Rio de Janeiro')],
+    Fatos: [
+        new Fato('1983', '1983', 'Mudança', 'O artista chileno muda-se para o Rio de Janeiro.', [], 'Rio de Janeiro'),
+    ],
 };
 
 export const GracaCostaCabral: Pessoa = {
@@ -3069,7 +3097,12 @@ export const FundicaoValDOsne: Pessoa = {
             '',
             'Fundição artística',
             '',
-            [pessoas.MathurinMoreau, pessoas.LouisSauvageau, pessoas.AugusteMartin, pessoas.HenriFredericIselin],
+            [
+                pessoas.MathurinMoreau,
+                pessoas.LouisSauvageau,
+                pessoas.AugusteMartin,
+                pessoas.HenriFredericIselin,
+            ],
             'Haute-Marne',
         ),
         new Fato('', '', '', 'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano', [], 'Rio de Janeiro'),
@@ -3130,7 +3163,17 @@ export const FranzWeissmann: Pessoa = {
             [pessoas.AlbertodaVeigaGuignard],
             'Belo Horizonte',
         ),
-        new Fato('', '', 'Professor', '', [pessoas.AmilcardeCastro, pessoas.FarnesedeAndrade], 'Belo Horizonte'),
+        new Fato(
+            '',
+            '',
+            'Professor',
+            '',
+            [
+                pessoas.AmilcardeCastro,
+                pessoas.FarnesedeAndrade,
+            ],
+            'Belo Horizonte',
+        ),
         new Fato(
             '',
             '',
@@ -3144,7 +3187,17 @@ export const FranzWeissmann: Pessoa = {
         new Fato('1958', '1958', 'Premio', 'Ganhou viagem ao exterior do Salão de Arte Moderna', [], ''),
         new Fato('', '', 'Mudança', 'Mora na França', [], ''),
         new Fato('', '', 'Mudança', 'Mora na Espanha', [], ''),
-        new Fato('1959', '', 'I Exposição Neoconcreta', '', [pessoas.AmilcardeCastro, pessoas.FranzWeissmann], ''),
+        new Fato(
+            '1959',
+            '',
+            'I Exposição Neoconcreta',
+            '',
+            [
+                pessoas.AmilcardeCastro,
+                pessoas.FranzWeissmann,
+            ],
+            '',
+        ),
         new Fato(
             '1959',
             '',
@@ -3215,7 +3268,12 @@ export const FranzWeissmann: Pessoa = {
             '1997',
             'Exposição Coletiva',
             'Poetas do espaço e da cor realizada no MAM/Rj',
-            [pessoas.AlfredoVolpi, pessoas.AncangeloIanelli, pessoas.AldirMendesdeSouza, pessoas.FranzWeissmann],
+            [
+                pessoas.AlfredoVolpi,
+                pessoas.AncangeloIanelli,
+                pessoas.AldirMendesdeSouza,
+                pessoas.FranzWeissmann,
+            ],
             'Rio de Janeiro',
         ),
         new Fato(
@@ -3305,7 +3363,12 @@ export const AldirMendesdeSouza: Pessoa = {
             '1997',
             'Exposição Coletiva',
             'Poetas do espaço e da cor realizada no MAM/Rj',
-            [pessoas.AlfredoVolpi, pessoas.AncangeloIanelli, pessoas.AldirMendesdeSouza, pessoas.FranzWeissmann],
+            [
+                pessoas.AlfredoVolpi,
+                pessoas.AncangeloIanelli,
+                pessoas.AldirMendesdeSouza,
+                pessoas.FranzWeissmann,
+            ],
             'Rio de Janeiro',
         ),
     ],
@@ -3327,7 +3390,12 @@ export const AncangeloIanelli: Pessoa = {
             '1997',
             'Exposição Coletiva',
             'Poetas do espaço e da cor realizada no MAM/Rj',
-            [pessoas.AlfredoVolpi, pessoas.AncangeloIanelli, pessoas.AldirMendesdeSouza, pessoas.FranzWeissmann],
+            [
+                pessoas.AlfredoVolpi,
+                pessoas.AncangeloIanelli,
+                pessoas.AldirMendesdeSouza,
+                pessoas.FranzWeissmann,
+            ],
             'Rio de Janeiro',
         ),
     ],
@@ -3349,7 +3417,12 @@ export const AlfredoVolpi: Pessoa = {
             '1997',
             'Exposição Coletiva',
             'Poetas do espaço e da cor realizada no MAM/Rj',
-            [pessoas.AlfredoVolpi, pessoas.AncangeloIanelli, pessoas.AldirMendesdeSouza, pessoas.FranzWeissmann],
+            [
+                pessoas.AlfredoVolpi,
+                pessoas.AncangeloIanelli,
+                pessoas.AldirMendesdeSouza,
+                pessoas.FranzWeissmann,
+            ],
             'Rio de Janeiro',
         ),
     ],
@@ -4202,7 +4275,10 @@ export const SironFranco: Pessoa = {
     CidadePaisMorte: undefined,
     Descriçao: undefined,
     Profissoes: undefined,
-    Especialidades: [Pintor, Escultor],
+    Especialidades: [
+        Pintor,
+        Escultor,
+    ],
     Fatos: [
         new Fato('', '', '', 'É um dos artistas brasileiros mais conhecidos no exterior.', [], ''),
         new Fato(
@@ -5418,7 +5494,9 @@ export const ReynaldoRoels: Pessoa = {
     Descriçao: undefined,
     Profissoes: [CriticoDeArte],
     Especialidades: undefined,
-    Fatos: [new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro')],
+    Fatos: [
+        new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro'),
+    ],
 };
 
 export const AmilcardeCastro: Pessoa = {
@@ -5432,14 +5510,27 @@ export const AmilcardeCastro: Pessoa = {
     Profissoes: [Artista],
     Especialidades: undefined,
     Fatos: [
-        new Fato('', '', 'Aluno', 'Foi aluno de ', [pessoas.FranzWeissmann, pessoas.AlbertodaVeigaGuignard], 'cidade'),
+        new Fato(
+            '',
+            '',
+            'Aluno',
+            'Foi aluno de ',
+            [
+                pessoas.FranzWeissmann,
+                pessoas.AlbertodaVeigaGuignard,
+            ],
+            'cidade',
+        ),
         new Fato('', '', 'Tradição', 'Tradição construtiva', [], ''),
         new Fato(
             '1959',
             '',
             'I Exposição Neoconcreta',
             'Entre as obras expostas, havia um escultura constituída apenas de uma chapa de ferro que se abria em planos inclinados, para cima e para baixo, e que anunciava o futuro dsenvolvimento de sua obra. Tratava-se de uma chapa cortada ao meio e submetida a uma torça precisa e expressiva que deflagrava um dinamismo novo no espaço, transfigurando a forma e a matéria.',
-            [pessoas.AmilcardeCastro, pessoas.FranzWeissmann],
+            [
+                pessoas.AmilcardeCastro,
+                pessoas.FranzWeissmann,
+            ],
             'cidade',
         ),
         new Fato(
@@ -7797,7 +7888,9 @@ export const NiltonMontarroyos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', 'Arquiteto', 'Urbanização do bairro de Campo Grande', [], '')],
+    Fatos: [
+        new Fato('', '', 'Arquiteto', 'Urbanização do bairro de Campo Grande', [], ''),
+    ],
 };
 
 export const GeorgeGuerra: Pessoa = {
@@ -8902,5 +8995,7 @@ export const FlavioFerreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('11/09/1986', '30/12/1988', 'Secretário', 'Secretário Municipal de Desenvolvimento Urbano', [], 'Rio de Janeiro')],
+    Fatos: [
+        new Fato('11/09/1986', '30/12/1988', 'Secretário', 'Secretário Municipal de Desenvolvimento Urbano', [], 'Rio de Janeiro'),
+    ],
 };

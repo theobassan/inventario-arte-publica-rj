@@ -7,7 +7,12 @@ function MapPublicArt(): JSX.Element {
 
     const markers = Object.keys(typed_obra_artepublica)
         .filter((key) => typed_obra_artepublica[key].Latitude != null && typed_obra_artepublica[key].Longitude != null)
-        .map((key) => ({ position: { latitude: typed_obra_artepublica[key].Latitude ?? '0', longitude: typed_obra_artepublica[key].Longitude ?? '0' } }));
+        .map((key) => ({
+            position: {
+                latitude: typed_obra_artepublica[key].Latitude ?? '0',
+                longitude: typed_obra_artepublica[key].Longitude ?? '0',
+            },
+        }));
     return <Map markers={markers} />;
 }
 

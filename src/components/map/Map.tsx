@@ -4,14 +4,22 @@ import { Platform, useWindowDimensions } from 'react-native';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 type MapWrapperProps = {
-    markers?: { position: { latitude: string; longitude: string }; color?: string }[];
+    markers?: {
+        position: { latitude: string; longitude: string };
+        color?: string;
+    }[];
 };
 
 function Map({ markers }: MapWrapperProps): JSX.Element {
     const { height, width } = useWindowDimensions();
     const bottomTabBarHeight = useBottomTabBarHeight();
     const headerHeight = useHeaderHeight();
-    const center = { latitude: -22.910972, longitude: -43.17156, latitudeDelta: 0.5, longitudeDelta: 0.5 };
+    const center = {
+        latitude: -22.910972,
+        longitude: -43.17156,
+        latitudeDelta: 0.5,
+        longitudeDelta: 0.5,
+    };
 
     return (
         <MapView
@@ -29,7 +37,10 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
                     <Marker
                         pinColor={marker.color ?? 'black'}
                         key={index}
-                        coordinate={{ latitude: parseFloat(marker.position.latitude), longitude: parseFloat(marker.position.longitude) }}
+                        coordinate={{
+                            latitude: parseFloat(marker.position.latitude),
+                            longitude: parseFloat(marker.position.longitude),
+                        }}
                     />
                 ))}
         </MapView>

@@ -10,7 +10,10 @@ function Line(): JSX.Element {
 
     const total = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].length]);
+        .map((key) => [
+            Date.UTC(parseInt(key, 10), 1),
+            all[key].length,
+        ]);
 
     const eixos = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
@@ -30,7 +33,10 @@ function Line(): JSX.Element {
     const total_eixos = eixos.reduce<{ type: string; name: string; data: number[][] }[]>((series, eixo) => {
         const total_eixo = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].filter((obra) => obra.Eixo === eixo).length]);
+            .map((key) => [
+                Date.UTC(parseInt(key, 10), 1),
+                all[key].filter((obra) => obra.Eixo === eixo).length,
+            ]);
 
         const serie = {
             type: 'line',

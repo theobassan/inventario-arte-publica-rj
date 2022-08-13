@@ -10,7 +10,10 @@ function Line(): JSX.Element {
 
     const total = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].length]);
+        .map((key) => [
+            Date.UTC(parseInt(key, 10), 1),
+            all[key].length,
+        ]);
 
     const tipologias = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
@@ -30,7 +33,10 @@ function Line(): JSX.Element {
     const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[][] }[]>((series, topologia) => {
         const total_tipologia = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => [Date.UTC(parseInt(key, 10), 1), all[key].filter((obra) => obra.Tipologia === topologia).length]);
+            .map((key) => [
+                Date.UTC(parseInt(key, 10), 1),
+                all[key].filter((obra) => obra.Tipologia === topologia).length,
+            ]);
 
         const serie = {
             type: 'line',

@@ -11,7 +11,12 @@ function MapAll(): JSX.Element {
 
     const markers = Object.keys(all)
         .filter((key) => all[key].Latitude != null && all[key].Longitude != null)
-        .map((key) => ({ position: { latitude: all[key].Latitude ?? '0', longitude: all[key].Longitude ?? '0' } }));
+        .map((key) => ({
+            position: {
+                latitude: all[key].Latitude ?? '0',
+                longitude: all[key].Longitude ?? '0',
+            },
+        }));
     return <Map markers={markers} />;
 }
 

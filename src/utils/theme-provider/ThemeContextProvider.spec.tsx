@@ -18,7 +18,10 @@ describe('<ThemeContextProvider />', () => {
 
     it('should change to DarkTheme if colorScheme is dark', () => {
         const setTheme = jest.fn();
-        jest.spyOn(React, 'useState').mockReturnValueOnce([LightTheme, setTheme]);
+        jest.spyOn(React, 'useState').mockReturnValueOnce([
+            LightTheme,
+            setTheme,
+        ]);
         jest.spyOn(ReactNative, 'useColorScheme').mockReturnValueOnce('dark');
 
         render(<ThemeContextProvider />);
@@ -28,7 +31,10 @@ describe('<ThemeContextProvider />', () => {
 
     it('should change to LightTheme if colorScheme is light', () => {
         const setTheme = jest.fn();
-        jest.spyOn(React, 'useState').mockReturnValueOnce([DarkTheme, setTheme]);
+        jest.spyOn(React, 'useState').mockReturnValueOnce([
+            DarkTheme,
+            setTheme,
+        ]);
         jest.spyOn(ReactNative, 'useColorScheme').mockReturnValueOnce('light');
 
         render(<ThemeContextProvider />);
