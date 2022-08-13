@@ -3,6 +3,7 @@ export * from './charts';
 export * from './charts/public-art-decade-category';
 export * from './charts/public-art-decade-typology';
 export * from './charts/rede';
+export * from './decade';
 export * from './home';
 export * from './maps';
 export * from './maps/all';

@@ -1,9 +1,9 @@
-import { AntDesign, Feather, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, Feather, MaterialIcons, Entypo } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 
-import { Home, Category } from '@pages';
+import { Home, Category, Decade } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
@@ -16,6 +16,7 @@ export type BottomMenuNavigatorParamList = {
     Maps: NavigatorScreenParams<MapsNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
     Category: undefined;
+    Decade: undefined;
 };
 
 export function BottomMenuNavigator(): JSX.Element {
@@ -74,6 +75,18 @@ export function BottomMenuNavigator(): JSX.Element {
                     headerShown: false,
                     tabBarIcon: ({ color }) => {
                         return <MaterialIcons name="category" size={24} color={color} />;
+                    },
+                    tabBarLabelStyle: style.tabBarLabel,
+                }}
+            />
+            <BottomTab.Screen
+                name="Decade"
+                component={Decade}
+                options={{
+                    title: 'Décadas',
+                    headerShown: false,
+                    tabBarIcon: ({ color }) => {
+                        return <Entypo name="back-in-time" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}

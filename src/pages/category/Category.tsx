@@ -9,11 +9,11 @@ import { Table, Row, Rows } from 'react-native-table-component';
 import { Chart, Text } from '@components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
-import * as analisys_list_utils from '@utils/data/analisys_list_utils';
+import * as dedadas from '@utils/data/dedadas';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function Line({ category }: { category: string }): JSX.Element {
-    const all: Record<string, Obra[]> = analisys_list_utils.all;
+    const all: Record<string, Obra[]> = dedadas.all;
 
     const total = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
@@ -163,6 +163,7 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
 
 function Category(): JSX.Element {
     const { theme } = useTheme();
+
     const [open, setOpen] = useState(false);
     const [category, setValue] = useState('narratividade');
     const [items, setItems] = useState([
@@ -170,6 +171,7 @@ function Category(): JSX.Element {
         { label: 'plasticidade', value: 'plasticidade' },
         { label: 'sublimidade', value: 'sublimidade' },
     ]);
+
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const tipologias: string[] = Object.keys(typed_obra_artepublica)

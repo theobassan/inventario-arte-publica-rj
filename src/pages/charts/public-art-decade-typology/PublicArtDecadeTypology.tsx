@@ -3,10 +3,10 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@components';
 import { Obra } from '@domain';
-import * as analisys_list_utils from '@utils/data/analisys_list_utils';
+import * as dedadas from '@utils/data/dedadas';
 
 function Line(): JSX.Element {
-    const all: Record<string, Obra[]> = analisys_list_utils.all;
+    const all: Record<string, Obra[]> = dedadas.all;
 
     const total = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
@@ -87,7 +87,7 @@ function Line(): JSX.Element {
 }
 
 function Block(): JSX.Element {
-    const all: Record<string, Obra[]> = analisys_list_utils.all;
+    const all: Record<string, Obra[]> = dedadas.all;
 
     const tipologias = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
