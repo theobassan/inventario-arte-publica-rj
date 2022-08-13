@@ -21,22 +21,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.theobassan.inventarioartepublicarj",
-      "config": {
-        "googleMapsApiKey": "<ios maps api key>"
-      }
+      "bundleIdentifier": "com.theobassan.inventarioartepublicarj"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.theobassan.inventarioartepublicarj",
-      "config": {
-        "googleMaps": {
-          "apiKey": "<android maps key>"
-        }
-      }
+      "package": "com.theobassan.inventarioartepublicarj"
     },
     "web": {
       "favicon": "./assets/favicon.png"

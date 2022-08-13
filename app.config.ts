@@ -17,4 +17,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
             },
         },
     },
+    ios: {
+        ...config.ios,
+        config: {
+            ...config.ios?.config,
+            googleMapsApiKey: process.env.GOOGLE_MAPS_API,
+        },
+    },
 });
