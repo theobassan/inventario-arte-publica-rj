@@ -1,10 +1,14 @@
+import { useState } from 'react';
+
 import { SeriesOptionsType } from 'highcharts';
 import { ScrollView, StyleSheet, View } from 'react-native';
+import DropDownPicker from 'react-native-dropdown-picker';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Chart, Text } from '@components';
 import { Artista, Obra } from '@domain';
+import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
@@ -66,7 +70,62 @@ function Line({ category }: { category: string }): JSX.Element {
     return <Chart options={lineOptions} />;
 }
 
-function Network({ category }: { category: string }): JSX.Element {
+function Network({ category, autor }: { category: string; autor?: string }): JSX.Element {
+    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
+
+    const obras: Obra[] = Object.keys(typed_obra_artepublica)
+        .filter((key) => typed_obra_artepublica[key].Eixo === category)
+        .filter(
+            (key) =>
+                (typed_obra_artepublica[key].Artistas != null &&
+                    typed_obra_artepublica[key].Artistas?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
+                (autor === 'Desconhecida' && typed_obra_artepublica[key].Artistas == null),
+        )
+        .map((key) => typed_obra_artepublica[key]);
+
+    const titulos = obras.map((obra) => ({ id: obra.Titulo ?? 'Deconhecida', marker: { radius: 5 }, color: 'yellow' }));
+    const tipologias = obras
+        .map((obra) => ({ id: obra.Tipologia ?? 'Deconhecida', marker: { radius: 10 }, color: 'red' }))
+        .reduce<{ id: string }[]>((r, e) => {
+            if (r.find((tip) => tip.id === e.id) == null) {
+                r.push(e);
+            }
+            return r;
+        }, []);
+
+    const nodes = [{ id: autor, marker: { radius: 20 }, color: 'blue' }];
+    Array.prototype.push.apply(nodes, titulos);
+    Array.prototype.push.apply(nodes, tipologias);
+
+    const data = tipologias.map((tipologia) => ({ from: autor, to: tipologia.id }));
+
+    Array.prototype.push.apply(
+        data,
+        tipologias
+            .map((tipologia) => {
+                const titulos_tipologia = Object.keys(typed_obra_artepublica)
+                    .filter((key) => typed_obra_artepublica[key].Eixo === category)
+                    .filter(
+                        (key) =>
+                            (typed_obra_artepublica[key].Artistas != null &&
+                                typed_obra_artepublica[key].Artistas?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
+                            (autor === 'Desconhecida' && typed_obra_artepublica[key].Artistas == null),
+                    )
+                    .filter(
+                        (key) =>
+                            (typed_obra_artepublica[key].Tipologia != null && typed_obra_artepublica[key].Tipologia === tipologia.id) ||
+                            (tipologia.id === 'Desconhecida' && typed_obra_artepublica[key].Tipologia == null),
+                    )
+                    .map((key) => typed_obra_artepublica[key].Titulo);
+
+                return titulos_tipologia.map((titulo) => ({ from: tipologia.id, to: titulo }));
+            })
+            .reduce((r, l) => {
+                Array.prototype.push.apply(r, l);
+                return r;
+            }, []),
+    );
+
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
             height: 800,
@@ -87,140 +146,14 @@ function Network({ category }: { category: string }): JSX.Element {
             {
                 name: category,
                 accessibility: {
-                    enabled: false,
+                    enabled: true,
                 },
                 dataLabels: {
                     enabled: true,
+                    linkFormat: '{point.rel}',
                 },
-                id: 'lang-tree',
-                data: [
-                    { from: 'Proto Indo-European', to: 'Balto-Slavic', color: 'red' },
-                    { from: 'Proto Indo-European', to: 'Germanic' },
-                    { from: 'Proto Indo-European', to: 'Celtic' },
-                    { from: 'Proto Indo-European', to: 'Italic' },
-                    { from: 'Proto Indo-European', to: 'Hellenic' },
-                    { from: 'Proto Indo-European', to: 'Anatolian' },
-                    { from: 'Proto Indo-European', to: 'Indo-Iranian' },
-                    { from: 'Proto Indo-European', to: 'Tocharian' },
-                    { from: 'Indo-Iranian', to: 'Dardic' },
-                    { from: 'Indo-Iranian', to: 'Indic' },
-                    { from: 'Indo-Iranian', to: 'Iranian' },
-                    { from: 'Iranian', to: 'Old Persian' },
-                    { from: 'Old Persian', to: 'Middle Persian' },
-                    { from: 'Indic', to: 'Sanskrit' },
-                    { from: 'Italic', to: 'Osco-Umbrian' },
-                    { from: 'Italic', to: 'Latino-Faliscan' },
-                    { from: 'Latino-Faliscan', to: 'Latin' },
-                    { from: 'Celtic', to: 'Brythonic' },
-                    { from: 'Celtic', to: 'Goidelic' },
-                    { from: 'Germanic', to: 'North Germanic' },
-                    { from: 'Germanic', to: 'West Germanic' },
-                    { from: 'Germanic', to: 'East Germanic' },
-                    { from: 'North Germanic', to: 'Old Norse' },
-                    { from: 'North Germanic', to: 'Old Swedish' },
-                    { from: 'North Germanic', to: 'Old Danish' },
-                    { from: 'West Germanic', to: 'Old English' },
-                    { from: 'West Germanic', to: 'Old Frisian' },
-                    { from: 'West Germanic', to: 'Old Dutch' },
-                    { from: 'West Germanic', to: 'Old Low German' },
-                    { from: 'West Germanic', to: 'Old High German' },
-                    { from: 'Old Norse', to: 'Old Icelandic' },
-                    { from: 'Old Norse', to: 'Old Norwegian' },
-                    { from: 'Old Norwegian', to: 'Middle Norwegian' },
-                    { from: 'Old Swedish', to: 'Middle Swedish' },
-                    { from: 'Old Danish', to: 'Middle Danish' },
-                    { from: 'Old English', to: 'Middle English' },
-                    { from: 'Old Dutch', to: 'Middle Dutch' },
-                    { from: 'Old Low German', to: 'Middle Low German' },
-                    { from: 'Old High German', to: 'Middle High German' },
-                    { from: 'Balto-Slavic', to: 'Baltic' },
-                    { from: 'Balto-Slavic', to: 'Slavic' },
-                    { from: 'Slavic', to: 'East Slavic' },
-                    { from: 'Slavic', to: 'West Slavic' },
-                    { from: 'Slavic', to: 'South Slavic' },
-                    // Leaves:
-                    { from: 'Proto Indo-European', to: 'Phrygian' },
-                    { from: 'Proto Indo-European', to: 'Armenian' },
-                    { from: 'Proto Indo-European', to: 'Albanian' },
-                    { from: 'Proto Indo-European', to: 'Thracian' },
-                    { from: 'Tocharian', to: 'Tocharian A' },
-                    { from: 'Tocharian', to: 'Tocharian B' },
-                    { from: 'Anatolian', to: 'Hittite' },
-                    { from: 'Anatolian', to: 'Palaic' },
-                    { from: 'Anatolian', to: 'Luwic' },
-                    { from: 'Anatolian', to: 'Lydian' },
-                    { from: 'Iranian', to: 'Balochi' },
-                    { from: 'Iranian', to: 'Kurdish' },
-                    { from: 'Iranian', to: 'Pashto' },
-                    { from: 'Iranian', to: 'Sogdian' },
-                    { from: 'Old Persian', to: 'Pahlavi' },
-                    { from: 'Middle Persian', to: 'Persian' },
-                    { from: 'Hellenic', to: 'Greek' },
-                    { from: 'Dardic', to: 'Dard' },
-                    { from: 'Sanskrit', to: 'Sindhi' },
-                    { from: 'Sanskrit', to: 'Romani' },
-                    { from: 'Sanskrit', to: 'Urdu' },
-                    { from: 'Sanskrit', to: 'Hindi' },
-                    { from: 'Sanskrit', to: 'Bihari' },
-                    { from: 'Sanskrit', to: 'Assamese' },
-                    { from: 'Sanskrit', to: 'Bengali' },
-                    { from: 'Sanskrit', to: 'Marathi' },
-                    { from: 'Sanskrit', to: 'Gujarati' },
-                    { from: 'Sanskrit', to: 'Punjabi' },
-                    { from: 'Sanskrit', to: 'Sinhalese' },
-                    { from: 'Osco-Umbrian', to: 'Umbrian' },
-                    { from: 'Osco-Umbrian', to: 'Oscan' },
-                    { from: 'Latino-Faliscan', to: 'Faliscan' },
-                    { from: 'Latin', to: 'Portugese' },
-                    { from: 'Latin', to: 'Spanish' },
-                    { from: 'Latin', to: 'French' },
-                    { from: 'Latin', to: 'Romanian' },
-                    { from: 'Latin', to: 'Italian' },
-                    { from: 'Latin', to: 'Catalan' },
-                    { from: 'Latin', to: 'Franco-Provençal' },
-                    { from: 'Latin', to: 'Rhaeto-Romance' },
-                    { from: 'Brythonic', to: 'Welsh' },
-                    { from: 'Brythonic', to: 'Breton' },
-                    { from: 'Brythonic', to: 'Cornish' },
-                    { from: 'Brythonic', to: 'Cuymbric' },
-                    { from: 'Goidelic', to: 'Modern Irish' },
-                    { from: 'Goidelic', to: 'Scottish Gaelic' },
-                    { from: 'Goidelic', to: 'Manx' },
-                    { from: 'East Germanic', to: 'Gothic' },
-                    { from: 'Middle Low German', to: 'Low German' },
-                    { from: 'Middle High German', to: '(High) German' },
-                    { from: 'Middle High German', to: 'Yiddish' },
-                    { from: 'Middle English', to: 'English' },
-                    { from: 'Middle Dutch', to: 'Hollandic' },
-                    { from: 'Middle Dutch', to: 'Flemish' },
-                    { from: 'Middle Dutch', to: 'Dutch' },
-                    { from: 'Middle Dutch', to: 'Limburgish' },
-                    { from: 'Middle Dutch', to: 'Brabantian' },
-                    { from: 'Middle Dutch', to: 'Rhinelandic' },
-                    { from: 'Old Frisian', to: 'Frisian' },
-                    { from: 'Middle Danish', to: 'Danish' },
-                    { from: 'Middle Swedish', to: 'Swedish' },
-                    { from: 'Middle Norwegian', to: 'Norwegian' },
-                    { from: 'Old Norse', to: 'Faroese' },
-                    { from: 'Old Icelandic', to: 'Icelandic' },
-                    { from: 'Baltic', to: 'Old Prussian' },
-                    { from: 'Baltic', to: 'Lithuanian' },
-                    { from: 'Baltic', to: 'Latvian' },
-                    { from: 'West Slavic', to: 'Polish' },
-                    { from: 'West Slavic', to: 'Slovak' },
-                    { from: 'West Slavic', to: 'Czech' },
-                    { from: 'West Slavic', to: 'Wendish' },
-                    { from: 'East Slavic', to: 'Bulgarian' },
-                    { from: 'East Slavic', to: 'Old Church Slavonic' },
-                    { from: 'East Slavic', to: 'Macedonian' },
-                    { from: 'East Slavic', to: 'Serbo-Croatian' },
-                    { from: 'East Slavic', to: 'Slovene' },
-                    { from: 'South Slavic', to: 'Russian' },
-                    { from: 'South Slavic', to: 'Ukrainian' },
-                    { from: 'South Slavic', to: 'Belarusian' },
-                    { from: 'South Slavic', to: 'Rusyn' },
-                ],
-                nodes: [{ id: 'Balto-Slavic', color: 'blue', marker: { radius: 10 } }],
+                data,
+                nodes,
             },
         ],
     };
@@ -229,9 +162,15 @@ function Network({ category }: { category: string }): JSX.Element {
 }
 
 function Category(): JSX.Element {
+    const { theme } = useTheme();
+    const [open, setOpen] = useState(false);
+    const [category, setValue] = useState('narratividade');
+    const [items, setItems] = useState([
+        { label: 'narratividade', value: 'narratividade' },
+        { label: 'plasticidade', value: 'plasticidade' },
+        { label: 'sublimidade', value: 'sublimidade' },
+    ]);
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
-
-    const category = 'plasticidade';
 
     const tipologias: string[] = Object.keys(typed_obra_artepublica)
         .filter((key) => typed_obra_artepublica[key].Eixo === category)
@@ -281,6 +220,7 @@ function Category(): JSX.Element {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
                 const obras: string[] = Object.keys(typed_obra_artepublica)
+                    .filter((key) => typed_obra_artepublica[key].Eixo === category)
                     .filter(
                         (key) =>
                             (typed_obra_artepublica[key].Artistas != null &&
@@ -299,11 +239,30 @@ function Category(): JSX.Element {
         }, [])
         .sort((a, b) => (a.total < b.total ? 1 : -1));
 
+    let artista: string | undefined;
+    if (artistas_total.length > 0) {
+        if (artistas_total[0].nome !== 'Desconhecida') {
+            artista = artistas_total[0].nome;
+        } else if (artistas_total.length > 1) {
+            if (artistas_total[1].nome !== 'Desconhecida') {
+                artista = artistas_total[1].nome;
+            }
+        }
+    }
+
     const style = styles();
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Text>{category}</Text>
+                <DropDownPicker
+                    theme={theme.dark ? 'DARK' : 'LIGHT'}
+                    open={open}
+                    value={category}
+                    items={items}
+                    setOpen={setOpen}
+                    setValue={setValue}
+                    setItems={setItems}
+                />
                 <View style={{ height: 24 }} />
 
                 <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
@@ -330,7 +289,7 @@ function Category(): JSX.Element {
                 <View style={{ height: 24 }} />
 
                 <View>
-                    <Network category={category} />
+                    <Network category={category} autor={artista} />
                 </View>
                 <View style={{ height: 24 }} />
             </ScrollView>
