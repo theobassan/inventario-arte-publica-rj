@@ -8,4 +8,13 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         ...config.extra,
         googleMapsAPI: process.env.GOOGLE_MAPS_API || '',
     },
+    android: {
+        ...config.android,
+        config: {
+            ...config.android?.config,
+            googleMaps: {
+                apiKey: process.env.GOOGLE_MAPS_API,
+            },
+        },
+    },
 });
