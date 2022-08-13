@@ -5,8 +5,8 @@ import Fato from './fato';
 
 type Obra = {
     ID?: number;
-    Imagem?: any;
-    Artistas?: Artista[] | undefined;
+    Image?: string;
+    Autores?: Artista[] | undefined;
     Titulo?: string;
     Material?: string;
     Altura?: string;
@@ -50,6 +50,7 @@ type Obra = {
     LongitudeRealocacao?: string;
     PontoDeReferenciaorealocacao?: string;
     Lugar?: string;
+    Renomeacao?: boolean;
 };
 
 export default Obra;

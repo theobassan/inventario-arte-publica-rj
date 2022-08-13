@@ -1,11 +1,35 @@
-import { Fato, Pessoa } from '@domain';
-
+import Fato from '../../domain/fato';
+import Pessoa from '../../domain/pessoa';
 import { Escultor, Pintor } from './especialidade';
 import * as pessoas from './pessoa';
 import { CriticoDeArte, Artista, Jornalista } from './profissao';
 
 export const AntonioTaunay: Pessoa = {
     Nome: `Antonio Taunay`,
+};
+
+export const PierreLeGros: Pessoa = {
+    Nome: `Pierre Le Gros`,
+};
+
+export const SimonHurtvelle: Pessoa = {
+    Nome: `Simon Hurtvelle`,
+};
+
+export const JacquesHouzeau: Pessoa = {
+    Nome: `Jacques Houzeau`,
+};
+
+export const JeanBaptistePoultier: Pessoa = {
+    Nome: `Jean Baptiste Poultier`,
+};
+
+export const HCase: Pessoa = {
+    Nome: `H Casé`,
+};
+
+export const PauloWerneck: Pessoa = {
+    Nome: `Paulo Werneck`,
 };
 
 export const Giustiniani: Pessoa = {
@@ -1021,7 +1045,6 @@ export const GustaveFredericMichel: Pessoa = {
 
 export const JoseResende: Pessoa = {
     Nome: `José Resende`,
-
     Descriçao:
         'Esteve ao lado de artistas como Luis Baravelli e CArlos Fajardo. No geral o artista utiliza materiais comuns, pesados, industriais, que declaram o seu caráter urbano e favorecem livres associaçoes com processos de construção.',
     Fatos: [
@@ -1080,7 +1103,6 @@ export const FranzWeissmann: Pessoa = {
     CidadePaisMorte: 'Rio de Janeiro, Brasil',
     Descriçao:
         'Na busca pela essencia da figura, realiza esculturas com formas cada vez mais geometrizadas, no qual o espaço vazado aparece como eleemento definidor. No decorrer da carreira, o Vazio-Ativo, como o artista denominava tais espaços, torna-se uma obsessão. Sua obra surge do jogo entre o plano e suas articulaçoes com o elemento vazado que nasce a tridimensionalidade aberta para o mundo.',
-
     Especialidades: [Escultor],
     Fatos: [
         new Fato('1921', '1924', 'Mudança', 'Mudou-se para o Brasil, foi morar no interior de São Paulo', [], ''),
@@ -1392,7 +1414,6 @@ export const ReynaldoJardim: Pessoa = {
     CidadePaisNascimento: 'São Paulo',
     Morte: '02/02/2011',
     CidadePaisMorte: 'Brasília',
-
     Profissoes: [Jornalista],
     Fatos: [
         new Fato(
@@ -1620,7 +1641,6 @@ export const AluisioCarvão: Pessoa = {
     Nome: `Aluisio Carvão`,
     Nascimento: '1018',
     CidadePaisNascimento: 'Belém, Pará',
-
     Especialidades: [Pintor],
     Fatos: [
         new Fato(
@@ -1881,7 +1901,6 @@ export const EmilioGiannelli: Pessoa = {
 
 export const SironFranco: Pessoa = {
     Nome: `Siron Franco`,
-
     Especialidades: [Pintor, Escultor],
     Fatos: [
         new Fato('', '', '', 'É um dos artistas brasileiros mais conhecidos no exterior.', [], ''),
@@ -1955,8 +1974,8 @@ export const JoseBarreto: Pessoa = {
     Nome: `Jose Barreto`,
 };
 
-export const LiubaWolt: Pessoa = {
-    Nome: `Liuba Wolt`,
+export const LiubaWolf: Pessoa = {
+    Nome: `Liuba Wolf`,
 };
 
 export const JoseMariaJacintoRabelo: Pessoa = {
@@ -2047,6 +2066,18 @@ export const JoseCustodiodeSaeFaria: Pessoa = {
     Nome: `José Custodio de Sá e Faria`,
 };
 
+export const CarlosObregonSantacilia: Pessoa = {
+    Nome: `Carlos Obregon Santacilia`,
+};
+
+export const JoaoTurin: Pessoa = {
+    Nome: `João Turin`,
+};
+
+export const AnisioMederios: Pessoa = {
+    Nome: `Anisio Mederios`,
+};
+
 export const AristocherBenjamimMeschessi: Pessoa = {
     Nome: `Aristocher Benjamim Meschessi`,
 };
@@ -2103,7 +2134,6 @@ export const AscanioMMM: Pessoa = {
     Nome: `Ascanio MMM`,
     Nascimento: '1941',
     CidadePaisNascimento: 'Fão, Portugal',
-
     Especialidades: [Escultor],
     Fatos: [
         new Fato('1959', '1959', 'Muda-se', 'Vem para o Brasil e mora no Rio de Janeiro', [], 'Rio de Janeiro'),
@@ -2271,10 +2301,6 @@ export const ChristinaMotta: Pessoa = {
     Nome: `Christina Motta`,
 };
 
-export const JoaoTurin: Pessoa = {
-    Nome: `João Turin`,
-};
-
 export const SandraGuinle: Pessoa = {
     Nome: `Sandra Guinle`,
 };
@@ -2329,20 +2355,17 @@ export const Ique: Pessoa = {
 
 export const FredericoMoraes: Pessoa = {
     Nome: `Frederico Moraes`,
-
     Profissoes: [CriticoDeArte],
 };
 
 export const ReynaldoRoels: Pessoa = {
     Nome: `Reynaldo Roels`,
-
     Profissoes: [CriticoDeArte],
     Fatos: [new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro')],
 };
 
 export const AmilcardeCastro: Pessoa = {
     Nome: `Amilcar de Castro`,
-
     Profissoes: [Artista],
     Fatos: [
         new Fato('', '', 'Aluno', 'Foi aluno de ', [pessoas.FranzWeissmann, pessoas.AlbertodaVeigaGuignard], 'cidade'),
@@ -3303,8 +3326,8 @@ export const WainoAaltonem: Pessoa = {
     Nome: `Waino Aaltonem`,
 };
 
-export const AugustoZamoysky: Pessoa = {
-    Nome: `Augusto Zamoysky`,
+export const AugustZamoiski: Pessoa = {
+    Nome: `Augusto Zamoiski`,
 };
 
 export const HBertazzoni: Pessoa = {

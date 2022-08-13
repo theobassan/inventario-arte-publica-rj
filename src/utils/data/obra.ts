@@ -1,48 +1,14 @@
-import { Data, Fato, Obra } from '@domain';
-
+import Data from '../../domain/data';
+import Fato from '../../domain/fato';
+import Obra from '../../domain/obra';
 import * as artistas from './artista';
 import * as pessoas from './pessoa';
 
-export const AdolfoVarnhagen_JoseOtavioCorreiaLima: Obra = {
-    ID: 1,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Adolfo Varnhagen`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Bronze`,
-    Descricao: ``,
-    Execucao: true,
-    DataInauguracao: `21/10/1938`,
-    Zona: 'Sul',
-    Bairro: 'Glória',
-    PontoDeReferencia: 'Praça Paris',
-    Latitude: `-22.917001`,
-    Longitude: `-43.177775`,
-    Fatos: [
-        new Fato(
-            '21/10/1938',
-            '21/10/1938',
-            'Inauguração',
-            'O busto de Adolfo Varnhagem foi colocado celebração ao centenário da fundação do Instituto Histórico e Geográfico Brasileiro',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '21/10/1938',
-            '21/10/1938',
-            'Homenageado',
-            'Adolfo Varnhagem, primeiro secretário do Instituto Histórico e Geográfico Brasileiro',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
-};
-
 export const AyrtonSenna_MarioPitanguy: Obra = {
     ID: 1,
-    Artistas: [artistas.MarioPitanguy],
+    Autores: [artistas.MarioPitanguy],
     Titulo: `Ayrton Senna`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -64,10 +30,11 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
 
 export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
     ID: 1,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora Aparecida`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em metal pintada`,
     Descricao: `Pequeno oratório de metal e vidro sobre um pedestal de granito polido com a imagem de Nossa Senhora.`,
@@ -85,10 +52,11 @@ export const OratorioNossaSenhoraAparecida_Desconhecida: Obra = {
 
 export const CemAnosDeRamos_Desconhecida: Obra = {
     ID: 2,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cem Anos de Ramos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto com placa em mármore`,
     Descricao: `Pequeno marco com inscrições comemorativas.`,
@@ -101,8 +69,9 @@ export const CemAnosDeRamos_Desconhecida: Obra = {
 
 export const MarechalFlorianoPeixoto_EduardodeSa: Obra = {
     ID: 36,
-    Artistas: [artistas.EduardodeSa],
+    Autores: [artistas.EduardodeSa],
     Titulo: `Marechal Floriano Peixoto`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -126,8 +95,9 @@ export const MarechalFlorianoPeixoto_EduardodeSa: Obra = {
 
 export const GetulioVargas_LuizSerri: Obra = {
     ID: 40,
-    Artistas: [artistas.LuizSerri],
+    Autores: [artistas.LuizSerri],
     Titulo: `Getulio Vargas`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -165,8 +135,9 @@ export const GetulioVargas_LuizSerri: Obra = {
 
 export const JuceslinoKubischek_Desconhecida: Obra = {
     ID: 41,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Juceslino Kubischek`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -198,9 +169,9 @@ export const JuceslinoKubischek_Desconhecida: Obra = {
 
 export const PauloSampaio_Desconhecida: Obra = {
     ID: 52,
-    Imagem: 'PauloSampaio_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Paulo Sampaio`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -219,8 +190,9 @@ export const PauloSampaio_Desconhecida: Obra = {
 
 export const JoaquimNabuco_OttoDumovich: Obra = {
     ID: 60,
-    Artistas: [artistas.OttoDumovich],
+    Autores: [artistas.OttoDumovich],
     Titulo: `Joaquim Nabuco`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -252,11 +224,12 @@ export const JoaquimNabuco_OttoDumovich: Obra = {
 
 export const BenjamimConstant_DecioVilares_EduardodeSa: Obra = {
     ID: 66,
-    Artistas: [artistas.DecioVilares, artistas.EduardodeSa],
+    Autores: [artistas.DecioVilares, artistas.EduardodeSa],
     Titulo: `Benjamim Constant`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Bronze e pedestal de granito`,
     Descricao: `O monumento tem como figura principal a escultura da Humanidade, simbolizada em uma mulher, tendo seu filho nos braços. A imagem da esposa de Benjamim, traz a bandeira república sendo bordada por
     sua filha e que Lea ofereceu a Escola Militar do Rio de Janeiro e a Escola Superior da Guerra. E o monumento que apresenta o maior número de símbolos exprimindo fatos históricos ligados a Pátria e a Humanidade.`,
@@ -277,9 +250,9 @@ export const BenjamimConstant_DecioVilares_EduardodeSa: Obra = {
 
 export const CandidodeOliveira_LaurindoRamos: Obra = {
     ID: 69,
-    Imagem: 'CandidodeOliveira_LaurindoRamos.jpg',
-    Artistas: [artistas.LaurindoRamos],
+    Autores: [artistas.LaurindoRamos],
     Titulo: `Candido de Oliveira`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -309,8 +282,9 @@ export const CandidodeOliveira_LaurindoRamos: Obra = {
 
 export const SebastiaoLeme_MariadaGloriaVianaPatrasso: Obra = {
     ID: 70,
-    Artistas: [artistas.MariadaGloriaVianaPatrasso],
+    Autores: [artistas.MariadaGloriaVianaPatrasso],
     Titulo: `Sebastião Leme`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -336,57 +310,11 @@ export const SebastiaoLeme_MariadaGloriaVianaPatrasso: Obra = {
     ],
 };
 
-export const JoaoPauloII_MarioAgostinelli: Obra = {
-    ID: 75,
-    Artistas: [artistas.MarioAgostinelli],
-    Promotor: 'Secretaria de Projetos Especiais da Prefeitura da Cidade do Rio de Janeiro',
-    Titulo: `João Paulo II`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Estátua`,
-    Material: `Peça em bronze com pedestal revestido de granito`,
-    Descricao: `A peça foi confeccionada durante dois meses e meio. A iniciativa da Prefeitura da Cidade do Rio de Janeiro fez parte da organização do II Encontro Mundial das famílias com o Papa João Paulo II. O pontifície é representado de corpo inteiro numa postura típica de acolhimento. Junto a ele, encontra-se uma placa com as inscrições: Papa João Paulo II. E conhecereis a verdade e a verdade vos libertará.`,
-    Altura: '250 cm',
-    Peso: '450 kg',
-    ValorObra: 'R$ 150.000,00',
-    Execucao: true,
-    DataInauguracao: `04/10/1997`,
-    Zona: 'Central',
-    Bairro: 'Centro',
-    PontoDeReferencia: 'Jardim da Catedral Metropolitana de São Sebastião, Avenida República do Chile, 245',
-    Latitude: `-22.909576`,
-    Longitude: `-43.1811314`,
-    Lugar: 'Jardim',
-    Fatos: [
-        new Fato('1997', '1997', 'Encomenda oficial', 'Secretaria de Projetos Especiais da Prefeitura da Cidade do Rio de Janeiro', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística E Metalúrgica Ltda.', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('1997', '1997', 'Patrocínio', '150 empresários de origens árabe e judaica.', [], 'Rio de Janeiro'),
-        new Fato(
-            '04/10/1997',
-            '04/10/1997',
-            'Inauguração',
-            'A estátua foi inaugurada logo após a celebração da missa para 5 mil convidados, realizada pelo Papa João Paulo II',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato('06/11/1997', '06/11/1997', 'Vandalismo', 'Grafitaram a estátua do Papa João Paulo II', [], 'Rio de Janeiro'),
-        new Fato(
-            '11/11/1997',
-            '11/11/1997',
-            'Limpeza',
-            'Assim que foi informada da pichação, a Secretaria Especial de Monumentos Públicos mandou verificar a obra. A limpeza foi feita com solventes especiais para remoção de tinta.',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
-};
-
 export const PierreRichiereGuillaumeChartier_JoasPereiradosPassos: Obra = {
     ID: 81,
-    Imagem: 'PierreRichiereGuillaumeChartier_JoasPereiradosPassos.jpg',
-    Artistas: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiradosPassos],
     Titulo: `Pierre Richier e Guillaume Chartier`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -409,8 +337,9 @@ export const PierreRichiereGuillaumeChartier_JoasPereiradosPassos: Obra = {
 
 export const CondeCunha_LuisPaesLeme: Obra = {
     ID: 86,
-    Artistas: [artistas.LuisPaesLeme],
+    Autores: [artistas.LuisPaesLeme],
     Titulo: `Conde Cunha`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -424,8 +353,9 @@ export const CondeCunha_LuisPaesLeme: Obra = {
 
 export const AntonioJanuzzi_Desconhecida: Obra = {
     ID: 94,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Antonio Januzzi`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -439,13 +369,14 @@ export const AntonioJanuzzi_Desconhecida: Obra = {
 
 export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
     ID: 95,
-    Artistas: [artistas.RodolfoAmoedo, artistas.RuffoFanucchi],
+    Autores: [artistas.RodolfoAmoedo, artistas.RuffoFanucchi],
     Titulo: `José do Patrocínio`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `efígie`,
+    TipologiaObra: `Efígie`,
     Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Trata-se de um monolito com uma placa em bronze com a figura do homenageado. <Temporariamente sem visitação no jardim da Biblioteca Nacional. O monumento foi erguido por iniciativa dos jornalistas Heitor Beltrão e Ariosto Berna, com apoio do Movimento Libertador da Terra Carioca e da Casa do Jornalista. Foi inaugurado na data do centenário do Nascimento do homenageado.`,
+    Descricao: `Trata-se de um monolito com uma placa em bronze com a figura do homenageado.<Temporariamente sem visitação no jardim da Biblioteca Nacional. O monumento foi erguido por iniciativa dos jornalistas Heitor Beltrão e Ariosto Berna, com apoio do Movimento Libertador da Terra Carioca e da Casa do Jornalista. Foi inaugurado na data do centenário do Nascimento do homenageado.`,
     Execucao: true,
     DataInauguracao: `10/1953`,
     Latitude: `-22.9090638`,
@@ -454,11 +385,12 @@ export const JosedoPatrocinio_RodolfoAmoedo_RuffoFanucchi: Obra = {
 
 export const LimaBarreto_EdgarDuvivier: Obra = {
     ID: 96,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Lima Barreto do Centro`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Esse monumento foi erguido a pedido da Casa Lima Barreto, pela Prefeitura nas comemorações do nascimento do escritor brasileiro.`,
     Execucao: true,
@@ -470,8 +402,9 @@ export const LimaBarreto_EdgarDuvivier: Obra = {
 
 export const AMelvinJoneseArmandoFarjado_Ariel: Obra = {
     ID: 99,
-    Artistas: [artistas.Ariel],
+    Autores: [artistas.Ariel],
     Titulo: `À Melvin Jones e Armando Farjado`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Medalhão`,
@@ -485,11 +418,12 @@ export const AMelvinJoneseArmandoFarjado_Ariel: Obra = {
 
 export const GabrielHabib_HildegardoLeaoVeloso: Obra = {
     ID: 100,
-    Artistas: [artistas.HildegardoLeaoVeloso],
+    Autores: [artistas.HildegardoLeaoVeloso],
     Titulo: `Gabriel Habib`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `O busto foi realizado nos anos de 1960 e instalada na loja da rede no Centro e posteriormente para uma outra no bairro de Inhaúma. Somente em 2014 foi doado pela familia para o reconhecimento público.`,
     Execucao: true,
@@ -498,9 +432,11 @@ export const GabrielHabib_HildegardoLeaoVeloso: Obra = {
     Longitude: `-43.185118`,
 };
 
-export const GrandjeandeMontiny_NicolinaPintodoCouto: Obra = {
+export const GrandjeandeMontiny_NicolinaVazdeAssisPintodoCouto: Obra = {
     ID: 102,
+    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
     Titulo: `Grandjean de Montiny`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -516,11 +452,12 @@ export const GrandjeandeMontiny_NicolinaPintodoCouto: Obra = {
 
 export const JuliodeCastilhos_Desconhecida: Obra = {
     ID: 103,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Julio de Castilhos`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `O busto de Julio de Castilhos estava no depósito da Prefeitura desde os anos de 1980. Por iniciativa da Casa de Deodoro, a Prefeitura realizou a cessão do uso do busto, a fim de garantir sua integridade bem como sua exposição em espaço público.`,
     Execucao: true,
@@ -531,10 +468,11 @@ export const JuliodeCastilhos_Desconhecida: Obra = {
 
 export const AquedutodaLapa_JoseFranciscoPintoAlpoim: Obra = {
     ID: 104,
-    Artistas: [artistas.JoseFranciscoPintoAlpoim],
+    Autores: [artistas.JoseFranciscoPintoAlpoim],
     Titulo: `Arcos da Lapa ou Aqueduto da Lapa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Símbolo do Rio antigo, presente em grande parte das pinturas e fotografias, é considerada a mais importante obra
@@ -560,10 +498,11 @@ via de acesso ao bairro.`,
 
 export const LampadariodaLapa_RodolfoBernadelli: Obra = {
     ID: 105,
-    Artistas: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernadelli],
     Titulo: `Lampadário da  Lapa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `poste`,
     Material: `Peça em bronze e pedestal de gnaisse`,
     Descricao: `Primeiro lampadário artístico da Cidade, inaugurado na comemoração da abertura da Avenida Mem de Sá, e concebido por Bernardelli<para substituir os postes da Companhia Jardim Botânico Thephonicy Nacional. É uma composição que lembra as grandes navegações portuguesas. Da parte superior do fuste de granito saem quatro sinuosas serpentes de bronze, das bocas das quais pendem quatro lampadários. O monumentofoi uma encomenda ao artista pelo prefeito Pereira Passos.`,
@@ -575,10 +514,11 @@ export const LampadariodaLapa_RodolfoBernadelli: Obra = {
 
 export const EscadariadeSelaron_JorgeSelaron: Obra = {
     ID: 106,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Escadaria de Selarón`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Peças de azulejos`,
     Descricao: `Escadaria, com 215 degraus, revestida com azulejos de 114 países que compõe um grande mosaico.//Azulejos de 48 países  Usando inicialmente cores da bandeira brasileira - verde, amarelo e azul -, o artista chileno deu início à colocação dos azulejos por ocasião da Copa do Mundo de Futebol de 1994, passando, posteriormente, a fixar azulejos inteiros, ou em cacos, originários de muitos países.`,
@@ -603,10 +543,11 @@ export const EscadariadeSelaron_JorgeSelaron: Obra = {
 
 export const PaineldosArcosdaLapa_JorgeSelaron: Obra = {
     ID: 107,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel dos Arcos da Lapa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Peças de azulejos`,
     Descricao: `Painel nas cores vermelha e branco inacabado tendo ao centro a paisagem urbana da região, fixado num muro divisório, fazendo fundo a uma das arcadas, na subida para o bairro de Santa Teresa.`,
@@ -617,10 +558,11 @@ export const PaineldosArcosdaLapa_JorgeSelaron: Obra = {
 
 export const PaineldaLapa_JorgeSelaron: Obra = {
     ID: 108,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel  da Lapa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Peças de azulejos`,
     Descricao: `Painel nas cores preta e amarela,com a inscriçãao Lapa fixado num muro divisório, azendo fundo a uma das arcadas, na subida para o bairro de Santa Teresa.`,
@@ -631,8 +573,9 @@ export const PaineldaLapa_JorgeSelaron: Obra = {
 
 export const PainelCopa2014_JorgeSelaron: Obra = {
     ID: 109,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel Copa 2014`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Mosaico`,
@@ -646,10 +589,11 @@ export const PainelCopa2014_JorgeSelaron: Obra = {
 
 export const PainelVivernaFavela_JorgeSelaron: Obra = {
     ID: 110,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel Viver na Favela`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `Pintuta nos tons preto, vermelho ee branco com a figura de sua propria imagem e inscrição com sua mensagem`,
@@ -661,10 +605,11 @@ export const PainelVivernaFavela_JorgeSelaron: Obra = {
 
 export const PainelPropagandadeSelaron_JorgeSelaron: Obra = {
     ID: 111,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel Propaganda de Selarón`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `Pintura nas cores preto e vermelho, com a figura Selaron e seu trabalho como propaganda.`,
@@ -676,11 +621,12 @@ export const PainelPropagandadeSelaron_JorgeSelaron: Obra = {
 
 export const PainelGravidasdeSelaron_JorgeSelaron: Obra = {
     ID: 112,
-    Artistas: [artistas.JorgeSelaron],
+    Autores: [artistas.JorgeSelaron],
     Titulo: `Painel Gravidas de Selarón`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
-    TipologiaObra: `painel`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Painel`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `Pintura nas cores preta e branca, com diversas figuras femininas gravidas, tipicas de Selaron`,
     Execucao: true,
@@ -690,16 +636,17 @@ export const PainelGravidasdeSelaron_JorgeSelaron: Obra = {
 
 export const PortaoMonumentaldoPasseioPublico_MestreValentim: Obra = {
     ID: 113,
-    Artistas: [artistas.MestreValentim],
+    Autores: [artistas.MestreValentim],
     Titulo: `Portão Monumental do Passeio Público`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro forjado e colunas de gnaisse e lioz`,
-    Descricao: `Trata-se do primeiro portão destinado ao espaço público. 
-O pórtico  é formado por  blocos de gnaisse  superpostos. Na base  peças de lioz intercalam definindo a base da coluna.  O portão é divido em três peças, duas folhas de abrir e um frontispício. O portão tem em cada folha chapas de ferro forjado formando folhagens estilizadas. O  frontispício de forma triangular tem  chapas de ferro  curvas e ao  seu centro um grande medalhão em bronze fundido com a fisionomia em perfil da rainha de Portugal D. Maria I e por trás a figura de seu marido Pedro III. Essa peça pintada em ouro é um esmero de fundição com  definição de traços, cabelos, vestimenta, brincos e colar. 
+    Descricao: `Trata-se do primeiro portão destinado ao espaço público.
+O pórtico é formado por blocos de gnaisse superpostos. Na base peças de lioz intercalam definindo a base da coluna. O portão é divido em três peças, duas folhas de abrir e um frontispício. O portão tem em cada folha chapas de ferro forjado formando folhagens estilizadas. O frontispício de forma triangular tem chapas de ferro curvas e ao seu centro um grande medalhão em bronze fundido com a fisionomia em perfil da rainha de Portugal D. Maria I e por trás a figura de seu marido Pedro III. Essa peça pintada em ouro é um esmero de fundição com definição de traços, cabelos, vestimenta, brincos e colar.
 De cada lado do medalhão existe outro conjunto em bronze, de guirlandas de rosas e margaridas.
-Culminando o conjunto existem delicadas pinhas em bronze. A arte barroca do Mestre Valentim nas igrejas caracteriza-se por delicados rostos de anjos, contudo neste frontispício pequenos rostos de traços  mestiços  apoiando a estruturas curvas do portão.  A face oposta da rainha direcionada para o interior do  parque  esta fixada um medalhão com as armas do antigo Estado da Guanabara, que substituem o antigo brasão do império. As armas da cidade do Rio de Janeiro substituíram as armas do Império, exibidas no passado no medalhão. Além de seu valor artístico, o medalhão de D.Maria I tem grande valor histórico por ser uma das poucas referências em via pública, no Brasil, à memória da rainha de Portugal, que viria a morrer no Rio de Janeiro em 1816.  . A peça, em estilo rococó, foi concebida por Mestre Valentim e apresentam elementos típicos da obra do artista.`,
+Culminando o conjunto existem delicadas pinhas em bronze. A arte barroca do Mestre Valentim nas igrejas caracteriza-se por delicados rostos de anjos, contudo neste frontispício pequenos rostos de traços mestiços apoiando a estruturas curvas do portão. A face oposta da rainha direcionada para o interior do parque esta fixada um medalhão com as armas do antigo Estado da Guanabara, que substituem o antigo brasão do império. As armas da cidade do Rio de Janeiro substituíram as armas do Império, exibidas no passado no medalhão. Além de seu valor artístico, o medalhão de D.Maria I tem grande valor histórico por ser uma das poucas referências em via pública, no Brasil, à memória da rainha de Portugal, que viria a morrer no Rio de Janeiro em 1816. . A peça, em estilo rococó, foi concebida por Mestre Valentim e apresentam elementos típicos da obra do artista.`,
     Execucao: true,
     DataInauguracao: `01/1783`,
     Latitude: `-22.9130414`,
@@ -709,9 +656,10 @@ Culminando o conjunto existem delicadas pinhas em bronze. A arte barroca do Mest
 export const Galo_MariaMartins: Obra = {
     ID: 113,
     Titulo: `Galo`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'artistica',
-    TipologiaObra: `escultura de parede`,
+    TipologiaObra: `Painel`,
     Material: `bronze`,
     Descricao: 'está localizada na parede da Maison de FRance, não é espaço público',
     Execucao: true,
@@ -721,14 +669,14 @@ export const Galo_MariaMartins: Obra = {
 
 export const PiramideASaudadedoRio_MestreValentim: Obra = {
     ID: 115,
-    Artistas: [artistas.MestreValentim],
+    Autores: [artistas.MestreValentim],
     Titulo: `Pirâmide - Á Saudade do Rio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Blocos de gnaisses`,
     Descricao: `Foi construída no período de 1794 a 1806 e são as últimas obras píblicas do Mestre Valentim. A pirâmide tem com cerca de quinze metros de altura e dois metros em cada face da seção. Há uma inscrição cartela oval em mármore de lioz: Saudade do Rio"`,
-
     Execucao: true,
     DataInauguracao: `01/1806`,
     Latitude: `-22.9136656`,
@@ -737,16 +685,16 @@ export const PiramideASaudadedoRio_MestreValentim: Obra = {
 
 export const QuiosquedoPasseioPublico_Desconhecida: Obra = {
     ID: 120,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Quiosque do Passeio Público`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Madeira`,
     Descricao: `Os dois exemplares similares existentes no parque são relíquias dos queexistiram nas ruas do Rio de Janeiro, para venda de pequenas mercadorias, como café, cachaça e bilhetes de loteria.
 Provavelmente foi instalado no período da gestão de Pereira Passos (1902-1906) quando este realizou várias novas instalações no parque (como aquário, café-concerto) e retirou esse equipamento das ruas, sendo esse um dos que restou do período.
 O quiosque tem cinco lados iguais é dividido por metade fixa e outra móvel para permitir que através dessa a comercialização. A cobertura em chapa de zinco apresenta uma forma semelhante às coberturas chinesas, A estrutura que apóia a chapa é de ferro.<`,
-
     Execucao: true,
     DataInauguracao: ``,
     PontoDeReferencia: 'Passeio Público',
@@ -756,14 +704,14 @@ O quiosque tem cinco lados iguais é dividido por metade fixa e outra móvel par
 
 export const GuardaCorpoDeGalhosdeArvore_Desconhecida: Obra = {
     ID: 121,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo de Galhos de Àrvore`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em ferro fundido`,
     Descricao: `Guarda-corpo imitando galhos de árvores amarrados e entrelaçados. no estilo romântico implantado por AugusteFrancoisMarieGlaziou.`,
-
     Execucao: true,
     DataInauguracao: `01/1862`,
     Latitude: `-22.9137854`,
@@ -772,14 +720,14 @@ export const GuardaCorpoDeGalhosdeArvore_Desconhecida: Obra = {
 
 export const BancodoRecantoGlaziou_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 122,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Banco do Recanto Glaziou`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Banco`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Denominado recanto, foi construido em argamassa imitando blocos de pedra, bancos e ninchos para o plantio, composição tipica do estilo romântico i. Nesse recanto, de um lado existe um banco e do outro uma pequena cascata.`,
-
     Execucao: true,
     DataInauguracao: `01/1862`,
     Latitude: `-22.9127565`,
@@ -788,14 +736,14 @@ export const BancodoRecantoGlaziou_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const GradildoPasseioPublico_Desconhecida: Obra = {
     ID: 123,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil do Passeio Público`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `O gradil foi instalado no parque para a segurança envolvendo todo o seu perímetro. É composto por modulos com colunas, barras e ponteiras. Tem o mesmo padrão do instalado no Campo de Santana, cujos projetos de paisagismo foram implantados por AugusteFrancoisMarieGlaziou.`,
-
     Execucao: true,
     DataInauguracao: `01/1968`,
     PontoDeReferencia: 'Passeio Público',
@@ -805,10 +753,11 @@ export const GradildoPasseioPublico_Desconhecida: Obra = {
 
 export const PaineldeSantaBarbara_DjaniradaMottaeSilva: Obra = {
     ID: 124,
-    Artistas: [artistas.DjaniradaMottaeSilva],
+    Autores: [artistas.DjaniradaMottaeSilva],
     Titulo: `Painel de Santa Bárbara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Painel`,
     Material: `Peças de azulejos`,
     Descricao: `O painel foi criado em homenagem aos operarios mortos no desabamento durante os trabalhos da abertura do Túnel Santa Barbara. Foi inaugurado junto com o tunel em 1964 e instalado numa capela localizada em uma gruta acima do túnel. Em 1984 devido às precárias condições, com inumeras a infiltrações na capela, foi desmontado. Em 1990 quando foi restaurado pela Fundação Roberto Marinho foi firmaram acordo entre o Governo do Estado e o Museu Nacional de Belas Artes para a sua cessão e transferencia. Foi reinaugurado em 1994 no Museu Nacional de Belas Artes numa estrutural metalica movel.`,
@@ -820,11 +769,12 @@ export const PaineldeSantaBarbara_DjaniradaMottaeSilva: Obra = {
 
 export const AoNuncaMais_CristinaPozzobon: Obra = {
     ID: 125,
-    Artistas: [artistas.CristinaPozzobon],
+    Autores: [artistas.CristinaPozzobon],
     Titulo: `Ao Nunca Mais`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Aço Corten`,
     Descricao: `Monumento em homenagem a resistência e a luta pela anistia, doado à Cidade pela Comissão de Anistia do Ministério da Justiça, por ocasião dos 50 anos do Golpe de 1964. As estrelas cravadas no piso são em homenagem aos militares cassados após o golpe de 1964.Escultura com cerca de 3 m de altura, ele tem uma bandeira "desconstruída" com estrelas afixadas no chão.`,
     Execucao: true,
@@ -835,11 +785,12 @@ export const AoNuncaMais_CristinaPozzobon: Obra = {
 
 export const Pax_MarioMatos: Obra = {
     ID: 126,
-    Artistas: [artistas.MarioMatos],
+    Autores: [artistas.MarioMatos],
     Titulo: `Pax (Paz)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de mármore`,
     Descricao: `Figura feminina em bronze representando a Paz, sobre uma coluna em mármore de Verona com florões e detalhe corinto
     no topo. Esse monumento faz par com outro, que representa o trabalho, emoldurando o prédio da Camara dos Vereadores da Cidade,
@@ -856,11 +807,12 @@ export const Pax_MarioMatos: Obra = {
 
 export const Trabalho_MarioMatos: Obra = {
     ID: 127,
-    Artistas: [artistas.MarioMatos],
+    Autores: [artistas.MarioMatos],
     Titulo: `Trabalho (Labor)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de mármore`,
     Descricao: `Figura feminina em bronze representando o Trabalho, sobre uma coluna em mármore de Verona com florões e detalhe
     corinto no topo. Esse monumento faz par com outro, que representa a Paz, emoldurando o prédio da Câmara dos Vereadores.`,
@@ -876,11 +828,12 @@ export const Trabalho_MarioMatos: Obra = {
 
 export const CriancasComAConcha_Desconhecida: Obra = {
     ID: 128,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Crianças com a Concha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore com pedestal de gnaisse`,
     Descricao: `Esse conjunto de crianças, são reproduções das peças do Jardim de Versalhes, de François Lespingola,doada à cidade pelafamília Guinle, para a decoração do Chafariz.`,
     Execucao: true,
@@ -891,11 +844,12 @@ export const CriancasComAConcha_Desconhecida: Obra = {
 
 export const CriancasComoPassaro_Desconhecida: Obra = {
     ID: 129,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Crianças com o Pássaro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore com pedestal de gnaisse`,
     Descricao: `Esse conjunto de crianças são reproduções deSimon Mazièredas peças Jardim de Versalhes, d<oada à cidade pela<família Guinle.`,
     Execucao: true,
@@ -906,14 +860,14 @@ export const CriancasComoPassaro_Desconhecida: Obra = {
 
 export const CriancasComATocha_Desconhecida: Obra = {
     ID: 130,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Crianças com a Tocha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore com pedestal de gnaisse`,
     Descricao: `Esse conjunto de crianças são reproduções, das peças existentes nos Jardim de Versalhes, de Philippe Granier, doada à cidade pela<família Guinle para a decoração do Chafariz.`,
-
     Execucao: true,
     DataInauguracao: `01/1928`,
     Latitude: `-22.9119106`,
@@ -922,11 +876,12 @@ export const CriancasComATocha_Desconhecida: Obra = {
 
 export const CriancasComflores_Desconhecida: Obra = {
     ID: 131,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Crianças com flores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore com pedestal de gnaisse`,
     Descricao: `O conjunto de crianças são reproduções das peças do Jardim de Versalhes, de <Pierre Laviron,doada à cidade pelafamília Guinle.`,
     Execucao: true,
@@ -937,11 +892,12 @@ export const CriancasComflores_Desconhecida: Obra = {
 
 export const ObeliscodaAvenidaRioBranco_AZanuzziCia: Obra = {
     ID: 132,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Obelisco da Avenida Rio Branco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `obelisco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Obelisco`,
     Material: `Peça em granito`,
     Descricao: `A Zanuzzi Cia - Obelisco circular de granito extraído do Morro da Viúva, com 28 toneladas paracomemorar da abertura da Avenida Rio Branco, iniciada em 8 de março de 1904 e concluído na data de inauguração do marco, dia 14 de novembro de 1906.
 O projeto foi organizado no escritório tecnico da Comissão Construtora da Avenida Central, cujo chefe era o Dr. Paulo de Frontim e executado pelos Srs A. Januzzi & Irmãos, tendo como engenheiro de acompanhamento o Dr. Le Cocq.
@@ -954,10 +910,11 @@ O Monumento tem cinco blocos, com dimensões e decoração distintas, todos em p
 
 export const ArcodosTeles_JoseFernandesPintoAlpoim: Obra = {
     ID: 133,
-    Artistas: [artistas.JoseFernandesPintoAlpoim],
+    Autores: [artistas.JoseFernandesPintoAlpoim],
     Titulo: `Arco dos Teles`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção do periodo colonial, cujo proprietario Teles de Menezes, deu nome ao local.  Em 1790um incêndiodestruiu a maior parte da casa dos Teles, restando apenas o trecho que hoje constitui o Arco do Teles.`,
@@ -969,10 +926,11 @@ export const ArcodosTeles_JoseFernandesPintoAlpoim: Obra = {
 
 export const CaisdoChafarizdaPracaXVdeNovembro_Desconhecida: Obra = {
     ID: 134,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cais do Chafariz da Praça XV de Novembro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Blocos de gnaisses`,
     Descricao: `Construido a frente do Chafariz do Mestre Valentim,foi desenterrado em 1989 aterrado devido ao assoreamento da baia por volta de 1875. Em 1989 depois de uma pesquisa arqueologica, foi desenterrado e exposto um trecho, para permitir a noção do limite do mar no seculo XVIII.`,
@@ -984,11 +942,12 @@ export const CaisdoChafarizdaPracaXVdeNovembro_Desconhecida: Obra = {
 
 export const MarquesdoLavradio_GracaCostaCabral: Obra = {
     ID: 97,
-    Artistas: [artistas.GracaCostaCabral],
+    Autores: [artistas.GracaCostaCabral],
     Titulo: `Marquês do Lavradio`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `O monumento foi uma doação à cidade pelo Quarteirão Cultural da Rua do Lavradio.`,
     Execucao: true,
@@ -999,10 +958,11 @@ export const MarquesdoLavradio_GracaCostaCabral: Obra = {
 
 export const PisodePedeMolequedaLadeiradaMisericordia_Desconhecida: Obra = {
     ID: 136,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Ladeira da Misericórdia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de gnaisse`,
     Descricao: `A Ladeira de Misericórdiafoi a primeira rua da cidade que ocorreu com a ocupação do Morro do Castelo. Aberta em 1567, a fica ao lado da Igreja de Nossa Senhora do Bonsucesso (a mais antiga da cidade) e do prédio do hospital da Santa Casa da Misericórdia, ambos tombados pelo Iphan.Em 1840 começa o calçamento das ruas do centro provavelmente nesse período a rua recebeu calçamento. Dois anos depois de sua fundação, em 1567, a cidade foi transferida para o Morro do CasteloNo inicio da ocupação o único acesso ao local era pela Rua da Misericórdia, onde hoje só resta cerca de 50 metros com calçamento em pe de moleque. O Morro do Castelo de onde se tinha uma visão privilegiada da Baia da Guanabara começa na Rua da Misericórdia. O vice-rei conde da Cunha, para tornar mais fácil o acesso ao morro, mandou ordenar ra ladeira, junto à Igreja da Misericórdia, a que denominou de Calçada da Sé. Em 1808 o possuía apenas 6 edificações; em 1877, 11 e em 1903, 13 - sendo 4 delas de 3 pavimentos, recenceando-se ao todo 317 habitantes neste logradouro. Com as obras de arrazamento do morro do Castelo, desapareceu êsse logradouro (1922), restando uma pequena elevação ao lado do largo da Misericórdia.`,
@@ -1014,10 +974,11 @@ export const PisodePedeMolequedaLadeiradaMisericordia_Desconhecida: Obra = {
 
 export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
     ID: 145,
-    Artistas: [artistas.FranzWeissmann],
+    Autores: [artistas.FranzWeissmann],
     Titulo: `Monumento A Liberdade De Expressao`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Obelisco`,
     Material: 'concreto',
     Descricao: `Considerado o primeiro monumento de Arte Concreta da América Latina. Foi o primeiro monumento à liberdade de expressão a ser erigido nas Américas, além de ter sido a primeira obra pública de Franz Weissmam, encomendada pela Associação das Emissoras de São Paulo.`,
@@ -1045,10 +1006,11 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
 
 export const PortaodoCampodeSantana_Desconhecida: Obra = {
     ID: 146,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de gnaisse e`,
     Descricao: `São quatro portões, um em cada eixo do parque. Na parte superior possui um arco
@@ -1067,11 +1029,12 @@ export const PortaodoCampodeSantana_Desconhecida: Obra = {
 
 export const Verao_PaulJeanBaptisteGasq: Obra = {
     ID: 150,
-    Artistas: [artistas.PaulJeanBaptisteGasq],
+    Autores: [artistas.PaulJeanBaptisteGasq],
     Titulo: `Verão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
     Descricao: `Esta escultura e o Inverno foram instaladas inicialmente na Praça XV em 1906 e posteriormente, em 1914 transferida para o Campo de Santana. Escultura em mármore de carrara da figura de um jovem homem em atitude estática. Olhando para o horizonte com o semblante sério, a mão esquerda protege seus olhos do Sol. Segura com a mão direita uma espécie de foice (colheita do trigo). Encontra-se entre ramos de trigo que simbolizam a abundância, a prosperidade. Tem os pés descalços.`,
     Execucao: true,
@@ -1083,10 +1046,11 @@ export const Verao_PaulJeanBaptisteGasq: Obra = {
 
 export const GuaritasdoCampodeSantana_Desconhecida: Obra = {
     ID: 153,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guaritas do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Madeira`,
     Descricao: `São quatro guaritas, todas próximas aos portões de ferro que dão acesso ao interior do parque. As construções temcobertura de em placas de amianto retangulares imitando pedras de ardósia. Tem 4 colunas de ferro fundido, de base circula, com relevos na decoração. As paredes tem fechamentos de madeira com venezianas, pintadas na cor verde, na base em blocos de granito.
@@ -1101,11 +1065,12 @@ No acervo do Museu Histórico da Cidade do Rio de Janeiro, foi encontrado um pro
 
 export const GradildoCampodeSantana_Desconhecida: Obra = {
     ID: 154,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `gradil`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `Esse é o segundo gradil instalado no Parque produzido nas Fundições Zanatta. O primeiro foi construído pela Companhia Barborat; dês Hants Founaux; du Val D' Osne, que hoje se encontram divididos nos seguintes locais: Parque do Recanto do Trovador, no Açude Solidão na Floresta da Tijuca e na Avenida Pasteur.`,
     Execucao: true,
@@ -1117,10 +1082,11 @@ export const GradildoCampodeSantana_Desconhecida: Obra = {
 
 export const Guarda_corpoIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 155,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Guarda-corpo I do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Peças imitando troncos de árvores, que cruzam o lago frontal Campo de Santana.`,
@@ -1133,10 +1099,11 @@ export const Guarda_corpoIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const Guarda_corpoIIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 156,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Guarda-corpo II do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em argamassa`,
     Descricao: `Peças imitando blocos de pedra, para a proteção daqueles que cruzam o lago.`,
@@ -1149,11 +1116,12 @@ export const Guarda_corpoIIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = 
 
 export const BebedouroTroncodeArvore_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 157,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Bebedouro Tronco de Árvore`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `bebedouro`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Bebedouro`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Peça imitando tronco de árvore, proximo a gruta do Campo de Santana. Desativado em data desconhecida.`,
     Execucao: true,
@@ -1165,7 +1133,7 @@ export const BebedouroTroncodeArvore_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const PainelGentileza1_ProfetaGentileza: Obra = {
     ID: 1,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 1`,
     Material: 'pintura',
     DataInauguracao: '1980',
@@ -1181,7 +1149,7 @@ export const PainelGentileza1_ProfetaGentileza: Obra = {
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecido José Datrino, executou 56 painéis, durante os anos de 1980.`,
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
     Temporalidade: 'efemero',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'grafite',
@@ -1190,7 +1158,7 @@ export const PainelGentileza1_ProfetaGentileza: Obra = {
 
 export const PainelGentilez2_ProfetaGentileza: Obra = {
     ID: 2,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 2`,
     Material: 'pintura',
     DataInauguracao: '1980',
@@ -1206,7 +1174,7 @@ export const PainelGentilez2_ProfetaGentileza: Obra = {
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecido José Datrino, executou 56 painéis, durante os anos de 1980.`,
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
     Temporalidade: 'efemero',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'grafite',
@@ -1215,10 +1183,11 @@ export const PainelGentilez2_ProfetaGentileza: Obra = {
 
 export const RelogiodaCarioca_Desconhecida: Obra = {
     ID: 159,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio do Largo da Carioca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em ferro fundido e pedestal de granito`,
     Descricao: `Originariamente era um lampadário da Cidade. Composto de uma base de cantaria circular,
@@ -1242,12 +1211,12 @@ Em 1999, o relógio foi restaurado pela Prefeitura, com recurso do BNDES (Banco 
 
 export const Brasil_DanielBellionGomesPinto: Obra = {
     ID: 161,
-    Imagem: 'Brasil_DanielBellionGomesPinto.jpg',
-    Artistas: [artistas.DanielBellionGomesPinto],
+    Autores: [artistas.DanielBellionGomesPinto],
     Titulo: `Brasil`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Aço Corten`,
     Descricao: `Escultura em aço cortada apresentando o mapa do Brasil.`,
     Execucao: true,
@@ -1272,10 +1241,11 @@ export const Brasil_DanielBellionGomesPinto: Obra = {
 
 export const PisodeParalelepipedodoBecodosBragancas_Desconhecida: Obra = {
     ID: 162,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Paralelepípedo do Beco dos Braganças`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Blocos de granito`,
     Descricao: `O beco recebeu tal nome a partir de 1767, quando da chegada do regimento Bragança, que ocupou os quartéis de São Bento, localizado nessa rua. O piso e a largura da via da rua caracterizama ruela colonial.`,
@@ -1287,11 +1257,12 @@ export const PisodeParalelepipedodoBecodosBragancas_Desconhecida: Obra = {
 
 export const EsculturaItamaratiI_Desconhecida: Obra = {
     ID: 163,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Escultura Itamarati I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
     Descricao: `Escultura neoclássica da figura feminina com o braço direito apoiado a uma cornucópia de onde caem moedas.`,
     Execucao: true,
@@ -1302,11 +1273,12 @@ export const EsculturaItamaratiI_Desconhecida: Obra = {
 
 export const EsculturaItamaratiII_Desconhecida: Obra = {
     ID: 164,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Escultura Itamarati II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
     Descricao: `Escultura neoclássica de uma figura masculina com o braço direito encostado sobre um tronco, contra o qual se apoia um arco.`,
     Execucao: true,
@@ -1317,10 +1289,11 @@ export const EsculturaItamaratiII_Desconhecida: Obra = {
 
 export const MarcoaosAviadores_Desconhecida: Obra = {
     ID: 166,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco aos Aviadores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Marco em pedra tosca com uma águia com as asas abertas, em bronze, no topo. No pedestal está fixado um medalhão, com a descrição da dedicação dos servidores à Aviação Civil, resultou olivro "Viação Comercial do Brasil, deJosé Garcia d. Rocha.`,
@@ -1332,10 +1305,11 @@ export const MarcoaosAviadores_Desconhecida: Obra = {
 
 export const MarcoCapsuladoTempo_Desconhecida: Obra = {
     ID: 171,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Cápsula do Tempo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Granito`,
     Descricao: `Monolito de granito com dois metros de altura doadopelo exército Brasileiro com um espaço vazado no granito fechado por uma placa.No interior foi colocada um cilindro ( capsula) de bronze de um metro de altura, onde estão guardadas uniformes, mensagens, fotografias, disco gravado com a história do movimento bandeirante do Brasil, com depoimento prestado por D. Jrônima Mesquita, fundadora da Federação das Bandeirantes.
@@ -1348,10 +1322,11 @@ A cápsula, que foi trazida por um helicoptero pelo Secretario de Obrasvras Paul
 
 export const VasosdaAvenidaPresidenteVargas_EmilioGiannelli: Obra = {
     ID: 175,
-    Artistas: [artistas.EmilioGiannelli],
+    Autores: [artistas.EmilioGiannelli],
     Titulo: `Vasos da Avenida Presidente Vargas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em ferro fundido`,
     Descricao: `Originariamente foram instalado em 1965 na Praça Floriano. Foram retiradas para a obra do metro em 1979 e instalada na Avenida Presidente Vargas 1982. Formam um conjunto de 14 peças. Deste oito (8) estão na Avenida Presidente Vargas, um (1) encontra-se no Largo São Francisco da Prainha, um (1) no Parque Noronha Santos e os quatro(4) últimos no Parque Guinle.
@@ -1365,10 +1340,11 @@ O outubro de 2016 o vaso que se situava no Largo de São Francisco da Praianha, 
 
 export const GuardacorpodaAvenidaPresidenteVargas_Desconhecida: Obra = {
     ID: 176,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Presidente Vargas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em concreto`,
     Descricao: `Os primeiros balaústres eram de ferro fundido, mas foram substituídos ao longo do tempo por peças de concreto.`,
@@ -1381,10 +1357,11 @@ export const GuardacorpodaAvenidaPresidenteVargas_Desconhecida: Obra = {
 
 export const EmbocaduradoTunelJoaoRicardo_Desconhecida: Obra = {
     ID: 177,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Embocadura do Tunel João Ricardo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Argamassa`,
     Descricao: `As obras para a abertura dotúnelligando a zonaportuáriaa Central do Brasil. Foraminiciadasem 1919<sob a direção do engenheiro Marques Porto<, Secretário Geral de Viação e Obras da Prefeitura. Na cerimonia o Presidente da Republica , fez a detonação das ultimas pedras como fato inauugural.`,
@@ -1396,12 +1373,12 @@ export const EmbocaduradoTunelJoaoRicardo_Desconhecida: Obra = {
 
 export const PeaPe_OtavioAvancini: Obra = {
     ID: 178,
-    Imagem: 'PeaPe_OtavioAvancini.jpg',
-    Artistas: [artistas.OtavioAvancini],
+    Autores: [artistas.OtavioAvancini],
     Titulo: `Pé a Pé`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Arvore Morta`,
     Descricao: `A escultura foi executada a partir de uma árvore que estava morta no local, simulando duas pernas que se erguem do chão.`,
     Execucao: true,
@@ -1416,10 +1393,11 @@ export const PeaPe_OtavioAvancini: Obra = {
 
 export const PaineldoEdificioAndorinha_BelmirodeAlmeida: Obra = {
     ID: 180,
-    Artistas: [artistas.BelmirodeAlmeida],
+    Autores: [artistas.BelmirodeAlmeida],
     Titulo: `Painel do Edifício Andorinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Esse mosaico decorava a entrada do Edifício Andorinha, de 1934, vitimado por um incêndio 17 de fevereiro de 1986 e depois demolido. Após sua restauração o painel se tornou um bem público.`,
@@ -1431,11 +1409,12 @@ export const PaineldoEdificioAndorinha_BelmirodeAlmeida: Obra = {
 
 export const OratoriodeNossaSenhoradoCaboBoaEsperanca_MestreAlvesSetubal: Obra = {
     ID: 185,
-    Artistas: [artistas.MestreAlvesSetubal],
+    Autores: [artistas.MestreAlvesSetubal],
     Titulo: `Oratório de Nossa Senhora do Cabo Boa Esperança`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `oratório`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Oratório`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construído em 1763, foi transferido em 1812 para a esquina seguinte, onde hoje se abre a Rua Sete de Setembro, retornando ao sítio original em 1924. A construção do arco teve por finalidade permitir a comunicação da Rua "Detrás do Carmo", atual Rua do Carmo, com o adro na nova Igreja. Na parte superior do arco foi colocado o oratório de Nossa Senhora do Cabo da Boa Esperança, também de pedra e envidraçado, com a bacia revestida de azulejos, ladeado por volutas e encimado por cruz de trevo. A imagem que ficava no oratório, foi transferida para o interior da Igreja.`,
     Execucao: true,
@@ -1446,11 +1425,12 @@ export const OratoriodeNossaSenhoradoCaboBoaEsperanca_MestreAlvesSetubal: Obra =
 
 export const PisodeMacadamedoBecodosBarbeiros_Desconhecida: Obra = {
     ID: 186,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Macadame do Beco dos Barbeiros`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Blocos de gnaisses`,
     Descricao: `Beco com piso de macadamecom a calha no centro para o escoamento das águas.
     Foi aberto pela Ordem Terceira do Carmo como passagem entre a Rua Direita, atual Primeiro de Março, e a Rua do Carmo. O nome se deve ao fato de ter sido ocupado por barbeiros quando foi aberta uma passagem durante a construção da Igreja da Ordem Terceira do Carmo,`,
@@ -1462,11 +1442,12 @@ export const PisodeMacadamedoBecodosBarbeiros_Desconhecida: Obra = {
 
 export const PisodeConstaneiradoBecodasCancelas_Desconhecida: Obra = {
     ID: 187,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Constaneira do Beco das Cancelas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Blocos de granito`,
     Descricao: `Calçamento de piso de constaneira, situado entre a Rua do Rosário e a Rua do Ouvido. Com três metros de largura e vinte e oito de extensão, ainda guarada o traçado e a pavimentação do Rio no período colonial. O calçamento é em lajota de pedra e há uma valeta para o escoamento da água, com inclinação das extremidades para o centro.
 O beco é um dos mais estreitos da cidade, que dava passagem de dia aos pedestres entre as ruas que cortava. À noite suas cancelas se fechavam. Passado os séculos, suas cancelas, ficaram gravadas na tradição carioca e o nome pitoresco nelas inspirado. [pág. 74]`,
@@ -1478,10 +1459,11 @@ O beco é um dos mais estreitos da cidade, que dava passagem de dia aos pedestre
 
 export const MarcoBahai_Desconhecida: Obra = {
     ID: 188,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Baha-i`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Monolito de concreto com placa em aluminio`,
     Descricao: `Marco comemorativo da chegada da Sra Leonora Stirling Armstrong ao Brasil, em 1921.`,
@@ -1493,11 +1475,12 @@ export const MarcoBahai_Desconhecida: Obra = {
 
 export const BancoGotadAgua_JorgeCupim: Obra = {
     ID: 189,
-    Artistas: [artistas.JorgeCupim],
+    Autores: [artistas.JorgeCupim],
     Titulo: `Banco Gota d'Água`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto revestida de pedra portuguesa`,
     Descricao: `Banco criado para a praça a partir do concurso promovido pela Secretaria Municipal de Conservação e dedicado a um dos icones da cidade, a pedra portuguesa. A criação foi a vencedora do Prêmio Tatuagem Urbana.`,
     Execucao: true,
@@ -1508,11 +1491,12 @@ export const BancoGotadAgua_JorgeCupim: Obra = {
 
 export const OratoriodeNossaSenhoradeFatima_EduardoRaymundoRodrigues: Obra = {
     ID: 190,
-    Artistas: [artistas.EduardoRaymundoRodrigues],
+    Autores: [artistas.EduardoRaymundoRodrigues],
     Titulo: `Oratório de Nossa Senhora de Fátima`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `oratório`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Oratório`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `A construção do Oratório foi inciada em maio e inaugurada em outubro do mesmo ano. Foi idealizada como uma gratidão e homenagem do Bairro de Fátima e Vizinhança. Foi inaugurada pelo Prefeito Sá Freire.
 Trata-se de uma construção de um nincho, onde esta instalada uma pequena imagem de Nossa Senhora de Fátima.`,
@@ -1525,10 +1509,11 @@ Trata-se de uma construção de um nincho, onde esta instalada uma pequena image
 
 export const PortaldaCasadeCorrecao_ManoelJosedeOliviera: Obra = {
     ID: 191,
-    Artistas: [artistas.ManoelJosedeOliviera],
+    Autores: [artistas.ManoelJosedeOliviera],
     Titulo: `Portal da Casa de Correção`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portal`,
     Material: `Blocos de gnaisses`,
     Descricao: `O Portal da antiga Casa de Correção do Complexo Penitenciário Frei Caneca, é uma construção neoclássica em pedra e ferro, que foi preservada com a demolição do complexo em 2010.`,
@@ -1540,10 +1525,11 @@ export const PortaldaCasadeCorrecao_ManoelJosedeOliviera: Obra = {
 
 export const MuraldaFontedosAmores_MestreValentim: Obra = {
     ID: 196,
-    Artistas: [artistas.MestreValentim],
+    Autores: [artistas.MestreValentim],
     Titulo: `Mural da Fonte dos Amores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Blocos de gnaisses com guarda corpo de ferro forjado`,
     Descricao: `Mural composto por blocos de gnaisse esculpido com características barrocas, tendo como elemento principal o brazão do vice-rei Luis de Vasconcelos em mármore de lioz. Um guarda-corpo de ferro forjado completa o conjunto.`,
@@ -1555,10 +1541,11 @@ export const MuraldaFontedosAmores_MestreValentim: Obra = {
 
 export const FontedoMenino_RomeuAlves: Obra = {
     ID: 197,
-    Artistas: [artistas.RomeuAlves],
+    Autores: [artistas.RomeuAlves],
     Titulo: `Fonte do Menino`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em bronze`,
     Descricao: `Originalmente, a fonte era composta por um menino de mármore segurando um cágado, que lançava água num barril de gnaisse. Foi substituído em 1841 por um anjo de chumbo, que segura à cartela com a legenda Sou útil inda brincando Em 2004 a estátua de chumbo, depois de diversas e graves mutilações, foi substituída por uma cópia em bronze, mantendo a composição original de um menino com uma pequena tartaruga na mão direita que jorra agua no cantil. A mão esquerda segura a cartela descrita anteriormente.
@@ -1572,10 +1559,11 @@ Desativado desde o ano de 2016.`,
 
 export const CascatadeRocaille_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 199,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Cascata de Rocaille`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Essa obra escultura em rocaille com cerca de 200 metros quadrados é composta por
@@ -1593,10 +1581,11 @@ export const CascatadeRocaille_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const LagodoPasseioPublico_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 200,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Lago do Passeio Público`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `O lago criado de traçado sinuoso é uma das características do jardim romântico
@@ -1609,10 +1598,11 @@ export const LagodoPasseioPublico_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const ChafarizdoBNDES_RobertoBurleMarx: Obra = {
     ID: 202,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Chafariz do BNDES`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto`,
     Descricao: `Após as obras do Metro do Rio de Janeiro, a praça recebeu um novo tratamento
@@ -1628,10 +1618,11 @@ export const ChafarizdoBNDES_RobertoBurleMarx: Obra = {
 
 export const CascatadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 203,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Cascata do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `A cascata é uma construção em que blocos de rocailles, imitam pedras, que forma uma
@@ -1646,10 +1637,11 @@ export const CascatadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const GrutadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 204,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Gruta do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Construção que forma blocos de rocailles, imitando pedra para formar uma gruta,
@@ -1663,10 +1655,11 @@ export const GrutadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const CascatadosDeuses_NelsonMunizNevares: Obra = {
     ID: 205,
-    Artistas: [artistas.NelsonMunizNevares],
+    Autores: [artistas.NelsonMunizNevares],
     Titulo: `Cascata dos Deuses`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em granito`,
     Descricao: `Monumento construído junto com a praça dos Expedionários. Trata-se de esculturas de
@@ -1681,10 +1674,11 @@ export const CascatadosDeuses_NelsonMunizNevares: Obra = {
 
 export const ChafarizdoLagarto_MestreValentim: Obra = {
     ID: 208,
-    Artistas: [artistas.MestreValentim],
+    Autores: [artistas.MestreValentim],
     Titulo: `Chafariz do Lagarto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construido no periodo do Vice-Rei Luiz de Vasconcelos, era abastecido pelo aqueduto
@@ -1702,10 +1696,11 @@ export const ChafarizdoLagarto_MestreValentim: Obra = {
 
 export const ChafarizPauloFernandes_Desconhecida: Obra = {
     ID: 209,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz Paulo Fernandes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Blocos de gnaisse com argamassa`,
     Descricao: `Chafariz formando por dois corpos distinto, dois pavimentos. O primeiro corre uma
@@ -1718,28 +1713,6 @@ export const ChafarizPauloFernandes_Desconhecida: Obra = {
     DataInauguracao: `01/1816`,
     Latitude: `-22.9115308`,
     Longitude: `-43.1945616`,
-};
-
-export const SemTitulo_PauloWerneck: Obra = {
-    ID: 52,
-    Titulo: `Sem Titulo`,
-    Material: `mosaico ceramico`,
-    DataInauguracao: `1956`,
-    DatasImportantes: [new Data(`1956`, 'data de inauguração')],
-    Propriedade: 'privada',
-    Zona: 'Central',
-    Bairro: 'Centro',
-    Endereço: 'Avenida Rio Branco, 185',
-    Latitude: `-22.9074537`,
-    Longitude: `-43.1767491`,
-    Status: 'permanece no espaço público',
-    Fatos: [new Fato('', '', '', '', [], '')],
-    Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
-    Funcao: 'ornamental',
-    Natureza: 'artística',
-    Tipologia: 'mural',
-    Execucao: true,
 };
 
 export const SemTitulo_Desconhecido: Obra = {
@@ -1757,7 +1730,7 @@ export const SemTitulo_Desconhecido: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'mural',
@@ -1766,10 +1739,11 @@ export const SemTitulo_Desconhecido: Obra = {
 
 export const ChafarizdasTresVelas_JulioCesarPesssolaniZavala: Obra = {
     ID: 212,
-    Artistas: [artistas.JulioCesarPesssolaniZavala],
+    Autores: [artistas.JulioCesarPesssolaniZavala],
     Titulo: `Chafariz das Três Velas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto`,
     Descricao: `É um Chafariz composto por tres estruturas de concreto armado, de tamanhos diferentes sobre um grande lago. Em funcionamento a água sai do topo das estruturas, como acendendo uma vela.
@@ -1782,10 +1756,11 @@ Esse Chafariz esta desativado desde 2008.`,
 
 export const FontedaSereia_replica__Desconhecida: Obra = {
     ID: 213,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte da Sereia ( réplica)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `É uma escultura de bronze réplica da peça de ferro fundido das Fundições V d'Osne.
@@ -1799,11 +1774,12 @@ export const FontedaSereia_replica__Desconhecida: Obra = {
 
 export const Inverno_PaulJeanBaptesteGasq: Obra = {
     ID: 215,
-    Artistas: [artistas.PaulJeanBaptisteGasq],
+    Autores: [artistas.PaulJeanBaptisteGasq],
     Titulo: `Inverno`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
     Descricao: `Fui instalada inicialmente na Praça XV de Novembro em 1906 e em 1914 foi transferido para parque.
 Escultura representando um homem de idade, com a testa enrugada, olhar pensativo, recolhimento. Todo recoberto por um panejamento, desde a cabeça até os pés. Braço esquerdo no ombro direito demonstrando frio. Encontra-se meio reclinado procurando meios de sentir menos frio.`,
@@ -1816,7 +1792,7 @@ Escultura representando um homem de idade, com a testa enrugada, olhar pensativo
 
 export const Mural_IvanFreitas: Obra = {
     ID: 108,
-    Artistas: [artistas.IvanFreitas],
+    Autores: [artistas.IvanFreitas],
     Titulo: `Mural `,
     Material: 'pintura',
     DataInauguracao: `1984`,
@@ -1828,7 +1804,7 @@ export const Mural_IvanFreitas: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'temporario',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'mural',
@@ -1836,10 +1812,11 @@ export const Mural_IvanFreitas: Obra = {
 };
 export const ChafarizdaantigasedeBNHatualCaixaEconomica_Desconhecida: Obra = {
     ID: 219,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da antiga sede BNH, atual Caixa Economica`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Concreto armado`,
     Descricao: `Chafariz de jorro de água vertical em um lago criado para embelezar o entrono do prédio. O jardim com o lago foi cercado nos anos de 2000 para proteger essa área livre.`,
@@ -1851,10 +1828,11 @@ export const ChafarizdaantigasedeBNHatualCaixaEconomica_Desconhecida: Obra = {
 
 export const GrandeArcodoSambodromo_OscarNiemeyer: Obra = {
     ID: 220,
-    Artistas: [artistas.OscarNiemeyer],
+    Autores: [artistas.OscarNiemeyer],
     Titulo: `Grande Arco do Sambodromo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Concreto armado pre-fabricado`,
     Descricao: `Arco monumental na extremidade sul da avenida, para fechar a área dos desfiles das escolas de samba da cidade do Rio de Janeiro.
@@ -1867,11 +1845,12 @@ Projetado em 1983 foi construído em concreto pré fabricado e demorou quatro me
 
 export const MastrodaBandeiradaPracadaBandeira_Desconhecida: Obra = {
     ID: 223,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mastro da Bandeira  da Praça da Bandeira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `mastro`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Mastro`,
     Material: `Peça em metal`,
     Descricao: `Em 1935, o Centro Carioca lançou o Monumento a Bandeira Nacional, na Praça da Bandeira. apesar desde 1917, o local tem a denomina de Praça da Bandeira. A retirada do Chafariz Monumental em 1979, provocou a instalado um mastro para o Pavilhão Nacional, identificado o espaço.`,
     Execucao: true,
@@ -1882,11 +1861,12 @@ export const MastrodaBandeiradaPracadaBandeira_Desconhecida: Obra = {
 
 export const PortaldoMatadouro_JoseMariaJacintoRabelo: Obra = {
     ID: 224,
-    Artistas: [artistas.JoseMariaJacintoRabelo],
+    Autores: [artistas.JoseMariaJacintoRabelo],
     Titulo: `Portal do Matadouro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `portal`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Portal`,
     Material: `Blocos de gnaisse com argamassa`,
     Descricao: `Construção neoclássica, remanescente do Matadouro, erguido em 1853. Construido com um arco pleno encimado por um frontão triangular. Uma cartela oval de mármore tinha a seguinte inscrição<span style="color: #666666; font-family: 'trebuchet ms', arial, helvetica, sans-serif;">A ilustríssima Câmara Municipal, que serviu do ano 1844 ao de 1848, fez construir este edifício. O Matadouro da Cidade foi transferido, em 1881, para a antiga fazenda dos Jesuítas, em Santa Cruz, permanecendo esse resquicio da historia no local de origem. A cartela existiu até 1979.`,
     Execucao: true,
@@ -1895,264 +1875,14 @@ export const PortaldoMatadouro_JoseMariaJacintoRabelo: Obra = {
     Longitude: `-43.2132586`,
 };
 
-export const DescobrimentodoBrasil_APedroAlvaresCabralPedroVazCaminhaeFreiHenriquedoCoimbra_RodolfoBernadelli: Obra = {
-    ID: 225,
-    Artistas: [artistas.RodolfoBernadelli],
-    Titulo: `Descobrimento do Brasil - À Pedro Àlvares Cabral,  Pedro Vaz Caminha e  Frei Henrique do Coimbra`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peças e alegorias em bronze e pedestal de granito`,
-    Descricao: `O Monumento foi incluído na programação das festas comemorativas do quarto centenário do Descobrimento do Brasil, celebradas no ano de 1900.
-O Monumento mede dez metros, com o pedestal hexagonal que é de granito com as esculturas representnado o navegadorr Pedro Alvares Cabral, o escrivão da frota Pedro Vaz Caminha e o Frei Henrique do Coimbra, capelão e celebrante da primeira missa. Numa das face do pedestal está gravado o seguinte:A Associação do Quarto Centenário doDescobrimento do Brasil mandou erigir este Monumento `,
-    Execucao: true,
-    DataInauguracao: `05/1900`,
-    Latitude: `-22.9202612`,
-    Longitude: `-43.1761148`,
-};
-
-export const EduardoTapajos_Mandarino: Obra = {
-    ID: 226,
-    Imagem: 'EduardoTapajos_Mandarino.jpg',
-    Titulo: `Eduardo Tapajós`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `Peça academica com a fisionomia tranquila e traje elegante.`,
-    Execucao: true,
-    DataInauguracao: `05/2000`,
-    Zona: 'Sul',
-    Bairro: 'Glória',
-    PontoDeReferencia: 'Praça Juarez Tavola',
-    Latitude: `-22.9230746`,
-    Longitude: `-43.1723698`,
-    Fatos: [
-        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística e Metalúrgica Ltda', [], 'Rio de Janeiro'),
-        new Fato('11/2017', '11/2017', 'Furto', 'r', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    ],
-};
-
-export const AfonsoCelso_LaurindoRamos: Obra = {
-    ID: 227,
-    Artistas: [artistas.LaurindoRamos],
-    Titulo: `Afonso Celso`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `A homenagem do academico traz o fardão e fisionomia tranquila. Foi erguido por iniciativa da Sociedade dos Amigos de Afonso Celso.`,
-    Execucao: true,
-    DataInauguracao: `03/1960`,
-    Latitude: `-22.9149362`,
-    Longitude: `-43.1757546`,
-};
-
-export const AlbertodeOliviera_PetrusVerdier: Obra = {
-    ID: 228,
-    Artistas: [artistas.PetrusVerdier],
-    Titulo: `Alberto de Oliviera`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `A homenagem ao poeta tem a figura academica. O monumento foi inaugurado pelas poetisas Maria Eugenia e Ana Amelia de Queiroz Carneiro de Mendonça, que desceram a bandeira nacional que o cobria. O discurso de inauguração foi realizado pelo Ministro de Justiça Dr. Vianna de Castello.O monumento foi inaugurado no dia que se completo 30 anos da publicação de seu primeiro livro. `,
-    Execucao: true,
-    DataInauguracao: `04/1928`,
-    Latitude: `-22.920732`,
-    Longitude: `-43.1746418`,
-};
-
-export const AlfredoAgache_HeitorUsai: Obra = {
-    ID: 229,
-
-    //Imagem: AlfredoAgache,
-    Artistas: [artistas.HeitorUsai],
-    Titulo: `Alfredo Agache`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `É uma homenagem oferecido pelo Clube de Engenharia, pela Associação dos Artistas Brasileiros e o Comite Nacional de Urbanismo, como parte das comemorações para assinalar a passagem do Dia da França.
-Apos a reforma da praça depois da obra do Metro, em 1992, o monumento foi reinaugurado.`,
-    Execucao: true,
-    DataInauguracao: `07/1969`,
-    Latitude: `-22.9172847`,
-    Longitude: `-43.1759463`,
-    Remocao: true,
-    DataRealocacao: '1992',
-    PontoDeReferenciaorealocacao: 'Praça Paris',
-    LatitudeRealocacao: '-22.916358',
-    LongitudeRealocacao: '-43.177946,17',
-};
-
-export const BadenPowell_VincenzoLarocca: Obra = {
-    ID: 231,
-    Artistas: [artistas.VincenzoLarocca],
-    Titulo: `Baden Powell`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `O monumento foi uma iniciativa da União dos Escoteiros Do Brasil aoEscoteiro Chefe Mundial. O monumento foi inaugurado pelo escoteiro Jose de Araujo Filho, que descerou a bandeira. Compareceram a cerimonia 2 jovens venezianos e 1 (um) mexicano.
-Esta representado em meio corpo com os braços cruzados.`,
-    Execucao: true,
-    DataInauguracao: `07/1960`,
-    Latitude: ``,
-    Longitude: ``,
-};
-
-export const CandidoMendes_BenevenutoBerna: Obra = {
-    ID: 232,
-    Imagem: 'CandidoMendes_BenevenutoBerna.jpg',
-    Artistas: [artistas.BenevenutoBerna],
-    Titulo: `Cândido Mendes`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e mural  de granito`,
-    Descricao: `A homenagem visa registrar a importância de sua atuação em instituições de ensino e pesquisa nas áreas de sociologia e direito.`,
-    Execucao: true,
-    DataInauguracao: `24/03/1982`,
-    PontoDeReferencia: 'Rua Sete de Setembro',
-    Latitude: `-22.9149978`,
-    Longitude: `-43.1754865`,
-    Remocao: true,
-    DataRealocacao: '24/03/2001',
-    Realocacao: true,
-    ZonaRealocacao: 'Sul',
-    BairroRealocacao: 'Glória',
-    PontoDeReferenciaorealocacao: 'Praça Paris',
-    LatitudeRealocacao: '-22.916358',
-    LongitudeRealocacao: '-43.177946,17',
-    Fatos: [
-        new Fato('1995', '1995', 'Tombamento', 'Tombado pelo Município pelo Decreto nº 13898', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    ],
-};
-
-export const CardealArcoverde_HeitorUsai: Obra = {
-    ID: 233,
-    Artistas: [artistas.HeitorUsai],
-    Titulo: `Cardeal Arcoverde`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `É uma homenagem da Cidade do Rio de Janeiro, ao primeiro Cardeal do Brasil, no 1º Conciliato Brasileiro, permanecendo em frente ao Palácio Episcopal.`,
-    Execucao: true,
-    DataInauguracao: `07/1939`,
-    Latitude: `-22.9210361`,
-    Longitude: `-43.1768286`,
-};
-
-export const CarmemGomes_JoseBarreto: Obra = {
-    ID: 234,
-    Artistas: [artistas.JoseBarreto],
-    Titulo: `Carmem Gomes`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `cabeça`,
-    Material: `Peça em bronze e mural  de granito`,
-    Descricao: `A homenagem foi uma iniciativa da Sociedade dos A<rtistas Líricos Brasileiros, na época era presidida pelo filho da cantora, Jim Barboza. O monumeto teve o patrocinio de uma comissão composta por Carlos Magno, Negrão de Lima e Clovis Slagado.`,
-    Execucao: true,
-    DataInauguracao: `03/1958`,
-    Latitude: `-22.916683`,
-    Longitude: `-43.1758761`,
-};
-
-export const ClovisBevilaqua_HonorioPecanha: Obra = {
-    ID: 235,
-    Artistas: [artistas.HonorioPecanha],
-    Titulo: `Clóvis Beviláqua`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e mural  de granito`,
-    Descricao: `É uma homenagem a quem organizou o projeto do Código Civil Brasileiros e representou o Brasil no Tribunal de Haia. A inauguração fez parte das comemorações do Dia do Jurista.`,
-    Execucao: true,
-    DataInauguracao: `12/1943`,
-    Latitude: `-22.9149128`,
-    Longitude: `-43.1756288`,
-};
-
-export const GetulioVargas_JoasPereiradosPassos: Obra = {
-    ID: 236,
-    Imagem: 'GetulioVargas_JoasPereiradosPassos.jpg',
-    Artistas: [artistas.JoasPereiradosPassos],
-    Titulo: `Getulio Vargas`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze com pedestal de mármore`,
-    Descricao: `A homenagem foi idealizado e erguido por Henock de Almeida e executado pelo artista plástico Joás,para compor o
-    Memorial a Getulio Vargas,criado para as comemorações do cinquentenário de sua morte.`,
-    Execucao: true,
-    DataInauguracao: `08/2004`,
-    Zona: 'Sul',
-    Bairro: 'Glória',
-    PontoDeReferencia: 'Praça Luis de Camões',
-    Latitude: `-22.9214288`,
-    Longitude: `-43.1734074`,
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const LazarSegall_LiubaWolt: Obra = {
-    ID: 237,
-    Artistas: [artistas.LiubaWolt],
-    Titulo: `Lazar Segall`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `cabeça`,
-    Material: `Peça em bronze com pedestal de mármore`,
-    Descricao: `Em 1960, a artista Liuba , fez o busto em bronze emhomenagem ao pintor, mas somente instalado em 1964.
- A homenagem foi uma iniciativa do Departamento de Cultura do Estado, em comemoração do 30º aniversario da primeira exposição de arte moderna.`,
-    Execucao: true,
-    DataInauguracao: `09/1964`,
-    Latitude: `-22.9220889`,
-    Longitude: `-43.1727406`,
-};
-
-export const PereiraCarneiro_EgistoBertozzi: Obra = {
-    ID: 238,
-    Artistas: [artistas.EgistoBertozzi],
-    Titulo: `Pereira Carneiro`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `O monumento foi inaugurado na praça Marechal Âncora, devido a sua ligação com a Panair do Brasil. Foi posteriormente transferido para essa praça.`,
-    Execucao: true,
-    DataInauguracao: `01/1962`,
-    Latitude: `-22.9206872`,
-    Longitude: `-43.1743128`,
-};
-
-export const TeixeiraMendes_BrunoGiorgi: Obra = {
-    ID: 239,
-    Artistas: [artistas.BrunoGiorgi],
-    Titulo: `Teixeira Mendes`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `A homenagem foi inaugurada nas comemorações do dia da bandeira, por ter sido um dos idealizadores da Bandera Nacional. Foi erguido por iiniciativa do Clube Positivista e do Almirante Henrique Batista, presidente da Associação dos Ex-Combatentes do Brasil, seção do Rio de Janeiro.
-O ato teve a presença do prefeito Marcos Tamoio e do Embaixador Paulo Carneiro.
-Passados sete anos de sua inauguração. o busto foi roubado, e recolocado em 16 de dezembro de 1986, se recorreu ao autor da obra, Bruno Giorgi, que tinha o modelo original e autorização a confecção da réplica.`,
-    Execucao: true,
-    DataInauguracao: `11/1977`,
-    Latitude: `-22.9206872`,
-    Longitude: `-43.1743128`,
-};
-
 export const ReiseSilva_Desconhecida: Obra = {
     ID: 240,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Reis e Silva`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `efigie`,
+    TipologiaObra: `Efígie`,
     Material: `Peça em granito`,
     Descricao: `Marco de granito natural onde está fixada a efígie do homenageado com a inscrição em baixo relevo: Foi inaugurado na comemoração do aniversaio do 5º aniversario do Gremio Lirico Reis e Silva.`,
     Execucao: true,
@@ -2161,43 +1891,13 @@ export const ReiseSilva_Desconhecida: Obra = {
     Longitude: `-43.1756671`,
 };
 
-export const Varnhagem_JoseOtavioCorreaLima: Obra = {
-    ID: 241,
-    Artistas: [artistas.JoseOtavioCorreaLima],
-    Titulo: `Varnhagem`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peças e alegorias em bronze e pedestal de granito`,
-    Descricao: `A homenagem realizada pelo Instituto Histórico e Geográfico Brasileiro em comemoração ao centenário de sua fundação, no qual Adolfo Varnhagem foi primeiro-secretário.O busto a Varhagem esta num pedestal de granito, na parte inferior do pedestal se encontra a figura de umafeminina tendo um livro aberto nas mãos simbolizando a história.`,
-    Execucao: true,
-    DataInauguracao: `10/1938`,
-    Latitude: `-22.9173289`,
-    Longitude: `-43.1759357`,
-};
-
-export const VeraJanacopulos_AdrianaJanacopolus: Obra = {
-    ID: 242,
-    Artistas: [artistas.AdrianaJanacopolus],
-    Titulo: `Vera Janacópulos`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `A homenagem partiu do Circulo de Arte Vera Janacópulos, presidia pelo deputado Gustavo Capanema, fundada em 1955 com o objetivo de propagar e ensinar o método do canto de camara. A obra foi executada pela sua irmã Adriana, com os custos por conta da prefeitura.
-A inauguração contou com a presença do Prefeito Sá Freire, que fez erigir o monumento por conta dos cofres publicos. Esteve presente o diretor do Departamento Parques e Jardins Sr. Mauro Viegas, Pascoal carlos Magno, do representante do Ministro da Educação, Sr. Poessel.`,
-    Execucao: true,
-    DataInauguracao: `12/1958`,
-    Latitude: `-22.916683`,
-    Longitude: `-43.1758761`,
-};
-
 export const MosaicodeRosadosVentosdaGloria_Desconhecida: Obra = {
     ID: 244,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mosaico de Rosa dos Ventos da Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `O desenho na pedra portuguêsa, nas cores branca, vermelha e preta, fez parte do Projeto de revitalização se bairro histórico do Rio, o <Urb-Cidade Glória projeto e execução daRIOURBE, Empresa Municipal de Urbanização vinculado à Secretaria Municipal de Obras.`,
@@ -2209,11 +1909,12 @@ export const MosaicodeRosadosVentosdaGloria_Desconhecida: Obra = {
 
 export const RelogiodaGloria_Desconhecida: Obra = {
     ID: 243,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio da Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `relógio`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Relógio`,
     Material: `Peça em ferro fundido e pedestal de gnaisse`,
     Descricao: `Situado no extremo sul da balaustrada da Rua da Gloria, foi instalado um relógio da marca Krussman, de quatro mostradores luminosos de vidro. O sistema de funcionamento da máquina é original movido por peso amarrada na ponta de um cabo de aço, que força o carretel e provoca o movimento através de um sistema de engrenagem. A máquina francesa fornecida pelo relojoeiro alemã Frederich Krussman, relojoeiro que chegou ao Brasil em 1862.
 Na face sul do Relógio, fica o acesso a máquina do relógio. Esta é uma porta de ferro fundido com a inscrição Construído sob a administração do Prefeito Pereira Passos- 1905. No centro da mesma está representando em alto relevo o símbolo da Cidade, com golfinhos.
@@ -2227,10 +1928,11 @@ Atendendo, com a melhor boa vontade, à solicitação do Exmo Sr. Prefeito do Di
 
 export const AmuradadaGloria_Desconhecida: Obra = {
     ID: 245,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Bloco de granito com guarda corpo de ferro fundido`,
     Descricao: `Construída para permitir a ligação do cantro ao bairro da Glória, com a técnica de pedra seca,a amurada tem como principal destaque a balaustrada que foi executada originalmente para a Praça Tiradentes quando recebeu seu primeiro projeto paisagístico em 1894. Esta balaustrada foi solicitada pela Câmara Municipal em 1852 e concretiza no projeto AugusteFrancoisMarieGlaziou, provavelmente oriunda das Fundições Val d'Osne. Na administração de Pereira Passos o relógio da Gloria foi instadado, o primeiro público da Cidade.
@@ -2243,10 +1945,11 @@ Em 2015 foi guardado no deposito da prefeitura um poste danificado e uma pinha.`
 
 export const AmuradadoHotelGloria_Desconhecida: Obra = {
     ID: 247,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Hotel Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de granito`,
     Descricao: `Essa amurada foi construída no Governo do Prefeito Souza Aguiar em 1908,com a tecnica de pedra seca.Com base de blocos de granito e a balaustrada em ferro fundido para proteção do monumento da Abertura dos Portos, Tem<cerca de duzentos ( 200) metros. de extensão, formanndo modulos de dez metros, onde estão fixadas balautres.
@@ -2259,10 +1962,11 @@ Acima desse guarda corpo estão fixados postes decorativos.`,
 
 export const PortaodaPracaParis_JoseMarcioBaptistadaCunha: Obra = {
     ID: 248,
-    Artistas: [artistas.JoseMarcioBaptistadaCunha],
+    Autores: [artistas.JoseMarcioBaptistadaCunha],
     Titulo: `Portão da Praça Paris`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de concreto`,
     Descricao: `Construção executada junto com o cercamento da praça, após as obras de implantação do metro na cidade. São quatro portões nos eixos da praça compondo-se de colunas de concreto com portão de duas folhas e frontispício em metal.`,
@@ -2270,81 +1974,6 @@ export const PortaodaPracaParis_JoseMarcioBaptistadaCunha: Obra = {
     DataInauguracao: `01/1992`,
     Latitude: `-22.9172484`,
     Longitude: `-43.176391`,
-};
-
-export const PrimaveradaPracaParis_Desconhecida: Obra = {
-    ID: 249,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Primavera da Praça Paris`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `Uma das peças de um conjunto escultórico das quatro estações do ano, reprodução de Ceres de Jean Baptiste Poultier,exposta no jardim do Palácio de Versailles.`,
-    Execucao: true,
-    DataInauguracao: `01/1929`,
-    Latitude: `-22.9151454`,
-    Longitude: `-43.1755404`,
-};
-
-export const VeraodaPracaParis_Desconhecida: Obra = {
-    ID: 250,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Verão da Praça Paris`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `Peça do conjunto escultórico<representando o Verão, reprodução do Pandora de Pierre Le Gros existente nos Jardins de Versalles.`,
-    Execucao: true,
-    DataInauguracao: `01/1929`,
-    Latitude: `-22.9166947`,
-    Longitude: `-43.175759`,
-};
-
-export const AberturadosPortos_EugeneBenet: Obra = {
-    ID: 246,
-    Artistas: [artistas.EugeneBenet],
-    Titulo: `Abertura dos Portos`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `Esse monumento foi uma iniciativa da Associção Comercial do Rio de Janeiro para as comemorações da abertura dos portos para as nações amigas promovida por D. João VI. O conjunto escultórico é composto por duas figuras femininas em bronze de 3 metros de altura, uma representando o Comércio e a Navegação. Estas estátuas são inspiradas nas existentes na Praça da Concórdia em Paris. A estátua que simboliza o comércio tem mão direita apoiada em um escudo, e a da navegada esta apoiada em uma âncora.`,
-    Execucao: true,
-    DataInauguracao: `01/1908`,
-    Latitude: `-22.9222642`,
-    Longitude: `-43.1726345`,
-};
-
-export const InvernodaPracaParis_Desconhecida: Obra = {
-    ID: 251,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Inverno da Praça Paris`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `Elegante escultura representando o inverno com vestimenta típica para a estação do ano. É uma reprodução de Théophraste, de Simon Hurtvelle.`,
-    Execucao: true,
-    DataInauguracao: `01/1929`,
-    Latitude: `-22.9166769`,
-    Longitude: `-43.1759531`,
-};
-
-export const OutonodaPracaParis_Desconhecida: Obra = {
-    ID: 252,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Outono da Praça Paris`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `Representação do Outono reprodução da esculturaFaune de Jacques Houzeau,<existente no jardim do Palácio de Versailles.`,
-    Execucao: true,
-    DataInauguracao: `01/1929`,
-    Latitude: `-22.9151205`,
-    Longitude: `-43.1757731`,
 };
 
 export const AquiEstao_AnnaMariaMaiolino: Obra = {
@@ -2360,7 +1989,7 @@ export const AquiEstao_AnnaMariaMaiolino: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2380,7 +2009,7 @@ export const DoraMaar_IoledeFreitas: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2400,7 +2029,7 @@ export const PenetravelMagicSquareN5_HelioOiticica: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2420,7 +2049,7 @@ export const GarotadeIpanema_PiotrUklanski: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2429,7 +2058,7 @@ export const GarotadeIpanema_PiotrUklanski: Obra = {
 
 export const SemTitulo_JoseResende: Obra = {
     ID: 140,
-    Artistas: [artistas.JoseResende],
+    Autores: [artistas.JoseResende],
     Titulo: `Sem Titulo`,
     Material: 'marmore e aço',
     DataInauguracao: '2003',
@@ -2441,7 +2070,7 @@ export const SemTitulo_JoseResende: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2461,7 +2090,7 @@ export const NewHouse_LygiaPape: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2481,7 +2110,7 @@ export const Calado_NunoRamos: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
@@ -2501,52 +2130,21 @@ export const Passarela_EduardoCoimbra: Obra = {
     Base: 'sem pedestal',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistica',
     Tipologia: 'escultura',
     Execucao: true,
 };
 
-export const FelinoDeitado_HPeyrol: Obra = {
-    ID: 254,
-    Titulo: `Felino Deitado`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `Inicialmente foram instalados nos jardins da Praia de Botafogo e transferido para a Praça Paris.Escultura do felino em posição de ataque, como guardião do Chafariz.`,
-    Execucao: true,
-    DataInauguracao: `01/1910`,
-    Latitude: `-22.9154769`,
-    Longitude: `-43.1756772`,
-};
-
-export const MonumentoaoAlmiranteBarroso_JoseOtavioCorreaLima: Obra = {
-    ID: 255,
-    Artistas: [artistas.JoseOtavioCorreaLima],
-    Titulo: `Monumento ao Almirante Barroso`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: 'marco',
-    Material: 'Peça em bronze e pedestal de granito',
-    Descricao:
-        'Esta escultura de José Otávio Correa de Lima foi inaugurada na Praça Luís de Camões em 19 de novembro de 1909. Com as obras do Metrô, o monumento foi transferido para a Praça Paris, onde permaneceu desde então. Possui as seguintes legendas: “Riachuelo XI de junho de MDCCCLXV” e “Ao Almirante Barroso a nação”. Na base no monumento estão seus restos mortais. Essa pedra foi encontrada quando o monumento foi transferido da Praça Juares Tavola para a Praça Paris devido as obras do Metro. A pedra tem em baixo-relevo a seguinte inscrição: No dia 11 de junho de 1908, sendo presidente da República o Sr. Dr. Afonso Augusto Moreira Pena e ministro da Marinha o Exmo. Sr. Alexandrino de Alencar foi lançada esta pedra sobre a qual será erigido, por ordem do Exmo. Sr. Augusto Tavares de Lira, Ministro da Justiça e Negócios Interiores, de acordo com o Decreto nº 1697, de 10 de junho de 1907, o monumento ao Almirante Barroso e aos heróis da Batalha Naval de Riachuelo./ Este monumento foi inaugurado em 1909, na Praça Juarez Tavola, próxima ao Hotel Gloria. Com as obras do Metrô o monumento foi transferido para a Praça Paris onde se encontra desde então.O monumento descrito pelo Artistas: Sobre um pedestal em granito de Petrópolis assenta a estátua de Barroso, em bronze, com quatro metros de altura, representada em atitude triunfal, no passadiço de comando. No sopé da coluna, em cada face lateral, assentam duas figuras aladas simbolizando, respectivamente, na gênios da Pátria e da Vitória, sobre duas proas, tudo em bronze. À frente do pedestal, um grande baixo-relevo, com dois metros e quarenta de comprimento, por um metro de alto, representa a Batalha Naval de Riachuelo. Quatro medalhões, nos ângulos, perpetuam as efígies de Oliveira Pimentel, Pedro Afonso, Andrade Maia e Lima Barros, encadeando esses medalhões nove placas, na base, com os nomes dos vapores e dos intrépidos comandantes que formaram parte numa batalha. Ainda dois medalhões abaixo contém as efígies dos heróis Greenhalgh e Marcílio Dias',
-    Execucao: true,
-    DataInauguracao: `06/1908`,
-    Latitude: `-22.9185545`,
-    Longitude: `-43.1757581`,
-    LatitudeRealocacao: '-22.918184',
-    LongitudeRealocacao: '-43.1767396',
-};
-
 export const AmuradadoOuteirodaGloria_LucioCosta: Obra = {
     ID: 256,
-    Artistas: [artistas.LucioCosta],
+    Autores: [artistas.LucioCosta],
     Titulo: `Amurada do Outeiro da Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `amurada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Amurada`,
     Material: `Blocos de gnaisses`,
     Descricao: `Amurada construídacom a tecnica de pedra seca,idealizado em 1939, para a criação do Parque Municipal Lucio Costa, na subida da Igreja do Outeiro da Glória. É de material reutilizado,o granito maciço proveniente da demolição do cais do Flamengo, compondo10 platôs contíguos.`,
     Execucao: true,
@@ -2557,10 +2155,11 @@ export const AmuradadoOuteirodaGloria_LucioCosta: Obra = {
 
 export const PlanoinclinadodoOuteirodaGloria_Desconhecida: Obra = {
     ID: 257,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Plano inclinado do Outeiro da Glória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `O plano inclinado foi construÌdo para possibilitar o acesso dos fieis ao conjunto urbano-paisagÌstico denominado Praça Nossa Senhora da Glória, ou Jardins do Outeiro da Glória. Foi totalmente reformado em 2003`,
@@ -2570,64 +2169,14 @@ export const PlanoinclinadodoOuteirodaGloria_Desconhecida: Obra = {
     Longitude: `-43.1752466`,
 };
 
-export const SaoSebastiao_DanteCroce_CurzioZani_ArnaldoValilo: Obra = {
-    ID: 258,
-    Artistas: [artistas.DanteCroce, artistas.CurzioZani, artistas.ArnaldoValilo],
-    Titulo: `São Sebastião`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em granito`,
-    Descricao: `Monumento erguido pelo Instituto Histórico e Geográfico Brasileiro, por subscrição popular, paraos festejos relativos do Quarto Centanário da Cidade.
-Na escultura foi utilizando o granito da pedreira do Alto da Boa Vista, o bloco pesava 20 toneladas e foi executado na marmoaria Nossa Senhora de Fátima tendo a imagem 7 metros e 30 centimetros.`,
-    Execucao: true,
-    DataInauguracao: `08/1965`,
-    Latitude: `-22.9206872`,
-    Longitude: `-43.1743128`,
-};
-
-export const Escoteiro_FernandoThauby: Obra = {
-    ID: 260,
-    Artistas: [artistas.FernandoThauby],
-    Titulo: `Escoteiro`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `A estátua representa um menino com o uniforme dos boys-scouts, segurando com sua mão direita, braço erguido a bandeira da Pátria Chilena e com a esquerda, o chapéu dos legionários do general Baden Powell. O boy-scout - segundo a concepção do autor - realizara uma longa caminhada para subir ao cume da serra, levando a bandeira de sua Pátria, e, ao chegar ao cimo descobre-se radiante.
-O monumento foi uma doação des crianças do Chile, em agradecimento a colaboração do Brasil em socorro das vítimas do terremoto de Coquimbo e Atacama.
-A estátua foifundida em 1915. Do molde original, foram tiradas duas cópias: uma delas estáno Rio, e asegunda encontra-se no Parque Metropolitano de Santiago.
-Essa estátua serviu de modelo para o selo comemorativo do AcampamentoInternacional de Patrulhas, realizado em 1954, em São Paulo. Em março de 2009 teve a bandeira furtada.
-Em maio de 2019, a escultura foi furtada.`,
-    Execucao: true,
-    DataInauguracao: `12/1923`,
-    Latitude: `-22.921234`,
-    Longitude: `-43.1736505`,
-};
-
-export const SaoFranciscodeAssiseSantaClara_EduardodeSa: Obra = {
-    ID: 259,
-    Artistas: [artistas.EduardodeSa],
-    Titulo: `São Francisco de Assis e Santa Clara`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `escultura`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `O monumento foi erguido por uma iniciativa do  Sr Amaro da Silveira, que doou a peça à Cidade, por ocasião  do 7º centenário da morte do Santo. É a representação de Santa Clara e São Francisco, em tamanho natural.
-Representa São Francisco de Assis, sobre um pedestal de granito, de joelhos recitando o“Cântico do Sol”, tendo ao seu lado Santa Clara, orando. O conjunto é completado por quatro baixos-relevos, assinalando os principais episódios da vida do grande santo” As placas no pedestal não são originais. O Jornal do Brasil descreve oo furto das placas na edição de 10 de abril de 1963.`,
-    Execucao: true,
-    DataInauguracao: `10/1927`,
-    Latitude: `-22.9213639`,
-    Longitude: `-43.1734884`,
-};
-
 export const PisodePedeMolequenaRuaOrlandoRangel_Desconhecida: Obra = {
     ID: 262,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Rua Orlando Rangel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de gnaisse`,
     Descricao: `O Morro de Guaratiba teve suas ruas abertas em 1875, homenageando Joaquim José Ferreira, detentor do título e grande benfeitor da Santa Casa de Misericórdia. Quase toda a rua teve o piso substituído por paralelepípedo regulares, restando esse pequeno trecho com o calçamento original.`,
     Execucao: true,
@@ -2648,65 +2197,20 @@ export const SemTitulo_ElisaBracher: Obra = {
     Status: 'permanence no espaço publico',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'escultura',
     Execucao: true,
 };
-export const ObeliscodoMemorialGetulioVargas_HenockdeAlmeida: Obra = {
-    ID: 261,
-    Artistas: [artistas.HenockdeAlmeida],
-    Titulo: `Obelisco do  Memorial Getulio Vargas`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Obelisco`,
-    Material: `Peça em concreto revestido por mármore`,
-    Descricao: `O marco do memorial foi erguido sob um espelho d&rsquo;água. No centro do lago duas colunas se entrelaçam dando volume a construção. O Memorial situado no subsolo é constituído de um acervo sobre a vida pessoal de Getulio Vargas.`,
-    Execucao: true,
-    DataInauguracao: `08/2004`,
-    Latitude: `-22.9212989`,
-    Longitude: `-43.1735695`,
-};
-
-export const ChafarizdaGloria_JoseCustodiodeSaeFaria: Obra = {
-    ID: 263,
-    Artistas: [artistas.JoseCustodiodeSaeFaria],
-    Titulo: `Chafariz da Glória`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Chafariz`,
-    Material: `Pedra e tijolo com argamassa`,
-    Descricao: `Chafariz colonial com cartela de mármore de lioz com inscrição latina. Foi executado por iniciativa do Marquês do Lavradio, junto à encosta do morro do Desterro, atual Santa Tereza. Em 1905, o Prefeito Pereira Passos imprimiu ao Chafariz algumas alterações, acrescentando um segundo muro na sua parte superior, sem prejudicar o monumento original. Mais antigo Chafariz do Rio de Janeiro.
-Esse Chafariz pertence a Companhia Estadual de Águas e Esgotos e está em cessão de uso com a Gerencia de Monumentos e Chafarizes.`,
-    Execucao: true,
-    DataInauguracao: `01/1772`,
-    Latitude: `-22.9184257`,
-    Longitude: `-43.1771039`,
-};
-
-export const ChafarizdosGolfinhos_AndreRedont: Obra = {
-    ID: 264,
-    Artistas: [artistas.AndreRedont],
-    Titulo: `Chafariz dos Golfinhos`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Chafariz`,
-    Material: `Peça em argamassa`,
-    Descricao: `O Chafariz é composto por quatro golfinhos laterais, um jorro névoa ( de 3 metros) e outro central, com cerca de douze metos de altura. São inspirados aos existentes no jardim do Palácio de Versailles, projetado pelo arquiteto paisagista da equipe de Alfred Agache.
-Esta desativado desde maio de 2017.`,
-    Execucao: true,
-    DataInauguracao: `01/1929`,
-    Latitude: `-22.9160074`,
-    Longitude: `-43.1759671`,
-};
 
 export const ChafarizdeSaoSebastiao_Desconhecida: Obra = {
     ID: 266,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz de São Sebastião`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto`,
     Descricao: `O Chafariz com jorro de água no entorno da imagem de São Sebastião foi executado para valorizar a imagem do padroeiro da Cidade.
@@ -2717,59 +2221,9 @@ Esta desativado desde maio de 2017.`,
     Longitude: `-43.1734884`,
 };
 
-export const Cuauhtemoc_MiguelNoreña: Obra = {
-    ID: 268,
-    Artistas: [artistas.MiguelNoreña],
-    Titulo: `Cuauhtemoc`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Monumento doado pelo governo do México, como parte das comemorações do Centenário da Independência (1922), à cidade do Rio de Janeiro. Foi inaugurado na data nacional mexicana.
-O conjunto com aescultura e pedestal com serpentes estilizadas e baixos relevos, que invocam a mitologia Asteca é talvez um dos primeiros elementos Art-Déco a ser instalado em nossa cidade, numa época onde ainda predominava o eclético e o estilo neo-colonial. Trata-se de uma réplica da original deCarlos Obregon Santacília.`,
-    Execucao: true,
-    DataInauguracao: `09/1922`,
-    Latitude: `-22.9372812`,
-    Longitude: `-43.1730611`,
-};
-
-export const OHiggins_CaroccabaThor: Obra = {
-    ID: 269,
-    Artistas: [artistas.CaroccabaThor],
-    Titulo: `O'Higgins`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `O presente a Cidade do Rio de Janeiro pelo Chile pelos 400 anos da cidade, foi inaugurado dois anos depois, em março de 1967, A cerimônia foi presidida pelo governador Negrão de Lima,Foi inaugurado na
-    Avenida Chile, no canteiro central, posteriormente foi transferida para um canteiro laterial em 23 de maio de 1996 e finalmente em 17 de janeiro de 2007 foi inaugurado nesse local.
-Doado a cidade do Rio de Janeiro pelo governo do Chile por ocasião do seu IV Centenário da fundação da Cidade.
-Estátua com a figura do homenageado com uma farda chilena tendo na direita uma espera e na esquerda uma folha de papel. A estátua esta sobre um pedestal de concreto revertido em granito cinza.`,
-    Execucao: true,
-    DataInauguracao: `03/1967`,
-    Latitude: `-22.9369399`,
-    Longitude: `-43.1734655`,
-};
-
-export const AnimaisMetalicos_JorgeMarioJauregui: Obra = {
-    ID: 275,
-    Artistas: [artistas.JorgeMarioJauregui],
-    Titulo: `Paineis Metálicos de Animais`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Painel`,
-    Material: `Peças em metal`,
-    Descricao: `Peças representando animais recortados fixadas ao longo de um mural. Foi instalado no Projeto Rio Cidade na área de lazer infantil.`,
-    Execucao: true,
-    DataInauguracao: `03/1996`,
-    Latitude: `-22.9335874`,
-    Longitude: `-43.1775003`,
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const ChafarizdoRiachuelo_JoaoCoelhoMarinho: Obra = {
     ID: 99,
-    Artistas: [artistas.JoaoCoelhoMarinho],
+    Autores: [artistas.JoaoCoelhoMarinho],
     Titulo: `Chafariz do Riachuelo`,
     Material: 'gnaisse e argamassa',
     DataInauguracao: `01/1817`,
@@ -2790,37 +2244,20 @@ export const ChafarizdoRiachuelo_JoaoCoelhoMarinho: Obra = {
     por bem do seu povo m. f. e. o. mandou fazer esta obra pela Polícia.`,
     Fatos: [new Fato('', '', 'bem tombado federal', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'plasticidade',
+    Eixo: 'Plasticidade',
     Funcao: 'utilitária',
     Natureza: 'equipamento urbano',
     Tipologia: 'chafariz',
     Execucao: true,
 };
 
-export const JosedeAlencar_RodolfoBernadelli: Obra = {
-    ID: 274,
-    Artistas: [artistas.RodolfoBernadelli],
-    Titulo: `José de Alencar`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `O monumento apresenta José de Alencar sentado e em tamanho natural. Em seu pedestal foram embutidos medalhões em baixos relevos representando cenas extraídas dos romances: O Guarany, o Gaúcho, o Sertanejo e Iracema. A obra foi uma iniciativa do jornalista Ferreira de Araujo.`,
-    Execucao: true,
-    DataInauguracao: `05/1897`,
-    Zona: 'Sul',
-    Bairro: 'Catete',
-    PontoDeReferencia: 'Praça José de Alencar',
-    Latitude: `-22.9325975`,
-    Longitude: `-43.1775974`,
-};
-
 export const MarcoaoRioCarioca_JorgeMarioJauregui: Obra = {
     ID: 276,
-    Artistas: [artistas.JorgeMarioJauregui],
+    Autores: [artistas.JorgeMarioJauregui],
     Titulo: `Marco ao Rio Carioca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto revestido por mármore`,
     Descricao: `Marco construído para identificar no bairro o trajeto subterrâneo do Rio Carioca, que deu origem a cidade.`,
@@ -2832,10 +2269,11 @@ export const MarcoaoRioCarioca_JorgeMarioJauregui: Obra = {
 
 export const GagoCoutinho_Desconhecida: Obra = {
     ID: 271,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gago Coutinho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Gago Coutinho esta homenageado em um simplorio bloco de granito bruto com uma plca em bronze com a imagem de seu avião e inscrição de seu feito personalidades.<a primeira travessia aérea do Atlantico.<`,
@@ -2847,10 +2285,11 @@ export const GagoCoutinho_Desconhecida: Obra = {
 
 export const CoretodaPracaSaoSalvador_JorgeMarioJauregui: Obra = {
     ID: 278,
-    Artistas: [artistas.JorgeMarioJauregui],
+    Autores: [artistas.JorgeMarioJauregui],
     Titulo: `Coreto da Praça São Salvador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Madeira com telhas de barro`,
     Descricao: `Pequena construção quadrada composta quatro pilares de madeira sustentando uma cobertura de telhas. Atualmente o coreto não tem mais telhas e sim a folhagem de uma bouganville.`,
@@ -2862,10 +2301,11 @@ export const CoretodaPracaSaoSalvador_JorgeMarioJauregui: Obra = {
 
 export const ChafarizdoLargodoMachado_Desconhecida: Obra = {
     ID: 280,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz do Largo do Machado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em granito`,
     Descricao: `O Chafariz, com jorro de água circular, foi inaugurado posteriormente à colocação da imagem de Nossa Senhora da Imaculada Conceição para embelezar o monumento a Nossa Senhora da Conceição.`,
@@ -2877,7 +2317,7 @@ export const ChafarizdoLargodoMachado_Desconhecida: Obra = {
 
 export const LaminaLargaemTorcaonoEspaco_FranzWeissmann: Obra = {
     ID: 330,
-    Artistas: [artistas.FranzWeissmann],
+    Autores: [artistas.FranzWeissmann],
     Titulo: `Lamina Larga em Torção no Espaço`,
     Material: 'aço',
     DataInauguracao: `1980`,
@@ -2890,7 +2330,7 @@ export const LaminaLargaemTorcaonoEspaco_FranzWeissmann: Obra = {
     Status: 'removido do espaço público',
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'escultura',
@@ -2899,10 +2339,11 @@ export const LaminaLargaemTorcaonoEspaco_FranzWeissmann: Obra = {
 
 export const PabloNeruda_Desconhecida: Obra = {
     ID: 285,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Pablo Neruda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Bloco de granito`,
     Descricao: `Monumento simplorio de granito bruto com uma placa de bronze em homenagem ao poeta chileno.`,
@@ -2914,11 +2355,12 @@ export const PabloNeruda_Desconhecida: Obra = {
 
 export const StuartAngel_EdgarDuvivier: Obra = {
     ID: 297,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Stuart Angel`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal revestido de granito`,
     Descricao: `A homenagem foi erguida por iniciativa da família e pelo Clube de Engenharia que o doou à cidade.`,
     Execucao: true,
@@ -2941,20 +2383,21 @@ export const RuiBarbosa_RodolfoPintodoCouto: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'narratividade',
+    Eixo: 'Narratividade',
     Funcao: 'referencial',
     Natureza: 'civico',
-    Tipologia: 'busto',
+    Tipologia: 'Busto',
     Execucao: true,
 };
 
 export const AmorMaterno_JoaoJacoParana: Obra = {
     ID: 306,
-    Artistas: [artistas.JoaoJacoParana],
+    Autores: [artistas.JoaoJacoParana],
     Titulo: `Amor Materno`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Escultura de uma figura feminina representando uma mãe segurando o seu filho, num gesto de carinho e dedicação.`,
     Execucao: true,
@@ -2965,10 +2408,11 @@ export const AmorMaterno_JoaoJacoParana: Obra = {
 
 export const MuralCorcovado_Desconhecida: Obra = {
     ID: 307,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mural Corcovado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em concreto`,
     Descricao: `Construido pelo Rotary Club de Botafogo, tinha inicialmente o simbolo do Clube de Serviço, mas foi retirado ficando um marco do Pão de Açucar como e visto da Praia de Botafogo.`,
@@ -2980,10 +2424,11 @@ export const MuralCorcovado_Desconhecida: Obra = {
 
 export const AmuradadaAvenidaLauroSodre_Desconhecida: Obra = {
     ID: 308,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Avenida Lauro Sodré`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Bloco de granito`,
     Descricao: `Construídacom a tecnica de pedra seca<strong>, para a abertura da Avenida Carlos Peixoto, realizada para o contorno da encosta do morro no limite do Parque Estadual do Chacrinha.`,
@@ -2995,10 +2440,11 @@ export const AmuradadaAvenidaLauroSodre_Desconhecida: Obra = {
 
 export const ChafarizdoAlmiranteTamandare_Desconhecida: Obra = {
     ID: 310,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz do Almirante Tamandaré`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Concreto armado`,
     Descricao: `O lago e o Chafariz no entorno do Monumento Tamandaré foi construido nos anos de 1960. <É um Chafariz de jorro de água vertical nas extremidades e no meio do lago. Desativado desde o ano de 2014`,
@@ -3010,10 +2456,11 @@ export const ChafarizdoAlmiranteTamandare_Desconhecida: Obra = {
 
 export const ChafarizEstrela_Desconhecida: Obra = {
     ID: 312,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz Estrela`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Concreto armado`,
     Descricao: `Foi implantado na gestão do Prefeito Prado Junior., com um jorro central e outros na extremidade para formar um flor quando em funcionamento. Provavelmente reformado e hoje conhecido como estrela.
@@ -3026,8 +2473,9 @@ O Chafariz esta desativado desde maio de 2017.`,
 
 export const AbrahanMedina_Desconhecida: Obra = {
     ID: 314,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Abrahan Medina`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3052,10 +2500,11 @@ export const AbrahanMedina_Desconhecida: Obra = {
 
 export const EmbocaduradoTunelNovo_Desconhecida: Obra = {
     ID: 315,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Embocadura do Túnel Novo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Bloco de granito`,
     Descricao: `As embocaduras foram construídas em placas de granito cobrindo a fachada natural da construção, no trecho de Botafogo e de Copacabana. O túnel está situado sob o morro da Babilônia, entre os bairros de Botafogo (atual Av. Lauro Sodré) e de Copacabana (atual Av. Princesa Isabel). `,
@@ -3067,11 +2516,12 @@ export const EmbocaduradoTunelNovo_Desconhecida: Obra = {
 
 export const AryBarrosoI_EdsonJannuzzi: Obra = {
     ID: 316,
-    Artistas: [artistas.EdsonJannuzzi],
+    Autores: [artistas.EdsonJannuzzi],
     Titulo: `Ary Barroso I`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal de mármore`,
     Descricao: `A homenagem foi uma iniciativa da Banda do Leme, ao famoso compositor, que residia no Leme.`,
     Execucao: true,
@@ -3082,9 +2532,9 @@ export const AryBarrosoI_EdsonJannuzzi: Obra = {
 
 export const MarechalRamonCastilho_Desconhecida: Obra = {
     ID: 296,
-    Imagem: 'MarechalRamonCastilho_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marechal Ramón Castilho`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3104,9 +2554,9 @@ export const MarechalRamonCastilho_Desconhecida: Obra = {
 
 export const CarlosDrummonddeAndrade_LeoSantana: Obra = {
     ID: 318,
-    Imagem: 'CarlosDrummonddeAndrade_LeoSantana.jpg',
-    Artistas: [artistas.LeoSantana],
+    Autores: [artistas.LeoSantana],
     Titulo: `Carlos Drummond de Andrade`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -3126,9 +2576,9 @@ Elizabet, voltado para a cidade e de costas para o mar.`,
 
 export const DorivalCaymmi_OttoDumovich: Obra = {
     ID: 319,
-    Imagem: 'DorivalCaymmi_OttoDumovich.jpg',
-    Artistas: [artistas.OttoDumovich],
+    Autores: [artistas.OttoDumovich],
     Titulo: `Dorival Caymmi`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -3150,9 +2600,9 @@ export const DorivalCaymmi_OttoDumovich: Obra = {
 
 export const IbrahimSued_MarcosAndreSales: Obra = {
     ID: 320,
-    Imagem: 'IbrahimSued_MarcosAndreSales.jpg',
-    Artistas: [artistas.MarcosAndreSales],
+    Autores: [artistas.MarcosAndreSales],
     Titulo: `Ibrahim Sued`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -3174,13 +2624,14 @@ export const IbrahimSued_MarcosAndreSales: Obra = {
 
 export const MarechalCasteloBranco_DanteCroce: Obra = {
     ID: 321,
-    Artistas: [artistas.DanteCroce],
+    Autores: [artistas.DanteCroce],
     Titulo: `Marechal Castelo Branco`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `A homenagem foi uma iniciativa  do governo do Estado. A saudação foi feita pelo governador Chagas Freitas, que destacou a personalidade do ex-presidente e disse que “o povo e o governo cariocas resgatam uma divida.`,
+    Descricao: `A homenagem foi uma iniciativa do governo do Estado. A saudação foi feita pelo governador Chagas Freitas, que destacou a personalidade do ex-presidente e disse que “o povo e o governo cariocas resgatam uma divida.`,
     Execucao: true,
     DataInauguracao: `05/1974`,
     Latitude: `-22.9623683`,
@@ -3189,11 +2640,12 @@ export const MarechalCasteloBranco_DanteCroce: Obra = {
 
 export const CoelhoCintra_LaurindoRamos: Obra = {
     ID: 323,
-    Artistas: [artistas.LaurindoRamos],
+    Autores: [artistas.LaurindoRamos],
     Titulo: `Coelho Cintra`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `O monumento é uma homenagem ao Pai de Copacabana, dos moradores do bairro,por ocasião do centenário da urbanização do bairro, em 1892. Inicialmente foi instalado nesse local, em 1996 foi transferido para a Avenida Lauro Sodre, onde permaneceu até junho de 2006, quando retornou para a Avenida Princesa Isabel, por solicitação da família.`,
     Execucao: true,
@@ -3204,9 +2656,9 @@ export const CoelhoCintra_LaurindoRamos: Obra = {
 
 export const PrincesaIsabel_EdgarDuvivier: Obra = {
     ID: 324,
-    Imagem: 'PrincesaIsabel_EdgarDuvivier.jpg',
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Princesa Isabel`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -3237,11 +2689,12 @@ export const PrincesaIsabel_EdgarDuvivier: Obra = {
 
 export const RodolfoeHenriqueBernadelliosIrmaosBernadelli_HildegardoLeaoVeloso: Obra = {
     ID: 326,
-    Artistas: [artistas.HildegardoLeaoVeloso],
+    Autores: [artistas.HildegardoLeaoVeloso],
     Titulo: `Rodolfo e Henrique Bernadelli, os Irmãos Bernadelli`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal revestido de granito`,
     Descricao: `É uma dupla homenagem aos irmãos Rodolfo e Henrique Bernadelli no centenario de Rodolfo. A praça foi escolhida porque nesse local viveram e trabaharam os artistas.`,
     Execucao: true,
@@ -3252,9 +2705,9 @@ export const RodolfoeHenriqueBernadelliosIrmaosBernadelli_HildegardoLeaoVeloso: 
 
 export const SarahKubitschek_MarliMazeredo: Obra = {
     ID: 327,
-    Imagem: 'SarahKubitschek_MarliMazeredo.jpg',
-    Artistas: [artistas.MarliMazeredo],
+    Autores: [artistas.MarliMazeredo],
     Titulo: `Sarah Kubitschek`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3273,11 +2726,12 @@ export const SarahKubitschek_MarliMazeredo: Obra = {
 
 export const SerzedeloCorreia_RodolfoBernadelli: Obra = {
     ID: 328,
-    Artistas: [artistas.RodolfoBernadelli],
+    Autores: [artistas.RodolfoBernadelli],
     Titulo: `Serzedelo Correia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `A homenagem foi em reconhecimento ao engenheiro do governo do Prefeito Pereira Passos. Foi uma iniciativa dos dos moradores de Copacabana.`,
     Execucao: true,
@@ -3288,11 +2742,12 @@ export const SerzedeloCorreia_RodolfoBernadelli: Obra = {
 
 export const TenenteSiqueiraCampos_AoLevantedos18doForte_JoseRangel: Obra = {
     ID: 329,
-    Artistas: [artistas.JoseRangel],
+    Autores: [artistas.JoseRangel],
     Titulo: `Tenente Siqueira Campos -  Ao Levante dos 18 do Forte.`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em bronze e mural  de granito`,
     Descricao: `O monumento é o reconhecimento "Aos 18 combatentes" , sairam em marcha pela Avenida Atlântica. A estátua em bronze representa Siqueira Campos no momento que foi alvejado por um tiro.
 Foi inaugurado em 20 de setembro de 1959 na Praça Eugênio Jardim e reinaugurado na Avenida Atlântica em 05 de julho de 1974.`,
@@ -3304,8 +2759,9 @@ Foi inaugurado em 20 de setembro de 1959 na Praça Eugênio Jardim e reinaugurad
 
 export const SiqueiraCamposnoFortedeCopacabana_HBertazzoni: Obra = {
     ID: 330,
-    Artistas: [artistas.HBertazzoni],
+    Autores: [artistas.HBertazzoni],
     Titulo: `Siqueira Campos no Forte de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3319,11 +2775,12 @@ export const SiqueiraCamposnoFortedeCopacabana_HBertazzoni: Obra = {
 
 export const ViscondedoRioBranco_FelixMauriceCharpentier: Obra = {
     ID: 331,
-    Artistas: [artistas.FelixMauriceCharpentier],
+    Autores: [artistas.FelixMauriceCharpentier],
     Titulo: `Visconde do Rio Branco`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peças e alegorias em bronze e pedestal de granito`,
     Descricao: `No monumento, o visconde se encontra sentado e veste o uniforme de senador do Império. O braço direito descansa em dois livros - A convenção de 20 de fevereiro, obra sua, de 1871, da Coleção de Leis do Brasil.
 As peças em bronze foram modeladas e fundidas em Paris. Foi inaugurada na praça da Glória, nas proximidades da base do Outeiro e nessa praça em 1996. 
@@ -3337,11 +2794,12 @@ Tem sete metros de altura, sendo de dois metros de altura da estátua em bronze.
 
 export const ComendadorPeixoto_HonorioPecanha: Obra = {
     ID: 332,
-    Artistas: [artistas.HonorioPecanha],
+    Autores: [artistas.HonorioPecanha],
     Titulo: `Comendador Peixoto`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `efígie`,
+    TipologiaObra: `Efígie`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `No singelo monumento de granito bruto tem uma placa fixada a efígiedo Comendador e uma outra alusivaàssuas doações à Cidade.`,
     Execucao: true,
@@ -3352,8 +2810,9 @@ export const ComendadorPeixoto_HonorioPecanha: Obra = {
 
 export const EdmundoBittencourt_HildegardoLeaoVeloso: Obra = {
     ID: 333,
-    Artistas: [artistas.HildegardoLeaoVeloso],
+    Autores: [artistas.HildegardoLeaoVeloso],
     Titulo: `Edmundo Bittencourt`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3380,11 +2839,12 @@ export const EdmundoBittencourt_HildegardoLeaoVeloso: Obra = {
 
 export const Einstein_HonorioPecanha: Obra = {
     ID: 334,
-    Artistas: [artistas.HonorioPecanha],
+    Autores: [artistas.HonorioPecanha],
     Titulo: `Einstein`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `cabeça`,
+    TipologiaObra: `Cabeça`,
     Material: `Peça em bronze e pedestal de gnaisse`,
     Descricao: `O monumento foi inaugurado nocentenário do nascimentode Albert Einstein, por iniciativa daLoja Albert Einstein  de b&rsquo;Nai  de B&rsquo;Ricth do Brasil. O ato foi prescedido de uma benção ecunemica com os religiosos Dom Estevão Bittencourt, Partos Nehemias Marien e o Rabino Nersod Benesay. O descerraemnto foi feito por representantes diplomático de Israel e Alemanha.`,
     Execucao: true,
@@ -3395,10 +2855,11 @@ export const Einstein_HonorioPecanha: Obra = {
 
 export const ArcosdoLeme_Desconhecida: Obra = {
     ID: 335,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Arcos do Leme`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Blocos de gnaisses`,
     Descricao: `São dois arcos de 5 ( cinco) metros de altura e 3 ( tres) metros de largura,executado em pedras numa mistura de cal e resíduos de óleo de baleia.
@@ -3413,11 +2874,12 @@ No alto do morro havia um sinaleiro que tinha como tarefa avisar aos outros fort
 
 export const MosaicodePedraPortuguesadeCopacabana_RobertoBurleMarx: Obra = {
     ID: 336,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Mosaico de Pedra Portuguesa de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Mosaico pensado como um painel continuo,maior mosaico do Mundo,com 4110 metros de extensao, em desenho abstrato, nas cores preta, branca e vermelha, simbolizando as três etnias que formaram o povo brasileiro. O paisagismo agrupa arvores em conjuntos. O trabalho incorpora a figura tradicional das ondas que simboliza o bairro.`,
     Execucao: true,
@@ -3428,11 +2890,12 @@ export const MosaicodePedraPortuguesadeCopacabana_RobertoBurleMarx: Obra = {
 
 export const CalcadadaFama_Desconhecida: Obra = {
     ID: 337,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Calçada da Fama`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Peça em granito`,
     Descricao: `São placas de granito preto na forma de uma estrela com o nome do homenageado gravado em baixo relevo. Foram fixadas a principio 15 personalidades do bairro. Trata-se de uma iniciativa dos moradores e que contou com o apoio da Prefeitura à época.`,
     Execucao: true,
@@ -3443,12 +2906,12 @@ export const CalcadadaFama_Desconhecida: Obra = {
 
 export const Vitoria_MarliMazeredo: Obra = {
     ID: 338,
-    Imagem: 'Vitoria_MarliMazeredo.jpg',
-    Artistas: [artistas.MarliMazeredo],
+    Autores: [artistas.MarliMazeredo],
     Titulo: `Vitória`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e resina com pedestal de concreto`,
     Descricao: `Escultura abstrata representando a "Vitória".`,
     Execucao: true,
@@ -3463,11 +2926,12 @@ export const Vitoria_MarliMazeredo: Obra = {
 
 export const SaoFranciscodeAssis_MarliMazeredo: Obra = {
     ID: 339,
-    Artistas: [artistas.MarliMazeredo],
+    Autores: [artistas.MarliMazeredo],
     Titulo: `São Francisco de Assis`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em resina`,
     Descricao: `A escultura foi uma homenagem da visita do Papa Francisco I, oferecida à Cidade pelos moradores de Copacabana.`,
     Execucao: true,
@@ -3478,11 +2942,12 @@ export const SaoFranciscodeAssis_MarliMazeredo: Obra = {
 
 export const BancodeMosaicoI_ChicaGranchi: Obra = {
     ID: 340,
-    Artistas: [artistas.ChicaGranchi],
+    Autores: [artistas.ChicaGranchi],
     Titulo: `Banco de Mosaico I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `mosaico`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Nos bancos de concreto existentes na orla da praia, foram instaladas peças de azulejos para a decoração formando um mosaico abstrato e colorido.`,
     Execucao: true,
@@ -3493,10 +2958,11 @@ export const BancodeMosaicoI_ChicaGranchi: Obra = {
 
 export const BancodeMosaicoII_ChicaGranchi: Obra = {
     ID: 341,
-    Artistas: [artistas.ChicaGranchi],
+    Autores: [artistas.ChicaGranchi],
     Titulo: `Banco de Mosaico II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Nos bancos de concreto existentes na orla da praia, foram instaladas peças de azulejos para a decoração formando um mosaico abstrato e colorido.`,
@@ -3508,10 +2974,11 @@ export const BancodeMosaicoII_ChicaGranchi: Obra = {
 
 export const BancodeMosaicoIII_ChicaGranchi: Obra = {
     ID: 342,
-    Artistas: [artistas.ChicaGranchi],
+    Autores: [artistas.ChicaGranchi],
     Titulo: `Banco de Mosaico III`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Nos bancos de concreto existentes na orla da praia, foram instaladas peças de azulejos para a decoração formando um mosaico abstrato e colorido.`,
@@ -3523,11 +2990,12 @@ export const BancodeMosaicoIII_ChicaGranchi: Obra = {
 
 export const OratoriodeNossaSenhoradeFatimadoBairroPeixoto_Desconhecida: Obra = {
     ID: 343,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora de Fátima do Bairro Peixoto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `oratório`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem`,
     Descricao: `Construção do oratório com imagem da Santa, foi uma iniciativa dos moradores do bairro e doada à Cidade.`,
     Execucao: true,
@@ -3538,10 +3006,11 @@ export const OratoriodeNossaSenhoradeFatimadoBairroPeixoto_Desconhecida: Obra = 
 
 export const AoLevantedoForte_HonorioPecanha: Obra = {
     ID: 344,
-    Artistas: [artistas.HonorioPecanha],
+    Autores: [artistas.HonorioPecanha],
     Titulo: `Ao Levante do Forte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Monolítico de concreto revestido com placa de granito`,
     Descricao: `Em 1943, o Coronel Euclides Hermes da Fonseca e outros oficiais tireram a iniciativa de erguer um monumento ao Levante aceita pelo prefeito da época que sugeriu que se levantasse um marco comemorativo. Aplaca foi aproveitado o material destinado ao monumento inicialmente projetado em 1930, e não concretizado doescultor José Rangel.`,
@@ -3553,12 +3022,12 @@ export const AoLevantedoForte_HonorioPecanha: Obra = {
 
 export const SerenaDamadoMar_LuizFigueiredo: Obra = {
     ID: 346,
-    Imagem: 'SerenaDamadoMar_LuizFigueiredo.png',
-    Artistas: [artistas.LuizFigueiredo],
+    Autores: [artistas.LuizFigueiredo],
     Titulo: `Serena, Dama do Mar - Iemanjá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Escultura em bronze doada à Cidade pela Companhia de Navegação Viamar com apoio da Fundação Rio Arte. Foi
     inaugurada pera os festejos de Iemanjá no ano de 1988.`,
@@ -3577,10 +3046,11 @@ export const SerenaDamadoMar_LuizFigueiredo: Obra = {
 
 export const MarcodaInauguracaodaDuplicacaodeCopacabana_Desconhecida: Obra = {
     ID: 347,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração da Duplicação de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `O marco é comemorativo da inauguração das obras do alargamento da Avenida Atlântica e do emissario submarino.`,
@@ -3592,12 +3062,12 @@ export const MarcodaInauguracaodaDuplicacaodeCopacabana_Desconhecida: Obra = {
 
 export const ABaleia_AngeloVenosa: Obra = {
     ID: 348,
-    Imagem: 'ABaleia_AngeloVenosa.png',
-    Artistas: [artistas.AngeloVenosa],
+    Autores: [artistas.AngeloVenosa],
     Titulo: `A baleia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Aço Corten, ferro`,
     Descricao: `Peça de 16 toneladas composta por dois elementos em aço de 2 polegadas de espessua, com 17 aneis de 4 metros de altura,; 2,50m de
 largura e 6 metros de comprimento e outra peça menos com 1 metro de altura 2 de largura e 2,50 de comprimento.`,
@@ -3631,11 +3101,12 @@ largura e 6 metros de comprimento e outra peça menos com 1 metro de altura 2 de
 
 export const ObeliscodoAlargamentodeCopacabana_Desconhecida: Obra = {
     ID: 349,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Obelisco do Alargamento de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `obelisco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Obelisco`,
     Material: `Bloco de granito`,
     Descricao: `Marco oferecido pelos moradores de Copacabana à Cidade, emcomemoração da reconstrução e alargamento da Avenida Atlântica. Foi inaugurado na Avenida Atlantica próximo a Rua Almirante Gonçalves. Foi transferido, na década de 1930, quando os canteiros centrais foram eliminadoso, para a Praça Júlio de Noronha. 
 Possui forma de coluna circular adornado com dois medalhões de bronze com a efígie do Prefeito Paulo de Frontin e outro com a do Presidente da República Delfim Moreira.`,
@@ -3647,10 +3118,11 @@ Possui forma de coluna circular adornado com dois medalhões de bronze com a ef�
 
 export const QuartzoRosa_Desconhecida: Obra = {
     ID: 350,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Quartzo Rosa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Blocos de quartzo`,
     Descricao: `Grande bloco maciço instalado na reurbanização da praça apos a obra do Metro-Rio. A intervenção na praça se deve a Amelia Toledo que desenovlveu o projeto da praca com cerca de 180 tipos de granito no piso e a uma fonte de água com um bloco de quartzo rosa, esta uma homenagem ao amigo e crítico de arte já morto, Casimiro Xavier de Mendonça. O lago que criava um Chafariz no entorno do quartzo rosa foi aterrado em 2010, ficando em destaque a pedra bruta.`,
@@ -3660,35 +3132,13 @@ export const QuartzoRosa_Desconhecida: Obra = {
     Longitude: ``,
 };
 
-export const Menora_Desconhecida: Obra = {
-    ID: 351,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Menorá`,
-    Classificacao: 'perene',
-    Categoria: 'representação religiosa',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em concreto`,
-    Descricao: `O monumento foi idealizado pelo Vereador Gerson Berge, devido a estar próximo a primeira sinagoga do Rio de
-    Janeiro, e ser Copacabana o bairro que acolhe uma grande parte da comunidade Judaica no Rio de Janeiro. O monumento retirado
-    em 1988, a fim de possibilitar as obras de construção, da estação do metro de Copacabana, foi reinstalado em 12 de dezembro de
-    2004, por iniciativa da organização judaica Beit Lubavitch pela CHL Incorporações.`,
-    Execucao: true,
-    DataInauguracao: `01/1995`,
-    Zona: 'Sul',
-    Bairro: 'Copacabana',
-    PontoDeReferencia: 'Praça Cardeal Arco Verde',
-    Latitude: `-22.9649633`,
-    Longitude: `-43.1801527`,
-    Lugar: 'Praça',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const PaineldosDireitosHumanosemCopacabana_FrancoiseSchein: Obra = {
     ID: 352,
-    Artistas: [artistas.FrancoiseSchein],
+    Autores: [artistas.FrancoiseSchein],
     Titulo: `Painel dos Direitos Humanos em Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Projeto daartista belga Françoise Schein, com participação da arquiteta Laura Taves, Talya Kahn e dos moradores do bairro.
@@ -3701,9 +3151,9 @@ O painel, medindo aproximadamente 200 metros quadrados, apresenta o mapa dapraia
 
 export const AlmiranteJuliodeNoronha_ABraga: Obra = {
     ID: 322,
-    Imagem: 'AlmiranteJuliodeNoronha_ABraga.jpg',
-    Artistas: [artistas.ABraga],
+    Autores: [artistas.ABraga],
     Titulo: `Almirante Júlio de Noronha`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -3722,10 +3172,11 @@ export const AlmiranteJuliodeNoronha_ABraga: Obra = {
 
 export const CogumelosII_Desconhecida: Obra = {
     ID: 355,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cogumelos II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Construção com função de proteção ou cobertura dos brinquedos infantis, integrando ao parque tematico.`,
@@ -3737,10 +3188,11 @@ export const CogumelosII_Desconhecida: Obra = {
 
 export const RelogiodoParquePeterPan_Desconhecida: Obra = {
     ID: 356,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio do Parque Peter Pan`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peças de tijolo com argamassa`,
     Descricao: `O parque temático que reproduz uma minicidade, está localizado na Rua Francisco Sá, 86, pertenceu à Companhia Estadual de Água e Esgotos (Cedae), onde uma elevatória de esgoto e tubulações do emissário submarino de Ipanema passam por debaixo da área. Foi cedido pelo Governo do Estado à Prefeitura, através de contrato de comodato, pelo prazo de dez anos, que, em contrapartida, recebeu um imóvel na Rua Saint Roman, no mesmo bairro, para construção de unidades habitacionais. Construção com caracteristica educativa para as crianças, integrando ao parque temático.`,
@@ -3752,10 +3204,11 @@ export const RelogiodoParquePeterPan_Desconhecida: Obra = {
 
 export const OratoriodeNossaSenhoradasGracasdeCopacabana_Desconhecida: Obra = {
     ID: 357,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora  das Gracas de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Oratório construído no recanto da entrada do túnel com a imagem tradicional da Santa. O santuário foi uma aspiração de Dona Gerci, amiga de Emilia Ibraim, através de quem conseguiu a autorização para construir o oratório. O filho da Dona Gerci escapou com vida de um acidente na Rodovia Presidente Dutra, milagre que ela atribui a Nossa Senhora das Gracas.`,
@@ -3767,11 +3220,12 @@ export const OratoriodeNossaSenhoradasGracasdeCopacabana_Desconhecida: Obra = {
 
 export const PaineldoFrescobol_MillorFernandes: Obra = {
     ID: 358,
-    Artistas: [artistas.MillorFernandes],
+    Autores: [artistas.MillorFernandes],
     Titulo: `Painel do Frescobol`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `painel`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Painel`,
     Material: `Peças de azulejos`,
     Descricao: `Painel de azulejo é uma homenagemao frescobol, na parede frontal da praça, com pinturas nas cores areia, azulão, verde e azul claro. O areia refere-se a areia da praia. O azulão o mar e claro o céu e o verde as montanhas. Na cor laranja formando figuras abstratas. A figura de um jogador e a praia de Copacabana ao fundo dão a dica de onde o esporte nasceu.
 O painel existente na prça não se consituti bem tombado mas o Frescobol é um Bem de Natureza Imateral pelo Decreto de numero 39 758 de 06 de fevereiro de 2015, cujo painel representativo, deve ser protegido na sua integridade.`,
@@ -3783,10 +3237,11 @@ O painel existente na prça não se consituti bem tombado mas o Frescobol é um 
 
 export const EmbocaduradoTunelAloarPrataTunelVelho_Desconhecida: Obra = {
     ID: 359,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Embocadura do Túnel Aloar Prata, Túnel Velho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Tijolo com argamassa`,
     Descricao: `A perfuração do Túnel Alaor Prata foi promovida pela Companhia Ferro-Carril do Jardim Botânico, que era responsável por alguns dos bondes que circulavam pela cidade do Rio de Janeiro.As obras duraram apenas oito meses. O túnel, com 182 metros de comprimento e 5,50 de largura, atravessava o Morro da Saudade e o Morro de São João. Foi inaugurado em, 6 de julho de 1892, Marechal Floriano Peixoto, então vice-presidente da República, esteve presente. Todos sabiam que aquela obra seria um marco para a história da cidade.
@@ -3800,10 +3255,11 @@ A denominação Túnel Velho ficou adotado. Ele também já foi chamado (oficial
 
 export const ChafarizesdaAvenidaPrincesaIsabel_ClaudioCavalcanti: Obra = {
     ID: 360,
-    Artistas: [artistas.ClaudioCavalcanti],
+    Autores: [artistas.ClaudioCavalcanti],
     Titulo: `Chafarizes da Avenida Princesa Isabel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por mármore`,
     Descricao: `Primeiro conjunto de Chafarizes em lago seco da cidade, isto é, com o jorro de água saindo de uma cisterna abaixo de nível do piso coberta por uma lage revestida de mármore e grelha de inox. São jorros que juntos foram umconjunto ao longo da Avenida Princesa Isabel.
@@ -3817,8 +3273,9 @@ Desativado o ano de 2012`,
 export const ChafarizdoBairroPeixoto_FranciscoBolonha: Obra = {
     ID: 361,
     Titulo: `Chafariz do Bairro Peixoto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Em 1964, oDepartamento de Parques e Jardins reformoua praça. Para marcar a intervenção, as empresas "Rei da Voz" e "Bendix" doaram a obra de Bolonha para a Cidade. Foi um presente de Abrahão Medina, dono das lojas Rei da Voz, morador da Rua Décio Vilares.
@@ -3831,11 +3288,11 @@ O Chafariz de estrutura arrojada, concha nervurada, tem o escorrimento de agua p
 
 export const AMillorFernandes_ChicoCaruso_JaimeLenner: Obra = {
     ID: 363,
-    Artistas: [artistas.ChicoCaruso, artistas.JaimeLenner],
     Titulo: `À Millôr Fernandes`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `banco`,
+    TipologiaObra: `Banco`,
     Material: `Aço Corten`,
     Descricao: `O monumento é uma chapa de aço corten onde está a silueta de Millôr desenhado por Chico Caruso. O monumento foi uma doação dos amigos de Millôr à cidade do Rio de Janeiro. Inicialmente a peça era com o aço corten exposto, porteriormente devido a ação da maresia no monumento, a peça precisou ser protegida com uma pintura.
 O traço de Chico Caruso foi lembrar o pensador de Ipanema, na inspiração do" Pensador" de Rodin.`,
@@ -3847,11 +3304,12 @@ O traço de Chico Caruso foi lembrar o pensador de Ipanema, na inspiração do" 
 
 export const TomJobim_ChristinaMotta: Obra = {
     ID: 365,
-    Artistas: [artistas.ChristinaMotta],
+    Autores: [artistas.ChristinaMotta],
     Titulo: `Tom Jobim`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em bronze`,
     Descricao: `A homenagem contratada pela Prefeitura da Cidade de Janeiro, foi inaugurada no dia que se celebrava os 20 anos de sua morte. A foto que serviu de modelo para a homenagem foi realizado no anos 60 quando Tom e Vinicius tinham acabado de fazer uma sinfônica em Brasília.`,
     Execucao: true,
@@ -3862,10 +3320,11 @@ export const TomJobim_ChristinaMotta: Obra = {
 
 export const OratorioaSaoPedrodeCopacabana_Desconhecida: Obra = {
     ID: 345,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Pedro de Copacabana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Pedra e tijolo com argamassa revestido de madeira`,
     Descricao: `Monumento em homenagem ao protetor dos pescadores, na colônia de pesca do Posto 6 de Copacabana. Originariamente a construção tinha o formato de um capela em construção de tijolo revestida por pedra. Em 2008 foi reformada junto com o espaço e a nova construção foi executada como um oratorio à São Pedro.`,
@@ -3877,10 +3336,11 @@ export const OratorioaSaoPedrodeCopacabana_Desconhecida: Obra = {
 
 export const Cogumelos_Desconhecida: Obra = {
     ID: 354,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cogumelos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Construção para uso adminstrativo integrando ao parque tematico.`,
@@ -3892,10 +3352,11 @@ export const Cogumelos_Desconhecida: Obra = {
 
 export const ChafarizdoVaso_WalterCurvelodeMendonca: Obra = {
     ID: 302,
-    Artistas: [artistas.WalterCurvelodeMendonca],
+    Autores: [artistas.WalterCurvelodeMendonca],
     Titulo: `Chafariz do Vaso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `Chafariz com um Vaso central, adornado com um par cabeças de leão e um figura feminina em cada face. 
@@ -3910,10 +3371,11 @@ Desativado em data desconhecida.`,
 
 export const OratoriodoSagradoCoracaodeMariaedeJesus_Desconhecida: Obra = {
     ID: 370,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório do Sagrado Coração de Maria e de Jesus.`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Oratório doado pela irma da senhora Elza Duarte da Rocha, que coordenou o grupo do terço da Igreja da Ressureiição, vizinha ao parque, para a oração dos fieis.`,
@@ -3925,11 +3387,12 @@ export const OratoriodoSagradoCoracaodeMariaedeJesus_Desconhecida: Obra = {
 
 export const SantaSara_Desconhecida: Obra = {
     ID: 371,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Santa Sara`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representações religiosas',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina`,
     Descricao: `Inaugurada no dia da festa de Santa Sara Kali no Brasil, padroeira universal do povo cigano. Foi doada pela. líder cigana Mirian Stanesconpara estimular a solidariedade e a confraternização entre os povos. É a primeira imagem pública no Brasil e a egunda no mundo.`,
     Execucao: true,
@@ -3940,10 +3403,11 @@ export const SantaSara_Desconhecida: Obra = {
 
 export const CaramanchaodaPracaNossaSenhoradaPaz_IvanPaulPaccini: Obra = {
     ID: 368,
-    Artistas: [artistas.IvanPaulPaccini],
+    Autores: [artistas.IvanPaulPaccini],
     Titulo: `Caramanchão da Praça Nossa Senhora da Paz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em concreto armado`,
     Descricao: `Idealizado no tratamento paisagístico, para adornar a área elevada da praça.<`,
@@ -3955,10 +3419,11 @@ export const CaramanchaodaPracaNossaSenhoradaPaz_IvanPaulPaccini: Obra = {
 
 export const GarotadeIpanema_HomeroBrito: Obra = {
     ID: 372,
-    Artistas: [artistas.HomeroBrito],
+    Autores: [artistas.HomeroBrito],
     Titulo: `Garota de Ipanema`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de pastilhas`,
     Descricao: `Escultura executada em concreto reprodução da peça original de aço e pintura automotiva é de 2006. Foi doada à Cidade pelo artista plástico.`,
@@ -3969,13 +3434,13 @@ export const GarotadeIpanema_HomeroBrito: Obra = {
 };
 
 export const ConstrucaoEmTriangulos_FranzWeissmann: Obra = {
-    ID: 373,
-    //ConstrucaoEmTriangulos,
-    Artistas: [artistas.FranzWeissmann],
+    ID: 373, //ConstrucaoEmTriangulos,
+    Autores: [artistas.FranzWeissmann],
     Titulo: `Construção Em Triângulos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço corten`,
     Altura: '100 cm',
     Largura: '200 cm',
@@ -3990,10 +3455,11 @@ export const ConstrucaoEmTriangulos_FranzWeissmann: Obra = {
 
 export const MarcodaIgrejaNossaSenhoradaPaz_Desconhecida: Obra = {
     ID: 376,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Igreja Nossa  Senhora da Paz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto com imagem`,
     Descricao: `O marco em concreto com uma foto antiga da Igreja. Foi construído para comemorar os 75 anos da Paróquia.`,
@@ -4005,14 +3471,13 @@ export const MarcodaIgrejaNossaSenhoradaPaz_Desconhecida: Obra = {
 
 export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
     ID: 382,
-    Imagem: 'AfraniodeMeloFranco_BrunoGiorgi.jpg',
-    Artistas: [artistas.BrunoGiorgi],
     Titulo: `Afrânio de Melo Franco`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `O busto foi doado pela família de Afrânio de Melo Franco à Cidade do Rio de Janeiro em 2010,  por ser uma obra
+    Descricao: `O busto foi doado pela família de Afrânio de Melo Franco à Cidade do Rio de Janeiro em 2010, por ser uma obra
     de Bruno Giorgi, amigo pessoal do diplomata, que o havia feito como um presente a família.`,
     Execucao: true,
     DataInauguracao: `10/2010`,
@@ -4026,11 +3491,12 @@ export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
 
 export const AloysioMariaTeixeira_RobertoSa_ClaraSa: Obra = {
     ID: 383,
-    Artistas: [artistas.RobertoSa, artistas.ClaraSa],
+    Autores: [artistas.RobertoSa, artistas.ClaraSa],
     Titulo: `Aloysio Maria Teixeira`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em bronze`,
     Descricao: `A homenagemfoi uma doação da família à Cidade do Rio de Janeiro, após o reconhecimento como logrodouro público a praça com a denominação oficial pela Prefeitura.`,
     Execucao: true,
@@ -4041,10 +3507,11 @@ export const AloysioMariaTeixeira_RobertoSa_ClaraSa: Obra = {
 
 export const Guarda_corpodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra = {
     ID: 389,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Guarda-corpo do Canal da Avenida Visconde Albuquerque`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção para proteção dos transeuntes.`,
@@ -4056,10 +3523,11 @@ export const Guarda_corpodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra =
 
 export const ComportadoCanaldoLeblon_Desconhecida: Obra = {
     ID: 390,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Comporta do Canal do Leblon`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção para controlar o acesso da água do mar, típica da engenharia hidraulica.`,
@@ -4071,11 +3539,12 @@ export const ComportadoCanaldoLeblon_Desconhecida: Obra = {
 
 export const BancodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra = {
     ID: 391,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Banco do Canal da Avenida Visconde Albuquerque`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `Construção composta por uma murada com banco e jardineira de azulejos decorados de escalonamento típico do período art. décor.`,
     Execucao: true,
@@ -4086,12 +3555,12 @@ export const BancodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra = {
 
 export const Chanuka_Desconhecida: Obra = {
     ID: 395,
-    Imagem: 'Chanuka_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chanuká`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em ferro pintado`,
     Descricao: `O primeiro Chanuká instalado no espaço foi uma obra Ruth Nac que foi inaugurada em 1º de dezembro de 2002;
     esta desapareceu em 2006. Foi substituída por outra em concdreto e finalmente em 2008 finalmente foi instalada essa em metal.
@@ -4112,10 +3581,11 @@ export const Chanuka_Desconhecida: Obra = {
 
 export const MarcodaInauguracaodaMuradadoLeblon_Desconhecida: Obra = {
     ID: 396,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração da Murada do Leblon`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito`,
     Descricao: `Marco com inscrição em baixo relevo com a data da inauguração, o nome do presidente Getulio Dornelles Vargas, do Prefeito Cônego Olympio de Mello e a obra da murada de proteção da Av. Delfim Moreira e o início das obras desta praça. Ao lado uma placa em bronze refere-se a inauguração do remanejamento do emissário, inaugurado em 5 de novembro de 1988.`,
@@ -4127,10 +3597,11 @@ export const MarcodaInauguracaodaMuradadoLeblon_Desconhecida: Obra = {
 
 export const MarcodaReinauguracaodoAlargamentodaAvenidaNiemeyer_Desconhecida: Obra = {
     ID: 397,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Reinauguração do Alargamento da Avenida Niemeyer`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Blocos de gnaisses`,
     Descricao: `Marco esculpido na pedra natural com moldura e dezeres talhados. A inscrição relata a reinauguração da avenida, o alargamento da avenida e a construção de um acostamento, citando a presença da Rainha Elizabeth da Belgica que visitava o pais.`,
@@ -4142,10 +3613,11 @@ export const MarcodaReinauguracaodoAlargamentodaAvenidaNiemeyer_Desconhecida: Ob
 
 export const MarcodaInauguracaodoCanaldoJardimdeAla_Desconhecida: Obra = {
     ID: 403,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração do Canal do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse`,
     Descricao: `Bloco de pedra instada junto a escada de acesso, próximo à Avenida Vieira Souto, onde estão registrados os nomes doPresidente Epitácio Pessoa,do Prefeito<Carlos Sampaio e do engenheiro<Saturnino de Brito.
@@ -4158,10 +3630,11 @@ Monumento fechado na praça desde o ano de 2013 devido as obras do Metrô.`,
 
 export const DeckdoJardimdeAla_Azevedo: Obra = {
     ID: 405,
-    Artistas: [artistas.Azevedo],
+    Autores: [artistas.Azevedo],
     Titulo: `Deck do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção para acesso ao canal. Criado para passeios de barco, o deuqe mantem a historia da criação do jardim.
@@ -4174,10 +3647,11 @@ Monumento fechado na praça desde o ano de 2013 devido as obras do Metro.`,
 
 export const Guarda_corpodoJardimdeAla_Desconhecida: Obra = {
     ID: 407,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Bloco de granito`,
     Descricao: `Guarda-corpo de cantaria nos balaustres e no parapeito formando um conjunto harmonico.
@@ -4190,10 +3664,11 @@ Construção desmotada no depósito da Prefeituta desde o ano de 2013 devido as 
 
 export const ChafarizdoJardimdeAla_SergioDias: Obra = {
     ID: 410,
-    Artistas: [artistas.SergioDias],
+    Autores: [artistas.SergioDias],
     Titulo: `Chafariz do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Inicialmente construído conforme projeto de Azevedo Neto, com dois lagos sem jorro de água em 1938. Em 2003 passou por modificações, quando se criou dois lagos secos cobertos por pedra e um jorro central de Chafariz.
@@ -4206,10 +3681,11 @@ Esta desativado desde o ano de 2010.`,
 
 export const TrelicadoJardimdeAla_AzevedoNeto: Obra = {
     ID: 411,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Treliça do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça de Madeira`,
     Descricao: `Caramanchão em madeira pintada na cor branca com treliças regulares. Formando um traçado romântico este trabalho recria o filme fazia sucesso nos cinemas do Rio o filme Jardim de Alah, com Marlene Dietrich.
@@ -4222,9 +3698,9 @@ Construção desmotada no depósito da Prefeituta desde o ano de 2013 devido as 
 
 export const DelPrete_RobertoSa: Obra = {
     ID: 413,
-    Imagem: 'DelPrete_RobertoSa.jpg',
-    Artistas: [artistas.RobertoSa],
+    Autores: [artistas.RobertoSa],
     Titulo: `Del Prete`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -4245,10 +3721,11 @@ export const DelPrete_RobertoSa: Obra = {
 
 export const PortaodoParqueGuinle_Desconhecida: Obra = {
     ID: 416,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão do Parque Guinle`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Peça em ferro fundido e bronze, e pedestal de granito`,
     Descricao: `Portão de duas folhas com dois outros acessos laterais, entre duas sólidas colunas laterais, encimadas por luminárias. A estrutura do portão é todo em ferro fundido e os elementos decorativos: folhas, flores e pinaculos em bronze.
@@ -4261,11 +3738,12 @@ Foi adquirido em 1911 por Eduardo Guinle na fundição francesa situada Boulevar
 
 export const Grifo_Desconhecida: Obra = {
     ID: 417,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Grifo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em ferro fundido e pedestal de granito`,
     Descricao: `Par de grifos que ladeiam o portão monumental do parque. Provavelmente esse par estava no antigo Chafariz que
     existiu na Praça José de Alencar e foi deslocado quando da sua desmontagem.`,
@@ -4285,11 +3763,12 @@ export const Grifo_Desconhecida: Obra = {
 
 export const Esfinge_Desconhecida: Obra = {
     ID: 418,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Esfinge`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Esfinge`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Estátua`,
     Material: `Peça em mármore e ferro fundido com pedestal de gnaisse`,
     Descricao: `As peças são reproduções da obra de Louis Lerambert, existentes no Jardim de Versailles, França. São esfinges em
     mármore sobre as quais se sentam um anjinho em ferro fundido.`,
@@ -4305,10 +3784,11 @@ export const Esfinge_Desconhecida: Obra = {
 
 export const VasodoParqueGuinle_EmilioGiannelli: Obra = {
     ID: 419,
-    Artistas: [artistas.EmilioGiannelli],
+    Autores: [artistas.EmilioGiannelli],
     Titulo: `Vaso do Parque Guinle`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em ferro fundido`,
     Descricao: `Originariamente foram instalado em 1965 na Praça Floriano. Foram retiradas para a obra do metro em 1979. Formam um conjunto de 12 peças, hoje distribuídas na Avenida Presidente Vargas e no Parque Guinle.
@@ -4321,11 +3801,12 @@ Os vasos foram instalado no parque em 1997.`,
 
 export const CasadosPassaros_Desconhecida: Obra = {
     ID: 420,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Casa dos Pássaros`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `construção`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Construção`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Pequena construção situada no centro do lago do parque, assentada em forma de jangada, imitandotroncos e galhos de árvore.`,
     Execucao: true,
@@ -4336,10 +3817,11 @@ export const CasadosPassaros_Desconhecida: Obra = {
 
 export const Guarda_corponoParqueGuinle_Desconhecida: Obra = {
     ID: 421,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo no Parque Guinle`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em argamassa`,
     Descricao: `Construção de ragamassa de linhas simples contudo com a função de proteção dos transeuntes sobre a ponte.`,
@@ -4351,11 +3833,12 @@ export const Guarda_corponoParqueGuinle_Desconhecida: Obra = {
 
 export const PisodePedeMolequenoLargodoBoticario_Desconhecida: Obra = {
     ID: 424,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque no Largo do Boticário`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso com bloco de granito cobrindo a área livre do Largo, executadopor sugestão da Sra. Sylvia de Bittencourt, com blocos de pedra, retiradas do Morro da Viuva.`,
     Execucao: true,
@@ -4366,11 +3849,12 @@ export const PisodePedeMolequenoLargodoBoticario_Desconhecida: Obra = {
 
 export const PisonoLargoProfessorSilvaMelo_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckdeCarvalho: Obra = {
     ID: 425,
-    Artistas: [artistas.AlencastroGraca, artistas.JorgeMartinsCancela, artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.AlencastroGraca, artistas.JorgeMartinsCancela, artistas.CarlosWerneckdeCarvalho],
     Titulo: `Piso no Largo Professor Silva Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Calçamento executada com seixos rolados cobrindo toda a área da praça.`,
     Execucao: true,
@@ -4381,11 +3865,12 @@ export const PisonoLargoProfessorSilvaMelo_AlencastroGraca_JorgeMartinsCancela_C
 
 export const PisodePedeMolequedaLadeiraCerraCora_Desconhecida: Obra = {
     ID: 426,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Ladeira Cerra Corá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original executado com pedaços ou lascas de granito.`,
     Execucao: true,
@@ -4396,10 +3881,11 @@ export const PisodePedeMolequedaLadeiraCerraCora_Desconhecida: Obra = {
 
 export const CaramanchaodaPracaDelPrete_AlfredoBrito: Obra = {
     ID: 427,
-    Artistas: [artistas.AlfredoBrito],
+    Autores: [artistas.AlfredoBrito],
     Titulo: `Caramanchão da Praça Del Prete`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em ferro pintado`,
     Descricao: `Pergolado metálico semelhante a um coreto sem a cobertura, e para ver envolvido por uma vegetação.`,
@@ -4411,10 +3897,11 @@ export const CaramanchaodaPracaDelPrete_AlfredoBrito: Obra = {
 
 export const PortaldaPracaDelPrete_AlfredoBrito: Obra = {
     ID: 428,
-    Artistas: [artistas.AlfredoBrito],
+    Autores: [artistas.AlfredoBrito],
     Titulo: `Portal da Praça Del Prete`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portal`,
     Material: `Peça em ferro pintado`,
     Descricao: `Dois portais para criar ambiente junto ao conjunto escultorico de Del Prete, separando e unificando o conjunto.`,
@@ -4427,8 +3914,9 @@ export const PortaldaPracaDelPrete_AlfredoBrito: Obra = {
 export const ChafarizConcha_FranciscoBolonha: Obra = {
     ID: 430,
     Titulo: `Chafariz Concha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz em concreto armado, em formato de bacia com bordas onduladas sobre base central, característico do estilo do arquiteto Francisco Bolonha, uma das poucas obras ainda existentes na cidade.
@@ -4441,10 +3929,11 @@ Esta desativado desde o ano de 2004, por solicitação da administração region
 
 export const BicadaRainha_Desconhecida: Obra = {
     ID: 431,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica da Rainha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `A bica se compõe de uma elegante fachada clássica com duas pilastras, sobre os quais se ergue uma platibanda, com a data de 1845 numa cartela ao centro, entre duas rosáceas. Abaixo da platibanda lê-se Bica da Rainha. Ao centro, como que uma janela recoberta com bela grade de ferro e a bica propriamente dita.
@@ -4458,10 +3947,11 @@ O monumento é adotado pelo Centro Educacional Miraflores.`,
 
 export const FontedoLargodoBoticario_Desconhecida: Obra = {
     ID: 432,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Largo do Boticário`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Essa singela fonte se compõe de um corpo quadrangular em alvenaria, tendo um vaso na parte superior e na face uma bica de bronze.
@@ -4474,10 +3964,11 @@ A fonte foi construida em 1930, para compor o espaço por sugestão da Sra. Sylv
 
 export const ChafarizdaPracaProfessorSilvaMello_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckdeCarvalho: Obra = {
     ID: 433,
-    Artistas: [artistas.AlencastroGraca, artistas.JorgeMartinsCancela, artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.AlencastroGraca, artistas.JorgeMartinsCancela, artistas.CarlosWerneckdeCarvalho],
     Titulo: `Chafariz da Praça Professor Silva Mello`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Da área remanescente do acesso ao túnel Rebouças, foi criado no Largo Professor Silva Mello.
@@ -4488,79 +3979,13 @@ Esta desativado desde maio de 2017.`,
     Longitude: `-43.2019304`,
 };
 
-export const ClarisseIndiodoBrasil_HCunhaMelo: Obra = {
-    ID: 439,
-    Imagem: 'ClarisseIndiodoBrasil_HCunhaMelo.jpg',
-    Artistas: [artistas.HCunhaMelo],
-    Titulo: `Clarisse Índio do Brasil`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e mural  de granito`,
-    Descricao: `Na homenagem Clarisse está representada com a fisionomia tranquila, em volta em três figuras anjo na altura do
-    ombro.`,
-    Execucao: true,
-    DataInauguracao: `01/1992`,
-    Zona: 'Sul',
-    Bairro: 'Humaitá',
-    PontoDeReferencia: 'Largo dos Leões',
-    Latitude: `-22.9535532`,
-    Longitude: `-43.1968612`,
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const JCarlos_HumbertoCozzo: Obra = {
-    ID: 440,
-    Artistas: [artistas.HumbertoCozzo],
-    Titulo: `J.Carlos`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `cabeça`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `A homenagem foi instalada nessa praça pela proximidade a residência de J Carlos, por iniciativa de seus amigos. A cabeça em bronze se sustenta sobre uma coluna circular de granito preto, onde existe uma gravação em baixo relevo com o nome do cartunista e diversos rostos femininos.`,
-    Execucao: true,
-    DataInauguracao: `06/1961`,
-    Latitude: `-22.9604587`,
-    Longitude: `-43.203308`,
-};
-
-export const ManuelMadruga_FloryGama: Obra = {
-    ID: 441,
-    Artistas: [artistas.FloryGama],
-    Titulo: `Manuel Madruga`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Foi uma homenagem da Sociedade dos Artistas Nacionais e a Sociedade Brasileira de Belas Artes no 1º aniversário da morte do grande artista.`,
-    Execucao: true,
-    DataInauguracao: `07/1958`,
-    Latitude: `-22.9605414`,
-    Longitude: `-43.2037342`,
-};
-
-export const QuintinoBocaiuva_HildegardoLeaoVeloso: Obra = {
-    ID: 442,
-    Artistas: [artistas.HildegardoLeaoVeloso],
-    Titulo: `Quintino Bocaiúva`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `O monumento foi o projeto vitorioso de um consurso publico. O autor resolveu adotar um projeto simples, com o homenageado em gruande dimessão ( cerca de onze metros de altura), com a descrição biografica na parte posterior.
-Foi inicialmente instalado na antiga Praça Piaçava, atual José Mariano, no Jardim Botânico. Por ocasião da construção do viaduto pelo DER, o monumento não foi desmontado. Em 1982, foi restaurado e assentado sobre um pedestal de concreto armado.`,
-    Execucao: true,
-    DataInauguracao: `11/1944`,
-    Latitude: `-22.9610274`,
-    Longitude: `-43.2031116`,
-};
-
 export const MarcodaAberturadaAvenidaNiemeyer_Desconhecida: Obra = {
     ID: 399,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Abertura da Avenida Niemeyer`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em mármore`,
     Descricao: `A placa com a descrição da inauguração e do autor do projeto execução da obra, registrando a importância da obra.`,
@@ -4572,11 +3997,12 @@ export const MarcodaAberturadaAvenidaNiemeyer_Desconhecida: Obra = {
 
 export const Goleiro_EdgarDuvivier: Obra = {
     ID: 453,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Goleiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em metal`,
     Descricao: `A peça foi doada à cidade pelo artista, para fazer conjunto com a peça da autoria de seu pai, chamada Encontro, no mesmo parque.
 Peça metálica figurativa, na póstura de uma defesa de um goleiro.`,
@@ -4588,11 +4014,12 @@ Peça metálica figurativa, na póstura de uma defesa de um goleiro.`,
 
 export const SaoFranciscodeAssis_HumbertoCozzo: Obra = {
     ID: 472,
-    Artistas: [artistas.HumbertoCozzo],
+    Autores: [artistas.HumbertoCozzo],
     Titulo: `São Francisco de Assis`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Escultura delicada com a figura de São Francisco com uma pomba em uma das mãos.Obra data de 1978`,
     Execucao: true,
@@ -4610,10 +4037,11 @@ export const SaoFranciscodeAssis_HumbertoCozzo: Obra = {
 
 export const OratoriodeSantaBarbara_Desconhecida: Obra = {
     ID: 473,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Santa Bárbara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em resina`,
     Descricao: `A imagem de Sta. Bárbara existente na entrada do tunel foi doada pelas Irmãs doColégio da Providência (já fechado), Rua Pereira da Silva,Laranjeiras.Irmã Superiora na época se chamava Hemmerlé (já falecida) era francesa. A Irmã Neil, contou que quando estavam construindo o túnel,aconteciam muitos acidentes, explosões com dinamites para a construçãoe eles (funcionários e responsáveis) todos os dias pediam paraCelebrar Missa na Capela do Colégio para as vítimas desses acidentes.Então as Irmãs do Colégio decidiram, doar a imagem de Sta. Bárbara é "Padroeira dos artilheiros, dos mineradores e das pessoas trabalham com fogo", para proteção dos trabalhadores.`,
@@ -4625,10 +4053,11 @@ export const OratoriodeSantaBarbara_Desconhecida: Obra = {
 
 export const AGaudi_MoemaBranquinho: Obra = {
     ID: 476,
-    Artistas: [artistas.MoemaBranquinho],
+    Autores: [artistas.MoemaBranquinho],
     Titulo: `À Gaudi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de pastilhas`,
     Descricao: `A peça, doada à Prefeitura do Rio, foi executado pelos alunos do Curso de Arquitetura e Urbanismo da Universidade Santa Úrsula, com a coordenação da artista Moema Branquinho. De concreto armado recebeu revestimento em mosaico de pastilhas de vidro Bisazza e fragmentos de vidro.`,
@@ -4640,11 +4069,12 @@ export const AGaudi_MoemaBranquinho: Obra = {
 
 export const BancoNamoradeira_Desconhecida: Obra = {
     ID: 477,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco Namoradeira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em argamassa`,
     Descricao: `Banco em concreto no padrão Art Déco.`,
     Execucao: true,
@@ -4655,10 +4085,11 @@ export const BancoNamoradeira_Desconhecida: Obra = {
 
 export const MarcodaImigracaoJaponesa_RobertoBurleMarx: Obra = {
     ID: 478,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Marco da Imigração Japonesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em granito`,
     Descricao: `Nas comemorações do Centenário de Imigração Niponica do Brasil, foram plantadas cem mudas de ipê amarelo, a árvore nacional do Brasil. Finalizando o plantio foi instalado um marco com inscrições em japones, contendo os dados principais do evento.
@@ -4669,27 +4100,13 @@ O projeto paisagístico é do escritório Burle Marx & Cia. Ltda.`,
     Longitude: `-43.200971`,
 };
 
-export const SagradoCoracaodeJesus_Desconhecida: Obra = {
-    ID: 479,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Sagrado Coração de Jesus`,
-    Classificacao: 'perene',
-    Categoria: 'representação religiosa',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze`,
-    Descricao: `A imagem do Sagrado Coração de Jesus está com a presença conhecida na praça desde 1971.`,
-    Execucao: true,
-    DataInauguracao: ``,
-    Latitude: `-22.9620994`,
-    Longitude: `-43.2038849`,
-};
-
 export const VasodaPracaJoseAcioli_Desconhecida: Obra = {
     ID: 480,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Vaso da Praça José Acioli`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `Réplica do Triomphe de Galatée, obra do escultor François Girardon (1628-1715) de data de inauguração desconhecida.
@@ -4703,10 +4120,11 @@ O Vase du Triomphe de Galatée, obra do escultor François Girardon (1628-1715),
 
 export const OratoriodeNossaSenhoradeFatimadeGavea_Desconhecida: Obra = {
     ID: 482,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora de Fátima de Gávea`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em resina`,
     Descricao: `Pequena capela doada pelos devotos do Imaculado Coração Nossa Senhora, irmandade que foi iniciada em Portugal e que se espalhou por várias cidades do mundo. Na inauguração houve festa com os leigos religiosos e sua introdução ao espaço público.`,
@@ -4718,10 +4136,11 @@ export const OratoriodeNossaSenhoradeFatimadeGavea_Desconhecida: Obra = {
 
 export const Guarda_corpodaRuaLineudePaulaMachado_Desconhecida: Obra = {
     ID: 484,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da  Rua Lineu de Paula Machado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em argamassa`,
     Descricao: `É uma construção de concreto para proteção dos pedestres, sobre o canal do Jardim Botânico.`,
@@ -4731,28 +4150,13 @@ export const Guarda_corpodaRuaLineudePaulaMachado_Desconhecida: Obra = {
     Longitude: `-43.2166042`,
 };
 
-export const FonteHarmonia_JeanJacquesPradier: Obra = {
-    ID: 485,
-    Artistas: [artistas.JeanJacquesPradier],
-    Titulo: `Fonte Harmonia`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Chafariz`,
-    Material: `Peça em ferro fundido`,
-    Descricao: `Escultura de uma figura feminina segurando em uma das mãos uma harpa e a outra se apoiando em um tonel. Mão se sabe quando chegou ao Brasil, porém foi instalado após ter sido doada à cidade do Rio de Janeiro, pela antiga CEDAG (atualmente CEDAE  Companhia Estadual de Água e Esgoto) em 1970. De acordo com o Jornal do Brasil de 03 de novembro de 1970, a peça iria ser instalada no Largo da Carioca, cuja ideia foi rejeita. Posteriormente foi sugerida a instalação no Largo do Boticário tambem não aceita, sendo então alocada no Largo dos Leões, onde permanece até hoje.
-Desativado em data desconhecida.`,
-    Execucao: true,
-    DataInauguracao: `11/1970`,
-    Latitude: `-22.9536396`,
-    Longitude: `-43.1969072`,
-};
-
 export const ChafarizdaPracaSantosDumont_EmilioGiannelle: Obra = {
     ID: 486,
-    Artistas: [artistas.EmilioGiannelle],
+    Autores: [artistas.EmilioGiannelle],
     Titulo: `Chafariz da Praça Santos Dumont`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz de jorro de água com um jato central e névoa no entorno. Foi inaugurado pelo Vice Governador Sr. Erasmo Martins e o diretor do departamento de Parques Gildo Boges e pela Comissão Estadual que promove os festejos do Centenário de Santos Dumont. Coube ao departamento de parques a remodelação da praça o projeto e instalação do Chafariz.
@@ -4765,11 +4169,12 @@ Esta desativado desde o ano de 2015, por solicitação da administraçãoregiona
 
 export const PontedoParquedaCidade_Desconhecida: Obra = {
     ID: 487,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `ponte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Ponte`,
     Material: `Peça em ferro pintado`,
     Descricao: `Construções de ferro para vencer os dois lados do antigo lago, que se encontra assoreado. São duas pontes semelhantes nas extremidades do lago.`,
     Execucao: true,
@@ -4780,11 +4185,12 @@ export const PontedoParquedaCidade_Desconhecida: Obra = {
 
 export const FonteWallacedoParquedaCidade_AugusteLebourg: Obra = {
     ID: 488,
-    Artistas: [artistas.AugusteLebourg],
+    Autores: [artistas.AugusteLebourg],
     Titulo: `Fonte Wallace do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `Fonte criada por encomenda do filantropo inglês Richard Wallace para fornecer água aos habitantes da cidade de Paris. Foi posteriormente vendida para diversos locais do mundo. Essa peça originalmente foi instalada na Praça Calcutá, foi desmontada e guardada no depósito da Fundação Parque e Jardins até 1996, quando foi reinaugurada na atual localização.
 Trata-se de uma peça em ferro fundido de cerca dois de altura, composta por três partes, uma base com elementos decorativo de folhagens, uma parte intermediária formada por quatro cariátides, tendo em cima uma cúpula abobadada.
@@ -4797,11 +4203,12 @@ Desativado desde o ano de 2004.`,
 
 export const FontedoIndiodoParquedaCidade_FernandoCorreiaDias: Obra = {
     ID: 489,
-    Artistas: [artistas.FernandoCorreiaDias],
+    Autores: [artistas.FernandoCorreiaDias],
     Titulo: `Fonte do Ìndio do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Peça em argamassa e azulejos`,
     Descricao: `Trata-se de uma fonte de inspiração marajoara, com um mascara central, típica do período de Art Déco na cidade.`,
     Execucao: true,
@@ -4812,10 +4219,11 @@ export const FontedoIndiodoParquedaCidade_FernandoCorreiaDias: Obra = {
 
 export const CascataePiscinaNaturaldoParquedaCidade_FernandoCorreiaDias: Obra = {
     ID: 491,
-    Artistas: [artistas.FernandoCorreiaDias],
+    Autores: [artistas.FernandoCorreiaDias],
     Titulo: `Cascata e Piscina Natural do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça em argamassa e azulejos`,
     Descricao: `Trata-se de uma piscina originada de fonte natural com revestimento de inspiração marajoara típica do período de Art Déco na cidade.`,
@@ -4827,10 +4235,11 @@ export const CascataePiscinaNaturaldoParquedaCidade_FernandoCorreiaDias: Obra = 
 
 export const PortaodoParquedaCidade_Desconhecida: Obra = {
     ID: 493,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Bloco de granito`,
     Descricao: `Construção formando com a guarita um conjunto harmônico, completado pelo portão em madeira.`,
@@ -4842,10 +4251,11 @@ export const PortaodoParquedaCidade_Desconhecida: Obra = {
 
 export const BancoMarajoaradoParquedaCidade_FernandoCorreiaDias: Obra = {
     ID: 494,
-    Artistas: [artistas.FernandoCorreiaDias],
+    Autores: [artistas.FernandoCorreiaDias],
     Titulo: `Banco Marajoara do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Banco`,
     Material: `Peça em argamassa e azulejos`,
     Descricao: `Banco decorativo de inspiração marajoara.`,
@@ -4857,11 +4267,12 @@ export const BancoMarajoaradoParquedaCidade_FernandoCorreiaDias: Obra = {
 
 export const CanhaodoParquedaCidade_Desconhecida: Obra = {
     ID: 495,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Canhão do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `canhão`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Canhão`,
     Material: `Peça em bronze`,
     Descricao: `São canhões ingleses modelo Armstrog, fabricados entre 1727 a 1797. Desativados na Gra-Bretanha foram vendidos para as armas dos portos brasileiros, que ficaram em uso até 1903.`,
     Execucao: true,
@@ -4872,10 +4283,11 @@ export const CanhaodoParquedaCidade_Desconhecida: Obra = {
 
 export const VasodoParquedaCidade_Desconhecida: Obra = {
     ID: 496,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Vaso do Parque da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `Peça decorativa no acesso a Capela do Parque`,
@@ -4885,36 +4297,14 @@ export const VasodoParquedaCidade_Desconhecida: Obra = {
     Longitude: `-43.2418108`,
 };
 
-export const DuploTotem_CeleidaTostes: Obra = {
-    ID: 497,
-    Artistas: [artistas.CeleidaTostes],
-    Titulo: `Duplo Totem`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em argamassa`,
-    Descricao: `Trata-se de duas peças formando conjunto.`,
-    Execucao: true,
-    DataInauguracao: `01/1995`,
-    Zona: 'Sul',
-    Bairro: 'Gávea',
-    PontoDeReferencia: 'Parque da Cidade',
-    Latitude: `-22.9799141`,
-    Longitude: `-43.2418108`,
-    Lugar: 'Parque',
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('1965', '1965', 'Tombamento', 'Tombado pelo INEPAC pelo Decreto 927.', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const Leao_Desconhecida: Obra = {
     ID: 498,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Leão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `cabeça`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Cabeça`,
     Material: `Peça em granito`,
     Descricao: `Escultura esculpida em pedra colocada num pedestal situado no acesso a uma das trilhas do parque.`,
     Execucao: true,
@@ -4932,10 +4322,11 @@ export const Leao_Desconhecida: Obra = {
 
 export const PaineldosDireitosHumanosnaGavea_FrancoiseSchein: Obra = {
     ID: 501,
-    Artistas: [artistas.FrancoiseSchein],
+    Autores: [artistas.FrancoiseSchein],
     Titulo: `Painel dos Direitos Humanos na Gávea`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Painel parte de um projeto idealizado pela escultora para a divulgação dos direitos humanos dos cidadãos.`,
@@ -4947,11 +4338,12 @@ export const PaineldosDireitosHumanosnaGavea_FrancoiseSchein: Obra = {
 
 export const ClariceLispector_EdgarDuvivier: Obra = {
     ID: 502,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Clarice Lispector`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A idealização desta homenagem foi da atriz Beth Goulart, de Teresa Monteiro que promove o passeio O Rio de Clarice, Mariana Muller e Niura Antunes. Apoiada por muitos de várias formas, com destaque por Gregorio Duvivier, e pelos os que assinaram os abaixo-assinados na temporada de "Simplesmente eu Clarice Lispector" (11/dez 2013), de Beth Goulart. A escultura foi realizada com a venda das 40 miniaturas criadas pelo autor.`,
     Execucao: true,
@@ -4962,10 +4354,11 @@ export const ClariceLispector_EdgarDuvivier: Obra = {
 
 export const MuralSemTitulo_AluisioCarvao: Obra = {
     ID: 506,
-    Artistas: [artistas.AluisioCarvao],
+    Autores: [artistas.AluisioCarvao],
     Titulo: `Sem titulo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mural`,
     Material: `Pintura`,
     Descricao: `Mural em policromia`,
@@ -4982,10 +4375,11 @@ export const MuralSemTitulo_AluisioCarvao: Obra = {
 
 export const MarcodaInauguracaodaAutoEstradaLagoaBarra_MarcosKonderNetto: Obra = {
     ID: 508,
-    Artistas: [artistas.MarcosKonderNetto],
+    Autores: [artistas.MarcosKonderNetto],
     Titulo: `Marco da Inauguração da Auto Estrada Lagoa Barra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
     Descricao: `Marco erguido numa elevação entre as duas pistas da Avenida Padre Leonel Franca, composta por duas placas de concreto triangulares, com alturas diferentes unidas por outra horizontal.`,
@@ -4997,10 +4391,11 @@ export const MarcodaInauguracaodaAutoEstradaLagoaBarra_MarcosKonderNetto: Obra =
 
 export const MarcoRodoviariodaGavea_Desconhecida: Obra = {
     ID: 509,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Gávea`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em gnaisse`,
     Descricao: `O marco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas. Foram instalados na Cidade nos anos de 1930.`,
@@ -5012,8 +4407,9 @@ export const MarcoRodoviariodaGavea_Desconhecida: Obra = {
 
 export const Chacrinha_Ique: Obra = {
     ID: 515,
-    Artistas: [artistas.Ique],
+    Autores: [artistas.Ique],
     Titulo: `Chacrinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -5035,11 +4431,12 @@ Chacrinha fez sua carreira de sucesso.`,
 
 export const PadreAntonioVieira_GracaCostaCabral: Obra = {
     ID: 518,
-    Artistas: [artistas.GracaCostaCabral],
+    Autores: [artistas.GracaCostaCabral],
     Titulo: `Padre Antônio Vieira`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representações religiosas',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `O busto do Padre Antônio Vieira foi um presente da cidade de Lisboa em reciprocidade ao presente da cidade do Rio de Janeiro, um busto de Machado de Assis. 
 O monumento está na PUC por cessão de uso pelo Município a fim de garantir a preservação e por interesse da Reitoria da Universidade.`,
@@ -5051,11 +4448,12 @@ O monumento está na PUC por cessão de uso pelo Município a fim de garantir a 
 
 export const SergioVieiradeMello_VilmaNoel: Obra = {
     ID: 519,
-    Artistas: [artistas.VilmaNoel],
+    Autores: [artistas.VilmaNoel],
     Titulo: `Sérgio Vieira de Mello`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `A homenagem foi uma doação da própria escultora à cidade do Rio de Janeiro. O monumento foi instalado no Largo que ja havia sido homologado por decreto como local em sua homenagem, em comemoração ao décimo ano de sua morte.`,
     Execucao: true,
@@ -5064,82 +4462,13 @@ export const SergioVieiradeMello_VilmaNoel: Obra = {
     Longitude: `-43.2241417`,
 };
 
-export const Chopin_AugustoZamoysky: Obra = {
-    ID: 521,
-    Artistas: [artistas.AugustoZamoysky],
-    Titulo: `Chopin`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `O monumento foi inaugurado na Praia Vermelha em 1944. Em 1950 foi transferido para a Praça Floriano permanecendo ai por nove anos. Foi novamente removido em 30 de junho de 1959, para o local de origem.
-O monumento foi uma iniciativa do professor Aloísio de Castro e da Associação dos Poloneses do Rio de Janeiro, em desagravo à destruição da estátua de Chopin, em Varsóvia, pelas tropas alemãs invasoras , no quinto aniversário da deflagração da Segunda Guerra Mundial com a invasão da Polonia. Foi doado pela colônia polonesa ao Brasil. Trata-se de uma estatua em bronze, sobre pedestal cúbico, representado o compositor de pé com expressão pensativa, chamdo pelos polonose "Estatua da Saudade"`,
-    Execucao: true,
-    DataInauguracao: `09/1944`,
-    Latitude: `-22.9551896`,
-    Longitude: `-43.165522`,
-};
-
-export const MarechalRondon_NewtonSa: Obra = {
-    ID: 522,
-    Imagem: 'MarechalRondon_NewtonSa.jpg',
-    Artistas: [artistas.NewtonSa],
-    Titulo: `Marechal Rondon`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `A homenagem foi erigido em comemoração ao 15 º aniversário da Embratel (Empresa Brasileira de Telecomunicações),
-    ao seu patrono. O Marechal esta representando com sua farda.
-Foi inaugurado pelo General Frederico Rondon, primo do homenageaso .`,
-    Execucao: true,
-    DataInauguracao: `09/1980`,
-    Zona: 'Sul',
-    Bairro: 'Urca',
-    PontoDeReferencia: 'Praia Vermelha',
-    Latitude: `-22.9544749`,
-    Longitude: `-43.1654532`,
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const Pasteur_HeitordaSilvaCosta: Obra = {
-    ID: 523,
-    Artistas: [artistas.HeitordaSilvaCosta],
-    Titulo: `Pasteur`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze com pedestal de mármore`,
-    Descricao: `Homenagem realizada pelo engenheiro arquiteto Heitor da Silva Costa, com a colaboração do Professor Gronchi. Foi inaugurado em 1925 no começo da averinda de mesmo nome e transferida para essa praça ao lado da antiga Escola de Medicina em agosto de 1947. Foi realizado poriniciativa da Sociedade de Medicina e Cirurgia. Na inauguração estavam presentes o Ministro das Relações Exteriores e o Emabixador da Franaça.
-A herma ( meio corpo) de Pasteur, o representa pensativoem busca da solução do problema da raiva, no simbolismo de um cão, que emerge da base do pedestal.`,
-    Execucao: true,
-    DataInauguracao: `06/1925`,
-    Latitude: `-22.9538729`,
-    Longitude: `-43.1693478`,
-};
-
-export const EusebiodeOliveira_CesarDoria: Obra = {
-    ID: 524,
-    Artistas: [artistas.CesarDoria],
-    Titulo: `Eusébio de Oliveira`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `A homenagem foi erguida por iniciativa do Departamento Nacional de Produção Mineral e do Ministério da Agricultura, em frente à sede do antigo Serviço Geológico e Mineralógico do Brasil,que por longos anos foi diretor dessa tradicional instituição científica.
-Na obra, foram empregados blocos de pedras de cores azul, verde e rosa, simbolizando a especialização em que tanto se aprofundou o espírito pesquisador do geólogo homenageado.`,
-    Execucao: true,
-    DataInauguracao: `12/1941`,
-    Latitude: `-22.9539283`,
-    Longitude: `-43.169591`,
-};
-
 export const CacildaBecker_Desconhecida: Obra = {
     ID: 525,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cacilda Becker`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Peça em concreto com imagem`,
     Descricao: `Singelo monumento monolitico, erguido por iniciativa da Prefeitura, no qual estão fixados duas fotografias da grande atriz de cada lado do mural, como cartazes de divulgação de seus espetáculos descrevendo sua biografia.
@@ -5150,106 +4479,13 @@ Em outubro de 2016 o painel foi refeito pela artista Luciana Palma, desta vez em
     Longitude: `-43.1691992`,
 };
 
-export const PomonanoUrca_Desconhecida: Obra = {
-    ID: 526,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Pomona no Urca`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
-    Descricao: `Escultura feminina com frutos nas mãos de linhas neoclássicas. `,
-    Execucao: true,
-    DataInauguracao: `01/1963`,
-    Latitude: `-22.9555294`,
-    Longitude: `-43.1655727`,
-};
-
-export const CeresnaUrca_Desconhecida: Obra = {
-    ID: 527,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Ceres na Urca`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore com pedestal de gnaisse`,
-    Descricao: `Escultura feminina com espigas de trigo em suas mãos, numa representação neoclássica`,
-    Execucao: true,
-    DataInauguracao: `01/1963`,
-    Latitude: `-22.9555294`,
-    Longitude: `-43.1655727`,
-};
-
-export const VestalnaUrca_Desconhecida: Obra = {
-    ID: 528,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Vestal na Urca`,
-    Classificacao: 'perene',
-    Categoria: 'personalidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
-    Descricao: `Escultura feminina com uma chama sagrada nas mãos, uma representação neoclássica.`,
-    Execucao: true,
-    DataInauguracao: `01/1963`,
-    Latitude: `-22.954543`,
-    Longitude: `-43.1653888`,
-};
-
-export const FloranaUrca_Desconhecida: Obra = {
-    ID: 529,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Flora na Urca`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara com pedestal de gnaisse`,
-    Descricao: `Escultura feminina neoclássica representando Flora com a cabeça coroada de flores.`,
-    Execucao: true,
-    DataInauguracao: `01/1963`,
-    Latitude: `-22.954543`,
-    Longitude: `-43.1653888`,
-};
-
-export const HeroisdeLagunaeDourados_AntonioPintodeMattos: Obra = {
-    ID: 530,
-    Artistas: [artistas.AntonioPintodeMattos],
-    Titulo: `Heróis de Laguna e Dourados`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Escultura`,
-    Material: `Peça e alegorias em bronze e pedestal de granito`,
-    Descricao: `A idéia da elevação de um monumento aos heróis do drama épico da Retirada da Laguna e de Dourados, capitaneados pelo Tenente Antônio João, data de 1920. O primeiro projeto proposto foi de autoria do General Maciel de Miranda, e deveria ser erguido no pátio interno do Quartel-general do Rio de Janeiro, depois Ministério da Guerra. O atual monumento, em bronze e granito foi uma iniciativa do Coronel Pedro Cordolino Ferreira de Azevedo.
-Sobre uma base circular, esta uma cripta onde se encontram os retos mortais do Coronel Camisão, do Guia Lopes e o cenotáfio do Tenente Antônio João, desde 15 de novembro de 1941 quando foi inaugurada. Desta ergue-se a coluna onde esta a alegoria da Vitória. Ao centro da coluna estão as estátuas dos três principais heróis: o Tenente Antônio João, no momento em que, baleado, cambaleando; o Guia Lopes, recurvado, apoiando o queixo no dorso da mão esquerda, e o Coronel Camisão, com a fisionomia de quem tem uma grave decisão a tomar, tendo numa das mãos a espada e na outra o mapa de campanha. Mais acima, do ponto onde parte a coluna, erguem-se três grandes alegorias em bronze, representando a Pátria, a Espada e a História
-Diversos artistas participaram na execução monumento: a grade à entrada da cripta é de Curzio Zani; a porta de entrada do recinto de Calmon Barreto; a imagem de Cristo sobre a lápide do mesmo artista; o lanceiro guardando o sarcófago de Leão Veloso, e os sete medalhões com efígies e nomes dos heróis de Adalberto de Matos.`,
-    Execucao: true,
-    DataInauguracao: `12/1938`,
-    Latitude: `-22.9546327`,
-    Longitude: `-43.1666687`,
-};
-
-export const IntentonaComunista_HumbertoCozzo: Obra = {
-    ID: 531,
-    Artistas: [artistas.HumbertoCozzo],
-    Titulo: `Intentona Comunista`,
-    Classificacao: 'perene',
-    Categoria: 'narratividade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze com pedestal de granito`,
-    Descricao: `Em 1935, ocorreu a tentativa de golpe de estado no Rio de Janeiro, com a sublevação do 3º Regimento de Infantaria, na Praia Vermelha. Enquanto os outros focos de insurreição foram debelados no 3º Regimento de Infantaria, sob a chefia de Agildo Barata, provocou a morte de 31 militares legalistas. No dia seguinte, após a pronta ação do General Dutra, esse derradeiro e mais sanguinário foco do levante nacional capitaneado por Luiz Carlos Prestes estava completamente vencido. O resultado, a longo prazo serviu para a instalação da ditadura do Estado Novo, em 1937.
-As vítimas, originalmente sepultadas no Cemitério de São João Batista, foram para esse monumento estilo art decor.Ao centro, numa coluna ladeada por duas urnas, vê-se a figura da República, com uma coroa de louros nas mãos. A seus pés, mais à frente, ergue-se a estátua em bronze de um soldado ferido.
-O Monumento em 1974 foir transferido do Cemitério São João Batista para a praça.`,
-    Execucao: true,
-    DataInauguracao: `01/1974`,
-    Latitude: `-22.9551823`,
-    Longitude: `-43.1665068`,
-};
-
 export const MarcodaRevolucaode1964_Desconhecida: Obra = {
     ID: 532,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Revolução de 1964`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Trata-se de um bloco com uma placa em bronze onde esta descrito que neste local, herois militares, resistiram a insurreição comunista de 1935.`,
@@ -5262,10 +4498,11 @@ export const MarcodaRevolucaode1964_Desconhecida: Obra = {
 
 export const AmuradadaRuaGeneralUrquisa_Desconhecida: Obra = {
     ID: 533,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Rua General Urquisa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `É uma murada cercada com duas escadarias e um mural de azulejos decorativos.`,
@@ -5277,10 +4514,11 @@ export const AmuradadaRuaGeneralUrquisa_Desconhecida: Obra = {
 
 export const FradesdaPraiaVermelha_Desconhecida: Obra = {
     ID: 534,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Frades da Praia Vermelha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Frades de pedra esculpida de forma cilíndrica.`,
@@ -5290,29 +4528,14 @@ export const FradesdaPraiaVermelha_Desconhecida: Obra = {
     Longitude: `-43.1654889`,
 };
 
-export const SaoPedrodoMar_EdgarDuvivier: Obra = {
-    ID: 535,
-    Artistas: [artistas.EdgarDuvivier],
-    Titulo: `São Pedro do Mar`,
-    Classificacao: 'perene',
-    Categoria: 'representações religiosas',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze`,
-    Descricao: `Singela escultura de corpo de cilindrico, representando o Apóstolo sobre uma pedra da baía.
-Segundo o Sr. José Carlos Audiface de Brito " Indo a Itália após Torneio Mundial de Caça Submarino, conheci em Rapallo o Cristo submerso. Tive então a ideia da imagem de São Pedro. Regressando ao Brasil, conseguiu o apoio do caçador e jornalista João Carlos Vogt e do escultor Edgard Duvivier Com subscrição levantou os fundos necessários à fundição. A ideia inicial de colocá-la no fundo do mar nas Cagaras, foi abandonada para possibilitar o acesso a mesma de maior número de pessoas, opinando-se pela colocação na Urca em frente a igreja cujo o pároco padre Barbosa, que colaborou com o projeto. A imagem de São Pedro executada para ser olhada de cima para baixo, na previsão inicial de colocá-la no fundo do mar nas ilhas Cagaras, Na cerimônia de colocação, em 1959, participaram os membros da equipe brasileira ao mencionado I Torneio Mundial de Caça Submarina em Portugual, e os desportistas Vitório Berredo, Victor Wellisch, Américo Santarelle e outros."`,
-    Execucao: true,
-    DataInauguracao: `07/1959`,
-    Latitude: `-22.9483318`,
-    Longitude: `-43.165671`,
-};
-
 export const PontedaAvenidaPortugal_Desconhecida: Obra = {
     ID: 536,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte da Avenida Portugal`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `ponte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado com balaustre de argamassa`,
     Descricao: `Ponte construída para servir de entrada monumental para a Exposição Nacional de 1908, comemorativa do Centenário da Abertura dos Portos. Nessa ocasião teve início os aterros entre a Pedra da Urca e a atual Avenida Pasteur. Em setembro de 1922 a ponte foi reformada para as comemorações do Centenário da Independência do Brasil.<`,
     Execucao: true,
@@ -5323,11 +4546,12 @@ export const PontedaAvenidaPortugal_Desconhecida: Obra = {
 
 export const MosaicoRosadosVentosdaUrca_Desconhecida: Obra = {
     ID: 537,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mosaico Rosa dos Ventos da Urca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Piso representando uma rosa dos ventos, nas três cores desse tipo de pavimentação, branco, negro e castanho.<`,
     Execucao: true,
@@ -5338,10 +4562,11 @@ export const MosaicoRosadosVentosdaUrca_Desconhecida: Obra = {
 
 export const Guarda_corpodaAvenidaPortugal_Desconhecida: Obra = {
     ID: 538,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Portugal`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em argamassa`,
     Descricao: `Murada construída para a Exposição Nacional de 1908.A Exposição foi promovida pelo Governo Federal e destinava a comemorar o centenário da Abertura dos Portos as Nações Amigas.`,
@@ -5353,10 +4578,11 @@ export const Guarda_corpodaAvenidaPortugal_Desconhecida: Obra = {
 
 export const ChaminedaUrca_Desconhecida: Obra = {
     ID: 539,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chaminé da Urca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chaminé`,
     Material: `Peças de tijolo com argamassa`,
     Descricao: `Chaminé de tijolos, reliquia da antiga usina da<em>City Improvements</em>que ali funcionou. Contrução de grande dimensão tem base de blocos de pedra e coluna de tijolo.`,
@@ -5368,10 +4594,11 @@ export const ChaminedaUrca_Desconhecida: Obra = {
 
 export const ChafarizdaPraiaVermelha_AzevedoNeto: Obra = {
     ID: 540,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Chafariz da Praia Vermelha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em argamassa`,
     Descricao: `Lago retangular com jorros de água partindo das laterais para o centro.
@@ -5384,10 +4611,11 @@ Desativado desde maio de 2017`,
 
 export const Guarda_corpodoLargodosGuimaraes_Desconhecida: Obra = {
     ID: 543,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo do Largo dos Guimarães`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em ferro fundido`,
     Descricao: `Guarda corpo na divisão entre os dois níveis do logradouro, com cerca de um metro de altura e montantes de metro de altura num delicado trabalho de fundição. O conjunto tem cerca de 300 metros com escadas para acesso entre as duas faixas de rolamento.`,
@@ -5399,11 +4627,12 @@ export const Guarda_corpodoLargodosGuimaraes_Desconhecida: Obra = {
 
 export const AmuradadoLargodosGuimaraes_Desconhecida: Obra = {
     ID: 544,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Largo dos Guimarães`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `amurada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Amurada`,
     Material: `Bloco de granito`,
     Descricao: `Construção com a técnica de pedra seca,para sustentação para o nível mais alto do logradouro.`,
     Execucao: true,
@@ -5414,10 +4643,11 @@ export const AmuradadoLargodosGuimaraes_Desconhecida: Obra = {
 
 export const PisodePedeMolequenoLargodosNeves_Desconhecida: Obra = {
     ID: 545,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque no Largo dos Neves`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original resquício da ocupação.`,
@@ -5429,10 +4659,11 @@ export const PisodePedeMolequenoLargodosNeves_Desconhecida: Obra = {
 
 export const PisodePedeMolequenaLadeiradoVianna_Desconhecida: Obra = {
     ID: 546,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Ladeira do Vianna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original resqício da ocupação.`,
@@ -5444,10 +4675,11 @@ export const PisodePedeMolequenaLadeiradoVianna_Desconhecida: Obra = {
 
 export const PisodePedeMolequenaTravessaXavierdoPassos_Desconhecida: Obra = {
     ID: 547,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Travessa Xavier do Passos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original resquício da ocupação.`,
@@ -5459,11 +4691,12 @@ export const PisodePedeMolequenaTravessaXavierdoPassos_Desconhecida: Obra = {
 
 export const PisodePedeMolequenaRuaMigueldePaiva_Desconhecida: Obra = {
     ID: 548,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Rua Miguel de Paiva`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original resquício da ocupação.`,
     Execucao: true,
@@ -5474,10 +4707,11 @@ export const PisodePedeMolequenaRuaMigueldePaiva_Desconhecida: Obra = {
 
 export const PisodePedeMolequedaLadeiradoMeirelles_Desconhecida: Obra = {
     ID: 549,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Ladeira do Meirelles`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original, resquício da ocupação.`,
@@ -5489,10 +4723,11 @@ export const PisodePedeMolequedaLadeiradoMeirelles_Desconhecida: Obra = {
 
 export const PisoemPedeMolequedaEstradadasPaineiras_Desconhecida: Obra = {
     ID: 550,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso em Pé de Moleque da Estrada das Paineiras`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original, resquício da ocupação.`,
@@ -5504,11 +4739,12 @@ export const PisoemPedeMolequedaEstradadasPaineiras_Desconhecida: Obra = {
 
 export const PisodePedeMolequenaRuaPaulaRamos_Desconhecida: Obra = {
     ID: 551,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Rua Paula Ramos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original resquício da ocupação.`,
     Execucao: true,
@@ -5519,11 +4755,12 @@ export const PisodePedeMolequenaRuaPaulaRamos_Desconhecida: Obra = {
 
 export const AmuradadaRuaAprazivel_Desconhecida: Obra = {
     ID: 552,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Rua Aprazível`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `amurada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Amurada`,
     Material: `Blocos de granito`,
     Descricao: `Construção com a técnica de pedra seca, de sustentação para o nível mais alto do logradouro.`,
     Execucao: true,
@@ -5534,11 +4771,12 @@ export const AmuradadaRuaAprazivel_Desconhecida: Obra = {
 
 export const FontedoChororo_Desconhecida: Obra = {
     ID: 553,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Chororó`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Fonte construída em argamassa de cimento, composta por dois tanques que acumula a água do Rio Chororó, em andares diferenciados, revestida em azulejo com motivos florais estilizados em azul e branco. Na face frontal de uma das bacias existe uma placa em bronze com o nome Chororó PNT`,
     Execucao: true,
@@ -5549,11 +4787,12 @@ export const FontedoChororo_Desconhecida: Obra = {
 
 export const CeresdoJardimdeValongo_Desconhecida: Obra = {
     ID: 555,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ceres do Jardim de Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada no Cais onde desembarcaria a Imperatriz Tereza Crisitna. De estilo neoclassico, em mármore de Carrara, é uma do conjunto de quatro esculturas que são as primeiras peças em área pública da Cidade. Foi transferida para o Jardim do Valongo quando de sua construção por Pereira Passos.
 A escultura éesculpida com grandes e vaporosas vestes e cabelos presos e traças e pés descalços, apresenta em uma das mãos um ramalhete indicando o plantio como sua missão de proteção.
@@ -5566,11 +4805,12 @@ A escultura éesculpida com grandes e vaporosas vestes e cabelos presos e traça
 
 export const MartedoJardimdoValongo_Desconhecida: Obra = {
     ID: 556,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marte do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada no Cais onde desembarcaria a Imperatriz Tereza Cristina. De estilo neoclássica é uma do conjunto de quatro peças, as primeiras peças em área pública da Cidade. Foi transferida para o Jardim do Valongo quando de sua construção por Pereira Passos em 1906.
 A peça neoclássica foi esculpida com veste de um guerreiro romano, com capacete e apoiado num tronco, por trás da figura entremeado a sua roupagem esta presa uma cobra. Seu pé está calçado com sandálias romanas.`,
@@ -5582,11 +4822,12 @@ A peça neoclássica foi esculpida com veste de um guerreiro romano, com capacet
 
 export const MercuriodoJardimdoValongo_Desconhecida: Obra = {
     ID: 557,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mercúrio do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada no Cais onde desembarcaria a Imperatriz Tereza Crisitna em 1943, de estilo neoclássica é uma do conjunto de quatro peças, as primeiras peças em área pública da Cidade. Foi transferida para o Jardim do Valongo quando de sua construção por Pereira Passos em 1906.
 Escultura neoclássica esculpida em elegantes vestes tendo em sua mão esquerda um cajado preso a uma cobra. Na cabeça suporta um capacete com pequenas asas e pés descalços.
@@ -5599,11 +4840,12 @@ A peça é uma reprodução de Hermes clássica.`,
 
 export const MinervadoJardimdoValongo_Desconhecida: Obra = {
     ID: 558,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Minerva do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada no Cais onde desembarcaria a Imperatriz Tereza Crisitna. De estilo neoclássico é uma do conjunto de quatro peças, as primeiras peças em área pública da Cidade. Foi transferida para o Jardim do Valongo quando de sua construção por Pereira Passos em 1906.
 Peça com um grande panejamento que cobre seu corpo, carregada em sua cabeça um capacete dos guerreiros. Uma de suas mãos prende a roupa em seu corpo e a outra se encontra quebrada (deveria segurar uma lança ou espada). Seus pés estão calcados dando elegância.
@@ -5616,10 +4858,11 @@ A peça é uma reprodução da obra Athenas de Giustiniani existente no Museu do
 
 export const AmuradadoJardimdeValongo_LuizRey: Obra = {
     ID: 559,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Amurada do Jardim de Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de gnaisse com argamassa`,
     Descricao: `Construção de pedras seca revestida com argamassa de areia e pó de pedra.`,
@@ -5631,11 +4874,12 @@ export const AmuradadoJardimdeValongo_LuizRey: Obra = {
 
 export const EscadariadoJardimdoValongo_LuizRey: Obra = {
     ID: 560,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Escadaria do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `escada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Escada`,
     Material: `Bloco de granito`,
     Descricao: `Construção no central da amurada para acesso ao jardim suspenso e ao Morro do Valongo.`,
     Execucao: true,
@@ -5646,10 +4890,11 @@ export const EscadariadoJardimdoValongo_LuizRey: Obra = {
 
 export const AmuradadeRocailledoJardimdoValongo_LuizRey: Obra = {
     ID: 561,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Amurada de Rocaille do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Encosta protegida com argamassa seguindo a declividade natural criando ninchos imitando pedra natural.`,
@@ -5661,10 +4906,11 @@ export const AmuradadeRocailledoJardimdoValongo_LuizRey: Obra = {
 
 export const Guarda_corpodoJardimdoValongo_LuizRey: Obra = {
     ID: 562,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Guarda-corpo do Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Construção para proteção dos pedestres, imitando tronco de arvore caracteristica dos jardins românticos.`,
@@ -5676,11 +4922,12 @@ export const Guarda_corpodoJardimdoValongo_LuizRey: Obra = {
 
 export const CaisdoValongo_Desconhecida: Obra = {
     ID: 563,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cais do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `obras públicas`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Obra Pública`,
     Material: `Bloco de granito`,
     Descricao: `Cais do Valongo foi construído em 1811 para o desembarque e comércio de escravos. Em 1843, foi remodelado por Grandjean de Montign como Cais da Imperatriz. Em 1911 foi aterrado e deu lugar à Praça do Comércio. Em 2011,durante as obras urbanas, onde ocorreu pesquisas arqueologicas apareceu resquício do antigo cais foram redescobertos.`,
     Execucao: true,
@@ -5691,10 +4938,11 @@ export const CaisdoValongo_Desconhecida: Obra = {
 
 export const PisodePedeMolequedaRuaJogodaBola_Desconhecida: Obra = {
     ID: 566,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Rua Jogo da Bola`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original preservado em parte na integridade.`,
@@ -5706,10 +4954,11 @@ export const PisodePedeMolequedaRuaJogodaBola_Desconhecida: Obra = {
 
 export const PisodePedeMolequedoBecoJoaoJose_Desconhecida: Obra = {
     ID: 567,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque do Beco João José`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Rua com o calçamento original preservado.`,
@@ -5721,10 +4970,11 @@ export const PisodePedeMolequedoBecoJoaoJose_Desconhecida: Obra = {
 
 export const CoretodaPracaHarmonia_Desconhecida: Obra = {
     ID: 568,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça Harmonia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Peças de tijolo com argamassa`,
     Descricao: `Em 20 de janeiro de 1912 foi assentado um coreto para a música, no local onde havia um Chafariz de abastecimento. O coreto foi demolido sendo construiído novamente em 1978, nada parecido com o antigo em ferro.
@@ -5737,11 +4987,12 @@ Construção de planta quadrada em concreto, com cobertura apoiada pilares de ma
 
 export const NossaSenhoradaImaculadaConceicaodoMorrodaConceicao_Desconhecida: Obra = {
     ID: 569,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Nossa Senhora da Imaculada Conceição do Morro da Conceição`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa`,
     Descricao: `Imagem da patrona do Morro da Conceição. Foi oferecida pelo Serviço Geografico do Exercito para os 10.000 habitantes do lugar. Foi instalada no ano do centenário do dogma de Imaculada Conceição de Nossa Senhora.
 A pedestal foi realizada pelosIrmãos Bernadelle, Londres nº 460, Bonmsucesso .`,
@@ -5753,10 +5004,11 @@ A pedestal foi realizada pelosIrmãos Bernadelle, Londres nº 460, Bonmsucesso .
 
 export const OratorioCapeladasAlmas_Desconhecida: Obra = {
     ID: 570,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório Capela das Almas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Oratório com porta em arco ogival e coroamento em abóboda, é uma homenagem aos combatentes que não resistiram à Guerra de Canudos, em 1897, na Bahia. Foi erguido por soldados que sobreviveram e vieram para o Rio, dando origem e nome à primeira favela da Cidade.`,
@@ -5768,11 +5020,12 @@ export const OratorioCapeladasAlmas_Desconhecida: Obra = {
 
 export const EscadariadoMorrodoLivramento_Desconhecida: Obra = {
     ID: 571,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Escadaria do Morro do Livramento`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `escada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Escada`,
     Material: `Bloco de granito`,
     Descricao: `Escadaria construida com pavimentação em paralelepipedo e espelhos em blocos de granito originais.`,
     Execucao: true,
@@ -5783,10 +5036,11 @@ export const EscadariadoMorrodoLivramento_Desconhecida: Obra = {
 
 export const PainelGentileza2_ProfetaGentileza: Obra = {
     ID: 573,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 2`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.`,
@@ -5798,10 +5052,11 @@ export const PainelGentileza2_ProfetaGentileza: Obra = {
 
 export const PainelGentileza3_ProfetaGentileza: Obra = {
     ID: 574,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 3`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.`,
@@ -5813,10 +5068,11 @@ export const PainelGentileza3_ProfetaGentileza: Obra = {
 
 export const PainelGentileza4_ProfetaGentileza: Obra = {
     ID: 575,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 4`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.ESTE E O PROFETA  GENTILEZA QUE GERA  GENTILEZA AMORRR  BELEZA E RIQUEZA A  NATUREZA E DEUS NOSSO  PAI CRIADORR DA TUDO DE GRAÇA DESTRUIDORR E O CAPETA EM CAPITAL FAZ TODA A MALDADE `,
@@ -5828,10 +5084,11 @@ export const PainelGentileza4_ProfetaGentileza: Obra = {
 
 export const PainelGentileza5_ProfetaGentileza: Obra = {
     ID: 576,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 5`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5850,10 +5107,11 @@ export const PainelGentileza5_ProfetaGentileza: Obra = {
 
 export const PainelGentileza6_ProfetaGentileza: Obra = {
     ID: 577,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 6`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980
@@ -5875,10 +5133,11 @@ export const PainelGentileza6_ProfetaGentileza: Obra = {
 
 export const PainelGentileza7_ProfetaGentileza: Obra = {
     ID: 578,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 7`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5901,10 +5160,11 @@ export const PainelGentileza7_ProfetaGentileza: Obra = {
 
 export const PainelGentileza8_ProfetaGentileza: Obra = {
     ID: 579,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 8`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5925,10 +5185,11 @@ export const PainelGentileza8_ProfetaGentileza: Obra = {
 
 export const PainelGentileza9_ProfetaGentileza: Obra = {
     ID: 580,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 9`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5949,10 +5210,11 @@ export const PainelGentileza9_ProfetaGentileza: Obra = {
 
 export const PainelGentileza10_ProfetaGentileza: Obra = {
     ID: 581,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 10`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5973,10 +5235,11 @@ export const PainelGentileza10_ProfetaGentileza: Obra = {
 
 export const PainelGentileza11_ProfetaGentileza: Obra = {
     ID: 582,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 11`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -5997,10 +5260,11 @@ export const PainelGentileza11_ProfetaGentileza: Obra = {
 
 export const PainelGentileza12_ProfetaGentileza: Obra = {
     ID: 583,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 12`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6021,10 +5285,11 @@ export const PainelGentileza12_ProfetaGentileza: Obra = {
 
 export const PainelGentileza13_ProfetaGentileza: Obra = {
     ID: 584,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 13`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6044,33 +5309,13 @@ SURDOS CEGA MATA CONDUZ PARA `,
     Longitude: `-43.2105682`,
 };
 
-export const FernandoBaptistaGoncalves_EdgarDuvivier: Obra = {
-    ID: 443,
-    Imagem: 'FernandoBaptistaGoncalves_EdgarDuvivier.jpg',
-    Artistas: [artistas.EdgarDuvivier],
-    Titulo: `Fernando Baptista Gonçalves`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `Trata-se de uma homenagem dos antigos alunos do Colégio Padre Antonio Vieira ao mestre. Foi doada à Cidade pela
-    associação dos alunos.`,
-    Execucao: true,
-    DataInauguracao: `01/2009`,
-    Latitude: `-22.9558313`,
-    Longitude: `-43.1981995`,
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Fundição/Atelier', 'FEB- Fundição e Esculturas em Bronze', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const PainelGentileza14_ProfetaGentileza: Obra = {
     ID: 585,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 14`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6091,10 +5336,11 @@ export const PainelGentileza14_ProfetaGentileza: Obra = {
 
 export const PainelGentileza16_ProfetaGentileza: Obra = {
     ID: 587,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 16`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6115,10 +5361,11 @@ export const PainelGentileza16_ProfetaGentileza: Obra = {
 
 export const PainelGentileza17_ProfetaGentileza: Obra = {
     ID: 589,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 17`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6138,10 +5385,11 @@ export const PainelGentileza17_ProfetaGentileza: Obra = {
 
 export const PainelGentileza18_ProfetaGentileza: Obra = {
     ID: 590,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 18`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6161,10 +5409,11 @@ export const PainelGentileza18_ProfetaGentileza: Obra = {
 
 export const PainelGentileza19_ProfetaGentileza: Obra = {
     ID: 591,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 19`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6184,10 +5433,11 @@ export const PainelGentileza19_ProfetaGentileza: Obra = {
 
 export const PainelGentileza20_ProfetaGentileza: Obra = {
     ID: 593,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 20`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6203,10 +5453,11 @@ export const PainelGentileza20_ProfetaGentileza: Obra = {
 
 export const PainelGentileza21_ProfetaGentileza: Obra = {
     ID: 594,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 21`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6222,10 +5473,11 @@ export const PainelGentileza21_ProfetaGentileza: Obra = {
 
 export const PainelGentileza22_ProfetaGentileza: Obra = {
     ID: 595,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 22`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6242,10 +5494,11 @@ export const PainelGentileza22_ProfetaGentileza: Obra = {
 
 export const PainelGentileza23_ProfetaGentileza: Obra = {
     ID: 596,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 23`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6261,10 +5514,11 @@ export const PainelGentileza23_ProfetaGentileza: Obra = {
 
 export const PainelGentileza24_ProfetaGentileza: Obra = {
     ID: 597,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 24`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6282,10 +5536,11 @@ export const PainelGentileza24_ProfetaGentileza: Obra = {
 
 export const PainelGentileza25_ProfetaGentileza: Obra = {
     ID: 598,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 25`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6303,11 +5558,12 @@ export const PainelGentileza25_ProfetaGentileza: Obra = {
 
 export const IrmaosAndreeAntonioReboucas_EdgarDuvivier: Obra = {
     ID: 438,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Irmãos André e Antônio Rebouças`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `A homenagem aos Irmãos foi uma iniciativa do Clube de Engenharia, custeada pela Prefeitura da Cidade do Rio de Janeiro.
 Os bustos foram retirados em abril de 2016 temporariamente e reistalados em 16 de novembro de 2016 no mesmo local.`,
@@ -6319,10 +5575,11 @@ Os bustos foram retirados em abril de 2016 temporariamente e reistalados em 16 d
 
 export const PainelGentileza27_ProfetaGentileza: Obra = {
     ID: 600,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 27`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6341,10 +5598,11 @@ export const PainelGentileza27_ProfetaGentileza: Obra = {
 
 export const PainelGentileza28_ProfetaGentileza: Obra = {
     ID: 601,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 28`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6363,10 +5621,11 @@ export const PainelGentileza28_ProfetaGentileza: Obra = {
 
 export const PainelGentileza29_ProfetaGentileza: Obra = {
     ID: 602,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 29`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6385,10 +5644,11 @@ export const PainelGentileza29_ProfetaGentileza: Obra = {
 
 export const PainelGentileza30_ProfetaGentileza: Obra = {
     ID: 603,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 30`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6406,10 +5666,11 @@ export const PainelGentileza30_ProfetaGentileza: Obra = {
 
 export const PainelGentileza31_ProfetaGentileza: Obra = {
     ID: 604,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 31`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980
@@ -6428,10 +5689,11 @@ export const PainelGentileza31_ProfetaGentileza: Obra = {
 
 export const PainelGentileza32_ProfetaGentileza: Obra = {
     ID: 605,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 32`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6450,10 +5712,11 @@ export const PainelGentileza32_ProfetaGentileza: Obra = {
 
 export const PainelGentileza33_ProfetaGentileza: Obra = {
     ID: 606,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 33`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6472,10 +5735,11 @@ export const PainelGentileza33_ProfetaGentileza: Obra = {
 
 export const PainelGentileza34_ProfetaGentileza: Obra = {
     ID: 607,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 34`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6494,10 +5758,11 @@ export const PainelGentileza34_ProfetaGentileza: Obra = {
 
 export const PainelGentileza35_ProfetaGentileza: Obra = {
     ID: 608,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 35`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6517,10 +5782,11 @@ IGREJA DE DEUS NOSSO BOM
 
 export const PainelGentileza36_ProfetaGentileza: Obra = {
     ID: 609,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 36`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6539,10 +5805,11 @@ MEUS FILHOS PARA UM BRASIL E
 
 export const PainelGentileza37_ProfetaGentileza: Obra = {
     ID: 610,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 37`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6561,10 +5828,11 @@ export const PainelGentileza37_ProfetaGentileza: Obra = {
 
 export const PainelGentileza38_ProfetaGentileza: Obra = {
     ID: 611,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 38`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6583,10 +5851,11 @@ export const PainelGentileza38_ProfetaGentileza: Obra = {
 
 export const PainelGentileza39_ProfetaGentileza: Obra = {
     ID: 612,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 39`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6605,10 +5874,11 @@ GENTILEZA CONTRA O PECADO
 
 export const PainelGentileza40_ProfetaGentileza: Obra = {
     ID: 613,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 40`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6625,10 +5895,11 @@ GENTILEZA GERA GENTILEZA 40 AMORRR A NATUREZA
 
 export const PainelGentileza41_ProfetaGentileza: Obra = {
     ID: 614,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 41`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6647,10 +5918,11 @@ export const PainelGentileza41_ProfetaGentileza: Obra = {
 
 export const PainelGentileza42_ProfetaGentileza: Obra = {
     ID: 615,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 42`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6670,10 +5942,11 @@ export const PainelGentileza42_ProfetaGentileza: Obra = {
 
 export const PainelGentileza43_ProfetaGentileza: Obra = {
     ID: 616,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 43`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6691,32 +5964,13 @@ export const PainelGentileza43_ProfetaGentileza: Obra = {
     Longitude: `-43.2168948`,
 };
 
-export const SemTitulo_ChicaGranchi: Obra = {
-    ID: 398,
-    Artistas: [artistas.ChicaGranchi],
-    Titulo: `Sem Titulo`,
-    Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Mosaico`,
-    Material: `Mosaico de azulejos`,
-    Descricao: `Painel de cerâmica instalada numa murada de contenção da avenida.`,
-    Execucao: true,
-    DataInauguracao: `01/1996`,
-    Zona: 'Sul',
-    Bairro: 'São Conrado',
-    PontoDeReferencia: 'Avenida Niemeyer, 150',
-    Latitude: `-22.9921662`,
-    Longitude: `-43.2338419`,
-    Lugar: 'Muro',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const PainelGentileza45_ProfetaGentileza: Obra = {
     ID: 618,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 45`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6738,10 +5992,11 @@ export const PainelGentileza45_ProfetaGentileza: Obra = {
 
 export const PainelGentileza46_ProfetaGentileza: Obra = {
     ID: 619,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 46`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6761,10 +6016,11 @@ export const PainelGentileza46_ProfetaGentileza: Obra = {
 
 export const PainelGentileza47_ProfetaGentileza: Obra = {
     ID: 620,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 47`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6784,10 +6040,11 @@ TREVA
 
 export const PainelGentileza48_ProfetaGentileza: Obra = {
     ID: 621,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 48`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6807,10 +6064,11 @@ AMORRR
 
 export const PainelGentileza49_ProfetaGentileza: Obra = {
     ID: 622,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 49`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6831,10 +6089,11 @@ TREVA
 
 export const PainelGentileza50_ProfetaGentileza: Obra = {
     ID: 623,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 50`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6853,10 +6112,11 @@ export const PainelGentileza50_ProfetaGentileza: Obra = {
 
 export const PainelGentileza51_ProfetaGentileza: Obra = {
     ID: 624,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 51`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6874,10 +6134,11 @@ export const PainelGentileza51_ProfetaGentileza: Obra = {
 
 export const PainelGentileza52_ProfetaGentileza: Obra = {
     ID: 625,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 52`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6897,10 +6158,11 @@ NÃO USEM
 
 export const PainelGentileza53_ProfetaGentileza: Obra = {
     ID: 626,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 53`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6915,7 +6177,6 @@ export const PainelGentileza53_ProfetaGentileza: Obra = {
  DISSE GENTILEZA 
 strong> 
 `,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8906311`,
@@ -6924,10 +6185,11 @@ strong>
 
 export const PainelGentileza54_ProfetaGentileza: Obra = {
     ID: 627,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 54`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6936,7 +6198,6 @@ export const PainelGentileza54_ProfetaGentileza: Obra = {
  FAVOR OBRIGADO 
  E SER ESCRAVO DO 
 CAPITALISMO `,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8906311`,
@@ -6945,10 +6206,11 @@ CAPITALISMO `,
 
 export const PainelGentileza55_ProfetaGentileza: Obra = {
     ID: 628,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 55`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -6957,7 +6219,6 @@ export const PainelGentileza55_ProfetaGentileza: Obra = {
  NOSSO MESTRE 
  O MUNDO E UMA 
  ESCOLA AMOR `,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8906311`,
@@ -6966,17 +6227,17 @@ export const PainelGentileza55_ProfetaGentileza: Obra = {
 
 export const PainelGentilezas_ProfetaGentileza: Obra = {
     ID: 629,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza s`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
  CARNAVAL NASCEU NA TRAIÇÃO DE JESSUSS 
 FESTA DIABOLICA TODOS QUE VÃO COMPATILHAR COMO JUDA DE JESUS NO TV PELADOS DO 
 JEITO QUE OS DIABOS DOS HOMENS GOSTÃO DEUS NÃO `,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8906311`,
@@ -6985,14 +6246,14 @@ JEITO QUE OS DIABOS DOS HOMENS GOSTÃO DEUS NÃO `,
 
 export const Cascata_JardimdoValongo_LuizRey: Obra = {
     ID: 630,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Cascata - Jardim do Valongo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Cascada criada imitando pedras naturais em rocailles com um pequeno lago.`,
-
     Execucao: true,
     DataInauguracao: `01/1906`,
     Latitude: `-22.8989924`,
@@ -7001,15 +6262,15 @@ export const Cascata_JardimdoValongo_LuizRey: Obra = {
 
 export const ChafarizdaImperatriz_FranciscoJoaquimBethencourtdaSilva: Obra = {
     ID: 631,
-    Artistas: [artistas.FranciscoJoaquimBethencourtdaSilva],
+    Autores: [artistas.FranciscoJoaquimBethencourtdaSilva],
     Titulo: `Chafariz da Imperatriz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em gnaisse`,
     Descricao: `Chafariz composto por uma coluna circular de granito sobre um pedestal. Acima do capitel coríntio ergue-se uma esfera armilar em bronze, circundada por três setas representativas das armas da cidade e do martírio de São Sebastião. Foi construído por iniciativa da Câmara Municipal do Rio de Janeiro, em homenagem ao desembarque, naquele local, trinta anos antes, da Imperatriz Dona Teresa Cristina Maria, esposa de D. Pedro II. A homenagem foi uma ideia do Sr. Coronel Manoel de Frias e Vasconcelos, quando Inspetor das Obras Publicaas. O trabalho de cantaria foi encarregao ao mestre canteiro Sr. Appolinario Gomes de Oliveira.
 Desativado em data desconhecida.`,
-
     Execucao: true,
     DataInauguracao: `12/1872`,
     Latitude: `-22.8967853`,
@@ -7018,15 +6279,15 @@ Desativado em data desconhecida.`,
 
 export const ChafarizMulhereoMenino_HenriFredericIselin: Obra = {
     ID: 632,
-    Artistas: [artistas.HenriFredericIselin],
+    Autores: [artistas.HenriFredericIselin],
     Titulo: `Chafariz  Mulher e o Menino`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido e pedestal de granito`,
     Descricao: `Chafariz composto por uma bacia sobre a qual se apoiam golfinhos que jorram água e plantas aquáticas. Acima da bacia ergue-se uma escultura de mulher, derramando água na taça na mao de uma criança.A figura feminina chama atenção pelas formas do corpo, com uma tunica drapeada que veste e propositadamente não a encobre.
 O Chafariz foi inaugurado em 1906, quando começaram a ser captadas as aguas dos manancias do Cavanca, Iguaçu Mirim, no Reservatório do Engenho de Dentro, conforma foto da Revista Ilustrada. Foi inaugurado pelo Sr. Rafael de Almeida Magalhaes e pelo Sr. Trancoso e Trancoso, Administrador Regional da Zona Portuária.`,
-
     Execucao: true,
     DataInauguracao: `06/1964`,
     Latitude: `-22.8995194`,
@@ -7035,8 +6296,9 @@ O Chafariz foi inaugurado em 1906, quando começaram a ser captadas as aguas dos
 
 export const SerzedeloCorreia_ArquimedesJdaSilva: Obra = {
     ID: 635,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Serzedelo Correia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Efigie`,
@@ -7050,11 +6312,12 @@ export const SerzedeloCorreia_ArquimedesJdaSilva: Obra = {
 
 export const NiloPecanhaII_ArquimedesJdaSilva: Obra = {
     ID: 636,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Nilo Pecanha II`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `Esfigie`,
+    TipologiaObra: `Efígie`,
     Material: `Peça em argamassa`,
     Descricao: `Efigie que homenagea e registra o Presidente da Repúbica que concebeu o terraço e outros melhoramentos no parque.`,
     Execucao: true,
@@ -7065,8 +6328,9 @@ export const NiloPecanhaII_ArquimedesJdaSilva: Obra = {
 
 export const ZeferinodeOliveira_Desconhecida: Obra = {
     ID: 641,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Zeferino de Oliveira`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -7081,9 +6345,9 @@ O monumento foi iniciativa da família e amigos que atraves do Sr. Hildebrando d
 
 export const PadreCicero_Desconhecida: Obra = {
     ID: 642,
-    Imagem: 'PadreCicero_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Padre Cícero`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representações religiosas',
     TipologiaObra: `Estátua`,
@@ -7100,37 +6364,14 @@ export const PadreCicero_Desconhecida: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const GetulioVargas_Desconhecida: Obra = {
-    ID: 646,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Getulio Vargas`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `A homenagem ao ex-presidente foi erguida pelo reconhecimento e esta localizada no interior do conjunto dos
-    ex-combatentes.`,
-    Execucao: true,
-    DataInauguracao: `01/1996`,
-    Zona: 'Norte',
-    Bairro: 'Benfica',
-    PontoDeReferencia: 'R. Dom Hélder Câmara',
-    Latitude: `-22.8856285`,
-    Longitude: `-43.2521434`,
-    Lugar: 'Não identificado',
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Fundição/Atelier', 'Arsenal de Guerra - AGR', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const Africa_Desconhecida: Obra = {
     ID: 647,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `África`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada originariamente no jardim em frente ao Museu Nacional. Foi retirada no início dos anos 90 do século XX e atualmente encontra-se na reserva técnica do Museu Nacional.`,
     Execucao: true,
@@ -7141,11 +6382,12 @@ export const Africa_Desconhecida: Obra = {
 
 export const America_Desconhecida: Obra = {
     ID: 648,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `América`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada originariamente no jardim em frente ao Museu Nacional. Foi retirada no início dos anos 90 do século XX e atualmente encontra-se na reserva técnica do Museu Nacional.`,
     Execucao: true,
@@ -7156,11 +6398,12 @@ export const America_Desconhecida: Obra = {
 
 export const Asia_Desconhecida: Obra = {
     ID: 649,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ásia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada originariamente no jardim em frente ao Museu Nacional. Foi retirada no início dos anos 90 do século XX e atualmente encontra-se na reserva técnica do Museu Nacional.`,
     Execucao: true,
@@ -7171,11 +6414,12 @@ export const Asia_Desconhecida: Obra = {
 
 export const DianaaCacadora_Desconhecida: Obra = {
     ID: 650,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Diana a Caçadora`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `A escultura foi instalada originariamente no jardim em frente ao Museu Nacional. Foi retirada no início dos anos 90 do século XX e atualmente encontra-se na reserva técnica do Museu Nacional.`,
     Execucao: true,
@@ -7186,10 +6430,11 @@ export const DianaaCacadora_Desconhecida: Obra = {
 
 export const AquariodaQuintadaBoaVista_LuizRey: Obra = {
     ID: 651,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Aquário da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `O aquário externamente imita uma caverna toda construída em<em>rocailles</em>. Na área interna, remodelada, há dois ambientes, com janelas por onde se podem ver diversas espécies de peixes<.`,
@@ -7201,11 +6446,12 @@ export const AquariodaQuintadaBoaVista_LuizRey: Obra = {
 
 export const Trabalhodeaco_JulesSegal: Obra = {
     ID: 652,
-    Artistas: [artistas.JulesSegal],
+    Autores: [artistas.JulesSegal],
     Titulo: `Trabalho de aço`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Foi inaugurado no Campo de Santana, e reinaugurado no Aquário da Quinta da Boa Vista em 1952.
 É painel em alto-relevo em bronze, representando uma cena da indústria de fundição, doação do Governo da Bélgica à Municipalidade do Rio de Janeiro por ocasião do Centenário da Independência.`,
@@ -7217,10 +6463,11 @@ export const Trabalhodeaco_JulesSegal: Obra = {
 
 export const PainelGentileza44_ProfetaGentileza: Obra = {
     ID: 617,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 44`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -7243,11 +6490,12 @@ export const PainelGentileza44_ProfetaGentileza: Obra = {
 
 export const MesadoImperadordaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 654,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mesa do Imperador da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `mobiliario`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Mobiliário`,
     Material: `Peça em gnaisse`,
     Descricao: `Grande mesa de blocos maciço em cantaria composta de mesa e dois bancos laterias. Inicialmente eram dois conjuntos e atualmente um deles esta desmontado.`,
     Execucao: true,
@@ -7258,11 +6506,12 @@ export const MesadoImperadordaQuintadaBoaVista_Desconhecida: Obra = {
 
 export const BebedouroTroncodeArvoredaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 656,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bebedouro Tronco de Arvore da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `bebedouro`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Bebedouro`,
     Material: `Peça de rocaille em argamassa,`,
     Descricao: `Representação de um tronco de arvore cortado, executado em argamassa, que servia como bebedouro para os frequentadores do parque.
 Desativado em data desconhecida`,
@@ -7274,10 +6523,11 @@ Desativado em data desconhecida`,
 
 export const TunelnaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 658,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Túnel na Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção artificial de um tunel que se abre em duas bocas, servindo de ligação entre os lagos do parque.`,
@@ -7289,10 +6539,11 @@ export const TunelnaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const CoretodoPagodeChines_LuizRey: Obra = {
     ID: 659,
-    Artistas: [artistas.LuizRey],
+    Autores: [artistas.LuizRey],
     Titulo: `Coreto do Pagode Chinês`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção em forma de um coreto o conhecido Pagode Chinês tem forma hexagonal, com estrutura de ferro revestida por argamassa modelada em canas e nós de bambus, implantado sobre um amontoado de pedras em argamassa criado por AugusteFrancoisMarieGlaziou<. A construção é um mirante do parque.`,
@@ -7304,10 +6555,11 @@ export const CoretodoPagodeChines_LuizRey: Obra = {
 
 export const TemploemRuinasoudeApolo_ArquimedesJosedaSilva: Obra = {
     ID: 660,
-    Artistas: [artistas.ArquimedesJosedaSilva],
+    Autores: [artistas.ArquimedesJosedaSilva],
     Titulo: `Templo em Ruinas ou de Apolo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `A construção em forma de cruz tem como elemento swcorativo douze colunas de estilo dórico e um arquitrave fechando o conjunto.
@@ -7320,10 +6572,11 @@ Construção reproduzindo um templo grego com colunas de estilo dórico sustenta
 
 export const Guarda_corpoIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 661,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Guarda-corpo I da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando tronco de árvore, na ponte sobre o canal que circunda o parque.`,
@@ -7335,10 +6588,11 @@ export const Guarda_corpoIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
 
 export const Guarda_corpoIIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 662,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Guarda-corpo II da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando tronco de arvore na ponte sobre o canal que circunda o parque.`,
@@ -7350,10 +6604,11 @@ export const Guarda_corpoIIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = 
 
 export const Guarda_corpoIIIdaPontedaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 663,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo III da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando blocos de pedra, na ponte sobre o canal que circunda o parque.`,
@@ -7365,10 +6620,11 @@ export const Guarda_corpoIIIdaPontedaQuintadaBoaVista_Desconhecida: Obra = {
 
 export const Guarda_corpoIVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 664,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Guarda-corpo IV da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando tronco de arvore na ponte sobre o lago no acesso ao Templo de Apolo.`,
@@ -7380,10 +6636,11 @@ export const Guarda_corpoIVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = 
 
 export const Guarda_corpoVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 665,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Guarda-corpo V da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando tronco de árvore, na ponte sobre o canal que circunda o parque.`,
@@ -7395,10 +6652,11 @@ export const Guarda_corpoVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
 
 export const Guarda_corpoVIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 666,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Guarda-corpo VI da Ponte da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Construção imitando blocos de pedra, na ponte sobre o canal que circunda o parque.`,
@@ -7410,11 +6668,12 @@ export const Guarda_corpoVIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = 
 
 export const CapsuladoTemponaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 667,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cápsula do Tempo na Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `marco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Marco`,
     Material: `Peça em concreto`,
     Descricao: `Trata-se de uma construção com uma placa em bronze fixada numa laje de concreto, com as datas de 1972 e 2022. Foi instalada durante as festividades do Sesquicentenário da Independência, tendo em vista o Bicentenário da mesma.`,
     Execucao: true,
@@ -7425,10 +6684,11 @@ export const CapsuladoTemponaQuintadaBoaVista_Desconhecida: Obra = {
 
 export const VasoIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     ID: 668,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Vaso I do Terraço da Quinta`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em argamassa`,
     Descricao: `São 40 peças decoraticas pintado na cor ocre instaladas sobre a amurada do terraço.`,
@@ -7440,10 +6700,11 @@ export const VasoIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
 
 export const VasoIIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     ID: 669,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Vaso II do Terraço da Quinta`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em argamassa`,
     Descricao: `São 2 peças decoraticas pintado na cor ocre instaladas ao centro da amurada do terraço.`,
@@ -7455,10 +6716,11 @@ export const VasoIIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
 
 export const VasoMonumentaldoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     ID: 670,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Vaso Monumental do Terraço da Quinta`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em argamassa`,
     Descricao: `São 2 peças decoraticas pintado na cor ocre instaladas numa coluna monumentl no acesso ao terraço.`,
@@ -7470,10 +6732,11 @@ export const VasoMonumentaldoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
 
 export const AmuradadoTerracodaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 671,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Amurada do Terraço da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `A construção nivelando a área frontal do Museu Nacional, construído de forma retangular, com guarda-corpo composto por balaustre de argamassa e parapeito. As colunas tem peças decorativas com vasos tambem de argamassa e postes de ferro fundido.`,
@@ -7485,10 +6748,11 @@ export const AmuradadoTerracodaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
 
 export const PortaodeFerrodaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 672,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão de Ferro da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de concreto`,
     Descricao: `Portão fixado entre duas pilastras de alvenaria, com detalhes na forma de caras de leão e florões de bronze nos dois batentes, tudo corado por um frontão com as letras QBV e o brasão do Império.
@@ -7501,10 +6765,11 @@ O fronstipicio foi danificado em 2016 por um onibus de turismo e transferido par
 
 export const PortaoMonumentaldaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     ID: 673,
-    Artistas: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJdaSilva],
     Titulo: `Portão Monumental da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de concreto`,
     Descricao: `Portal em ferro fundido e pilastras de alvenaria, com uma entrada central e duas laterais menores, intercaladas por quatro grandes vãos gradeados, sendo o portão central coroado pelas armas da República<.`,
@@ -7516,10 +6781,11 @@ export const PortaoMonumentaldaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
 
 export const PortaodoLargodaCancela_Desconhecida: Obra = {
     ID: 674,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão do Largo da Cancela`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de concreto`,
     Descricao: `Portão de ferro, com dois laterais menores de acessos laterais para pedestres.`,
@@ -7529,33 +6795,13 @@ export const PortaodoLargodaCancela_Desconhecida: Obra = {
     Longitude: `-43.2252913`,
 };
 
-export const Colunatas_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 984,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Colunatas`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `colunatas`,
-    Material: `Chapas de aço e concreto armado`,
-    Descricao: `Colunas de concreto com uma semiesfera na extremidade, representando os laranjais existentes na região durante o
-    período de ocupação rural. Cada colunata custou a época foi R$2.280,00.`,
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'Praça Dr. Raul Boaventura e Viúva Dantas',
-    Latitude: `-22.9025031`,
-    Longitude: `-43.5600507`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const PortaodaCoroadoZoologico_RobertAdams: Obra = {
     ID: 675,
-    Artistas: [artistas.RobertAdams],
+    Autores: [artistas.RobertAdams],
     Titulo: `Portão da Coroa do Zoológico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Portão original do terraço do Palacio hoje Museu Nacional, ofertado a D. Pedro I, em comemoração a suas núpcias com D. Leopoldina, pelo General Hugh Percy, 2.° Duque de Northumberland. Esse portão monumental é inspirado no pórtico do grande arquiteto escocês Robert Adam para a Sion House, residência do Duque na Inglaterra. Um grande corpo central, aberto em arco pleno, é ladeado por duas colunatas neoclássicas sob platibanda, que terminam em duas edículas de planta quadrada, com coroamento piramidal. Encimando o portão central, um par de dragões dos Braganças ladeia um brasão coroado. Foi demolido e remontado em 1910 na atual localização, na entrada do Jardim Zoologico.
@@ -7568,10 +6814,11 @@ Fabricada pela empresa inglesa Coade & Sealy.`,
 
 export const PainelGentileza15_ProfetaGentileza: Obra = {
     ID: 586,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 15`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -7592,11 +6839,12 @@ export const PainelGentileza15_ProfetaGentileza: Obra = {
 
 export const DianaaCacadora_Leocares: Obra = {
     ID: 677,
-    Artistas: [artistas.Leocares],
+    Autores: [artistas.Leocares],
     Titulo: `Diana a Caçadora`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `É uma reprodução da obra original, em bronze, atribuída ao escultor grego Leocares. É uma reprodução da existente
     do Museu do Louvre. Existem várias cópias suas, tanto em bronze quanto em mármore, em diversos países.`,
@@ -7613,32 +6861,11 @@ export const DianaaCacadora_Leocares: Obra = {
     ],
 };
 
-export const MacacoTiao_GianPietroZanni: Obra = {
-    ID: 678,
-    Artistas: [artistas.GianPietroZanni],
-    Titulo: `Macaco Tião`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Estátua`,
-    Material: `Peça em bronze`,
-    Descricao: `Estátua homenageando o mais popular animal na história do Zoológico do Rio de Janeiro, morto em 1996, patrocinada
-    pela rede de lanchonetes Mc Donalds, que o adotara dois anos antes.`,
-    Execucao: true,
-    DataInauguracao: `08/1997`,
-    Zona: 'Central',
-    Bairro: 'São Cristóvão',
-    PontoDeReferencia: 'Jardim Zoologico',
-    Latitude: `-22.904452`,
-    Longitude: `-43.2295205`,
-    Lugar: 'Parque',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const SaoFranciscodeAssis_FreiGeraldoRoberfeld: Obra = {
     ID: 679,
-    Imagem: 'SaoFranciscodeAssis_FreiGeraldoRoberfeld.jpg',
-    Artistas: [artistas.FreiGeraldoRoberfeld],
+    Autores: [artistas.FreiGeraldoRoberfeld],
     Titulo: `São Francisco de Assis`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
     TipologiaObra: `Estátua`,
@@ -7656,11 +6883,12 @@ export const SaoFranciscodeAssis_FreiGeraldoRoberfeld: Obra = {
 
 export const ColunadePersepolis_Desconhecida: Obra = {
     ID: 680,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coluna de Persépolis`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `coluna`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Coluna`,
     Material: `Peça em granito`,
     Descricao: `Réplica de uma das colunas da cidade de Persépolis, capital da Pérsia nos tempos de Ciro e Dario. Em seu capitel erguem-se duas estátuas do touros alados.
 O monumento simboliza a amizade entre a Nação Iraniana e Brasileira. Foi doada à Cidade do Rio de Janeiro pela República Islamica do Irã e inaugurada durante a Conferência Rio +20, sobre desenvolvimento sustentável, pelo Embaixador Mohammad Ali Ghanezadele, Embaixador da Republica Islamica no Brasil.`,
@@ -7672,10 +6900,11 @@ O monumento simboliza a amizade entre a Nação Iraniana e Brasileira. Foi doada
 
 export const AmuradadoCampodeSaoCristovao_Desconhecida: Obra = {
     ID: 681,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Campo de São Cristovão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de granito`,
     Descricao: `A murada de pedras sobrepostas, Duas escadarias, uma fronteira à outra, dão acesso à parte superior da rua e colunas de cantaria arremanta as extremidades da amurada`,
@@ -7687,11 +6916,12 @@ export const AmuradadoCampodeSaoCristovao_Desconhecida: Obra = {
 
 export const CoretodoCampodeSaoCristovao_Desconhecida: Obra = {
     ID: 683,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto do Campo de São Cristovão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `coreto`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Coreto`,
     Material: `Peça em ferro fundido e pedestal de granito`,
     Descricao: `Construção de forma octogonal com 85 m², com embasamento em alvenaria de pedras expostas, formando um primeiro piso com sete janelas e uma porta de entrada, sob a escada dupla que conduz ao patamar, revestido por ladrilhos hidráulicos. A cobertura repousa sobre colunas em ferro fundido, dividida em dois segmentos justapostos, em chapa galvanizada e com diversos ornamentos.
 Parte do guarda corpo do coreto esta no deposito para servir de modelo na restauração do mesmo.`,
@@ -7703,8 +6933,9 @@ Parte do guarda corpo do coreto esta no deposito para servir de modelo na restau
 
 export const PaineldeSaoRoque_Desconhecida: Obra = {
     ID: 684,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Painel de São  Roque`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
     TipologiaObra: `Mosaico`,
@@ -7718,10 +6949,11 @@ export const PaineldeSaoRoque_Desconhecida: Obra = {
 
 export const Guarda_corpodaAvenidaRodriguesAlves_Desconhecida: Obra = {
     ID: 686,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Rodrigues Alves`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em ferro fundido`,
     Descricao: `Balaustrada em ferro fundido com argamassa de apoio entre as peças`,
@@ -7733,10 +6965,11 @@ export const Guarda_corpodaAvenidaRodriguesAlves_Desconhecida: Obra = {
 
 export const Guarda_corpodaAvenidaFranciscoBicalho_Desconhecida: Obra = {
     ID: 687,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Francisco Bicalho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em argamassa`,
     Descricao: `Balaustrada de argamassa servindo de proteção sobre o canal`,
@@ -7748,8 +6981,9 @@ export const Guarda_corpodaAvenidaFranciscoBicalho_Desconhecida: Obra = {
 
 export const MarcoaBiblia_Desconhecida: Obra = {
     ID: 688,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco à Bíblia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representação religiosa',
     TipologiaObra: `Marco`,
@@ -7763,10 +6997,11 @@ export const MarcoaBiblia_Desconhecida: Obra = {
 
 export const MarcodaInauguracaodoViadutoAnaNeri_Desconhecida: Obra = {
     ID: 689,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração do Viaduto Ana Neri`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Blocos de granito`,
     Descricao: `Construção trapezoidal de concreto qu<e tem fixada uma placa em bronze com os dizeres dos executores da obra`,
@@ -7778,10 +7013,11 @@ export const MarcodaInauguracaodoViadutoAnaNeri_Desconhecida: Obra = {
 
 export const OratorioaSaoJorgedeBenfica_Desconhecida: Obra = {
     ID: 691,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Benfica`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Construção de argamassa com a imagem do santo guerreiro em argamssa.`,
@@ -7793,10 +7029,11 @@ export const OratorioaSaoJorgedeBenfica_Desconhecida: Obra = {
 
 export const VasodoJardimZoologico_Desconhecida: Obra = {
     ID: 693,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Vaso do Jardim Zoológico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `Peça decorativa em mármore para adornar uma coluna divisória.`,
@@ -7808,10 +7045,11 @@ export const VasodoJardimZoologico_Desconhecida: Obra = {
 
 export const CascatadaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 694,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Cascata da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Cascata artificial criada sobre uma gruta, tambem artifical, tipica dos jardins românticos, para embelezar o parque.
@@ -7824,11 +7062,12 @@ Desativado desde maio de 2017.`,
 
 export const GrutadaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 695,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Gruta da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `gruta`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Gruta`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Vasta gruta artificial, em argamassa, com estalagmites e estalactites.`,
     Execucao: true,
@@ -7839,10 +7078,11 @@ export const GrutadaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const LagodaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 696,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Lago da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Criado pelo no paisagismo romântico do século XIX, do projeto de AugusteFrancoisMarieGlaziou, da captação das águas do Rio Joana contorno toda a extensão do parque.`,
@@ -7854,8 +7094,9 @@ export const LagodaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const TimMaia_ChristinaMotta: Obra = {
     ID: 701,
-    Artistas: [artistas.ChristinaMotta],
+    Autores: [artistas.ChristinaMotta],
     Titulo: `Tim Maia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -7867,37 +7108,14 @@ export const TimMaia_ChristinaMotta: Obra = {
     Longitude: `-43.2178181`,
 };
 
-export const EliasGoraybe_Desconhecida: Obra = {
-    ID: 706,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Elias Goraybe`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Homenagem ao primeiro pároco da Matriz Maronita Nossa Senhora do Líbano, erigido por uma iniciativa da comunidade
-    libanesa do Rio de Janeiro.`,
-    Execucao: true,
-    DataInauguracao: `11/1997`,
-    Zona: 'Norte',
-    Bairro: 'Tijuca',
-    PontoDeReferencia: 'R. Padre Elias Gorayeb',
-    Latitude: `-22.925928`,
-    Longitude: `-43.233995`,
-    Lugar: 'Calçada',
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística e Metalúrgica Ltda', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const LuisGastaoDEscargolle_CurzioZani: Obra = {
     ID: 709,
-    Artistas: [artistas.CurzioZani],
+    Autores: [artistas.CurzioZani],
     Titulo: `Luis Gastão D'Escargolle`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Busto foi realizado por seus ex-alunos amigos e admiradores, que colaborou durante muitos anos em revistas e jornais. A comissão do monumento recolheu os recursos para erguer o monumento através de um livro de adesão que ficou na Livraria Francisco Alves.`,
     Execucao: true,
@@ -7908,11 +7126,12 @@ export const LuisGastaoDEscargolle_CurzioZani: Obra = {
 
 export const RubensPaiva_EdgarDuvivier: Obra = {
     ID: 712,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Rubens Paiva`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal de mármore`,
     Descricao: `O busto do Deputado Rubens Paiva foi instalado em frente à antiga sede do DOI-CODI na capital carioca, onde o político foi preso e torturado. Foi doado à cidade por iniciativa do Sindicato dos Engenheiros do Rio de Janeiro.`,
     Execucao: true,
@@ -7923,8 +7142,9 @@ export const RubensPaiva_EdgarDuvivier: Obra = {
 
 export const IsmaelSilva_OttoDumovich: Obra = {
     ID: 715,
-    Artistas: [artistas.OttoDumovich],
+    Autores: [artistas.OttoDumovich],
     Titulo: `Ismael Silva`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -7946,8 +7166,9 @@ export const IsmaelSilva_OttoDumovich: Obra = {
 
 export const AlvaroReis_JoasPereiradosPassos: Obra = {
     ID: 716,
-    Artistas: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiradosPassos],
     Titulo: `Álvaro Reis`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -7967,10 +7188,11 @@ A menina e o menino estão no depósito desde maio de 2016 devido a uma tentativ
 
 export const Guarda_corpodaAvenidaMaracanaI_TorresdeOliveira: Obra = {
     ID: 717,
-    Artistas: [artistas.TorresdeOliveira],
+    Autores: [artistas.TorresdeOliveira],
     Titulo: `Guarda-corpo da Avenida Maracanã I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peças de tijolo com argamassa`,
     Descricao: `Construção com balaustrada, jardineiras laterias e poste nas extremidades de cada lado do Rio. A canalização do rio e a ponte foram obras para a comemoração do centenario da Independencia nacional.`,
@@ -7982,10 +7204,11 @@ export const Guarda_corpodaAvenidaMaracanaI_TorresdeOliveira: Obra = {
 
 export const Guarda_corpodaRuaHeitorBeltrao_Desconhecida: Obra = {
     ID: 718,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Rua Heitor Beltrão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção circular com caracteristica art decor na proteção do Rio Trapicheiro.`,
@@ -7997,10 +7220,11 @@ export const Guarda_corpodaRuaHeitorBeltrao_Desconhecida: Obra = {
 
 export const Guarda_corpodaAvenidaMaracanaII_Desconhecida: Obra = {
     ID: 719,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Maracanã II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção com balaustres e colunas nas laterais , servindo de proteção sobre o Rio Maracanã.`,
@@ -8012,10 +7236,11 @@ export const Guarda_corpodaAvenidaMaracanaII_Desconhecida: Obra = {
 
 export const Guarda_corpodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
     ID: 720,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Avenida Paulo de Frontin`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peças de tijolo com argamassa`,
     Descricao: `Construção com balaustre e colunas baixas para a proteção junto ao Rio Comprido. Foi inaugurado pelo Prefeito Paulo de Frontim.`,
@@ -8027,10 +7252,11 @@ export const Guarda_corpodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
 
 export const OratoriodeNossaSenhoradaMedalhaMilagrosa_Desconhecida: Obra = {
     ID: 722,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório  de  Nossa Senhora da Medalha Milagrosa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Cobertura de metal protegendo o oratório com aimagem,sobre um pedestal de concreto revestido de mármore. Na face frontal têm-se em bronze dois medalhões, simbolo da Medalha Milagrosa`,
@@ -8042,11 +7268,12 @@ export const OratoriodeNossaSenhoradaMedalhaMilagrosa_Desconhecida: Obra = {
 
 export const OBarco_PaulodeTarso: Obra = {
     ID: 723,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Barco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um barco de pescador pintada na cor branca com detalhes em amarelo e azul,, dentro de um riacho,
     criando um ambiente ludico com outras peças, para utilização das crianças que frequentam a praça.
@@ -8063,11 +7290,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ABaleiaeFilhote_PaulodeTarso: Obra = {
     ID: 724,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Baleia e Filhote`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma baleia e seu filhote pintada na cor azul, dentro de um riacho criado um ambiente ludico com
     outras peças para utilização das crianças que frequentam a praça.
@@ -8084,11 +7312,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OBeijaFlor_PaulodeTarso: Obra = {
     ID: 725,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Beija Flor`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura Naif - Pequena escultura pintada na cor vermelho azul e verde, fixado numa arvore, criado um ambiente ludico com outras
     peças para utilização das crianças que frequentam a praça.
@@ -8105,11 +7334,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OBumbaMeuBoi_PaulodeTarso: Obra = {
     ID: 726,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Bumba Meu Boi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura Naif -Escultura de uma boi pintado na cores azul, vermelho, branco e amarelo, criado um ambiente ludico com outras
     peças para utilização das crianças que frequentam a praça.
@@ -8126,11 +7356,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OBurrinho_PaulodeTarso: Obra = {
     ID: 727,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Burrinho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura Naif de um filhote de burro pintado na cor marrom, dentro de um ambiente ludico com outras peças, para
     utilização das crianças que frequentam a praça.
@@ -8147,11 +7378,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCaju_PaulodeTarso: Obra = {
     ID: 728,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Caju`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura Naif de um caju pintada na cor amarelo e azul, criando um ambiente ludico com outras peças, para utilização
     das crianças que frequentam a praça.
@@ -8168,11 +7400,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCanguru_PaulodeTarso: Obra = {
     ID: 729,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Canguru`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura Naif de um canguru pintado na cor cinza, criando um ambiente ludico com outras peças, para utilização das
     crianças que frequentam a praça.
@@ -8189,11 +7422,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCamelo_PaulodeTarso: Obra = {
     ID: 730,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Camelo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um grande camelo pintado na cor branca com detalhes multicoloridos num ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8209,11 +7443,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCaocomBola_PaulodeTarso: Obra = {
     ID: 731,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Cão com Bola`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de cão proximo a uma bola pintado na cor branco e azul, criando um ambiente ludico, com outras peças
     para utilização das crianças que frequentam a praça.
@@ -8230,11 +7465,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCaoChines_PaulodeTarso: Obra = {
     ID: 732,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Cão Chinês`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um cão pintado na cor azul com detalhes amarelo e azul, criando um ambiente ludico, com outras peças
     para utilização das crianças que frequentam a praça.
@@ -8251,11 +7487,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCaoMantoNegro_PaulodeTarso: Obra = {
     ID: 733,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Cão Manto Negro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um cão pintado na cor preto com detalhes branco, criando um ambiente ludico, com outras peças
     para utilização das crianças que frequentam a praça.
@@ -8272,11 +7509,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCaoPintado_PaulodeTarso: Obra = {
     ID: 734,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Cão Pintado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um cão pintado na cor branco com detalhes na cor preta, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8292,11 +7530,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OCavaloBranco_PaulodeTarso: Obra = {
     ID: 735,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Cavalo Branco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um cavalo pintado na cor branca, criando um ambiente ludico com outras peças, para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8312,11 +7551,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ACobraeoPorco_PaulodeTarso: Obra = {
     ID: 736,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Cobra e o Porco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma cobra e um porco fixado em umtronco seco de arvore, pintado na cor marrom e verde escuro, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8332,11 +7572,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ACobraeoSapo_PaulodeTarso: Obra = {
     ID: 737,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Cobra e o Sapo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pequeno sapo e uma cobra pintada na cores verde e vermelho, criando um ambiente ludico com outras peças, para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8352,11 +7593,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OMacaco_PaulodeTarso: Obra = {
     ID: 738,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Macaco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um macaco, pintado na cor marrom agarrado no tronco da arvore, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8372,11 +7614,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ODuende_PaulodeTarso: Obra = {
     ID: 740,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Duende`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um duende, pintado nas cores vermelha, azul e amarelo, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8392,11 +7635,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ODuendecomAcordeon_PaulodeTarso: Obra = {
     ID: 741,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Duende com Acordeon`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um duende com um acordeon nas mãos, pintado nas cores vermelho, amarelo e azul, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8412,11 +7656,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OElefante_PaulodeTarso: Obra = {
     ID: 742,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Elefante`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um elefante, pintado na cor branca com detalhes na cor azul e vermelho, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8432,11 +7677,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const EsculturaNaif_OElefante_PaulodeTarso: Obra = {
     ID: 742,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Escultura Naif - O Elefante`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um elefante, pintado na cor branca com detalhes na cor azul e vermelho, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8448,11 +7694,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OElefanteFilhote_PaulodeTarso: Obra = {
     ID: 743,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Elefante Filhote`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pequeno elefante pintado na cor rosa, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8468,11 +7715,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AEmilia_PaulodeTarso: Obra = {
     ID: 744,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Emilia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pequeno criança pintada nas cores vermelha, azul e amarelo, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8488,11 +7736,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OEsquilo_PaulodeTarso: Obra = {
     ID: 745,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Esquilo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pequeno esquilo pintado na cor amaela apoiado numa balaustrada, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8508,11 +7757,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AFoca_PaulodeTarso: Obra = {
     ID: 746,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Foca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peças em metal com policarbonato`,
     Descricao: `Escultura de uma pequena foca pintado na cor azul com detalhe vermelho, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8528,11 +7778,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AGalinha_PaulodeTarso: Obra = {
     ID: 747,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Galinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma galinha pintada em diversas cores, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000`,
@@ -8548,11 +7799,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000`
 
 export const OGalo_PaulodeTarso: Obra = {
     ID: 748,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Galo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um galo multicolorido, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8568,11 +7820,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OGanso_PaulodeTarso: Obra = {
     ID: 749,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Ganso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um ganso pintada na cor branca, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8588,11 +7841,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OGato_PaulodeTarso: Obra = {
     ID: 750,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Gato`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pequeno gato pintado na cor branca, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8608,11 +7862,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AGirafa_PaulodeTarso: Obra = {
     ID: 751,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Girafa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de girafa pintada em diversas cores, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8628,11 +7883,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OHipopotamo_PaulodeTarso: Obra = {
     ID: 752,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Hipopótamo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um hipopotamo pintado na cor azul, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8648,11 +7904,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OIndio_PaulodeTarso: Obra = {
     ID: 753,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Indio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um indio com pintado em diversas cores, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8668,11 +7925,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OJacareI_PaulodeTarso: Obra = {
     ID: 754,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Jacaré I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um jacare pintado na cor verde, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8688,11 +7946,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const JacareII_PaulodeTarso: Obra = {
     ID: 755,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Jacaré II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um jacare em tamanho natural pintado na cor verde, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8708,11 +7967,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OJogadorBrasileiro_PaulodeTarso: Obra = {
     ID: 756,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Jogador Brasileiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um jogador pintado na cor da roupa de seleção de futebol, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8728,11 +7988,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OLeao_PaulodeTarso: Obra = {
     ID: 757,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Leão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um leão pintado na cor ocre, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8748,11 +8009,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const Lontra_PaulodeTarso: Obra = {
     ID: 758,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Lontra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma lontra pintado na cor verde claro, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8768,11 +8030,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const MaeeFilhoteDinossauro_PaulodeTarso: Obra = {
     ID: 759,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Mãe e Filhote Dinossauro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma mãe dinossauro e seu filhote pintados na cor verde claro com detalhe vermelho, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8788,11 +8051,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OPapagaio_PaulodeTarso: Obra = {
     ID: 760,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Papagaio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um papagaio pintado, criando um ambiente lúdico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8808,11 +8072,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OsPatinhos_PaulodeTarso: Obra = {
     ID: 761,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Os Patinhos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de tres patinhos pintados na cores branca e amarela, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8828,11 +8093,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OPavao_PaulodeTarso: Obra = {
     ID: 762,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Pavão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de pavão pintado em diversas cores, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8848,11 +8114,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OPinguim_PaulodeTarso: Obra = {
     ID: 763,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Pinguim`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um pinguim próximo a uma cabeça de foca ambos pintados nas cores cinza e branco, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8868,11 +8135,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const APiramide_PaulodeTarso: Obra = {
     ID: 764,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Pirâmide`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma pequena piramide, pintado de cinza, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8888,11 +8156,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OPolvo_PaulodeTarso: Obra = {
     ID: 765,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Polvo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um polvo proximo ao barco pintados nas cores cinza, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8908,11 +8177,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OTamandua_PaulodeTarso: Obra = {
     ID: 766,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Tamandua`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um tamandua proximo pintado nas cores marrom e preto criando um ambiente ludico, com outras peças
     para utilização das crianças que frequentam a praça.
@@ -8929,11 +8199,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ORinoceronte_PaulodeTarso: Obra = {
     ID: 768,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Rinoceronte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um rinoceronte pintado nas cor azul, criando um ambiente ludico, com outras peças para utilização
     das crianças que frequentam a praça.
@@ -8950,11 +8221,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OSaciPerere_PaulodeTarso: Obra = {
     ID: 769,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Saci Perere`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura do saci perere pintado nas cores preta e vermelha, criando um ambiente ludico, com outras peças para
     utilização das crianças que frequentam a praça.
@@ -8971,11 +8243,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ASereia_PaulodeTarso: Obra = {
     ID: 770,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Sereia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma sereia pintado nas cor verde e marrom, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -8991,11 +8264,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AsTartarugas_PaulodeTarso: Obra = {
     ID: 771,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `As Tartarugas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de tartarugas pintadas na cor verde, criando um ambiente ludico, com outras peças para utilização das crianças que frequentam a praça.
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9011,11 +8285,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ATartarugaGigante_PaulodeTarso: Obra = {
     ID: 772,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Tartaruga Gigante`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma tartaruga pintada nas cor marrom, criando um ambiente ludico, com outras peças para utilização
     das crianças que frequentam a praça.
@@ -9032,11 +8307,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const OUrso_PaulodeTarso: Obra = {
     ID: 773,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `O Urso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de um urso pintado nas cores preta e branca, criando um ambiente ludico, com outras peças para
     utilização das crianças que frequentam a praça.
@@ -9053,11 +8329,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AVaca_PaulodeTarso: Obra = {
     ID: 774,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Vaca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma vaca intado nas cores preto e branca, criando um ambiente ludico, com outras peças para
     utilização das crianças que frequentam a praça.
@@ -9074,11 +8351,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AViscondedeSabugosa_PaulodeTarso: Obra = {
     ID: 775,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Visconde de Sabugosa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de duas figuras do Visconde de Sabugosa pintados nas cores amrelo, azul e vermelho, criando um ambiente
     ludico, com outras peças para utilização das crianças que frequentam a praça.
@@ -9095,11 +8373,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const AZebra_PaulodeTarso: Obra = {
     ID: 776,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `A Zebra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura de uma zebra pintado nas cores preta e branca, criando um ambiente ludico, com outras peças para
     utilização das crianças que frequentam a praça. A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9115,10 +8394,11 @@ export const AZebra_PaulodeTarso: Obra = {
 
 export const MarcodaInauguracaodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
     ID: 777,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração da Avenida Paulo de Frontin`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Marco em cantaria de granito, implantado na inauguração das obras de drenagem do Rio Comprido.`,
@@ -9130,11 +8410,12 @@ export const MarcodaInauguracaodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
 
 export const PisodePedeMolequedaLadeiraSouzaDoca_Desconhecida: Obra = {
     ID: 778,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Ladeira Souza Doca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Ladeira em piso original de acesso a lotes residenciais.`,
     Execucao: true,
@@ -9145,11 +8426,12 @@ export const PisodePedeMolequedaLadeiraSouzaDoca_Desconhecida: Obra = {
 
 export const BancodaPracadosBichinhosI_PaulodeTarso: Obra = {
     ID: 779,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Banco da Praça dos Bichinhos I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção pintada em diversas cores integrandoaoambiente ludico, com outras peças para utilização das crianças que frequentam a praça. 
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9161,11 +8443,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const BancodaPracadosBichinhosII_PaulodeTarso: Obra = {
     ID: 780,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Banco da Praça dos Bichinhos II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção pintada em diversas cores integrandoaoambiente ludico, com outras peças para utilização das crianças que frequentam a praça. 
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9177,10 +8460,11 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const BancodaPracadosBichinhosIII_PaulodeTarso: Obra = {
     ID: 781,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Banco da Praça dos Bichinhos III`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: 'banco',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção pintada em diversas cores integrandoaoambiente ludico, com outras peças para utilização das crianças que frequentam a praça. 
@@ -9193,11 +8477,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const BancodaPracadosBichinhosIV_PaulodeTarso: Obra = {
     ID: 782,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Banco da Praça dos Bichinhos IV`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção pintada em diversas cores integrandoaoambiente ludico, com outras peças para utilização das crianças que frequentam a praça. 
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9209,11 +8494,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const BancodaPracadosBichinhosV_PaulodeTarso: Obra = {
     ID: 783,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Banco da Praça dos Bichinhos V`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção pintada em diversas cores integrandoaoambiente ludico, com outras peças para utilização das crianças que frequentam a praça. 
 A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.`,
@@ -9225,11 +8511,12 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
 
 export const ChafarizdaPracaSaensPena_AzevedoNeto: Obra = {
     ID: 784,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Chafariz da Praça Saens Pena`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `chafariz`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz de jorro de agua, composto por dois jatos de nevoa, um na extremidade do lago e outro central. Ha tambem um jato solido conhecido, como canhão na outra extremidade do lago.
 Desativado desde maio de 2017.`,
@@ -9241,10 +8528,11 @@ Desativado desde maio de 2017.`,
 
 export const ChafarizdaPracaXavierdeBrito_Desconhecida: Obra = {
     ID: 785,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Praça Xavier de Brito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `Consta que pertencia ao Reservatorio do Engenho de Dentro, conforma foto da Revista Ilustrada, mas se encontrava abandonado. É atribuído às fundições de Val D&rsquo;Osne, porque alguns elementos são conhecidos nos catálagos dessa fundição.
@@ -9258,11 +8546,12 @@ O Chafariz esta desativado desde maio de 2017.`,
 
 export const FontedasAguasFerreas_AzevedoNeto: Obra = {
     ID: 787,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Fonte das Águas Férreas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Blocos de granito`,
     Descricao: `Trata-se de um pequeno Chafariz circular de blocos de pedra, construído para marcar a descoberta do Imperador D.Pedro I, que em dezembro de 1823 encontrou a fonte de águas férreas.
 Provavelmente o projeto do Chafariz é de Azevedo Neto que realizou o paisagismo da avenida.
@@ -9275,11 +8564,12 @@ Desativado em data desconhecida.`,
 
 export const BebedourodaEstradaVelhadaTijuca_Desconhecida: Obra = {
     ID: 788,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bebedouro da Estrada Velha da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `bebedouro`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Bebedouro`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção em pedra e cal, tendo à frente um tanque retangular de cantaria. No frontão triangular uma placa de mármore indica a data da construção. Em ambos os lados do tanque existem dois bancos, também em cantaria.
 A água é jorrava no tanque por uma torneira de bronze localizada bem ao centro de bebedouro. O jorro central que extravasa para os compartimentos contíguos mantendo, desta forma, os três compartimentos cheios de água.
@@ -9292,10 +8582,11 @@ Desativado em data desconhecida.`,
 
 export const LagodaPontedoAltoBoaVista_AzevedoNeto: Obra = {
     ID: 789,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Lago da Ponte do Alto Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Pequeno lago artificial, criado para embelezar os jardins da estrada, onde se acumula a água que desce das encostas do Parque Nacional da Tijuca.`,
@@ -9307,10 +8598,11 @@ export const LagodaPontedoAltoBoaVista_AzevedoNeto: Obra = {
 
 export const LagodaCascatadoAltodaBoaVista_AzevedoNeto: Obra = {
     ID: 790,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Lago da Cascata do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Lago artificial criado a partir da cascata, que recebe a água que desce de uma parte da encosta do Parque Nacional da Tijuca.`,
@@ -9322,11 +8614,12 @@ export const LagodaCascatadoAltodaBoaVista_AzevedoNeto: Obra = {
 
 export const BicadoMonteiro_Desconhecida: Obra = {
     ID: 791,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica do Monteiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `bica`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Bica`,
     Material: `Peça em argamassa`,
     Descricao: `Fonte tipo estela em granito erguida sobre quatro degraus em semicírculo aos pés da encosta. A bica servia de bebedouro de animais e dos trabalhadores das fazendas de café no início do séc. XIX, deve seu nome ao 1º tenente do Exército Antônio Pedro Monteiro, responsável pela implantação da rede de captação de água junto aos mananciais da floresta.
 Originariamente existia uma peça em ferro fundido produzido nas Fundições do Val D'Osne. A peça desapareceu no ano de 2002 ficando somente a coluna que a sustentava. A bacia e a bica instalada não fazem parte do conjunto original.`,
@@ -9338,10 +8631,11 @@ Originariamente existia uma peça em ferro fundido produzido nas Fundições do 
 
 export const ChafarizdeGrandjeandeMontigny_AugusteHenriVictorGrandjeandeMontigny: Obra = {
     ID: 792,
-    Artistas: [artistas.AugusteHenriVictorGrandjeandeMontigny],
+    Autores: [artistas.AugusteHenriVictorGrandjeandeMontigny],
     Titulo: `Chafariz de Grandjean de Montigny`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em gnaisse`,
     Descricao: `Implantado originalmente no antigo Rossio Pequeno, hoje Praça Onze de Junho. Com a abertura da Avenida Presidente Vargas, foi transferido para essa praça.
@@ -9355,11 +8649,12 @@ Esta desativado desde maio de 2017.`,
 
 export const FonteInglesadoAltodaBoaVista_Desconhecida: Obra = {
     ID: 793,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte Inglesa do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `A peça é de uma fundição inglesa : A . Handside e Co. 1ª / Derby e London de 1884. A data da instalação na praça é desconhecida.
 Fonte tipo Stella, fixada num monolito de concreto. A água jorra de uma cara de leão, para uma bacia semicircular logo abaixo.
@@ -9372,10 +8667,11 @@ Desativado desde maio de 2017.`,
 
 export const Guarda_corpodaRuaSaoRafael_Desconhecida: Obra = {
     ID: 795,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo  da Rua São Rafael`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Blocos de gnaisse com argamassa`,
     Descricao: `Guarda-corpo em alvenaria de pedra aparente, para proteção dos pedestres no entorno do Rio Maracanã`,
@@ -9387,10 +8683,11 @@ export const Guarda_corpodaRuaSaoRafael_Desconhecida: Obra = {
 
 export const MarcodeInauguracaodaAvenidaEdsonPassos_AzevedoNeto: Obra = {
     ID: 796,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Marco de Inauguração da Avenida Edson Passos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Marco de granito bruto com uma placa comemorativa`,
@@ -9402,10 +8699,11 @@ export const MarcodeInauguracaodaAvenidaEdsonPassos_AzevedoNeto: Obra = {
 
 export const PontedoRioSaoJoao_Desconhecida: Obra = {
     ID: 797,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte do Rio São João`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Blocos de granito`,
     Descricao: `Construção em arco de blocos de pedra.`,
@@ -9417,10 +8715,11 @@ export const PontedoRioSaoJoao_Desconhecida: Obra = {
 
 export const PisodePedeMolequedaAvenidaEdsonPassos_Desconhecida: Obra = {
     ID: 798,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Avenida Edson Passos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso de blocos de pedra original.`,
@@ -9432,11 +8731,12 @@ export const PisodePedeMolequedaAvenidaEdsonPassos_Desconhecida: Obra = {
 
 export const PisodePedeMolequedoBebedourodaEstradaVelhadaTijuca_Desconhecida: Obra = {
     ID: 799,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque do Bebedouro da Estrada Velha da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Trecho de piso original em frente ao Bebedouro da Estrada Velha da Tijuca.`,
     Execucao: true,
@@ -9447,11 +8747,12 @@ export const PisodePedeMolequedoBebedourodaEstradaVelhadaTijuca_Desconhecida: Ob
 
 export const LanternaJaponesaIdoAltodaBoaVista_Desconhecida: Obra = {
     ID: 800,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lanterna Japonesa I do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lanterna`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lanterna`,
     Material: `Bloco de granito`,
     Descricao: `Trata-se de uma peça esculpida inteiriça. Pertenceu originariamente ao Sr. Yenari Tokugawa XI Shogum,que em 1842 recebeu ao senhor feudal do Castelo de Hida, Toshiatsu Kinoshita.Na inauguração o verador Frederico Trota, expos que a laterna pertenceu aos jardins do Palacio Real Japones, sendo uma relíquia da nação amizade.
 Em 1957, foi doada à Cidade pelo Governador de Toqui, Seuchi Yasui, em nome do povo de Tóquio. Foi transportada para o Rio de Janeiro pelo navio Custódio de Melo, sob o comando de Raimundo Fiqueira.`,
@@ -9463,11 +8764,12 @@ Em 1957, foi doada à Cidade pelo Governador de Toqui, Seuchi Yasui, em nome do 
 
 export const PontedeMadeira_Desconhecida: Obra = {
     ID: 801,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte de Madeira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `ponte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Ponte`,
     Material: `Peça de Madeira`,
     Descricao: `Pequena ponte em madeira pintada de vermelho. Fui instalada nos anos de 1950 e o guarda-corpo nos anos de 1990.`,
     Execucao: true,
@@ -9478,11 +8780,12 @@ export const PontedeMadeira_Desconhecida: Obra = {
 
 export const LanternaJaponesaIIdoAltodaBoaVista_Desconhecida: Obra = {
     ID: 802,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lanterna Japonesa II do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lanterna`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lanterna`,
     Material: `Peça em granito`,
     Descricao: `Pequena peça em pedra, encontrada no depósito da Fundação Parques e Jardins nos anos de 1990. Somente em 2014 foi instalada nessa avenida para embelezar o espaço.`,
     Execucao: true,
@@ -9494,9 +8797,10 @@ export const LanternaJaponesaIIdoAltodaBoaVista_Desconhecida: Obra = {
 export const Leao_HPeyrol: Obra = {
     ID: 803,
     Titulo: `Leão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Escultura de um leão sobre uma pedra, sobre um pedestal escalonado em granito. Foi adquirido pelo Prefeito Pereira Passos para embelezar a Praça Floriano, em 1906, e transferido para a Avenida Edson Passos quando de sua abertura em 1940.`,
     Execucao: true,
@@ -9507,10 +8811,11 @@ export const Leao_HPeyrol: Obra = {
 
 export const FradesdoAltodaBoaVista_AzevedoNeto: Obra = {
     ID: 804,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Frades do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Frades em cantaria de forma cilíndrica.`,
@@ -9522,11 +8827,12 @@ export const FradesdoAltodaBoaVista_AzevedoNeto: Obra = {
 
 export const LampadariodoAltodaBoaVista_Desconhecida: Obra = {
     ID: 805,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Alto da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Pequeno poste de ferro para iluminar o entrocamento de duas vias.`,
     Execucao: true,
@@ -9537,10 +8843,11 @@ export const LampadariodoAltodaBoaVista_Desconhecida: Obra = {
 
 export const MarcoemTributodeGratidao_Desconhecida: Obra = {
     ID: 806,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco em Tributo de Gratidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em mármore fixada em blocos de gnaisse`,
     Descricao: `Placa de mármore esculpida fixada na murada de pedra, com inscrições de agradecimento a Luís Pedreira do Couto Ferraz, o Barão do Bom Retiro, por promover o desenvolvimento da Tijuca.`,
@@ -9552,10 +8859,11 @@ export const MarcoemTributodeGratidao_Desconhecida: Obra = {
 
 export const SanitarioPublicodaFurnasdeAgassiz_Desconhecida: Obra = {
     ID: 807,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Sanitario Publico da Furnas de Agassiz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Sanitário público`,
     Descricao: `Construção de rocaille, imitando troncos de árvores. Trata-se de um sanitario publico, da Estrada de Furnas`,
@@ -9567,10 +8875,11 @@ export const SanitarioPublicodaFurnasdeAgassiz_Desconhecida: Obra = {
 
 export const MarcodaInauguracaodoItanhanga_Desconhecida: Obra = {
     ID: 808,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração do Itanhangá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com letras de bronze`,
     Descricao: `Marco em granito bruto, com inscrições relativas a inauguração.`,
@@ -9582,10 +8891,11 @@ export const MarcodaInauguracaodoItanhanga_Desconhecida: Obra = {
 
 export const AmuradadoItanhanga_Desconhecida: Obra = {
     ID: 809,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Itanhangá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Bloco de granito`,
     Descricao: `Amurada de blocos de granito bruto, contornando a área ajardinada, com colunas que sustentam postes de iluminação.`,
@@ -9597,11 +8907,12 @@ export const AmuradadoItanhanga_Desconhecida: Obra = {
 
 export const PisodePedraPortuguesadasCalcadasMusicais_OrlandoMagdalena: Obra = {
     ID: 816,
-    Artistas: [artistas.OrlandoMagdalena],
+    Autores: [artistas.OrlandoMagdalena],
     Titulo: `Piso de Pedra Portuguesa das Calçadas Musicais`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Piso execuatado para as comemorações do IV Centenário da Cidade do Rio de Janeiro, idealizada pelo compositor Almirante, que escolheu as músicas a serem reproduzidas,<formando as partituras de músicas de grandes compositores populares brasileiros,
 Trata-se de um mosaico de pedrasbrancas e pretas, desenhando partituras de músicas de grandes compositores, Foram construídas então desde a Praça Maracanãaté a Praça Barão de Drumond, com as partituras das seguites músicas: Cidade Maravilhosa de André Filho(esta primeira ainda na Praça Maracanã); Abre Alas de Chiquinha Gonzaga; Pelo Telefone de Dungae Mauro de Almeida; Mal me querde Cristóvão de Alencar, Atmando Reise Newton Teixeira; Feitiço da Vilade Noel Rosae Vadico; Ave Mariade Ertildes Campose Jonas Neves; Aquarela do Brasil de Ary BarrosoJura de Sinho; CarinhosodePixiguinha e João de Barros; Linda Florde Henrique Vogelere Luis Peixoto; A Conquista do Arde Eduardo das Neves; Luar do Sertãode Catulo de PaixãoCearensee João Pernambuco; Chão de Estrelasde Orestes Barbosae Silvio Caldas; Linda Morenade Lamartine Babo; A Voz do Violão deFrancisco Alvese Horacio Campos; Na Pavunade Homero Dornellase Almirante; Primavera do Rio de João de Barrose Ernesto Nazareth; Apanhei-te Cavaquinhode Ernesto Nazareth; Florisbelade Nassara e Frazão; Renascer das Cinzasde Martinho da Vila(esta última já na Praça Barão de Drumond.`,
@@ -9613,15 +8924,15 @@ Trata-se de um mosaico de pedrasbrancas e pretas, desenhando partituras de músi
 
 export const GradildoRecantodoTrovador_Desconhecida: Obra = {
     ID: 818,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil do Recanto do Trovador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `Veio para o Brasil de navio em abril de 1876. Foiinaugurado em 1888 no Campo de Santana e transferido para esse parque em 1957.<O gradil de ferro fundido foi instalado em todo o perímetro do parque.
 Foi adquirida pelo governo imperial na Companhia Barborat de Hauts Fanaux de Val d'Osne.`,
-
     Execucao: true,
     DataInauguracao: `09/1880`,
     Latitude: `-22.9168873`,
@@ -9630,11 +8941,12 @@ Foi adquirida pelo governo imperial na Companhia Barborat de Hauts Fanaux de Val
 
 export const LanternaJaponesadoParqueRecantodoTrovador_Desconhecida: Obra = {
     ID: 819,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lanterna Japonesa do Parque Recanto do Trovador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lanterna`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lanterna`,
     Material: `Peça em granito`,
     Descricao: `Aproveitando a comemoração dos 65 anos do Imperador Hiroto foi doada a Cidade a criação de jardim japonês no Rio de Janeiro, pelas mãos do paisagista Jorge Catsuo Okimoto. A lanterna pertenceu aos antepassados do Imperador Hiroito que presenteu ao Rio. As lanternas de pedra talhada, chamadas toro tem a forma de pequenos pagodes.
 Essa Laterna foi doada à cidade nas comemorações do IV Centenário do Rio de Janeiro. presente do Japão.`,
@@ -9646,11 +8958,12 @@ Essa Laterna foi doada à cidade nas comemorações do IV Centenário do Rio de 
 
 export const BaciadoElefante_Girafa__Desconhecida: Obra = {
     ID: 820,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bacia do Elefante ( Girafa)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `bebedouro`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Bebedouro`,
     Material: `Peça em mármore`,
     Descricao: `Bacia com cerca de três metros de diâmetro, remanescente do primeiro zoológico da Cidade, que ali funcionou adaptado como Chafariz durante um período.
 Desativado em data desconhecida`,
@@ -9661,10 +8974,11 @@ Desativado em data desconhecida`,
 
 export const LagodoRecantodoTrovador_JoseMagalhaes: Obra = {
     ID: 821,
-    Artistas: [artistas.JoseMagalhaes],
+    Autores: [artistas.JoseMagalhaes],
     Titulo: `Lago do Recanto do Trovador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Lago criado artificialmente para embelezar o espaço. Originalmente o antigo jardim zoológico havia alamendas, lagos, repuxos, pontes, chalat, bosques e as jaulas de inumeros animais.`,
@@ -9676,10 +8990,11 @@ export const LagodoRecantodoTrovador_JoseMagalhaes: Obra = {
 
 export const MarcodaInauguracaoPracaEdmundoRego_Desconhecida: Obra = {
     ID: 822,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração Praça Edmundo Rego`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Marco de granito com uma placa de bronze com a seguinte inscrição em alto relevo: O monumento foi uma iniciativa da comissão de melhoramentos do Grajau.`,
@@ -9691,10 +9006,11 @@ export const MarcodaInauguracaoPracaEdmundoRego_Desconhecida: Obra = {
 
 export const CaramanchaodaPracaEdmundoRego_AzevedoNeto: Obra = {
     ID: 823,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Caramanchão da Praça Edmundo Rego`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Concreto armado`,
     Descricao: `Trata-se de duas construções, com cinco pilares de cada lado da praça.`,
@@ -9706,11 +9022,12 @@ export const CaramanchaodaPracaEdmundoRego_AzevedoNeto: Obra = {
 
 export const CaramanchaodaPracaNobel_AzevedoNeto: Obra = {
     ID: 824,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Caramanchão da Praça Nobel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `caramanchão`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Caramanchão`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Construção de concreto revestida com pequenos blocos de granito, no trecho elevado do terreno.`,
     Execucao: true,
@@ -9721,10 +9038,11 @@ export const CaramanchaodaPracaNobel_AzevedoNeto: Obra = {
 
 export const MarcoaMusicadoGrajau_Desconhecida: Obra = {
     ID: 825,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco a Música do Grajaú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Monolítico de concreto com placa de ferro`,
     Descricao: `O marco é uma homenagem dos moradores do bairro ao médico, poeta e compositor José Renato Coelho de Godoy que compos a música - Grajaú.
@@ -9758,8 +9076,9 @@ export const MarcoaMusicadoGrajau_Desconhecida: Obra = {
 
 export const Garrincha_EdgarDuvivier: Obra = {
     ID: 829,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Garrincha`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -9781,9 +9100,9 @@ Doação à cidade pelo Clube de Regatas Botafogo em frente ao seu estádio do E
 
 export const Jairzinho_EdgarDuvivier: Obra = {
     ID: 831,
-    Imagem: 'Jairzinho_EdgarDuvivier.jpg',
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Jairzinho`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -9805,11 +9124,12 @@ export const Jairzinho_EdgarDuvivier: Obra = {
 
 export const Zagallo_EdgarDuvivier: Obra = {
     ID: 832,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Zagallo`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `estátua`,
+    TipologiaObra: `Estátua`,
     Material: `Peça em bronze com pedestal revestido de granito`,
     Descricao: `Estátiua inpirada na posição escolhida pelo próprio homenageado.Doação à cidade pelo Clube de Regatas Botafogo, em frente ao seu estádio do Engenhão.`,
     Execucao: true,
@@ -9820,8 +9140,9 @@ export const Zagallo_EdgarDuvivier: Obra = {
 
 export const PaulodeFrontinnaCidadeNova_AntonioCarlosBettiniLiboredo_LuciomardeJesus: Obra = {
     ID: 834,
-    Artistas: [artistas.AntonioCarlosBettiniLiboredo, artistas.LuciomardeJesus],
+    Autores: [artistas.AntonioCarlosBettiniLiboredo, artistas.LuciomardeJesus],
     Titulo: `Paulo de Frontin na Cidade Nova`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -9837,10 +9158,11 @@ A estátua com trages da época do fato personalidades, esta de costas para a ru
 
 export const PaineldoTunelJoaoRicardo_MarcosChaves: Obra = {
     ID: 835,
-    Artistas: [artistas.MarcosChaves],
+    Autores: [artistas.MarcosChaves],
     Titulo: `Painel do Túnel João Ricardo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `O painel de azulejo foiproduzido pela equipe da Azulejaria, a partir de oficinas de arte, com os moradores do Morro da Providência com apoio daSecretaria Municipal de Cultura.
@@ -9853,10 +9175,11 @@ export const PaineldoTunelJoaoRicardo_MarcosChaves: Obra = {
 
 export const GradildaPracaParis_Desconhecida: Obra = {
     ID: 837,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil da Praça Paris`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `Gradil semelhante ao do Passeio Publico e do Campo de Santana, seguindo um modelo de praça historica.`,
@@ -9868,10 +9191,11 @@ export const GradildaPracaParis_Desconhecida: Obra = {
 
 export const CaramanchaodoParqueGarotadeIpanema_Desconhecida: Obra = {
     ID: 838,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Caramanchão do Parque Garota de Ipanema`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Concreto armado`,
     Descricao: `Construção circular, no área central do parque, para embelezamento do parque.`,
@@ -9883,10 +9207,11 @@ export const CaramanchaodoParqueGarotadeIpanema_Desconhecida: Obra = {
 
 export const CaramanchaodoParquedosPatins_RobertoBurleMarx: Obra = {
     ID: 839,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Caramanchão do Parque dos Patins`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Concreto armado`,
     Descricao: `Construção de concreto criada para proteger a iluminação embelezando o espaço.`,
@@ -9898,11 +9223,12 @@ export const CaramanchaodoParquedosPatins_RobertoBurleMarx: Obra = {
 
 export const LampadariodaPracaParis_Desconhecida: Obra = {
     ID: 840,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário da Praça Paris`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Poste com 5 ( cinco) luminárias próximas as esculturas das estações do ano. Foram reinstalados em 2008 na praça, visto que os mesmos encontravam-se na Praça XV, próximo ao Monumento General Osorio.`,
     Execucao: true,
@@ -9913,11 +9239,12 @@ export const LampadariodaPracaParis_Desconhecida: Obra = {
 
 export const LampadarioSuspensodoCorredorCultural_Desconhecida: Obra = {
     ID: 841,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário Suspenso do Corredor Cultural`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Iluminarias instaladas dos anos 1980 e instaladas em varias ruas antigas do Rio como no Arco dos Teles, Beco dos Barbeiros, Beco das Cancelas, Rua do Mercado e Rua da Candelaria.`,
     Execucao: true,
@@ -9927,10 +9254,11 @@ export const LampadarioSuspensodoCorredorCultural_Desconhecida: Obra = {
 
 export const Guarda_corpodoCampodeSaoCristovao_Desconhecida: Obra = {
     ID: 836,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo do Campo de São Cristovão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em ferro fundido`,
     Descricao: `Guarda-corpo composto por peças de ferro fundido vazada em rosáceas, fixadas em colunas e parapeito esculpido em gnaisse.`,
@@ -9942,11 +9270,12 @@ export const Guarda_corpodoCampodeSaoCristovao_Desconhecida: Obra = {
 
 export const LampadariodaAssembleiaLegislativa_Desconhecida: Obra = {
     ID: 844,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário da Assembleia Legislativa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro pintado`,
     Descricao: `Poste de ferro fundido composto uma coluna onde por uma haste sustenta quatro luminarias ixadas por uma corrente a uma pequena escultura de uma aguia. Na base do poste, existe um machado, simbolisando que o palacio como um local de leis. Esses postes rodeiam a quadro onde está situado o Palácio Tiradentes.`,
     Execucao: true,
@@ -9957,11 +9286,12 @@ export const LampadariodaAssembleiaLegislativa_Desconhecida: Obra = {
 
 export const LampadariodoCampodeSantana_Desconhecida: Obra = {
     ID: 846,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Campo de Santana`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro pintado`,
     Descricao: `Originários da Avenida Rio Branco, hoje quatro deles estão no entorno do Monumento a Benjamin Constant, no Campo de Santana, e um em frente ao Quartel Central do Corpo de Bombeiros, na Praça da República. É possível que ainda existam muitos outros espalhados pela cidade,`,
     Execucao: true,
@@ -9971,7 +9301,7 @@ export const LampadariodoCampodeSantana_Desconhecida: Obra = {
 
 export const RequiemParaAFloresta_GevasioTeixeira: Obra = {
     ID: 114,
-    Artistas: [artistas.GevasioTeixeira],
+    Autores: [artistas.GevasioTeixeira],
     Titulo: `Requiem Para AFloresta`,
     Material: 'pintura',
     DataInauguracao: '1994',
@@ -9983,7 +9313,7 @@ export const RequiemParaAFloresta_GevasioTeixeira: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'temporario',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'mural',
@@ -9992,11 +9322,12 @@ export const RequiemParaAFloresta_GevasioTeixeira: Obra = {
 
 export const LampadariodoTeatroMunicipal_Desconhecida: Obra = {
     ID: 847,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Teatro Municipal`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido e pedestal de granito`,
     Descricao: `Postes com quatro (4 ) iluminarias com requintada trabalho de fundição.`,
     Execucao: true,
@@ -10006,11 +9337,12 @@ export const LampadariodoTeatroMunicipal_Desconhecida: Obra = {
 
 export const LampadariodoMonumentoPedroI_Desconhecida: Obra = {
     ID: 848,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Monumento Pedro I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro pintado`,
     Descricao: `Poste de modelo unico para o monumento.`,
     Execucao: true,
@@ -10021,11 +9353,12 @@ export const LampadariodoMonumentoPedroI_Desconhecida: Obra = {
 
 export const LampadariodoLargodePiolho_Desconhecida: Obra = {
     ID: 849,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Largo de Piolho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Poste com seis( 6) luminarias. No local esse é o unico exemplar`,
     Execucao: true,
@@ -10035,11 +9368,12 @@ export const LampadariodoLargodePiolho_Desconhecida: Obra = {
 
 export const LampadariodoMuseudoCatete_Desconhecida: Obra = {
     ID: 850,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Museu do Catete`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido e pedestal de gnaisse`,
     Descricao: `São dois (2) postes com cinco ( 5 ) luminarias cada, sobre um pedestal de gnaisse.`,
     Execucao: true,
@@ -10050,11 +9384,12 @@ export const LampadariodoMuseudoCatete_Desconhecida: Obra = {
 
 export const LampadariodaPracaDuquedeCaxias_Desconhecida: Obra = {
     ID: 851,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário da Praça Duque de Caxias`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Postes com tres ( 3) luminaris, instaladas no entorno do Pateon de Duque de Caxias`,
     Execucao: true,
@@ -10065,10 +9400,11 @@ export const LampadariodaPracaDuquedeCaxias_Desconhecida: Obra = {
 
 export const ChafarizdoPalacioDuquedeCaxias_AzevedoNeto: Obra = {
     ID: 853,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Chafariz do Palácio Duque de Caxias`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Dois Chafarizes de jorro de água construidos nos jardins laterais do acesso ao Palácio do Exército. Construidos noa anos da decada de 1950
@@ -10081,11 +9417,12 @@ Desativado em data desconhecida.`,
 
 export const LampadarioModeloColardePerola_Desconhecida: Obra = {
     ID: 857,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário Modelo Colar de Pérola`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Modelo instalado na Avenida Atlantica do Leme ao Posto Seis, no calçadão proximo aos predios, com lampadas de vapor de mercúrio, que com a luz branca iluminava a Princesinha do Mar, com afastamento simetrico produzindo uma imagem de perolas.Atualmente são 73 postes com cinco metros em ferro fundido com detalhes de folhagem e flores.Instalados nos anos de 1930`,
     Execucao: true,
@@ -10096,11 +9433,12 @@ export const LampadarioModeloColardePerola_Desconhecida: Obra = {
 
 export const LampadariodoMonumentoaAberturadosPortos_Desconhecida: Obra = {
     ID: 858,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Monumento a Abertura dos Portos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Originariamente instalados para iluminação a gas, com tres ( 3) luminarias`,
     Execucao: true,
@@ -10111,11 +9449,12 @@ export const LampadariodoMonumentoaAberturadosPortos_Desconhecida: Obra = {
 
 export const LampadarioModeloAvenidaCentral_Desconhecida: Obra = {
     ID: 859,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário Modelo Avenida Central`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Atualmente existem cinco postes originais, quatro estão no entorno do Monumento a Benjamin Constant, no Campo de Santana e um em frente ao Quartel Central do Corpo de Bombeiros, na Praça da República. É possível que ainda existam muitos outros dos antigos postes espalhados pela cidade,`,
     Execucao: true,
@@ -10126,11 +9465,12 @@ export const LampadarioModeloAvenidaCentral_Desconhecida: Obra = {
 
 export const GloriadoPalacioTiradentes_Desconhecida: Obra = {
     ID: 861,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Glória do Palácio Tiradentes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Composto por duas peças semelhantes uma de cada lado do trecho do convite da rampa de acesso ao Palácio.
     Cada peça tem coluna finamente esculpida com a peça principal de bronze no seu topo. A figura feminina, em bronze,
@@ -10146,11 +9486,12 @@ export const GloriadoPalacioTiradentes_Desconhecida: Obra = {
 
 export const BancodeBurleMarxPraiadeBotofogo_RobertoBurleMarx: Obra = {
     ID: 862,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Banco de Burle Marx, Praia de Botofogo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção de concreto organica acompanhando o traçado do jardim de Burle Marx.`,
     Execucao: true,
@@ -10161,13 +9502,14 @@ export const BancodeBurleMarxPraiadeBotofogo_RobertoBurleMarx: Obra = {
 
 export const BanconaPracaSantosDumont_RobertoBurleMarx: Obra = {
     ID: 863,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Banco na Praça Santos Dumont`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto armado`,
-    Descricao: `Bancos longos  construidos no contorno dos canteiros, criando possibilidade de contemplação da praça.`,
+    Descricao: `Bancos longos construidos no contorno dos canteiros, criando possibilidade de contemplação da praça.`,
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9737388`,
@@ -10176,11 +9518,12 @@ export const BanconaPracaSantosDumont_RobertoBurleMarx: Obra = {
 
 export const BancodeBurleMarxParquedoFlamengo_RobertoBurleMarx: Obra = {
     ID: 864,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Banco de Burle Marx, Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto armado`,
     Descricao: `Banco construido em linhas sinuosas e baixo tipico do desenho de Burle Marx`,
     Execucao: true,
@@ -10191,11 +9534,12 @@ export const BancodeBurleMarxParquedoFlamengo_RobertoBurleMarx: Obra = {
 
 export const BancodeBurleMarxPracaSalgadoFilho_RobertoBurleMarx: Obra = {
     ID: 865,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Banco de Burle Marx, Praça Salgado Filho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção de concreto, de forma organica acompanhando o traçado do jardim de Burle Marx.`,
     Execucao: true,
@@ -10206,11 +9550,12 @@ export const BancodeBurleMarxPracaSalgadoFilho_RobertoBurleMarx: Obra = {
 
 export const BancodeBurleMarxLargodoMachado_RobertoBurleMarx: Obra = {
     ID: 866,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Banco de Burle Marx, Largo do Machado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `banco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Banco`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção no contorno de todos canteiros do lado interior da praça. O projetode 1945.`,
     Execucao: true,
@@ -10221,11 +9566,12 @@ export const BancodeBurleMarxLargodoMachado_RobertoBurleMarx: Obra = {
 
 export const MosaicodePedraPortuguesadoLargodaCarioca_RobertoBurleMarx: Obra = {
     ID: 867,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Mosaico de Pedra Portuguesa do Largo da Carioca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Mosaico de pedras portuguesas nas cores preta e branco formando desenhos organicos, criando destaque ao tradicional relógio da carioca.`,
     Execucao: true,
@@ -10236,11 +9582,12 @@ export const MosaicodePedraPortuguesadoLargodaCarioca_RobertoBurleMarx: Obra = {
 
 export const MosaicodePedraPortuguesadoLargodoMachado_RobertoBurleMarx: Obra = {
     ID: 868,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Mosaico de Pedra Portuguesa do Largo do Machado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Piso em pedra criando um mosaico organico caracteristico de Burle Marx.`,
     Execucao: true,
@@ -10251,11 +9598,12 @@ export const MosaicodePedraPortuguesadoLargodoMachado_RobertoBurleMarx: Obra = {
 
 export const MosaicodePedraPortuguesadaPracaJuliodeNoronha_RobertoBurleMarx: Obra = {
     ID: 869,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Mosaico de Pedra Portuguesa da Praça Julio de Noronha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `piso`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Piso`,
     Material: `Pedras portuguesas`,
     Descricao: `Mosaico executado com pretas portuguesas criado para adornar a pracinha do Leme`,
     Execucao: true,
@@ -10266,11 +9614,12 @@ export const MosaicodePedraPortuguesadaPracaJuliodeNoronha_RobertoBurleMarx: Obr
 
 export const LampadariodoMinisteriodaFazenda_Desconhecida: Obra = {
     ID: 870,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Ministério da Fazenda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Postes com 5 (cinco ) luminarias cada, na fachada principal da antiga sede do Ministerio da Fazenda.`,
     Execucao: true,
@@ -10281,11 +9630,12 @@ export const LampadariodoMinisteriodaFazenda_Desconhecida: Obra = {
 
 export const LampadariodaAmuradapeloCampodeSaoCristovao_Desconhecida: Obra = {
     ID: 872,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário da Amurada pelo Campo de São Cristovão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Poste com uma luminaria situada em cada coluna de sustentação do guarda corpo`,
     Execucao: true,
@@ -10296,10 +9646,11 @@ export const LampadariodaAmuradapeloCampodeSaoCristovao_Desconhecida: Obra = {
 
 export const LagodaPracaSalgadoFilho_RobertoBurleMarx: Obra = {
     ID: 873,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Lago da Praça Salgado Filho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `O lago tem forma irregular com sete banquetas para plantas aquaticas e blocos de pedra natural imitando rochedos.`,
@@ -10309,28 +9660,39 @@ export const LagodaPracaSalgadoFilho_RobertoBurleMarx: Obra = {
     Longitude: `-43.1670899`,
 };
 
-export const ADiasdaCruz_VicenteDelRio_LuizCarlosToledo: Obra = {
-    ID: 876,
-    Artistas: [artistas.VicenteDelRio, artistas.LuizCarlosToledo],
-    Titulo: `À Dias da Cruz`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Efígie`,
-    Material: `Bloco de granito com placa de bronze`,
-    Descricao: `O monumento, um monolito com blocos de pedra de mão, tem a efígie do médico. A peça em bronze é cópia da
-    existente na Praça Tobias Barreto, em Vila Isabel. A efígie foi furtada em 2009.`,
+export const Obelisco_PauloCase: Obra = {
+    ID: 241,
+    Autores: [artistas.PauloCase],
+    Titulo: `Obelisco`,
+    Material: 'concreto',
+    Altura: '22m',
+    DataInauguracao: `08/1996`,
+    DatasImportantes: [new Data(`08/1996`, 'data de inauguração')],
+    Propriedade: 'Pública',
+    Zona: 'Sul',
+    Bairro: 'Ipanema',
+    Endereço: 'Rua Visconde de Pirajá',
+    Latitude: `-22.9837493`,
+    Longitude: `-43.2139005`,
+    Base: 'Com pedestal',
+    MaterialBase: 'Granito',
+    Status: 'Permanece no espaço público',
+    Descricao: `Projetado para ser o marco de Ipanema. Foi criado pelo Rio-Cidade e se situa no local onde os bondes faziam o
+    retorno para circular no bairro. O Obelisco tem forma circular com uma bola no seu topo.`,
+    Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
+    Temporalidade: 'Permanente',
+    Eixo: 'Plasticidade',
+    Funcao: 'Referencial',
+    Natureza: 'Urbanística',
+    Tipologia: 'Marco',
     Execucao: true,
-    DataInauguracao: `09/1996`,
-    Latitude: `-22.9021836`,
-    Longitude: `-43.2802868`,
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
 export const AryBarroso_LeoSantana: Obra = {
     ID: 877,
-    Imagem: 'AryBarroso_LeoSantana.jpg',
-    Artistas: [artistas.LeoSantana],
+    Autores: [artistas.LeoSantana],
     Titulo: `Ary Barroso`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -10350,10 +9712,11 @@ export const AryBarroso_LeoSantana: Obra = {
 
 export const CoretodoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
     ID: 878,
-    Artistas: [artistas.PedroFernandesVianadaSilva],
+    Autores: [artistas.PedroFernandesVianadaSilva],
     Titulo: `Coreto do Jardim do Méier`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Madeira`,
     Descricao: `Construção octogonal, em madeira sobre embasamento em alvenaria de pedras expostas, com escada de acesso em granito e cobertura de ardósia.`,
@@ -10365,11 +9728,12 @@ export const CoretodoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
 
 export const FachadadeCasadeCrianca_Desconhecida: Obra = {
     ID: 879,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fachada de Casa de Criança`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fachada`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fachada`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Fachada em miniatura para a interação das crianças.`,
     Execucao: true,
@@ -10380,10 +9744,11 @@ export const FachadadeCasadeCrianca_Desconhecida: Obra = {
 
 export const RelogiodoSol_OscarTecidio: Obra = {
     ID: 880,
-    Artistas: [artistas.OscarTecidio],
+    Autores: [artistas.OscarTecidio],
     Titulo: `Relógio do Sol`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em granito`,
     Descricao: `Peça com as horas do dia gravadas em baixo-relevo e ponteiro de aço.
@@ -10396,11 +9761,12 @@ Peça furtada em 15 de setembro de 2015.`,
 
 export const AtenadoJardimdoMeier_Desconhecida: Obra = {
     ID: 881,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Atena do Jardim do Méier`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Escultura com alegorias representando a Indústria, com os símbolos tradicionais, como uma roda como engrenagem e uma marreta.`,
     Execucao: true,
@@ -10411,10 +9777,11 @@ export const AtenadoJardimdoMeier_Desconhecida: Obra = {
 
 export const RelogiodoMeierI_MayerhogereToledo: Obra = {
     ID: 882,
-    Artistas: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogereToledo],
     Titulo: `Relógio do Méier I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em resina`,
     Descricao: `Relógio fixado entre três placas em resina com a inscrição MÉIER em sentido vertical. São dois relógios na mesma rua. Uma na esquina com a Rua Magalhães Couto e outro nana Rua Oldegard Sapucáia`,
@@ -10426,10 +9793,11 @@ export const RelogiodoMeierI_MayerhogereToledo: Obra = {
 
 export const MarcodoMeier_MayerhogereToledo: Obra = {
     ID: 883,
-    Artistas: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogereToledo],
     Titulo: `Marco do Méier`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em resina`,
     Descricao: `Placa em resina com a inscrição MÉIER em sentido vertical. Originariamente foi construído para ser um Chafariz de lago seco,mas em outuro de 2008 foi aterrado devido as dificuldades de manutenção.`,
@@ -10441,12 +9809,12 @@ export const MarcodoMeier_MayerhogereToledo: Obra = {
 
 export const LeaodoMeier_NivaldoRodrigues: Obra = {
     ID: 884,
-    Imagem: 'LeaodoMeier_NivaldoRodrigues.png',
-    Artistas: [artistas.NivaldoRodrigues],
+    Autores: [artistas.NivaldoRodrigues],
     Titulo: `Leão do Méier`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada`,
     Descricao: `Escultura em concreto pintado na cor amarela, oferecido à Cidade pelo Lions Club do Méier na ocasião do centenário do bairro e do Jubileu de Prata do Clube. Originalmente um relógio elétrico fazia parte do conjunto escultórico, tendo sido reinstalado pelo Rio-Cidade Méier, em 1996, no canteiro central da Rua Dias da Cruz.`,
     Execucao: true,
@@ -10461,11 +9829,12 @@ export const LeaodoMeier_NivaldoRodrigues: Obra = {
 
 export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
     ID: 885,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Obelisco da Linha Amarela`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `obelisco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Obelisco`,
     Material: `Peça em aço`,
     Descricao: `Peça circular com uma estrutura central e outra cobrindo a primeira através de uma tela.`,
     Execucao: true,
@@ -10476,10 +9845,11 @@ export const ObeliscodaLinhaAmarela_Desconhecida: Obra = {
 
 export const OratorioaSaoJorgedoCachambiI_Desconhecida: Obra = {
     ID: 886,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge do Cachambi I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Oratório para aguarda da imagem do santo.`,
@@ -10489,37 +9859,13 @@ export const OratorioaSaoJorgedoCachambiI_Desconhecida: Obra = {
     Longitude: `-43.2828704`,
 };
 
-export const OMascateRiachuelo_HonorioPecanha: Obra = {
-    ID: 887,
-    Artistas: [artistas.HonorioPecanha],
-    Titulo: `O Mascate do bairro do Riachuelo`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Estátua`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `Réplica da escultura de um homem com alegorias, uma amostra de tecido num braço, e com a outra mão abrindo um baú de
-    mercadorias. É uma homenagem do SENAC ao pioneiro do comercio no Brasil. É uma reprodução do original realizado em 1964.`,
-    Execucao: true,
-    DataInauguracao: `03/1996`,
-    Zona: 'Norte',
-    Bairro: 'Riachuelo',
-    PontoDeReferencia: 'Rua Vinte e Quatro de Maio',
-    Latitude: `-22.9024367`,
-    Longitude: `-43.2586028`,
-    Lugar: 'Calçada',
-    Fatos: [
-        new Fato('1964', '1964', 'Original', 'A escultura é uma cópia ampliada do troféu O Mascate, esculpido por Honório Peçanha', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Fundição/Atelier', 'Zani Fundição Artística E Metalúrgica Ltda.', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const CaramanchaodaPracaRioGrandedoNorte_Desconhecida: Obra = {
     ID: 888,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Caramanchão da Praça Rio Grande do Norte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em argamassa revestida com ceramica`,
     Descricao: `Construção original do projeto da praça.`,
@@ -10531,10 +9877,11 @@ export const CaramanchaodaPracaRioGrandedoNorte_Desconhecida: Obra = {
 
 export const OratorioaSaoJorgedoCachambiII_Desconhecida: Obra = {
     ID: 890,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge do Cachambi II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em metal com imagem de resina`,
     Descricao: `Oratório em frente à antiga loja<em>São Jorge de Cascadura</em><.`,
@@ -10546,10 +9893,11 @@ export const OratorioaSaoJorgedoCachambiII_Desconhecida: Obra = {
 
 export const CascatadoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
     ID: 891,
-    Artistas: [artistas.PedroFernandesVianadaSilva],
+    Autores: [artistas.PedroFernandesVianadaSilva],
     Titulo: `Cascata do Jardim do Méier`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `Pequena gruta artificial em argamassa, de onde a água escorre para um lago.`,
@@ -10561,7 +9909,7 @@ export const CascatadoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
 
 export const CascatadoParqueAriBarroso_PedroPaulinoGuimaraes_RenatoPrimaveraMarinho_WalterCurvelodeMendonca_AlmirdeLimaMachado_PauloCelsoPrado: Obra = {
     ID: 894,
-    Artistas: [
+    Autores: [
         artistas.PedroPaulinoGuimaraes,
         artistas.RenatoPrimaveraMarinho,
         artistas.WalterCurvelodeMendonca,
@@ -10569,8 +9917,9 @@ export const CascatadoParqueAriBarroso_PedroPaulinoGuimaraes_RenatoPrimaveraMari
         artistas.PauloCelsoPrado,
     ],
     Titulo: `Cascata do Parque Ari Barroso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça em concreto armado`,
     Descricao: `A cascata, os canais e o lago foram projetados conjuntamente, no ano do Quarto Centenário do Rio de Janeiro. A cascata está desativada desde os anos de 1990. `,
@@ -10583,9 +9932,10 @@ export const CascatadoParqueAriBarroso_PedroPaulinoGuimaraes_RenatoPrimaveraMari
 export const TigreEsmagandoaCobra_JoaoTurim: Obra = {
     ID: 676,
     Titulo: `Tigre Esmagando a Cobra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Escultura figurativapremiada no Salão Nacional de Belas Artes em 1944 com medalha de prata quando foi adquirida pela Prefeitura do Rio de Janeiro e posteriormente instalada no zoologico.`,
     Execucao: true,
@@ -10596,10 +9946,11 @@ export const TigreEsmagandoaCobra_JoaoTurim: Obra = {
 
 export const ChafarizdaRuaOliveiraBelo_Desconhecida: Obra = {
     ID: 896,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Rua Oliveira Belo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Chafariz de jorro de água circular em lago seco revestido por placas de granito em duas cores, com jato central e duas linhas de jorros laterais.
@@ -10612,10 +9963,11 @@ O Chafariz foi desativado e retirado todo o seu equipamento em 9 de setembro de 
 
 export const ChafarizdaPracaTresPoderes_RonaldoBenevello: Obra = {
     ID: 897,
-    Artistas: [artistas.RonaldoBenevello],
+    Autores: [artistas.RonaldoBenevello],
     Titulo: `Chafariz da Praça Três Poderes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Tubo de ferro e piso em granito`,
     Descricao: `É um Chafariz de jorro sinuoso e lago seco criado para formar uma cortina da água para o painel ao fundo da empena do imovel vizinho.
@@ -10628,10 +9980,11 @@ Esta desativado desde maio de 2017.`,
 
 export const ChafarizdaPracaJoaoBerchemman_AdilsonRoquedosSantos: Obra = {
     ID: 898,
-    Artistas: [artistas.AdilsonRoquedosSantos],
+    Autores: [artistas.AdilsonRoquedosSantos],
     Titulo: `Chafariz da Praça João Berchemman`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `Trata-se de um Chafariz circular revestido com azulejo azul com um grande jorro central e outros laterais, ocupando a área central da praça.
@@ -10644,11 +9997,12 @@ Desativado desde o ano de 2014`,
 
 export const AmuradadoSantuariodaPenha_Desconhecida: Obra = {
     ID: 900,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Santuário da Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `amuradas`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Amurada`,
     Material: `Tijolo com argamassa`,
     Descricao: `Cosntrução para contenção do terreno na via que dá aceesso a praça dos Romeiros.`,
     Execucao: true,
@@ -10659,11 +10013,12 @@ export const AmuradadoSantuariodaPenha_Desconhecida: Obra = {
 
 export const FontedoSantuariodaPenha_Desconhecida: Obra = {
     ID: 901,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Santuário da Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `fonte`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `Bicas de ferro no conjunto de 6 ( seis peças) espalhadas no largo dos Romeiros.`,
     Execucao: true,
@@ -10674,10 +10029,11 @@ export const FontedoSantuariodaPenha_Desconhecida: Obra = {
 
 export const CoretodoSantuariodePenha_Desconhecida: Obra = {
     ID: 902,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto do Santuário de Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Peça de Madeira`,
     Descricao: `Construção octogonal, em madeira sobre embasamento em alvenaria de pedras expostas, com escada de acesso lateral.`,
@@ -10689,9 +10045,9 @@ export const CoretodoSantuariodePenha_Desconhecida: Obra = {
 
 export const AoPolicialMilitar_Desconhecida: Obra = {
     ID: 903,
-    Imagem: 'AoPolicialMilitar_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ao Policial Militar`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Estátua`,
@@ -10715,10 +10071,11 @@ A homenagem foi uma iniciativa dos moradores da Leopoldina aos soldados do 16º 
 
 export const PorticoMonumentaldoSantuariodaPenha_Desconhecida: Obra = {
     ID: 904,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Pórtico Monumental do Santuário da Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portal`,
     Material: `Peça em argamassa`,
     Descricao: `Monumental construção composta por quatro grandes colunas onde se sustentam esculturas religiosas na duas centrais e uma nas outras restantes. O conjunto representa o patrono da Irmandade.`,
@@ -10730,10 +10087,11 @@ export const PorticoMonumentaldoSantuariodaPenha_Desconhecida: Obra = {
 
 export const ArcosdaPenha_PedroPaulinoGuimaraes: Obra = {
     ID: 905,
-    Artistas: [artistas.PedroPaulinoGuimaraes],
+    Autores: [artistas.PedroPaulinoGuimaraes],
     Titulo: `Arcos da Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em metal`,
     Descricao: `Conjunto de estruturas de ferro pintadas de vermelho, que percorre toda a extensão da Rua dos Romeiros em direção ao Santuário da Penha, instalado pelo projeto Rio-Cidade da Penha.`,
@@ -10745,10 +10103,11 @@ export const ArcosdaPenha_PedroPaulinoGuimaraes: Obra = {
 
 export const OratorioaSaoJorgedaPenha_Desconhecida: Obra = {
     ID: 906,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge da Penha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça de tijolo com argamassa`,
     Descricao: `Pequeno oratório de alvenaria revestido por azulejos.`,
@@ -10760,10 +10119,11 @@ export const OratorioaSaoJorgedaPenha_Desconhecida: Obra = {
 
 export const MarcodeVilaKosmos_Desconhecida: Obra = {
     ID: 907,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco de Vila Kosmos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em ferro fundido`,
     Descricao: `Trata-se de parte de um poste provavelmente de gás, reconhecido pelos moradores como um marco do bairro e de sua ocupação.`,
@@ -10775,8 +10135,9 @@ export const MarcodeVilaKosmos_Desconhecida: Obra = {
 
 export const MonsenhorAlvesdaRocha_Desconhecida: Obra = {
     ID: 909,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Monsenhor Alves da Rocha`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -10791,11 +10152,12 @@ export const MonsenhorAlvesdaRocha_Desconhecida: Obra = {
 
 export const QuintinoBocaiuvanobairrodeQuintino_JoseBranquinho: Obra = {
     ID: 910,
-    Artistas: [artistas.JoseBranquinho],
+    Autores: [artistas.JoseBranquinho],
     Titulo: `Quintino Bocaiúva no bairro de Quintino`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Homenagem ao patrono e morador do bairro. Esta representado de acordo com uma pintura de seu retrato na escola do bairro.`,
     Execucao: true,
@@ -10806,11 +10168,12 @@ export const QuintinoBocaiuvanobairrodeQuintino_JoseBranquinho: Obra = {
 
 export const AOrlandoLeite_VeraLuciaCardim: Obra = {
     ID: 911,
-    Artistas: [artistas.VeraLuciaCardim],
+    Autores: [artistas.VeraLuciaCardim],
     Titulo: `À Orlando Leite`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `medalhão`,
+    TipologiaObra: `Medalhão`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `O monolito na entrada identifica o<patrono do parque, pai do Deputado Jorge Leite, que por sua iniciativa junto ao prefeito Chagas Freitas construiu o parque.`,
     Execucao: true,
@@ -10821,10 +10184,11 @@ export const AOrlandoLeite_VeraLuciaCardim: Obra = {
 
 export const ChafarizdaPracaAnaLima_MarthaSophia: Obra = {
     ID: 895,
-    Artistas: [artistas.MarthaSophia],
+    Autores: [artistas.MarthaSophia],
     Titulo: `Chafariz da Praça Ana Lima`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz de jorro de água e lago coberto, com um jorro central e quatorze outros no entorno.
@@ -10837,10 +10201,11 @@ Desativado desde maio de 2017.`,
 
 export const CoretodeQuintino_Desconhecida: Obra = {
     ID: 913,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto de Quintino`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em ferro fundido e embasamento de argamassa revestido por blocos de granito`,
     Descricao: `Construção octogonal, sobre embasamento de alvenaria de pedras expostas, onde se abrem janelas, com escada de oito de graus, cercada por gradil em ferro fundido, e cobertura em chapas de alumínio.
@@ -10853,11 +10218,12 @@ Esse coreto foi construido pelos negociantes da localidade.`,
 
 export const LampadariodoTerracodaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 843,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lampadário do Terraço da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `lampadário`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em ferro fundido`,
     Descricao: `Poste em ferro fundido com detalhe as esculturas de dragões com uma( 1) luminária.`,
     Execucao: true,
@@ -10868,10 +10234,11 @@ export const LampadariodoTerracodaQuintadaBoaVista_Desconhecida: Obra = {
 
 export const MuraldaPracadoPatriarca_Desconhecida: Obra = {
     ID: 916,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mural da Praça do Patriarca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mural`,
     Material: `Peça em concreto armado`,
     Descricao: `Mural de concreto com o nome da praça em baixo relevo construído para dividir os espaços da praça entre a concha acústica e a área de<em>play ground</em>,`,
@@ -10883,11 +10250,12 @@ export const MuraldaPracadoPatriarca_Desconhecida: Obra = {
 
 export const EsculturaIdoParqueMadureira_MarliMazeredo: Obra = {
     ID: 917,
-    Artistas: [artistas.MarliMazeredo],
+    Autores: [artistas.MarliMazeredo],
     Titulo: `Escultura I do Parque Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina`,
     Descricao: `Escultura abstrata pintada na cor branca`,
     Execucao: true,
@@ -10898,11 +10266,12 @@ export const EsculturaIdoParqueMadureira_MarliMazeredo: Obra = {
 
 export const EsculturaIIdoParquedeMadureira_MarliMazeredo: Obra = {
     ID: 918,
-    Artistas: [artistas.MarliMazeredo],
+    Autores: [artistas.MarliMazeredo],
     Titulo: `Escultura II do Parque de Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina`,
     Descricao: `Escultura abstrata policromada`,
     Execucao: true,
@@ -10913,10 +10282,11 @@ export const EsculturaIIdoParquedeMadureira_MarliMazeredo: Obra = {
 
 export const MuraldoParqueMadureira_RuyRezende: Obra = {
     ID: 919,
-    Artistas: [artistas.RuyRezende],
+    Autores: [artistas.RuyRezende],
     Titulo: `Mural do Parque Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em concreto armado`,
     Descricao: `Grande monolitico com o nome do parque em letras vazadas, instalada nos acessos ao parque.`,
@@ -10928,10 +10298,11 @@ export const MuraldoParqueMadureira_RuyRezende: Obra = {
 
 export const PaineldoJongoeSamba_LauraTaves: Obra = {
     ID: 920,
-    Artistas: [artistas.LauraTaves],
+    Autores: [artistas.LauraTaves],
     Titulo: `Painel do Jongo e Samba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
+    Categoria: 'Sublimidade',
     TipologiaObra: `Mosaico`,
     Material: `Peças de azulejos`,
     Descricao: `Dois painéis de azulejos decorados, com 80 metros de comprimento, com as inscrições Eu Sambo, Eu Jongo e Eu Rio. O monumento foi inaugurado no dia do aniversário de 399 anos do bairro de Madureira.`,
@@ -10943,10 +10314,11 @@ export const PaineldoJongoeSamba_LauraTaves: Obra = {
 
 export const OratorioaSaoJorgedeMadureira_Desconhecida: Obra = {
     ID: 921,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Pequena construção com a inagem do Santo Guerreiro.`,
@@ -10958,10 +10330,11 @@ export const OratorioaSaoJorgedeMadureira_Desconhecida: Obra = {
 
 export const OratorioaSaoJorgedeTuriacu_Desconhecida: Obra = {
     ID: 922,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Turiaçu`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem`,
     Descricao: `Pequeno oratorio com a imagem do santo guerreiro`,
@@ -10973,10 +10346,11 @@ export const OratorioaSaoJorgedeTuriacu_Desconhecida: Obra = {
 
 export const ChafarizdoParqueMadureira_RuyRezende: Obra = {
     ID: 923,
-    Artistas: [artistas.RuyRezende],
+    Autores: [artistas.RuyRezende],
     Titulo: `Chafariz do Parque Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Conjuntos de Chafarizes com um jorro central instalados ao longo do parque para anemizar e embelezar o espaço. Os lagos perfazem um total dede 1.650m². São 05 (cinco) fontes, fornecidas pela Empresa Rain Bird com jato d´água previsto para a altura de 2,70m e 1,50 de altura quando em funcionamento.`,
@@ -10988,10 +10362,11 @@ export const ChafarizdoParqueMadureira_RuyRezende: Obra = {
 
 export const CascataIdoParqueMadureira_RuyRezende: Obra = {
     ID: 924,
-    Artistas: [artistas.RuyRezende],
+    Autores: [artistas.RuyRezende],
     Titulo: `Cascata I do Parque Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção com letras vazadas identificando a entrada do parque.`,
@@ -11003,10 +10378,11 @@ export const CascataIdoParqueMadureira_RuyRezende: Obra = {
 
 export const CascataIIdoParqueMadureira_RuyRezende: Obra = {
     ID: 925,
-    Artistas: [artistas.RuyRezende],
+    Autores: [artistas.RuyRezende],
     Titulo: `Cascata II do Parque Madureira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça em concreto armado`,
     Descricao: `Cascata construida com queda d'agua em escada e em jorro para utilização dos frequentadores, com lago seco.`,
@@ -11018,10 +10394,11 @@ export const CascataIIdoParqueMadureira_RuyRezende: Obra = {
 
 export const OratorioaSaoJorgedeQuintino_Desconhecida: Obra = {
     ID: 926,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Quintino`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em metal com imagem de resina`,
     Descricao: `Imagem ao Santo Guerreiro próximo a Igreja em sua homenagem no bairro.`,
@@ -11033,10 +10410,11 @@ export const OratorioaSaoJorgedeQuintino_Desconhecida: Obra = {
 
 export const MarcoàPrimeirafotonaÀmericadoSul_Daguerreotipo_JairdeSouza_AdoAzevedo: Obra = {
     ID: 927,
-    Artistas: [artistas.JairdeSouza, artistas.AdoAzevedo],
+    Autores: [artistas.JairdeSouza, artistas.AdoAzevedo],
     Titulo: `Marco à Primeira foto na Àmerica do Sul - Daguerreotipo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em aço`,
     Descricao: `Marco em referência a primeira foto tirada na Àmerica Latina feita pelo frances Louis Comte em 17 de janeiro de 1840 utilizando a técnica fotográfica daguerreotipia, cujo nome deriva de Louis Daguerre inventor desse processo fotográfico. O monumento foi idealizado por Milton Guran e patrocinado pela empresaAlstom.
@@ -11050,10 +10428,11 @@ O daguerreotipo e método da imagem obtida numa camara escura, fixada numa folha
 
 export const MarcoAneisOlimpicos_Desconhecida: Obra = {
     ID: 928,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco  Anéis Olimpicos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em alumínio`,
     Descricao: `Doação da Grâ-Bretenha à Cidade, os arcos decoraram em 2012 a Ponmte Tyne, em Newcastle, uma das sedes das disputas de futebol.
@@ -11066,11 +10445,12 @@ Feito em alumínio pesa cerca de 4 toneladas e mede 25 metros de comprimento e 1
 
 export const JogoAmistosodeFutebolentreBrasileChina_HuangJian: Obra = {
     ID: 929,
-    Artistas: [artistas.HuangJian],
+    Autores: [artistas.HuangJian],
     Titulo: `Jogo Amistoso de Futebol entre Brasil e China`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de metal`,
     Descricao: `O monumento foi uma doação da Cidade de Pequim à Cidade do Rio de Janeiro. na comemoração do 30º aniversário do relacionamento das cidades irmãs. Retrata grandes ícones de ambos os países. Da China o Imperador Han wu, pioneiro da Rota da Seda, o primeiro registro de um jogo similar ao futebol que data do período entre os séculos 220 a.c. e 206 a.c., exatamente o da Dinastia Wu. Do outro o Rei Pelé.
 O conjunto escultórico pesa cerca de três toneladas e veio de transporte marítimo para o Brasil durante o período da Olimpiada do Rio.`,
@@ -11082,11 +10462,12 @@ O conjunto escultórico pesa cerca de três toneladas e veio de transporte marí
 
 export const EsculturaLagoa_MaritzaOrleans: Obra = {
     ID: 930,
-    Artistas: [artistas.MaritzaOrleans],
+    Autores: [artistas.MaritzaOrleans],
     Titulo: `Escultura Lagoa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço corten`,
     Descricao: `Escultura com as linhas dos morros da Cidade.`,
     Execucao: true,
@@ -11097,11 +10478,12 @@ export const EsculturaLagoa_MaritzaOrleans: Obra = {
 
 export const HonorioGurgel_ChristinaMotta: Obra = {
     ID: 931,
-    Artistas: [artistas.ChristinaMotta],
+    Autores: [artistas.ChristinaMotta],
     Titulo: `Honório Gurgel`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `A homenagem ao patrono do bairro, o décimo prefeito da cidade, foi erigido poriniciativa da Prefeitura Municipal.`,
     Execucao: true,
@@ -11112,11 +10494,12 @@ export const HonorioGurgel_ChristinaMotta: Obra = {
 
 export const CoelhoNeto_JoasPereiradosPassos: Obra = {
     ID: 932,
-    Artistas: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiradosPassos],
     Titulo: `Coelho Neto`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `É uma homenagem ao patrono do bairro.Originalmente existiu um busto de autoria de Rodolfo Pinto do Couto, tendo sido inaugurado na década de 1920, furtado nos anos de 1980 e foi substituído pelo atual em 2011.`,
     Execucao: true,
@@ -11127,10 +10510,11 @@ export const CoelhoNeto_JoasPereiradosPassos: Obra = {
 
 export const CoretodeVigarioGeral_Desconhecida: Obra = {
     ID: 933,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto de Vigário Geral`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Metal em ferro fundido e embasamento de concreto`,
     Descricao: `Esse coreto foi inaugurado inicialmente na Praça Saens Peña, em 30 de abril de 1911, pelo Prefeito Bento Ribeiro. Desmontado devido a obra do Metro, foi reinaugurado nessa praça em 20 de setembro de 1977.
@@ -11143,10 +10527,11 @@ Coreto octogonal, sobre embasamento em concreto, com leve estrutura em ferro fun
 
 export const CoretodeRicardodeAlbuquerque_CeliaLamelle: Obra = {
     ID: 934,
-    Artistas: [artistas.CeliaLamelle],
+    Autores: [artistas.CeliaLamelle],
     Titulo: `Coreto de Ricardo de Albuquerque`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em ferro pintado`,
     Descricao: `Construção em estrutura de ferro, elevando-se sobre o piso cimentado da praça.`,
@@ -11158,12 +10543,12 @@ export const CoretodeRicardodeAlbuquerque_CeliaLamelle: Obra = {
 
 export const Miscigenacao_RaphCyriloDias: Obra = {
     ID: 935,
-    Imagem: 'Miscigenacao_RaphCyriloDias.jpg',
-    Artistas: [artistas.RaphCyriloDias],
+    Autores: [artistas.RaphCyriloDias],
     Titulo: `Miscigenação`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Arvore Morta`,
     Descricao: `Escultura talhada no tronco de uma jaqueira morta, com três metros de altura, representando uma cabeça de homem,
     com traços indígenas, completada por um corpo de mulher. Na base lê-se inscrição: As cores de uma nação não são feitas das
@@ -11180,11 +10565,12 @@ export const Miscigenacao_RaphCyriloDias: Obra = {
 
 export const DomHelderCamara_OttoDumovich: Obra = {
     ID: 936,
-    Artistas: [artistas.OttoDumovich],
+    Autores: [artistas.OttoDumovich],
     Titulo: `Dom Hélder Câmara`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de mármore`,
     Descricao: `A estátua foi uma iniciativa do pároco da Igreja São Benedito, em comemoração aos 100 anos do nascimento do Arcebispo Emérito, patrocinada pela Prefeitura da Cidade.`,
     Execucao: true,
@@ -11195,10 +10581,11 @@ export const DomHelderCamara_OttoDumovich: Obra = {
 
 export const OratorioaSaoJorgedePilares_Desconhecida: Obra = {
     ID: 937,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Pilares`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em resina`,
     Descricao: `Construção em metal sobre uma coluna de concreto com a imagem em resina.`,
@@ -11210,8 +10597,9 @@ export const OratorioaSaoJorgedePilares_Desconhecida: Obra = {
 
 export const AlmiranteeViscondedeInhauma_Desconhecida: Obra = {
     ID: 938,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Almirante e Visconde de Inhaúma`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -11225,12 +10613,12 @@ export const AlmiranteeViscondedeInhauma_Desconhecida: Obra = {
 
 export const NossaSenhoradaApresentacao_Desconhecida: Obra = {
     ID: 940,
-    Imagem: 'NossaSenhoradaApresentacao_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Nossa Senhora da Apresentação`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'representaçao religiosa',
-    TipologiaObra: `Escultura`,
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `A imagem inicialmente foi instalada no Largo da Estrada da Água Grande e transferida com o projeto Rio Cidade
     Irajá. Trata-se de uma homenagem dos moradores do bairro a padroeira do bairro por ocasião do jubileu de prata do Padre
@@ -11247,10 +10635,11 @@ export const NossaSenhoradaApresentacao_Desconhecida: Obra = {
 
 export const OratoriodeNossaSenhoraAparecidadeIraja_Desconhecida: Obra = {
     ID: 941,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora Aparecida de Irajá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em resina`,
     Descricao: `Trata-se de um pequeno oratório em metal e vidro, oferecido pelos moradores do bairro.`,
@@ -11262,11 +10651,12 @@ export const OratoriodeNossaSenhoraAparecidadeIraja_Desconhecida: Obra = {
 
 export const BicadaMulatadaPavuna_Desconhecida: Obra = {
     ID: 942,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica da Mulata da Pavuna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Réplica de uma escultura francesa, importante na história da formação do bairro. Foi instalada em bronze no bairro devido a disputa que existia entre o bairro e o Município de Belford Roxo. A peça original em ferro fundido esta no Município vizinho desde a cessão de uso concedida pelo Prefeito Cesar Maia.`,
     Execucao: true,
@@ -11277,11 +10667,12 @@ export const BicadaMulatadaPavuna_Desconhecida: Obra = {
 
 export const LiberdadeEstatuadaLiberdade_FredericAugustoBartholdi: Obra = {
     ID: 943,
-    Artistas: [artistas.FredericAugustoBartholdi],
+    Autores: [artistas.FredericAugustoBartholdi],
     Titulo: `Liberdade, Estátua da Liberdade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em zinco`,
     Descricao: `A escultura é um protótipo da famosa estátua americana. Com a análise do material da escultura foi constatada que a peça tem 99% de zinco na confecção.`,
     Execucao: true,
@@ -11292,10 +10683,11 @@ export const LiberdadeEstatuadaLiberdade_FredericAugustoBartholdi: Obra = {
 
 export const PainelaosExpedicionariosdeBangu_Desconhecida: Obra = {
     ID: 944,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Painel aos Expedicionários de Bangú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `Painel de azulejos com o mapa da ofensiva brasileira na Itália e o símbolo da FEB. Erguido por iniciativa do povo, do comércio e da indústria da região de Bangu.`,
@@ -11307,13 +10699,14 @@ export const PainelaosExpedicionariosdeBangu_Desconhecida: Obra = {
 
 export const MarcoaCopernico_Archi5ArquitetosAssociados: Obra = {
     ID: 945,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco à Copérnico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
-    Descricao: `Archi 5 Arquitetos Associados Ltda - Colunas de concreto espaçadas, que em função do sol e  sombra  permite observar o deslocamento do sol através da sombra exposta.`,
+    Descricao: `Archi 5 Arquitetos Associados Ltda - Colunas de concreto espaçadas, que em função do sol e sombra permite observar o deslocamento do sol através da sombra exposta.`,
     Execucao: true,
     DataInauguracao: `09/1996`,
     Latitude: `-22.8061779`,
@@ -11322,10 +10715,11 @@ export const MarcoaCopernico_Archi5ArquitetosAssociados: Obra = {
 
 export const Marco6daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 947,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco 6 da Fazenda Imperial  de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Marco que limitava a Estrada Real de Santa Cruz, antigo Caminho dos Jesuítas, no percurso de onze léguas entre o Morro do Castelo e o Palácio Imperial de Santa Cruz, antiga Fazenda dos Jesuítas, hoje sede do Batalhão Villagran Cabrita.`,
@@ -11337,10 +10731,11 @@ export const Marco6daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const MarcodoIVCentenario_Desconhecida: Obra = {
     ID: 948,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do IV Centenário`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
     Descricao: `Marco identificando o ano e a festividade de sua construção. É uma homenagem da Associação de Amigos do Barata, da Adminstração Regional e dos Alunos do IPG. A praça IC Centenario é uma área doada pelo governo federal para a Guanabara.`,
@@ -11352,10 +10747,11 @@ export const MarcodoIVCentenario_Desconhecida: Obra = {
 
 export const MarcoVilaTerraBrasil_Desconhecida: Obra = {
     ID: 949,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Vila Terra Brasil`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Marco da construção de casas populares no bairro conhecido comoVila Terra Brasil.`,
@@ -11367,11 +10763,12 @@ export const MarcoVilaTerraBrasil_Desconhecida: Obra = {
 
 export const SerafimMoreira_MiguelPastor: Obra = {
     ID: 950,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Serafim Moreira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `É uma homenagem ao benfeitor do bairro Cosmos. A Igreja de Santa Sofia foi construída com o patrocínio do Comendador, como pagamento de uma promessa.`,
     Execucao: true,
@@ -11382,11 +10779,12 @@ export const SerafimMoreira_MiguelPastor: Obra = {
 
 export const PadreMiguel_PauloMazzucchelli: Obra = {
     ID: 951,
-    Artistas: [artistas.PauloMazzucchelli],
+    Autores: [artistas.PauloMazzucchelli],
     Titulo: `Padre Miguel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Homenagem ao Monsenhor Miguel de Santa Maria Mochon, 1º Vigário de Realengo, por pleito de seus paroquianos.`,
     Execucao: true,
@@ -11397,9 +10795,9 @@ export const PadreMiguel_PauloMazzucchelli: Obra = {
 
 export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
     ID: 952,
-    Imagem: 'CarlosAlbertodaCruzWenceslau_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Carlos Alberto da Cruz Wenceslau`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -11417,9 +10815,9 @@ export const CarlosAlbertodaCruzWenceslau_Desconhecida: Obra = {
 
 export const DomingosdaGuia_ClecioRegis: Obra = {
     ID: 953,
-    Imagem: 'DomingosdaGuia_ClecioRegis.jpg',
-    Artistas: [artistas.ClecioRegis],
+    Autores: [artistas.ClecioRegis],
     Titulo: `Domingos da Guia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -11442,11 +10840,12 @@ Na placa original rende homenagem "Ao Divino Mestre, a Prefeitura e aos moraoore
 
 export const GuilhermedaSilveira_LeonardoLima: Obra = {
     ID: 954,
-    Artistas: [artistas.LeonardoLima],
+    Autores: [artistas.LeonardoLima],
     Titulo: `Guilherme da Silveira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `A homenagem foi uma iniciativa dos amigos e dos operários da Companhia Progresso Industrial o Brasil. Na inauguração falou em nome dos operários Sr. Guilherma da Silveira Filho eo Sr. Miguel Pedro em nome da população de Bangu e Sr. Borges Ramos falou sobre sua personalidade.`,
     Execucao: true,
@@ -11457,11 +10856,12 @@ export const GuilhermedaSilveira_LeonardoLima: Obra = {
 
 export const AsDozeCriancasdeRealengo_ChristinaMotta: Obra = {
     ID: 955,
-    Artistas: [artistas.ChristinaMotta],
+    Autores: [artistas.ChristinaMotta],
     Titulo: `Às Doze Crianças de Realengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A homenagem aos 12 adolescente vitimas (Ana Carolina Pacheco da Silva, Bianca Rocha Tavares, Gesssica Guedes Pereira, Igor Moraes da Silva, Karine Lorraine Chagas de Oliveira, Larissa dos Santos Atanazio, Laryssa Silva Martins, Luiza Paula da Silveira Machado, Mariana Rocha da Souza, Milena dos Santos Nascimento, Rafael Pereira da Silva, Samira Pires Ribeiro) dachacina ocorrida em 7 de abril de 2011, por volta das 8h30min da manhã , na Escola Municipal Tarso da Silveira, O jovemWellington Menezes de Oliveira, de 23 anos, invadiu a escola armado com dois revolverese começou a disparar contra os alunos presentes. Quando foi interceptado por policiais, cometeu suicídio.A motivação do crime até hoje é incerta,`,
     Execucao: true,
@@ -11472,10 +10872,11 @@ export const AsDozeCriancasdeRealengo_ChristinaMotta: Obra = {
 
 export const ChafarizdoCalcadaodeBangu_PauloCase: Obra = {
     ID: 956,
-    Artistas: [artistas.PauloCase],
+    Autores: [artistas.PauloCase],
     Titulo: `Chafariz do Calçadão de Bangú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Conjunto de nove Chafarizes com um jorro de água central, instalados ao longo do calçadão, com o objetivo de amenizar a temperatura naquele centro comercial.
@@ -11489,10 +10890,11 @@ Desativado desde o ano de 2004.`,
 
 export const ChafarizdaIgrejaSantaCecilia_reconstrucao__LuizVerdugo: Obra = {
     ID: 957,
-    Artistas: [artistas.LuizVerdugo],
+    Autores: [artistas.LuizVerdugo],
     Titulo: `Chafariz da Igreja Santa Cecilia ( reconstrução)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto armado com um apoio central que sustenta duas bacias circulares, também em concreto, por onde escorre a água formando uma cascata. Inaugurado em 1965, projetado por Francisco Bolonha , foi demolido em 2002 e reconstruído em novembro de 2014, baseado em imagens fotográficas pelo arquiteto Luiz Verdugo.
@@ -11505,10 +10907,11 @@ Esta desativado desde maio de 2017.`,
 
 export const BicadePedradeBangu_Desconhecida: Obra = {
     ID: 958,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica de Pedra de Bangú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Fonte de cantaria em formato quadrada com cerca de dois (2) metros de altura, que atendia ao abastecimento da população.
@@ -11521,10 +10924,11 @@ Desativado em data desconhecida`,
 
 export const OratorioaEscravaAnastaciaeNossaSenhoraAparecida_PedroAugusto_FernandodaSilvaAbreu: Obra = {
     ID: 959,
-    Artistas: [artistas.PedroAugusto, artistas.FernandodaSilvaAbreu],
+    Autores: [artistas.PedroAugusto, artistas.FernandodaSilvaAbreu],
     Titulo: `Oratório a Escrava Anastácia e Nossa Senhora Aparecida ...`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Madeira com telhas de barro`,
     Descricao: `Oratório em homenagem à Padroeira do Brasil e a Escrava popular. A construção e o monumento foi solicitado pela Administradora Regional Marly Chaves de Souza da XII RA, Inhauma, apos abaixo assinado dos moradores que custearam e doaram a obra para a cidade. O abaixo assinado foi encabeçado pelo Padre Edson Shigrico Shiromiziu e moradores das Ruas Alcides de Oliveira e Detetive Lecok. A construção teve apoio do Srs Joaquim, Tuninho e família , diretores da JOAG Material de Construção Ltda.`,
@@ -11536,10 +10940,11 @@ export const OratorioaEscravaAnastaciaeNossaSenhoraAparecida_PedroAugusto_Fernan
 
 export const GradildaUniversidadeFederaldoRiodeJaneiro_Desconhecida: Obra = {
     ID: 960,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil da Universidade Federal do Rio de Janeiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `Parte do gradil originario do Campo de Santana. Veio para o Brasil de navio em abril de 1876. Foi inaugurado em 1880 e transferido em data desconhecida para esse local.O gradil do Campo de Santana foi instalado em tres locais, o Parque Recanto do Trovador, no Açude Solidão e neste local na Av. Vescelau Braz.
@@ -11552,11 +10957,12 @@ Foi adquirida pelo governo imperial na Companhia Barborat de Hauts Fanaux de Val
 
 export const ManuelCaldeiradeAlvarenga_MaxGrossman: Obra = {
     ID: 961,
-    Artistas: [artistas.MaxGrossman],
+    Autores: [artistas.MaxGrossman],
     Titulo: `Manuel Caldeira de  Alvarenga`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça e alegorias em bronze e pedestal de granito`,
     Descricao: `Monumento com estátua em tamanho natural, tendo no lado esquerdo, uma figura feminina com duas crianças no colo, simbolizando a família e outra simbolizando a justiça. Foi inaugurado com a presença do Presidente Juscelino Kubschek e do governador Negrão de Lima.`,
     Execucao: true,
@@ -11567,11 +10973,12 @@ export const ManuelCaldeiradeAlvarenga_MaxGrossman: Obra = {
 
 export const TelmoGoncalvesMaia_RuffoFanucchi: Obra = {
     ID: 962,
-    Artistas: [artistas.RuffoFanucchi],
+    Autores: [artistas.RuffoFanucchi],
     Titulo: `Telmo Gonçalves Maia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `A homenagem foi uma iniciativa de amigos e admiradores e inaugurado pelo prefeito Negrão de Lima`,
     Execucao: true,
@@ -11582,11 +10989,12 @@ export const TelmoGoncalvesMaia_RuffoFanucchi: Obra = {
 
 export const FilomenaDelCima_MiguelPastor: Obra = {
     ID: 963,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Filomena Del Cima`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto revestido de pastilha`,
     Descricao: `A homenagem partiu de seus familiares, cinco anos após a sua morte e doada à Cidade. A efígie desapareceu nos anos de 1990, permanecendo a construção no seu local original.`,
     Execucao: true,
@@ -11597,10 +11005,11 @@ export const FilomenaDelCima_MiguelPastor: Obra = {
 
 export const AAlimPedro_MiguelPastor: Obra = {
     ID: 964,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `À Alim Pedro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Obelisco`,
     Material: `Peça em concreto revestida de pedra São Tomé`,
     Descricao: `Alim foi um ilustre morador do bairro, que recebeu a homenagem em um obelisco com sua efÍgie. Foi idealizada pela Engenheira Elza Osnorne, para ser um marco dos festejos dos 25 anos da formatura da turma da qual saíram inúmeros engenheiros da prefeitura, inclusive o ex prefeito. Apesar de ser homenagem em vida, os motivos que deram origem as homenagens, a engenheira Elza Osborne, procurou honrar no 14 DOE, da Secretaria de Obras. O viaduto  recebeu o nome do homenageado em 14 de novembro de 1958 e não teve uma inauguração solene. 
@@ -11613,11 +11022,12 @@ A efigie do homenageado em bronze foi furtada em outubro de 2017.`,
 
 export const ManoelBranco_MiguelPastor: Obra = {
     ID: 965,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Manoel Branco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e concreto`,
     Descricao: `O monumento foi inaugurado nos anos de 1950 e reinaugurado em 27 de março de 2014.O morador e comerciante do bairro e amigo do artista plástico.`,
     Execucao: true,
@@ -11628,11 +11038,12 @@ export const ManoelBranco_MiguelPastor: Obra = {
 
 export const ArthurAzevedo_MiguelPastor: Obra = {
     ID: 966,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Arthur Azevedo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `O monumento está situada em frente ao teatro em sua homenagem. Foi inaugurado junto com a praça das camélias, na presença do prefeito negrão de Lima, pelo Deputado Jose Talarico.`,
     Execucao: true,
@@ -11643,10 +11054,11 @@ export const ArthurAzevedo_MiguelPastor: Obra = {
 
 export const AAugustodeVasconcelos_MiguelPastor: Obra = {
     ID: 967,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `À Augusto de Vasconcelos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Obelisco`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Na homenagem ao senador originalmente existia a sua efigie numa placa em bronze fixada no pedestal que tem
@@ -11660,10 +11072,11 @@ export const AAugustodeVasconcelos_MiguelPastor: Obra = {
 
 export const FranciscoFreireAlemao_MiguelPastor: Obra = {
     ID: 968,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Francisco Freire Alemão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em bronze com monolito revestida de pedra são tomé`,
     Descricao: `Foi inaugurado em 1967, foi deslocado do local original para a abertura de uma rua, dividindo a praça. Devido a um acidente automobilisco foi transferido o depósito em 2013 e reinstalado em 2015.
@@ -11677,11 +11090,12 @@ Em outubro de 2017 a placa em bronze com a efigie de Freire Alemão foi furtada.
 
 export const AtenadeCampoGrande_Desconhecida: Obra = {
     ID: 969,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Atena de Campo Grande`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Escultura em mármore de Carrara representando de uma deusa grega.Até o inicio da década de 1930, parte da Estrada do Rio Jequiá que atualmente é ocupada pelo Batalhão da Polícia Militar era uma região de manguezal.
     Em 1939 , após parte daquela área ser aterrada, o Prefeito Henrique Dodsworth inaugurou o Posto Florestal e Viveiro de plantas.
@@ -11696,30 +11110,9 @@ export const AtenadeCampoGrande_Desconhecida: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const Laranja_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 970,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Laranja`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Chapa de aço sobre base de concreto`,
-    Descricao: `Trata-se de uma escultura em aço pintado na cor laranja vazada criando uma forma de uma laranja. A obra custou 4 vezes o valor da escultura Prometeu, de Bruno Giorgi, avaliada em R$ 8mil`,
-    ValorObra: 'R$ 36050,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'Av. Cesário de Melo',
-    Latitude: `-22.9067898`,
-    Longitude: `-43.5609534`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const Mae_RuiLeal: Obra = {
     ID: 204,
-    Artistas: [artistas.RuiLeal],
+    Autores: [artistas.RuiLeal],
     Titulo: `Mãe`,
     Material: 'ganito',
     DataInauguracao: `05/1966`,
@@ -11735,7 +11128,7 @@ export const Mae_RuiLeal: Obra = {
     Descricao: `Homenagem doada à Cidade pela Associação Comercial de Madureira que custeou a obra. O monumento é uma homenagem a D. Joana Teresa Vieira de Lima, benemerita que dedicou sua vida à proteção da mãe na região.`,
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'escultura',
@@ -11744,11 +11137,12 @@ export const Mae_RuiLeal: Obra = {
 
 export const PaizinhoQuincas_MiguelPastor: Obra = {
     ID: 972,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Paizinho Quincas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto revestido de pastilha`,
     Descricao: `O Monumento é composto de um obelisco principal de 8 metros de altura, revestido de pastilhas cerâmica amarela. A escultura em bronze em tamanho natural representa o Sr. Quincas morador da localidade na época da construção do monumento.
 Foi inaugurado pelo Prefeito Negrão de Lima. Curiosamente, no momento da inauguração chuvas torrenciais deixou o ceu escuro e não foi possivel aos presentes admirar o monumento, por tambem ocorreu um defeito na instalação elétrica ( Jornal O Globo, dia 14/05/1958 pagina 10).`,
@@ -11760,10 +11154,11 @@ Foi inaugurado pelo Prefeito Negrão de Lima. Curiosamente, no momento da inaugu
 
 export const MarcoaAbolicao_VentreLivreI_MiguelPastor: Obra = {
     ID: 973,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Marco a Abolicão - Ventre Livre I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em concreto com imagem em argamassa`,
     Descricao: `O Monumento é composto por uma coluna revestida em placas de mármore preta com uma figura masculina com os braços erguidos soltando de uma corrente.`,
@@ -11775,10 +11170,11 @@ export const MarcoaAbolicao_VentreLivreI_MiguelPastor: Obra = {
 
 export const PainelaosAbolicionistas_MiguelPastor: Obra = {
     ID: 975,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Painel aos Abolicionistas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto com imagem em argamassa`,
     Descricao: `Painel com as efígies dos abolicistas em baixo relevo em argamassa.`,
@@ -11790,11 +11186,12 @@ export const PainelaosAbolicionistas_MiguelPastor: Obra = {
 
 export const SantaSofia_MiguelPastor: Obra = {
     ID: 976,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Santa Sofia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em concreto com imagem em argamassa`,
     Descricao: `Escultura em argamassa da imagem da Santa em frente à igreja em sua homenagem.`,
     Execucao: true,
@@ -11805,10 +11202,11 @@ export const SantaSofia_MiguelPastor: Obra = {
 
 export const Marco11daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 977,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco 11 da Fazenda Imperial de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Marco que limitava a Estrada Real de Santa Cruz, antigo Caminho dos Jesuítas, no percurso de onze léguas entre o Morro do Castelo e o Palácio Imperial de Santa Cruz, antiga Fazenda dos Jesuítas, hoje sede do Batalhão Villagran Cabrita.`,
@@ -11820,10 +11218,11 @@ export const Marco11daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const MarcodaFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 978,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Fazenda Imperial de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Este marco estava localizado na antiga Estrada Imperial de Santa Cruz (hoje Av. Cesário de Melo), em frente à entrada do Conjunto Habitacional, sendo removido em 1987 pelo IPHAN com a colaboração do Batalhão de Engenharia de Combate para exposição em praça pública.`,
@@ -11835,10 +11234,11 @@ export const MarcodaFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const CruzeirodeSantaCruz_Desconhecida: Obra = {
     ID: 979,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cruzeiro  de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cruzeiro`,
     Material: `Madeira`,
     Descricao: `Cruzeiro com cerca de 3 m de altura em madeira instalado no local original do cruzeiro erigido pelos Jesuítas
@@ -11852,10 +11252,11 @@ export const CruzeirodeSantaCruz_Desconhecida: Obra = {
 
 export const PainelaosExpedicionariosdeSantaCruz_Desconhecida: Obra = {
     ID: 980,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Painel aos Expedicionários de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `Trata-se de um monumento composto por um painel de azulejo branco com descrição de um lado da batalha da FEB e o símbolo da Força Expedicionária Brasileira, na outra face um mapa das batalhas. Foi promovido por uma iiniciativa dos expedicionários de Santa Cruz, que participaram da FEB, como objetivo de homenagear o Sr. Laudelino Vieira de Capos, morto em ação na segunda guerra. A solenidade foi realizada no 22º aniversario do embarque das tropas do segundo escalão da FEB para a Itália. A comissão integrada pelo Nucleo dos Veteranos de Santa Cruz, esteve presente e recepcionou os convidados e o ato civico.`,
@@ -11865,55 +11266,13 @@ export const PainelaosExpedicionariosdeSantaCruz_Desconhecida: Obra = {
     Longitude: `-43.6849324`,
 };
 
-export const Broca_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 981,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Broca`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em ferro pintado`,
-    Descricao: `Escultura representando uma broca como saindo do solo.`,
-    ValorObra: 'R$ 4070,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'R. Coronel Agostinho',
-    Latitude: `-22.9028566`,
-    Longitude: `-43.5590348`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const ArcoIris_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 982,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Arco Iris`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em ferro pintado`,
-    Descricao: `É uma escultura composta por colunas feitas em chapa de aço retangular unidas por peças do mesmo material
-    pintada em diversas cores para representar um arco-íris.`,
-    ValorObra: 'R$ 9.870,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'R. Coronel Agostinho',
-    Latitude: `-22.9028566`,
-    Longitude: `-43.5590348`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const RelogiodeCampoGrande_GeorgeLopes_MiltonCavalcanteMotarreyos_GeorgeGuerra: Obra = {
     ID: 983,
-    Artistas: [artistas.GeorgeLopes, artistas.MiltonCavalcanteMotarreyos, artistas.GeorgeGuerra],
+    Autores: [artistas.GeorgeLopes, artistas.MiltonCavalcanteMotarreyos, artistas.GeorgeGuerra],
     Titulo: `Relógio de Campo Grande`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em ferro pintado`,
     Descricao: `Peça utilitário em metal pintado de dourado, conhecido como Relógio do Lions.`,
@@ -11923,75 +11282,13 @@ export const RelogiodeCampoGrande_GeorgeLopes_MiltonCavalcanteMotarreyos_GeorgeG
     Longitude: `-43.5590348`,
 };
 
-export const LaranjaisI_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 984,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Laranjais I`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em argamassa armada policromada`,
-    Descricao: `Colunas de concreto com uma semiesfera na extremidade, representando os laranjais existentes na região durante o período de ocupação rural. Cada colunata custou a época foi R42.280,00.`,
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'R. Coronel Agostinho',
-    Latitude: `-22.9025031`,
-    Longitude: `-43.5600507`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', '', [], 'Rio de Janeiro')],
-};
-
-export const Piramide_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 985,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Pirâmide`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em chapa de aço sobre estrutura metálica`,
-    Descricao: `Escultura formando uma pirâmide representando o desenvolvimento da região.`,
-    ValorObra: 'R$ 17.520,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    PontoDeReferencia: 'Praça Dr. Raul Boaventura',
-    Latitude: `-22.9024629`,
-    Longitude: `-43.5596437`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 986,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Arcos das Palmeiras`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em chapa de aço`,
-    Descricao: `4 estruturas com a parte superior fixadas chapas no sentido horizontal finalizada por uma esfera pintada na cor da
-    laranja. O marco é uma referência as antigas palmeiras das fazendas que existiram na região.
-    As peças (3 arcos) desapareceram em 2017, constatado em vistoria em novembro de 2017`,
-    ValorObra: 'R$ 49500,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    Latitude: `-22.907364`,
-    Longitude: `-43.5658462`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const CoretodaPracaElzaOsborne_Desconhecida: Obra = {
     ID: 987,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça Elza Osborne`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `O coreto é uma construção quadrangular com embasamento executado em concreto, revestido em argamassa e com cobertura em telha francesa.`,
@@ -12003,10 +11300,11 @@ export const CoretodaPracaElzaOsborne_Desconhecida: Obra = {
 
 export const MarcodailuminacaodeCampoGrande_Desconhecida: Obra = {
     ID: 988,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da iluminação de Campo Grande`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `O marco é um agradecimento do povo de Campo Grande pela iluminação elétrica instalada na região.`,
@@ -12018,13 +11316,14 @@ export const MarcodailuminacaodeCampoGrande_Desconhecida: Obra = {
 
 export const CruzdaPracaDomJoaoEsberard_ElzaOsborne: Obra = {
     ID: 990,
-    Artistas: [artistas.ElzaOsborne],
+    Autores: [artistas.ElzaOsborne],
     Titulo: `Cruz da Praça Dom João Esberard`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cruzeiro`,
     Material: `Bloco de granito esculpido`,
-    Descricao: ` Peça esculpida na pedra. Foi instalada me 1958 pela 14 DOE.`,
+    Descricao: `Peça esculpida na pedra. Foi instalada me 1958 pela 14 DOE.`,
     Execucao: true,
     DataInauguracao: `01/1958`,
     Latitude: `-22.9056305`,
@@ -12033,10 +11332,11 @@ export const CruzdaPracaDomJoaoEsberard_ElzaOsborne: Obra = {
 
 export const MarcoICC_Desconhecida: Obra = {
     ID: 991,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco ICC`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto`,
     Descricao: `O Monumento se constitui em uma estrutura em concreto tendo uma base quadrangular paraidentificar o Instituto Campo Grandense de Cultura.`,
@@ -12048,10 +11348,11 @@ export const MarcoICC_Desconhecida: Obra = {
 
 export const MarcodoAbastecimentodeSantaCruz_Desconhecida: Obra = {
     ID: 992,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Abastecimento de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Marco em blocos de granito polido, tendo na face frontal uma placa em mármore representando um homem observando uma planta, para registrar as obras de saneamento executadas na Fazenda Nacional de Santa Cruz.
@@ -12064,10 +11365,11 @@ A obra de saneamento inicia em 1928 durante gestão de Washington Luis e foram c
 
 export const PontedosJesuitas_PadrePeroFernandes: Obra = {
     ID: 993,
-    Artistas: [artistas.PeroFernandes],
+    Autores: [artistas.PeroFernandes],
     Titulo: `Ponte dos Jesuítas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Pedra com argamassa`,
     Descricao: `Construção em pedra com quatro arcos chamada óculos tem cerca de 50m de extensão e 6m de largura com 5 vãos para a passagem de água onde passavam as águas do rio Guandu, que os padres por meio de comportas de madeira, controlavam, retendo-as ou liberando-as conforme o momento exigia. Em seu centro encontra-se, contornada por belas esculturas barrocas, as famosas inscrições latinas, sobrepostas pela cruz e pelas iniciais (I.H.S.) e data de sua construção.H.S. - "Jesus Salvador dos Homens" e a frase latina: Flecte genu, tanto sub nomine, flecte viator Hic etiam reflua flectitur amnis aqua. "Dobra o joelho sob tão grande nome. Aqui também se dobra o rio em água refluente". Como elemento decorativos quatro colunas de pedra de granitocom capiteisem forma de pinhas, de cada lado enfeitam a ponte.
@@ -12080,10 +11382,11 @@ Funcionando como comporta com arcos de dimensões variadas que eram deixados abe
 
 export const Marco9daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 994,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco 9 da Fazenda Imperial de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Marco que limitava a Estrada Real de Santa Cruz, antigo Caminho dos Jesuítas, no percurso de onze léguas entre o Morro do Castelo e o Palácio Imperial de Santa Cruz, antiga Fazenda dos Jesuítas, hoje sede do Batalhão Villagran Cabrita.`,
@@ -12095,10 +11398,11 @@ export const Marco9daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const Marco10daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 995,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco 10 da Fazenda Imperial de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Marco que limitava a Estrada Real de Santa Cruz, antigo Caminho dos Jesuítas, no percurso de onze léguas entre o Morro do Castelo e o Palácio Imperial de Santa Cruz, antiga Fazenda dos Jesuítas, hoje sede do Batalhão Villagran Cabrita.`,
@@ -12110,10 +11414,11 @@ export const Marco10daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const BicadeCantariadeSantaCruz_Desconhecida: Obra = {
     ID: 996,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica de Cantaria de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Bloco de granito`,
     Descricao: `Bica em cantaria tendo a frente um bloco de cantaria circular de altura apoiada em outra quadrangular de tijolo, de onde saia a água para abastecimento da população.
@@ -12126,10 +11431,11 @@ Desativado em data desconhecida.`,
 
 export const MarcoComemorativodeSantaCruz_Desconhecida: Obra = {
     ID: 997,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Comemorativo de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Monumento comemorativo do I Centenário da anexação de Santa Cruz ao Distrito Federal ( 1833  1933)`,
@@ -12141,10 +11447,11 @@ export const MarcoComemorativodeSantaCruz_Desconhecida: Obra = {
 
 export const MarcodosJesuitas_Desconhecida: Obra = {
     ID: 998,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco dos Jesuítas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Coluna circular em cantaria apoiada sobre um bloco em formato de cruz. Ao longo dos anos se tornou um veleiro, o que vem deteriorando a pedra.
@@ -12157,8 +11464,9 @@ Alguns moradores citam que esse é o marco da presença dos jesuitas na região.
 
 export const JoseAntonioCiraudo_Desconhecida: Obra = {
     ID: 999,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `José Antônio Ciraudo`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12175,11 +11483,12 @@ export const JoseAntonioCiraudo_Desconhecida: Obra = {
 
 export const CesariodeMelo_CLinel: Obra = {
     ID: 1000,
-    Artistas: [artistas.CLinel],
+    Autores: [artistas.CLinel],
     Titulo: `Cesário de Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `O monumento é uma homenagem do povo de Santa Cruz e de seus amigos.
 A criança frontal que compõe o monumento está no depósito da Prefeitura. A peça foi danificada em 2002 aguardando a restauração. `,
@@ -12191,11 +11500,12 @@ A criança frontal que compõe o monumento está no depósito da Prefeitura. A p
 
 export const SenadorCamara_BernavenutoBerna: Obra = {
     ID: 1001,
-    Artistas: [artistas.BernavenutoBerna],
+    Autores: [artistas.BernavenutoBerna],
     Titulo: `Senador Câmara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Homenagem de seus amigos, admiradores e amigos. O monumento tem o pedestal de granito carioca e oferecido pelo construtor de Campo Grande, Sr. José Pereira seguindo o desenho do escultor. `,
     Execucao: true,
@@ -12206,9 +11516,9 @@ export const SenadorCamara_BernavenutoBerna: Obra = {
 
 export const MarechalDuquedeCaxias_Desconhecida: Obra = {
     ID: 1002,
-    Imagem: 'MarechalDuquedeCaxias_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marechal Duque de Caxias`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12226,8 +11536,9 @@ export const MarechalDuquedeCaxias_Desconhecida: Obra = {
 
 export const CoronelVillagranCabrita_Desconhecida: Obra = {
     ID: 1003,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coronel Villagran Cabrita`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12246,33 +11557,14 @@ export const CoronelVillagranCabrita_Desconhecida: Obra = {
     ],
 };
 
-export const PadreGuilhermeDecaminada_Desconhecida: Obra = {
-    ID: 1004,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Padre Guilherme Decaminada`,
+export const CoronelHonoriodosSantosPimentel_Desconhecida: Obra = {
+    ID: 1005,
+    Autores: [artistas.Desconhecida],
+    Titulo: `Coronel Honório dos Santos Pimentel`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `A homenagem ao padre missionário foi erguido por gratidão ao seu trabalho incansavelmente na região.`,
-    Execucao: true,
-    DataInauguracao: `12/1997`,
-    Zona: 'Oeste',
-    Bairro: 'Santa Cruz',
-    PontoDeReferencia: 'Praça Dom Romualdo',
-    Latitude: `-22.9196488`,
-    Longitude: `-43.683583`,
-    Lugar: 'Praça',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const CoronelHonoriodosSantosPimentel_Desconhecida: Obra = {
-    ID: 1005,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Coronel Honório dos Santos Pimentel`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `busto`,
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `O busto em bronze ao coronel é uma homenagem de Santa Cruz no ano de IV Centenário de sua fundação.`,
     Execucao: true,
@@ -12283,10 +11575,11 @@ export const CoronelHonoriodosSantosPimentel_Desconhecida: Obra = {
 
 export const LagodaPracaTelmoGoncalvesMaia_Desconhecida: Obra = {
     ID: 1006,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lago da Praça Telmo Gonçalves Maia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `A praça é composta por dois lagos artificiais instalados em duas extremidades da praça. Esse lago foi o primeiro a ser construido na zona oeste e o unico existente até hoje. Foi inaugurado pelo prefeito Negrão de Liama, junto com a herma de Telmo Gonçalves Maia.`,
@@ -12298,10 +11591,11 @@ export const LagodaPracaTelmoGoncalvesMaia_Desconhecida: Obra = {
 
 export const BicadeCantariadeCampoGrande_Desconhecida: Obra = {
     ID: 1008,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica de Cantaria de Campo Grande`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bica em cantaria tendo a frente um bloco de cantaria circular. A peça era apoiada em outra quadrangular de tijolo de onde saia a água para abastecimento da população. Foi danificada em 2012 ficando sòmente no local o bloco de cantaria.
@@ -12314,10 +11608,11 @@ Desativado em data desconhecida.`,
 
 export const FontedoVasodaPracaEnzoOsborne_Desconhecida: Obra = {
     ID: 1009,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Vaso da Praça Enzo Osborne`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido e pedestal de concreto`,
     Descricao: `Composta por uma coluna quadrangular onde está fixada uma peça de ferro fundido com um vaso, também em metal, por onde escorre a água para o abastecimento.`,
@@ -12329,10 +11624,11 @@ export const FontedoVasodaPracaEnzoOsborne_Desconhecida: Obra = {
 
 export const FonteCiboriumdaPracaFranciscoBarbosa_Desconhecida: Obra = {
     ID: 1010,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte Ciborium da Praça Francisco Barbosa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `É um bebedouro de inspiração religiosa faz alusão ao Ciborium, um paramento batismal. Foi adquirida em 1906 para adornar a Praça XV de Novembro, contudo ainda não se dispõe de informações se essa fonte veio da praça XV ou se a que foi instalada no Campo de São Cristovão.
@@ -12345,10 +11641,11 @@ Desativado em data desconhecida.`,
 
 export const ChafarizCanhao_GeorgeLopes_MiltonCavalcanteMotarreyos_GeorgeGuerra: Obra = {
     ID: 1011,
-    Artistas: [artistas.GeorgeLopes, artistas.MiltonCavalcanteMotarreyos, artistas.GeorgeGuerra],
+    Autores: [artistas.GeorgeLopes, artistas.MiltonCavalcanteMotarreyos, artistas.GeorgeGuerra],
     Titulo: `Chafariz Canhão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro pintado`,
     Descricao: `Escultura em aço pintado na cor laranja vazada, sugerindo uma laranja descascada. De numa das extremidades um canhão de jorra a água, para um copo se encontra na outra extremidade. O Chafariz e escultura custou a época cerca de R$ 36.000,00.
@@ -12361,11 +11658,12 @@ O Chafariz esta desativado desde maio de 2017.`,
 
 export const MarechalHermes_DaviLeal: Obra = {
     ID: 1012,
-    Artistas: [artistas.DaviLeal],
+    Autores: [artistas.DaviLeal],
     Titulo: `Marechal Hermes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Homenagem erguida atraves da oferta do filho primogenio do Marechal, o Sr. Mario Hermes. Na inauguração estiveram diversaas autoridades e o discurso inaugural foi do General Gois Monteiro.`,
     Execucao: true,
@@ -12376,11 +11674,12 @@ export const MarechalHermes_DaviLeal: Obra = {
 
 export const BrigadeiroAntôniodeSampaio_VictorBrecheret: Obra = {
     ID: 1013,
-    Artistas: [artistas.VictorBrecheret],
+    Autores: [artistas.VictorBrecheret],
     Titulo: `Brigadeiro Antônio de Sampaio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Homenagem oferecida pelo Regimento Sampaio e pelo Liceu de Artes de São Paulo.`,
     Execucao: true,
@@ -12391,8 +11690,9 @@ export const BrigadeiroAntôniodeSampaio_VictorBrecheret: Obra = {
 
 export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     ID: 1014,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `General João Severiano da Fonseca`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12414,8 +11714,9 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
 
 export const MarechalRondonVilaMilitar_NewtonSa: Obra = {
     ID: 1015,
-    Artistas: [artistas.NewtonSa],
+    Autores: [artistas.NewtonSa],
     Titulo: `Marechal Rondon Vila Militar`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12433,11 +11734,12 @@ export const MarechalRondonVilaMilitar_NewtonSa: Obra = {
 
 export const GeneralOsoriodaVilaMilitar_Desconhecida: Obra = {
     ID: 1016,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `General Osório da Vila Militar`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `A homenagem ao Patrono da Cavalaria Brasileira, esta situadaem frente ao Batalhão da Vila Militar.`,
     Execucao: true,
@@ -12448,10 +11750,11 @@ export const GeneralOsoriodaVilaMilitar_Desconhecida: Obra = {
 
 export const CoretodaPracaMarechalHermes_Desconhecida: Obra = {
     ID: 1017,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça Marechal Hermes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção com embasamento de tijolos e guarda-corpo de argamassa armada, com cobertura em madeira e chapas de alumínio.`,
@@ -12463,10 +11766,11 @@ export const CoretodaPracaMarechalHermes_Desconhecida: Obra = {
 
 export const MarcodaIluminacaodaVilaMilitar_Desconhecida: Obra = {
     ID: 1018,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Iluminação da Vila Militar`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `Monólito piramidal, executado para a fixação das placas informativas sobre as obras da praça.`,
@@ -12478,13 +11782,14 @@ export const MarcodaIluminacaodaVilaMilitar_Desconhecida: Obra = {
 
 export const CoretodoCampodeMarte_JASiqueiraFilho: Obra = {
     ID: 1019,
-    Artistas: [artistas.JASiqueiraFilho],
+    Autores: [artistas.JASiqueiraFilho],
     Titulo: `Coreto do Campo de Marte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Tijolo com argamassa`,
-    Descricao: `Inaugurado nos anos de 1950.  Construção com embasamento de tijolos e guarda-corpo de argamassa armada, com apoio central único em metal para a dupla cobertura em chapas metálicas.`,
+    Descricao: `Inaugurado nos anos de 1950. Construção com embasamento de tijolos e guarda-corpo de argamassa armada, com apoio central único em metal para a dupla cobertura em chapas metálicas.`,
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8762359`,
@@ -12493,10 +11798,11 @@ export const CoretodoCampodeMarte_JASiqueiraFilho: Obra = {
 
 export const MarcodaConstrucaodaVilaMilitar_Desconhecida: Obra = {
     ID: 1020,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Construção da Vila Militar`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em granito`,
     Descricao: `Monumento em pedra comemorativo do centenário de criação da 1ª Divisão de Exército e da construção da Vila Militar, assim como ao Tenente-Coronel Magalhães Bastos, da Comissão Construtora.`,
@@ -12508,10 +11814,11 @@ export const MarcodaConstrucaodaVilaMilitar_Desconhecida: Obra = {
 
 export const MarcodoSimbolodoExercito_Desconhecida: Obra = {
     ID: 1022,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Símbolo do Exército`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Blocos de granito com peça em bronze`,
     Descricao: `Marco em pedra, com o símbolo do Exército Brasileiro, em frente ao Batalhão Escola de Comunicações do Exército.`,
@@ -12523,9 +11830,9 @@ export const MarcodoSimbolodoExercito_Desconhecida: Obra = {
 
 export const ZumbidosPalmares_ClecioRegis: Obra = {
     ID: 1023,
-    Imagem: 'ZumbidosPalmares_ClecioRegis.jpg',
-    Artistas: [artistas.ClecioRegis],
+    Autores: [artistas.ClecioRegis],
     Titulo: `Zumbi dos Palmares`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -12547,10 +11854,11 @@ export const ZumbidosPalmares_ClecioRegis: Obra = {
 
 export const CoretodeSepetiba_Desconhecida: Obra = {
     ID: 1024,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em ferro fundido e pedestal de concreto`,
     Descricao: `Coreto octogonal , construído pela Companhia de Carris Urbanos, através de um contrato firmado com a Prefeitura em 21 de junho 1903 na Praça XV de Novembro, Centro . Em 1949, em comemoração à chegada da luz elétrica em Sepetiba, foi reconstruído e reinaugurado no local em que se encontra. A leve e graciosa estrutura de metal na parte superior foi mantida íntegra, o guarda corpo foi recomposto em 1992 e o embasamento de concreto construído em 1949.`,
@@ -12562,11 +11870,12 @@ export const CoretodeSepetiba_Desconhecida: Obra = {
 
 export const IemanjadeSepetiba_Desconhecida: Obra = {
     ID: 1025,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Iemanjá de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Escultura representando a popular orixá, inaugurada em 1976 foi substituída pela atual no início da década de 1990. `,
     Execucao: true,
@@ -12577,10 +11886,11 @@ export const IemanjadeSepetiba_Desconhecida: Obra = {
 
 export const OratorioaSaoJorgedeSepetiba_Desconhecida: Obra = {
     ID: 1026,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório á São Jorge de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção de concreto, protegendo a imagem de São Jorge, tendo no alto uma faixa em metal com a inscrição Cavaleiro de Deus.`,
@@ -12592,10 +11902,11 @@ export const OratorioaSaoJorgedeSepetiba_Desconhecida: Obra = {
 
 export const MarcodoabastecimentodeSepetiba_Desconhecida: Obra = {
     ID: 1027,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do abastecimento de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `Construção com uma placa com direzes da inauguração. Havia originariamente uma bica para oi abastecimento de água, dos moradores da região.`,
@@ -12607,10 +11918,11 @@ export const MarcodoabastecimentodeSepetiba_Desconhecida: Obra = {
 
 export const MarcodaFazendaImperialdeBarradeGuaratiba_Desconhecida: Obra = {
     ID: 1028,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Fazenda Imperial de Barra de Guaratiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Ao longo da Estrada Real de Santa Cruz (antigo Caminho dos Jesuítas) foram colocados, marcos de pedra, esse marco provavelmente é do limite da fazenda na proximidade da Praia da Brisa.
@@ -12623,10 +11935,11 @@ Por se situar no limite do lote, o marco se encontra nos fundos do lote da RuaDa
 
 export const MarcodoPoligonodoTirodaMarambaia_Desconhecida: Obra = {
     ID: 1029,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Polígono do Tiro da Marambaia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto revestido por pastilha`,
     Descricao: `Construção com uma placa fixada, em referência ao Campo de Prova da Marambaia.`,
@@ -12638,10 +11951,11 @@ export const MarcodoPoligonodoTirodaMarambaia_Desconhecida: Obra = {
 
 export const PisodePedraPortuguesadeGrumari_Desconhecida: Obra = {
     ID: 1030,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pedra Portuguesa de Grumari`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Pedras portuguesas`,
     Descricao: `Composição em meio à plataforma do mirante, com o nome do logradouro`,
@@ -12653,10 +11967,11 @@ export const PisodePedraPortuguesadeGrumari_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaRuaBarrosdeAlarcao_Desconhecida: Obra = {
     ID: 1031,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Rua Barros de Alarcão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Os marcos foram instalados início da década de 30 (1930) para orientar as distâncias entre localidades, no momento que se iniciava o ciclo rodoviário no Brasil.
@@ -12671,10 +11986,11 @@ Esse marco marcava as distancias da antiga denominação da Estrada da Pedra`,
 
 export const OratoriodeSaoPedrodeBarradeGuaratiba_Desconhecida: Obra = {
     ID: 1032,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de São Pedro de Barra de Guaratiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Construção de concreto com um pequeno nicho com a imagem do padroeiro. <strong> `,
@@ -12686,10 +12002,11 @@ export const OratoriodeSaoPedrodeBarradeGuaratiba_Desconhecida: Obra = {
 
 export const BicadeCantariadePedradeGuaratiba_Desconhecida: Obra = {
     ID: 1033,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica de Cantaria de Pedra de Guaratiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Bloco de granito`,
     Descricao: `Bica em cantaria tendo a frente um bloco de cantaria circular , apoiada em outra quadrangular de tijolo, de onde saia a água para abastecimento da população.
@@ -12703,10 +12020,11 @@ Desativado em data desconhecida.`,
 
 export const MarcodaEscolaMilitardeRealengo_Desconhecida: Obra = {
     ID: 1035,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Escola Militar de Realengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Bloco maciço de granito, que registra o feito da Escola, em 1922.`,
@@ -12718,11 +12036,12 @@ export const MarcodaEscolaMilitardeRealengo_Desconhecida: Obra = {
 
 export const GetulioVargasdoHospitalGetulioVargas_Desconhecida: Obra = {
     ID: 1036,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Getulio Vargas do Hospital Getulio Vargas`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e mural  de granito`,
     Descricao: `O busto foi doado ao hospital apos ter sido retirado da Clinica de Madureira, na Estrada do Portela, quando demolida. De 1938, foi uma doação dos estivadores. Ficou guardado em um deposito na Estrada do Barro Vermelho durante 5 anos até ser instalado no hospital .`,
     Execucao: true,
@@ -12733,11 +12052,12 @@ export const GetulioVargasdoHospitalGetulioVargas_Desconhecida: Obra = {
 
 export const ObeliscodeRochaMiranda_ErnaniFreire: Obra = {
     ID: 1037,
-    Artistas: [artistas.ErnaniFreire],
+    Autores: [artistas.ErnaniFreire],
     Titulo: `Obelisco de Rocha Miranda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `obelisco`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Obelisco`,
     Material: `Peça em ferro pintado`,
     Descricao: `Obelisco de quinze metros de altura de ferro pintado de branco, c<om uma grande esfera no topo<. Construído para ser a referência do bairro a distância, tem na sua base piramidal,placas comemorativas das principais batalhas da FEB na II Guerra Mundial.
 Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é desconhecido.`,
@@ -12749,10 +12069,11 @@ Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é
 
 export const MarcodaVitoriadaRochaMiranda_CarlosWerneckdeCarvalho: Obra = {
     ID: 1038,
-    Artistas: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckdeCarvalho],
     Titulo: `Marco da Vitória da Rocha Miranda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `Placa em bronze com o V da Vitória.
@@ -12766,11 +12087,12 @@ Em 2018 foi pintada na cor branca a placa em bronze, para esconder a pichação,
 
 export const CeresdeRochaMiranda_Desconhecida: Obra = {
     ID: 1039,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ceres de Rocha Miranda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Escultura neolclássica representando a deusa Ceres.`,
     Execucao: true,
@@ -12785,11 +12107,12 @@ export const CeresdeRochaMiranda_Desconhecida: Obra = {
 
 export const CoronelCorreaLima_Desconhecida: Obra = {
     ID: 1040,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coronel Correia Lima`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Inaugurado em 31 de maio de 1942 na Avenida Pedro II, em São Cristovão, foi transferido para a Avenida Brasil e inaugurado em 29 de abril de 2008, quando ocomando foi transferido para as novas instalações.
 Na inauguração estiveram presentes o irmão do coronel, seus filhos e oficiais. O monumento foi erguido sob o comando o Capitao Jofre Gil da Silva.`,
@@ -12801,14 +12124,15 @@ Na inauguração estiveram presentes o irmão do coronel, seus filhos e oficiais
 
 export const AlvaroCostaMelo_Desconhecida: Obra = {
     ID: 1042,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Álvaro Costa Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
     Material: `Peça em bronze com pedestal revestido de granito`,
-    Descricao: `O busto  é uma homenagem da Força Empresarial de Bonsucesso ao empresário local. Foi uma iniciativa do
-    gerente do Unibanco Wilson Xavier que angariou fundos e instalou um busto. `,
+    Descricao: `O busto é uma homenagem da Força Empresarial de Bonsucesso ao empresário local. Foi uma iniciativa do
+    gerente do Unibanco Wilson Xavier que angariou fundos e instalou um busto.`,
     Execucao: true,
     DataInauguracao: `10/1996`,
     Zona: 'Norte',
@@ -12835,10 +12159,11 @@ export const AlvaroCostaMelo_Desconhecida: Obra = {
 
 export const AAugustoMotta_Desconhecida: Obra = {
     ID: 1043,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `À Augusto Motta`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Efígie`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `A homenagem ao professor e educador, foi doada pelo Rotary Club Leopoldinense e inaugurado na reforma da praça promovida pelo Rio-Cidade Bonsucesso.`,
@@ -12854,11 +12179,12 @@ export const AAugustoMotta_Desconhecida: Obra = {
 
 export const IsmaelRibeiro_EdgarDuvivier: Obra = {
     ID: 1044,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Ismael Ribeiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Trata-se de uma homenagem em bronze, promovida pela Prefeitura.`,
     Execucao: true,
@@ -12869,10 +12195,11 @@ export const IsmaelRibeiro_EdgarDuvivier: Obra = {
 
 export const ChafarizdaPracadasNacoes_Desconhecida: Obra = {
     ID: 1047,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da  Praça das Nações`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `
@@ -12885,32 +12212,13 @@ Esta desativado desde maio de 2017.`,
     Longitude: `-43.2550723`,
 };
 
-export const LaranjaisII_GeorgeLopes_GeorgeGuerra: Obra = {
-    ID: 1048,
-    Artistas: [artistas.GeorgeLopes, artistas.GeorgeGuerra],
-    Titulo: `Laranjais II`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em argamassa armada policromada`,
-    Descricao: `Colunas de concreto com uma semiesfera na extremidade, representando os laranjais existentes na região durante o período de ocupação rural.`,
-    ValorObra: 'R$ 42.280,00',
-    Execucao: true,
-    DataInauguracao: `07/1996`,
-    Zona: 'Oeste',
-    Bairro: 'Campo Grande',
-    Latitude: `-22.9030779`,
-    Longitude: `-43.5581526`,
-    Lugar: 'Não identificado',
-    Fatos: [new Fato('', '', 'Propriedade', '', [], 'Rio de Janeiro')],
-};
-
 export const MarcoaAbolicao_VentreLivreII_MiguelPastor: Obra = {
     ID: 1049,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Marco a Abolicão -  Ventre Livre II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Peça em concreto com imagem em argamassa`,
     Descricao: `O Monumento é composto por uma coluna revestida em placas de mármore preta com uma figura feminina com uma criança no colo, com as mãos voltadas para o alto e ventre vazado`,
@@ -12922,10 +12230,11 @@ export const MarcoaAbolicao_VentreLivreII_MiguelPastor: Obra = {
 
 export const PisodePedeMolequedaPontedosJesuitas_Desconhecida: Obra = {
     ID: 1050,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque da Ponte dos Jesuítas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Piso original executado com pedaços ou lascas de granito.`,
@@ -12937,11 +12246,12 @@ export const PisodePedeMolequedaPontedosJesuitas_Desconhecida: Obra = {
 
 export const HenriqueDodsworth_HonorioPecanha: Obra = {
     ID: 1051,
-    Artistas: [artistas.HonorioPecanha],
+    Autores: [artistas.HonorioPecanha],
     Titulo: `Henrique Dodsworth`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Homenagem ao antigo prefeito da cidade, por iniciativa do moradores do bairro de Jacarepaguá.`,
     Execucao: true,
@@ -12952,11 +12262,12 @@ export const HenriqueDodsworth_HonorioPecanha: Obra = {
 
 export const DianadeGabies_Desconhecida: Obra = {
     ID: 1052,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Diana de Gabies`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em ferro fundido`,
     Descricao: `Escultura inicialmente instalada no Passeio Público da Cidade. Na praça existia um pequeno Chafariz conhecido
     como As crianças e o guarda-chuva, inaugurado em 1936. Com o seu desaparecimento foi substituído por esta escultura.
@@ -12973,10 +12284,11 @@ export const DianadeGabies_Desconhecida: Obra = {
 
 export const CaramanchaodaPracaBaraodeTaquara_DavidXavierdeAzambuja_AzevedoNeto: Obra = {
     ID: 1053,
-    Artistas: [artistas.DavidXavierdeAzambuja, artistas.AzevedoNeto],
+    Autores: [artistas.DavidXavierdeAzambuja, artistas.AzevedoNeto],
     Titulo: `Caramanchão da Praça Barão de Taquara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em argamassa armada`,
     Descricao: `Construção em argamassa armada, imitando tronco de árvore num semicírculo, que sustenta a vegetação de flores. Projeto de 1939 foi inaugurado com a reforma total da praça em 1939.`,
@@ -12988,10 +12300,11 @@ export const CaramanchaodaPracaBaraodeTaquara_DavidXavierdeAzambuja_AzevedoNeto:
 
 export const CoretodaPracaBaraodaTaquaraconhecidaPracaSeca_Desconhecida: Obra = {
     ID: 1054,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça Barão da Taquara, conhecida Praça Seca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Madeira`,
     Descricao: `Construção em madeira octogonal com embasamento revestido em alvenaria de pedras O guarda-corpo e as colunas são em madeira. ESse coreto foi transferido em 1928 da Praça Onze de Julho no Centro para essa praça.`,
@@ -13003,10 +12316,11 @@ export const CoretodaPracaBaraodaTaquaraconhecidaPracaSeca_Desconhecida: Obra = 
 
 export const MastrodaPracaBaraodaTaquaraconhecidaPracaSeca_Desconhecida: Obra = {
     ID: 1055,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mastro da Praça Barão da Taquara, conhecida Praça Seca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de Madeira`,
     Descricao: `Mastro em madeira maciça instalado na praça como marco de sua inauguração, conservando até hoje a placa comemorativa.`,
@@ -13018,11 +12332,12 @@ export const MastrodaPracaBaraodaTaquaraconhecidaPracaSeca_Desconhecida: Obra = 
 
 export const RelogiodoSol_Archi5ArquitetosAssociados: Obra = {
     ID: 1056,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio do Sol`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em concreto com estrutura de metal`,
     Descricao: `Archi 5 Arquitetos Associados Ltda - Trata-se de um relogio solar desenvolvido pelo fisico Marcomede Rangel Nunes e o arquiteto da Fundação Parques e Jardins e projetado pelo escritorio de Arquitetura Archi 5. É um peça em concreto circular situado no centro da praça .`,
     Execucao: true,
@@ -13033,10 +12348,11 @@ export const RelogiodoSol_Archi5ArquitetosAssociados: Obra = {
 
 export const MarcoaBibliaSagrada_Desconhecida: Obra = {
     ID: 1057,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco a Bíblia Sagrada`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Monumento composto por um bloco de pedra bruta com uma peça em formato de livro nela encravada.`,
@@ -13048,11 +12364,12 @@ export const MarcoaBibliaSagrada_Desconhecida: Obra = {
 
 export const AviadoresdoCampodosAfonsos_RebecaMatteIñiguez: Obra = {
     ID: 1058,
-    Artistas: [artistas.RebecaMatteIñiguez],
+    Autores: [artistas.RebecaMatteIñiguez],
     Titulo: `Aviadores do Campo dos Afonsos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Escultura simbolizando a luta pela conquista do ar através das figuras Dédalo contemplando Ícaro, seu filho, morto. Foi uma doação do povo chileno à Cidade, durante as comemorações do Centenário da Independência, como reconhecimento à Santos Dumont na descoberta do mais pesado que o ar.
 Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
@@ -13064,10 +12381,11 @@ Inaugurado na Praça Mauá, foi transferido em 1937 para o Campo dos Afonsos.`,
 
 export const CoretodaPracaH_Desconhecida: Obra = {
     ID: 1059,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça H`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de tijolo com argamassa`,
     Descricao: `Construção hexagonal, com três metros de altura, abrigando dois banheiros no embasamento e estrutura de madeira e telhas no piso superior para vigilancia da praça.`,
@@ -13079,12 +12397,13 @@ export const CoretodaPracaH_Desconhecida: Obra = {
 
 export const SaoJorge_RicoReis: Obra = {
     ID: 1060,
-    Imagem: 'SaoJorge_RicoReis.jpg',
-    Artistas: [artistas.RicoReis],
+    Image: 'SaoJorge_RicoReis.jpg',
+    Autores: [artistas.RicoReis],
     Titulo: `São Jorge`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina policromada`,
     Descricao: `Escultura a imagem tradicional de São Jorge, sobre um cavalo com a lança para matar uma serpente. A escultura
     em fibra de alta resistência. Esta sobre um pedestal de concreto de forma piramidal.`,
@@ -13101,10 +12420,11 @@ export const SaoJorge_RicoReis: Obra = {
 
 export const ChafarizdaPracaBaraodaTaquara_Desconhecida: Obra = {
     ID: 1061,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Praça Barão da Taquara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz com três jorros de água circundando o caramanchão. Foi construuido para substituir o Chafariz "O menino com Guarda Chuva" retirado em 14/01/1964 ( para local ignorado, conforme noticiado no jornal Ultima Hora em 1964), que era circundado por um lago. Em 1977 o lago foi ampliado e criado o Chafariz com jorro.
@@ -13117,10 +12437,11 @@ O Chafariz esta desativado desde maio de 2017.`,
 
 export const ChafarizOutono_MathurinMoreau: Obra = {
     ID: 1062,
-    Artistas: [artistas.MathurinMoreau],
+    Autores: [artistas.MathurinMoreau],
     Titulo: `Chafariz Outono`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça e pedestal em ferro fundido`,
     Descricao: `O Chafariz em ferro fundido foi doado pelo Barão da Taquara para o embelezamento da localidade e o abastecimento dos animais que por ali passavam. Um pedestal quadrangular, tendo em cada face uma carranca que verte água numa bacia em semicírculo, serve de pedestal a uma graciosa estátua masculina, representando a estação.`,
@@ -13132,11 +12453,12 @@ export const ChafarizOutono_MathurinMoreau: Obra = {
 
 export const BaraodaTaquara_BenevenutaBerna: Obra = {
     ID: 1063,
-    Artistas: [artistas.BenevenutaBerna],
+    Autores: [artistas.BenevenutaBerna],
     Titulo: `Barão da Taquara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `O Monumento foi reguido numa homenagem de gratidão dos moradores de Jacarepaguá e por interferência da Irmandade de Nossa Senhora de Paula e pelo Centro Carioca.`,
     Execucao: true,
@@ -13147,10 +12469,11 @@ export const BaraodaTaquara_BenevenutaBerna: Obra = {
 
 export const ChafarizdoMuseupersonalidadesNacional_RobertoBurleMarx: Obra = {
     ID: 1065,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Chafariz do  Museu personalidades Nacional`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `O Chafariz faz parte do conjunto paisagistico desenvolvido para a antiga Praça Marechal Ancora.
@@ -13163,11 +12486,12 @@ Desativado desde maio de 2017.`,
 
 export const MarcodaRemodelacaodaEstradadaGavea_Desconhecida: Obra = {
     ID: 1066,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Remodelação da Estrada da Gávea`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Monolitico de granito com placa de bronze`,
     Descricao: `Marco comemorativa da remodelação da Estrada da Gávea.`,
     Execucao: true,
@@ -13178,10 +12502,11 @@ export const MarcodaRemodelacaodaEstradadaGavea_Desconhecida: Obra = {
 
 export const PassareladeOscarNiemeyer_OscarNiemeyer: Obra = {
     ID: 1067,
-    Artistas: [artistas.OscarNiemeyer],
+    Autores: [artistas.OscarNiemeyer],
     Titulo: `Passarela de Oscar Niemeyer`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Passarela em concreto com três rampas em curva conectando a Rocinha com o lado oposto da Auto-estrada Lagoa-Barra, numa extensão total de 60 metros. Sobre a passarela ergue-se um arco que dá sustentação a passarela, inspirado em outra obra do grande arquiteto, o Sambódromo, de 1984.<`,
@@ -13193,10 +12518,11 @@ export const PassareladeOscarNiemeyer_OscarNiemeyer: Obra = {
 
 export const CoretodoLargodaBarrinha_Desconhecida: Obra = {
     ID: 1068,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto do Largo da Barrinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peças de tijolo e argamassa`,
     Descricao: `Construção em de tijolo e argamassa, comcobertura em telha francesa, para a realização de pequenas apresentações .`,
@@ -13206,58 +12532,13 @@ export const CoretodoLargodaBarrinha_Desconhecida: Obra = {
     Longitude: `-43.2971808`,
 };
 
-export const SaoFranciscodePaula_GiovanniBattistaMaini: Obra = {
-    ID: 1069,
-    Artistas: [artistas.GiovanniBattistaMaini],
-    Titulo: `São Francisco de Paula`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em argamassa armada`,
-    Descricao: `A escultura foi inaugurada na data comemorativa dos 40 anos da Ordem dos Mínimos do Brasil na Barra da Tijuca.`,
-    Execucao: true,
-    DataInauguracao: `11/1995`,
-    Zona: 'Oeste',
-    Bairro: 'Barra da Tijuca',
-    PontoDeReferencia: 'Praça Euvaldo Lodi',
-    Latitude: `-23.008364`,
-    Longitude: `-43.3046528`,
-    Lugar: 'Praça',
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Réplica', 'Réplica da obra do escultor setecentista Giovanni Battista Maini, na Basílica de São Pedro, no Vaticano.', [], 'Roma'),
-    ],
-};
-
-export const Carnica_AnaluNabuco: Obra = {
-    ID: 1070,
-    Artistas: [artistas.AnaluNabuco],
-    Titulo: `Carniça`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em argamassa`,
-    Descricao: `Escultura patrocinada pelo Apoio Espaço 41 Oficina de Arte e doada à Cidade do Rio de Janeiro.`,
-    Execucao: true,
-    DataInauguracao: `01/1997`,
-    Zona: 'Oeste',
-    Bairro: 'Barra da Tijuca',
-    PontoDeReferencia: 'Praça Professor Souza Araújo',
-    Latitude: `-23.0069404`,
-    Longitude: `-23.0069404`,
-    Lugar: 'Praça',
-    Fatos: [
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Doação', 'Patrocínio Espaço 41 Oficina de Arte', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const ÂncoradaBarra_Desconhecida: Obra = {
     ID: 1071,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Âncora da Barra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em ferro fundido`,
     Descricao: `É uma peça de ferro do século XIX doada pela Marinha do Brasil à Cidade do Rio de Janeiro.`,
@@ -13270,12 +12551,13 @@ export const ÂncoradaBarra_Desconhecida: Obra = {
 
 export const AoPAN2007_RobertoKenjiFukuda: Obra = {
     ID: 1072,
-    Imagem: 'AoPAN2007_RobertoKenjiFukuda.jpg',
-    Artistas: [artistas.RobertoKenjiFukuda],
+    Image: 'AoPAN2007_RobertoKenjiFukuda.jpg',
+    Autores: [artistas.RobertoKenjiFukuda],
     Titulo: `Ao  PAN 2007`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina`,
     Descricao: `Escultura composta por um globo terrestre com o mapa do continente americano dos dois lados, demarcando a parte
     do planeta onde se realiza a competição. Atletas representantes do basquete, do velocismo e do tênis sustentam o globo. A obra
@@ -13293,11 +12575,12 @@ export const AoPAN2007_RobertoKenjiFukuda: Obra = {
 
 export const PaineldoBosquedaBarra_PauloFreire: Obra = {
     ID: 1073,
-    Artistas: [artistas.PauloFreire],
+    Autores: [artistas.PauloFreire],
     Titulo: `Painel do Bosque da Barra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Mosaico de azulejos`,
     Descricao: `No portão de acesso ao parque foi instalado um mosaico de azulejos, retratando o Canal de Marapendi, a Pedra da Gávea e o mar da Barra.`,
     Execucao: true,
@@ -13308,12 +12591,12 @@ export const PaineldoBosquedaBarra_PauloFreire: Obra = {
 
 export const Hibisco_VaniaVilela: Obra = {
     ID: 1074,
-    Imagem: 'Hibisco_VaniaVilela.jpg',
-    Artistas: [artistas.VaniaVilela],
+    Autores: [artistas.VaniaVilela],
     Titulo: `Hibisco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em metal pintada`,
     Descricao: `A escultura representa a flora brasileira e foi doada à Cidade pelo Projeto Esculturas Monumentais do RB1.
     Escultura abstrata em ferro pintada nas cores preto e vermelho com recortes, com cerca de 3 metros a peça maior e 2,50 a menor,
@@ -13330,10 +12613,11 @@ export const Hibisco_VaniaVilela: Obra = {
 
 export const MonumentoAUniaodosPovosAmericanos_MarioAgostinelli: Obra = {
     ID: 1075,
-    Artistas: [artistas.MarioAgostinelli],
+    Autores: [artistas.MarioAgostinelli],
     Titulo: `Monumento à União dos Povos Americanos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monumento`,
     Material: `Peça em bronze com pedestal em concreto revestido por mármore branco.`,
     Descricao: `Monumento composto por três figuras femininas em bronze com uma bandeira, entre elas, simbolizando a união das Três Américas sobre um pedestal. O monumento foi retirado do canteiro central para as obras do metro retornando para o espaço publico em 2016.`,
@@ -13362,12 +12646,13 @@ export const MonumentoAUniaodosPovosAmericanos_MarioAgostinelli: Obra = {
 
 export const SemTítulo_RobertoBurleMarx: Obra = {
     ID: 1076,
-    Imagem: 'SemTítulo_RobertoBurleMarx.jpg',
-    Artistas: [artistas.RobertoBurleMarx],
+    Image: 'SemTítulo_RobertoBurleMarx.jpg',
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Sem Título`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Execução de Gian Carlo Patuzzi - A homenagem foi prestada uma homenagem ao diplomata Heitor Bastos Tigre,
     dedicando-lhe uma praça no Recreio dos Bandeirantes, em retribuição ao preito de sua família, com o intuito de reverenciar
@@ -13385,10 +12670,11 @@ export const SemTítulo_RobertoBurleMarx: Obra = {
 
 export const AmuradadoParqueNaturalMunicipalChicoMendes_Desconhecida: Obra = {
     ID: 1077,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Parque Natural Municipal Chico Mendes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção de tijolo fazendo limites do parque.`,
@@ -13400,11 +12686,12 @@ export const AmuradadoParqueNaturalMunicipalChicoMendes_Desconhecida: Obra = {
 
 export const PedraTalhada_Desconhecida: Obra = {
     ID: 1078,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Pedra Talhada`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse em cantaria com a meia cabeça feminina esculpida.`,
     Execucao: true,
@@ -13416,11 +12703,12 @@ export const PedraTalhada_Desconhecida: Obra = {
 
 export const Capivaras_PaulodeTarso: Obra = {
     ID: 1079,
-    Artistas: [artistas.PaulodeTarso],
+    Autores: [artistas.PaulodeTarso],
     Titulo: `Capivaras`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Trata-se de três esculturas de capivaras executadas em argamassa armada de uma mãe e seu filhote exposta num espaço do parque destinado a educação ambiental.`,
     Execucao: true,
@@ -13431,10 +12719,11 @@ export const Capivaras_PaulodeTarso: Obra = {
 
 export const MarcoRodoviariodaEstradadosBandeirantes_Desconhecida: Obra = {
     ID: 1080,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada dos Bandeirantes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O marco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -13446,12 +12735,13 @@ export const MarcoRodoviariodaEstradadosBandeirantes_Desconhecida: Obra = {
 
 export const APepeLopes_VeraTorres: Obra = {
     ID: 1081,
-    Imagem: 'APepeLopes_VeraTorres.jpg',
-    Artistas: [artistas.VeraTorres],
+    Image: 'APepeLopes_VeraTorres.jpg',
+    Autores: [artistas.VeraTorres],
     Titulo: `À Pepê Lopes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal revestido de granito`,
     Descricao: `Escultura em bronze composta por uma prancha e uma asa delta, sobre um pedestal um granito. Foi inaugurado pela
     esposa Ana Carolina e seus filhos Bianca e João Pedro. A homenagem foi contratado por sufistas e patrocinadores.`,
@@ -13467,9 +12757,10 @@ export const APepeLopes_VeraTorres: Obra = {
 
 export const MariaAugusta_MarliMazeredo: Obra = {
     ID: 1082,
-    Imagem: 'MariaAugusta_MarliMazeredo.jpg',
-    Artistas: [artistas.MarliMazeredo],
+    Image: 'MariaAugusta_MarliMazeredo.jpg',
+    Autores: [artistas.MarliMazeredo],
     Titulo: `Maria Augusta`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -13488,9 +12779,10 @@ export const MariaAugusta_MarliMazeredo: Obra = {
 
 export const AmericoVespucio_ArmandoAmaya: Obra = {
     ID: 1083,
-    Imagem: 'AmericoVespucio_ArmandoAmaya.jpg',
-    Artistas: [artistas.ArmandoAmaya],
+    Image: 'AmericoVespucio_ArmandoAmaya.jpg',
+    Autores: [artistas.ArmandoAmaya],
     Titulo: `Américo Vespúcio`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -13509,8 +12801,9 @@ export const AmericoVespucio_ArmandoAmaya: Obra = {
 
 export const GeneralJoaquimInacioCardoso_SMartinsRibeiro: Obra = {
     ID: 1084,
-    Artistas: [artistas.SMartinsRibeiro],
+    Autores: [artistas.SMartinsRibeiro],
     Titulo: `General Joaquim Inácio Cardoso`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -13525,31 +12818,12 @@ export const GeneralJoaquimInacioCardoso_SMartinsRibeiro: Obra = {
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
-export const AlmiranteMiguelGrau_PedroMMartinezCorada: Obra = {
-    ID: 1085,
-    Artistas: [artistas.PedroMMartinezCorada],
-    Titulo: `Almirante Miguel Grau`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e concreto`,
-    Descricao: `Busto foi doado à cidade do Rio de Janeiro pela Marinha de Guerra Peruana.`,
-    Execucao: true,
-    DataInauguracao: `01/1994`,
-    Zona: 'Oeste',
-    Bairro: 'Barra da Tijuca',
-    PontoDeReferencia: 'Av. Ayrton Senna',
-    Latitude: `-23.010372`,
-    Longitude: `-43.366192`,
-    Lugar: 'Canteiro',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'), new Fato('', '', 'Doação', 'Marinha de Guerra Peruana', [], 'Rio de Janeiro')],
-};
-
 export const ChicoMendes_SimoneGiacobbo: Obra = {
     ID: 1086,
-    Imagem: 'ChicoMendes_SimoneGiacobbo.jpg',
-    Artistas: [artistas.SimoneGiacobbo],
+    Image: 'ChicoMendes_SimoneGiacobbo.jpg',
+    Autores: [artistas.SimoneGiacobbo],
     Titulo: `Chico Mendes`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -13568,9 +12842,10 @@ export const ChicoMendes_SimoneGiacobbo: Obra = {
 
 export const DraultErnanny_Desconhecida: Obra = {
     ID: 1087,
-    Imagem: 'DraultErnanny_Desconhecida.jpg',
-    Artistas: [artistas.Desconhecida],
+    Image: 'DraultErnanny_Desconhecida.jpg',
+    Autores: [artistas.Desconhecida],
     Titulo: `Drault Ernanny`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -13591,11 +12866,12 @@ pela Associação dos Moradores do Recreio. Com 95 anos o homenageado esteve pre
 
 export const JoseBaltazar_Desconhecida: Obra = {
     ID: 1088,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `José Baltazar`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore com pedestal de concreto`,
     Descricao: `Peça em mármore esculpida com as feições do médico e benfeitor da região, doada por sua família.`,
     Execucao: true,
@@ -13606,10 +12882,11 @@ export const JoseBaltazar_Desconhecida: Obra = {
 
 export const ChafarizFlordeLotus_SergioMoreiraDias: Obra = {
     ID: 1090,
-    Artistas: [artistas.SergioMoreiraDias],
+    Autores: [artistas.SergioMoreiraDias],
     Titulo: `Chafariz Flor de Lótus`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Fonte ornamental com diversos jorros de água verticais, onde o piso em granito de diversas cores forma uma flor de lótus. Foi instalado pelo projeto Rio Orla.
@@ -13622,10 +12899,11 @@ Esta desativado desde o ano de 2004.`,
 
 export const ChafarizRosadosVentos_SergioMoreiraDias: Obra = {
     ID: 1091,
-    Artistas: [artistas.SergioMoreiraDias],
+    Autores: [artistas.SergioMoreiraDias],
     Titulo: `Chafariz Rosa dos Ventos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Fonte ornamental com diversos jorros de água verticais, onde o piso em granito de diversas cores forma uma rosa dos ventos. Foi instalado pelo projeto Rio Orla.
@@ -13638,10 +12916,11 @@ Esta desativado desde o ano de 2004.`,
 
 export const ChafarizdoParqueNaturalMunicipalChicoMendes_Desconhecida: Obra = {
     ID: 1092,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz do Parque Natural Municipal Chico Mendes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `Pequeno Chafariz composto por uma bacia, uma coluna e um peixe em ferro fundido, com um pequeno lago no entorno.`,
@@ -13653,10 +12932,11 @@ export const ChafarizdoParqueNaturalMunicipalChicoMendes_Desconhecida: Obra = {
 
 export const FontedaBarrinha_Desconhecida: Obra = {
     ID: 1093,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte da Barrinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Pedra com argamassa`,
     Descricao: `Pequena construção de acesso a fonte natural.`,
@@ -13668,10 +12948,11 @@ export const FontedaBarrinha_Desconhecida: Obra = {
 
 export const ChafarizdoPomardaBarra_LuizVerdugo: Obra = {
     ID: 1095,
-    Artistas: [artistas.LuizVerdugo],
+    Autores: [artistas.LuizVerdugo],
     Titulo: `Chafariz do  Pomar da Barra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto`,
     Descricao: `Inicialmente existia um bola de hastes em aço onde das extremidades onde jorra a água em jatos, criando uma névoa. Devido aos constantes danos da esfera, essa foi retirada e em 2002, o Chafariz retornou ao funcionamento com um jorro central, e a água escorrendo das bacias de concreto. Em 2015 a bacia foi revestida de plastilha verde.
@@ -13684,11 +12965,12 @@ Esta desativado desde maio de 2017.`,
 
 export const Bailarina_Desconhecida: Obra = {
     ID: 1096,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bailarina`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Réplica de Pau Darbefeuille inaugurado em 1908 na Praia de Botafogo. Foi transferido para o Largo do Tanque e
     em seguida janeiro de 1996 para essa praça. A escultura é uma cópia da de ferro fundido executado pelas fundições de
@@ -13705,10 +12987,11 @@ export const Bailarina_Desconhecida: Obra = {
 
 export const BancodaEstradadoJoa_Desconhecida: Obra = {
     ID: 1097,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco da Estrada do Joá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Bancos construidos ao longo da murada que protege a estrada.`,
@@ -13720,10 +13003,11 @@ export const BancodaEstradadoJoa_Desconhecida: Obra = {
 
 export const ChafarizdoLargodoTanque_deposito_Desconhecida: Obra = {
     ID: 1098,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz do Largo do Tanque - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O Chafariz inaugurado pelo represetante do governador Rafael Magalhães Foi desmontado em 2013 para a construção da Trans-Carioca. A bacia do Chafariz em gnaisse, foi doada ao municipio pelo Arquivo Nacional.
@@ -13735,44 +13019,17 @@ export const ChafarizdoLargodoTanque_deposito_Desconhecida: Obra = {
     Longitude: `-43.1973384`,
 };
 
-export const AtenadoBosquedaFreguesia_Desconhecida: Obra = {
-    ID: 1099,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Atena do Bosque da Freguesia`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em mármore de Carrara`,
-    Descricao: `A escultura que representa a Deusa das Artes. Foi retirada em 1988 da Praça das Nações e transferida para o depósito da Prefeitura da época. Em 1994 foi instalada para o parque a fim de embelezar o espaço.`,
-    Execucao: true,
-    PontoDeReferencia: 'Praça das Nações',
-    Lugar: 'Praça',
-    Remocao: true,
-    DataRealocacao: `01/1994`,
-    Realocacao: true,
-    ZonaRealocacao: 'Oeste',
-    BairroRealocacao: 'Anil',
-    PontoDeReferenciaorealocacao: 'Bosque da Freguesia',
-    LatitudeRealocacao: `-22.9491035`,
-    LongitudeRealocacao: `-43.3409763`,
-    LugarRealocacao: 'Parque',
-    Fatos: [
-        new Fato('1988', '1988', 'Remoção', 'Praça das Nações', [], 'Rio de Janeiro'),
-        new Fato('1994', '1994', 'Realocação', 'A obra foi reinstalada no Bosque da Freguesia a fim de embelezar o espaço', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const ChafarizdaPracaNunoRoland_Desconhecida: Obra = {
     ID: 1100,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Praça Nuno Roland`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto`,
     Descricao: `Chafariz de concreto armado, composto por um pequeno pedestal de onde 4 carraras de leão, de onde jorrava a agua e três bacias sobrepostas, formando uma cascata.
 Desativado em data desconhecida.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.8901631`,
@@ -13781,14 +13038,14 @@ Desativado em data desconhecida.`,
 
 export const ChafarizdaRuaVictorCivita_Desconhecida: Obra = {
     ID: 1101,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Rua Victor Civita`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Chafariz circular com tres niveis, formando cascata entre os lagos.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9743569`,
@@ -13797,14 +13054,14 @@ export const ChafarizdaRuaVictorCivita_Desconhecida: Obra = {
 
 export const FontesdaBarra_BeneditoAbbud: Obra = {
     ID: 1102,
-    Artistas: [artistas.BeneditoAbbud],
+    Autores: [artistas.BeneditoAbbud],
     Titulo: `Fontes da Barra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `O conjunto que forma o Chafariz possuiem com 18 ( dezoito) jatos parablicos e 9 ( nove) verticais.`,
-
     Execucao: true,
     DataInauguracao: `12/2013`,
     Latitude: `-22.9731299`,
@@ -13813,15 +13070,15 @@ export const FontesdaBarra_BeneditoAbbud: Obra = {
 
 export const ChafarizEscultoricodoJardimOceanico_LeilahCosta: Obra = {
     ID: 1104,
-    Artistas: [artistas.LeilahCosta],
+    Autores: [artistas.LeilahCosta],
     Titulo: `Chafariz Escultórico do Jardim Oceânico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto e metal`,
     Descricao: `Chafariz de jorro com um pequeno espelho d'agua. O Chafariz é composto por uma escultura formada por três (3) circulos de concreto vazados unidos em uma unica estrutura.
 Desativado no ano de 2016.`,
-
     Execucao: true,
     DataInauguracao: `07/2016`,
     Latitude: `-23.0071286`,
@@ -13830,10 +13087,11 @@ Desativado no ano de 2016.`,
 
 export const PaineldoJardimOceanico_UrbanoAlvesIglesias: Obra = {
     ID: 1105,
-    Artistas: [artistas.UrbanoAlvesIglesias],
+    Autores: [artistas.UrbanoAlvesIglesias],
     Titulo: `Painel do Jardim Oceânico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peças de azulejos`,
     Descricao: `Paineis nas paredes com motivos marinhos.`,
@@ -13845,15 +13103,15 @@ export const PaineldoJardimOceanico_UrbanoAlvesIglesias: Obra = {
 
 export const BebedourodeFidias_PedroBruno: Obra = {
     ID: 1107,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Bebedouro de Fídias`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção retangular no formato de uma cisterna, com duas bacias laterais e duas ânforas, em argamassa. Nas paredes laterais há painéis de argamassa, em alto relevo, reproduzindo obra de Fídias.<
 Desativado em data desconhecida.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.7622363`,
@@ -13862,11 +13120,12 @@ Desativado em data desconhecida.`,
 
 export const BancodePeixedaPracaPedroBruno_PedroBruno: Obra = {
     ID: 1108,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Banco de Peixe da Praça Pedro Bruno`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Banco de concreto com o encosto decorado com peixes estilizados em argamassa e assentos de granitinea.As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
     Execucao: true,
@@ -13877,10 +13136,11 @@ export const BancodePeixedaPracaPedroBruno_PedroBruno: Obra = {
 
 export const CaramanchaodaPracaPedroBruno_PedroBruno: Obra = {
     ID: 1109,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Caramanchão da Praça Pedro Bruno`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção em concreto, composta por pilares que suportam trepadeiras.
@@ -13893,10 +13153,11 @@ As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
 
 export const MarcodologradourodaPracaPedroBruno_PedroBruno: Obra = {
     ID: 1110,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Praça Pedro Bruno`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse maciço, com o nome do logradouro em baixo relevo.
@@ -13909,10 +13170,11 @@ As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
 
 export const CaramanchaoBelvederedePracaBomJesus_PedroBruno: Obra = {
     ID: 1111,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Caramanchão Belvedere de Praça Bom Jesus`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em argamassa armada policromada`,
     Descricao: `Construção composta por pilares revestidos de pedras, servindo de apoio a treliças para fixação da vegetação, avançado sobre o mar.O monumento foi inaugurado na Festa das Arvores e dos Passaros, quando foi realizado o plantio no pergolado.`,
@@ -13924,10 +13186,11 @@ export const CaramanchaoBelvederedePracaBomJesus_PedroBruno: Obra = {
 
 export const MarcodologradourodaPraiadosTamoios_PedroBruno: Obra = {
     ID: 1115,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Praia dos Tamoios`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse maciço, com o nome do logradouro em baixo relevo. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
@@ -13939,10 +13202,11 @@ export const MarcodologradourodaPraiadosTamoios_PedroBruno: Obra = {
 
 export const MarcodologradourodaPraiadosTamoiosII_PedroBruno: Obra = {
     ID: 1116,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Praia dos Tamoios II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse maciço, com o nome do logradouro em letras de bronze. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
@@ -13954,10 +13218,11 @@ export const MarcodologradourodaPraiadosTamoiosII_PedroBruno: Obra = {
 
 export const MarcodaLendadoBaoba_MariaGorda_Desconhecida: Obra = {
     ID: 1117,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Lenda do Baobá - Maria Gorda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Monolitico de concreto  com placa de bronze`,
     Descricao: `Placa com inscrição sobre a lenda do Baobá. Inicialmente não havia a placa, somente uma inscrição em madeira. Essa foi instalada no ano de 2000. A árvore de origem africana, teve o nome dado pelos nativos de "Maria Gorda" devido o tronco grosso.`,
@@ -13969,10 +13234,11 @@ export const MarcodaLendadoBaoba_MariaGorda_Desconhecida: Obra = {
 
 export const CanhaodeDomJoao_PedroBruno: Obra = {
     ID: 1118,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Canhão de Dom João`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em bronze`,
     Descricao: `Canhão do período colonial, sobre um pedestal em pedras brutas, com um banco ao seu redor.
@@ -13985,8 +13251,9 @@ Ha referencias que D. João VI durante um temporal teve que parar em Paquetá. F
 
 export const CaciqueTamoioGuaixara_RaimundoReis: Obra = {
     ID: 1119,
-    Artistas: [artistas.RaimundoReis],
+    Autores: [artistas.RaimundoReis],
     Titulo: `Cacique Tamoio Guaixara`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -14008,9 +13275,10 @@ no pedestal anteriormente construido.`,
 export const PedestalVazio_UgoTaddei: Obra = {
     ID: 1121,
     Titulo: `Pedestal Vazio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Monolitico de concreto revestido com placa de granito`,
     Descricao: `Pedestal vazio constituído por uma pequena coluna de pedras sobre base em granito. Foi erguido para receber um busto de Ataulfo de Paiva, que não aceitou a honraria, que se encontra no depósito da prefeitura.`,
     Execucao: true,
@@ -14021,10 +13289,11 @@ export const PedestalVazio_UgoTaddei: Obra = {
 
 export const CaramanchaodoParquedosTamoios_PedroBruno: Obra = {
     ID: 1122,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Caramanchão do Parque dos Tamoios`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em argamassa armada`,
     Descricao: `Construção em concreto, composta por pilares que suportam trepadeiras emoldurando o busto de Carlos Gomes.
@@ -14037,10 +13306,11 @@ As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
 
 export const MarcoaosEx_CombatentesdePaqueta_Desconhecida: Obra = {
     ID: 1123,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco aos Ex-Combatentes de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
     Descricao: `Inaugurado na década de 1980,<strong>< o m onumento é composto por duas colunas representante o "V" de Vitória, tendo ao entorno onze pedras onde estão fixadas placas de aço inox, com os nomes dos onze pracinhas, filhos de Paquetá, que lutaram na II Guerra Mundial: Ivo Limoeiro, José de Souza Villela, João Tinoco, Nelson Coelho Esteves, João Lessa Filho, Godofredo Figueiredo, Ivany Ferreira de Souza, Carlos Ferreira, Moacir Batista do Nascimento, João Antunes Filho e Martiniano José Pereira.`,
@@ -14052,10 +13322,11 @@ export const MarcoaosEx_CombatentesdePaqueta_Desconhecida: Obra = {
 
 export const BancodaRuaPadreJuvenal_PedroBruno: Obra = {
     ID: 1124,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Banco da Rua Padre Juvenal`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse com o nome do logradouro em bronze e dois bancos laterais. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
@@ -14067,10 +13338,11 @@ export const BancodaRuaPadreJuvenal_PedroBruno: Obra = {
 
 export const CoretodePaquetaaRenatoAntunes_CarlosWerneckdeCarvalho: Obra = {
     ID: 1125,
-    Artistas: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckdeCarvalho],
     Titulo: `Coreto  de Paquetá à Renato Antunes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Obra de Antonio Moreira de Souza - 
@@ -14083,10 +13355,11 @@ Construção de concreto hexagonal. O coreto foi construído na administração 
 
 export const CruzeirodePaqueta_Desconhecida: Obra = {
     ID: 1126,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cruzeiro de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cruzeiro`,
     Material: `Madeira`,
     Descricao: `Cruzeiro em madeira, com uma base de concreto e um veleiro, fronteiro à capela dedicada ao padroeiro da Ilha.`,
@@ -14098,10 +13371,11 @@ export const CruzeirodePaqueta_Desconhecida: Obra = {
 
 export const PocodeSaoRoque_Desconhecida: Obra = {
     ID: 1127,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Poço de São Roque`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção circular com uma tampa em concreto sobre o histórico Poço de São Roque, desativado desde a chegada da água encanada à Ilha. Entre as lendas de Paquetá, uma atribui a cura de uma úlcera de D. João às virtudes milagrosas de suas águas.`,
@@ -14113,10 +13387,11 @@ export const PocodeSaoRoque_Desconhecida: Obra = {
 
 export const MarcodologradourodoParquedosTamoios_PedroBruno: Obra = {
     ID: 1128,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro do Parque dos Tamoios`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Bloco de gnaisse com o nome do logradouro em baixo relevo. Foi inaugurado na Festa dos Passaros de 1934, tendo a presença do interventor Pedro Ernesto.`,
@@ -14128,10 +13403,11 @@ export const MarcodologradourodoParquedosTamoios_PedroBruno: Obra = {
 
 export const MarcodoLogradourodaPracaSaoRoque_PedroBruno: Obra = {
     ID: 1129,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do Logradouro da Praça São Roque`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Bloco de gnaisse com o nome do logradouro em baixo relevo. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
@@ -14143,10 +13419,11 @@ export const MarcodoLogradourodaPracaSaoRoque_PedroBruno: Obra = {
 
 export const MarcodologradourodaRuaVivaldoCoaracy_Desconhecida: Obra = {
     ID: 1130,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do logradouro da Rua Vivaldo Coaracy`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de alumínio`,
     Descricao: `Bloco de pedra onde está fixada uma placa com o nome do logradouro. A homenagem ao jornalista e escritor decorre de seu trabalho em obras históricas, artigos e cronicas, sendo três delas recionadas a Paquetá: Couves de Minha Horta (crônica), Por do Sol na Ilha (crônica) e Paquetá.`,
@@ -14158,10 +13435,11 @@ export const MarcodologradourodaRuaVivaldoCoaracy_Desconhecida: Obra = {
 
 export const MarcodologradourodaRuaMaestroAnacleto_PedroBruno: Obra = {
     ID: 1131,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Rua Maestro Anacleto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Bloco de gnaisse com letras em bronze.. O monumento foi inaugurado na Festa dasArvores e dos Passaros`,
@@ -14173,10 +13451,11 @@ export const MarcodologradourodaRuaMaestroAnacleto_PedroBruno: Obra = {
 
 export const MarcoemHomenagemaPaqueta_Desconhecida: Obra = {
     ID: 1132,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco em Homenagem à Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em argamassa,`,
     Descricao: `Placa de argamassa com gravação de um texto de Araújo Porto Alegre.`,
@@ -14188,10 +13467,11 @@ export const MarcoemHomenagemaPaqueta_Desconhecida: Obra = {
 
 export const ACastanegto_PedroBruno: Obra = {
     ID: 1133,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `À Castanegto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Bloco de granito esculpido na forma de uma palheta. O monumento foi inaugurado na Festa dasArvores e dos Passaros, que foi mestre do Pintor Pedro Bruno`,
@@ -14203,14 +13483,14 @@ export const ACastanegto_PedroBruno: Obra = {
 
 export const MarcodologradourodaPraiaPintorCastanegto_PedroBruno: Obra = {
     ID: 1134,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Praia Pintor Castanegto`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Bloco de gnaisse com o nome do logradouro em letras de bronze.As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.7622363`,
@@ -14219,15 +13499,15 @@ export const MarcodologradourodaPraiaPintorCastanegto_PedroBruno: Obra = {
 
 export const MarcodologradourodaRuaFurquimWerneck_PedroBruno: Obra = {
     ID: 1135,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco do logradouro da Rua Furquim Werneck`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Bloco de gnaisse com o nome do logradouro em letras em baixo relevo pintadas de preto.
 As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.7622363`,
@@ -14236,10 +13516,11 @@ As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
 
 export const MarcodeTributoaArvoreI_PedroBruno: Obra = {
     ID: 1136,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco de Tributo à Árvore I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com letras de bronze`,
     Descricao: `Bloco de pedra com inscrição em homenagem às árvores. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
@@ -14251,14 +13532,14 @@ export const MarcodeTributoaArvoreI_PedroBruno: Obra = {
 
 export const MarcodeTributoaArvoreII_PedroBruno: Obra = {
     ID: 1137,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Marco de Tributo à Árvore II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Blocos de granito com peça em bronze`,
     Descricao: `Bloco de pedra com inscrição em homenagem às aárvores. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.7622363`,
@@ -14267,11 +13548,12 @@ export const MarcodeTributoaArvoreII_PedroBruno: Obra = {
 
 export const BancoAosVelhosPescadores_PedroBruno: Obra = {
     ID: 1138,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Banco  Aos Velhos Pescadores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Bloco de granito esculpido`,
     Descricao: `Banco em blocos de pedra, no encosto do qual está gravado, em letras de bronze,  Aos Velhos Pescadores. Foi erguido pela Liga Artistica de Paqueta é inaugurado quando da Corrida da Fogueira, que objetivava homenagear os pescadores da Colonia Z-3, no dia de São Pedro.`,
     Execucao: true,
@@ -14282,14 +13564,14 @@ export const BancoAosVelhosPescadores_PedroBruno: Obra = {
 
 export const BancodePeixedaPraiaJoseBonifacio_PedroBruno: Obra = {
     ID: 1139,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Banco de Peixe da Praia José Bonifácio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Bloco de granito esculpido`,
     Descricao: `Banco de pedra com o encosto decorado com peixes estilizados.As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.7622363`,
@@ -14298,10 +13580,11 @@ export const BancodePeixedaPraiaJoseBonifacio_PedroBruno: Obra = {
 
 export const BancodePedradePaqueta_Desconhecida: Obra = {
     ID: 1140,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco de Pedra de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Blocos de granito`,
     Descricao: `Banco com assento e encosto de pedra.`,
@@ -14313,10 +13596,11 @@ export const BancodePedradePaqueta_Desconhecida: Obra = {
 
 export const PontedaSaudade_Desconhecida: Obra = {
     ID: 1141,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte da Saudade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de Madeira`,
     Descricao: `Trata de um píer cuja lenda originou essa denominação. A lenda afirma que o escravo João Saudade, da nação Benguela, rezava diariamente para reencontrar sua família que ficara na África.`,
@@ -14328,10 +13612,11 @@ export const PontedaSaudade_Desconhecida: Obra = {
 
 export const PortaodoParqueDarkedeMattos_Desconhecida: Obra = {
     ID: 1142,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Portão do Parque Darke de Mattos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de concreto`,
     Descricao: `Construção em concreto composta por dois grandes pilares, sustentando um portão de barras de ferro em duas folhas. Parte integrante da Chacara dos Darke de Mattos, mas aqui a data de inauguração como parque publico, passou a ser a data de inauguração`,
@@ -14343,14 +13628,14 @@ export const PortaodoParqueDarkedeMattos_Desconhecida: Obra = {
 
 export const BancoeMesaaArvore_Desconheido: Obra = {
     ID: 1143,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco e Mesa à Árvore`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto rodeando o tronco de uma árvore.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
-
     Execucao: true,
     DataInauguracao: `01/1978`,
     Latitude: `-22.7622363`,
@@ -14359,10 +13644,11 @@ export const BancoeMesaaArvore_Desconheido: Obra = {
 
 export const AmuradadoParqueDarkedeMattos_Desconhecida: Obra = {
     ID: 1144,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Parque Darke de Mattos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Blocos de granito`,
     Descricao: `Construção em blocos de pedra que sustentam a encosta, além de criar caminhos para o acesso ao mirante do parque. Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
@@ -14374,10 +13660,11 @@ export const AmuradadoParqueDarkedeMattos_Desconhecida: Obra = {
 
 export const BanconaEncostaemPaqueta_Desconhecida: Obra = {
     ID: 1145,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco na Encosta em Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em argamassa`,
     Descricao: `Conjunto de dois bancos, tipo poltrona, com uma mesa criando um pequeno ambiente lúdico.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
@@ -14389,10 +13676,11 @@ export const BanconaEncostaemPaqueta_Desconhecida: Obra = {
 
 export const CoretoeMirantedoParqueDarkedeMattos_Desconhecida: Obra = {
     ID: 1146,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto e Mirante do Parque Darke de Mattos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `Construção octogonal em dois pisos, em concreto revestido de pedra, com sete pilares e um outro central, coberto em telhas canal sobre ripas de maçaranduba.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.
@@ -14405,10 +13693,11 @@ Há imagens que registram o mirante desde aos anos de 1940.`,
 
 export const OratoriodeNossaSenhoradaConceicaodePaqueta_Desconhecida: Obra = {
     ID: 1147,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora da Conceição de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em concreto com imagem em resina`,
     Descricao: `Pequena gruta natural revestida de argamassa onde se abriga a imagem. Inaugurada na década de 2000.`,
@@ -14420,10 +13709,11 @@ export const OratoriodeNossaSenhoradaConceicaodePaqueta_Desconhecida: Obra = {
 
 export const BancodeRocailledePaqueta_Desconhecida: Obra = {
     ID: 1148,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco de Rocaille de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em argamassa armada`,
     Descricao: `Construção em três níveis de banco formando uma pequena arquibancada.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
@@ -14435,10 +13725,11 @@ export const BancodeRocailledePaqueta_Desconhecida: Obra = {
 
 export const TemploaArvore_Desconhecida: Obra = {
     ID: 1149,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Templo à Árvore`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em argamassa armada`,
     Descricao: `Construção circular vazada com uma árvaroe ao centro, composta por oito pilares revestidas de pedra, sustentando uma viga.`,
@@ -14450,10 +13741,11 @@ export const TemploaArvore_Desconhecida: Obra = {
 
 export const TunelnaPedraIdePaqueta_Desconhecida: Obra = {
     ID: 1150,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Túnel na Pedra I de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Saibro`,
     Descricao: `Escavação no terreno que permite o acesso a dois lados do parque.Pertencia a familia Darke de Mattos.`,
@@ -14465,10 +13757,11 @@ export const TunelnaPedraIdePaqueta_Desconhecida: Obra = {
 
 export const TunelnaPedraIIdePaqueta_Desconhecida: Obra = {
     ID: 1151,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Túnel na Pedra II de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Saibro`,
     Descricao: `Escavação no terreno que permite o acesso a dois lados do parque.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
@@ -14480,10 +13773,11 @@ export const TunelnaPedraIIdePaqueta_Desconhecida: Obra = {
 
 export const TunelnaPedraIIIdePaqueta_Desconhecida: Obra = {
     ID: 1152,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Túnel na Pedra III de Paquetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Saibro`,
     Descricao: `Escavação natural no terreno que permite o acesso a dois lados do parque.Pertencia a familia Darke de Mattos. A propriedade foi adquirida pela prefeitura do Rio de Janeiro e o ano da abertura ao publico passou ser a data da inauguração.`,
@@ -14495,10 +13789,11 @@ export const TunelnaPedraIIIdePaqueta_Desconhecida: Obra = {
 
 export const PainelGentileza26_ProfetaGentileza: Obra = {
     ID: 599,
-    Artistas: [artistas.ProfetaGentileza],
+    Autores: [artistas.ProfetaGentileza],
     Titulo: `Painel Gentileza 26`,
+    Renomeacao: false,
     Classificacao: 'efemero',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Grafite`,
     Material: `Pintura em superficie argamassada`,
     Descricao: `O painel é uma pintura na pilastra do Viaduto do Cajú, na zona portuária da Cidade, onde O Profeta Gentileza, expôs suas mensagens e críticas.num trabalho artísticos de letras criada por ele. Gentileza, como era conhecidoJosé Datrino, executou 56 painéis, durante os anos de 1980.
@@ -14516,8 +13811,9 @@ SANTO DE AMORRR POR JESSUSS DISSE GENTILEZA AMORRR `,
 
 export const PaulodaPortela_Desconhecida: Obra = {
     ID: 912,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Paulo da Portela`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -14537,10 +13833,11 @@ export const PaulodaPortela_Desconhecida: Obra = {
 
 export const MarcodaInauguracaodoViadutodeCascadura_Desconhecida: Obra = {
     ID: 914,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Inauguração do Viaduto de Cascadura`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em bronze`,
     Descricao: `Placa em bronze de inauguração do Viaduto Washington Luís, com descrição comemorativa.`,
@@ -14552,13 +13849,14 @@ export const MarcodaInauguracaodoViadutodeCascadura_Desconhecida: Obra = {
 
 export const AJoaquimManuelMacedo_PedroBruno: Obra = {
     ID: 1153,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `À Joaquim Manuel Macedo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Bloco de gnaisse esculpido`,
-    Descricao: `Bloco de gnaisse  com inscrição em letras de bronze.  O monumento foi inaugurado na Festa das Arvores e dos Passaros, no mesmo dia da homenagem a Carlos Gomes.`,
+    Descricao: `Bloco de gnaisse com inscrição em letras de bronze.O monumento foi inaugurado na Festa das Arvores e dos Passaros, no mesmo dia da homenagem a Carlos Gomes.`,
     Execucao: true,
     DataInauguracao: `05/1938`,
     Latitude: `-22.7622363`,
@@ -14567,10 +13865,11 @@ export const AJoaquimManuelMacedo_PedroBruno: Obra = {
 
 export const TuneldaMoreninha_Desconhecida: Obra = {
     ID: 1155,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Túnel da Moreninha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Saibro`,
     Descricao: `Túnel escavado no morro, dando acesso ao mar.`,
@@ -14582,10 +13881,11 @@ export const TuneldaMoreninha_Desconhecida: Obra = {
 
 export const PontedaPedradaMoreninha_Desconhecida: Obra = {
     ID: 1154,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte da Pedra da Moreninha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Madeira`,
     Descricao: `Ponte de madeira que dá acesso a uma pedra conhecida como da Pedra da Moreninha, personagem imortalizado no romance de Joaquim Manuel de Macedo.`,
@@ -14597,10 +13897,11 @@ export const PontedaPedradaMoreninha_Desconhecida: Obra = {
 
 export const AoDoutorAristao_PedroBruno: Obra = {
     ID: 1157,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Ao Doutor Aristão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Efígie`,
     Material: `Bloco de granito esculpido com placa de bronze`,
     Descricao: `Marco de pedra de forma irregular a inscrição Dr. Aristâo e sua efígie. Foi homeanageado pela gratidão dos moradores de Paqueta. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1930.`,
@@ -14618,10 +13919,11 @@ export const AoDoutorAristao_PedroBruno: Obra = {
 
 export const AAugustoSilva_Helmano: Obra = {
     ID: 1161,
-    Artistas: [artistas.Helmano],
+    Autores: [artistas.Helmano],
     Titulo: `À Augusto Silva`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Efígie`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `A homenagem ao pintor Augusto Silva foi realizada por seus amigos.`,
@@ -14636,11 +13938,12 @@ export const AAugustoSilva_Helmano: Obra = {
 
 export const AHermesFontes_PedroBruno: Obra = {
     ID: 1160,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `À Hermes Fontes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Bloco de granito com letras de bronze`,
     Descricao: `A homenagem a Hermes Fontes é composta por dois blocos maciços de pedra, com a inscrição Paquetá é um céu profundo que começa neste mundo e não sobe onde acabar”. O Monumento foi inaugurado na Festa dos passaros e das Arvores, promovido pela Liga Artistica de Paqueta. Hermes Fontes era o cantor das belezas da Perola da Guanabara e foi erguido em frente a casa onde residiu.`,
     Execucao: true,
@@ -14651,10 +13954,11 @@ export const AHermesFontes_PedroBruno: Obra = {
 
 export const RelogioModeloMesbla_Desconhecida: Obra = {
     ID: 1164,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio Modelo Mesbla`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em concreto armado`,
     Descricao: `A loja MESBLA com um então alto espírito comunitário, encaminhou em 18 de novembro de 1965 documento ao Diretor-Geral de Hidrografia e Navegação oferecendo-se para "instalar um farol com sirene, no embarcadouro em frente à nossa propriedade" argumentando que " temos observado que, em determinadas épocas do ano, o nevoeiro denso prejudica e põe em risco as embarcações com destino à Ilha de Paquetá."Tão logo aceita a proposta pela "Marinha", deu-se início a construção de uma torre quadrangular de cimento armado com 9,45 metros de altura, similar à do edifício sede no Passeio Público, dispondo inclusive de um relógio de duas faces e de uma sirene.
@@ -14662,7 +13966,6 @@ Quando pronta, a MESBLA convidou as autoridades locais e da Marinha para sua
 inauguração. O farol de caráter privado e considerado de interesse particular, cujos funcionamentos e manutenção foram assumidos pela MESBLA, batizado com o nome de Ponta da Ribeira, passou a oferecer aos Mestres das barcas e aos demais navegantes que demandassem a ilha de Paquetá, um característico lampejo vermelho de 4,0 segundos a cada intervalo de 8,0 segundos.
 Fonte: Ney Dantasfarologista, membro da Academia de Artes, Ciências e Letras da Ilha de Paquetá, oficial da Marinha do Brasil
 Construção que reproduz a torre com relógio da extinta loja Mesbla, na Rua do Passeio. Trata-se de um farol para sinalização dos barcos nos dias de nevoeiro e durante a noite.`,
-
     Execucao: true,
     DataInauguracao: `08/1966`,
     Latitude: `-22.7622363`,
@@ -14671,11 +13974,12 @@ Construção que reproduz a torre com relógio da extinta loja Mesbla, na Rua do
 
 export const Beethoven_PedroBruno: Obra = {
     ID: 1167,
-    Artistas: [artistas.PedroBruno],
+    Autores: [artistas.PedroBruno],
     Titulo: `Beethoven`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Homenagem de Pedro Bruno ao grande compositor. As obras executadas por Pedro Bruno na Ilha foram realizados nos anos de 1940.
 No ano de 2000 foi realizado um molde para a colocação de uma peça em bronze no monumento. O molde foi guardado no deposito.`,
@@ -14687,11 +13991,12 @@ No ano de 2000 foi realizado um molde para a colocação de uma peça em bronze 
 
 export const AdelinoMoreira_MestreSaul: Obra = {
     ID: 1166,
-    Imagem: 'AdelinoMoreira_MestreSaul.jpg',
-    Artistas: [artistas.MestreSaul],
+    Image: 'AdelinoMoreira_MestreSaul.jpg',
+    Autores: [artistas.MestreSaul],
     Titulo: `Adelino Moreira`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Estátua`,
     Material: `Peça em bronze`,
     Descricao: `Estátua ao compositor morador do bairro. Sentado em uma cadeira segurando um violão e apoiando a outra mão
@@ -14708,10 +14013,11 @@ export const AdelinoMoreira_MestreSaul: Obra = {
 
 export const Marco7daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     ID: 1168,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco 7 da Fazenda Imperial de Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Marco que limitava a Estrada Real de Santa Cruz, antigo Caminho dos Jesuítas, no percurso de onze léguas entre o Morro do Castelo e o Palácio Imperial de Santa Cruz, antiga Fazenda dos Jesuítas, hoje sede do Batalhão Villagran Cabrita.`,
@@ -14723,10 +14029,11 @@ export const Marco7daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
 
 export const CaisdosPescadoresPierdaPraiadeSaoBento_Desconhecida: Obra = {
     ID: 1169,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cais dos Pescadores, Píer da Praia de São Bento`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Concreto armado`,
     Descricao: `Inaugurado em 1930 em madeira, Foi reinaugurado em 27 de setembro de 1999 em concreto.`,
@@ -14738,10 +14045,11 @@ export const CaisdosPescadoresPierdaPraiadeSaoBento_Desconhecida: Obra = {
 
 export const MarcoMaconico_AlbertoNunesBorges: Obra = {
     ID: 1170,
-    Artistas: [artistas.AlbertoNunesBorges],
+    Autores: [artistas.AlbertoNunesBorges],
     Titulo: `Marco Maçônico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Pirâmide em granito preto polido sobre três tubos de ferro, com o compasso, o esquadro e a letra G, elementos tradicionais da simbologia maçônica.`,
@@ -14753,10 +14061,11 @@ export const MarcoMaconico_AlbertoNunesBorges: Obra = {
 
 export const TorreaodePedra_Desconhecida: Obra = {
     ID: 1171,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Torreão de Pedra`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em argamassa revestido com pó de granito`,
     Descricao: `Remanescente de um par de torreões ( torres largas) erguidos junto ao mar.`,
@@ -14768,11 +14077,12 @@ export const TorreaodePedra_Desconhecida: Obra = {
 
 export const Aviao_Desconhecida: Obra = {
     ID: 1172,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Avião`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em metal`,
     Descricao: `Em 1969 foi instalado na praça um avião F8 Glaster Meteor. Com a sua deterioração, pela longa exposição às intempéries, foi ele substituído por uma réplica do AMX-A1 da Força Aérea Brasileira, com 2/3 do tamanho original, construído na Escola de Engenharia da Aeronáutica ereinaugurado em 15 de outubro de 1999.`,
     Execucao: true,
@@ -14783,10 +14093,11 @@ export const Aviao_Desconhecida: Obra = {
 
 export const RelogiodaCacuia_Desconhecida: Obra = {
     ID: 1173,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Relógio da Cacuia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em concreto com estrutura de metal`,
     Descricao: `O primeiro relógio do Cacuia, foi inaugurado em 1965, por ocasião das festividades do IV Centenário do Rio de Janeiro,pelo comercio local, Lios Clube, COMIC e Administração Regional.Devido a desgastes naturais e falta de conservação, no ano de 1971, uma nova peça foi instalada no local, quando a altura da coluna foi elevada mais um pouco, conservando-se no entanto, todo o aspecto original do relógio. Devido as obras do Rio Cidade Cacuia ele foi deslocado cerca de 10 metros permanecendo o seu desenho original.
@@ -14799,10 +14110,11 @@ Em reportagem feita pelo O Globo Ilha, em 1992, foi levantada a hipótese de o p
 
 export const CoretodaPracaMangueta_ImobiliariaJardimCarioca: Obra = {
     ID: 1174,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça Manguetá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto com estrutura de madeira`,
     Descricao: `Imobiliaria Jardim Carioca - Coreto octogonal, com pilares de concreto e cobertura em madeira revestida por chapas de metal e guarda corpo de concreto. Inicialmente servia como um mirante para a Baia da Guanabara. Sem o tradicional embasamento é um dos maiores da Cidade em área livre interna.`,
@@ -14814,10 +14126,11 @@ export const CoretodaPracaMangueta_ImobiliariaJardimCarioca: Obra = {
 
 export const CanhaodaPontadoTiro_Desconhecida: Obra = {
     ID: 1177,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Canhão da Ponta do Tiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em ferro fundido e bronze`,
     Descricao: `O canhão foi instalado por iniciativa do Major Dias Jacaré, atendendo um pedido da filha, que era professora primária e queria que os alunos das escolas da Ilha tivessem onde comemorar as datas cívicas, na década de 1920. Em frente ao canhão foi colocado um mastro para o hasteamento da bandeira nacional durante as solenidades.
@@ -14830,10 +14143,11 @@ export const CanhaodaPontadoTiro_Desconhecida: Obra = {
 
 export const PaineldaPracaTresPoderes_RonaldoBenevello: Obra = {
     ID: 1176,
-    Artistas: [artistas.RonaldoBenevello],
+    Autores: [artistas.RonaldoBenevello],
     Titulo: `Painel da Praça Três Poderes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Peças de azulejos`,
     Descricao: `Painel de azulejos coloridos decorando a empena do imóvel vizinho ao Chafariz.`,
@@ -14845,11 +14159,12 @@ export const PaineldaPracaTresPoderes_RonaldoBenevello: Obra = {
 
 export const PapaiNoel_Desconhecida: Obra = {
     ID: 1175,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Papai Noel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em concreto com imagem em bronze`,
     Descricao: `Foi inaugurado no Largo da Carioca, e transferido para a atual localização em 25 de dezembro de 1976, por decorrencia das obras do Metrô.`,
     Execucao: true,
@@ -14860,11 +14175,12 @@ export const PapaiNoel_Desconhecida: Obra = {
 
 export const Gato_MaracajaPedradaOnca_MiguelPastor: Obra = {
     ID: 1182,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Gato-Maracajá, Pedra da Onça`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em argamassa armada policromada`,
     Descricao: `A primeira escultura para representar uma lenda local foi criada por Galdino Guttmann, inaugurado na década de 1920 e substituída pela atual em 20 de fevereiro de 1965.`,
     Execucao: true,
@@ -14875,11 +14191,12 @@ export const Gato_MaracajaPedradaOnca_MiguelPastor: Obra = {
 
 export const Iemanja_Desconhecida: Obra = {
     ID: 1180,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Iemanjá da Ilha do Governador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em resina policromada`,
     Descricao: `Em 1976 foi instalada a primeira imagem com cerca de cinquenta centimentos, sendo substituída por esta no
     inicio dos anos de 1990.
@@ -14896,11 +14213,12 @@ Imagem de Iemanjá numa pequena capelinha de concreto. erguida sobre uma pedra d
 
 export const ProntidaodaEscoladoComandoMaiordoExercito_PauloPires_PauloSantos: Obra = {
     ID: 1185,
-    Artistas: [artistas.PauloPires, artistas.PauloSantos],
+    Autores: [artistas.PauloPires, artistas.PauloSantos],
     Titulo: `Prontidão da Escola do Comando Maior do Exército`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Par de esculturas com a figura dos Sentinelas na calçada em frente ao Comando.`,
     Execucao: true,
@@ -14911,10 +14229,11 @@ export const ProntidaodaEscoladoComandoMaiordoExercito_PauloPires_PauloSantos: O
 
 export const CaisdoJardimdeAla_AzevedoNeto: Obra = {
     ID: 1186,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Cais do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção do projeto original que se preserva até hoje.`,
@@ -14926,10 +14245,11 @@ export const CaisdoJardimdeAla_AzevedoNeto: Obra = {
 
 export const CaramanchaodoJardimdeAla_AzevedoNeto: Obra = {
     ID: 1187,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Caramanchão do Jardim de Alá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção projeto original que se preserva até hoje, como exemplo típico do paisagismo de Azevedo Neto.`,
@@ -14941,10 +14261,11 @@ export const CaramanchaodoJardimdeAla_AzevedoNeto: Obra = {
 
 export const CoretodaPracaJoseLorena_Desconhecida: Obra = {
     ID: 1188,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto da Praça José Lorena`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção semelhante ao Coreto da Praça H da Sulacap, foi construido nos meses seguinte a esse com o mesmo intuito ser um local de observação na praça com dois banheiros para o uso dos moradores.`,
@@ -14956,10 +14277,11 @@ export const CoretodaPracaJoseLorena_Desconhecida: Obra = {
 
 export const MarcopersonalidadesdeBangu_RaimundoRodrigues: Obra = {
     ID: 1189,
-    Artistas: [artistas.RaimundoRodrigues],
+    Autores: [artistas.RaimundoRodrigues],
     Titulo: `Marco Histórico de Bangú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto com estrutura de metal`,
     Descricao: `O marco foi uma iniciativa da Associação Cultura de Estudos Contemporâneos - ACEC.
@@ -14972,10 +14294,11 @@ São seis monolitico com base de tijolo cerâmicos com um metro de altura, onde 
 
 export const CaramanchaodaPracaManuelMadruga_Desconhecida: Obra = {
     ID: 1183,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Caramanchão da Praça  Manuel Madruga`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Caramanchão`,
     Material: `Peça em concreto armado`,
     Descricao: `Inaugurado provavelmente durante a urbanização da praça na década de 1950. elemento para ornamentação do logradouro.`,
@@ -14987,11 +14310,12 @@ export const CaramanchaodaPracaManuelMadruga_Desconhecida: Obra = {
 
 export const AroldoMelodia_EdgarDuvivier: Obra = {
     ID: 1191,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Aroldo Melodia`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `O busto foi instalado em frente à Escola de Samba da Ilha do Governador, por solicitação da familia, por ter o sambista dedicado sua vida ao samba.`,
     Execucao: true,
@@ -15002,11 +14326,12 @@ export const AroldoMelodia_EdgarDuvivier: Obra = {
 
 export const ManuelBandeira_CelsoAntonio: Obra = {
     ID: 1193,
-    Artistas: [artistas.CelsoAntonio],
+    Autores: [artistas.CelsoAntonio],
     Titulo: `Manuel Bandeira`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `O busto em bronze de Manoel Bandeira foi fundido no ano 2000, a partir do gesso original, por solicitação do Prefeito Luís Paulo Conde. Esteve no depósito municipal até 2011, quando foi instalado no parque que recebe seu nome.`,
     Execucao: true,
@@ -15017,10 +14342,11 @@ export const ManuelBandeira_CelsoAntonio: Obra = {
 
 export const ChafarizMarcodaIlhadoGovernador_PaulodeSouzaPires: Obra = {
     ID: 1197,
-    Artistas: [artistas.PaulodeSouzaPires],
+    Autores: [artistas.PaulodeSouzaPires],
     Titulo: `Chafariz Marco da Ilha do Governador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por tijolo de vidros`,
     Descricao: `Construção em blocos escalonados de concreto, revestida completamente por tijolos de vidro, por onde escorre a água que sai do bloco superior.
@@ -15033,14 +14359,14 @@ Desativado desde o ano 2015.`,
 
 export const BiquinhadaPraiadaBica_DepartamentodeParqueseJardins: Obra = {
     ID: 1199,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Biquinha da Praia da Bica`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por azulejo`,
-    Descricao: `Departamento de Parques eJ ardins - Antiga fonte natural, em terreno da Prefeitura, que formava uma piscina, tendo a parede do fundo revestida de azulejos.  Em 2014 a bacia foi aterrada, restando em exposição o painel de azulejo e a água deslocada para uma escultura ali próxima instalada.`,
-
+    Descricao: `Departamento de Parques eJ ardins - Antiga fonte natural, em terreno da Prefeitura, que formava uma piscina, tendo a parede do fundo revestida de azulejos. Em 2014 a bacia foi aterrada, restando em exposição o painel de azulejo e a água deslocada para uma escultura ali próxima instalada.`,
     Execucao: true,
     DataInauguracao: `01/1981`,
     Latitude: `-22.8187581`,
@@ -15049,15 +14375,15 @@ export const BiquinhadaPraiadaBica_DepartamentodeParqueseJardins: Obra = {
 
 export const ChafarizMulhercomCantil_Desconhecida: Obra = {
     ID: 1200,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz Mulher com Cantil`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido`,
     Descricao: `Escultura de uma figura feminina que sustenta em seu ombro uma ânfora, de onde a
     água cai sobre bacia de ferro. A ágau do Chafariz é uma fonte natural.`,
-
     Execucao: true,
     DataInauguracao: `12/2014`,
     Latitude: `-22.8187581`,
@@ -15066,14 +14392,14 @@ export const ChafarizMulhercomCantil_Desconhecida: Obra = {
 
 export const BicadaÂnfora_Desconhecida: Obra = {
     ID: 1201,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica da Ânfora`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro pintado`,
     Descricao: `Vaso em ferro fundido de onde sai água, reprodução de uma peça das fundições do Val d&rsquo;Osne.`,
-
     Execucao: true,
     DataInauguracao: `12/2014`,
     Latitude: `-22.8187581`,
@@ -15082,14 +14408,14 @@ export const BicadaÂnfora_Desconhecida: Obra = {
 
 export const BicadaÂnforadaPraiadaBica_Desconhecida: Obra = {
     ID: 1202,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica da Ânfora da Praia da Bica`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro pintado`,
     Descricao: `Vaso em ferro fundido de onde sai a água. da fnte original situada no lote em frente a praia.`,
-
     Execucao: true,
     DataInauguracao: `12/2014`,
     Latitude: `-22.8187581`,
@@ -15098,15 +14424,15 @@ export const BicadaÂnforadaPraiadaBica_Desconhecida: Obra = {
 
 export const ChafarizdaPracaIaiaGarcia_AzevedoNeto: Obra = {
     ID: 1203,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Chafariz da Praça Iaiá Garcia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `O Chafariz originalmente possuia um lampadario multicolorido na bacia superior. de onde saia a agua para as duas bacias inferiores. De concreto e coluna central, tem a forma circular e diametros variaveis. Era revestido originalmente em marmorite avermelhado.
 Esta desativado desde o ano de 2009.`,
-
     Execucao: true,
     DataInauguracao: `07/1939`,
     Latitude: `-22.8251999`,
@@ -15115,16 +14441,16 @@ Esta desativado desde o ano de 2009.`,
 
 export const IemanjadoPosto1daBarradaTijuca_GilsonNascimento: Obra = {
     ID: 1204,
-    Artistas: [artistas.GilsonNascimento],
+    Autores: [artistas.GilsonNascimento],
     Titulo: `Iemanjá do Posto 1 da Barra da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em concreto`,
     Descricao: `A imagem de Iemanja original no Pier da Barra foi inaugurada em 1973. Em 2012 sofreu varias depredações sendo destruida. Em 2015, partir da indignação dos representantes da Associação de Pescadores da Barra da Tijuca PELABATA e em função do ato de vandalismo, uma nova imagem foi instalada no quebra-mar do Posto 01 da Avenida do Pepê.
 A nova imagem de tamanho natural pretende restabelecer de forma apropriada o espaço de louvação dos pescadores da região à sua protetora.
 O Projeto da instalação dessa segunda imagem foi consagrada no Prêmio Ações Locais Edição Rio450 que reconheceu o Projeto Yemonjá - Louvando a Rainha do Mar - enquanto uma ação local que representa a contribuição dos povos tradicionais da pesca e matriz africana, para a valorização das manifestações culturais no Município e Estado do Rio de Janeiro.`,
-
     Execucao: true,
     DataInauguracao: `03/2016`,
     Latitude: `-23.0142432`,
@@ -15133,14 +14459,14 @@ O Projeto da instalação dessa segunda imagem foi consagrada no Prêmio Ações
 
 export const MarcodaCacuia_PontualArquitetura: Obra = {
     ID: 1178,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Cacuia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto revestido por granito com uma estrutura tubular de ferro`,
     Descricao: `Pontual Arquitetura - Marco composto por três blocos verticais de granito polido, unidos por uma estrutura tubular.< formando no espaço um único conjunto.`,
-
     Execucao: true,
     DataInauguracao: `01/2007`,
     Latitude: `-22.810892`,
@@ -15149,11 +14475,12 @@ export const MarcodaCacuia_PontualArquitetura: Obra = {
 
 export const RenatoRusso_Ique: Obra = {
     ID: 1190,
-    Artistas: [artistas.Ique],
+    Autores: [artistas.Ique],
     Titulo: `Renato Russo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Homenagem realizada pela prefeitura, atendendo a pedido dos seus admiradores da Lona Cultural do Renato Russo e pelo presidente da CEDAE Wagner Victer.`,
     Execucao: true,
@@ -15164,10 +14491,11 @@ export const RenatoRusso_Ique: Obra = {
 
 export const MarcodoCocota_PontualArquitetura: Obra = {
     ID: 1179,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Cocotá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto revestido por granito com uma estrutura tubular de ferro`,
     Descricao: `Pontual Arquitetura - Marco composto por três blocos verticais de granito polido, unidos por uma estrutura tubular de aço, formando no espaço um único conjunto.`,
@@ -15179,15 +14507,15 @@ export const MarcodoCocota_PontualArquitetura: Obra = {
 
 export const BancoRecantodasDuasBicas_Desconhecida: Obra = {
     ID: 1209,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco Recanto das Duas Bicas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Bloco de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Construção avançada na contenção da encosta onde foi instalada uma pequena mesa e bancos de concreto.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9718999`,
@@ -15196,11 +14524,12 @@ Construção avançada na contenção da encosta onde foi instalada uma pequena 
 
 export const OratorioaSaoSilvestre_Desconhecida: Obra = {
     ID: 1207,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Silvestre`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `oratório`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Oratório`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Pequena capela com um unico altar, revestida de cerâmica vermelha e pintura branca.Construida para servir como uma capela pelo Monsenhor Massa, o bispo de Rio Negro, e considerada um oratorio devido as suas dimensões.`,
@@ -15212,10 +14541,11 @@ Pequena capela com um unico altar, revestida de cerâmica vermelha e pintura bra
 
 export const Guarda_corpodoPenhascoCristoRedentor_Desconhecida: Obra = {
     ID: 1206,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo do Penhasco Cristo Redentor`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15228,10 +14558,11 @@ export const Guarda_corpodoPenhascoCristoRedentor_Desconhecida: Obra = {
 
 export const Guarda_corpodaVistaChinesa_Desconhecida: Obra = {
     ID: 1211,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo  da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15244,10 +14575,11 @@ Construido no anos de 1940acima do muro de contenção do entorno do coreto, tem
 
 export const CoretodaVistaChinesa_PauloVillon: Obra = {
     ID: 1210,
-    Artistas: [artistas.PauloVillon],
+    Autores: [artistas.PauloVillon],
     Titulo: `Coreto da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15262,10 +14594,11 @@ Essa construção reproduz um monumento memorial da Índia e de outras regiões 
 
 export const FradesdasTresBicas_Desconhecida: Obra = {
     ID: 1213,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Frades das Três Bicas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca
@@ -15280,11 +14613,12 @@ São peças esculpidas em bloco maciço.`,
 
 export const MesadoImperador_Desconhecida: Obra = {
     ID: 1214,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mesa do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Bloco de gnaisse`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Situada a uma altitude de 487m, a Mesa do Imperador é composta por uma por uma mesa e dois bancos de granito Esse local foi assim denominado por ter sido o local de refeições de D Pedro II quando fazia suas excursões a Tijuca.
@@ -15297,10 +14631,11 @@ Construída pelo prefeito Pereira Passos no mesmo local onde havia, no século X
 
 export const AmuradadaMesadoImperador_Desconhecida: Obra = {
     ID: 1215,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Mesa do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Bloco de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15313,10 +14648,11 @@ Grande murada de contenção abaixo e acima do plato onde esta situada a Mesa do
 
 export const Guarda_corpoIdaMesadoImperador_Desconhecida: Obra = {
     ID: 1216,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo I da Mesa do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Metal em ferro fundido e colunas de gnaisse`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15329,10 +14665,11 @@ Guarda-corpo composto por colunas e parapeito de gnaisse, intercalado com balaú
 
 export const Guarda_corpoIIdaMesadoImperador_Desconhecida: Obra = {
     ID: 1217,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo II da Mesa do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Blocos de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15345,10 +14682,11 @@ Guarda-corpo composto em blocos para a proteção da encosta do mirante.`,
 
 export const FradesIIdaMesadaImperador_Desconhecida: Obra = {
     ID: 1219,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Frades II da Mesa da Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15361,10 +14699,11 @@ Bloco maciço esculpido.`,
 
 export const PortaoMonumentaldaFlorestadaTijuca_WladimirAlvesdeSouza: Obra = {
     ID: 1222,
-    Artistas: [artistas.WladimirAlvesdeSouza],
+    Autores: [artistas.WladimirAlvesdeSouza],
     Titulo: `Portão Monumental da Floresta da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Metal em ferro fundido e colunas de argamassa e tijolo`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15377,15 +14716,15 @@ Portão de ferro apoiado em colunas de alvenaria argamassada, com o nome do loca
 
 export const FradesIdaMesadoImperador_Desconhecida: Obra = {
     ID: 1218,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Frades I da Mesa do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Frades esculpidos em gnaisse.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9705364`,
@@ -15394,10 +14733,11 @@ Frades esculpidos em gnaisse.`,
 
 export const PontedeJobdeAlcantara_JobdeAlcantara: Obra = {
     ID: 1223,
-    Artistas: [artistas.JobdeAlcântara],
+    Autores: [artistas.JobdeAlcântara],
     Titulo: `Ponte de Job de Alcântara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15412,11 +14752,12 @@ Na Cascatinha, Taunay e o engenheiro Joel de Alcântara construíram uma ponte d
 
 export const PaineldoMapadaFlorestadaTijuca_RSilva: Obra = {
     ID: 1224,
-    Artistas: [artistas.RSilva],
+    Autores: [artistas.RSilva],
     Titulo: `Painel do Mapa da Floresta da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'sublimidade',
-    TipologiaObra: `mosaico`,
+    Categoria: 'Sublimidade',
+    TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Paínel de azulejos, em estilo de azulejaria portuguesa<com o mapa da Floresta Tijuca, com destaque para suas principais estradas e seus mais conhecidos recantos, fixada em um murada emalvenaria revestida em pedra.`,
@@ -15428,11 +14769,12 @@ Paínel de azulejos, em estilo de azulejaria portuguesa<com o mapa da Floresta T
 
 export const FontedoLargodaCascatinha_Desconhecida: Obra = {
     ID: 1225,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Largo da Cascatinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Fonte composta por um mural, onde está instalado um painel de azulejaria com o mapa da Floresta, que despeja agua em uma bacia esculpida em mármore de Carrara. Antiga banheira, tida como do século XIX, lavrada com motivos florais e efígie de sátiros. Provavelmente proveniente de antigas construções, demolidas para abrir passagem para a construção da Avenida Presidente Vargas.Recentemente foi inserida uma  cara de leão de cimento, descaracterizando o conjunto, como em outras fontes do parque.`,
@@ -15444,10 +14786,11 @@ Fonte composta por um mural, onde está instalado um painel de azulejaria com o 
 
 export const BancodoLargodaCascatinha_RaymundodeCastroMaia: Obra = {
     ID: 1226,
-    Artistas: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundodeCastroMaia],
     Titulo: `Banco do Largo da Cascatinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Peça em argamassa e azulejos`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15460,10 +14803,11 @@ Bancos em forma de grande poltronas revestido de azulejos.`,
 
 export const MarcodoRecantodosPintores_Desconhecida: Obra = {
     ID: 1227,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Recanto dos Pintores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15476,11 +14820,12 @@ Bloco está fixada uma placa em bronze relativa ao local. Foi inaugurado em come
 
 export const BaciadoCentrodosVisitantes_Desconhecimento: Obra = {
     ID: 1229,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bacia  do Centro dos Visitantes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Banheira com efígie de um sátiro, provavelmente proveniente de antigas construções, demolidas para abrir passagem para a construção da ampla Av. Presidente Vargas. Provavelmente foi instalada nesse local apos a abertura do Centro dos Visitantes.`,
@@ -15492,10 +14837,11 @@ Banheira com efígie de um sátiro, provavelmente proveniente de antigas constru
 
 export const PontedaCapelaMayrink_Desconhecida: Obra = {
     ID: 1230,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte da Capela Mayrink`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15508,10 +14854,11 @@ Pequena ponte para a travessia dos pedestres sobre o rio.`,
 
 export const CampanariodaCapelaMayrink_WladimirAlvesdeSousa: Obra = {
     ID: 1231,
-    Artistas: [artistas.WladimirAlvesdeSousa],
+    Autores: [artistas.WladimirAlvesdeSousa],
     Titulo: `Campanário da Capela Mayrink`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de tijolo com argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15524,10 +14871,11 @@ Campanário com sino em bronze. Foi edificado na época da reforma na Capela May
 
 export const BancodoJardimdaCapelaMayrink_RaymundodeCastroMaia: Obra = {
     ID: 1232,
-    Artistas: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundodeCastroMaia],
     Titulo: `Banco do Jardim da Capela Mayrink`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Peça em argamassa e azulejos`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15540,10 +14888,11 @@ Banco revestido por um mosaico de cacos de azulejos.`,
 
 export const AmuradadoJardimdaCapelaMayrink_RaymundodeCastroMaia: Obra = {
     ID: 1233,
-    Artistas: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundodeCastroMaia],
     Titulo: `Amurada do Jardim da Capela Mayrink`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O monumento está incluido nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15556,10 +14905,11 @@ Amurada em blocos de pedra com duas escadas laterais, servindo de fundo para um 
 
 export const ObeliscodoLargodoBomRetiro_Desconhecida: Obra = {
     ID: 1234,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Obelisco do Largo do Bom Retiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15572,10 +14922,11 @@ Peça maciça esculpida com base quadrada e outra piramidal de cerca de 6 metros
 
 export const GalpaodoLargodoBomRetiro_Desconhecida: Obra = {
     ID: 1235,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Galpão do Largo do Bom Retiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `O Monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15588,10 +14939,11 @@ Construção para depósito e/ou abrigo da construção rural para depósito de 
 
 export const CruzeirodaFlorestadaTijuca_Desconhecida: Obra = {
     ID: 1236,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cruzeiro da Floresta da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cruzeiro`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15604,15 +14956,15 @@ Cruz em madeira fixada num bloco de cantaria, instalada em meados do século XIX
 
 export const MarcodaAlamedaJoaoMaggessi_Desconhecida: Obra = {
     ID: 1237,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Alameda João Maggessi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Placa em bronze com o nome do logradouro, fixada em pedestal de blocos de pedra.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.955202`,
@@ -15621,10 +14973,11 @@ Placa em bronze com o nome do logradouro, fixada em pedestal de blocos de pedra.
 
 export const MarcodoLagodasFadas_Desconhecida: Obra = {
     ID: 1238,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Lago das Fadas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15637,10 +14990,11 @@ Placa comemorativa de uma restauração do lago`,
 
 export const PortaodoAcudeSolidao_WladimirAlvesdeSouza: Obra = {
     ID: 1239,
-    Artistas: [artistas.WladimirAlvesdeSouza],
+    Autores: [artistas.WladimirAlvesdeSouza],
     Titulo: `Portão do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Portão`,
     Material: `Tijolo com argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15654,9 +15008,10 @@ Portão de ferro entre colunas de alvenaria argamassada, encimadas por estátuas
 export const ÍndiadoAcudeSolidao_JulesSalmson: Obra = {
     ID: 1241,
     Titulo: `Índia do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em ferro fundido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre
     a Prefeitura do Rio de Janeiro e o IBAMA desde 22 de março de 2001.
@@ -15682,10 +15037,11 @@ do portão.`,
 
 export const GradildoAcudeSolidao_Desconhecida: Obra = {
     ID: 1242,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gradil do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gradil`,
     Material: `Peça em ferro fundido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15699,10 +15055,11 @@ Foi adquirida pelo governo imperial na Companhia Barborat de Hauts Fanaux de Val
 
 export const MarcodoAcudeSolidao_Desconhecida: Obra = {
     ID: 1243,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15715,10 +15072,11 @@ Bloco de granito com inscrição comemorativa do Açude, por Burle Marx e a data
 
 export const PonteIdoAcudeSolidao_Desconhecida: Obra = {
     ID: 1244,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte I do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15731,10 +15089,11 @@ Construção em arco em concreto para a passagem do rio do lago do Açude Solid�
 
 export const PontedeMadeiradoAcudeSolidao_Desconhecida: Obra = {
     ID: 1245,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte de Madeira do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto com estrutura de madeira`,
     Descricao: `Construção em torras de árvore, apoiada em pilares de blocos de pedras.`,
@@ -15746,10 +15105,11 @@ export const PontedeMadeiradoAcudeSolidao_Desconhecida: Obra = {
 
 export const Guarda_corpodoLargodoMiranteExcelsior_Desconhecida: Obra = {
     ID: 1247,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo do Largo do Mirante Excelsior`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em concreto armado com balaustre de argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15762,10 +15122,11 @@ Construção em alvenaria e argamassa originais.`,
 
 export const EscadariadoMiranteExcelsior_Desconhecida: Obra = {
     ID: 1246,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Escadaria do Mirante Excelsior`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Escadaria`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Degraus escavados na rocha, ladeados por corrimão constituído por grossas correntes de ferro, para a visita do Rei Alberto da Bélgica ao Pico da Tijuca, quando de sua famosa viagem ao Brasil.
@@ -15778,10 +15139,11 @@ Este pico é o ponto mais alto do Parque Nacional da Tijuca, com 1022 metros de 
 
 export const PontedoRiodasAlmas_Desconhecida: Obra = {
     ID: 1248,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte do Rio das Almas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15794,10 +15156,11 @@ Construção em estrutura metálica e concreto, apoiada em pilares em blocos de 
 
 export const PontePensildaFlorestadaTijuca_Desconhecida: Obra = {
     ID: 1249,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte Pênsil da Floresta da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça de Madeira`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15810,15 +15173,15 @@ Ponte em madeira, com 27 metros de extensão sobre o Rio Humaitá, na trilha con
 
 export const MarcodaPedraBonita_Desconhecida: Obra = {
     ID: 1250,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Pedra Bonita`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `O monumento está incluiído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Placa em bronze comemorativa da construção da estrada.`,
-
     Execucao: true,
     DataInauguracao: `11/1949`,
     Latitude: `-22.9791671`,
@@ -15827,15 +15190,15 @@ Placa em bronze comemorativa da construção da estrada.`,
 
 export const BancodePedradaEstradadoJoa_Desconhecida: Obra = {
     ID: 1251,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco de Pedra da Estrada do Joá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Banco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Elemento decorativo em blocos de granito, ao longo do muro de contenção da estrada.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-23.0057938`,
@@ -15844,7 +15207,7 @@ Elemento decorativo em blocos de granito, ao longo do muro de contenção da est
 
 export const Modulo13_AscanioMMM: Obra = {
     ID: 134,
-    Artistas: [artistas.AscanioMMM],
+    Autores: [artistas.AscanioMMM],
     Titulo: `Modulo 1.3`,
     Material: 'alumínio pintado',
     DataInauguracao: '1982',
@@ -15856,7 +15219,7 @@ export const Modulo13_AscanioMMM: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
     Temporalidade: 'permanente',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artística',
     Tipologia: 'escultura',
@@ -15865,15 +15228,15 @@ export const Modulo13_AscanioMMM: Obra = {
 
 export const FradesdaEstradadasCanoas_Desconhecida: Obra = {
     ID: 1252,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Frades  da Estrada das Canoas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de gnaisse esculpido circular`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Par de frades esculpidos.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9886199`,
@@ -15882,15 +15245,15 @@ Par de frades esculpidos.`,
 
 export const MarcoRodoviarioEstradadoJoaI_Desconhecida: Obra = {
     ID: 1253,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário Estrada do Joá I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relacão devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-23.0079623`,
@@ -15899,10 +15262,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MarcoRodoviarioEstradadoJoaII_Desconhecida: Obra = {
     ID: 1254,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário Estrada do Joá II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Frade`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15915,10 +15279,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MarcoRodoviariodaEstradadasPaineiras_Desconhecida: Obra = {
     ID: 1255,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada das Paineiras`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relacão devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15931,10 +15296,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MarcoRodoviarioIdaEstradadaVistaChinesa_Desconhecida: Obra = {
     ID: 1256,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário I da Estrada da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -15947,10 +15313,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MarcoRodoviariodaRuaUranos_Desconhecida: Obra = {
     ID: 1257,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Rua Uranos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -15963,10 +15330,11 @@ Esse marco marcava as distancias da Estrada Rio Petrópolis.`,
 
 export const MarcoRodoviariodePadreMiguel_Desconhecida: Obra = {
     ID: 1258,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário de Padre Miguel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -15978,10 +15346,11 @@ export const MarcoRodoviariodePadreMiguel_Desconhecida: Obra = {
 
 export const MarcoRodoviariodoCampodeMarte_Desconhecida: Obra = {
     ID: 1259,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário do  Campo de Marte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -15993,10 +15362,11 @@ export const MarcoRodoviariodoCampodeMarte_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIdaAvenidaCesariodeMelo_Desconhecida: Obra = {
     ID: 1260,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário I da Avenida Cesário de Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16008,10 +15378,11 @@ export const MarcoRodoviarioIdaAvenidaCesariodeMelo_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaAvenidaJoaquimMagalhaes_Desconhecida: Obra = {
     ID: 1261,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Avenida Joaquim Magalhães`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -16024,10 +15395,11 @@ Esse marco marcava as distâncias da Estrada Rio-São Paulo`,
 
 export const MarcoRodoviariodoLargodaMaconaria_Desconhecida: Obra = {
     ID: 1262,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário do Largo da Maçonaria`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16039,10 +15411,11 @@ export const MarcoRodoviariodoLargodaMaconaria_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIIdaAvenidaCesariodeMelo_Desconhecida: Obra = {
     ID: 1263,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário II da  Avenida Cesário de Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -16055,10 +15428,11 @@ Esse marco marcava as distâncias da Estrada Rio-São Paulo`,
 
 export const MarcoRodoviarioIIIdeAvenidaCesariodeMelo_Desconhecida: Obra = {
     ID: 1264,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário III de Avenida Cesário de Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -16071,10 +15445,11 @@ Esse marco marcava as distâncias do antigo trecho da Estrada Real de Santa Cruz
 
 export const MarcoRodoviariodaAvenidaArturRios_Desconhecida: Obra = {
     ID: 1265,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Avenida Artur Rios`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16086,10 +15461,11 @@ export const MarcoRodoviariodaAvenidaArturRios_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaEstradadoMatoAltoI_Desconhecida: Obra = {
     ID: 1266,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da  Estrada do Mato Alto I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16101,10 +15477,11 @@ export const MarcoRodoviariodaEstradadoMatoAltoI_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaEstradadoMatoAltoII_Desconhecida: Obra = {
     ID: 1267,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada do Mato Alto II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16116,10 +15493,11 @@ export const MarcoRodoviariodaEstradadoMatoAltoII_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaEstradadoMatoAltoIII_Desconhecida: Obra = {
     ID: 1268,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada do Mato Alto III`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16131,10 +15509,11 @@ export const MarcoRodoviariodaEstradadoMatoAltoIII_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaEstradadoCabucu_Desconhecida: Obra = {
     ID: 1269,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da  Estrada do Cabuçu`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16146,10 +15525,11 @@ export const MarcoRodoviariodaEstradadoCabucu_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIdaEstradadeSepetiba_Desconhecida: Obra = {
     ID: 1270,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário I da Estrada de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16161,10 +15541,11 @@ export const MarcoRodoviarioIdaEstradadeSepetiba_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIIdaEstradadeSepetiba_Desconhecida: Obra = {
     ID: 1271,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário II da Estrada de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16176,10 +15557,11 @@ export const MarcoRodoviarioIIdaEstradadeSepetiba_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIIIdaEstradadeSepetiba_Desconhecida: Obra = {
     ID: 1272,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário III da Estrada de Sepetiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16191,10 +15573,11 @@ export const MarcoRodoviarioIIIdaEstradadeSepetiba_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIdaEstradadaMatriz_Desconhecida: Obra = {
     ID: 1273,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário I da Estrada da Matriz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16206,10 +15589,11 @@ export const MarcoRodoviarioIdaEstradadaMatriz_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIIdaEstradadaMatriz_Desconhecida: Obra = {
     ID: 1275,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário II da Estrada da Matriz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16221,10 +15605,11 @@ export const MarcoRodoviarioIIdaEstradadaMatriz_Desconhecida: Obra = {
 
 export const MarcoRodoviarioEstradaVelhadeBarradeGuaratiba_Desconhecida: Obra = {
     ID: 1276,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário  Estrada Velha de Barra de Guaratiba`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16236,10 +15621,11 @@ export const MarcoRodoviarioEstradaVelhadeBarradeGuaratiba_Desconhecida: Obra = 
 
 export const MarcoRodoviariodaEstradadoMorroCavado_Desconhecida: Obra = {
     ID: 1277,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada do Morro Cavado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -16251,10 +15637,11 @@ export const MarcoRodoviariodaEstradadoMorroCavado_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIIdaEstradadaVistaChinesa_Desconhecida: Obra = {
     ID: 1278,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário II da Estrada da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16267,10 +15654,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MarcoRodoviarioIIIdaEstradadaVistaChinesa_Desconhecida: Obra = {
     ID: 1279,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário III da Estrada da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16283,10 +15671,11 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const BicadoCazuza_Desconhecida: Obra = {
     ID: 1280,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Bica do Cazuza`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro pintado`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16299,10 +15688,11 @@ Ducha natural onde foram instalados barras para o uso e rampas para o uso de pes
 
 export const LagodoQuebra_CachoeiradoHorto__Desconhecida: Obra = {
     ID: 1281,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lago do Quebra (Cachoeira do Horto)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O monumento estaá incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16315,10 +15705,11 @@ Lago criado a partir do represamento realizado em blocos de pedra.`,
 
 export const CascatadoQuebra_CachoeiradoHorto__Desconhecida: Obra = {
     ID: 1282,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cascata  do Quebra (Cachoeira do Horto)`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16331,10 +15722,11 @@ Cascata formada por pedras e concreto com degraus horizontais, redesenhando a qu
 
 export const FontedasDuasBicas_Desconhecida: Obra = {
     ID: 1283,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte das Duas Bicas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16347,10 +15739,11 @@ Blocos de pedra que formam um pequeno reservatório que abastece e direcionam a 
 
 export const FonteMedusadaVistaChinesa_Desconhecida: Obra = {
     ID: 1284,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte Medusa da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16363,10 +15756,11 @@ Foi instalada inicialmente no trecho da curva em frente a da Vista Chinesa, a pe
 
 export const FontedasTresBicas_Desconhecida: Obra = {
     ID: 1285,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte das Três Bicas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Blocos de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16379,10 +15773,11 @@ Blocos de pedra que formam um pequeno reservatório que abastece e direcionam a 
 
 export const FontedoImperador_Desconhecida: Obra = {
     ID: 1286,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Imperador`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16395,10 +15790,11 @@ Pequena fonte revestida por blocos de pedra, próxima à Mesa do Imperador.`,
 
 export const FontedePedraIdoParqueNacionaldaTijuca_Desconhecida: Obra = {
     ID: 1288,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte de Pedra I do Parque Nacional da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de granito esculpido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16411,10 +15807,11 @@ Fonte de água natural confeccionada em blocos de pedra.`,
 
 export const FontedePedraIIdoParqueNacionaldaTijuca_Desconhecida: Obra = {
     ID: 1289,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte de Pedra II do Parque Nacional da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de granito esculpido`,
     Descricao: `íO monumento está incluido nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16427,10 +15824,11 @@ Pequena construção de blocos de pedra que recolhe água de uma fonte natural.`
 
 export const PontedePedradoParqueNacionaldaTijuca_Desconhecida: Obra = {
     ID: 1290,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte de Pedra do Parque Nacional da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Blocos de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16443,10 +15841,11 @@ Construção em blocos de pedra em arco, que permite a passagem sobre o rio.`,
 
 export const FontedoVasodoParqueNacionaldaTijuca_Desconhecida: Obra = {
     ID: 1292,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Vaso  do Parque Nacional da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16459,10 +15858,11 @@ Vaso fixada em um muro.`,
 
 export const FontedeAzulejosIdaCascatinha_RaymundodeCastroMaya: Obra = {
     ID: 1293,
-    Artistas: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundodeCastroMaya],
     Titulo: `Fonte de Azulejos I da Cascatinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em concreto revestido por azulejo`,
     Descricao: `O monumento está incluido nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16475,10 +15875,11 @@ Construção de argamassa revestida por azulejos.`,
 
 export const FontedoVasodoLargodaCascatinha_Desconhecida: Obra = {
     ID: 1294,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Vaso do Largo da Cascatinha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido e mural de concreto revestido por azulejo`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16491,10 +15892,11 @@ Fonte provavelmente instalada no parque no século XIX, com painel de azulejaria
 
 export const LagodoRecantodosPintores_Desconhecida: Obra = {
     ID: 1295,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Lago do Recanto dos Pintores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Blocos de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16507,10 +15909,11 @@ Executado em blocos represenda as águas do rio, formando um pitoresco recanto.`
 
 export const LagodasFadas_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 1297,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Lago das Fadas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Seixos e lascas de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16523,10 +15926,11 @@ O Lago das Fadas, nome dado pelo Barão d&rsquo;Escragnolle, foi construído num
 
 export const FontedoLagodasFadas_WaldimirAlvesdeSouza: Obra = {
     ID: 1298,
-    Artistas: [artistas.WaldimirAlvesdeSouza],
+    Autores: [artistas.WaldimirAlvesdeSouza],
     Titulo: `Fonte do Lago das Fadas`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Monolítico de concreto revestido de azulejos`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001
@@ -16540,10 +15944,11 @@ Ha relatos que nesse lago existem resquícios da ação de AugusteFrancoisMarieG
 
 export const FonteMidosi_Desconhecida: Obra = {
     ID: 1299,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte Midosi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Monolitico de concreto revestido de azulejo`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16558,10 +15963,11 @@ Desativado em data desconhecida.`,
 
 export const FontedoLargodoBomRetiro_RaymundodeCastroMaya: Obra = {
     ID: 1300,
-    Artistas: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundodeCastroMaya],
     Titulo: `Fonte do Largo do Bom Retiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Monolitico de concreto revestido de azulejo`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16574,10 +15980,11 @@ Fonte diante de uma mureta revestida por azulejos.`,
 
 export const CascatadeRocailledaFlorestadaTijuca_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 1301,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Cascata de Rocaille da Floresta da Tijuca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cascata`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16590,10 +15997,11 @@ Pequena cascata criada em rocaille para forma a Cacheira da Baronesa.`,
 
 export const FontedoHumaita_Desconhecida: Obra = {
     ID: 1302,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Humaitá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Pecas de tijolo com argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16606,10 +16014,11 @@ Provavelmente projetada por August Auguste Francois Marie Glaziou, no período d
 
 export const FontedaHipica_Desconhecida: Obra = {
     ID: 1304,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte da Hipica`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16623,10 +16032,11 @@ Desde 2016 se verifica a inclusão de outro elemento, uma cara de leão de cimen
 
 export const LagodoAcudedaSolidao_RobertoBurleMarx: Obra = {
     ID: 1305,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Lago do Açude da Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Saibro`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16640,10 +16050,11 @@ Uma história de amor de um pai por seu filho batizou este açude. O Barão do B
 
 export const FontedoJoa_Desconhecida: Obra = {
     ID: 1306,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Joá`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Blocos de granito`,
     Descricao: `Antiga fonte natural tipo estela com uma pequena carranca em argamassa. O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -16656,11 +16067,12 @@ Fonte parietal com pequena carranca esculpida em blocos de pedra.`,
 
 export const SebastiaoLeme_EdgarDuvivier: Obra = {
     ID: 1307,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Sebastião Leme`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `O monumento esta incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Busto com a figura do homenageado.`,
@@ -16672,11 +16084,12 @@ Busto com a figura do homenageado.`,
 
 export const HeitordaSilvaCosta_EdgarDuvivier: Obra = {
     ID: 1308,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Heitor da Silva Costa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Busto com a figura do homenageado.`,
@@ -16688,11 +16101,12 @@ Busto com a figura do homenageado.`,
 
 export const AoBaraodeTaunay_CurzioZani: Obra = {
     ID: 1309,
-    Artistas: [artistas.CurzioZani],
+    Autores: [artistas.CurzioZani],
     Titulo: `Ao Barão de Taunay`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Monolitico de concreto revestido de azulejo`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Homenagem ao Barão de Taunay, antigo morador do lugar, Na face fronteira à cascata, sob um retrato de Taunay, em cor azul, lê-se: Félix Emilio Taunay (1795  1881). Decorada com azulejaria contendo
@@ -16706,11 +16120,12 @@ registram alterações na sua base.`,
 
 export const MercedesBaptista_MarcioPintanguy: Obra = {
     ID: 1311,
-    Artistas: [artistas.MarcioPintanguy],
+    Autores: [artistas.MarcioPintanguy],
     Titulo: `Mercedes Baptista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Escultura doada à Cidade pela curadora do acervo de Mercedes, Sra Ruth S. Santos. A peça na pátina natural foi assim idealizada pelo artista para caracterizar a filha do Oxun.`,
     Execucao: true,
@@ -16721,10 +16136,11 @@ export const MercedesBaptista_MarcioPintanguy: Obra = {
 
 export const BancodaFontedoChororo_Desconhecida: Obra = {
     ID: 1313,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Banco da Fonte do Chororó`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Banco`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção na murada da encosta, num recanto próximo a Fonte do Chororó.`,
@@ -16734,39 +16150,14 @@ export const BancodaFontedoChororo_Desconhecida: Obra = {
     Longitude: `-43.2104137`,
 };
 
-export const BrigadeiroEduardoGomes_EdgarDuvivier: Obra = {
-    ID: 1314,
-    Imagem: 'BrigadeiroEduardoGomes_EdgarDuvivier.jpg',
-    Artistas: [artistas.EdgarDuvivier],
-    Titulo: `Brigadeiro Eduardo Gomes`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em bronze e pedestal de concreto`,
-    Descricao: `A homenagem ao brigadeiro em trajes civis, foi uma doação de alunos da Escola Superior de Guerra.`,
-    Execucao: true,
-    DataInauguracao: `26/10/1988`,
-    Zona: 'Sul',
-    Bairro: 'Flamengo',
-    PontoDeReferencia: 'Praça Pistoia, Aterro do Flamengo',
-    Latitude: `-22.9152736`,
-    Longitude: `-43.174109`,
-    Fatos: [
-        new Fato(`26/10/1988`, `26/10/1988`, 'Homenagem', 'Homenagem de uma turma da Escola Superior de Guerra', [], 'Rio de Janeiro'),
-        new Fato(`01/02/1998`, `01/02/1998`, 'Vandalismo', 'A peça foi pichada por grafiteros.', [], 'Rio de Janeiro'),
-        new Fato(`25/08/1998`, `25/08/1998`, 'Vandalismo', 'A peça foi pichada por grafiteros.', [], 'Rio de Janeiro'),
-        new Fato(``, ``, 'Fundição/Atelier', 'Zani Fundição Artística e Metalúrgica Ltda', [], 'Rio de Janeiro'),
-        new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro'),
-    ],
-};
-
 export const MarechalMascarenhasdeMorais_ElzaCasancaodeMedeiros: Obra = {
     ID: 1315,
-    Artistas: [artistas.ElzaCasancaodeMedeiros],
+    Autores: [artistas.ElzaCasancaodeMedeiros],
     Titulo: `Marechal Mascarenhas de Morais`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze com pedestal de granito`,
     Descricao: `Iniciativa do Exército Brasileiro na pessoa da doadora da obra, a Major Elza Cansanção Medeiros, conhecida enfermeira da FEB. Inaugurado na Praça Itália foi furtado por duas vezes. Na segunda réplica a Majorsolicitou a cessão de uso ao Monumento Nacional aos Mortos da II Guerra Mundial, oficializada em 2 de novembro de 2008.`,
     Execucao: true,
@@ -16777,10 +16168,11 @@ export const MarechalMascarenhasdeMorais_ElzaCasancaodeMedeiros: Obra = {
 
 export const ACarlotaMacedoSoares_Desconhecida: Obra = {
     ID: 1317,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `À Carlota Macedo Soares`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de Madeira`,
     Descricao: `Estrutura em madeira com cerca de 450 metros de extensão, recobrindo o trecho que o Rio Carioca percorre a céu aberto até desembocar na baía. Executado pela Prefeitura atraves da Fundação Rio. A obra foi executada pela Empresa Silo Engenharia Ltda com vigas pre moldades da empresa Engemoldes.
@@ -16793,10 +16185,11 @@ Realizada no ano de 2004, sem uma inauguração oficial, o deck passou a homenag
 
 export const ChafarizCascatadoMuseudeArteModerna_RobertoBurleMarx: Obra = {
     ID: 1318,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Chafariz Cascata do Museu de Arte Moderna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Inaugurado nos anos de 1960. O Chafariz é formado com três bacias escalonadas, saindo o jorro de água da bacia superior. A água transborda pelas bacias para o lago de plantas aquáticas. O Chafariz está no centro da fachada do Museu.
@@ -16807,28 +16200,13 @@ Esta desativado desde o ano de 2008.`,
     Longitude: `-43.172015`,
 };
 
-export const ChafarizdeLaminasVerticaisdoMuseudeArteModerna_RobertoBurleMarx: Obra = {
-    ID: 1319,
-    Artistas: [artistas.RobertoBurleMarx],
-    Titulo: `Chafariz de Laminas Verticais do Museu de Arte Moderna`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Chafariz`,
-    Material: `Peça em concreto com estrutura de metal`,
-    Descricao: `Inaugurado no final anos de 1960. O Chafariz é formado com três grande chapas verticais curvas em alturas diferentes, de cuja base sai o jorro vertical de água.
-Desativado no ano de 2008.`,
-    Execucao: true,
-    DataInauguracao: ``,
-    Latitude: `-22.9122404`,
-    Longitude: `-43.1719337`,
-};
-
 export const ChafarizInternodoMuseudeArteModerna_Desconhecida: Obra = {
     ID: 1320,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz Interno do Museu de Arte Moderna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto revestido por pastilha`,
     Descricao: `Chafariz proximo a rampa de acesso ao antigo restaurante do Museu, com visão no pilotis desse predio. Trata-se de um bem privado e tem seu equipamento instalado no subsolo do predio do Museu junto com os outros equipamentos eletricos.`,
@@ -16840,10 +16218,11 @@ export const ChafarizInternodoMuseudeArteModerna_Desconhecida: Obra = {
 
 export const LagosdePlantasAquaticasdoMuseudeArteModerna_RobertoBurleMarx: Obra = {
     ID: 1321,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Lagos de Plantas Aquáticas do Museu de Arte Moderna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Conjunto de grandes lagos com banquetas de plantas aquáticas, intercalados por dois Chafarizes, em frente ao Museu de Arte Moderna e outro na lateral conhecido como da Empena. Todos são intercalados formando um só conjunto.`,
@@ -16855,10 +16234,11 @@ export const LagosdePlantasAquaticasdoMuseudeArteModerna_RobertoBurleMarx: Obra 
 
 export const LagodoRestaurantedoParquedoFlamengo_RobertoBurleMarx: Obra = {
     ID: 1322,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Lago do Restaurante do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Lago com plantas aquáticas, criado para embelezamento desse trecho do parque.`,
@@ -16870,10 +16250,11 @@ export const LagodoRestaurantedoParquedoFlamengo_RobertoBurleMarx: Obra = {
 
 export const LagodeNautimodelismodoParquedoFlamengo_RobertoBurleMarx: Obra = {
     ID: 1323,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Lago de Nautimodelismo do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Lago`,
     Material: `Peça em concreto armado`,
     Descricao: `Lago retangular projetado por um grupo de nautimodelistas e membros do primeiro Distrito Naval.Na inauguração houve a demostração de veleiros organizada pela Associação de Motonáutica do Rio de Janeiro, contou com a presença do Governador interino Desembargador Martinho Garcez Neto, de Lotta de Macedo Soares.`,
@@ -16885,10 +16266,11 @@ export const LagodeNautimodelismodoParquedoFlamengo_RobertoBurleMarx: Obra = {
 
 export const CoretoEstrela_AffonsoEduardoReidy: Obra = {
     ID: 1324,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Coreto Estrela`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto armado com 80 metros quadrados, elevada um metro do solo com um apoio central que sustenta a cobertura quadrangular em laje de concreto.`,
@@ -16898,53 +16280,13 @@ export const CoretoEstrela_AffonsoEduardoReidy: Obra = {
     Longitude: `-43.1712069`,
 };
 
-export const BlocoMonolitico_HaroldoBarroso: Obra = {
-    ID: 1326,
-    Artistas: [artistas.HaroldoBarroso],
-    Titulo: `Bloco Monolítico`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Bloco de granito esculpido`,
-    Descricao: `Escultura contemporânea de granito, composta de três peças num único bloco.
-A peça esta em cessão de uso em área da Prefeitura.`,
-    Execucao: true,
-    DataInauguracao: `01/1997`,
-    Zona: 'Sul',
-    Bairro: 'Flamengo',
-    PontoDeReferencia: 'Aterro do Flamengo',
-    Latitude: `-22.9144254`,
-    Longitude: `-43.1717319`,
-    Lugar: 'Praça',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
-export const EspacoCircularEmCuboVirtual_FranzWeissmann: Obra = {
-    ID: 1327,
-    Artistas: [artistas.FranzWeissmann],
-    Titulo: `Espaço Circular em Cubo Virtual`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em aço corten`,
-    Descricao: `Peça única com quatro faces retangulares, formando um semicírculo vazado. A obra foi criada em 1958. A peça esta em cessão de uso em área da Prefeitura.`,
-    Altura: '300 cm',
-    Largura: '300 cm',
-    Profundidade: '300 cm',
-    Execucao: true,
-    DataInauguracao: `01/1978`,
-    Bairro: 'Flamengo',
-    PontoDeReferencia: 'Avenida Infante Dom Henrique, 85',
-    Latitude: `-22.9144254`,
-    Longitude: `-43.1717319`,
-};
-
 export const PassarelaPauloBittencourt_AffonsoEduardoReidy: Obra = {
     ID: 1329,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Passarela Paulo Bittencourt`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado`,
     Descricao: `Passarela para pedestres que vence o vão sobre as pistas de rolamento através de uma curva contínua.Sua estrutura, em concreto aparente e protendido, tem largura de 10 metros e extensão de 85 metros, com um vão livre de 56 metros.`,
@@ -16956,12 +16298,13 @@ export const PassarelaPauloBittencourt_AffonsoEduardoReidy: Obra = {
 
 export const Tartaruga_AngeloVenosa: Obra = {
     ID: 1330,
-    Imagem: 'Tartaruga_AngeloVenosa.jpg',
-    Artistas: [artistas.AngeloVenosa],
+    Image: 'Tartaruga_AngeloVenosa.jpg',
+    Autores: [artistas.AngeloVenosa],
     Titulo: `Tartaruga`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço corten`,
     Descricao: `Escultura em aço corten com aberturas criando uma renda na chapa.
 A peça esta em cessão de uso em área da Prefeitura.`,
@@ -16977,11 +16320,12 @@ A peça esta em cessão de uso em área da Prefeitura.`,
 
 export const JardimdePedrasdoMuseudeArteModerna_RobertoBurleMarx: Obra = {
     ID: 1331,
-    Artistas: [artistas.RobertoBurleMarx],
+    Autores: [artistas.RobertoBurleMarx],
     Titulo: `Jardim de Pedras do Museu de Arte Moderna`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Blocos de gnaisses e seixos rolados`,
     Descricao: `Blocos de gnaisse encaixados com pedras de rio. A intenção descrita é que o jardim recriasse dois mundos, o das pedras redondas, que lembram a paciência dos rios, e o dos monólitos, que retratam a arte do homem.
 O jardim no entorno do Museu de Arte Moderna foi elaborado em duas etapas entre 1955 e 1968.
@@ -16994,11 +16338,12 @@ Situado na área posterior do Museu de Arte Moderna, são áreas retangulares de
 
 export const ShitHappensconhecidacomoRolodePapel_RioRampDesign_SylvioAzevedoBrunoPiresePharraBuarque: Obra = {
     ID: 1332,
-    Artistas: [artistas.SylvioAzevedo, artistas.BrunoPires, artistas.PharraBuarque],
+    Autores: [artistas.SylvioAzevedo, artistas.BrunoPires, artistas.PharraBuarque],
     Titulo: `Shit Happens, conhecida como Rolo de Papel`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em concreto armado`,
     Descricao: `Peça criada pela empresa Rio Ramp Design especializado em projetar pistas de skate, para o evento Arte Core<strong>,  festival que engloba diversas manifestações artísticas de rua, como: grafite / street art, música e skate.
 A escultura foi doada à Cidade.`,
@@ -17010,10 +16355,11 @@ A escultura foi doada à Cidade.`,
 
 export const PontedoRestaurantedoParquedoFlamengo_Desconhecida: Obra = {
     ID: 1334,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte do Restaurante do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção de concreto em arco, para a passagem de um veículo abaixo do nível do parque.`,
@@ -17025,10 +16371,11 @@ export const PontedoRestaurantedoParquedoFlamengo_Desconhecida: Obra = {
 
 export const PassarelaFernandoMorcorvo_SidneyGomesdosSantos: Obra = {
     ID: 1335,
-    Artistas: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesdosSantos],
     Titulo: `Passarela Fernando Morcorvo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto armado de forma curva e suave com revestimento externo aparente e piso de pedra portuguesa branca na parte superior.
@@ -17041,10 +16388,11 @@ Tem cerca de 85 metros de extensão e obedece, como as outras do Parque, num arc
 
 export const PassarelaAercioSampaio_SidneyGomesdosSantos: Obra = {
     ID: 1336,
-    Artistas: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesdosSantos],
     Titulo: `Passarela Aércio Sampaio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Passarela`,
     Material: `Peça em concreto revestida de pedra portuguesa`,
     Descricao: `Construção em concreto armado de forma curva e suave com revestimento externo aparente e piso de pedra portuguesa branca na parte superior,num arco único de concreto armado. Projeto com inspiração do arquiteto Affonso Eduardo Reid<em>y.</em>`,
@@ -17056,10 +16404,11 @@ export const PassarelaAercioSampaio_SidneyGomesdosSantos: Obra = {
 
 export const PassarelaGeneralCaiadodeCastro_SidneyGomesdosSantos: Obra = {
     ID: 1337,
-    Artistas: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesdosSantos],
     Titulo: `Passarela General Caiado de Castro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Passarela`,
     Material: `Peça em concreto revestida por pedra portuguesa`,
     Descricao: `Construção em concreto armado de forma curva e suave com revestimento externo aparente e piso de pedra portuguêsa branca na parte superior,num arco único de concreto armado, com idéia do arquiteto Affonso Eduardo Reid<em>y.</em>`,
@@ -17071,10 +16420,11 @@ export const PassarelaGeneralCaiadodeCastro_SidneyGomesdosSantos: Obra = {
 
 export const PassarelaIrineuMarinho_SidneyGomesdosSantos: Obra = {
     ID: 1338,
-    Artistas: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesdosSantos],
     Titulo: `Passarela Irineu Marinho`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Passarela`,
     Material: `Peça em concreto revestida de pedra portuguesa`,
     Descricao: `Construção em concreto armado de forma curva e suave com revestimento externo aparente e piso de pedra portuguesa branca na parte superior,num arco único de concreto armado, com idéia do arquiteto Affonso Eduardo Reid<em>y.</em>`,
@@ -17086,10 +16436,11 @@ export const PassarelaIrineuMarinho_SidneyGomesdosSantos: Obra = {
 
 export const PassarelaCoronelAmericoFontinelle_Desconhecida: Obra = {
     ID: 1339,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Passarela Coronel Americo Fontinelle`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Passarela`,
     Material: `Peça em concreto revestida de pedra portuguesa`,
     Descricao: `Passarela inspirada no projeto de Reidy para o Parque do Flamengo, seguindo em linha curva e grande vão.`,
@@ -17101,10 +16452,11 @@ export const PassarelaCoronelAmericoFontinelle_Desconhecida: Obra = {
 
 export const MarcodaEco92_Desconhecida: Obra = {
     ID: 1340,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Eco 92`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito`,
     Descricao: `Bloco de granito bruto com inscrições em baixo relevo.`,
@@ -17116,10 +16468,11 @@ export const MarcodaEco92_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaPracaSantaCruz_Desconhecida: Obra = {
     ID: 1341,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Praça Santa Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -17131,10 +16484,11 @@ export const MarcoRodoviariodaPracaSantaCruz_Desconhecida: Obra = {
 
 export const ConchaAcusticadoParquedoFlamengo_AffonsoEduardoReidy: Obra = {
     ID: 1342,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Concha Acústica do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Concha acústica`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto em níveis, com um pequeno palco circular.`,
@@ -17146,10 +16500,11 @@ export const ConchaAcusticadoParquedoFlamengo_AffonsoEduardoReidy: Obra = {
 
 export const MastrodaBatalha_Desconhecida: Obra = {
     ID: 1343,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mastro da Batalha`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mastro`,
     Material: `Peça de Madeira`,
     Descricao: `Mastro de uma embarcação que participou da Batalha Naval do Riachuelo em 11 de junho de 1865. Erguido pela Marinha do Brasil em homenagem a batalha.`,
@@ -17161,10 +16516,11 @@ export const MastrodaBatalha_Desconhecida: Obra = {
 
 export const Guarda_corpodaCidadedasCriancas_Desconhecida: Obra = {
     ID: 1344,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda-corpo da Cidade das Crianças`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Amurada em blocos de cantaria de gnaisse originários da antiga Avenida Beira Mar e da Praia do Flamengo, instalada nesse espaço para segurança das crianças.`,
@@ -17176,10 +16532,11 @@ export const Guarda_corpodaCidadedasCriancas_Desconhecida: Obra = {
 
 export const LabirintodaCidadedasCriancas_CarlosWerneckdeCarvalho: Obra = {
     ID: 1345,
-    Artistas: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckdeCarvalho],
     Titulo: `Labirinto da Cidade das Crianças`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Equipamento infantil idealizado por Ethel Bauzer Medeiros. Foi inaugurado junto ao Teatro de Fantoche, com o objetivo criar nas crianças uma motivação de comunidade`,
@@ -17191,10 +16548,11 @@ export const LabirintodaCidadedasCriancas_CarlosWerneckdeCarvalho: Obra = {
 
 export const LabirintoIIdoMorrodaViuva_AffonsoEduardoReidy: Obra = {
     ID: 1346,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Labirinto II do Morro da Viúva`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Equipamento infantil idealizado por Ethel Bauzer Medeiros e projetado por Reidy.`,
@@ -17206,10 +16564,11 @@ export const LabirintoIIdoMorrodaViuva_AffonsoEduardoReidy: Obra = {
 
 export const EquilibrioIdoParquedoFlamengo_AffonsoEduardoReidy: Obra = {
     ID: 1347,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Equilíbrio I do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Idealizada por Ethel Bauzer Medeiros, foi executada em concreto, criando oportunidades recreativas infantis de subir, descer, pular e equilibrar-se.`,
@@ -17221,10 +16580,11 @@ export const EquilibrioIdoParquedoFlamengo_AffonsoEduardoReidy: Obra = {
 
 export const TeatrinhodoMorrodaViuva_MarioSophia: Obra = {
     ID: 1348,
-    Artistas: [artistas.MarioSophia],
+    Autores: [artistas.MarioSophia],
     Titulo: `Teatrinho do Morro da Viúva`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto com patamares circulares com níveis diferentes, idealizada por Ethel Bauzer Medeiros para estimular a imaginação infantil.`,
@@ -17236,10 +16596,11 @@ export const TeatrinhodoMorrodaViuva_MarioSophia: Obra = {
 
 export const PistadeAeromodelismodoParquedoFlamengo_AffonsoEduardoReidy: Obra = {
     ID: 1349,
-    Artistas: [artistas.AffonsoEduardoReidy],
+    Autores: [artistas.AffonsoEduardoReidy],
     Titulo: `Pista de Aeromodelismo do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto armado`,
     Descricao: `Circulos, um de 50 metros e outro de 40 metros de diâmetro, para a prática na modalidade de vôo circular controlado, idealizado pelo grupo de trabalho do Parque do Flamengo.`,
@@ -17251,11 +16612,12 @@ export const PistadeAeromodelismodoParquedoFlamengo_AffonsoEduardoReidy: Obra = 
 
 export const Lampadario_Poste_doParquedoFlamengo_RichardKelly: Obra = {
     ID: 1350,
-    Artistas: [artistas.RichardKelly],
+    Autores: [artistas.RichardKelly],
     Titulo: `Lampadário ( Poste) do Parque do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Lampadario`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: `Lampadário`,
     Material: `Peça em concreto`,
     Descricao: `Conjunto de monumentais postes de concreto, com 45 metros de altura e seis projetores em metal com luminárias de 1,15 m. de diâmetro.`,
     Execucao: true,
@@ -17266,11 +16628,12 @@ export const Lampadario_Poste_doParquedoFlamengo_RichardKelly: Obra = {
 
 export const EsculturadaPraiadoFlamengo_JorgedosAnjos: Obra = {
     ID: 1351,
-    Artistas: [artistas.JorgedosAnjos],
+    Autores: [artistas.JorgedosAnjos],
     Titulo: `Escultura da Praia do Flamengo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço corten`,
     Descricao: `Escultura de 5m x 7m, de ferro e pesando quatro toneladas.A escultura fez parte da exposição <em>Pedra, Ferro e Fogo</em> e doada coma escultura ao ar livre, em frente à galeria, no Parque do Flamengo  à maneira das intervenções urbanas do artista em parques e praças de Belo Horizonte.`,
     Execucao: true,
@@ -17281,10 +16644,11 @@ export const EsculturadaPraiadoFlamengo_JorgedosAnjos: Obra = {
 
 export const OratorioaSaoJorgedeRochaMiranda_Desconhecida: Obra = {
     ID: 1352,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório à São Jorge de Rocha Miranda`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Peça em metal com imagem de resina`,
     Descricao: `Instalado em frente Grêmio Social Esportivo Rocha Miranda, o oratorio se situa como no limite do bairro.`,
@@ -17296,10 +16660,11 @@ export const OratorioaSaoJorgedeRochaMiranda_Desconhecida: Obra = {
 
 export const FontedoLargodoBomRetiro_Desconhecida: Obra = {
     ID: 1353,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Largo do Bom Retiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: ``,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca, entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -17312,10 +16677,11 @@ Fonte composta por um mural recortado, revestida com cacos de azulejos com desta
 
 export const FontedoJardimdaCapelaMayrink_Desconhecida: Obra = {
     ID: 1355,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Jardim da Capela Mayrink`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `O monumento esta incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -17328,10 +16694,11 @@ Fonte composta por um mural azulejado onde esta fixada uma carrança em argamass
 
 export const MarcoRodoviarioIVdaEstradadaVistaChinesa_Desconhecida: Obra = {
     ID: 1356,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário IV da Estrada da Vista Chinesa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `O monumento está incluído nessa relacão devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -17344,11 +16711,12 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
 
 export const MoacirdeAlmeida_deposito_HonorioPecanha: Obra = {
     ID: 1357,
-    Artistas: [artistas.HonorioPecanha],
+    Autores: [artistas.HonorioPecanha],
     Titulo: `Moacir de Almeida - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `O monumento foi um projeto de Paschal Carlos Magno pelo cinquentenário do poeta. O pedeslal foi oferecido pelo prefeito Alim pedro. A homenagem foi furtada do Passeio Público no ano de 2003 e recuperado em 2004 desde então permanece guardada no depósito.`,
     Execucao: true,
@@ -17359,8 +16727,9 @@ export const MoacirdeAlmeida_deposito_HonorioPecanha: Obra = {
 
 export const MartinsFontes_Ariel: Obra = {
     ID: 1359,
-    Artistas: [artistas.Ariel],
+    Autores: [artistas.Ariel],
     Titulo: `Martins Fontes`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -17377,11 +16746,12 @@ export const MartinsFontes_Ariel: Obra = {
 
 export const AlmiranteeViscondedeInhauma_deposito_Desconhecida: Obra = {
     ID: 1360,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Almirante e Visconde de Inhaúma - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A homenagem foi uma doação da Marinha de Guerra do Brasil à cidade do Rio de Janeiro, paraadornar a área próxima ao I Distrito Naval. Inicialmente instalado na Avenida Alfredo Agache, foi transferido para o depósito em 2013 devido à demolição da Perimetral.`,
     Execucao: true,
@@ -17393,9 +16763,10 @@ export const AlmiranteeViscondedeInhauma_deposito_Desconhecida: Obra = {
 export const AtaulfodePaiva_deposito_UgoTaddei: Obra = {
     ID: 1361,
     Titulo: `Ataulfo de Paiva - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze`,
     Descricao: `Busto em bronze que se encontra no depósito da Prefeitura desde os anos de 1950.`,
     Execucao: true,
@@ -17406,10 +16777,11 @@ export const AtaulfodePaiva_deposito_UgoTaddei: Obra = {
 
 export const RelogiodoMeierII_MayerhogereToledo: Obra = {
     ID: 1363,
-    Artistas: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogereToledo],
     Titulo: `Relógio do Méier II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em resina`,
     Descricao: `Relógio fixado entre três placas em resina com a inscrição MÉIER em sentido vertical.`,
@@ -17421,11 +16793,12 @@ export const RelogiodoMeierII_MayerhogereToledo: Obra = {
 
 export const Esculapio_Desconhecida: Obra = {
     ID: 1364,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Esculápio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em mármore de Carrara`,
     Descricao: `Escultura em mármore de Carrara. Há informações de que é originária da Quinta da Boa Vista. Esteve por cessão
     de uso de 1996 a 2006 na Fundação Fiocruz. Foi devolvido à Prefeitura, permanecendo no depósito desde então.`,
@@ -17439,10 +16812,11 @@ export const Esculapio_Desconhecida: Obra = {
 
 export const VasodoParqueNoronhaSantos_EmilioGiannelli: Obra = {
     ID: 1365,
-    Artistas: [artistas.EmilioGiannelli],
+    Autores: [artistas.EmilioGiannelli],
     Titulo: `Vaso do Parque Noronha Santos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em ferro fundido`,
     Descricao: `Inaugurado na década de 1970 foiinstalado inicialmente na Praça Floriano, na década de 1980. Foram retirados pelo projeto Rio Cidade Centro para o novo paisagismo da Praça, permanecendo no antigo depósito da Prefeitura no Caju até a transferência para o Parque Noronha Santos em 2003.`,
@@ -17454,11 +16828,12 @@ export const VasodoParqueNoronhaSantos_EmilioGiannelli: Obra = {
 
 export const Oitenta_TeresaOliveiraSantos: Obra = {
     ID: 1366,
-    Artistas: [artistas.TeresaOliveiraSantos],
+    Autores: [artistas.TeresaOliveiraSantos],
     Titulo: `Oitenta`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A escultura em bronze foi exposta no período de 13 de agosto a 13 de setembro de 2009, no Centro Cultural dos Correios, na exposição Dez Anos Depois. Foi transferida para o Parque em 2012 para cumprir sua ideia de instalar uma grande obra em espaço público.`,
     Execucao: true,
@@ -17469,11 +16844,12 @@ export const Oitenta_TeresaOliveiraSantos: Obra = {
 
 export const Abraco_deposito_Desconhecida: Obra = {
     ID: 1367,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Abraço  - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Blocos de granito`,
     Descricao: `Escultura em pedra esculpida se encontrava na Fundação Parques e Jardins desde os anos de 1970.
 `,
@@ -17485,10 +16861,11 @@ export const Abraco_deposito_Desconhecida: Obra = {
 
 export const FontedosTrapicheiros_Desconhecida: Obra = {
     ID: 1372,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte dos Trapicheiros`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Blocos de granito e argamassa`,
     Descricao: `O pequeno reservatório, atualmente em ruínas, foi construido pelo Presidente Rodrigues Alves para ser o primeiro medidor por pena d'agua do consumo, oriundo do Rio Trapicheiro, para o serviço de abastecimento de agua a capital Federal da época.É um projeto da Inspeção Geral de Obras Públicas.
@@ -17501,10 +16878,11 @@ Desativado em data desconhecida.`,
 
 export const ChafarizdoCampodeSaoCristovao_deposito_AugusteMartins: Obra = {
     ID: 1373,
-    Artistas: [artistas.AugusteMartins],
+    Autores: [artistas.AugusteMartins],
     Titulo: `Chafariz do Campo de São Cristovão - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em ferro fundido e pedestal de gnaisse`,
     Descricao: `Inaugurado no Largo de Santa Rita foi transferido para o Campo de São Cristovão e posteriormente para o em 1992, com o intuito de dar continuidade aos trabalhos de paisagismo iniciado no Campo de São Crsitovão permanecendo até ehoje.
@@ -17520,8 +16898,9 @@ Desativado em data desconhecida.`,
 export const FonteWallacedaPracaJoaoEsberard_CharlesAugusteLeboug: Obra = {
     ID: 1374,
     Titulo: `Fonte Wallace da Praça  João Esberard`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido e mural de concreto`,
     Descricao: `O segundo modelo de fonte Wallace em mural. Possui a forma aproximada de um marco vertical com a parte superior arrendondada. A deusa Tetis ornamenta o centro da fonte e a água sai de seus lábios para cair numa pequena bacia semicircular. Dois golfinhos completam a decoração da parte inferior desta graciosa fonte.
@@ -17535,10 +16914,11 @@ Desativado em data desconhecida.`,
 
 export const BicadaMulatadeBelfordRoxo_Melancolia_JeanJacquesPradier: Obra = {
     ID: 1376,
-    Artistas: [artistas.JeanJacquesPradier],
+    Autores: [artistas.JeanJacquesPradier],
     Titulo: `Bica da Mulata de Belford Roxo - Melancolia`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `Conhecida como Bica da Mulata a peça se encontra exposta no Centro do Município de Belford Roxo,na Baixada Fluminense. A estátua que jorrava água, foi colocada primeiramente na frente da estação de
@@ -17552,10 +16932,11 @@ export const BicadaMulatadeBelfordRoxo_Melancolia_JeanJacquesPradier: Obra = {
 
 export const AoInfanteDomHenrique_Desconhecida: Obra = {
     ID: 1377,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ao Infante Dom Henrique`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Monolito`,
     Material: `Bloco de granito com placa de bronze`,
     Descricao: `Esta obra situada quase em frente ao monumento aos Mortos da II Guerra Mundial, é um marco em pedra bruta de granito com uma placa em bronze. O Monumento ao Infante é uma singela homenagem quando se comemorava os 500 anos de seu falecimento`,
@@ -17565,32 +16946,13 @@ export const AoInfanteDomHenrique_Desconhecida: Obra = {
     Longitude: `-43.1745412`,
 };
 
-export const ChicoXavier_Desconhecida: Obra = {
-    ID: 1381,
-    Artistas: [artistas.Desconhecida],
-    Titulo: `Chico Xavier`,
-    Classificacao: 'perene',
-    Categoria: 'personalidades',
-    TipologiaObra: `Busto`,
-    Material: `Peça em gesso pintado`,
-    Descricao: `Busto encontrado nos jardins do Parque Lage e doada a Fundação Parques e Jardins, depósito`,
-    Execucao: true,
-    DataInauguracao: `01/1997`,
-    Zona: 'Central',
-    Bairro: 'Centro',
-    PontoDeReferencia: 'Praça Noronha Santos- Depósito',
-    Latitude: `-22.906689`,
-    Longitude: `-43.197172`,
-    Lugar: 'Praça',
-    Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
-};
-
 export const CastelodoParquePeterPan_Desconhecida: Obra = {
     ID: 1384,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Castelo do Parque Peter Pan`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Tijolo com argamassa`,
     Descricao: `Esta no parque temático que reproduz uma minicidade, llocalizado na Rua Francisco Sá, 86. Pertenceu à Companhia Estadual de Água e Esgotos (Cedae), onde uma elevatória de esgoto e tubulações do emissário submarino de Ipanema passam por debaixo da área. Foi cedido pelo Governo do Estado à Prefeitura, através de contrato de comodato, pelo prazo de dez anos, que, em contrapartida, recebeu um imóvel na Rua Saint Roman, no mesmo bairro, para construção de unidades habitacionais.`,
@@ -17602,10 +16964,11 @@ export const CastelodoParquePeterPan_Desconhecida: Obra = {
 
 export const AspersordeBangu_PauloCase: Obra = {
     ID: 1387,
-    Artistas: [artistas.PauloCase],
+    Autores: [artistas.PauloCase],
     Titulo: `Aspersor de Bangú`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em metal`,
     Descricao: `Equipamento instalado para amenizar o calor da região para os transeuntes. Trata-se de uma tubulação aérea por onde diversos furos jorram pequenas partículas e água, vaporizando o ambiente. Compreende uma extensão de 200 m de tubulação em diagonal a rua, que transfere para o ambiente uma umidade necessária quando este alcança altas temperaturas, entorno de 40 graus.
@@ -17616,28 +16979,14 @@ Desativado desde o ano de 2004.`,
     Longitude: `-43.4648475`,
 };
 
-export const RodolfodeAmoedo_JoseOtavioCorreaLima: Obra = {
-    ID: 1389,
-    Artistas: [artistas.JoseOtavioCorreaLima],
-    Titulo: `Rodolfo de Amoêdo`,
-    Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
-    Material: `Peça em bronze e pedestal de granito`,
-    Descricao: `Monumento em homenagem ao professor e diretor da Escola de Belas Artes, que fez discípulos entre outros: Eliseu Visconti, Lucílio de Albuquerque e Chamberland`,
-    Execucao: true,
-    DataInauguracao: `01/1940`,
-    Latitude: `-22.9208183`,
-    Longitude: `-43.1745739`,
-};
-
 export const MarechalMascarenhasdeMoraisemBonsucesso_Desconhecida: Obra = {
     ID: 1390,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marechal Mascarenhas de Morais em Bonsucesso.`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de granito`,
     Descricao: `Monumento fixado em um pedestal de granito onde está fixada na frente uma placa em alto relevo, representando cenas do combate. Ao lado estão relacionados os nomes do pracinhas que foram a guerra da região.`,
     Execucao: true,
@@ -17648,11 +16997,12 @@ export const MarechalMascarenhasdeMoraisemBonsucesso_Desconhecida: Obra = {
 
 export const Quorus_HelenaTownsend: Obra = {
     ID: 1392,
-    Artistas: [artistas.HelenaTownsend],
+    Autores: [artistas.HelenaTownsend],
     Titulo: `Quorus`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A escultura em bronze foi doada à Cidade pelo Sindicato da Indústria de Extração de Mármore, Calcário e Pedreiras e transferida para o depósito em 2015, devido à corrosão na fixação da peça ao pedestal. Retornou em novembro de 2016 restaurada.`,
     Execucao: true,
@@ -17671,10 +17021,11 @@ export const Quorus_HelenaTownsend: Obra = {
 
 export const RelogiodaTaquara_deposito_FlavioFerreira: Obra = {
     ID: 1393,
-    Artistas: [artistas.FlavioFerreira],
+    Autores: [artistas.FlavioFerreira],
     Titulo: `Relógio da Taquara - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Relógio`,
     Material: `Peça em metal pintada`,
     Descricao: `O grande relógio de metal com cerca de 12 metros de altura foi instalado no Largo da Taquara pelo projeto do Rio Cidade Taquara. Foi retirado em 2012 devido aos constantes acidentes com veículos no local que o danificaram.
@@ -17687,7 +17038,7 @@ export const RelogiodaTaquara_deposito_FlavioFerreira: Obra = {
 
 export const Passaros_RobertoMagalhaes: Obra = {
     ID: 120,
-    Artistas: [artistas.RobertoMagalhaes],
+    Autores: [artistas.RobertoMagalhaes],
     Titulo: `Passaros`,
     Material: 'pintura',
     DataInauguracao: '1985',
@@ -17700,7 +17051,7 @@ export const Passaros_RobertoMagalhaes: Obra = {
     Status: 'permanece no espaço público',
     Fatos: [new Fato('', '', '', '', [], '')],
     Temporalidade: 'temporario',
-    Eixo: 'sublimidade',
+    Eixo: 'Sublimidade',
     Funcao: 'ornamental',
     Natureza: 'artistico',
     Tipologia: 'mural',
@@ -17709,11 +17060,12 @@ export const Passaros_RobertoMagalhaes: Obra = {
 
 export const Verticalidade_RobertoMoriconi: Obra = {
     ID: 1394,
-    Artistas: [artistas.RobertoMoriconi],
+    Autores: [artistas.RobertoMoriconi],
     Titulo: `Verticalidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em alumínio`,
     Descricao: `Peça em cantoneira e chapa de alumínio. Instalada no Parque da Catacumba em 1979 foi transferido para o
     depósito em 2015 para a sua restauração devido a problema estrutural.`,
@@ -17741,10 +17093,11 @@ export const Verticalidade_RobertoMoriconi: Obra = {
 
 export const PixinguinhaemRamos_Ique: Obra = {
     ID: 1395,
-    Artistas: [artistas.Ique],
+    Autores: [artistas.Ique],
     Titulo: `Pixinguinha em Ramos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Estátua`,
     Material: `Peça em bronze`,
     Descricao: `Monumento criado por solicitação da Sra D. Dodô para marcar o bar frequentado por Pixinguinha, próxima a sua residência no bairro. A estátua foi executada com inspiração de uma foto de Pixinguinha no local, de pijama e chinelo.`,
@@ -17756,10 +17109,11 @@ export const PixinguinhaemRamos_Ique: Obra = {
 
 export const FonteCiborium_deposito_Desconhecida: Obra = {
     ID: 1397,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte Ciborium - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em ferro fundido`,
     Descricao: `É um bebedouro de inspiração religiosa faz alusão ao Ciborium, um paramento batismal.
@@ -17775,8 +17129,9 @@ Desativado em data desconhecida.`,
 
 export const DelPrete_Desconhecida: Obra = {
     ID: 1399,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Del Prete`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -17795,8 +17150,9 @@ export const DelPrete_Desconhecida: Obra = {
 
 export const BustoNaoIdentificadoI_deposito_CGibson: Obra = {
     ID: 1400,
-    Artistas: [artistas.CGibson],
+    Autores: [artistas.CGibson],
     Titulo: `Busto Não Identificado I - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -17810,8 +17166,9 @@ export const BustoNaoIdentificadoI_deposito_CGibson: Obra = {
 
 export const BustoNaoIdentificadoII_deposito_DVillan: Obra = {
     ID: 1401,
-    Artistas: [artistas.DVillan],
+    Autores: [artistas.DVillan],
     Titulo: `Busto Não Identificado II - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -17825,8 +17182,9 @@ export const BustoNaoIdentificadoII_deposito_DVillan: Obra = {
 
 export const BustoNaoIdentificadoIII_deposito_Desconhecida: Obra = {
     ID: 1402,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Busto Não Identificado III - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -17840,11 +17198,12 @@ export const BustoNaoIdentificadoIII_deposito_Desconhecida: Obra = {
 
 export const BaraodeMauanaRuadaCandelaria_Desconhecida: Obra = {
     ID: 1404,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Barão de Mauá na Rua da Candelária`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de mármore`,
     Descricao: `Réplica da obra de Rodolfo Bernadelli existente na Praça Mauá. É uma doação da Associação Comercial do Rio de Janeiro à Prefeitura, para identificar a Casa de Mauá.`,
     Execucao: true,
@@ -17855,10 +17214,11 @@ export const BaraodeMauanaRuadaCandelaria_Desconhecida: Obra = {
 
 export const CabecaNaoIdentificadaI_deposito_Desconhecida: Obra = {
     ID: 1405,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cabeça Não Identificada I - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cabeça`,
     Material: `Peça em bronze`,
     Descricao: `Cabeça sem nenhuma informação quando foi transferido para o depósito. ( anterior a 1992).
@@ -17871,15 +17231,15 @@ export const CabecaNaoIdentificadaI_deposito_Desconhecida: Obra = {
 
 export const CabecaNaoIdentificadaII_deposito_Desconhecida: Obra = {
     ID: 1406,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cabeça Não Identificada II - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cabeça`,
     Material: `Peça em bronze`,
     Descricao: `Cabeça sem nenhuma informação quando foi transferido para o depósito. ( anterior a 1992).
 `,
-
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.906689`,
@@ -17888,10 +17248,11 @@ export const CabecaNaoIdentificadaII_deposito_Desconhecida: Obra = {
 
 export const CabecaNaoIdentificadaIII_deposito_MiguelPastor: Obra = {
     ID: 1407,
-    Artistas: [artistas.MiguelPastor],
+    Autores: [artistas.MiguelPastor],
     Titulo: `Cabeça Não Identificada III - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cabeça`,
     Material: `Peça em bronze`,
     Descricao: `Cabeça sem nenhuma informação sobre a procedencia e quando foi transferido para o depósito. ( anterior a 1992).
@@ -17904,10 +17265,11 @@ export const CabecaNaoIdentificadaIII_deposito_MiguelPastor: Obra = {
 
 export const CabecaNaoIdentificadaIV_deposito_Desconhecida: Obra = {
     ID: 1408,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cabeça Não Identificada IV - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cabeça`,
     Material: `Peça em mármore`,
     Descricao: `Cabeça sem nenhuma informação sobre a procedência e quando foi transferido para o depósito. ( anterior a 1992).
@@ -17920,10 +17282,11 @@ export const CabecaNaoIdentificadaIV_deposito_Desconhecida: Obra = {
 
 export const CabecaNaoIdentificadaV_deposito_Desconhecida: Obra = {
     ID: 1409,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cabeça Não Identificada V - depósito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cabeça`,
     Material: `Peça em mármore`,
     Descricao: `Cabeça sem nenhuma informação sobre a procedência e quando foi transferido para o depósito. ( anterior a 1992).
@@ -17936,10 +17299,11 @@ export const CabecaNaoIdentificadaV_deposito_Desconhecida: Obra = {
 
 export const NinchodaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 1411,
-    Artistas: [artistas.AugusteFrancoisMarieGlaziou],
+    Autores: [artistas.AugusteFrancoisMarieGlaziou],
     Titulo: `Nincho da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Pedra e tijolo com argamassa`,
     Descricao: `Construção em rocailles , em arco pleno, com detales de troncos e banco no interior, ormando um recanto coberto para visualização do parque.`,
@@ -17951,10 +17315,11 @@ export const NinchodaQuintadaBoaVista_AugusteFrancoisMarieGlaziou: Obra = {
 
 export const MarcoaoCooperativismo_Desconhecida: Obra = {
     ID: 1414,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco ao Cooperativismo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em concreto armado`,
     Descricao: `Marco com uma mão estelizada que apóia sobre ela o símbolo do cooperatismo. O monumento foi uma iniciativa do Rotary Clube.`,
@@ -17966,10 +17331,11 @@ export const MarcoaoCooperativismo_Desconhecida: Obra = {
 
 export const AmuradadaEncostadoTerracodaQuintadaBoaVista_Desconhecida: Obra = {
     ID: 1415,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Encosta do Terraço da Quinta da Boa Vista`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de gnaisses e seixos rolados`,
     Descricao: `Construção em blocos de pedra para contenção do terraço suspenso.`,
@@ -17981,10 +17347,11 @@ export const AmuradadaEncostadoTerracodaQuintadaBoaVista_Desconhecida: Obra = {
 
 export const ChaminedoCatumbi_Desconhecida: Obra = {
     ID: 1416,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chaminé do Catumbi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chaminé`,
     Material: `Tijolo com argamassa`,
     Descricao: `Construção original em tijolo, remanescente da Usina Brasil de Açucar.`,
@@ -17996,10 +17363,11 @@ export const ChaminedoCatumbi_Desconhecida: Obra = {
 
 export const EmbocaduradoTuneldoPasmado_Desconhecida: Obra = {
     ID: 1417,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Embocadura do Túnel do Pasmado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça em concreto revestido por granito`,
     Descricao: `Construção iniciada em 1947 somente foi concluida em 1952. A embocadura é revestida em granito que segue no seu interior.`,
@@ -18011,10 +17379,11 @@ export const EmbocaduradoTuneldoPasmado_Desconhecida: Obra = {
 
 export const AmuradadaRuaPortugaloudaUrca_Desconhecida: Obra = {
     ID: 1418,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada da Rua Portugal, ou da Urca`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de gnaisses`,
     Descricao: `Amurada construída para as Comemorações do Centenário da Independência do Brasil.`,
@@ -18026,10 +17395,11 @@ export const AmuradadaRuaPortugaloudaUrca_Desconhecida: Obra = {
 
 export const MarcoemTributoaoArchereEscragnolle_Desconhecida: Obra = {
     ID: 1419,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco em Tributo ao Archer e Escragnolle`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Monolitico de concreto com placa em aluminio`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18042,10 +17412,11 @@ Monolito de concreto com uma palca identificando o local.`,
 
 export const AmuradadoSitioMidosi_Desconhecida: Obra = {
     ID: 1420,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Amurada do Sítio Midosi`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Amurada`,
     Material: `Blocos de gnaisses e seixos rolados`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18058,10 +17429,11 @@ Construção de proteção da encosta.`,
 
 export const RocailedoRecantodoPintores_Desconhecida: Obra = {
     ID: 1422,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Rocaile do Recanto do Pintores`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Construção`,
     Material: `Peça de rocaille em argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18074,10 +17446,11 @@ Pedras artificiais resquícios da presença do paisagista francês Auguste Franc
 
 export const VasodoPortaodoAcudeSolidao_Desconhecida: Obra = {
     ID: 1423,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Vaso do Portão do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Vaso`,
     Material: `Peça em argamassa`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18090,10 +17463,11 @@ Vaso de argamassa com detalhes em curvas.`,
 
 export const PonteIIdoAcudeSolidao_Desconhecida: Obra = {
     ID: 1424,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Ponte II do Açude Solidão`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Ponte`,
     Material: `Bloco de granito`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18106,15 +17480,15 @@ Construção em arco em pedra para a passagem do rio do lago do Açude Solidão`
 
 export const FontedaPonteJobdeAlcantara_RaymundodeCastroMaya: Obra = {
     ID: 1425,
-    Artistas: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundodeCastroMaya],
     Titulo: `Fonte da Ponte Job de Alcântara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em concreto revestido por azulejo e bronze`,
     Descricao: `O monumento está incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
 Fonte natural com peça escultórica e painel decorativo.`,
-
     Execucao: true,
     DataInauguracao: `07/1944`,
     Latitude: `-22.9590877`,
@@ -18123,10 +17497,11 @@ Fonte natural com peça escultórica e painel decorativo.`,
 
 export const FonteabaixodaPonteJobdeAlcantara_Desconhecida: Obra = {
     ID: 1426,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte abaixo da Ponte Job de Alcântara`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Peça em mármore de Carrara`,
     Descricao: `O monumento esta incluído nessa relação devido o convênio de Gestão Compartilhada do ParNacional da Tijuca entre a Prefeitura do Rio de Janeiro e oIBAMA desde 22 de março de 2001.
@@ -18139,10 +17514,11 @@ Fonte composta por um mural azulejado onde esta fixada uma carrança em argamass
 
 export const Cazuza_ChristinaMotta_HelioPelegrino: Obra = {
     ID: 1427,
-    Artistas: [artistas.ChristinaMotta, artistas.HelioPelegrino],
+    Autores: [artistas.ChristinaMotta, artistas.HelioPelegrino],
     Titulo: `Cazuza`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Estátua`,
     Material: `Peça em bronze com estrutura de metal`,
     Descricao: `Em 12 de março de 1992 foi inaugurada a praça com o Chafariz em homenagem a Cazuza. Era composto por sete
@@ -18163,10 +17539,11 @@ export const Cazuza_ChristinaMotta_HelioPelegrino: Obra = {
 
 export const PisodeParalelepipedodaRuaRibeiradeAlmeida_Desconhecida: Obra = {
     ID: 1430,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Paralelepípedo da Rua Ribeira de Almeida`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Blocos de granito`,
     Descricao: `Piso original preservado.`,
@@ -18178,10 +17555,11 @@ export const PisodeParalelepipedodaRuaRibeiradeAlmeida_Desconhecida: Obra = {
 
 export const MarcoRodoviarioIVdeAvenidaCesariodeMelo_Desconhecida: Obra = {
     ID: 1431,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário IV de Avenida Cesário de Melo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -18194,10 +17572,11 @@ Esse marco marcava as distancias da antiga denominação da Estrada Real de Sant
 
 export const MarcoRodoviariodaRuaSoldadoElizeuHipolito_Desconhecida: Obra = {
     ID: 1432,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Rua Soldado Elizeu Hipólito`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.
@@ -18210,10 +17589,11 @@ Esse marco marcava as distâncias da antiga denominação da Estrada da Pedra`,
 
 export const MarcoRodoviariodaEstradadoRedentorI_Desconhecida: Obra = {
     ID: 1433,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada do Redentor I`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -18225,10 +17605,11 @@ export const MarcoRodoviariodaEstradadoRedentorI_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaEstradadoRedentorII_Desconhecida: Obra = {
     ID: 1434,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Estrada do Redentor II`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -18240,10 +17621,11 @@ export const MarcoRodoviariodaEstradadoRedentorII_Desconhecida: Obra = {
 
 export const FontedoGolfinho_SimbolodaCidade_Desconhecida: Obra = {
     ID: 1437,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Fonte do Golfinho - Símbolo da Cidade`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Fonte`,
     Material: `Bloco de gnaisse esculpido`,
     Descricao: `Representação do símbolo da Cidade. Inicialmente foi uma pequena fonte desativada no anos de 1990, devido da perda da fonte natural.`,
@@ -18255,11 +17637,12 @@ export const FontedoGolfinho_SimbolodaCidade_Desconhecida: Obra = {
 
 export const OswaldoCruz_EdgarDuvivier: Obra = {
     ID: 1438,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Oswaldo Cruz`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Homenagem para o patrono do bairro.A homenagemreivindicação dos moradores do bairro, fundado há 95 anos,foi solicitada pela vereadora Nereida Pedregal e sancionada pelo prefeito, originando a Lei nº5436, de 12 de junho de 2012, .`,
     Execucao: true,
@@ -18270,8 +17653,9 @@ export const OswaldoCruz_EdgarDuvivier: Obra = {
 
 export const MarechalHermes_Desconhecida: Obra = {
     ID: 1439,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marechal Hermes`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -18289,11 +17673,12 @@ export const MarechalHermes_Desconhecida: Obra = {
 
 export const BentoRibeiro_ChristinaMotta: Obra = {
     ID: 1440,
-    Artistas: [artistas.ChristinaMotta],
+    Autores: [artistas.ChristinaMotta],
     Titulo: `Bento Ribeiro`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `Homenagem ao patrono do bairro.`,
     Execucao: true,
@@ -18304,10 +17689,11 @@ export const BentoRibeiro_ChristinaMotta: Obra = {
 
 export const CoretodeMarechalHermes_Desconhecida: Obra = {
     ID: 1441,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Coreto de Marechal Hermes`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Peça em concreto armado`,
     Descricao: `Construção em concreto armado com um único apoio central. Atribuído a Afonso Eduardo Reidy devido a linha arrojada e pela construido na mesma época o Teatro Armando Gonzaga. Foi demolido em 2003 para atender o projeto do Rio Cidade. Foi reconstruído dez anos depois, atendendo a solicitação dos moradores e reinaugurado em 15 de novembro de 2013.`,
@@ -18319,8 +17705,9 @@ export const CoretodeMarechalHermes_Desconhecida: Obra = {
 
 export const ArturRios_Desconhecida: Obra = {
     ID: 1443,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Artur Rios`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
     TipologiaObra: `Busto`,
@@ -18337,10 +17724,11 @@ export const ArturRios_Desconhecida: Obra = {
 
 export const AMariadoCarmoNabuco_Desconhecida: Obra = {
     ID: 1444,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `À Maria do Carmo Nabuco`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em bronze e pedestal de gnaisse`,
     Descricao: `Marco composto por três blocos em cantaria de gnaisse, do portão da casa da Rua Marquês do Olinda, 58 - residência da família demolida a cerca de 30 anos e uma placa em bronze com a resumida biografia.`,
@@ -18352,10 +17740,11 @@ export const AMariadoCarmoNabuco_Desconhecida: Obra = {
 
 export const MarcoRodoviariodaRuadoFragoso_Desconhecida: Obra = {
     ID: 1445,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco Rodoviário da Rua do Fragoso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito esculpido`,
     Descricao: `Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (Estrada de Rodagem Federal) e informam a distância em quilômetros dali até o Centro. Na face posterior, há a inscrição DF (Distrito Federal). Nas faces esquerda e direita registram a distância de duas localidades próximas.`,
@@ -18367,10 +17756,11 @@ export const MarcoRodoviariodaRuadoFragoso_Desconhecida: Obra = {
 
 export const CruzdoMorrodoMirante_Desconhecida: Obra = {
     ID: 1446,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Cruz do Morro do Mirante`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Cruzeiro`,
     Material: `Peça em concreto armado`,
     Descricao: `Foi originariamente construído pelos padres jesuítas para fiscalizar o trabalho dos escravos da fazenda. No período da familia Real e com a elevação da sede da Fazenda Real de Santa Cruz a Paço Real, foi erigida uma pequena construção, em formato octogonal.
@@ -18384,11 +17774,12 @@ O Morro do Mirante está sob controle da CEDAE.`,
 
 export const KinteticaPiradoPovo_AnthonyHowe: Obra = {
     ID: 1447,
-    Artistas: [artistas.AnthonyHowe],
+    Autores: [artistas.AnthonyHowe],
     Titulo: `Kintetic, a Pira do Povo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço escovado`,
     Descricao: `Escultura movel criada e produzida especificamente para se torna a pira olimpica Rio 2016, com jatos de gas. Foi fabricada em 2016 com numento de serie de 8926.`,
     Execucao: true,
@@ -18399,10 +17790,11 @@ export const KinteticaPiradoPovo_AnthonyHowe: Obra = {
 
 export const ChafarizdaPiradoPovo_Desconhecida: Obra = {
     ID: 1448,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Chafariz da Pira do Povo`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Chafariz`,
     Material: `Peça em concreto armado`,
     Descricao: `Chafariz construído em torno da escultura para proteção e embelezamento.
@@ -18415,11 +17807,12 @@ Esta desativado desde o ano de 2016.`,
 
 export const NelsonRodrigues_EdgarDuvivier: Obra = {
     ID: 1449,
-    Artistas: [artistas.EdgarDuvivier],
+    Autores: [artistas.EdgarDuvivier],
     Titulo: `Nelson Rodrigues`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `Idealizada por dois netos de Nelson Rodrigues, Sacha e Crica Rodrigues, e pelo produtor Gustavo Nunes. Foi doada à cidade pela Fundação Cesgrandrio.
 O local onde foi instalada é próximo ao primeiro endereço de Nelson Rodrigues no Rio, e foi inaugurado no 36º aniversário de sua morte,`,
@@ -18431,10 +17824,11 @@ O local onde foi instalada é próximo ao primeiro endereço de Nelson Rodrigues
 
 export const PisodePedeMolequenaRuadoParaiso_Desconhecida: Obra = {
     ID: 1450,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Piso de Pé de Moleque na Rua do Paraíso`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Piso`,
     Material: `Seixos e lascas de granito`,
     Descricao: `Calçamento executada com seixos rolados cobrindo toda a área da praça.`,
@@ -18446,12 +17840,13 @@ export const PisodePedeMolequenaRuadoParaiso_Desconhecida: Obra = {
 
 export const ReflexaoRio_MariaCouto: Obra = {
     ID: 1452,
-    Imagem: 'ReflexaoRio_MariaCouto.jpg',
-    Artistas: [artistas.MariaCouto],
+    Image: 'ReflexaoRio_MariaCouto.jpg',
+    Autores: [artistas.MariaCouto],
     Titulo: `Reflexão Rio`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em bronze`,
     Descricao: `A escultura foi instalada na Praça do Pontal Tim Maia e posteriormente retirada e transferida para o deposito em 2003.`,
     Execucao: true,
@@ -18468,12 +17863,13 @@ export const ReflexaoRio_MariaCouto: Obra = {
 
 export const Pincas_FranzWeissmann: Obra = {
     ID: 373,
-    Imagem: 'Pinças_FranzWeissmann.png',
-    Artistas: [artistas.FranzWeissmann],
+    Image: 'Pinças_FranzWeissmann.png',
+    Autores: [artistas.FranzWeissmann],
     Titulo: `Construção Em Triângulos`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
-    TipologiaObra: `Escultura`,
+    Categoria: 'Plasticidade',
+    TipologiaObra: 'Escultura',
     Material: `Peça em aço corten`,
     Altura: '100 cm',
     Largura: '200 cm',
@@ -18494,10 +17890,11 @@ export const Pincas_FranzWeissmann: Obra = {
 
 export const CoretodaPracaBelmonte_AzevedoNeto: Obra = {
     ID: 1455,
-    Artistas: [artistas.AzevedoNeto],
+    Autores: [artistas.AzevedoNeto],
     Titulo: `Coreto da Praça Belmonte`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Coreto`,
     Material: `Concreto armado`,
     Descricao: `Construção de concreto armado circular, com pequena cobertura central, sobre um riacho que corta a praça, unidos os dois lados.`,
@@ -18509,10 +17906,11 @@ export const CoretodaPracaBelmonte_AzevedoNeto: Obra = {
 
 export const PainelElementosdaNatureza_RonaldoPereiraRego: Obra = {
     ID: 1456,
-    Artistas: [artistas.RonaldoPereiraRego],
+    Autores: [artistas.RonaldoPereiraRego],
     Titulo: `Painel Elementos da Natureza`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Argamassa`,
     Descricao:
@@ -18525,10 +17923,11 @@ export const PainelElementosdaNatureza_RonaldoPereiraRego: Obra = {
 
 export const GuardaCorpodoTerracodoPasseioPublico_Desconhecida: Obra = {
     ID: 1457,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Guarda Corpo do Terraço do Passeio Publico`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Guarda-corpo`,
     Material: `Peça em bronze e  gnaisse`,
     Descricao: `Originariamente o guarda oorpo era composto por balaustre de bronze e se estendia em toda a extensão do terraço. Durante os anos de 2000 e 2004 inumeros balaustres foram furtados, sendo refeito em 2004 em concreto em um pequeno trecho.Uma peça original foi guarda no deposito como molde.`,
@@ -18540,11 +17939,12 @@ export const GuardaCorpodoTerracodoPasseioPublico_Desconhecida: Obra = {
 
 export const PaulHarrisemCampoGrande_Desconhecida: Obra = {
     ID: 1458,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Paul Harris em Campo Grande`,
+    Renomeacao: false,
     Classificacao: 'perene',
     Categoria: 'personalidades',
-    TipologiaObra: `busto`,
+    TipologiaObra: `Busto`,
     Material: `Peça em bronze e pedestal de concreto`,
     Descricao: `O busto foi inaugurado na estrada lateralmente e depois transferida para o canteiro central na faixa de rolamento do viaduto. O monumento foi uma iniciativa da Rotary,com apoio da Região Administrativa, na passagem do centenário do seu nascimento.
 A peça esta desaparecida desde janeiro de 2017.`,
@@ -18556,10 +17956,11 @@ A peça esta desaparecida desde janeiro de 2017.`,
 
 export const OratoriodeNossaSenhoraAparecida_Desconhecida: Obra = {
     ID: 1459,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Oratório de Nossa Senhora Aparecida`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Oratório`,
     Material: `Tijolo com argamassa`,
     Descricao: `O oratorio foi iniciativa da paróquia dos Santos Anjos, para realização de orações na praça ,em comemoração aos 300 anos da aparição da imagem nas águas do Rio Paraíba do Sul.O pároco, padre Thiago Azevedo, explicou que a 11 anos, um grupo de pessoas se reúne ali para rezar o rosário, sempre às quartas-feiras e que por iniciativa popular ergueram o oratório.`,
@@ -18571,10 +17972,11 @@ export const OratoriodeNossaSenhoraAparecida_Desconhecida: Obra = {
 
 export const MarcodaUniaoEspiritual_Desconhecida: Obra = {
     ID: 1460,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da União Espiritual`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Peça em metal`,
     Descricao: `Marco instalado pela Associão Brasileira de Municípiod na ocasião do IV Congresso nacional dos Municipios. A arvore plantada junto a placa é o símbolo da União Espiritual das comuidades brasileiras.`,
@@ -18586,10 +17988,11 @@ export const MarcodaUniaoEspiritual_Desconhecida: Obra = {
 
 export const GrutadaImprensa_Desconhecida: Obra = {
     ID: 1463,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Gruta da Imprensa`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Gruta`,
     Material: `Blocos de granito`,
     Descricao: `Em 1920,o prefeito Alaor Prata batizou como Viaduto Rei Alberto, a obra viaria na Avenida Niemeyer, para lembrar a visita do Rei da Bélgica . A Gruta da Imprensa, é um platô na Avenida Niemeyer, no conjunto do viaduto, aberta em 1922, onde ficavam os jornalistas da época que faziam a cobertura das corridas automobilísticas de rua.`,
@@ -18601,10 +18004,11 @@ export const GrutadaImprensa_Desconhecida: Obra = {
 
 export const MastrodoMirantedoPasmado_Desconhecida: Obra = {
     ID: 1464,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Mastro do Mirante do Pasmado`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mastro`,
     Material: `Peça em metal`,
     Descricao: `Mastro de 20 mestros de altura, para bandeira de 5,20 de largura e 3,6 de altura, para ser visto nesta região da cidade.`,
@@ -18616,10 +18020,11 @@ export const MastrodoMirantedoPasmado_Desconhecida: Obra = {
 
 export const EscadadoMorrodaConceicao_NataliaReyesNagle_JohnSouza: Obra = {
     ID: 1465,
-    Artistas: [artistas.NataliaReyesNagle, artistas.JohnSouza],
+    Autores: [artistas.NataliaReyesNagle, artistas.JohnSouza],
     Titulo: `Escada do Morro da Conceição`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Mosaico`,
     Material: `Mosaico de azulejos`,
     Descricao: `Mosaico elaborado pela artista plástica Natalia Reyes com a participação de cerca de 130 moradores do Morro da Conceição e apoio do Comite Rio 2016. Retata figuras do local como o cacique Ambere, a Tia Lucia, o malabro e capuerista. Destaca na decoração as composições com flores, animais e formas abstratas todas coloridas.`,
@@ -18631,13 +18036,14 @@ export const EscadadoMorrodaConceicao_NataliaReyesNagle_JohnSouza: Obra = {
 
 export const MarcodaPracaJoaoEsberard_Desconhecida: Obra = {
     ID: 1466,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco da Praça João Esberard`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito com placa de bronze`,
-    Descricao: ` Peça esculpida na pedra com uma placa de bronze com o nome da praça.`,
+    Descricao: `Peça esculpida na pedra com uma placa de bronze com o nome da praça.`,
     Execucao: true,
     DataInauguracao: ``,
     Latitude: `-22.9056305`,
@@ -18646,10 +18052,11 @@ export const MarcodaPracaJoaoEsberard_Desconhecida: Obra = {
 
 export const MarcodoCaminhodeSantiago_Desconhecida: Obra = {
     ID: 1467,
-    Artistas: [artistas.Desconhecida],
+    Autores: [artistas.Desconhecida],
     Titulo: `Marco do Caminho de Santiago`,
+    Renomeacao: false,
     Classificacao: 'perene',
-    Categoria: 'plasticidade',
+    Categoria: 'Plasticidade',
     TipologiaObra: `Marco`,
     Material: `Bloco de granito`,
     Descricao: `O marco foi uma iniciativa do consulado da Espanha em homenagem, aos milhares de peregrinos brasileiros que visitam a cidade da Galícia. É semelhante aos que existem ao longo do Caminho de Santiago. Para orientar os peregrinos, os monólitos trazem setas que apontam o caminho e indicam a distância até o destino final.No Rio, não será diferente: a peça tem uma inscrição "8.138 km", representando a quilometragem em linha reta do Arpoador a Santiago.Nos anos 80, o Cura do Cebreiro, um lugar icônico de Santiago, estava cansado de ver os peregrinos se perderem por falta de indicação. Então, ele juntou um grupo de voluntários para demarcar o caminho e indicar com setas. Ele pediu a tinta a uma empresa que estava pintando as estradas e, por isso, a cor das setas e conchas que marcam o caminho é o amarelo.`,

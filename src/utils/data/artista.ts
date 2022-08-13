@@ -1,5 +1,4 @@
-import { Artista } from '@domain';
-
+import Artista from '../../domain/artista';
 import * as pessoas from './pessoa';
 
 export const Desconhecida: Artista = {
@@ -425,8 +424,8 @@ export const JoseBarreto: Artista = {
     Pessoa: pessoas.JoseBarreto,
 };
 
-export const LiubaWolt: Artista = {
-    Pessoa: pessoas.LiubaWolt,
+export const LiubaWolf: Artista = {
+    Pessoa: pessoas.LiubaWolf,
 };
 
 export const EgistoBertozzi: Artista = {
@@ -503,6 +502,38 @@ export const AndreRedont: Artista = {
 
 export const MiguelNoreña: Artista = {
     Pessoa: pessoas.MiguelNoreña,
+};
+
+export const SimonHurtvelle: Artista = {
+    Pessoa: pessoas.SimonHurtvelle,
+};
+
+export const JacquesHouzeau: Artista = {
+    Pessoa: pessoas.MiguelNoreña,
+};
+
+export const PierreLeGros: Artista = {
+    Pessoa: pessoas.PierreLeGros,
+};
+
+export const AnisioMederios: Artista = {
+    Pessoa: pessoas.AnisioMederios,
+};
+
+export const JeanBaptistePoultier: Artista = {
+    Pessoa: pessoas.JeanBaptistePoultier,
+};
+
+export const HCase: Artista = {
+    Pessoa: pessoas.HCase,
+};
+
+export const PauloWerneck: Artista = {
+    Pessoa: pessoas.PauloWerneck,
+};
+
+export const CarlosObregonSantacilia: Artista = {
+    Pessoa: pessoas.CarlosObregonSantacilia,
 };
 
 export const CaroccabaThor: Artista = {
@@ -901,8 +932,8 @@ export const WainoAaltonem: Artista = {
     Pessoa: pessoas.WainoAaltonem,
 };
 
-export const AugustoZamoysky: Artista = {
-    Pessoa: pessoas.AugustoZamoysky,
+export const AugustZamoiski: Artista = {
+    Pessoa: pessoas.AugustZamoiski,
 };
 
 export const NewtonSa: Artista = {

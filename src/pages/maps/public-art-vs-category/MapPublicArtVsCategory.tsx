@@ -3,15 +3,15 @@ import { Obra } from '@domain';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function color(eixo?: string): string | undefined {
-    if (eixo === 'plasticidade') {
+    if (eixo === 'Plasticidade') {
         return 'blue';
     }
 
-    if (eixo === 'narratividade') {
+    if (eixo === 'Narratividade') {
         return 'red';
     }
 
-    if (eixo === 'sublimidade') {
+    if (eixo === 'Sublimidade') {
         return 'yellow';
     }
 }

@@ -77,9 +77,9 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
         .filter((key) => typed_obra_artepublica[key].Eixo === category)
         .filter(
             (key) =>
-                (typed_obra_artepublica[key].Artistas != null &&
-                    typed_obra_artepublica[key].Artistas?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
-                (autor === 'Desconhecida' && typed_obra_artepublica[key].Artistas == null),
+                (typed_obra_artepublica[key].Autores != null &&
+                    typed_obra_artepublica[key].Autores?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
+                (autor === 'Desconhecida' && typed_obra_artepublica[key].Autores == null),
         )
         .map((key) => typed_obra_artepublica[key]);
 
@@ -107,9 +107,9 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
                     .filter((key) => typed_obra_artepublica[key].Eixo === category)
                     .filter(
                         (key) =>
-                            (typed_obra_artepublica[key].Artistas != null &&
-                                typed_obra_artepublica[key].Artistas?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
-                            (autor === 'Desconhecida' && typed_obra_artepublica[key].Artistas == null),
+                            (typed_obra_artepublica[key].Autores != null &&
+                                typed_obra_artepublica[key].Autores?.find((artista) => artista.Pessoa?.Nome === autor) != null) ||
+                            (autor === 'Desconhecida' && typed_obra_artepublica[key].Autores == null),
                     )
                     .filter(
                         (key) =>
@@ -165,11 +165,11 @@ function Category(): JSX.Element {
     const { theme } = useTheme();
 
     const [open, setOpen] = useState(false);
-    const [category, setValue] = useState('narratividade');
+    const [category, setValue] = useState('Narratividade');
     const [items, setItems] = useState([
-        { label: 'narratividade', value: 'narratividade' },
-        { label: 'plasticidade', value: 'plasticidade' },
-        { label: 'sublimidade', value: 'sublimidade' },
+        { label: 'Narratividade', value: 'Narratividade' },
+        { label: 'Plasticidade', value: 'Plasticidade' },
+        { label: 'Sublimidade', value: 'Sublimidade' },
     ]);
 
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
@@ -182,7 +182,7 @@ function Category(): JSX.Element {
         .map((key) => typed_obra_artepublica[key].Natureza ?? 'Desconhecida');
     const artistas: string[] = Object.keys(typed_obra_artepublica)
         .filter((key) => typed_obra_artepublica[key].Eixo === category)
-        .map<Artista[]>((key) => typed_obra_artepublica[key].Artistas ?? [{ Pessoa: { Nome: 'Desconhecida' } } as Artista])
+        .map<Artista[]>((key) => typed_obra_artepublica[key].Autores ?? [{ Pessoa: { Nome: 'Desconhecida' } } as Artista])
         .reduce<string[]>((r, l) => {
             Array.prototype.push.apply(
                 r,
@@ -225,9 +225,9 @@ function Category(): JSX.Element {
                     .filter((key) => typed_obra_artepublica[key].Eixo === category)
                     .filter(
                         (key) =>
-                            (typed_obra_artepublica[key].Artistas != null &&
-                                typed_obra_artepublica[key].Artistas?.find((artista) => artista.Pessoa?.Nome === a) != null) ||
-                            (a === 'Desconhecida' && typed_obra_artepublica[key].Artistas == null),
+                            (typed_obra_artepublica[key].Autores != null &&
+                                typed_obra_artepublica[key].Autores?.find((artista) => artista.Pessoa?.Nome === a) != null) ||
+                            (a === 'Desconhecida' && typed_obra_artepublica[key].Autores == null),
                     )
                     .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
 
