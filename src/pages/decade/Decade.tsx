@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import { StyleSheet, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
+import { ScrollView } from 'react-native-gesture-handler';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Text } from '@components';
@@ -104,58 +106,64 @@ function Decade(): JSX.Element | null {
             .sort((a, b) => (a.total < b.total ? 1 : -1));
 
         return (
-            <View>
-                <DropDownPicker
-                    theme={theme.dark ? 'DARK' : 'LIGHT'}
-                    open={open}
-                    value={year}
-                    items={items}
-                    setOpen={setOpen}
-                    setValue={setValue}
-                    setItems={setItems}
-                />
-                <View style={{ height: 24 }} />
-
-                <Text>
-                    {year}: {obras_decada.length}
-                </Text>
-                <View style={{ height: 24 }} />
-
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row data={[<Text>Tipologia</Text>, <Text>Total</Text>]} style={style.head} />
-                    <Rows data={tipologias_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
-                </Table>
-                <View style={{ height: 24 }} />
-
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row data={[<Text>Natureza</Text>, <Text>Total</Text>]} style={style.head} />
-                    <Rows data={naturezas_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
-                </Table>
-                <View style={{ height: 24 }} />
-
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row data={[<Text>Zona</Text>, <Text>Total</Text>]} style={style.head} />
-                    <Rows data={zonas_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
-                </Table>
-                <View style={{ height: 24 }} />
-
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row data={[<Text>Status</Text>, <Text>Total</Text>, <Text>Tipologias</Text>]} style={style.head} />
-                    <Rows
-                        data={status_obras_decada_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                            <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
-                        ])}
+            <SafeAreaView>
+                <ScrollView style={{ width: '100%' }}>
+                    <DropDownPicker
+                        theme={theme.dark ? 'DARK' : 'LIGHT'}
+                        open={open}
+                        value={year}
+                        items={items}
+                        setOpen={setOpen}
+                        setValue={setValue}
+                        setItems={setItems}
+                        listMode="SCROLLVIEW"
+                        scrollViewProps={{
+                            nestedScrollEnabled: true,
+                        }}
                     />
-                </Table>
-                <View style={{ height: 24 }} />
-            </View>
+                    <View style={{ height: 24 }} />
+
+                    <Text>
+                        {year}: {obras_decada.length}
+                    </Text>
+                    <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row data={[<Text>Tipologia</Text>, <Text>Total</Text>]} style={style.head} />
+                        <Rows data={tipologias_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
+                    </Table>
+                    <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row data={[<Text>Natureza</Text>, <Text>Total</Text>]} style={style.head} />
+                        <Rows data={naturezas_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
+                    </Table>
+                    <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row data={[<Text>Zona</Text>, <Text>Total</Text>]} style={style.head} />
+                        <Rows data={zonas_obras_decada_total.map((top) => [<Text>{top.nome}</Text>, <Text>{top.total}</Text>])} />
+                    </Table>
+                    <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row data={[<Text>Status</Text>, <Text>Total</Text>, <Text>Tipologias</Text>]} style={style.head} />
+                        <Rows
+                            data={status_obras_decada_total.map((top) => [
+                                <Text>{top.nome}</Text>,
+                                <Text>{top.total}</Text>,
+                                <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
+                            ])}
+                        />
+                    </Table>
+                    <View style={{ height: 24 }} />
+                </ScrollView>
+            </SafeAreaView>
         );
     }
 
     return (
-        <View>
+        <SafeAreaView>
             <DropDownPicker
                 theme={theme.dark ? 'DARK' : 'LIGHT'}
                 open={open}
@@ -164,10 +172,14 @@ function Decade(): JSX.Element | null {
                 setOpen={setOpen}
                 setValue={setValue}
                 setItems={setItems}
+                listMode="SCROLLVIEW"
+                scrollViewProps={{
+                    nestedScrollEnabled: true,
+                }}
             />
             <View style={{ height: 24 }} />
             <Text>Sem dados sobre o período</Text>
-        </View>
+        </SafeAreaView>
     );
 }
 

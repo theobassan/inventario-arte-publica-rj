@@ -264,6 +264,10 @@ function Category(): JSX.Element {
                     setOpen={setOpen}
                     setValue={setValue}
                     setItems={setItems}
+                    listMode="SCROLLVIEW"
+                    scrollViewProps={{
+                        nestedScrollEnabled: true,
+                    }}
                 />
                 <View style={{ height: 24 }} />
 

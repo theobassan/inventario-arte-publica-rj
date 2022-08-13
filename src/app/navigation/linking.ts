@@ -51,6 +51,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                     Category: {
                         path: 'category',
                     },
+                    Decade: {
+                        path: 'decade',
+                    },
                 },
             },
             NotFound: '404',
