@@ -202,7 +202,7 @@ function Category(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const naturezas_total: { nome: string; total: number }[] = naturezas
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -215,7 +215,7 @@ function Category(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const artistas_total: { nome: string; total: number; obras: string[] }[] = artistas
         .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
@@ -239,7 +239,7 @@ function Category(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     let artista: string | undefined;
     if (artistas_total.length > 0) {

@@ -46,7 +46,7 @@ function Decade(): JSX.Element | null {
                 }
                 return r;
             }, [])
-            .sort((a, b) => (a.total < b.total ? 1 : -1));
+            .sort((a, b) => a.nome.localeCompare(b.nome));
 
         const naturezas_obras_decada_total: { nome: string; total: number }[] = naturezas_obras_decada
             .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -59,7 +59,7 @@ function Decade(): JSX.Element | null {
                 }
                 return r;
             }, [])
-            .sort((a, b) => (a.total < b.total ? 1 : -1));
+            .sort((a, b) => a.nome.localeCompare(b.nome));
 
         const zonas_obras_decada_total: { nome: string; total: number }[] = zonas_obras_decada
             .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -72,7 +72,7 @@ function Decade(): JSX.Element | null {
                 }
                 return r;
             }, [])
-            .sort((a, b) => (a.total < b.total ? 1 : -1));
+            .sort((a, b) => a.nome.localeCompare(b.nome));
 
         const status_obras_decada_total: { nome: string; total: number; tipologias: { nome: string; total: number }[] }[] = status_obras_decada
             .reduce<{ nome: string; total: number; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
@@ -93,7 +93,7 @@ function Decade(): JSX.Element | null {
                             }
                             return r;
                         }, [])
-                        .sort((a, b) => (a.total < b.total ? 1 : -1));
+                        .sort((a, b) => a.nome.localeCompare(b.nome));
 
                     r.push({
                         nome: a,
@@ -103,7 +103,7 @@ function Decade(): JSX.Element | null {
                 }
                 return r;
             }, [])
-            .sort((a, b) => (a.total < b.total ? 1 : -1));
+            .sort((a, b) => a.nome.localeCompare(b.nome));
 
         return (
             <SafeAreaView>

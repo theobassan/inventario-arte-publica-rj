@@ -2,8 +2,8 @@ import { ExpoConfig, ConfigContext } from '@expo/config';
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
     ...config,
-    name: config.name ?? 'inventario-arte-publica-permanente-rio-de-janeiro',
-    slug: config.slug ?? 'inventario-arte-publica-permanente-rio-de-janeiro',
+    name: config.name ?? 'arte-publica-permanente',
+    slug: config.slug ?? 'arte-publica-permanente',
     extra: {
         ...config.extra,
         googleMapsAPI: process.env.GOOGLE_MAPS_API_WEB || '',

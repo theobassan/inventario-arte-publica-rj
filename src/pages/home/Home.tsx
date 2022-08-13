@@ -34,7 +34,7 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const tipologias_artepublica_group_total: { nome: string; total: number }[] = tipologias_artepublica
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -47,7 +47,7 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const naturezas_artepublica_group_total: { nome: string; total: number }[] = naturezas_artepublica
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -60,7 +60,7 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const zonas_artepublica_group_total: { nome: string; total: number }[] = zonas_artepublica
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -73,7 +73,7 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const status_artepublica_group_total: { nome: string; total: number; tipologias: { nome: string; total: number }[] }[] = status_artepublica
         .reduce<{ nome: string; total: number; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
@@ -94,7 +94,7 @@ function Home(): JSX.Element {
                         }
                         return r;
                     }, [])
-                    .sort((a, b) => (a.total < b.total ? 1 : -1));
+                    .sort((a, b) => a.nome.localeCompare(b.nome));
 
                 r.push({
                     nome: a,
@@ -104,7 +104,7 @@ function Home(): JSX.Element {
             }
             return r;
         }, [])
-        .sort((a, b) => (a.total < b.total ? 1 : -1));
+        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     return (
         <SafeAreaView style={style.container}>
