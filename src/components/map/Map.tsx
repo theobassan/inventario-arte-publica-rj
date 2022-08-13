@@ -1,7 +1,7 @@
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useHeaderHeight } from '@react-navigation/elements';
-import { useWindowDimensions } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
+import { Platform, useWindowDimensions } from 'react-native';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 type MapWrapperProps = {
     markers?: { position: { latitude: string; longitude: string }; color?: string }[];
@@ -21,6 +21,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             initialRegion={center}
             testID="mapView"
             style={{ height: height - headerHeight - bottomTabBarHeight, width }}
+            provider={Platform.OS !== 'ios' ? PROVIDER_GOOGLE : undefined}
         >
             {markers
                 ?.filter((marker) => marker.position.latitude !== '' && marker.position.longitude !== '')
