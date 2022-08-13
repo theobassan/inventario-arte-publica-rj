@@ -13,7 +13,7 @@ function Home(): JSX.Element {
 
     const style = styles();
 
-    const tipologias: string[] = Object.keys(typed_obras).map((key) => typed_obras[key].TipologiaObra ?? 'Desconhecida');
+    const tipologias: string[] = Object.keys(typed_obras).map((key) => typed_obras[key].Tipologia ?? 'Desconhecida');
     const tipologias_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
     const naturezas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Natureza ?? 'Desconhecida');
     const zonas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Zona ?? 'Desconhecida');

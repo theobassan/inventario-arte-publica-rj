@@ -5,13 +5,14 @@ import Fato from './fato';
 
 type Obra = {
     ID?: number;
-    Image?: string;
+    Imagem?: string;
     Autores?: Artista[] | undefined;
     Titulo?: string;
     Material?: string;
     Altura?: string;
     Largura?: string;
     Profundidade?: string;
+    Diametro?: string;
     Peso?: string;
     ValorObra?: string;
     DataInauguracao?: string;
@@ -38,7 +39,6 @@ type Obra = {
     Execucao?: boolean;
     Classificacao?: string;
     Categoria?: string;
-    TipologiaObra?: string;
     PontoDeReferencia?: string;
     Remocao?: boolean;
     Realocacao?: boolean;
