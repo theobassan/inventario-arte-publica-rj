@@ -217,8 +217,8 @@ function Category(): JSX.Element {
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const artistas_total: { nome: string; total: number; obras: string[] }[] = artistas
-        .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
+    const artistas_total_obras: { nome: string; total: number; obras: string[] }[] = artistas.reduce<{ nome: string; total: number; obras: string[] }[]>(
+        function (r, a) {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
                 const obras: string[] = Object.keys(typed_obra_artepublica)
@@ -238,19 +238,28 @@ function Category(): JSX.Element {
                 });
             }
             return r;
-        }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
+        },
+        [],
+    );
+
+    let artistas_total = [...artistas_total_obras];
+    artistas_total = artistas_total.sort((a, b) => a.nome.localeCompare(b.nome));
+
+    let artistas_total_sort_total = [...artistas_total];
+    artistas_total_sort_total = artistas_total_sort_total.sort((a, b) => (a.total < b.total ? 1 : -1));
 
     let artista: string | undefined;
-    if (artistas_total.length > 0) {
-        if (artistas_total[0].nome !== 'Desconhecida') {
-            artista = artistas_total[0].nome;
-        } else if (artistas_total.length > 1) {
-            if (artistas_total[1].nome !== 'Desconhecida') {
-                artista = artistas_total[1].nome;
+    if (artistas_total_sort_total.length > 0) {
+        if (artistas_total_sort_total[0].nome !== 'Desconhecida') {
+            artista = artistas_total_sort_total[0].nome;
+        } else if (artistas_total_sort_total.length > 1) {
+            if (artistas_total_sort_total[1].nome !== 'Desconhecida') {
+                artista = artistas_total_sort_total[1].nome;
             }
         }
     }
+
+    console.log('artista', artista);
 
     const style = styles();
     return (
