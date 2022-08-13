@@ -14,7 +14,7 @@ import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 function Decade(): JSX.Element | null {
     const { theme } = useTheme();
 
-    const allYears: { label: string; value: string }[] = [];
+    const allYears: { label: string; value: string }[] = [{ label: 'Desconhecida', value: 'Null' }];
     for (let year = 2020; year > 1500; year = year - 10) {
         allYears.push({ label: year.toString(), value: year.toString() });
     }
@@ -286,7 +286,7 @@ function Decade(): JSX.Element | null {
     }
 
     return (
-        <SafeAreaView style={style.container}>
+        <SafeAreaView>
             <DropDownPicker
                 theme={theme.dark ? 'DARK' : 'LIGHT'}
                 open={open}

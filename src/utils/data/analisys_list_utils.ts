@@ -165,5 +165,5 @@ export const all1500 = Object.keys(typed_obra_artepublica)
     .filter((obra) => utils.is1500(typed_obra_artepublica[obra].DataInauguracao))
     .map((obra) => typed_obra_artepublica[obra]);
 export const allNull = Object.keys(typed_obra_artepublica)
-    .filter((obra) => utils.isNull(typed_obra_artepublica[obra].DataInauguracao))
+    .filter((obra) => typed_obra_artepublica[obra].DataInauguracao == null)
     .map((obra) => typed_obra_artepublica[obra]);

@@ -254,11 +254,11 @@ function Category(): JSX.Element {
     const artistas_total_obras: {
         nome: string;
         total: number;
-        obras: string[];
-    }[] = artistas.reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
+        obras: { nome: string; inauguracao: string }[];
+    }[] = artistas.reduce<{ nome: string; total: number; obras: { nome: string; inauguracao: string }[] }[]>(function (r, a) {
         const r_top = r.find((top) => top.nome === a);
         if (!r_top) {
-            const obras: string[] = Object.keys(typed_obra_artepublica)
+            const obras: { nome: string; inauguracao: string }[] = Object.keys(typed_obra_artepublica)
                 .filter((key) => typed_obra_artepublica[key].Eixo === category)
                 .filter(
                     (key) =>
@@ -266,7 +266,10 @@ function Category(): JSX.Element {
                             typed_obra_artepublica[key].Autores?.find((artista) => artista.Pessoa?.Nome === a) != null) ||
                         (a === 'Desconhecida' && typed_obra_artepublica[key].Autores == null),
                 )
-                .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
+                .map((key) => ({
+                    nome: typed_obra_artepublica[key].Titulo ?? 'Desconhecida',
+                    inauguracao: typed_obra_artepublica[key].DataInauguracao ?? 'Desconhecida',
+                }));
 
             r.push({
                 nome: a,
@@ -365,7 +368,7 @@ function Category(): JSX.Element {
                         data={artistas_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
-                            <Text>{top.obras.join(', ')}</Text>,
+                            <Text>{top.obras.map((obra) => `${obra.nome} (${obra.inauguracao})`).join(', ')}</Text>,
                         ])}
                     />
                 </Table>
