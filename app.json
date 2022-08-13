@@ -1,9 +1,9 @@
 {
   "expo": {
     "owner": "theobassan",
-    "name": "inventario-arte-publica-rj",
-    "slug": "inventario-arte-publica-rj",
-    "scheme": "inventario-arte-publica-rj.app",
+    "name": "inventario-arte-publica-permanente-rio-de-janeiro",
+    "slug": "inventario-arte-publica-permanente-rio-de-janeiro",
+    "scheme": "inventario-arte-publica-permanente-rio-de-janeiro.app",
     "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,14 +21,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.theobassan.inventarioartepublicarj"
+      "bundleIdentifier": "com.theobassan.inventarioartepublicapermanenteriodejaneiro"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.theobassan.inventarioartepublicarj"
+      "package": "com.theobassan.inventarioartepublicapermanenteriodejaneiro"
     },
     "web": {
       "favicon": "./assets/favicon.png"

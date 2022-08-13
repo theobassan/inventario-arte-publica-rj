@@ -1,1 +1,1 @@
-# inventario-arte-publica-rj
+# inventario-arte-publica-permanente-rio-de-janeiro
