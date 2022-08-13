@@ -20,7 +20,7 @@ function NavigationContainer({ children }: NavigationContainerProps): JSX.Elemen
             theme={{ colors: theme.navigation, dark: theme.dark }}
             linking={linking}
             documentTitle={{
-                formatter: () => `Inventário Arte Pública - RJ`,
+                formatter: () => `Arte Pública Permanente - Rio de Janeiro`,
             }}
         >
             {children}

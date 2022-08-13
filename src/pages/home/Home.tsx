@@ -109,9 +109,6 @@ function Home(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Text>Bem vinda ao inventário de arte pública do Rio de Janeiro</Text>
-                <View style={{ height: 24 }} />
-
                 <Text>Total de Obras levantadas: {Object.keys(obras).length + Object.keys(obra_artepublica).length}</Text>
                 <View style={{ height: 24 }} />
 
