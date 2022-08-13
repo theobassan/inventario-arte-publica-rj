@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Text } from '@components';
-import { Obra } from '@domain';
+import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';
 
@@ -43,6 +43,20 @@ function Decade(): JSX.Element | null {
         const naturezas_obras_decada: string[] = obras_decada.map((obra) => obra.Natureza ?? 'Desconhecida');
         const zonas_obras_decada: string[] = obras_decada.map((obra) => obra.Zona ?? 'Desconhecida');
         const status_obras_decada: string[] = obras_decada.map((obra) => obra.Status ?? 'Desconhecida');
+        const autores_obras_decada: string[] = obras_decada
+            .map(
+                (obra) =>
+                    obra.Autores ?? [
+                        { Pessoa: { Nome: 'Desconhecida' } } as Artista,
+                    ],
+            )
+            .reduce<string[]>((r, l) => {
+                Array.prototype.push.apply(
+                    r,
+                    l.map<string>((artista) => artista.Pessoa?.Nome ?? 'Desconhecida'),
+                );
+                return r;
+            }, []);
 
         const tipologias_obras_decada_total: { nome: string; total: number }[] = tipologias_obras_decada
             .reduce<{ nome: string; total: number }[]>(function (r, a) {
@@ -124,8 +138,34 @@ function Decade(): JSX.Element | null {
             }, [])
             .sort((a, b) => a.nome.localeCompare(b.nome));
 
+        const artistas_total_obras: {
+            nome: string;
+            total: number;
+            obras: string[];
+        }[] = autores_obras_decada
+            .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
+                const r_top = r.find((top) => top.nome === a);
+                if (!r_top) {
+                    const obras: string[] = obras_decada
+                        .filter(
+                            (obra) =>
+                                (obra.Autores != null && obra.Autores?.find((artista) => artista.Pessoa?.Nome === a) != null) ||
+                                (a === 'Desconhecida' && obra.Autores == null),
+                        )
+                        .map((obra) => obra.Titulo ?? 'Desconhecida');
+
+                    r.push({
+                        nome: a,
+                        total: obras.length,
+                        obras,
+                    });
+                }
+                return r;
+            }, [])
+            .sort((a, b) => a.nome.localeCompare(b.nome));
+
         return (
-            <SafeAreaView>
+            <SafeAreaView style={style.container}>
                 <ScrollView style={{ width: '100%' }}>
                     <DropDownPicker
                         theme={theme.dark ? 'DARK' : 'LIGHT'}
@@ -151,7 +191,8 @@ function Decade(): JSX.Element | null {
                         <Row
                             data={[
                                 <Text>Tipologia</Text>,
-                                <Text>Total</Text>,
+                                <Text>Total:{' '}
+                                {tipologias_obras_decada_total.length}</Text>,
                             ]}
                             style={style.head}
                         />
@@ -168,7 +209,8 @@ function Decade(): JSX.Element | null {
                         <Row
                             data={[
                                 <Text>Natureza</Text>,
-                                <Text>Total</Text>,
+                                <Text>Total{' '}
+                                {naturezas_obras_decada_total.length}</Text>,
                             ]}
                             style={style.head}
                         />
@@ -185,7 +227,8 @@ function Decade(): JSX.Element | null {
                         <Row
                             data={[
                                 <Text>Zona</Text>,
-                                <Text>Total</Text>,
+                                <Text>Total{' '}
+                                {zonas_obras_decada_total.length}</Text>,
                             ]}
                             style={style.head}
                         />
@@ -202,7 +245,8 @@ function Decade(): JSX.Element | null {
                         <Row
                             data={[
                                 <Text>Status</Text>,
-                                <Text>Total</Text>,
+                                <Text>Total{' '}
+                                {status_obras_decada_total.length}</Text>,
                                 <Text>Tipologias</Text>,
                             ]}
                             style={style.head}
@@ -216,13 +260,33 @@ function Decade(): JSX.Element | null {
                         />
                     </Table>
                     <View style={{ height: 24 }} />
+
+                    <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                        <Row
+                            data={[
+                                <Text>Artista</Text>,
+                                <Text>Total:{' '}
+                                {artistas_total_obras.length}</Text>,
+                                <Text>Obras</Text>,
+                            ]}
+                            style={style.head}
+                        />
+                        <Rows
+                            data={artistas_total_obras.map((top) => [
+                                <Text>{top.nome}</Text>,
+                                <Text>{top.total}</Text>,
+                                <Text>{top.obras.join(', ')}</Text>,
+                            ])}
+                        />
+                    </Table>
+                    <View style={{ height: 24 }} />
                 </ScrollView>
             </SafeAreaView>
         );
     }
 
     return (
-        <SafeAreaView>
+        <SafeAreaView style={style.container}>
             <DropDownPicker
                 theme={theme.dark ? 'DARK' : 'LIGHT'}
                 open={open}

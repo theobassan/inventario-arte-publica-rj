@@ -126,7 +126,8 @@ function Home(): JSX.Element {
                     <Row
                         data={[
                             <Text>Tipologia</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {topologias_group_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -146,7 +147,8 @@ function Home(): JSX.Element {
                     <Row
                         data={[
                             <Text>Tipologia</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {tipologias_artepublica_group_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -163,7 +165,8 @@ function Home(): JSX.Element {
                     <Row
                         data={[
                             <Text>Natureza</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {naturezas_artepublica_group_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -180,7 +183,8 @@ function Home(): JSX.Element {
                     <Row
                         data={[
                             <Text>Zona</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {zonas_artepublica_group_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -197,7 +201,8 @@ function Home(): JSX.Element {
                     <Row
                         data={[
                             <Text>Status</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {status_artepublica_group_total.length}</Text>,
                             <Text>Tipologias</Text>,
                         ]}
                         style={style.head}

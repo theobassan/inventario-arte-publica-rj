@@ -319,7 +319,8 @@ function Category(): JSX.Element {
                     <Row
                         data={[
                             <Text>Tipologia</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {topologias_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -336,7 +337,8 @@ function Category(): JSX.Element {
                     <Row
                         data={[
                             <Text>Natureza</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {naturezas_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
@@ -353,7 +355,8 @@ function Category(): JSX.Element {
                     <Row
                         data={[
                             <Text>Artista</Text>,
-                            <Text>Total</Text>,
+                            <Text>Total:{' '}
+                            {artistas_total.length}</Text>,
                             <Text>Obras</Text>,
                         ]}
                         style={style.head}
