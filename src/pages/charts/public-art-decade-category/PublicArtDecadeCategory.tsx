@@ -17,7 +17,7 @@ function Line(): JSX.Element {
 
     const eixos = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => all[key].map((obra) => obra.Eixo ?? 'Desconhecida'))
+        .map((key) => all[key].map((obra) => obra.Categoria ?? 'Desconhecida'))
         .reduce<string[]>((r, l) => {
             Array.prototype.push.apply(r, l);
             return r;
@@ -35,7 +35,7 @@ function Line(): JSX.Element {
             .filter((key) => key !== 'null' && all[key].length > 0)
             .map((key) => [
                 Date.UTC(parseInt(key, 10), 1),
-                all[key].filter((obra) => obra.Eixo === eixo).length,
+                all[key].filter((obra) => obra.Categoria === eixo).length,
             ]);
 
         const serie = {
@@ -97,7 +97,7 @@ function Block(): JSX.Element {
 
     const eixos = Object.keys(all)
         .filter((key) => key !== 'null' && all[key].length > 0)
-        .map((key) => all[key].map((obra) => obra.Eixo ?? 'Desconhecida'))
+        .map((key) => all[key].map((obra) => obra.Categoria ?? 'Desconhecida'))
         .reduce<string[]>((r, l) => {
             Array.prototype.push.apply(r, l);
             return r;
@@ -113,7 +113,7 @@ function Block(): JSX.Element {
     const total_eixos = eixos.reduce<{ type: string; name: string; data: number[] }[]>((series, eixo) => {
         const total_eixo = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => all[key].filter((obra) => obra.Eixo === eixo).length);
+            .map((key) => all[key].filter((obra) => obra.Categoria === eixo).length);
 
         const serie = {
             type: 'column',

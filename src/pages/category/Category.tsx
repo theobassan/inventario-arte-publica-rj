@@ -26,7 +26,7 @@ function Line({ category }: { category: string }): JSX.Element {
         .filter((key) => key !== 'null' && all[key].length > 0)
         .map((key) => [
             Date.UTC(parseInt(key, 10), 1),
-            all[key].filter((obra) => obra.Eixo === category).length,
+            all[key].filter((obra) => obra.Categoria === category).length,
         ]);
 
     const series = [
@@ -80,7 +80,7 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const obras: Obra[] = Object.keys(typed_obra_artepublica)
-        .filter((key) => typed_obra_artepublica[key].Eixo === category)
+        .filter((key) => typed_obra_artepublica[key].Categoria === category)
         .filter(
             (key) =>
                 (typed_obra_artepublica[key].Autores != null &&
@@ -121,7 +121,7 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
         tipologias
             .map((tipologia) => {
                 const titulos_tipologia = Object.keys(typed_obra_artepublica)
-                    .filter((key) => typed_obra_artepublica[key].Eixo === category)
+                    .filter((key) => typed_obra_artepublica[key].Categoria === category)
                     .filter(
                         (key) =>
                             (typed_obra_artepublica[key].Autores != null &&
@@ -204,13 +204,13 @@ function Category(): JSX.Element {
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const tipologias: string[] = Object.keys(typed_obra_artepublica)
-        .filter((key) => typed_obra_artepublica[key].Eixo === category)
+        .filter((key) => typed_obra_artepublica[key].Categoria === category)
         .map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
     const naturezas: string[] = Object.keys(typed_obra_artepublica)
-        .filter((key) => typed_obra_artepublica[key].Eixo === category)
+        .filter((key) => typed_obra_artepublica[key].Categoria === category)
         .map((key) => typed_obra_artepublica[key].Natureza ?? 'Desconhecida');
     const artistas: string[] = Object.keys(typed_obra_artepublica)
-        .filter((key) => typed_obra_artepublica[key].Eixo === category)
+        .filter((key) => typed_obra_artepublica[key].Categoria === category)
         .map<Artista[]>(
             (key) =>
                 typed_obra_artepublica[key].Autores ?? [
@@ -259,7 +259,7 @@ function Category(): JSX.Element {
         const r_top = r.find((top) => top.nome === a);
         if (!r_top) {
             const obras: { nome: string; inauguracao: string }[] = Object.keys(typed_obra_artepublica)
-                .filter((key) => typed_obra_artepublica[key].Eixo === category)
+                .filter((key) => typed_obra_artepublica[key].Categoria === category)
                 .filter(
                     (key) =>
                         (typed_obra_artepublica[key].Autores != null &&
@@ -379,9 +379,11 @@ function Category(): JSX.Element {
                 </View>
                 <View style={{ height: 24 }} />
 
-                <View>
-                    <Network category={category} autor={artista} />
-                </View>
+                {artista && (
+                    <View>
+                        <Network category={category} autor={artista} />
+                    </View>
+                )}
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>

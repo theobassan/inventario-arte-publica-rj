@@ -390,16 +390,40 @@ export const Ariel: Artista = {
     Pessoa: pessoas.Ariel,
 };
 
+export const SimonMazieredas: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.SimonMazieredas,
+};
+
+export const PierreLaviron: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.PierreLaviron,
+};
+
 export const DeoclecianoMartinsdeOliveiraFilho: Artista = {
     ID: undefined,
     IDPessoa: undefined,
     Pessoa: pessoas.DeoclecianoMartinsdeOliveiraFilho,
 };
 
-export const NicolinaVazdeAssis: Artista = {
+export const PhilippeGarnier: Artista = {
     ID: undefined,
     IDPessoa: undefined,
-    Pessoa: pessoas.NicolinaVazdeAssis,
+    Pessoa: pessoas.PhilippeGarnier,
+};
+
+export const FrançoisLespingola: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.FrançoisLespingola,
+};
+
+export const MariaMartins: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.MariaMartins,
 };
 
 export const BrigadeiroAlpoim: Artista = {
@@ -1398,6 +1422,18 @@ export const WainoAaltonem: Artista = {
     Pessoa: pessoas.WainoAaltonem,
 };
 
+export const GabrielDubray: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.GabrielDubray,
+};
+
+export const LygiaClark: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.LygiaClark,
+};
+
 export const AugustZamoiski: Artista = {
     ID: undefined,
     IDPessoa: undefined,
@@ -1558,6 +1594,12 @@ export const AugusteHenriVictorGrandjeandeMontigny: Artista = {
     ID: undefined,
     IDPessoa: undefined,
     Pessoa: pessoas.AugusteHenriVictorGrandjeandeMontigny,
+};
+
+export const MauricioBentes: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.MauricioBentes,
 };
 
 export const AlfredoHerculanoFreixo: Artista = {
@@ -2326,4 +2368,10 @@ export const MiguelPastor: Artista = {
     ID: undefined,
     IDPessoa: undefined,
     Pessoa: pessoas.MiguelPastor,
+};
+
+export const HaruyoshiOno: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.HaruyoshiOno,
 };

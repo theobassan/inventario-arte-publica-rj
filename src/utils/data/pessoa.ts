@@ -760,9 +760,7 @@ export const MauroMonizFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('', '', '', 'Secretário Especial de Monumentos Públicos', [], 'Rio de Janeiro'),
-    ],
+    Fatos: [new Fato('', '', '', 'Secretário Especial de Monumentos Públicos', [], 'Rio de Janeiro')],
 };
 export const VillaLobos: Pessoa = {
     ID: undefined,
@@ -882,9 +880,7 @@ export const AndreaAlbuquerqueGarciaRedondo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('30/05/1996', '30/12/1996', 'Secretário Municipal de Urbanismo', '', [], ''),
-    ],
+    Fatos: [new Fato('30/05/1996', '30/12/1996', 'Secretário Municipal de Urbanismo', '', [], '')],
 };
 
 export const VicenteOrnelas: Pessoa = {
@@ -2627,9 +2623,7 @@ export const MarioAgostinelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('1953', '1953', 'Fundador', 'Foi fundador da Petit Galerie', [], 'Rio de Janeiro'),
-    ],
+    Fatos: [new Fato('1953', '1953', 'Fundador', 'Foi fundador da Petit Galerie', [], 'Rio de Janeiro')],
 };
 
 export const DecioVilares: Pessoa = {
@@ -2814,9 +2808,61 @@ export const Desconhecida: Pessoa = {
     Fatos: [new Fato('', '', '', '', [], '')],
 };
 
-export const NicolinaVazdeAssis: Pessoa = {
+export const SimonMazieredas: Pessoa = {
     ID: undefined,
-    Nome: `Nicolina Vaz de Assis`,
+    Nome: `Simon Mazièredas`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
+export const PierreLaviron: Pessoa = {
+    ID: undefined,
+    Nome: `Pierre Laviron`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
+export const PhilippeGarnier: Pessoa = {
+    ID: undefined,
+    Nome: `Philippe Garnier`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
+export const FrançoisLespingola: Pessoa = {
+    ID: undefined,
+    Nome: `François Lespingola`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
+export const MariaMartins: Pessoa = {
+    ID: undefined,
+    Nome: `Maria Martins`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
@@ -2875,9 +2921,7 @@ export const JorgeSelaron: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('1983', '1983', 'Mudança', 'O artista chileno muda-se para o Rio de Janeiro.', [], 'Rio de Janeiro'),
-    ],
+    Fatos: [new Fato('1983', '1983', 'Mudança', 'O artista chileno muda-se para o Rio de Janeiro.', [], 'Rio de Janeiro')],
 };
 
 export const GracaCostaCabral: Pessoa = {
@@ -5494,9 +5538,7 @@ export const ReynaldoRoels: Pessoa = {
     Descriçao: undefined,
     Profissoes: [CriticoDeArte],
     Especialidades: undefined,
-    Fatos: [
-        new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro'),
-    ],
+    Fatos: [new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro')],
 };
 
 export const AmilcardeCastro: Pessoa = {
@@ -6422,6 +6464,19 @@ export const JulianAgosta: Pessoa = {
 export const AlbertodaVeigaGuignard: Pessoa = {
     ID: undefined,
     Nome: `Alberto da Veiga Guignard`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
+export const GabrielDubray: Pessoa = {
+    ID: undefined,
+    Nome: `Gabriel Dubray`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
@@ -7372,6 +7427,19 @@ export const AugusteHenriVictorGrandjeandeMontigny: Pessoa = {
     Fatos: [new Fato('', '', '', '', [], '')],
 };
 
+export const MauricioBentes: Pessoa = {
+    ID: undefined,
+    Nome: `Mauricio Bentes`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: [new Fato('', '', '', '', [], '')],
+};
+
 export const AlfredoHerculanoFreixo: Pessoa = {
     ID: undefined,
     Nome: `Alfredo Herculano Freixo`,
@@ -7888,9 +7956,7 @@ export const NiltonMontarroyos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('', '', 'Arquiteto', 'Urbanização do bairro de Campo Grande', [], ''),
-    ],
+    Fatos: [new Fato('', '', 'Arquiteto', 'Urbanização do bairro de Campo Grande', [], '')],
 };
 
 export const GeorgeGuerra: Pessoa = {
@@ -8995,7 +9061,18 @@ export const FlavioFerreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('11/09/1986', '30/12/1988', 'Secretário', 'Secretário Municipal de Desenvolvimento Urbano', [], 'Rio de Janeiro'),
-    ],
+    Fatos: [new Fato('11/09/1986', '30/12/1988', 'Secretário', 'Secretário Municipal de Desenvolvimento Urbano', [], 'Rio de Janeiro')],
+};
+
+export const HaruyoshiOno: Pessoa = {
+    ID: undefined,
+    Nome: `Haruyoshi Ono`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
 };

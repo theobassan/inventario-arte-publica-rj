@@ -26,7 +26,7 @@ function MapPublicArtVsCategory(): JSX.Element {
                 latitude: typed_obra_artepublica[key].Latitude ?? '0',
                 longitude: typed_obra_artepublica[key].Longitude ?? '0',
             },
-            color: color(typed_obra_artepublica[key].Eixo),
+            color: color(typed_obra_artepublica[key].Categoria),
         }));
 
     return <Map markers={markers} />;
