@@ -3,7 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Text } from '@components';
-import { Obra } from '@domain';
+import { Artista, Obra } from '@domain';
 import * as obras from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
@@ -18,6 +18,20 @@ function Home(): JSX.Element {
     const naturezas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Natureza ?? 'Desconhecida');
     const zonas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Zona ?? 'Desconhecida');
     const status_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Status ?? 'Desconhecida');
+    const artistas_artepublica: string[] = Object.keys(typed_obra_artepublica)
+        .map(
+            (key) =>
+                typed_obra_artepublica[key].Autores ?? [
+                    { Pessoa: { Nome: 'Desconhecida' } } as Artista,
+                ],
+        )
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(
+                r,
+                l.map<string>((artista) => artista.Pessoa?.Nome ?? 'Desconhecida'),
+            );
+            return r;
+        }, []);
 
     const all_topologias: string[] = [];
     Array.prototype.push.apply(all_topologias, tipologias);
@@ -43,6 +57,33 @@ function Home(): JSX.Element {
                 r.push({
                     nome: a,
                     total: tipologias_artepublica.filter((top) => top === a).length,
+                });
+            }
+            return r;
+        }, [])
+        .sort((a, b) => a.nome.localeCompare(b.nome));
+
+    const artistas_artepublica_group_total: {
+        nome: string;
+        total: number;
+        obras: string[];
+    }[] = artistas_artepublica
+        .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
+            const r_top = r.find((top) => top.nome === a);
+            if (!r_top) {
+                const obras: string[] = Object.keys(typed_obra_artepublica)
+                    .filter(
+                        (key) =>
+                            (typed_obra_artepublica[key].Autores != null &&
+                                typed_obra_artepublica[key].Autores?.find((artista) => artista.Pessoa?.Nome === a) != null) ||
+                            (a === 'Desconhecida' && typed_obra_artepublica[key].Autores == null),
+                    )
+                    .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
+
+                r.push({
+                    nome: a,
+                    total: obras.length,
+                    obras,
                 });
             }
             return r;
@@ -156,6 +197,26 @@ function Home(): JSX.Element {
                         data={tipologias_artepublica_group_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
+                        ])}
+                    />
+                </Table>
+                <View style={{ height: 24 }} />
+
+                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+                    <Row
+                        data={[
+                            <Text>Artista</Text>,
+                            <Text>Total:{' '}
+                            {artistas_artepublica_group_total.length}</Text>,
+                            <Text>Obras</Text>,
+                        ]}
+                        style={style.head}
+                    />
+                    <Rows
+                        data={artistas_artepublica_group_total.map((top) => [
+                            <Text>{top.nome}</Text>,
+                            <Text>{top.total}</Text>,
+                            <Text>{top.obras.join(', ')}</Text>,
                         ])}
                     />
                 </Table>
