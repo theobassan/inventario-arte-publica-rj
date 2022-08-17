@@ -17744,7 +17744,8 @@ export const AyrtonSenna_MarioPitanguy: Obra = {
     Temporalidade: 'Permanente',
     Categoria: 'Narratividade',
     Funcao: 'Referencial',
-    Natureza: 'Estátua',
+    Natureza: 'Cívica',
+    Tipologia: 'Estátua',
     Execucao: true,
 };
 
