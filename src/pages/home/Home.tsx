@@ -103,13 +103,22 @@ function Home(): JSX.Element {
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const zonas_artepublica_group_total: { nome: string; total: number }[] = zonas_artepublica
-        .reduce<{ nome: string; total: number }[]>(function (r, a) {
+    const zonas_artepublica_group_total: { nome: string; total: number; obras: string[] }[] = zonas_artepublica
+        .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
+                const obras: string[] = Object.keys(typed_obra_artepublica)
+                    .filter(
+                        (key) =>
+                            (typed_obra_artepublica[key].Zona != null && typed_obra_artepublica[key].Zona === a) ||
+                            (a === 'Desconhecida' && typed_obra_artepublica[key].Zona == null),
+                    )
+                    .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
+
                 r.push({
                     nome: a,
                     total: zonas_artepublica.filter((top) => top === a).length,
+                    obras,
                 });
             }
             return r;
@@ -246,6 +255,7 @@ function Home(): JSX.Element {
                             <Text>Zona</Text>,
                             <Text>Total:{' '}
                             {zonas_artepublica_group_total.length}</Text>,
+                            <Text>Obras</Text>,
                         ]}
                         style={style.head}
                     />
@@ -253,6 +263,7 @@ function Home(): JSX.Element {
                         data={zonas_artepublica_group_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
+                            <Text>{top.obras.join(', ')}</Text>,
                         ])}
                     />
                 </Table>
