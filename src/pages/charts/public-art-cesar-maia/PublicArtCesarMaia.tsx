@@ -318,7 +318,7 @@ function Block(): JSX.Element {
     return <Chart options={lineOptions} />;
 }
 
-function PublicArtTotal19892000(): JSX.Element {
+function PublicArtCesarMaia(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
             <View>
@@ -331,4 +331,4 @@ function PublicArtTotal19892000(): JSX.Element {
     );
 }
 
-export default PublicArtTotal19892000;
+export default PublicArtCesarMaia;

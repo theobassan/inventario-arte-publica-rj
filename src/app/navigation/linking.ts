@@ -46,6 +46,12 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             PublicArtDecadeTypology: {
                                 path: 'public-art-typology-x-decade',
                             },
+                            PublicArtC19892000: {
+                                path: 'public-art-19989-2000',
+                            },
+                            PublicArtCesarMaia: {
+                                path: 'public-art-cesar-maia',
+                            },
                         },
                     },
                     Category: {

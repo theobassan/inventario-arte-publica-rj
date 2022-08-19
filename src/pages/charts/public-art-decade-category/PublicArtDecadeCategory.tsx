@@ -110,10 +110,13 @@ function Block(): JSX.Element {
             return r;
         }, []);
 
-    const total_eixos = eixos.reduce<{ type: string; name: string; data: number[] }[]>((series, eixo) => {
+    const total_eixos = eixos.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, eixo) => {
         const total_eixo = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => all[key].filter((obra) => obra.Categoria === eixo).length);
+            .map((key) => {
+                const total = all[key].filter((obra) => obra.Categoria === eixo).length;
+                return total > 0 ? total : null;
+            });
 
         const serie = {
             type: 'column',

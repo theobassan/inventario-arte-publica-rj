@@ -3,6 +3,7 @@ export * from './charts';
 export * from './charts/public-art-decade-category';
 export * from './charts/public-art-decade-typology';
 export * from './charts/public-art-total-1989-2000';
+export * from './charts/public-art-cesar-maia';
 export * from './charts/rede';
 export * from './decade';
 export * from './home';
