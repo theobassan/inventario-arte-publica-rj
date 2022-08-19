@@ -230,3 +230,19 @@ export const is1500 = (date?: string): boolean => {
 export const isNull = (date?: string): boolean => {
     return date === null || date === ''; // || date.split('/')[1] === null || date.split('/')[1] === '';
 };
+
+export const getYear = (date: string | undefined): number | undefined => {
+    if (date != null && date !== '') {
+        try {
+            if (date.split('/').length === 3) {
+                return parseInt(date.split('/')[2], 10);
+            } else if (date.split('/').length === 2) {
+                return parseInt(date.split('/')[1], 10);
+            } else {
+                return parseInt(date, 10);
+            }
+        } catch {
+            console.log(date);
+        }
+    }
+};

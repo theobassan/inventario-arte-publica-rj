@@ -33,17 +33,17 @@ function Home(): JSX.Element {
             return r;
         }, []);
 
-    const all_topologias: string[] = [];
-    Array.prototype.push.apply(all_topologias, tipologias);
-    Array.prototype.push.apply(all_topologias, tipologias_artepublica);
+    const all_tipologias: string[] = [];
+    Array.prototype.push.apply(all_tipologias, tipologias);
+    Array.prototype.push.apply(all_tipologias, tipologias_artepublica);
 
-    const topologias_group_total: { nome: string; total: number }[] = all_topologias
+    const tipologias_group_total: { nome: string; total: number }[] = all_tipologias
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
                 r.push({
                     nome: a,
-                    total: all_topologias.filter((top) => top === a).length,
+                    total: all_tipologias.filter((top) => top === a).length,
                 });
             }
             return r;
@@ -103,8 +103,8 @@ function Home(): JSX.Element {
         }, [])
         .sort((a, b) => a.nome.localeCompare(b.nome));
 
-    const zonas_artepublica_group_total: { nome: string; total: number; obras: string[] }[] = zonas_artepublica
-        .reduce<{ nome: string; total: number; obras: string[] }[]>(function (r, a) {
+    const zonas_artepublica_group_total: { nome: string; total: number; obras: string[]; tipologias: { nome: string; total: number }[] }[] = zonas_artepublica
+        .reduce<{ nome: string; total: number; obras: string[]; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
                 const obras: string[] = Object.keys(typed_obra_artepublica)
@@ -115,10 +115,32 @@ function Home(): JSX.Element {
                     )
                     .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
 
+                const tipologias_zona: string[] = Object.keys(typed_obra_artepublica)
+                    .filter(
+                        (key) =>
+                            (typed_obra_artepublica[key].Zona != null && typed_obra_artepublica[key].Zona === a) ||
+                            (a === 'Desconhecida' && typed_obra_artepublica[key].Zona == null),
+                    )
+                    .map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
+
+                const tipologias_zona_group = tipologias_zona
+                    .reduce<{ nome: string; total: number }[]>(function (r, a) {
+                        const r_top = r.find((top) => top.nome === a);
+                        if (!r_top) {
+                            r.push({
+                                nome: a,
+                                total: tipologias_zona.filter((top) => top === a).length,
+                            });
+                        }
+                        return r;
+                    }, [])
+                    .sort((a, b) => a.nome.localeCompare(b.nome));
+
                 r.push({
                     nome: a,
                     total: zonas_artepublica.filter((top) => top === a).length,
                     obras,
+                    tipologias: tipologias_zona_group,
                 });
             }
             return r;
@@ -177,12 +199,12 @@ function Home(): JSX.Element {
                         data={[
                             <Text>Tipologia</Text>,
                             <Text>Total:{' '}
-                            {topologias_group_total.length}</Text>,
+                            {tipologias_group_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
                     <Rows
-                        data={topologias_group_total.map((top) => [
+                        data={tipologias_group_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
                         ])}
@@ -255,6 +277,7 @@ function Home(): JSX.Element {
                             <Text>Zona</Text>,
                             <Text>Total:{' '}
                             {zonas_artepublica_group_total.length}</Text>,
+                            <Text>Tipologias</Text>,
                             <Text>Obras</Text>,
                         ]}
                         style={style.head}
@@ -263,6 +286,7 @@ function Home(): JSX.Element {
                         data={zonas_artepublica_group_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
+                            <Text>{top.tipologias.map((tipologia) => `${tipologia.nome} (${tipologia.total})`).join(', ')}</Text>,
                             <Text>{top.obras.join(', ')}</Text>,
                         ])}
                     />

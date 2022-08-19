@@ -30,17 +30,17 @@ function Line(): JSX.Element {
             return r;
         }, []);
 
-    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[][] }[]>((series, topologia) => {
+    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[][] }[]>((series, tipologia) => {
         const total_tipologia = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
             .map((key) => [
                 Date.UTC(parseInt(key, 10), 1),
-                all[key].filter((obra) => obra.Tipologia === topologia).length,
+                all[key].filter((obra) => obra.Tipologia === tipologia).length,
             ]);
 
         const serie = {
             type: 'line',
-            name: topologia,
+            name: tipologia,
             data: total_tipologia,
         };
         series.push(serie);
@@ -110,14 +110,14 @@ function Block(): JSX.Element {
             return r;
         }, []);
 
-    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[] }[]>((series, topologia) => {
+    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: number[] }[]>((series, tipologia) => {
         const total_tipologia = Object.keys(all)
             .filter((key) => key !== 'null' && all[key].length > 0)
-            .map((key) => all[key].filter((obra) => obra.Tipologia === topologia).length);
+            .map((key) => all[key].filter((obra) => obra.Tipologia === tipologia).length);
 
         const serie = {
             type: 'column',
-            name: topologia,
+            name: tipologia,
             data: total_tipologia,
         };
         series.push(serie);

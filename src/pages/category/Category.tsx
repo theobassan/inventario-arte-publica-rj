@@ -225,7 +225,7 @@ function Category(): JSX.Element {
             return r;
         }, []);
 
-    const topologias_total: { nome: string; total: number }[] = tipologias
+    const tipologias_total: { nome: string; total: number }[] = tipologias
         .reduce<{ nome: string; total: number }[]>(function (r, a) {
             const r_top = r.find((top) => top.nome === a);
             if (!r_top) {
@@ -323,12 +323,12 @@ function Category(): JSX.Element {
                         data={[
                             <Text>Tipologia</Text>,
                             <Text>Total:{' '}
-                            {topologias_total.length}</Text>,
+                            {tipologias_total.length}</Text>,
                         ]}
                         style={style.head}
                     />
                     <Rows
-                        data={topologias_total.map((top) => [
+                        data={tipologias_total.map((top) => [
                             <Text>{top.nome}</Text>,
                             <Text>{top.total}</Text>,
                         ])}
