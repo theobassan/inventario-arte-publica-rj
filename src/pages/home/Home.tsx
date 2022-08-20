@@ -8,6 +8,72 @@ import { getYear } from '@utils/data/analisys_utils';
 import * as obras from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
+function TabelaEnderecos({ obra_artepublica }: { obra_artepublica: Record<string, Obra> }): JSX.Element {
+    const style = styles();
+
+    const enderecos: string[] = Object.keys(obra_artepublica)
+        .map((key) => obra_artepublica[key].Endereço ?? 'Desconhecida')
+        .reduce<string[]>((r, e) => {
+            if (r.find((end) => end === e) == null) {
+                r.push(e);
+            }
+            return r;
+        }, []);
+
+    const enderecos_total: { nome: string; total: number; tipologias: string[] }[] = enderecos
+        .reduce<{ nome: string; total: number; tipologias: string[] }[]>(function (total, endereco) {
+            const endereco_total = total.find((endereco_total) => endereco_total.nome === endereco);
+            if (!endereco_total) {
+                const obras = Object.keys(obra_artepublica)
+                    .filter((key) => obra_artepublica[key].Endereço === endereco)
+                    .map((key) => obra_artepublica[key]);
+
+                const tipologias = obras
+                    .map((obra) => obra.Tipologia ?? 'Desconhecida')
+                    .reduce<string[]>((r, e) => {
+                        if (r.find((end) => end === e) == null) {
+                            r.push(e);
+                        }
+                        return r;
+                    }, [])
+                    .map((tipologia) => {
+                        const obrasTipologia = obras.filter((obra) => obra.Tipologia === tipologia || (obra.Tipologia == null && tipologia === 'Desconhecida'));
+
+                        return `${tipologia}(${obrasTipologia.length}): ${obrasTipologia.map((obra) => obra.Titulo ?? 'Desconhecida').join(', ')}`;
+                    });
+
+                total.push({
+                    nome: endereco,
+                    total: obras.length,
+                    tipologias,
+                });
+            }
+            return total;
+        }, [])
+        .sort((a, b) => (a.total < b.total ? 1 : -1));
+
+    return (
+        <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
+            <Row
+                data={[
+                    <Text>Endereço</Text>,
+                    <Text>Total:{' '}
+                    {enderecos_total.length}</Text>,
+                    <Text>Tipologias</Text>,
+                ]}
+                style={style.head}
+            />
+            <Rows
+                data={enderecos_total.map((endereco) => [
+                    <Text>{endereco.nome}</Text>,
+                    <Text>{endereco.total}</Text>,
+                    <Text>{endereco.tipologias.join(',\n')}</Text>,
+                ])}
+            />
+        </Table>
+    );
+}
+
 function MaiorAutor(obra_artepublica: Record<string, Obra>): string | undefined {
     const artistas_artepublica = Object.keys(obra_artepublica)
         .map(
@@ -481,6 +547,9 @@ function Home(): JSX.Element {
                 <View style={{ height: 24 }} />
 
                 <Network />
+                <View style={{ height: 24 }} />
+
+                <TabelaEnderecos obra_artepublica={typed_obra_artepublica} />
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>
