@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import MapAll from './MapAll';
+import MapaRecorte from './MapaRecorte';
 
 describe('<MapAll />', () => {
     it('should render', () => {
-        const { getByTestId } = render(<MapAll />);
+        const { getByTestId } = render(<MapaRecorte />);
 
         const mapView = getByTestId('mapView');
 

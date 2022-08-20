@@ -63,8 +63,7 @@ function MyMapComponent({
                         strokeColor: '#000',
                         strokeWeight: 2,
                         scale: 1,
-
-                        fillColor: marker.color ?? 'black',
+                        fillColor: marker.color ?? 'red',
                     },
                 });
                 markerG.setMap(map);

@@ -4,16 +4,16 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Maps, MapAll, MapAllVsPublicArt, MapPublicArt, MapPublicArtVsCategory } from '@pages';
+import { Maps, MapAllVsPublicArt, MapPublicArtVsCategory } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<MapsNavigatorParamsList>();
 
 export type MapsNavigatorParamsList = {
     Home: undefined;
-    All: undefined;
+
     AllVsPublicArt: undefined;
-    PublicArt: undefined;
+
     PublicArtVsCategory: undefined;
 };
 
@@ -49,40 +49,12 @@ export function MapsNavigator({ testOnly_initialRouteName }: MapsNavigatorProps)
                 })}
             />
             <DrawerNavigator.Screen
-                name="All"
-                component={MapAll}
-                options={({ navigation }) => ({
-                    title: 'Todas as Obras',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Todas as Obras</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
                 name="AllVsPublicArt"
                 component={MapAllVsPublicArt}
                 options={({ navigation }) => ({
                     title: 'Todas as Obras x Arte Pública',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Todas as Obras x Arte Pública</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
-                name="PublicArt"
-                component={MapPublicArt}
-                options={({ navigation }) => ({
-                    title: ' Arte Pública',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Arte Pública</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

@@ -38,6 +38,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Status: {
                                 path: 'status',
                             },
+                            Mapa: {
+                                path: 'mapa',
+                            },
                         },
                     },
                     Recorte: {
@@ -64,6 +67,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Status: {
                                 path: 'status',
                             },
+                            Mapa: {
+                                path: 'mapa',
+                            },
                         },
                     },
                     Maps: {
@@ -72,14 +78,8 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Home: {
                                 path: '',
                             },
-                            All: {
-                                path: 'all',
-                            },
                             AllVsPublicArt: {
                                 path: 'all-vs-public-art',
-                            },
-                            PublicArt: {
-                                path: 'public-art',
                             },
                             PublicArtVsCategory: {
                                 path: 'public-art-vs-category',

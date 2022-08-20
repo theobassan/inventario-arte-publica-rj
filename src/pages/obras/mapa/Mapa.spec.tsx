@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react-native';
 
-import MapPublicArt from './MapPublicArt';
+import Mapa from './Mapa';
 
-describe('<MapPublicArt />', () => {
+describe('<MapAll />', () => {
     it('should render', () => {
-        const { getByTestId } = render(<MapPublicArt />);
+        const { getByTestId } = render(<Mapa />);
 
         const mapView = getByTestId('mapView');
 

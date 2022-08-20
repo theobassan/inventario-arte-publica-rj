@@ -35,7 +35,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
                 ?.filter((marker) => marker.position.latitude !== '' && marker.position.longitude !== '')
                 .map((marker, index) => (
                     <Marker
-                        pinColor={marker.color ?? 'black'}
+                        pinColor={marker.color ?? 'red'}
                         key={index}
                         coordinate={{
                             latitude: parseFloat(marker.position.latitude),
