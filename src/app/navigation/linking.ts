@@ -30,7 +30,10 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                 path: 'naturezas',
                             },
                             Zonas: {
-                                path: 'zoonas',
+                                path: 'zonas',
+                            },
+                            Enderecos: {
+                                path: 'enderecos',
                             },
                         },
                     },
@@ -50,7 +53,10 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                 path: 'naturezas',
                             },
                             Zonas: {
-                                path: 'zoonas',
+                                path: 'zonas',
+                            },
+                            Enderecos: {
+                                path: 'enderecos',
                             },
                         },
                     },

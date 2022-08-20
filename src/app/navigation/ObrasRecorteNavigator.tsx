@@ -4,7 +4,7 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { ObrasRecorte, TipologiasRecorte, AutoresRecorte, NaturezasRecorte, ZonasRecorte } from '@pages';
+import { ObrasRecorte, TipologiasRecorte, AutoresRecorte, NaturezasRecorte, ZonasRecorte, EnderecosRecorte } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ObrasRecorteNavigatorParamsList>();
@@ -15,6 +15,7 @@ export type ObrasRecorteNavigatorParamsList = {
     Autores: undefined;
     Naturezas: undefined;
     Zonas: undefined;
+    Enderecos: undefined;
 };
 
 type ObrasRecorteNavigatorProps = {
@@ -98,6 +99,20 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     title: 'Zonas Recorte',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Zonas Recorte</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="Enderecos"
+                component={EnderecosRecorte}
+                options={({ navigation }) => ({
+                    title: 'Endereços Recorte',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Endereços Recorte</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

@@ -39,7 +39,6 @@ type Obra = {
     Execucao?: boolean;
     Classificacao?: string;
     Categoria?: string;
-    PontoDeReferencia?: string;
     Remocao?: boolean;
     Realocacao?: boolean;
     LugarRealocacao?: string;
@@ -48,7 +47,7 @@ type Obra = {
     DataRealocacao?: string;
     LatitudeRealocacao?: string;
     LongitudeRealocacao?: string;
-    PontoDeReferenciaorealocacao?: string;
+    EndereçoRealocacao?: string;
     Lugar?: string;
     Renomeacao?: boolean;
 };

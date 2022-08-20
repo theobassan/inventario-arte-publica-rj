@@ -4,7 +4,7 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Obras, Tipologias, Autores, Naturezas, Zonas } from '@pages';
+import { Obras, Tipologias, Autores, Naturezas, Zonas, Enderecos } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ObrasNavigatorParamsList>();
@@ -15,6 +15,7 @@ export type ObrasNavigatorParamsList = {
     Autores: undefined;
     Naturezas: undefined;
     Zonas: undefined;
+    Enderecos: undefined;
 };
 
 type ObrasNavigatorProps = {
@@ -98,6 +99,20 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     title: 'Zonas',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Zonas</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="Enderecos"
+                component={Enderecos}
+                options={({ navigation }) => ({
+                    title: 'Endereços',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Endereços</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />
