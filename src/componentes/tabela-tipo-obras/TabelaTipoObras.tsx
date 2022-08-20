@@ -5,25 +5,26 @@ import { Obra } from '@domain';
 
 import styles from './styles';
 
-export type TabelaTipologiaProps = {
-    tipologias: { nome: string; obras: Obra[] }[];
+export type TabelaTipoObrasProps = {
+    tipo: string;
+    tipos: { nome: string; obras: Obra[] }[];
 };
 
-function TabelaTipologia({ tipologias }: TabelaTipologiaProps): JSX.Element {
+function TabelaTipoObras({ tipo, tipos }: TabelaTipoObrasProps): JSX.Element {
     const style = styles();
 
     const { width } = useWindowDimensions();
 
     const headers = [
-        <Text>Tipologia</Text>,
-        <Text style={style.total}>{`Total: ${tipologias.length}`}</Text>,
+        <Text>{tipo}</Text>,
+        <Text style={style.total}>{`Total: ${tipos.length}`}</Text>,
         <Text>Obras</Text>,
     ];
-    const rows = tipologias.map((tipologia) => [
-        <Text>{tipologia.nome}</Text>,
-        <Text style={style.total}>{tipologia.obras.length}</Text>,
+    const rows = tipos.map((tipo) => [
+        <Text>{tipo.nome}</Text>,
+        <Text style={style.total}>{tipo.obras.length}</Text>,
         <Text>
-            {tipologia.obras
+            {tipo.obras
                 .map((obra) => obra.Titulo ?? 'Desconhecida')
                 .sort((a, b) => a.localeCompare(b))
                 .join(', ')}
@@ -47,4 +48,4 @@ function TabelaTipologia({ tipologias }: TabelaTipologiaProps): JSX.Element {
     );
 }
 
-export default TabelaTipologia;
+export default TabelaTipoObras;

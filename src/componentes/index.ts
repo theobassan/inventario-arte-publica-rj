@@ -1,1 +1,1 @@
-export * from './tabela-tipologia';
+export * from './tabela-tipo-obras';

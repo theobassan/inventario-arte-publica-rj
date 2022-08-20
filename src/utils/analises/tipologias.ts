@@ -2,16 +2,20 @@ import { Obra } from '@domain';
 
 import obras from './obras';
 
-const todasTipologias: string[] = obras.map((obra) => obra.Tipologia ?? 'Desconhecida');
+const nomesTipologias: string[] = obras
+    .map((obra) => obra.Tipologia ?? 'Desconhecida')
+    .reduce<string[]>((tipologias, tipologia) => {
+        if (!tipologias.includes(tipologia)) {
+            tipologias.push(tipologia);
+        }
+        return tipologias;
+    }, []);
 
-const tipologias: { nome: string; obras: Obra[] }[] = todasTipologias.reduce<{ nome: string; obras: Obra[] }[]>(function (total, tipologia) {
-    const r_top = total.find((tipoligia_total) => tipoligia_total.nome === tipologia);
-    if (!r_top) {
-        total.push({
-            nome: tipologia,
-            obras: obras.filter((obra) => obra.Tipologia === tipologia || (obra.Tipologia == null && tipologia === 'Desconhecida')),
-        });
-    }
+const tipologias: { nome: string; obras: Obra[] }[] = nomesTipologias.reduce<{ nome: string; obras: Obra[] }[]>(function (total, tipologia) {
+    total.push({
+        nome: tipologia,
+        obras: obras.filter((obra) => obra.Tipologia === tipologia || (obra.Tipologia == null && tipologia === 'Desconhecida')),
+    });
     return total;
 }, []);
 

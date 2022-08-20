@@ -15,6 +15,7 @@ export * from './maps/public-art-vs-category';
 export * from './obras';
 export * from './obras/tipologias';
 export * from './obras-recorte';
+export * from './obras-recorte/autores';
 export * from './obras-recorte/tipologias';
 export * from './not-found';
 export * from './not-match';
