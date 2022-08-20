@@ -1,267 +1,70 @@
+import React from 'react';
+
 import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@components';
-import { Obra } from '@domain';
+import { Artista, Obra } from '@domain';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
-
-function Line(): JSX.Element {
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
-
-    const total_anterior = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1989 && year <= 1993) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1993 && year <= 1997) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total_proximo = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1997 && year <= 2000) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const series = [
-        {
-            type: 'line',
-            name: 'Marcelo Alencar',
-            data: total_anterior,
-        } as SeriesOptionsType,
-        {
-            type: 'line',
-            name: 'Cesar Maia',
-            data: total,
-        } as SeriesOptionsType,
-        {
-            type: 'line',
-            name: 'Luiz Paulo Conde',
-            data: total_proximo,
-        } as SeriesOptionsType,
-    ];
-
-    const lineOptions: Highcharts.Options = {
-        chart: {
-            height: 800,
-            type: 'line',
-        },
-        title: {
-            text: '',
-        },
-        yAxis: {
-            title: {
-                text: 'Total',
-            },
-            min: 0,
-        },
-        xAxis: {
-            type: 'datetime',
-            dateTimeLabelFormats: {
-                // don't display the dummy year
-                month: '%Y',
-                year: '%Y',
-            },
-            title: {
-                text: 'Ano',
-            },
-        },
-        legend: {
-            layout: 'horizontal',
-            align: 'center',
-        },
-        series,
-    };
-
-    return <Chart options={lineOptions} />;
-}
 
 function Block(): JSX.Element {
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
-    const total_anterior = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1989 && year <= 1992) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number | null][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total > 0 ? year.total : null,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1993 && year <= 1996) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number | null][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total > 0 ? year.total : null,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const total_proximo = Object.keys(typed_obra_artepublica)
-        .reduce<{ year: number; total: number }[]>((result, key) => {
-            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
-            if (year != null && year >= 1997 && year <= 2000) {
-                const y = result.find((t) => t.year === year);
-
-                if (y == null) {
-                    result.push({
-                        year,
-                        total: Object.keys(typed_obra_artepublica).filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year).length,
-                    });
-                }
-            }
-
-            return result;
-        }, [])
-        .reduce<[number, number | null][]>((result, year) => {
-            result.push([
-                Date.UTC(year.year, 1),
-                year.total > 0 ? year.total : null,
-            ]);
-            return result;
-        }, [])
-        .sort((a, b) => (a[0] > b[0] ? 1 : -1));
-
-    const series = [
-        {
-            type: 'column',
-            name: 'Marcelo Alencar',
-            data: [
-                ...total_anterior.map((item) => item[1]),
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-            ],
-        } as SeriesOptionsType,
-        {
-            type: 'column',
-            name: 'Cesar Maia',
-            data: [
-                null,
-                null,
-                null,
-                null,
-                ...total.map((item) => item[1]),
-                null,
-                null,
-                null,
-                null,
-            ],
-        } as SeriesOptionsType,
-        {
-            type: 'column',
-            name: 'Luiz Paulo Conde',
-            data: [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                ...total_proximo.map((item) => item[1]),
-            ],
-        } as SeriesOptionsType,
+    const anos_primeiro_mantado = [
+        1993,
+        1994,
+        1995,
+        1996,
     ];
+
+    const obras_por_ano = Object.keys(typed_obra_artepublica)
+        .reduce<{ year: number; obras: Obra[] }[]>((result, key) => {
+            const year = getYear(typed_obra_artepublica[key].DataInauguracao);
+            if (year != null && anos_primeiro_mantado.includes(year)) {
+                const y = result.find((t) => t.year === year);
+
+                if (y == null) {
+                    result.push({
+                        year,
+                        obras: Object.keys(typed_obra_artepublica)
+                            .filter((keyInt) => getYear(typed_obra_artepublica[keyInt].DataInauguracao) === year)
+                            .map((keyInt) => typed_obra_artepublica[keyInt]),
+                    });
+                }
+            }
+
+            return result;
+        }, [])
+        .sort((a, b) => (a.year > b.year ? 1 : -1));
+
+    const tipologias = obras_por_ano
+        .map((obra_ano) => obra_ano.obras.map((obra) => obra.Tipologia ?? 'Desconhecida'))
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(r, l);
+            return r;
+        }, [])
+        .reduce<string[]>((r, e) => {
+            if (r.find((top) => top === e) == null) {
+                r.push(e);
+            }
+            return r;
+        }, []);
+
+    const total_tipologias = tipologias.reduce<{ type: string; name: string; data: (number | null)[] }[]>((series, tipologia) => {
+        const total_tipologia = obras_por_ano.map((obra_ano) => {
+            const total = obra_ano.obras.filter((obra) => obra.Tipologia === tipologia).length;
+            return total > 0 ? total : null;
+        });
+
+        const serie = {
+            type: 'column',
+            name: tipologia,
+            data: total_tipologia,
+        };
+        series.push(serie);
+        return series;
+    }, []) as SeriesOptionsType[];
 
     const lineOptions: Highcharts.Options = {
         chart: {
@@ -285,20 +88,7 @@ function Block(): JSX.Element {
             },
         },
         xAxis: {
-            categories: [
-                '1989',
-                '1990',
-                '1991',
-                '1992',
-                '1993',
-                '1994',
-                '1995',
-                '1996',
-                '1997',
-                '1998',
-                '1999',
-                '2000',
-            ],
+            categories: anos_primeiro_mantado.map((ano) => ano.toString()),
         },
         legend: {
             layout: 'horizontal',
@@ -312,20 +102,137 @@ function Block(): JSX.Element {
                 },
             },
         },
-        series,
+        series: total_tipologias,
     };
 
     return <Chart options={lineOptions} />;
 }
 
+function Network(): JSX.Element {
+    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
+
+    const anos_primeiro_mantado = [
+        1993,
+        1994,
+        1995,
+        1996,
+    ];
+
+    const obras_do_mandato = Object.keys(typed_obra_artepublica).reduce<Obra[]>((result, key) => {
+        const year = getYear(typed_obra_artepublica[key].DataInauguracao);
+        if (year != null && anos_primeiro_mantado.includes(year)) {
+            result.push(typed_obra_artepublica[key]);
+        }
+
+        return result;
+    }, []);
+
+    const titulos = obras_do_mandato.map((obra) => ({
+        id: obra.Titulo ?? 'Deconhecida',
+        marker: { radius: 5 },
+        color: 'yellow',
+    }));
+    const autores = obras_do_mandato
+        .map(
+            (obra) =>
+                obra.Autores ?? [
+                    { Pessoa: { Nome: 'Desconhecida' } } as Artista,
+                ],
+        )
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(
+                r,
+                l.map<string>((artista) => artista.Pessoa?.Nome ?? 'Desconhecida'),
+            );
+            return r;
+        }, [])
+        .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, autor) => {
+            if (r.find((node) => node.id === autor) == null) {
+                r.push({
+                    id: autor ?? 'Deconhecida',
+                    marker: { radius: 10 },
+                    color: 'red',
+                });
+            }
+            return r;
+        }, []);
+
+    const nodes = [{ id: 'Cesar Maia', marker: { radius: 20 }, color: 'blue' }];
+    Array.prototype.push.apply(nodes, titulos);
+    Array.prototype.push.apply(nodes, autores);
+
+    const data = autores.map((autor) => ({
+        from: 'Cesar Maia',
+        to: autor.id,
+    }));
+
+    Array.prototype.push.apply(
+        data,
+        autores
+            .map((autor) => {
+                const titulos_autor = obras_do_mandato
+                    .filter(
+                        (obra) =>
+                            (obra.Autores != null && obra.Autores?.find((artista) => artista.Pessoa?.Nome === autor.id) != null) ||
+                            (autor.id === 'Desconhecida' && obra.Autores == null),
+                    )
+                    .map((obra) => obra.Titulo);
+
+                return titulos_autor.map((titulo) => ({
+                    from: autor.id,
+                    to: titulo,
+                }));
+            })
+            .reduce((r, l) => {
+                Array.prototype.push.apply(r, l);
+                return r;
+            }, []),
+    );
+
+    const networkOptions: Highcharts.Options | unknown = {
+        chart: {
+            height: 800,
+            type: 'networkgraph',
+        },
+        title: {
+            text: '',
+        },
+        plotOptions: {
+            networkgraph: {
+                layoutAlgorithm: {
+                    enableSimulation: true,
+                    friction: -0.9,
+                },
+            },
+        },
+        series: [
+            {
+                name: '',
+                accessibility: {
+                    enabled: true,
+                },
+                dataLabels: {
+                    enabled: true,
+                    linkFormat: '{point.rel}',
+                },
+                data,
+                nodes,
+            },
+        ],
+    };
+
+    return <Chart options={networkOptions as Highcharts.Options} />;
+}
+
+//TODO: dropdown: prefeito/mandato (com e sem mandato selecionado)
 function PublicArtCesarMaia(): JSX.Element {
     return (
         <ScrollView style={{ width: '100%' }}>
             <View>
-                <Line />
+                <Block />
             </View>
             <View style={{ paddingTop: 24 }}>
-                <Block />
+                <Network />
             </View>
         </ScrollView>
     );
