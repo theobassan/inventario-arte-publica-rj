@@ -1,22 +1,24 @@
 import { Entypo } from '@expo/vector-icons';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { DrawerActions } from '@react-navigation/native';
+import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { ObrasRecorte, TipologiasRecorte, AutoresRecorte, NaturezasRecorte, ZonasRecorte, EnderecosRecorte, StatusRecorte, MapaRecorte } from '@pages';
-import { Theme, useTheme } from '@utils';
+import { ObrasRecorte, MapaRecorte } from '@pages';
+import { autoresRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
+
+import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
 const DrawerNavigator = createDrawerNavigator<ObrasRecorteNavigatorParamsList>();
 
 export type ObrasRecorteNavigatorParamsList = {
     Home: undefined;
-    Tipologias: undefined;
-    Autores: undefined;
-    Naturezas: undefined;
-    Zonas: undefined;
-    Enderecos: undefined;
-    Status: undefined;
+    Tipologias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Autores: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Naturezas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Enderecos: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
 };
 
@@ -54,7 +56,6 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
             />
             <DrawerNavigator.Screen
                 name="Tipologias"
-                component={TipologiasRecorte}
                 options={({ navigation }) => ({
                     title: 'Tipologias Recorte',
                     headerShown: true,
@@ -65,10 +66,11 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Autores"
-                component={AutoresRecorte}
                 options={({ navigation }) => ({
                     title: 'Autores Recorte',
                     headerShown: true,
@@ -79,10 +81,11 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autoresRecorte} tipologia zona />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Naturezas"
-                component={NaturezasRecorte}
                 options={({ navigation }) => ({
                     title: 'Naturezas Recorte',
                     headerShown: true,
@@ -93,10 +96,11 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Natureza" tipos={naturezasRecorte} tipologia zona />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Zonas"
-                component={ZonasRecorte}
                 options={({ navigation }) => ({
                     title: 'Zonas Recorte',
                     headerShown: true,
@@ -107,10 +111,11 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Zona" tipos={zonasRecorte} tipologia />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Enderecos"
-                component={EnderecosRecorte}
                 options={({ navigation }) => ({
                     title: 'Endereços Recorte',
                     headerShown: true,
@@ -121,10 +126,11 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Endereço" tipos={enderecosRecorte} tipologia zona />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Status"
-                component={StatusRecorte}
                 options={({ navigation }) => ({
                     title: 'Status Recorte',
                     headerShown: true,
@@ -135,7 +141,9 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                         </TouchableOpacity>
                     ),
                 })}
-            />
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />}
+            </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"
                 component={MapaRecorte}

@@ -1,26 +1,30 @@
+import { ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import { autoresRecorte } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 
-function CalcularMaiorAutor(): { nome: string; obras: Obra[] } {
-    const autoresRecorteOrdenadasPorTotalObras = autoresRecorte
-        .filter((autor) => autor.nome !== 'Desconhecida')
-        .sort((a, b) => (a.obras.length < b.obras.length ? 1 : -1));
+import styles from './styles';
 
-    return autoresRecorteOrdenadasPorTotalObras[0];
-}
+type GraficoRedeTipoTipologiaObraProps = {
+    tipo: string;
+    tipos: { nome: string; obras: Obra[] }[];
+};
 
-function MaiorAutorRecorte(): JSX.Element {
-    const maiorAutor = CalcularMaiorAutor();
+function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
+    const tiposOrdenadoPorTotal = [...tipos].filter((autor) => autor.nome !== 'Desconhecida').sort((a, b) => (a.obras.length < b.obras.length ? 1 : -1));
+    const maior = tiposOrdenadoPorTotal[0];
 
-    const titulos = maiorAutor.obras.map((obra) => ({
+    const style = styles();
+
+    const titulos = maior.obras.map((obra) => ({
         id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
         marker: { radius: 10 },
         color: 'yellow',
     }));
 
-    const tipologias = maiorAutor.obras
+    const tipologias = maior.obras
         .map((obra) => ({
             id: obra.Tipologia ?? 'Deconhecida',
             marker: { radius: 20 },
@@ -33,12 +37,12 @@ function MaiorAutorRecorte(): JSX.Element {
             return r;
         }, []);
 
-    const nodes = [{ id: maiorAutor.nome, marker: { radius: 30 }, color: 'blue' }];
+    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: 'blue' }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, tipologias);
 
     const data = tipologias.map((tipologia) => ({
-        from: maiorAutor.nome,
+        from: maior.nome,
         to: tipologia.id,
     }));
 
@@ -46,8 +50,13 @@ function MaiorAutorRecorte(): JSX.Element {
         data,
         tipologias
             .map((tipologia) => {
-                const titulos_tipologia = maiorAutor.obras
-                    .filter((obra) => obra.Autores?.find((artista) => artista.Pessoa?.Nome === maiorAutor.nome) != null)
+                const titulos_tipologia = maior.obras
+                    .filter((obra) =>
+                        tipo !== 'Autor'
+                            ? obra[tipo as keyof Obra] === maior.nome
+                            : obra.Autores?.find((artista) => artista.Pessoa?.Nome === maior.nome) != null,
+                    )
+
                     .filter(
                         (obra) => (obra.Tipologia != null && obra.Tipologia === tipologia.id) || (tipologia.id === 'Desconhecida' && obra.Tipologia == null),
                     )
@@ -99,7 +108,13 @@ function MaiorAutorRecorte(): JSX.Element {
         ],
     };
 
-    return <Chart options={options as Highcharts.Options} />;
+    return (
+        <SafeAreaView style={style.container}>
+            <ScrollView style={{ width: '100%' }}>
+                <Chart options={options as Highcharts.Options} />
+            </ScrollView>
+        </SafeAreaView>
+    );
 }
 
-export default MaiorAutorRecorte;
+export default GraficoRedeTipoTipologiaObra;

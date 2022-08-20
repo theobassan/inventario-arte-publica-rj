@@ -5,7 +5,7 @@ import { obrasRecorte } from '@utils';
 
 import styles from './styles';
 
-function MapAll(): JSX.Element {
+function MapaRecorte(): JSX.Element {
     const style = styles();
 
     const markers = obrasRecorte
@@ -23,4 +23,4 @@ function MapAll(): JSX.Element {
     );
 }
 
-export default MapAll;
+export default MapaRecorte;

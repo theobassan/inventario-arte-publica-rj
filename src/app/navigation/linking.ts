@@ -22,24 +22,101 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             Tipologias: {
                                 path: 'tipologias',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Autores: {
                                 path: 'autores',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Naturezas: {
                                 path: 'naturezas',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Zonas: {
                                 path: 'zonas',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Enderecos: {
                                 path: 'enderecos',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Status: {
                                 path: 'status',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Mapa: {
                                 path: 'mapa',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                         },
                     },
@@ -51,24 +128,101 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             Tipologias: {
                                 path: 'tipologias',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Autores: {
                                 path: 'autores',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Naturezas: {
                                 path: 'naturezas',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Zonas: {
                                 path: 'zonas',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Enderecos: {
                                 path: 'enderecos',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Status: {
                                 path: 'status',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                             Mapa: {
                                 path: 'mapa',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                },
                             },
                         },
                     },
