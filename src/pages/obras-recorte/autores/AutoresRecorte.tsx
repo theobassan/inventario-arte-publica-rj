@@ -14,7 +14,7 @@ function AutoresRecorte(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <TabelaTipoObras tipo="Autores" tipos={autoresRecorteOrdenadasPorNome} />
+                <TabelaTipoObras tipologia tipo="Autores" tipos={autoresRecorteOrdenadasPorNome} />
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>

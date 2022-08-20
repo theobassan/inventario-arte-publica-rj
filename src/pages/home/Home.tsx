@@ -244,52 +244,7 @@ function Home(): JSX.Element {
 
     const style = styles();
 
-    const zonas_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Zona ?? 'Desconhecida');
     const status_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Status ?? 'Desconhecida');
-
-    const zonas_artepublica_group_total: { nome: string; total: number; obras: string[]; tipologias: { nome: string; total: number }[] }[] = zonas_artepublica
-        .reduce<{ nome: string; total: number; obras: string[]; tipologias: { nome: string; total: number }[] }[]>(function (r, a) {
-            const r_top = r.find((top) => top.nome === a);
-            if (!r_top) {
-                const obras: string[] = Object.keys(typed_obra_artepublica)
-                    .filter(
-                        (key) =>
-                            (typed_obra_artepublica[key].Zona != null && typed_obra_artepublica[key].Zona === a) ||
-                            (a === 'Desconhecida' && typed_obra_artepublica[key].Zona == null),
-                    )
-                    .map((key) => typed_obra_artepublica[key].Titulo ?? 'Desconhecida');
-
-                const tipologias_zona: string[] = Object.keys(typed_obra_artepublica)
-                    .filter(
-                        (key) =>
-                            (typed_obra_artepublica[key].Zona != null && typed_obra_artepublica[key].Zona === a) ||
-                            (a === 'Desconhecida' && typed_obra_artepublica[key].Zona == null),
-                    )
-                    .map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
-
-                const tipologias_zona_group = tipologias_zona
-                    .reduce<{ nome: string; total: number }[]>(function (r, a) {
-                        const r_top = r.find((top) => top.nome === a);
-                        if (!r_top) {
-                            r.push({
-                                nome: a,
-                                total: tipologias_zona.filter((top) => top === a).length,
-                            });
-                        }
-                        return r;
-                    }, [])
-                    .sort((a, b) => a.nome.localeCompare(b.nome));
-
-                r.push({
-                    nome: a,
-                    total: zonas_artepublica.filter((top) => top === a).length,
-                    obras,
-                    tipologias: tipologias_zona_group,
-                });
-            }
-            return r;
-        }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     const status_artepublica_group_total: {
         nome: string;
@@ -335,28 +290,6 @@ function Home(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row
-                        data={[
-                            <Text>Zona</Text>,
-                            <Text>Total:{' '}
-                            {zonas_artepublica_group_total.length}</Text>,
-                            <Text>Tipologias</Text>,
-                            <Text>Obras</Text>,
-                        ]}
-                        style={style.head}
-                    />
-                    <Rows
-                        data={zonas_artepublica_group_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                            <Text>{top.tipologias.map((tipologia) => `${tipologia.nome} (${tipologia.total})`).join(', ')}</Text>,
-                            <Text>{top.obras.join(', ')}</Text>,
-                        ])}
-                    />
-                </Table>
-                <View style={{ height: 24 }} />
-
                 <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
                     <Row
                         data={[

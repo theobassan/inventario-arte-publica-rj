@@ -14,7 +14,7 @@ function NaturezasRecorte(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <TabelaTipoObras tipo="Natureza" tipos={naturezasRecorteOrdenadasPorNome} />
+                <TabelaTipoObras tipologia tipo="Natureza" tipos={naturezasRecorteOrdenadasPorNome} />
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>

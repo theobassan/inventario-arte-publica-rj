@@ -14,7 +14,7 @@ function Autores(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <TabelaTipoObras tipo="Autores" tipos={autoresOrdenadasPorNome} />
+                <TabelaTipoObras tipologia tipo="Autores" tipos={autoresOrdenadasPorNome} />
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>

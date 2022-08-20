@@ -29,6 +29,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Naturezas: {
                                 path: 'naturezas',
                             },
+                            Zonas: {
+                                path: 'zoonas',
+                            },
                         },
                     },
                     Recorte: {
@@ -45,6 +48,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             Naturezas: {
                                 path: 'naturezas',
+                            },
+                            Zonas: {
+                                path: 'zoonas',
                             },
                         },
                     },

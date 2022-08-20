@@ -2,23 +2,23 @@ import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { TabelaTipoObras } from '@componentes';
-import { naturezas } from '@utils';
+import { zonasRecorte } from '@utils';
 
 import styles from './styles';
 
-function Naturezas(): JSX.Element {
+function ZonasRecorte(): JSX.Element {
     const style = styles();
 
-    const naturezasOrdenadasPorNome = naturezas.sort((a, b) => a.nome.localeCompare(b.nome));
+    const zonasRecorteOrdenadasPorNome = zonasRecorte.sort((a, b) => a.nome.localeCompare(b.nome));
 
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <TabelaTipoObras tipologia tipo="Natureza" tipos={naturezasOrdenadasPorNome} />
+                <TabelaTipoObras tipologia tipo="Zona" tipos={zonasRecorteOrdenadasPorNome} />
                 <View style={{ height: 24 }} />
             </ScrollView>
         </SafeAreaView>
     );
 }
 
-export default Naturezas;
+export default ZonasRecorte;

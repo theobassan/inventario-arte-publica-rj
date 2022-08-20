@@ -21,7 +21,10 @@ module.exports = {
     collectCoverageFrom: [
         'src/**/*.{ts,tsx}',
         '!src/app/**/*.{ts,tsx}',
-        '!src/components/map/**/*.{ts,tsx}',
+        '!src/base-components/map/**/*.{ts,tsx}',
+        '!src/base-components/table/**/*.{ts,tsx}',
+        '!src/componentes/tabela-tipo-obras/**/*.{ts,tsx}',
+        '!src/utils/analises/**/*.{ts,tsx}',
         '!src/utils/export-as-image/**/*.{ts,tsx}',
         '!src/utils/data/**/*.{ts,tsx}',
         '!src/pages/**/*.{ts,tsx}',
@@ -34,9 +37,9 @@ module.exports = {
         'src/utils/data',
         'src/utils/theme-provider/domain',
         'src/utils/theme-provider/themes',
-        'src/components/chart/ChartDark.web.tsx',
-        'src/components/chart/ChartLight.web.tsx',
-        'src/components/map/Map.web.tsx',
+        'src/base-components/chart/ChartDark.web.tsx',
+        'src/base-components/chart/ChartLight.web.tsx',
+        'src/base-components/map/Map.web.tsx',
     ],
     coverageThreshold: {
         global: {
