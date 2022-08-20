@@ -1,4 +1,4 @@
-import { Map } from '@components';
+import { Map } from '@base-components';
 import { Obra } from '@domain';
 import * as obra from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';

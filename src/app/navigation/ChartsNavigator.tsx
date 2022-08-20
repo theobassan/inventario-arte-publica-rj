@@ -3,7 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
-import { Text } from '@components';
+import { Text } from '@base-components';
 import { Charts, PublicArtDecadeTypology, PublicArtDecadeCategory, PublicArtTotal19892000, PublicArtCesarMaia } from '@pages';
 import { Theme, useTheme } from '@utils';
 

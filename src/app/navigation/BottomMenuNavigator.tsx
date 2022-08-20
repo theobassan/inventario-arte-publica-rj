@@ -1,4 +1,4 @@
-import { AntDesign, Feather, MaterialIcons, Entypo } from '@expo/vector-icons';
+import { AntDesign, Feather, MaterialIcons, Entypo, FontAwesome } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
@@ -8,11 +8,15 @@ import { Theme, useTheme } from '@utils';
 
 import { ChartsNavigator, ChartsNavigatorParamsList } from './ChartsNavigator';
 import { MapsNavigator, MapsNavigatorParamsList } from './MapsNavigator';
+import { ObrasNavigator, ObrasNavigatorParamsList } from './ObrasNavigator';
+import { ObrasRecorteNavigator, ObrasRecorteNavigatorParamsList } from './ObrasRecorteNavigator';
 
 const BottomTab = createBottomTabNavigator<BottomMenuNavigatorParamList>();
 
 export type BottomMenuNavigatorParamList = {
     Home: undefined;
+    Obras: NavigatorScreenParams<ObrasNavigatorParamsList>;
+    Recorte: NavigatorScreenParams<ObrasRecorteNavigatorParamsList>;
     Maps: NavigatorScreenParams<MapsNavigatorParamsList>;
     Charts: NavigatorScreenParams<ChartsNavigatorParamsList>;
     Category: undefined;
@@ -39,6 +43,30 @@ export function BottomMenuNavigator(): JSX.Element {
                     headerShown: false,
                     tabBarIcon: ({ color }) => {
                         return <AntDesign name="home" size={24} color={color} />;
+                    },
+                    tabBarLabelStyle: style.tabBarLabel,
+                }}
+            />
+            <BottomTab.Screen
+                name="Obras"
+                component={ObrasNavigator}
+                options={{
+                    title: 'Obras',
+                    headerShown: false,
+                    tabBarIcon: ({ color }) => {
+                        return <FontAwesome name="object-ungroup" size={24} color={color} />;
+                    },
+                    tabBarLabelStyle: style.tabBarLabel,
+                }}
+            />
+            <BottomTab.Screen
+                name="Recorte"
+                component={ObrasRecorteNavigator}
+                options={{
+                    title: 'Recorte',
+                    headerShown: false,
+                    tabBarIcon: ({ color }) => {
+                        return <FontAwesome name="object-group" size={24} color={color} />;
                     },
                     tabBarLabelStyle: style.tabBarLabel,
                 }}

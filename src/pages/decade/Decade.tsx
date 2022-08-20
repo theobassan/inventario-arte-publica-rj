@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
-import { Text } from '@components';
+import { Text } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as analisys_list_utils from '@utils/data/analisys_list_utils';

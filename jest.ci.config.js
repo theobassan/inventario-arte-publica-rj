@@ -9,7 +9,8 @@ module.exports = {
     moduleNameMapper: {
         '^@assets/(.*)$': '<rootDir>/src/assets/$1',
         '^@app': '<rootDir>/src/app',
-        '^@components': '<rootDir>/src/components',
+        '^@base-components': '<rootDir>/src/base-components',
+        '^@componentes': '<rootDir>/src/componentes',
         '^@domain': '<rootDir>/src/domain',
         '^@pages': '<rootDir>/src/pages',
         '^@utils': '<rootDir>/src/utils',

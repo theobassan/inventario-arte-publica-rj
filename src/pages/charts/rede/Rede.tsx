@@ -1,7 +1,7 @@
 import Highcharts from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
-import { Chart } from '@components';
+import { Chart } from '@base-components';
 
 const networkOptions: Highcharts.Options | unknown = {
     chart: {

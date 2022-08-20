@@ -6,7 +6,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Table, Row, Rows } from 'react-native-table-component';
 
-import { Chart, Text } from '@components';
+import { Chart, Text } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
 import * as dedadas from '@utils/data/dedadas';

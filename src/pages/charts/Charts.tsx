@@ -1,4 +1,4 @@
-import { Text } from '@components';
+import { Text } from '@base-components';
 
 function Charts(): JSX.Element {
     return <Text>Charts Home</Text>;

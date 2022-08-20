@@ -1,7 +1,7 @@
 import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
-import { Chart } from '@components';
+import { Chart } from '@base-components';
 import { Obra } from '@domain';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';

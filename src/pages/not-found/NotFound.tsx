@@ -2,7 +2,7 @@ import { StackActions, useNavigation } from '@react-navigation/native';
 import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Button, Text } from '@components';
+import { Button, Text } from '@base-components';
 
 function NotFound(): JSX.Element {
     const navigation = useNavigation();
