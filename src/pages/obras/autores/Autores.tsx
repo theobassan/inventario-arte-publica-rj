@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { TabelaTipoObras } from '@componentes';
 import { autores } from '@utils';
 
+import MaiorAutor from './MaiorAutor';
 import styles from './styles';
 
 function Autores(): JSX.Element {
@@ -14,8 +15,9 @@ function Autores(): JSX.Element {
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <TabelaTipoObras tipologia tipo="Autores" tipos={autoresOrdenadasPorNome} />
+                <MaiorAutor />
                 <View style={{ height: 24 }} />
+                <TabelaTipoObras tipologia tipo="Autores" tipos={autoresOrdenadasPorNome} />
             </ScrollView>
         </SafeAreaView>
     );
