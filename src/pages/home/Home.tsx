@@ -84,7 +84,7 @@ function Network(): JSX.Element {
         .map((key) => typed_obra_artepublica[key]);
 
     const titulos = obras.map((obra) => ({
-        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'Desconhecida'})`,
+        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
         marker: { radius: 5 },
         color: 'yellow',
     }));
@@ -126,12 +126,7 @@ function Network(): JSX.Element {
                             (typed_obra_artepublica[key].Tipologia != null && typed_obra_artepublica[key].Tipologia === tipologia.id) ||
                             (tipologia.id === 'Desconhecida' && typed_obra_artepublica[key].Tipologia == null),
                     )
-                    .map(
-                        (key) =>
-                            `${typed_obra_artepublica[key].Titulo ?? 'Deconhecida'} (${
-                                getYear(typed_obra_artepublica[key].DataInauguracao) ?? 'Desconhecida'
-                            })`,
-                    );
+                    .map((key) => `${typed_obra_artepublica[key].Titulo ?? 'Deconhecida'} (${getYear(typed_obra_artepublica[key].DataInauguracao) ?? 'S.D.'})`);
 
                 return titulos_tipologia.map((titulo) => ({
                     from: tipologia.id,
