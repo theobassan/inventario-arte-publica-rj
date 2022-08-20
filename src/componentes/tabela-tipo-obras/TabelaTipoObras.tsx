@@ -25,17 +25,19 @@ function headers({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps): JSX.El
                 ...defaultHeaders,
                 <Text>Tipologias/Obras</Text>,
                 <Text>Zonas/Bairros</Text>,
+                <Text>Bairros/Obras</Text>,
             ];
         } else if (tipologia === true) {
             return [
                 ...defaultHeaders,
                 <Text>Tipologias/Obras</Text>,
+                <Text>Bairros/Obras</Text>,
             ];
         } else {
             return [
                 ...defaultHeaders,
                 <Text>Zonas/Bairros</Text>,
-                <Text>Obras</Text>,
+                <Text>Bairros/Obras</Text>,
             ];
         }
     } else {
@@ -91,11 +93,11 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
         if (zona === true) {
             const zonas = tipo.obras
                 .map((obra) => obra.Zona ?? 'Desconhecida')
-                .reduce<string[]>((tipologias, tipologia) => {
-                    if (!tipologias.includes(tipologia)) {
-                        tipologias.push(tipologia);
+                .reduce<string[]>((zonas, zona) => {
+                    if (!zonas.includes(zona)) {
+                        zonas.push(zona);
                     }
-                    return tipologias;
+                    return zonas;
                 }, [])
                 .sort((a, b) => a.localeCompare(b))
                 .map((zona) => {
@@ -110,15 +112,54 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
             rows.push(
                 <Text>
                     {zonas
+                        .map((zona) => {
+                            const bairros = zona.obras
+                                .map((obra) => obra.Bairro ?? 'Desconhecida')
+                                .reduce<string[]>((bairros, bairro) => {
+                                    if (!bairros.includes(bairro)) {
+                                        bairros.push(bairro);
+                                    }
+                                    return bairros;
+                                }, [])
+                                .sort((a, b) => a.localeCompare(b));
+                            return `${zona.nome} (${bairros.length}): ${bairros.join(', ')}`;
+                        })
+                        .join('\n\n')}
+                </Text>,
+            );
+        }
+
+        if (zona === true || (!zona && tipologia === true)) {
+            const bairros = tipo.obras
+                .map((obra) => obra.Bairro ?? 'Desconhecida')
+                .reduce<string[]>((bairros, bairro) => {
+                    if (!bairros.includes(bairro)) {
+                        bairros.push(bairro);
+                    }
+                    return bairros;
+                }, [])
+                .sort((a, b) => a.localeCompare(b))
+                .map((bairro) => {
+                    const obras = tipo.obras.filter((obra) => obra.Bairro === bairro || (bairro === 'Desconhecida' && obra.Bairro == null));
+
+                    return {
+                        nome: bairro,
+                        obras,
+                    };
+                });
+
+            rows.push(
+                <Text>
+                    {bairros
                         .map(
-                            (zona) =>
-                                `${zona.nome} (${zona.obras.length}): ${zona.obras
-                                    .map((obra) => obra.Bairro ?? 'Desconhecida')
-                                    .reduce<string[]>((bairros, bairro) => {
-                                        if (!bairros.includes(bairro)) {
-                                            bairros.push(bairro);
+                            (bairro) =>
+                                `${bairro.nome} (${bairro.obras.length}): ${bairro.obras
+                                    .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
+                                    .reduce<string[]>((titulos, titulo) => {
+                                        if (!titulos.includes(titulo)) {
+                                            titulos.push(titulo);
                                         }
-                                        return bairros;
+                                        return titulos;
                                     }, [])
                                     .sort((a, b) => a.localeCompare(b))
                                     .join(', ')}`,
@@ -128,11 +169,11 @@ function TabelaTipoObras({ tipo, tipos, tipologia, zona }: TabelaTipoObrasProps)
             );
         }
 
-        if (!tipologia) {
+        if (!tipologia && !zona) {
             rows.push(
                 <Text>
                     {tipo.obras
-                        .map((obra) => obra.Titulo ?? 'Desconhecida')
+                        .map((obra) => `${obra.Titulo ?? 'Desconhecida'} [${getYear(obra.DataInauguracao) ?? 'S.D.'}]`)
                         .sort((a, b) => a.localeCompare(b))
                         .join(', ')}
                 </Text>,
