@@ -22,6 +22,7 @@ function Text({ testID, children, numberOfLines, style }: TextProps): JSX.Elemen
                 textStyle.text,
                 style,
             ]}
+            selectable
         >
             {children}
         </NativeText>

@@ -10,6 +10,7 @@ function styles(): Styles {
             flex: 1,
             alignItems: 'center',
             justifyContent: 'center',
+            padding: 24,
         },
     });
 }

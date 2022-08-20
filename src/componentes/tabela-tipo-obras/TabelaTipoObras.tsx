@@ -1,5 +1,3 @@
-import { useWindowDimensions } from 'react-native';
-
 import { Table, Text } from '@base-components';
 import { Obra } from '@domain';
 
@@ -13,8 +11,6 @@ export type TabelaTipoObrasProps = {
 
 function TabelaTipoObras({ tipo, tipos, tipologia }: TabelaTipoObrasProps): JSX.Element {
     const style = styles();
-
-    const { width } = useWindowDimensions();
 
     const headers =
         tipologia === true
@@ -80,7 +76,6 @@ function TabelaTipoObras({ tipo, tipos, tipologia }: TabelaTipoObrasProps): JSX.
 
     const tamanhoColunaTipologia = 150;
     const tamanhoColunaTotal = 70;
-    const tamanhoColunaObras = width - tamanhoColunaTipologia - tamanhoColunaTotal;
 
     return (
         <Table
@@ -89,7 +84,7 @@ function TabelaTipoObras({ tipo, tipos, tipologia }: TabelaTipoObrasProps): JSX.
             widthArr={[
                 tamanhoColunaTipologia,
                 tamanhoColunaTotal,
-                tamanhoColunaObras,
+                undefined,
             ]}
         />
     );
