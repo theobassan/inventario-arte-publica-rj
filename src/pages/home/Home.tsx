@@ -1,8 +1,7 @@
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Table, Row, Rows } from 'react-native-table-component';
 
-import { Text, Chart } from '@base-components';
+import { Chart } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
@@ -174,76 +173,11 @@ function Network(): JSX.Element {
 }
 
 function Home(): JSX.Element {
-    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
-
     const style = styles();
-
-    const status_artepublica: string[] = Object.keys(typed_obra_artepublica).map((key) => typed_obra_artepublica[key].Status ?? 'Desconhecida');
-
-    const status_artepublica_group_total: {
-        nome: string;
-        total: number;
-        tipologias: { nome: string; total: number }[];
-    }[] = status_artepublica
-        .reduce<
-            {
-                nome: string;
-                total: number;
-                tipologias: { nome: string; total: number }[];
-            }[]
-        >(function (r, a) {
-            const r_top = r.find((top) => top.nome === a);
-            if (!r_top) {
-                const tipologias = Object.keys(typed_obra_artepublica)
-                    .filter((key) => typed_obra_artepublica[key].Status === a || (a === 'Desconhecida' && typed_obra_artepublica[key].Status == null))
-                    .map((key) => typed_obra_artepublica[key].Tipologia ?? 'Desconhecida');
-
-                const tipologias_total: { nome: string; total: number }[] = tipologias
-                    .reduce<{ nome: string; total: number }[]>(function (r, a) {
-                        const r_top = r.find((top) => top.nome === a);
-                        if (!r_top) {
-                            r.push({
-                                nome: a,
-                                total: tipologias.filter((top) => top === a).length,
-                            });
-                        }
-                        return r;
-                    }, [])
-                    .sort((a, b) => a.nome.localeCompare(b.nome));
-
-                r.push({
-                    nome: a,
-                    total: status_artepublica.filter((top) => top === a).length,
-                    tipologias: tipologias_total,
-                });
-            }
-            return r;
-        }, [])
-        .sort((a, b) => a.nome.localeCompare(b.nome));
 
     return (
         <SafeAreaView style={style.container}>
             <ScrollView style={{ width: '100%' }}>
-                <Table borderStyle={{ borderWidth: 2, borderColor: '#c8e1ff' }}>
-                    <Row
-                        data={[
-                            <Text>Status</Text>,
-                            <Text>Total:{' '}
-                            {status_artepublica_group_total.length}</Text>,
-                            <Text>Tipologias</Text>,
-                        ]}
-                        style={style.head}
-                    />
-                    <Rows
-                        data={status_artepublica_group_total.map((top) => [
-                            <Text>{top.nome}</Text>,
-                            <Text>{top.total}</Text>,
-                            <Text>{top.tipologias.map((top) => `${top.nome} (${top.total})`).join(', ')}</Text>,
-                        ])}
-                    />
-                </Table>
-                <View style={{ height: 24 }} />
-
                 <Network />
                 <View style={{ height: 24 }} />
             </ScrollView>

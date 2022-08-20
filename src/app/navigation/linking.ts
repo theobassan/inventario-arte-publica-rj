@@ -35,6 +35,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Enderecos: {
                                 path: 'enderecos',
                             },
+                            Status: {
+                                path: 'status',
+                            },
                         },
                     },
                     Recorte: {
@@ -57,6 +60,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             Enderecos: {
                                 path: 'enderecos',
+                            },
+                            Status: {
+                                path: 'status',
                             },
                         },
                     },

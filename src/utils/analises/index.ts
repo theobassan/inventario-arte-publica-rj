@@ -6,6 +6,8 @@ export { default as naturezas } from './naturezas';
 export { default as naturezasRecorte } from './naturezasRecorte';
 export { default as obras } from './obras';
 export { default as obrasRecorte } from './obrasRecorte';
+export { default as status } from './status';
+export { default as statusRecorte } from './statusRecorte';
 export { default as tipologias } from './tipologias';
 export { default as tipologiasRecorte } from './tipologiasRecorte';
 export { default as zonas } from './zonas';
