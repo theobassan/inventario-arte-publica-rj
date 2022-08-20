@@ -4,7 +4,7 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Obras, Tipologias } from '@pages';
+import { Obras, Tipologias, Autores, Naturezas } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ObrasNavigatorParamsList>();
@@ -12,13 +12,15 @@ const DrawerNavigator = createDrawerNavigator<ObrasNavigatorParamsList>();
 export type ObrasNavigatorParamsList = {
     Home: undefined;
     Tipologias: undefined;
+    Autores: undefined;
+    Naturezas: undefined;
 };
 
-type ObrasNavigatorParamsListProps = {
+type ObrasNavigatorProps = {
     testOnly_initialRouteName?: keyof ObrasNavigatorParamsList;
 };
 
-export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorParamsListProps): JSX.Element {
+export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProps): JSX.Element {
     const { theme } = useTheme();
 
     const style = styles(theme);
@@ -36,9 +38,9 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorPara
                 name="Home"
                 component={Obras}
                 options={({ navigation }) => ({
-                    title: 'Obras',
+                    title: 'Obras ',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Obras</Text>,
+                    headerTitle: () => <Text style={style.title}>Obras </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />
@@ -50,9 +52,37 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorPara
                 name="Tipologias"
                 component={Tipologias}
                 options={({ navigation }) => ({
-                    title: 'Tipologias',
+                    title: 'Tipologias ',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Tipologias</Text>,
+                    headerTitle: () => <Text style={style.title}>Tipologias </Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="Autores"
+                component={Autores}
+                options={({ navigation }) => ({
+                    title: 'Autores ',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Autores </Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="Naturezas"
+                component={Naturezas}
+                options={({ navigation }) => ({
+                    title: 'Naturezas ',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Naturezas </Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

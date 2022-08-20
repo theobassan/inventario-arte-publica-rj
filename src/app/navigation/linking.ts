@@ -23,6 +23,12 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Tipologias: {
                                 path: 'tipologias',
                             },
+                            Autores: {
+                                path: 'autores',
+                            },
+                            Naturezas: {
+                                path: 'naturezas',
+                            },
                         },
                     },
                     Recorte: {
@@ -33,6 +39,12 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             Tipologias: {
                                 path: 'tipologias',
+                            },
+                            Autores: {
+                                path: 'autores',
+                            },
+                            Naturezas: {
+                                path: 'naturezas',
                             },
                         },
                     },
