@@ -4,6 +4,7 @@ import { Table, Row, Rows } from 'react-native-table-component';
 
 import { Text, Chart } from '@components';
 import { Artista, Obra } from '@domain';
+import { getYear } from '@utils/data/analisys_utils';
 import * as obras from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
@@ -83,7 +84,7 @@ function Network(): JSX.Element {
         .map((key) => typed_obra_artepublica[key]);
 
     const titulos = obras.map((obra) => ({
-        id: obra.Titulo ?? 'Deconhecida',
+        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'Desconhecida'})`,
         marker: { radius: 5 },
         color: 'yellow',
     }));
@@ -125,7 +126,12 @@ function Network(): JSX.Element {
                             (typed_obra_artepublica[key].Tipologia != null && typed_obra_artepublica[key].Tipologia === tipologia.id) ||
                             (tipologia.id === 'Desconhecida' && typed_obra_artepublica[key].Tipologia == null),
                     )
-                    .map((key) => typed_obra_artepublica[key].Titulo);
+                    .map(
+                        (key) =>
+                            `${typed_obra_artepublica[key].Titulo ?? 'Deconhecida'} (${
+                                getYear(typed_obra_artepublica[key].DataInauguracao) ?? 'Desconhecida'
+                            })`,
+                    );
 
                 return titulos_tipologia.map((titulo) => ({
                     from: tipologia.id,
