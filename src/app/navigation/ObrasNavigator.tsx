@@ -68,7 +68,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologias} zona />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologias} zona decada />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Autores"
@@ -158,7 +158,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categorias} tipologia zona mapa />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categorias} tipologia zona mapa decada />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"

@@ -3,7 +3,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { StyleSheet } from 'react-native';
 
 import { Obra } from '@domain';
-import { Tipo, Tipo_GraficoRedeTipologiaObra, Tipo_Mapa, Tipo_TabelaTipologiaObra } from '@pages';
+import { Tipo, Tipo_Decada, Tipo_GraficoRedeTipologiaObra, Tipo_Mapa, Tipo_TabelaTipologiaObra } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const TopTab = createMaterialTopTabNavigator<TipoMenuNavigatorParamList>();
@@ -13,6 +13,7 @@ export type TipoMenuNavigatorParamList = {
     TabelaTipologiaObra: undefined;
     GraficoRedeTipologiaObra: undefined;
     Mapa: undefined;
+    Decada: undefined;
 };
 
 type TipoMenuNavigatorProps = {
@@ -22,9 +23,10 @@ type TipoMenuNavigatorProps = {
     zona?: boolean;
     rede?: boolean;
     mapa?: boolean;
+    decada?: boolean;
 };
 
-export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa }: TipoMenuNavigatorProps): JSX.Element {
+export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa, decada }: TipoMenuNavigatorProps): JSX.Element {
     const { theme } = useTheme();
 
     const style = styles(theme);
@@ -90,6 +92,21 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa }: 
                     }}
                 >
                     {(props) => <Tipo_Mapa {...props} tipos={tipos} />}
+                </TopTab.Screen>
+            )}
+            {decada === true && (
+                <TopTab.Screen
+                    name="Decada"
+                    options={{
+                        title: 'Década',
+                        //headerShown: false,
+                        tabBarIcon: ({ color }) => {
+                            return <FontAwesome name="object-group" size={24} color={color} />;
+                        },
+                        tabBarLabelStyle: style.tabBarLabel,
+                    }}
+                >
+                    {(props) => <Tipo_Decada {...props} tipo={tipo} />}
                 </TopTab.Screen>
             )}
         </TopTab.Navigator>

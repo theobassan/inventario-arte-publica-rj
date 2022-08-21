@@ -35,6 +35,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Autores: {
@@ -51,6 +54,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -69,6 +75,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Zonas: {
@@ -85,6 +94,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -103,6 +115,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Status: {
@@ -119,6 +134,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -137,21 +155,13 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Mapa: {
                                 path: 'mapa',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                },
                             },
                         },
                     },
@@ -176,6 +186,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Autores: {
@@ -192,6 +205,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -210,6 +226,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Zonas: {
@@ -226,6 +245,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -244,6 +266,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Status: {
@@ -260,6 +285,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     Mapa: {
                                         path: 'mapa',
+                                    },
+                                    Decada: {
+                                        path: 'decada',
                                     },
                                 },
                             },
@@ -278,21 +306,13 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     Mapa: {
                                         path: 'mapa',
                                     },
+                                    Decada: {
+                                        path: 'decada',
+                                    },
                                 },
                             },
                             Mapa: {
                                 path: 'mapa',
-                                screens: {
-                                    Home: {
-                                        path: '',
-                                    },
-                                    TabelaTipologiaObra: {
-                                        path: 'tabela-tipologia-obra',
-                                    },
-                                    GraficoRedeTipologiaObra: {
-                                        path: 'grafico-rede-tipologia-obra',
-                                    },
-                                },
                             },
                         },
                     },
@@ -312,12 +332,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                         screens: {
                             Home: {
                                 path: '',
-                            },
-                            PublicArtDecadeCategory: {
-                                path: 'public-art-category-x-decade',
-                            },
-                            PublicArtDecadeTypology: {
-                                path: 'public-art-typology-x-decade',
                             },
                             PublicArtC19892000: {
                                 path: 'public-art-19989-2000',

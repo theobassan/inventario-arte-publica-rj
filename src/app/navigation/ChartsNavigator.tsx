@@ -4,15 +4,13 @@ import { DrawerActions } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { Charts, PublicArtDecadeTypology, PublicArtDecadeCategory, PublicArtTotal19892000, PublicArtCesarMaia } from '@pages';
+import { Charts, PublicArtTotal19892000, PublicArtCesarMaia } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const DrawerNavigator = createDrawerNavigator<ChartsNavigatorParamsList>();
 
 export type ChartsNavigatorParamsList = {
     Home: undefined;
-    PublicArtDecadeCategory: undefined;
-    PublicArtDecadeTypology: undefined;
     PublicArtC19892000: undefined;
     PublicArtCesarMaia: undefined;
 };
@@ -43,42 +41,6 @@ export function ChartsNavigator({ testOnly_initialRouteName }: ChartsNavigatorPr
                     headerTitle: () => <Text style={style.title}>Charts Home</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="home-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
-                name="PublicArtDecadeCategory"
-                component={PublicArtDecadeCategory}
-                options={({ navigation }) => ({
-                    title: 'Arte Pública - Eixos por Década',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Arte Pública - Eixos por Década</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity
-                            testID="eixos-por-decada-menu"
-                            style={{ paddingLeft: 16 }}
-                            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-                        >
-                            <Entypo name="menu" size={24} color={theme.text.textColor} />
-                        </TouchableOpacity>
-                    ),
-                })}
-            />
-            <DrawerNavigator.Screen
-                name="PublicArtDecadeTypology"
-                component={PublicArtDecadeTypology}
-                options={({ navigation }) => ({
-                    title: 'Arte Pública - Tipologias por Década',
-                    headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Arte Pública - Tipologias por Década</Text>,
-                    headerLeft: () => (
-                        <TouchableOpacity
-                            testID="tipologias-por-decada-menu"
-                            style={{ paddingLeft: 16 }}
-                            onPress={() => navigation.dispatch(DrawerActions.openDrawer())}
-                        >
                             <Entypo name="menu" size={24} color={theme.text.textColor} />
                         </TouchableOpacity>
                     ),

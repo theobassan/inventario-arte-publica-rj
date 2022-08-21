@@ -37,7 +37,6 @@ function Mapa({ tipos }: MapaProps): JSX.Element {
             return result;
         }, []);
 
-    console.log(colors);
     return <Map markers={markers} />;
 }
 

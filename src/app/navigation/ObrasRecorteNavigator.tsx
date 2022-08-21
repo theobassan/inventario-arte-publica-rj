@@ -68,7 +68,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona rede />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona rede decada />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Autores"
@@ -158,7 +158,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categoriasRecorte} tipologia zona mapa />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categoriasRecorte} tipologia zona mapa decada />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"
