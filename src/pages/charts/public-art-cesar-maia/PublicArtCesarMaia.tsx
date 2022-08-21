@@ -9,6 +9,15 @@ import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 function Block(): JSX.Element {
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
@@ -192,6 +201,8 @@ function Network(): JSX.Element {
             }, []),
     );
 
+    //TODO: como fazer Left->Right e n Circular??
+
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
             height: 1080,
@@ -208,6 +219,7 @@ function Network(): JSX.Element {
                     //friction: -0.9,
                     integration: 'verlet',
                     approximation: 'barnes-hut',
+                    initialPositions: 'circle',
                 },
             },
         },
@@ -240,6 +252,126 @@ function Network(): JSX.Element {
     return <Chart options={networkOptions as Highcharts.Options} />;
 }
 
+function Sankey(): JSX.Element {
+    const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
+
+    const anos_primeiro_mantado = [
+        1993,
+        1994,
+        1995,
+        1996,
+    ];
+
+    const obras_do_mandato = Object.keys(typed_obra_artepublica).reduce<Obra[]>((result, key) => {
+        const year = getYear(typed_obra_artepublica[key].DataInauguracao);
+        if (year != null && anos_primeiro_mantado.includes(year)) {
+            result.push(typed_obra_artepublica[key]);
+        }
+
+        return result;
+    }, []);
+
+    const titulos = obras_do_mandato.map((obra) => ({
+        id: obra.Titulo ?? 'Deconhecida',
+        marker: { radius: 15 },
+        color: getRandomColor(),
+    }));
+    const autores = obras_do_mandato
+        .map(
+            (obra) =>
+                obra.Autores ?? [
+                    { Pessoa: { Nome: 'Desconhecida' } } as Artista,
+                ],
+        )
+        .reduce<string[]>((r, l) => {
+            Array.prototype.push.apply(
+                r,
+                l.map<string>((artista) => artista.Pessoa?.Nome ?? 'Desconhecida'),
+            );
+            return r;
+        }, [])
+        .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, autor) => {
+            if (r.find((node) => node.id === autor) == null) {
+                r.push({
+                    id: autor ?? 'Deconhecida',
+                    marker: { radius: 30 },
+                    color: getRandomColor(),
+                });
+            }
+            return r;
+        }, []);
+
+    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: getRandomColor() }];
+    Array.prototype.push.apply(nodes, titulos);
+    Array.prototype.push.apply(nodes, autores);
+
+    const data = autores.map((autor) => ({
+        from: 'Cesar Maia',
+        to: autor.id,
+        weight: 1,
+    }));
+
+    Array.prototype.push.apply(
+        data,
+        autores
+            .map((autor) => {
+                const titulos_autor = obras_do_mandato
+                    .filter(
+                        (obra) =>
+                            (obra.Autores != null && obra.Autores?.find((artista) => artista.Pessoa?.Nome === autor.id) != null) ||
+                            (autor.id === 'Desconhecida' && obra.Autores == null),
+                    )
+                    .map((obra) => obra.Titulo);
+
+                return titulos_autor.map((titulo) => ({
+                    from: autor.id,
+                    to: titulo,
+                    weight: 1,
+                }));
+            })
+            .reduce((r, l) => {
+                Array.prototype.push.apply(r, l);
+                return r;
+            }, []),
+    );
+
+    //TODO: como fazer Left->Right e n Circular?? - React-flow
+
+    const networkOptions: Highcharts.Options | unknown = {
+        chart: {
+            height: 650,
+            type: 'sankey',
+        },
+        title: {
+            text: '',
+        },
+        plotOptions: {
+            networkgraph: {
+                layoutAlgorithm: {
+                    //linkLength: 200, // in pixels
+                    enableSimulation: false,
+                },
+            },
+        },
+        series: [
+            {
+                name: '',
+                accessibility: {
+                    enabled: true,
+                },
+                dataLabels: {
+                    enabled: true,
+                    linkFormat: '',
+                },
+                data,
+                nodes,
+            },
+        ],
+    };
+
+    return <Chart options={networkOptions as Highcharts.Options} />;
+}
+
 //TODO: dropdown: prefeito/mandato (com e sem mandato selecionado)
 function PublicArtCesarMaia(): JSX.Element {
     return (
@@ -249,6 +381,9 @@ function PublicArtCesarMaia(): JSX.Element {
             </View>
             <View style={{ paddingTop: 24 }}>
                 <Network />
+            </View>
+            <View style={{ paddingTop: 24 }}>
+                <Sankey />
             </View>
         </ScrollView>
     );

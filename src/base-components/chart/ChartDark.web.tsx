@@ -7,6 +7,7 @@ import HighchartsData from 'highcharts/modules/data';
 import HighchartsExportData from 'highcharts/modules/export-data';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
+import HighchartsSankey from 'highcharts/modules/sankey';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
 import Theme from 'highcharts/themes/brand-dark';
 
@@ -16,6 +17,7 @@ HighchartsAccessibility(Highcharts);
 HighchartsExporting(Highcharts);
 HighchartsExportData(Highcharts);
 HighchartsNetworkGraph(Highcharts);
+HighchartsSankey(Highcharts);
 
 type ChartDarkProps = {
     options: Highcharts.Options;
