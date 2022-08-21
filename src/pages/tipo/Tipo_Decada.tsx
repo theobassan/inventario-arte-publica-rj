@@ -61,7 +61,7 @@ function Tipo_Decada({ tipo }: Tipo_DecadaProps): JSX.Element {
 
     const options: Highcharts.Options = {
         chart: {
-            height: 800,
+            height: 600,
             type: 'column',
         },
         title: {

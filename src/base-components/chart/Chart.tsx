@@ -12,7 +12,9 @@ type ChartProps = {
 function Chart({ options }: ChartProps): JSX.Element {
     const { theme } = useTheme();
 
-    return theme.dark ? <ChartDark options={options} /> : <ChartLight options={options} />;
+    const _options = { exporting: { scale: 1, sourceWidth: 1620 }, ...options };
+
+    return theme.dark ? <ChartDark options={_options} /> : <ChartLight options={options} />;
 }
 
 export default Chart;

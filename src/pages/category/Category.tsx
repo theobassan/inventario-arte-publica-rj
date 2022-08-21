@@ -44,7 +44,7 @@ function Line({ category }: { category: string }): JSX.Element {
 
     const lineOptions: Highcharts.Options = {
         chart: {
-            height: 800,
+            height: 600,
             type: 'line',
         },
         title: {
@@ -148,7 +148,7 @@ function Network({ category, autor }: { category: string; autor?: string }): JSX
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 800,
+            height: 600,
             type: 'networkgraph',
         },
         title: {

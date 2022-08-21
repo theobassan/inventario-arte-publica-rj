@@ -24,6 +24,8 @@ type ChartDarkProps = {
 function ChartDark({ options }: ChartDarkProps): JSX.Element {
     const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
 
+    console.log(options.exporting);
+
     Theme(Highcharts);
 
     return <HighchartsReact constructorType="chart" highcharts={Highcharts} options={options} ref={chartComponentRef} />;

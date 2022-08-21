@@ -11,32 +11,41 @@ type GraficoRedeTipoTipologiaObraProps = {
     tipos: { nome: string; obras: Obra[] }[];
 };
 
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
     const tiposOrdenadoPorTotal = [...tipos].filter((autor) => autor.nome !== 'Desconhecida').sort((a, b) => (a.obras.length < b.obras.length ? 1 : -1));
     const maior = tiposOrdenadoPorTotal[0];
 
     const style = styles();
 
-    const titulos = maior.obras.map((obra) => ({
-        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
-        marker: { radius: 10 },
-        color: 'yellow',
-    }));
-
     const tipologias = maior.obras
         .map((obra) => ({
             id: obra.Tipologia ?? 'Deconhecida',
             marker: { radius: 20 },
-            color: 'red',
+            color: getRandomColor(),
         }))
-        .reduce<{ id: string }[]>((r, e) => {
+        .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, e) => {
             if (r.find((tip) => tip.id === e.id) == null) {
                 r.push(e);
             }
             return r;
         }, []);
 
-    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: 'blue' }];
+    const titulos = maior.obras.map((obra) => ({
+        id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
+        marker: { radius: 10 },
+        color: `${tipologias.find((tipologia) => tipologia.id === (obra.Tipologia ?? 'Desconhecida'))?.color}90`,
+    }));
+
+    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: getRandomColor() }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, tipologias);
 
@@ -74,7 +83,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const options: Highcharts.Options | unknown = {
         chart: {
-            //height: 600,
+            height: 600,
             type: 'networkgraph',
         },
         title: {

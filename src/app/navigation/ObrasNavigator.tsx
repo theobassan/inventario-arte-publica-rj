@@ -83,7 +83,7 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autores} tipologia zona />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Autor" tipos={autores} tipologia rede zona />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Naturezas"
