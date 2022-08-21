@@ -5,6 +5,7 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Artista, Obra } from '@domain';
+import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
@@ -109,6 +110,8 @@ function Block(): JSX.Element {
 }
 
 function Network(): JSX.Element {
+    const { theme } = useTheme();
+
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
     const anos_primeiro_mantado = [
@@ -129,7 +132,7 @@ function Network(): JSX.Element {
 
     const titulos = obras_do_mandato.map((obra) => ({
         id: obra.Titulo ?? 'Deconhecida',
-        marker: { radius: 5 },
+        marker: { radius: 15 },
         color: 'yellow',
     }));
     const autores = obras_do_mandato
@@ -150,14 +153,14 @@ function Network(): JSX.Element {
             if (r.find((node) => node.id === autor) == null) {
                 r.push({
                     id: autor ?? 'Deconhecida',
-                    marker: { radius: 10 },
+                    marker: { radius: 30 },
                     color: 'red',
                 });
             }
             return r;
         }, []);
 
-    const nodes = [{ id: 'Cesar Maia', marker: { radius: 20 }, color: 'blue' }];
+    const nodes = [{ id: 'Cesar Maia', marker: { radius: 50 }, color: 'blue' }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, autores);
 
@@ -191,7 +194,7 @@ function Network(): JSX.Element {
 
     const networkOptions: Highcharts.Options | unknown = {
         chart: {
-            height: 800,
+            height: 1080,
             type: 'networkgraph',
         },
         title: {
@@ -200,8 +203,11 @@ function Network(): JSX.Element {
         plotOptions: {
             networkgraph: {
                 layoutAlgorithm: {
-                    enableSimulation: true,
-                    friction: -0.9,
+                    linkLength: 200, // in pixels
+                    enableSimulation: false,
+                    //friction: -0.9,
+                    integration: 'verlet',
+                    approximation: 'barnes-hut',
                 },
             },
         },
@@ -213,7 +219,17 @@ function Network(): JSX.Element {
                 },
                 dataLabels: {
                     enabled: true,
-                    linkFormat: '{point.rel}',
+                    linkFormat: '',
+                    textPath: {
+                        enabled: true,
+                        attributes: {
+                            //dy: 12,
+                            //startOffset: '45%',
+                            //textLength: 200,
+                        },
+                    },
+                    allowOverlap: true,
+                    color: theme.dark ? '#FFF' : undefined,
                 },
                 data,
                 nodes,

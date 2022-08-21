@@ -2,6 +2,7 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
+import { useTheme } from '@utils';
 import { getYear } from '@utils/data/analisys_utils';
 
 import styles from './styles';
@@ -21,6 +22,8 @@ function getRandomColor() {
 }
 
 function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaObraProps): JSX.Element {
+    const { theme } = useTheme();
+
     const tiposOrdenadoPorTotal = [...tipos].filter((autor) => autor.nome !== 'Desconhecida').sort((a, b) => (a.obras.length < b.obras.length ? 1 : -1));
     const maior = tiposOrdenadoPorTotal[0];
 
@@ -29,7 +32,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     const tipologias = maior.obras
         .map((obra) => ({
             id: obra.Tipologia ?? 'Deconhecida',
-            marker: { radius: 20 },
+            marker: { radius: 50 },
             color: getRandomColor(),
         }))
         .reduce<{ id: string; marker: { radius: number }; color: string }[]>((r, e) => {
@@ -41,11 +44,11 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const titulos = maior.obras.map((obra) => ({
         id: `${obra.Titulo ?? 'Deconhecida'} (${getYear(obra.DataInauguracao) ?? 'S.D.'})`,
-        marker: { radius: 10 },
+        marker: { radius: 30 },
         color: `${tipologias.find((tipologia) => tipologia.id === (obra.Tipologia ?? 'Desconhecida'))?.color}90`,
     }));
 
-    const nodes = [{ id: maior.nome, marker: { radius: 30 }, color: getRandomColor() }];
+    const nodes = [{ id: maior.nome, marker: { radius: 70 }, color: getRandomColor() }];
     Array.prototype.push.apply(nodes, titulos);
     Array.prototype.push.apply(nodes, tipologias);
 
@@ -83,7 +86,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const options: Highcharts.Options | unknown = {
         chart: {
-            height: 600,
+            height: 700,
             type: 'networkgraph',
         },
         title: {
@@ -92,7 +95,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
         plotOptions: {
             networkgraph: {
                 layoutAlgorithm: {
-                    linkLength: 150, // in pixels
+                    linkLength: 200, // in pixels
                     enableSimulation: false,
                     //friction: -0.9,
                     integration: 'verlet',
@@ -108,7 +111,17 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
                 },
                 dataLabels: {
                     enabled: true,
-                    linkFormat: '{point.rel}',
+                    linkFormat: '',
+                    textPath: {
+                        enabled: true,
+                        attributes: {
+                            //dy: 12,
+                            //startOffset: '45%',
+                            //textLength: 200,
+                        },
+                    },
+                    allowOverlap: true,
+                    color: theme.dark ? '#FFF' : undefined,
                 },
                 data,
                 nodes,
