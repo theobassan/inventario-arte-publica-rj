@@ -32,7 +32,6 @@ type Obra = {
     Descricao?: string;
     Fatos?: Fato[];
     Temporalidade?: string;
-    Eixo?: string;
     Funcao?: string;
     Natureza?: string;
     Tipologia?: string;

@@ -9,7 +9,6 @@ export * from './decade';
 export * from './home';
 export * from './maps';
 export * from './maps/all-vs-public-art';
-export * from './maps/public-art-vs-category';
 export * from './obras';
 export * from './obras/mapa';
 export * from './obras-recorte';

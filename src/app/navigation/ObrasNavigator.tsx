@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
 import { Obras, Mapa } from '@pages';
-import { autores, enderecos, naturezas, status, Theme, tipologias, useTheme, zonas } from '@utils';
+import { autores, categorias, enderecos, naturezas, status, Theme, tipologias, useTheme, zonas } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
@@ -19,6 +19,7 @@ export type ObrasNavigatorParamsList = {
     Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Enderecos: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
 };
 
@@ -143,6 +144,21 @@ export function ObrasNavigator({ testOnly_initialRouteName }: ObrasNavigatorProp
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={status} tipologia zona />}
+            </DrawerNavigator.Screen>
+            <DrawerNavigator.Screen
+                name="Categorias"
+                options={({ navigation }) => ({
+                    title: 'Categorias',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Categorias</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categorias} tipologia zona mapa />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"

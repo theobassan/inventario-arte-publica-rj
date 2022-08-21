@@ -1,5 +1,7 @@
 export { default as autores } from './autores';
 export { default as autoresRecorte } from './autoresRecorte';
+export { default as categorias } from './categorias';
+export { default as categoriasRecorte } from './categoriasRecorte';
 export { default as enderecos } from './enderecos';
 export { default as enderecosRecorte } from './enderecosRecorte';
 export { default as naturezas } from './naturezas';

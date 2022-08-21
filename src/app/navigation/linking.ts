@@ -32,6 +32,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Autores: {
@@ -45,6 +48,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -60,6 +66,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Zonas: {
@@ -73,6 +82,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -88,6 +100,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Status: {
@@ -101,6 +116,26 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
+                                },
+                            },
+                            Categorias: {
+                                path: 'categorias',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -138,6 +173,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Autores: {
@@ -151,6 +189,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -166,6 +207,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Zonas: {
@@ -179,6 +223,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -194,6 +241,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
                                     },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
                                 },
                             },
                             Status: {
@@ -207,6 +257,26 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                                     },
                                     GraficoRedeTipologiaObra: {
                                         path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
+                                    },
+                                },
+                            },
+                            Categorias: {
+                                path: 'categorias',
+                                screens: {
+                                    Home: {
+                                        path: '',
+                                    },
+                                    TabelaTipologiaObra: {
+                                        path: 'tabela-tipologia-obra',
+                                    },
+                                    GraficoRedeTipologiaObra: {
+                                        path: 'grafico-rede-tipologia-obra',
+                                    },
+                                    Mapa: {
+                                        path: 'mapa',
                                     },
                                 },
                             },
@@ -234,9 +304,6 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             },
                             AllVsPublicArt: {
                                 path: 'all-vs-public-art',
-                            },
-                            PublicArtVsCategory: {
-                                path: 'public-art-vs-category',
                             },
                         },
                     },

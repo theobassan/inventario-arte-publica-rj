@@ -3,7 +3,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { StyleSheet } from 'react-native';
 
 import { Obra } from '@domain';
-import { Tipo, Tipo_GraficoRedeTipologiaObra, Tipo_TabelaTipologiaObra } from '@pages';
+import { Tipo, Tipo_GraficoRedeTipologiaObra, Tipo_Mapa, Tipo_TabelaTipologiaObra } from '@pages';
 import { Theme, useTheme } from '@utils';
 
 const TopTab = createMaterialTopTabNavigator<TipoMenuNavigatorParamList>();
@@ -12,6 +12,7 @@ export type TipoMenuNavigatorParamList = {
     Home: undefined;
     TabelaTipologiaObra: undefined;
     GraficoRedeTipologiaObra: undefined;
+    Mapa: undefined;
 };
 
 type TipoMenuNavigatorProps = {
@@ -19,9 +20,11 @@ type TipoMenuNavigatorProps = {
     tipos: { nome: string; obras: Obra[] }[];
     tipologia?: boolean;
     zona?: boolean;
+    rede?: boolean;
+    mapa?: boolean;
 };
 
-export function TipoMenuNavigator({ tipo, tipos, tipologia, zona }: TipoMenuNavigatorProps): JSX.Element {
+export function TipoMenuNavigator({ tipo, tipos, tipologia, zona, rede, mapa }: TipoMenuNavigatorProps): JSX.Element {
     const { theme } = useTheme();
 
     const style = styles(theme);
@@ -59,7 +62,7 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona }: TipoMenuNavi
             >
                 {(props) => <Tipo_TabelaTipologiaObra {...props} tipo={tipo} tipos={tipos} tipologia={tipologia} zona={zona} />}
             </TopTab.Screen>
-            {tipologia && tipo === 'Autor' && (
+            {rede === true && (
                 <TopTab.Screen
                     name="GraficoRedeTipologiaObra"
                     options={{
@@ -72,6 +75,21 @@ export function TipoMenuNavigator({ tipo, tipos, tipologia, zona }: TipoMenuNavi
                     }}
                 >
                     {(props) => <Tipo_GraficoRedeTipologiaObra {...props} tipo={tipo} tipos={tipos} />}
+                </TopTab.Screen>
+            )}
+            {mapa === true && (
+                <TopTab.Screen
+                    name="Mapa"
+                    options={{
+                        title: 'Mapa',
+                        //headerShown: false,
+                        tabBarIcon: ({ color }) => {
+                            return <FontAwesome name="object-group" size={24} color={color} />;
+                        },
+                        tabBarLabelStyle: style.tabBarLabel,
+                    }}
+                >
+                    {(props) => <Tipo_Mapa {...props} tipos={tipos} />}
                 </TopTab.Screen>
             )}
         </TopTab.Navigator>

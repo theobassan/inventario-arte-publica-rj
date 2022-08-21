@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
 import { ObrasRecorte, MapaRecorte } from '@pages';
-import { autoresRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
+import { autoresRecorte, categoriasRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
 
@@ -19,6 +19,7 @@ export type ObrasRecorteNavigatorParamsList = {
     Zonas: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Enderecos: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
+    Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
 };
 
@@ -67,7 +68,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     ),
                 })}
             >
-                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona />}
+                {(props) => <TipoMenuNavigator {...props} tipo="Tipologia" tipos={tipologiasRecorte} zona rede />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Autores"
@@ -143,6 +144,21 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 })}
             >
                 {(props) => <TipoMenuNavigator {...props} tipo="Status" tipos={statusRecorte} tipologia zona />}
+            </DrawerNavigator.Screen>
+            <DrawerNavigator.Screen
+                name="Categorias"
+                options={({ navigation }) => ({
+                    title: 'Categorias Recorte',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Categorias Recorte</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            >
+                {(props) => <TipoMenuNavigator {...props} tipo="Categoria" tipos={categoriasRecorte} tipologia zona mapa />}
             </DrawerNavigator.Screen>
             <DrawerNavigator.Screen
                 name="Mapa"

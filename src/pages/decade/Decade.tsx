@@ -58,13 +58,13 @@ function Decade(): JSX.Element | null {
                 return r;
             }, []);
 
-        const tipologias_obras_decada_total: { nome: string; total: number }[] = tipologias_obras_decada
-            .reduce<{ nome: string; total: number }[]>(function (r, a) {
+        const tipologias_obras_decada_total: { nome: string; obras: Obra[] }[] = tipologias_obras_decada
+            .reduce<{ nome: string; obras: Obra[] }[]>(function (r, a) {
                 const r_top = r.find((top) => top.nome === a);
                 if (!r_top) {
                     r.push({
                         nome: a,
-                        total: tipologias_obras_decada.filter((top) => top === a).length,
+                        obras: obras_decada.filter((obra) => obra.Tipologia === a || (obra.Tipologia == null && a === 'Desconhecida')),
                     });
                 }
                 return r;
@@ -193,13 +193,15 @@ function Decade(): JSX.Element | null {
                                 <Text>Tipologia</Text>,
                                 <Text>Total:{' '}
                                 {tipologias_obras_decada_total.length}</Text>,
+                                <Text>Obras</Text>,
                             ]}
                             style={style.head}
                         />
                         <Rows
                             data={tipologias_obras_decada_total.map((top) => [
                                 <Text>{top.nome}</Text>,
-                                <Text>{top.total}</Text>,
+                                <Text>{top.obras.length}</Text>,
+                                <Text>{top.obras.map((obra) => obra.Titulo ?? 'Desconhecida').join(', ')}</Text>,
                             ])}
                         />
                     </Table>
