@@ -1,5 +1,4 @@
 import { ScrollView } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Text } from '@base-components';
 import { obras } from '@utils';
@@ -10,11 +9,9 @@ function Obras(): JSX.Element {
     const style = styles();
 
     return (
-        <SafeAreaView style={style.container}>
-            <ScrollView style={{ width: '100%' }}>
-                <Text>Total de Obras levantadas: {obras.length}</Text>
-            </ScrollView>
-        </SafeAreaView>
+        <ScrollView style={style.container}>
+            <Text>Total de Obras levantadas: {obras.length}</Text>
+        </ScrollView>
     );
 }
 

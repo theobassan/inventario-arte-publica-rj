@@ -11,7 +11,7 @@ type MapWrapperProps = {
 };
 
 function Map({ markers }: MapWrapperProps): JSX.Element {
-    const { height, width } = useWindowDimensions();
+    const { height } = useWindowDimensions();
     const bottomTabBarHeight = useBottomTabBarHeight();
     const headerHeight = useHeaderHeight();
     const center = {
@@ -28,7 +28,7 @@ function Map({ markers }: MapWrapperProps): JSX.Element {
             zoomTapEnabled
             initialRegion={center}
             testID="mapView"
-            style={{ height: height - headerHeight - bottomTabBarHeight, width }}
+            style={{ height: height - headerHeight - bottomTabBarHeight - 48 }}
             provider={Platform.OS !== 'ios' ? PROVIDER_GOOGLE : undefined}
         >
             {markers

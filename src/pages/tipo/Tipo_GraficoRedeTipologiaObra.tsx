@@ -1,5 +1,4 @@
-import { ScrollView } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
@@ -75,7 +74,7 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
 
     const options: Highcharts.Options | unknown = {
         chart: {
-            height: 600,
+            //height: 600,
             type: 'networkgraph',
         },
         title: {
@@ -109,11 +108,11 @@ function GraficoRedeTipoTipologiaObra({ tipo, tipos }: GraficoRedeTipoTipologiaO
     };
 
     return (
-        <SafeAreaView style={style.container}>
+        <View style={style.container}>
             <ScrollView style={{ width: '100%' }}>
                 <Chart options={options as Highcharts.Options} />
             </ScrollView>
-        </SafeAreaView>
+        </View>
     );
 }
 
