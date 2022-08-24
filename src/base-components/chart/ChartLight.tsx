@@ -29,6 +29,7 @@ function ChartLight({ options }: ChartLightProps): JSX.Element {
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
                 <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
                 <script src="https://code.highcharts.com/modules/sankey.js"></script>
+                <script src="https://code.highcharts.com/modules/dependencywheel.js"></script>
                 <script src="https://code.highcharts.com/themes/brand-light.js"></script>
             </head>
 

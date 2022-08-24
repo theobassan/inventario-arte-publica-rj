@@ -4,6 +4,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import HighchartsAccessibility from 'highcharts/modules/accessibility';
 import HighchartsData from 'highcharts/modules/data';
+import HighchartsDependecyWheel from 'highcharts/modules/dependency-wheel';
 import HighchartsExportData from 'highcharts/modules/export-data';
 import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
@@ -18,6 +19,7 @@ HighchartsExporting(Highcharts);
 HighchartsExportData(Highcharts);
 HighchartsNetworkGraph(Highcharts);
 HighchartsSankey(Highcharts);
+HighchartsDependecyWheel(Highcharts);
 
 type ChartLightProps = {
     options: Highcharts.Options;

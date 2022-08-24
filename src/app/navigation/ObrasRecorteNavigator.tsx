@@ -4,7 +4,7 @@ import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { ObrasRecorte, MapaRecorte } from '@pages';
+import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte } from '@pages';
 import { autoresRecorte, categoriasRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
@@ -21,6 +21,7 @@ export type ObrasRecorteNavigatorParamsList = {
     Status: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
+    GraficoPoliticaPublica: undefined;
 };
 
 type ObrasRecorteNavigatorProps = {
@@ -167,6 +168,20 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     title: 'Mapa Recorte',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Mapa Recorte</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="GraficoPoliticaPublica"
+                component={GraficoPoliticaPublica}
+                options={({ navigation }) => ({
+                    title: 'Esculturas Urbanas',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Esculturas Urbanase</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

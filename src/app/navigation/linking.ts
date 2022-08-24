@@ -314,6 +314,9 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             Mapa: {
                                 path: 'mapa',
                             },
+                            GraficoPoliticaPublica: {
+                                path: 'politicas-publicas',
+                            },
                         },
                     },
                     Maps: {
