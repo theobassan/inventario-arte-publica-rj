@@ -13,6 +13,12 @@ export const FundicaoValDOsne: Artista = {
     Pessoa: pessoas.FundicaoValDOsne,
 };
 
+export const IoledeFreitas: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.IoledeFreitas,
+};
+
 export const Leocares: Artista = {
     ID: undefined,
     IDPessoa: undefined,
@@ -72,10 +78,10 @@ export const JorgeMartinsCancela: Artista = {
     Pessoa: pessoas.JorgeMartinsCancela,
 };
 
-export const HildegardoLeaoVeloso: Artista = {
+export const HildegardoLeaoVelloso: Artista = {
     ID: undefined,
     IDPessoa: undefined,
-    Pessoa: pessoas.HildegardoLeaoVeloso,
+    Pessoa: pessoas.HildegardoLeaoVelloso,
 };
 
 export const HonorioPecanha: Artista = {
@@ -382,6 +388,12 @@ export const GracaCostaCabral: Artista = {
     ID: undefined,
     IDPessoa: undefined,
     Pessoa: pessoas.GracaCostaCabral,
+};
+
+export const LygiaPape: Artista = {
+    ID: undefined,
+    IDPessoa: undefined,
+    Pessoa: pessoas.LygiaPape,
 };
 
 export const Ariel: Artista = {

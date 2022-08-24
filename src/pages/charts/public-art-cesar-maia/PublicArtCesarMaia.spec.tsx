@@ -8,6 +8,6 @@ describe('<PublicArtCesarMaia />', () => {
 
         const charts = getAllByTestId('chart');
 
-        expect(charts.length).toEqual(2);
+        expect(charts.length).toEqual(3);
     });
 });

@@ -14,7 +14,7 @@ export const AntonioTaunay: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PierreLeGros: Pessoa = {
@@ -27,7 +27,7 @@ export const PierreLeGros: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SimonHurtvelle: Pessoa = {
@@ -40,7 +40,7 @@ export const SimonHurtvelle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JacquesHouzeau: Pessoa = {
@@ -53,7 +53,7 @@ export const JacquesHouzeau: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JeanBaptistePoultier: Pessoa = {
@@ -66,7 +66,7 @@ export const JeanBaptistePoultier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HCase: Pessoa = {
@@ -79,7 +79,7 @@ export const HCase: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloWerneck: Pessoa = {
@@ -92,7 +92,7 @@ export const PauloWerneck: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Giustiniani: Pessoa = {
@@ -105,7 +105,7 @@ export const Giustiniani: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GiovanniBattistaMaini: Pessoa = {
@@ -118,7 +118,7 @@ export const GiovanniBattistaMaini: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Leocares: Pessoa = {
@@ -131,7 +131,7 @@ export const Leocares: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ThomasRegnaudin: Pessoa = {
@@ -144,7 +144,7 @@ export const ThomasRegnaudin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioPitanguy: Pessoa = {
@@ -157,12 +157,12 @@ export const MarioPitanguy: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseOtavioCorreaLima: Pessoa = {
     ID: undefined,
-    Nome: `Jose Otavio Correa Lima`,
+    Nome: `José Otávio Corrêa Lima`,
     Nascimento: undefined,
     CidadePaisNascimento: undefined,
     Morte: undefined,
@@ -170,7 +170,7 @@ export const JoseOtavioCorreaLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DeodorodaFonseca: Pessoa = {
@@ -183,7 +183,7 @@ export const DeodorodaFonseca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FlorianoPeixoto: Pessoa = {
@@ -196,7 +196,7 @@ export const FlorianoPeixoto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PrudentedeMorais: Pessoa = {
@@ -209,7 +209,7 @@ export const PrudentedeMorais: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CamposSales: Pessoa = {
@@ -222,7 +222,7 @@ export const CamposSales: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RodriguesAlves: Pessoa = {
@@ -235,7 +235,7 @@ export const RodriguesAlves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AfonsoPena: Pessoa = {
@@ -248,7 +248,7 @@ export const AfonsoPena: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NiloPecanha: Pessoa = {
@@ -261,7 +261,7 @@ export const NiloPecanha: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HermesdaFonseca: Pessoa = {
@@ -274,7 +274,7 @@ export const HermesdaFonseca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VenceslauBras: Pessoa = {
@@ -287,7 +287,7 @@ export const VenceslauBras: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DelfimMoreira: Pessoa = {
@@ -300,7 +300,7 @@ export const DelfimMoreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EpitacioPessoa: Pessoa = {
@@ -313,7 +313,7 @@ export const EpitacioPessoa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArturBernardes: Pessoa = {
@@ -326,7 +326,7 @@ export const ArturBernardes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WashingtonLuis: Pessoa = {
@@ -339,7 +339,7 @@ export const WashingtonLuis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseLinhares: Pessoa = {
@@ -352,7 +352,7 @@ export const JoseLinhares: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EuricoGasparDutra: Pessoa = {
@@ -365,7 +365,7 @@ export const EuricoGasparDutra: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GetulioVargas: Pessoa = {
@@ -378,7 +378,7 @@ export const GetulioVargas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CafeFilho: Pessoa = {
@@ -391,7 +391,7 @@ export const CafeFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosLuz: Pessoa = {
@@ -404,7 +404,7 @@ export const CarlosLuz: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NereuRamos: Pessoa = {
@@ -417,7 +417,7 @@ export const NereuRamos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JuscelinoKubitschek: Pessoa = {
@@ -430,7 +430,7 @@ export const JuscelinoKubitschek: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JanioQuadros: Pessoa = {
@@ -443,7 +443,20 @@ export const JanioQuadros: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
+};
+
+export const IoledeFreitas: Pessoa = {
+    ID: undefined,
+    Nome: `Iole de Freitas`,
+    Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
 };
 
 export const JoaoGoulart: Pessoa = {
@@ -456,7 +469,7 @@ export const JoaoGoulart: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RanieriMazzilli: Pessoa = {
@@ -469,7 +482,7 @@ export const RanieriMazzilli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HumbertoCasteloBranco: Pessoa = {
@@ -482,7 +495,7 @@ export const HumbertoCasteloBranco: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArturdaCostaeSilva: Pessoa = {
@@ -495,7 +508,7 @@ export const ArturdaCostaeSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EmilioGarrastazuMedici: Pessoa = {
@@ -508,7 +521,7 @@ export const EmilioGarrastazuMedici: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ErnestoGeisel: Pessoa = {
@@ -521,7 +534,7 @@ export const ErnestoGeisel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoFigueiredo: Pessoa = {
@@ -534,7 +547,7 @@ export const JoaoFigueiredo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseSarney: Pessoa = {
@@ -547,7 +560,7 @@ export const JoseSarney: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandoCollordeMello: Pessoa = {
@@ -560,7 +573,7 @@ export const FernandoCollordeMello: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ItamarFranco: Pessoa = {
@@ -573,7 +586,7 @@ export const ItamarFranco: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandoHenriqueCardoso: Pessoa = {
@@ -586,7 +599,7 @@ export const FernandoHenriqueCardoso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizInacioLuladaSilva: Pessoa = {
@@ -599,7 +612,7 @@ export const LuizInacioLuladaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DilmaRousseff: Pessoa = {
@@ -612,7 +625,7 @@ export const DilmaRousseff: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MichelTemer: Pessoa = {
@@ -625,7 +638,7 @@ export const MichelTemer: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HelenaMariaPortoSeverodaCosta: Pessoa = {
@@ -638,29 +651,7 @@ export const HelenaMariaPortoSeverodaCosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('1991', '', 'Diretora', 'Museu da República', [], 'Rio de Janeiro'),
-        new Fato(
-            '01/01/1993',
-            '01/01/1997',
-            'Secretária Municipal de Cultura, Turismo e Esportes',
-            'Exonera-se no cargo de Secretária Municipal de Cultura',
-            [
-                pessoas.CesarEpitacioMaia,
-                pessoas.VaniaDrumondBonelli,
-                pessoas.EverardoMiranda,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '01/01/1997',
-            '01/02/2000',
-            'Secretária Municipal de Cultura',
-            'Exonera-se no cargo de Secretária Municipal de Cultura',
-            [pessoas.LuizPauloFernandezConde],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const EverardoMiranda: Pessoa = {
@@ -673,22 +664,7 @@ export const EverardoMiranda: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('1995', '1997', 'Museu Histórico da Cidade', 'Diretor', [], 'Rio de Janeiro'),
-        new Fato(
-            '1994',
-            '1995',
-            'Secretaria Municipal de Cultura',
-            'Assesor Especial',
-            [
-                pessoas.HelenaMariaPortoSeverodaCosta,
-                pessoas.DanielaPedras,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('1990', '1993', 'Secretaria Municipal de Cultura/ RioArte', 'Diretor de Artes Visuais', [], 'Rio de Janeiro'),
-        new Fato('1983', '1988', 'Secretaria Municipal de Cultura/ RioArte', 'Diretor de Artes Visuais', [], 'Rio de Janeiro'),
-    ],
+    Fatos: undefined,
 };
 
 export const DanielaPedras: Pessoa = {
@@ -701,20 +677,7 @@ export const DanielaPedras: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '',
-            '',
-            'Secretaria Municipal de Cultura',
-            'Gerente Projetos Especiais',
-            [
-                pessoas.HelenaMariaPortoSeverodaCosta,
-                pessoas.EverardoMiranda,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('', '', '', '', [], 'Rio de Janeiro'),
-    ],
+    Fatos: undefined,
 };
 
 export const VaniaDrumondBonelli: Pessoa = {
@@ -727,27 +690,7 @@ export const VaniaDrumondBonelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '23/03/1993',
-            '01/01/1997',
-            'Substituta Secretária Municipal de Cultura',
-            '',
-            [
-                pessoas.CesarEpitacioMaia,
-                pessoas.HelenaMariaPortoSeverodaCosta,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '01/02/2000',
-            '29/12/2000',
-            'Nomeada Secretária Municipal de Cultura',
-            'Exonera-se no cargo de Secretária Municipal de Cultura',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const MauroMonizFreire: Pessoa = {
@@ -760,7 +703,7 @@ export const MauroMonizFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', 'Secretário Especial de Monumentos Públicos', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 export const VillaLobos: Pessoa = {
     ID: undefined,
@@ -772,7 +715,7 @@ export const VillaLobos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JairBolsonaro: Pessoa = {
@@ -785,7 +728,7 @@ export const JairBolsonaro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarceloCrivella: Pessoa = {
@@ -798,7 +741,7 @@ export const MarceloCrivella: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EduardoPaes: Pessoa = {
@@ -811,7 +754,7 @@ export const EduardoPaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CesarEpitacioMaia: Pessoa = {
@@ -824,22 +767,7 @@ export const CesarEpitacioMaia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '01/01/1993',
-            '31/12/1996',
-            'Prefeito',
-            'Prefeitura Municipal do Rio de Janeiro',
-            [
-                pessoas.LuizPauloFernandezConde,
-                pessoas.HelenaMariaPortoSeverodaCosta,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('01/01/2001', '01/01/2009', 'Prefeito', 'Prefeitura Municiapl do Rio de Janeiro', [], 'Rio de Janeiro'),
-        new Fato('01/02/1987', '01/01/1993', 'Deputado Federal', 'Estado do Rio de Janeiro', [], 'Rio de Janeiro'),
-        new Fato('01/02/2013', '', 'Vereador', 'Estado do Rio de Janeiro', [], 'Rio de Janeiro'),
-    ],
+    Fatos: undefined,
 };
 
 export const LuizPauloFernandezConde: Pessoa = {
@@ -852,22 +780,7 @@ export const LuizPauloFernandezConde: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('', '1959', 'Arquiteto', 'Faculdade Nacional de Arquitetura da Universidade do Brasil (atual UFRJ', [], 'Rio de Janeiro'),
-        new Fato(
-            '01/01/1993',
-            '30/05/1996',
-            'Secretário Municipal de Urbanismo e Meio Ambiente',
-            'Exonera-se do cargo de Secretário Municipal de Urbanismo',
-            [
-                pessoas.CesarEpitacioMaia,
-                pessoas.MariaMadalenaSaintMartinAstacio,
-                pessoas.MauroBarataSoaresdeFigueiredo,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('01/01/1997', '31/12/2000', 'Prefeito', 'Prefeitura Municipal do RIo de Janeiro', [pessoas.EiderDantas], 'Rio de Janeiro'),
-    ],
+    Fatos: undefined,
 };
 
 export const AndreaAlbuquerqueGarciaRedondo: Pessoa = {
@@ -880,7 +793,7 @@ export const AndreaAlbuquerqueGarciaRedondo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('30/05/1996', '30/12/1996', 'Secretário Municipal de Urbanismo', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VicenteOrnelas: Pessoa = {
@@ -893,7 +806,7 @@ export const VicenteOrnelas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SergiodeOLiveiraCabralSantosFilho: Pessoa = {
@@ -906,7 +819,7 @@ export const SergiodeOLiveiraCabralSantosFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoFerraretoDAvila: Pessoa = {
@@ -919,7 +832,7 @@ export const RobertoFerraretoDAvila: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GerardoMagellaMelloMourao: Pessoa = {
@@ -932,7 +845,7 @@ export const GerardoMagellaMelloMourao: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosEduardoAgostiniNovaes: Pessoa = {
@@ -945,7 +858,7 @@ export const CarlosEduardoAgostiniNovaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaMadalenaSaintMartinAstacio: Pessoa = {
@@ -958,16 +871,7 @@ export const MariaMadalenaSaintMartinAstacio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '30/10/1995',
-            '',
-            'Substituta Secretario Municipal de Urbanismo',
-            'Designada para substituir o Secretario em seus impedimentos',
-            [pessoas.LuizPauloFernandezConde],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ArnaldoAssisMourthe: Pessoa = {
@@ -980,7 +884,7 @@ export const ArnaldoAssisMourthe: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 
 export const LeliaMariaBastosFraga: Pessoa = {
@@ -993,7 +897,7 @@ export const LeliaMariaBastosFraga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', 'D', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 
 export const MauroBarataSoaresdeFigueiredo: Pessoa = {
@@ -1006,16 +910,7 @@ export const MauroBarataSoaresdeFigueiredo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '12/06/1996',
-            '',
-            'Substituto Secretario Municipal de Urbanismo',
-            'Designado para substituir o Secretario em seus impedimentos',
-            [pessoas.LuizPauloFernandezConde],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const HeliaNacifXavier: Pessoa = {
@@ -1028,7 +923,7 @@ export const HeliaNacifXavier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 
 export const RosinhaMatheus: Pessoa = {
@@ -1041,7 +936,7 @@ export const RosinhaMatheus: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AnthonyGarotinho: Pessoa = {
@@ -1054,7 +949,7 @@ export const AnthonyGarotinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EiderDantas: Pessoa = {
@@ -1067,7 +962,7 @@ export const EiderDantas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoAntonioRezende: Pessoa = {
@@ -1080,7 +975,7 @@ export const JoAntonioRezende: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoSaturninoBraga: Pessoa = {
@@ -1093,7 +988,7 @@ export const RobertoSaturninoBraga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarceloNunesdeAllencar: Pessoa = {
@@ -1106,7 +1001,7 @@ export const MarceloNunesdeAllencar: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JamilHaddad: Pessoa = {
@@ -1119,7 +1014,7 @@ export const JamilHaddad: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JuliodeMoraesCoutinho: Pessoa = {
@@ -1132,7 +1027,7 @@ export const JuliodeMoraesCoutinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const IsraelKlabin: Pessoa = {
@@ -1145,7 +1040,7 @@ export const IsraelKlabin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarcosTamoyo: Pessoa = {
@@ -1158,7 +1053,7 @@ export const MarcosTamoyo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioChagasFreitas: Pessoa = {
@@ -1171,7 +1066,7 @@ export const AntonioChagasFreitas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaphaelMagalhaes: Pessoa = {
@@ -1184,7 +1079,7 @@ export const RaphaelMagalhaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosLacerda: Pessoa = {
@@ -1197,7 +1092,7 @@ export const CarlosLacerda: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseSetteCamaraFilho: Pessoa = {
@@ -1210,7 +1105,7 @@ export const JoseSetteCamaraFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseJoaquimdeSaFreireAlvim: Pessoa = {
@@ -1223,7 +1118,7 @@ export const JoseJoaquimdeSaFreireAlvim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoNegraodeLima: Pessoa = {
@@ -1236,7 +1131,7 @@ export const FranciscoNegraodeLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscodeSaLessa: Pessoa = {
@@ -1249,7 +1144,7 @@ export const FranciscodeSaLessa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EiteldeOliveiraLima: Pessoa = {
@@ -1262,7 +1157,7 @@ export const EiteldeOliveiraLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlimPedro: Pessoa = {
@@ -1275,7 +1170,7 @@ export const AlimPedro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DulcidiodoEspiritoSantoCardoso: Pessoa = {
@@ -1288,7 +1183,7 @@ export const DulcidiodoEspiritoSantoCardoso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoCarlosVital: Pessoa = {
@@ -1301,7 +1196,7 @@ export const JoaoCarlosVital: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AngeloMendesdeMorais: Pessoa = {
@@ -1314,7 +1209,7 @@ export const AngeloMendesdeMorais: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HildebrandodeAraujoGois: Pessoa = {
@@ -1327,7 +1222,7 @@ export const HildebrandodeAraujoGois: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseFiladelfodeBarrosAzevedo: Pessoa = {
@@ -1340,7 +1235,7 @@ export const JoseFiladelfodeBarrosAzevedo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HenriqueDodsworth: Pessoa = {
@@ -1353,7 +1248,7 @@ export const HenriqueDodsworth: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const OlimpiodeMelo: Pessoa = {
@@ -1366,7 +1261,7 @@ export const OlimpiodeMelo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugustodoAmaralPeixoto: Pessoa = {
@@ -1379,7 +1274,7 @@ export const AugustodoAmaralPeixoto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroErnestoBaptista: Pessoa = {
@@ -1392,7 +1287,7 @@ export const PedroErnestoBaptista: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JuliaoEsteves: Pessoa = {
@@ -1405,7 +1300,7 @@ export const JuliaoEsteves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AdolfoBergamini: Pessoa = {
@@ -1418,7 +1313,7 @@ export const AdolfoBergamini: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntoniodaSilvaPradoJunior: Pessoa = {
@@ -1431,7 +1326,7 @@ export const AntoniodaSilvaPradoJunior: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlaorPrata: Pessoa = {
@@ -1444,7 +1339,7 @@ export const AlaorPrata: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosSampaio: Pessoa = {
@@ -1457,7 +1352,7 @@ export const CarlosSampaio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MiltonCavalcanteMotarreyos: Pessoa = {
@@ -1470,7 +1365,7 @@ export const MiltonCavalcanteMotarreyos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuisVerdugo: Pessoa = {
@@ -1483,7 +1378,7 @@ export const LuisVerdugo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MilciadesMariadeSaFreire: Pessoa = {
@@ -1496,7 +1391,7 @@ export const MilciadesMariadeSaFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PaulodeFrontin: Pessoa = {
@@ -1509,7 +1404,7 @@ export const PaulodeFrontin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PeregrinodaSilva: Pessoa = {
@@ -1522,7 +1417,7 @@ export const PeregrinodaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AmaroCavalcanti: Pessoa = {
@@ -1535,7 +1430,7 @@ export const AmaroCavalcanti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioAugustodeAzevedoSodre: Pessoa = {
@@ -1548,7 +1443,7 @@ export const AntonioAugustodeAzevedoSodre: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RivadaviadaCunhaCorreia: Pessoa = {
@@ -1561,7 +1456,7 @@ export const RivadaviadaCunhaCorreia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BentoRibeiro: Pessoa = {
@@ -1574,7 +1469,7 @@ export const BentoRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SerzedeloCorreia: Pessoa = {
@@ -1587,7 +1482,7 @@ export const SerzedeloCorreia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoMarcelinodeSousaAguiar: Pessoa = {
@@ -1600,7 +1495,7 @@ export const FranciscoMarcelinodeSousaAguiar: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoPereiraPassos: Pessoa = {
@@ -1613,7 +1508,7 @@ export const FranciscoPereiraPassos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosLeiteRibeiro: Pessoa = {
@@ -1626,7 +1521,7 @@ export const CarlosLeiteRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaquimXavierdaSilveiraJunior: Pessoa = {
@@ -1639,7 +1534,7 @@ export const JoaquimXavierdaSilveiraJunior: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoFilipePereira: Pessoa = {
@@ -1652,7 +1547,7 @@ export const JoaoFilipePereira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioCoelhoRodrigues: Pessoa = {
@@ -1665,7 +1560,7 @@ export const AntonioCoelhoRodrigues: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HonorioGurgel: Pessoa = {
@@ -1678,7 +1573,7 @@ export const HonorioGurgel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CesarioAlvim: Pessoa = {
@@ -1691,7 +1586,7 @@ export const CesarioAlvim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuisvanErven: Pessoa = {
@@ -1704,7 +1599,7 @@ export const LuisvanErven: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseJoaquimdaRosa: Pessoa = {
@@ -1717,7 +1612,7 @@ export const JoseJoaquimdaRosa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoFurquimWerneckdeAlmeida: Pessoa = {
@@ -1730,7 +1625,7 @@ export const FranciscoFurquimWerneckdeAlmeida: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HenriqueValadares: Pessoa = {
@@ -1743,7 +1638,7 @@ export const HenriqueValadares: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioDiasFerreira: Pessoa = {
@@ -1756,7 +1651,7 @@ export const AntonioDiasFerreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BarataRibeiro: Pessoa = {
@@ -1769,7 +1664,7 @@ export const BarataRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlfredoAugustoVieiraBarcelos: Pessoa = {
@@ -1782,7 +1677,7 @@ export const AlfredoAugustoVieiraBarcelos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NicolauJoaquimMoreira: Pessoa = {
@@ -1795,7 +1690,7 @@ export const NicolauJoaquimMoreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarneirodeFontoura: Pessoa = {
@@ -1808,7 +1703,7 @@ export const CarneirodeFontoura: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseFelixdaCunhaMeneses: Pessoa = {
@@ -1821,7 +1716,7 @@ export const JoseFelixdaCunhaMeneses: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const UbaldinodoAmaral: Pessoa = {
@@ -1834,7 +1729,7 @@ export const UbaldinodoAmaral: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoAntonioPessoadeBarros: Pessoa = {
@@ -1847,7 +1742,7 @@ export const FranciscoAntonioPessoadeBarros: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoManueldaSilvaVeiga: Pessoa = {
@@ -1860,7 +1755,7 @@ export const JoaoManueldaSilvaVeiga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugustoNunesdeLima: Pessoa = {
@@ -1873,7 +1768,7 @@ export const AugustoNunesdeLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoPereiraLopes: Pessoa = {
@@ -1886,7 +1781,7 @@ export const JoaoPereiraLopes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoPedrodeMiranda: Pessoa = {
@@ -1899,7 +1794,7 @@ export const JoaoPedrodeMiranda: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseFerreiraNobre: Pessoa = {
@@ -1912,7 +1807,7 @@ export const JoseFerreiraNobre: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioBarrosoPereira: Pessoa = {
@@ -1925,7 +1820,7 @@ export const AntonioBarrosoPereira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioFerreiraViana: Pessoa = {
@@ -1938,7 +1833,7 @@ export const AntonioFerreiraViana: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AdolfoBezerradeMenezes: Pessoa = {
@@ -1951,7 +1846,7 @@ export const AdolfoBezerradeMenezes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoBatistadosSantos: Pessoa = {
@@ -1964,7 +1859,7 @@ export const JoaoBatistadosSantos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoJosedaCunhaTeles: Pessoa = {
@@ -1977,7 +1872,7 @@ export const JoaoJosedaCunhaTeles: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoãodeOliveiraFausto: Pessoa = {
@@ -1990,7 +1885,7 @@ export const JoãodeOliveiraFausto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MigueldeFriaseVasconcelos: Pessoa = {
@@ -2003,7 +1898,7 @@ export const MigueldeFriaseVasconcelos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CandidoBorges: Pessoa = {
@@ -2016,7 +1911,7 @@ export const CandidoBorges: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GabrielGetúlioMonteirodeMendonça: Pessoa = {
@@ -2029,7 +1924,7 @@ export const GabrielGetúlioMonteirodeMendonça: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoãoSilveiradePilar: Pessoa = {
@@ -2042,7 +1937,7 @@ export const JoãoSilveiradePilar: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuisdeMenezesVasconcelosdeDrummond: Pessoa = {
@@ -2055,7 +1950,7 @@ export const LuisdeMenezesVasconcelosdeDrummond: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HonorioPecanha: Pessoa = {
@@ -2068,7 +1963,7 @@ export const HonorioPecanha: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LaurindoRamos: Pessoa = {
@@ -2081,12 +1976,12 @@ export const LaurindoRamos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
-export const HildegardoLeaoVeloso: Pessoa = {
+export const HildegardoLeaoVelloso: Pessoa = {
     ID: undefined,
-    Nome: `Leão Veloso`,
+    Nome: `Hildegardo Leão Velloso`,
     Nascimento: '1899',
     CidadePaisNascimento: 'São Paulo, Brasil',
     Morte: '1966',
@@ -2094,16 +1989,7 @@ export const HildegardoLeaoVeloso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1934',
-            '1934',
-            'Premiação',
-            'Medalha de Ouro do Salão Oficial junto com Manoel Constantino, Haydéa Santiago e Gaspar Magalhães',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const GasparMagalhaes: Pessoa = {
@@ -2116,16 +2002,7 @@ export const GasparMagalhaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1934',
-            '1934',
-            'Premiação',
-            'Medalha de Ouro do Salão Oficial junto com Manoel Constantino, Haydéa Santiago e Leão Veloso',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const HaydeaSantiago: Pessoa = {
@@ -2138,16 +2015,7 @@ export const HaydeaSantiago: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1934',
-            '1934',
-            'Premiação',
-            'Medalha de Ouro do Salão Oficial junto com Manoel Constantino, Leão Veloso e Gaspar Magalhães',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ManoelConstantino: Pessoa = {
@@ -2160,16 +2028,7 @@ export const ManoelConstantino: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1934',
-            '1934',
-            'Premiação',
-            'Medalha de Ouro do Salão Oficial junto com Leão Veloso, Haydéa Santiago e Gaspar Magalhães',
-            [],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const EduardodeSa: Pessoa = {
@@ -2182,7 +2041,7 @@ export const EduardodeSa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloMazzucchelli: Pessoa = {
@@ -2195,7 +2054,7 @@ export const PauloMazzucchelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BenevenutoBerna: Pessoa = {
@@ -2208,7 +2067,7 @@ export const BenevenutoBerna: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RomeuAlves: Pessoa = {
@@ -2221,7 +2080,7 @@ export const RomeuAlves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GevasioTeixeira: Pessoa = {
@@ -2234,7 +2093,7 @@ export const GevasioTeixeira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BarataFeijo: Pessoa = {
@@ -2247,7 +2106,7 @@ export const BarataFeijo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SandroLucena: Pessoa = {
@@ -2260,7 +2119,7 @@ export const SandroLucena: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HumbertoCozzo: Pessoa = {
@@ -2273,7 +2132,7 @@ export const HumbertoCozzo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoMagalhaes: Pessoa = {
@@ -2286,7 +2145,7 @@ export const RobertoMagalhaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const IvanFreitas: Pessoa = {
@@ -2299,7 +2158,7 @@ export const IvanFreitas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosDelNigro: Pessoa = {
@@ -2312,7 +2171,7 @@ export const CarlosDelNigro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArmandoShnoorr: Pessoa = {
@@ -2325,7 +2184,7 @@ export const ArmandoShnoorr: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ACoutinho: Pessoa = {
@@ -2338,7 +2197,7 @@ export const ACoutinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizSerri: Pessoa = {
@@ -2351,7 +2210,7 @@ export const LuizSerri: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const UgoTaddey: Pessoa = {
@@ -2364,7 +2223,7 @@ export const UgoTaddey: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Zanucchi: Pessoa = {
@@ -2377,7 +2236,7 @@ export const Zanucchi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BrunoGiorgi: Pessoa = {
@@ -2390,7 +2249,7 @@ export const BrunoGiorgi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoVictorPalma: Pessoa = {
@@ -2403,7 +2262,7 @@ export const FranciscoVictorPalma: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlfredoCeschiatti: Pessoa = {
@@ -2416,7 +2275,7 @@ export const AlfredoCeschiatti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ModestinoKanto: Pessoa = {
@@ -2429,7 +2288,7 @@ export const ModestinoKanto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ValterBrito: Pessoa = {
@@ -2442,7 +2301,7 @@ export const ValterBrito: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosRamos: Pessoa = {
@@ -2455,7 +2314,7 @@ export const CarlosRamos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CPincy: Pessoa = {
@@ -2468,7 +2327,7 @@ export const CPincy: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AmadeuZani: Pessoa = {
@@ -2481,7 +2340,7 @@ export const AmadeuZani: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseLuizRibeiro: Pessoa = {
@@ -2494,7 +2353,7 @@ export const JoseLuizRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const OttoDumovich: Pessoa = {
@@ -2507,7 +2366,7 @@ export const OttoDumovich: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CristinaPozzobon: Pessoa = {
@@ -2520,7 +2379,7 @@ export const CristinaPozzobon: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('1984', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoAndrade: Pessoa = {
@@ -2533,7 +2392,7 @@ export const FranciscoAndrade: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SankhoChaudhuri: Pessoa = {
@@ -2546,7 +2405,7 @@ export const SankhoChaudhuri: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const TitoBernucci: Pessoa = {
@@ -2559,7 +2418,7 @@ export const TitoBernucci: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariadaGloriaVianaPatrasso: Pessoa = {
@@ -2572,7 +2431,7 @@ export const MariadaGloriaVianaPatrasso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoFilgueirasLima: Pessoa = {
@@ -2585,7 +2444,7 @@ export const JoaoFilgueirasLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 export const RomaoAlves: Pessoa = {
     ID: undefined,
@@ -2597,7 +2456,7 @@ export const RomaoAlves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizFerrer: Pessoa = {
@@ -2610,7 +2469,7 @@ export const LuizFerrer: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioAgostinelli: Pessoa = {
@@ -2623,7 +2482,16 @@ export const MarioAgostinelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('1953', '1953', 'Fundador', 'Foi fundador da Petit Galerie', [], 'Rio de Janeiro')],
+    Fatos: [
+        {
+            DataInicio: '1953',
+            DataFim: '1953',
+            Tipo: 'Fundador',
+            Descrição: 'Foi fundador da Petit Galerie',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
+    ],
 };
 
 export const DecioVilares: Pessoa = {
@@ -2636,7 +2504,7 @@ export const DecioVilares: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoManuelChavesPinheiro: Pessoa = {
@@ -2649,7 +2517,7 @@ export const FranciscoManuelChavesPinheiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoMaximianoMafra: Pessoa = {
@@ -2662,7 +2530,7 @@ export const JoaoMaximianoMafra: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LouisRochet: Pessoa = {
@@ -2675,7 +2543,7 @@ export const LouisRochet: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoasPereiradosPassos: Pessoa = {
@@ -2688,7 +2556,7 @@ export const JoasPereiradosPassos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Joceil: Pessoa = {
@@ -2701,7 +2569,7 @@ export const Joceil: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuisPaesLeme: Pessoa = {
@@ -2714,7 +2582,7 @@ export const LuisPaesLeme: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PereiraBarreto: Pessoa = {
@@ -2727,7 +2595,7 @@ export const PereiraBarreto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RodolfoAmoedo: Pessoa = {
@@ -2740,7 +2608,7 @@ export const RodolfoAmoedo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EdgarDuvivier: Pessoa = {
@@ -2753,7 +2621,7 @@ export const EdgarDuvivier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EdgarDuvivierFilho: Pessoa = {
@@ -2766,7 +2634,7 @@ export const EdgarDuvivierFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RodolfoBernadelli: Pessoa = {
@@ -2779,7 +2647,7 @@ export const RodolfoBernadelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Ariel: Pessoa = {
@@ -2792,7 +2660,7 @@ export const Ariel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Desconhecida: Pessoa = {
@@ -2805,7 +2673,7 @@ export const Desconhecida: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SimonMazieredas: Pessoa = {
@@ -2818,7 +2686,7 @@ export const SimonMazieredas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PierreLaviron: Pessoa = {
@@ -2831,7 +2699,7 @@ export const PierreLaviron: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PhilippeGarnier: Pessoa = {
@@ -2844,7 +2712,7 @@ export const PhilippeGarnier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FrançoisLespingola: Pessoa = {
@@ -2857,7 +2725,7 @@ export const FrançoisLespingola: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaMartins: Pessoa = {
@@ -2870,7 +2738,7 @@ export const MariaMartins: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseFranciscoPintoAlpoim: Pessoa = {
@@ -2883,7 +2751,7 @@ export const JoseFranciscoPintoAlpoim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseFernandesPintoAlpoim: Pessoa = {
@@ -2896,7 +2764,7 @@ export const JoseFernandesPintoAlpoim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 export const JoaquimRodriguesMoreiraJunior: Pessoa = {
     ID: undefined,
@@ -2908,7 +2776,7 @@ export const JoaquimRodriguesMoreiraJunior: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JorgeSelaron: Pessoa = {
@@ -2921,7 +2789,16 @@ export const JorgeSelaron: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('1983', '1983', 'Mudança', 'O artista chileno muda-se para o Rio de Janeiro.', [], 'Rio de Janeiro')],
+    Fatos: [
+        {
+            DataInicio: '1983',
+            DataFim: '1983',
+            Tipo: 'Mudança',
+            Descrição: 'O artista chileno muda-se para o Rio de Janeiro.',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
+    ],
 };
 
 export const GracaCostaCabral: Pessoa = {
@@ -2934,7 +2811,7 @@ export const GracaCostaCabral: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MathurinMoreau: Pessoa = {
@@ -2947,7 +2824,7 @@ export const MathurinMoreau: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DeoclecianoMartinsdeOliveiraFilho: Pessoa = {
@@ -2960,7 +2837,7 @@ export const DeoclecianoMartinsdeOliveiraFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugusteFrancoisMarieGlaziou: Pessoa = {
@@ -2973,7 +2850,7 @@ export const AugusteFrancoisMarieGlaziou: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DjaniradaMottaeSilva: Pessoa = {
@@ -2986,7 +2863,7 @@ export const DjaniradaMottaeSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioMatos: Pessoa = {
@@ -2999,7 +2876,7 @@ export const MarioMatos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MestreValentim: Pessoa = {
@@ -3012,7 +2889,7 @@ export const MestreValentim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoMaximinianoMafra: Pessoa = {
@@ -3025,7 +2902,7 @@ export const JoaoMaximinianoMafra: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LDespresLaupedeCluny: Pessoa = {
@@ -3038,7 +2915,7 @@ export const LDespresLaupedeCluny: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GustaveFredericMichel: Pessoa = {
@@ -3051,7 +2928,7 @@ export const GustaveFredericMichel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseResende: Pessoa = {
@@ -3065,10 +2942,7 @@ export const JoseResende: Pessoa = {
         'Esteve ao lado de artistas como Luis Baravelli e CArlos Fajardo. No geral o artista utiliza materiais comuns, pesados, industriais, que declaram o seu caráter urbano e favorecem livres associaçoes com processos de construção.',
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato('1988', '1988', 'Exposição Internacional', 'Bienal de Veneza', [], 'Veneza'),
-        new Fato('1992', '1992', 'Exposição Internacional', 'Documenta', [], 'Kassel'),
-    ],
+    Fatos: undefined,
 };
 
 export const JesperNeergaard: Pessoa = {
@@ -3081,7 +2955,7 @@ export const JesperNeergaard: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DanielBellionGomesPinto: Pessoa = {
@@ -3094,7 +2968,7 @@ export const DanielBellionGomesPinto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WaltercioCaldas: Pessoa = {
@@ -3107,7 +2981,7 @@ export const WaltercioCaldas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PierreVictorAndre: Pessoa = {
@@ -3120,7 +2994,7 @@ export const PierreVictorAndre: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FundicaoValDOsne: Pessoa = {
@@ -3134,22 +3008,48 @@ export const FundicaoValDOsne: Pessoa = {
     Profissoes: undefined,
     Especialidades: undefined,
     Fatos: [
-        new Fato('05/04/1836', '', 'Autorização', "Recebeu autorizaçao para construir um alto-forno no Val D'Osne", [pessoas.PierreVictorAndre], 'Haute-Marne'),
-        new Fato('1870', '1892', "Societé Anonyme des Fonderies d'art du Val d'Osne", '', [], 'Haute-Marne'),
-        new Fato(
-            '',
-            '',
-            'Fundição artística',
-            '',
-            [
+        {
+            DataInicio: '05/04/1836',
+            DataFim: undefined,
+            Tipo: 'Autorização',
+            Descrição: 'Recebeu autorizaçao para construir um alto-forno no Val DOsne',
+            Pessoas: [pessoas.PierreVictorAndre],
+            Cidade: 'Rio de Janeiro',
+        },
+        {
+            DataInicio: '1870',
+            DataFim: '1892',
+            Tipo: 'Autorização',
+            Descrição: 'Societé Anonyme des Fonderies dart du Val dOsne',
+            Pessoas: undefined,
+            Cidade: 'Haute-Marne',
+        },
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Fundição artística',
+            Descrição: undefined,
+            Pessoas: [
                 pessoas.MathurinMoreau,
                 pessoas.LouisSauvageau,
                 pessoas.AugusteMartin,
                 pessoas.HenriFredericIselin,
             ],
-            'Haute-Marne',
-        ),
-        new Fato('', '', '', 'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano', [], 'Rio de Janeiro'),
+            Cidade: 'Haute-Marne',
+        },
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: undefined,
+            Descrição: 'Existem no Brasil cerca de 130 obras, entre estátuas, fontes, e peças de mobiliário urbano',
+            Pessoas: [
+                pessoas.MathurinMoreau,
+                pessoas.LouisSauvageau,
+                pessoas.AugusteMartin,
+                pessoas.HenriFredericIselin,
+            ],
+            Cidade: 'Rio de Janeiro',
+        },
     ],
 };
 
@@ -3163,7 +3063,7 @@ export const CharlesKeck: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranzWeissmann: Pessoa = {
@@ -3178,156 +3078,62 @@ export const FranzWeissmann: Pessoa = {
     Profissoes: undefined,
     Especialidades: [Escultor],
     Fatos: [
-        new Fato('1921', '1924', 'Mudança', 'Mudou-se para o Brasil, foi morar no interior de São Paulo', [], ''),
-        new Fato('1927', '1927', 'Mudança', 'Mudou-se para a capital do estado', [], 'São Paulo'),
-        new Fato('1929', '1929', 'Mudança', 'Mudou-se para o Rio de Janeiro', [], 'Rio de Janeiro'),
-        new Fato(
-            '1939',
-            '1941',
-            'Escola Nacional de Belas Artes',
-            'Durante dois anos passou pelos cursos de arquitetura, pintura, desenho e escultura. Abandona a escola.',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '1942',
-            '1944',
-            'Atelie August Zamoyski',
-            'Estudou desenho, escultura, modelagem e fundição no ateliê do escultor polonês com quem aprendeu técnicas tradicionais do campo',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato('1944', '1946', 'Mudança', 'Período de grande relevancia na sua formação artística', [], 'Belo Horizonte'),
-        new Fato('1946', '1946', 'Exposição Individual', 'Realizou sua primeira exposição individual no diretório de estudantes da ENBA', [], 'Rio de Janeiro'),
-        new Fato(
-            '1948',
-            '1956',
-            'Escola do Parque/ Escola Guinard',
-            'Foi convidado por Guignard, para dar aulas de modelo vivo, modelagem e escultura na primeira escola de arte moderna de Belo Horizonte, a Escola do Parque',
-            [pessoas.AlbertodaVeigaGuignard],
-            'Belo Horizonte',
-        ),
-        new Fato(
-            '',
-            '',
-            'Professor',
-            '',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FarnesedeAndrade,
-            ],
-            'Belo Horizonte',
-        ),
-        new Fato(
-            '',
-            '',
-            'Tradição',
-            'Foi um dos precursores do construtivismo no Brasil, sua obra caracteriza-se pelo uso das formas geométricas e espaços vazados.',
-            [],
-            '',
-        ),
-        new Fato('', '', '', 'Integrante do Grupo Frente', [], ''),
-        new Fato('1957', '1957', 'Premio', 'Melhor escultor brasileiro eleito pela Bienal de São Paulo', [], 'São Paulo'),
-        new Fato('1958', '1958', 'Premio', 'Ganhou viagem ao exterior do Salão de Arte Moderna', [], ''),
-        new Fato('', '', 'Mudança', 'Mora na França', [], ''),
-        new Fato('', '', 'Mudança', 'Mora na Espanha', [], ''),
-        new Fato(
-            '1959',
-            '',
-            'I Exposição Neoconcreta',
-            '',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FranzWeissmann,
-            ],
-            '',
-        ),
-        new Fato(
-            '1959',
-            '',
-            'Manifesto Neoconcreto',
-            'Publicado no suplemento dominical do Jornal do Brasil',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FerreiraGullar,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.LygiaClark,
-                pessoas.ReynaldoJardim,
-                pessoas.TheonSpanudis,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '02/12/1993',
-            '02/12/1993',
-            'Prêmio Nacional de Arte do Ministério da Cultura',
-            'Criado pelo Ibac, o prêmio no valor de CR$900mil foi entregue na abertura do 13 Salão Nacional de Artes Plásticas, no Palácio Gustavo Capaneta',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '1997',
-            '1997',
-            'Exposição Coletiva',
-            'Poetas do espaço e da cor realizada no MAM/Rj',
-            [
-                pessoas.AlfredoVolpi,
-                pessoas.AncangeloIanelli,
-                pessoas.AldirMendesdeSouza,
-                pessoas.FranzWeissmann,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '05/11/1998',
-            '05/11/1998',
-            'Ordem do Mérito do Ministério da Cultura',
-            'O prêmio foi entregue ao escultor pelo presidente da República',
-            [pessoas.FernandoHenriqueCardoso],
-            'Brasília',
-        ),
+        {
+            DataInicio: '1921',
+            DataFim: '1924',
+            Tipo: 'Mudança',
+            Descrição: 'Mudou-se para o Brasil, foi morar no interior de São Paulo',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
+        {
+            DataInicio: '1927',
+            DataFim: '1927',
+            Tipo: 'Mudança',
+            Descrição: 'Mudou-se para a capital do estado',
+            Pessoas: undefined,
+            Cidade: 'São Paulo',
+        },
+        {
+            DataInicio: '1929',
+            DataFim: '1929',
+            Tipo: 'Mudança',
+            Descrição: 'Mudou-se para o Rio de Janeiro',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
+        {
+            DataInicio: '1944',
+            DataFim: '1946',
+            Tipo: 'Mudança',
+            Descrição: 'Período de grande relevancia na sua formação artística',
+            Pessoas: undefined,
+            Cidade: 'Belo Horizonte',
+        },
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Tradição',
+            Descrição: 'Foi um dos precursores do construtivismo no Brasil, sua obra caracteriza-se pelo uso das formas geométricas e espaços vazados.',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Mudança',
+            Descrição: 'Mora na França',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Mudança',
+            Descrição: 'Mora na Espanha',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
     ],
 };
 
@@ -3341,24 +3147,7 @@ export const CristinaSalgado: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const Tunga: Pessoa = {
@@ -3371,24 +3160,7 @@ export const Tunga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AldirMendesdeSouza: Pessoa = {
@@ -3401,21 +3173,7 @@ export const AldirMendesdeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1997',
-            '1997',
-            'Exposição Coletiva',
-            'Poetas do espaço e da cor realizada no MAM/Rj',
-            [
-                pessoas.AlfredoVolpi,
-                pessoas.AncangeloIanelli,
-                pessoas.AldirMendesdeSouza,
-                pessoas.FranzWeissmann,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AncangeloIanelli: Pessoa = {
@@ -3428,21 +3186,7 @@ export const AncangeloIanelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1997',
-            '1997',
-            'Exposição Coletiva',
-            'Poetas do espaço e da cor realizada no MAM/Rj',
-            [
-                pessoas.AlfredoVolpi,
-                pessoas.AncangeloIanelli,
-                pessoas.AldirMendesdeSouza,
-                pessoas.FranzWeissmann,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AlfredoVolpi: Pessoa = {
@@ -3455,21 +3199,7 @@ export const AlfredoVolpi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1997',
-            '1997',
-            'Exposição Coletiva',
-            'Poetas do espaço e da cor realizada no MAM/Rj',
-            [
-                pessoas.AlfredoVolpi,
-                pessoas.AncangeloIanelli,
-                pessoas.AldirMendesdeSouza,
-                pessoas.FranzWeissmann,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const VasniSantana: Pessoa = {
@@ -3482,33 +3212,7 @@ export const VasniSantana: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const FernandoCocchiarale: Pessoa = {
@@ -3522,44 +3226,22 @@ export const FernandoCocchiarale: Pessoa = {
     Profissoes: undefined,
     Especialidades: undefined,
     Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Curador Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('1978', '', 'Professor', 'Departamento de Filosofia PUC-RJ', [], 'Rio de Janeiro'),
-        new Fato(
-            '1987',
-            '1987',
-            'Livro',
-            'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
-            [pessoas.AnnaBellaGeiger],
-            'Rio de Janeiro',
-        ),
-        new Fato('1990', '', 'Professor', 'Escola de Artes Visuais do Parque Lage', [], 'Rio de Janeiro'),
-        new Fato('2006', '2006', 'Livro', 'Quem tem medo de Arte Contemporanea, Recife, Fundação Joaquim Nabuco, Editora MAssangana', [], 'Rio de Janeiro'),
-        new Fato('1994', '1997', 'Comissão de Curadoria', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro'),
-        new Fato('1994', '1997', 'Comissão de Curadoria', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro'),
+        {
+            DataInicio: '1987',
+            DataFim: '1987',
+            Tipo: 'Livro',
+            Descrição: 'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
+            Pessoas: [pessoas.AnnaBellaGeiger],
+            Cidade: 'Rio de Janeiro',
+        },
+        {
+            DataInicio: '2006',
+            DataFim: '2006',
+            Tipo: 'Livro',
+            Descrição: 'Quem tem medo de Arte Contemporanea, Recife, Fundação Joaquim Nabuco, Editora MAssangana',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
     ],
 };
 
@@ -3574,15 +3256,14 @@ export const AnnaBellaGeiger: Pessoa = {
     Profissoes: undefined,
     Especialidades: undefined,
     Fatos: [
-        new Fato(
-            '1987',
-            '1987',
-            'Livro',
-            'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
-            [pessoas.FernandoCocchiarale],
-            'Rio de Janeiro',
-        ),
-        new Fato('', '', '', ' ', [], 'Rio de Janeiro'),
+        {
+            DataInicio: '1987',
+            DataFim: '1987',
+            Tipo: 'Livro',
+            Descrição: 'Abstracionismo Geométrico e Informal: a vanguarda Brasileira dos anos 50, Rio de Janeiro, MEC/Funarte',
+            Pessoas: [pessoas.FernandoCocchiarale],
+            Cidade: 'Rio de Janeiro',
+        },
     ],
 };
 export const ReynaldoJardim: Pessoa = {
@@ -3595,33 +3276,7 @@ export const ReynaldoJardim: Pessoa = {
     Descriçao: undefined,
     Profissoes: [Jornalista],
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const OsmarDillon: Pessoa = {
@@ -3634,33 +3289,7 @@ export const OsmarDillon: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ClaudioMelloeSouza: Pessoa = {
@@ -3673,33 +3302,7 @@ export const ClaudioMelloeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const TheonSpanudis: Pessoa = {
@@ -3712,33 +3315,7 @@ export const TheonSpanudis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const RobertoPontual: Pessoa = {
@@ -3751,33 +3328,7 @@ export const RobertoPontual: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const DecioVieira: Pessoa = {
@@ -3790,33 +3341,7 @@ export const DecioVieira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const FerreiraGullar: Pessoa = {
@@ -3829,33 +3354,7 @@ export const FerreiraGullar: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AluisioCarvão: Pessoa = {
@@ -3869,31 +3368,6 @@ export const AluisioCarvão: Pessoa = {
     Profissoes: undefined,
     Especialidades: [Pintor],
     Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
         new Fato('', '', 'Museu de Arte Moderna', 'Estudou no museu', [pessoas.IvanSerpa], 'Rio de Janeiro'),
         new Fato('', '', 'Grupo Frente', 'Integrou o movimento', [], 'Rio de Janeiro'),
         new Fato('1960', '1960', 'Prêmiado pelo Salão Nacional de Arte Moderna', 'GAnhou uma viagem para o exterior', [], ''),
@@ -3914,7 +3388,7 @@ export const IvanSerpa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 
 export const HerculesBarsotti: Pessoa = {
@@ -3927,33 +3401,7 @@ export const HerculesBarsotti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const WillysdeCastro: Pessoa = {
@@ -3966,33 +3414,7 @@ export const WillysdeCastro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const LygiaPape: Pessoa = {
@@ -4005,49 +3427,7 @@ export const LygiaPape: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const HelioOiticica: Pessoa = {
@@ -4060,33 +3440,7 @@ export const HelioOiticica: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '09/05/1991',
-            '09/06/1991',
-            'Experiência Neoconcreta',
-            'Exposição coletiva realizada no MAM/RJ com patrocínio da Rioarte, da BAnerj e dos Transportes Fink',
-            [
-                pessoas.LygiaClark,
-                pessoas.HelioOiticica,
-                pessoas.AmilcardeCastro,
-                pessoas.WillysdeCastro,
-                pessoas.LygiaPape,
-                pessoas.HerculesBarsotti,
-                pessoas.AluisioCarvão,
-                pessoas.FerreiraGullar,
-                pessoas.DecioVieira,
-                pessoas.RobertoPontual,
-                pessoas.ReynaldoJardim,
-                pessoas.OsmarDillon,
-                pessoas.ClaudioMelloeSouza,
-                pessoas.TheonSpanudis,
-                pessoas.FernandoCocchiarale,
-                pessoas.VasniSantana,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const LygiaClark: Pessoa = {
@@ -4099,7 +3453,7 @@ export const LygiaClark: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MaryVieira: Pessoa = {
@@ -4112,7 +3466,7 @@ export const MaryVieira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FarnesedeAndrade: Pessoa = {
@@ -4125,7 +3479,7 @@ export const FarnesedeAndrade: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const OtavioAvancini: Pessoa = {
@@ -4138,7 +3492,7 @@ export const OtavioAvancini: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AnisioOscarMotta: Pessoa = {
@@ -4151,7 +3505,7 @@ export const AnisioOscarMotta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BelmirodeAlmeida: Pessoa = {
@@ -4164,7 +3518,7 @@ export const BelmirodeAlmeida: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MestreAlvesSetubal: Pessoa = {
@@ -4177,7 +3531,7 @@ export const MestreAlvesSetubal: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JorgeCupim: Pessoa = {
@@ -4190,7 +3544,7 @@ export const JorgeCupim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EduardoRaymundoRodrigues: Pessoa = {
@@ -4203,7 +3557,7 @@ export const EduardoRaymundoRodrigues: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CoronelManoelJosedeOliviera: Pessoa = {
@@ -4216,7 +3570,7 @@ export const CoronelManoelJosedeOliviera: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FrancoisRude: Pessoa = {
@@ -4229,7 +3583,7 @@ export const FrancoisRude: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MestreJoaoCoelhoMarinho: Pessoa = {
@@ -4242,7 +3596,7 @@ export const MestreJoaoCoelhoMarinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoBurleMarx: Pessoa = {
@@ -4255,7 +3609,7 @@ export const RobertoBurleMarx: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NelsonMunizNevares: Pessoa = {
@@ -4268,7 +3622,7 @@ export const NelsonMunizNevares: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EugeneLouisLequesne: Pessoa = {
@@ -4281,7 +3635,7 @@ export const EugeneLouisLequesne: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RemoBernucci: Pessoa = {
@@ -4294,7 +3648,7 @@ export const RemoBernucci: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EmilioGiannelli: Pessoa = {
@@ -4307,7 +3661,7 @@ export const EmilioGiannelli: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SironFranco: Pessoa = {
@@ -4324,46 +3678,22 @@ export const SironFranco: Pessoa = {
         Escultor,
     ],
     Fatos: [
-        new Fato('', '', '', 'É um dos artistas brasileiros mais conhecidos no exterior.', [], ''),
-        new Fato(
-            '1991',
-            '1991',
-            'I Exposição Internacional de Esculturas Efemeras',
-            'Exposição que levou a ser convidado para a exposição do SESC 1996. A obra do artista são duas cobras coloridas que brotam do solo',
-            [],
-            'Fortaleza',
-        ),
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: undefined,
+            Descrição: 'É um dos artistas brasileiros mais conhecidos no exterior.',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
+        {
+            DataInicio: '1991',
+            DataFim: undefined,
+            Tipo: 'I Exposição Internacional de Esculturas Efemeras',
+            Descrição: 'Exposição que levou a ser convidado para a exposição do SESC 1996. A obra do artista são duas cobras coloridas que brotam do solo',
+            Pessoas: undefined,
+            Cidade: 'Fortaleza',
+        },
     ],
 };
 
@@ -4377,7 +3707,7 @@ export const OscarNiemeyer: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PaulJeanBaptisteGasq: Pessoa = {
@@ -4390,7 +3720,7 @@ export const PaulJeanBaptisteGasq: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GilbertoMandarino: Pessoa = {
@@ -4403,7 +3733,7 @@ export const GilbertoMandarino: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PetrusVerdier: Pessoa = {
@@ -4416,7 +3746,7 @@ export const PetrusVerdier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HeitorUsai: Pessoa = {
@@ -4429,7 +3759,7 @@ export const HeitorUsai: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JulioCesarPesssolaniZavala: Pessoa = {
@@ -4442,7 +3772,7 @@ export const JulioCesarPesssolaniZavala: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseBarreto: Pessoa = {
@@ -4455,7 +3785,7 @@ export const JoseBarreto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LiubaWolf: Pessoa = {
@@ -4468,7 +3798,7 @@ export const LiubaWolf: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseMariaJacintoRabelo: Pessoa = {
@@ -4481,7 +3811,7 @@ export const JoseMariaJacintoRabelo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AdrianaJanacopolus: Pessoa = {
@@ -4494,7 +3824,7 @@ export const AdrianaJanacopolus: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EugeneBenet: Pessoa = {
@@ -4507,7 +3837,7 @@ export const EugeneBenet: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseMarcioBaptistadaCunha: Pessoa = {
@@ -4520,7 +3850,7 @@ export const JoseMarcioBaptistadaCunha: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Mazerdo: Pessoa = {
@@ -4533,7 +3863,7 @@ export const Mazerdo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HippolyteFrancoisAugusteHippolytePeyrol: Pessoa = {
@@ -4546,7 +3876,7 @@ export const HippolyteFrancoisAugusteHippolytePeyrol: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PierreLoison: Pessoa = {
@@ -4559,7 +3889,7 @@ export const PierreLoison: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Merzio: Pessoa = {
@@ -4572,7 +3902,7 @@ export const Merzio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RibeirodaCosta: Pessoa = {
@@ -4585,7 +3915,7 @@ export const RibeirodaCosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HerbertWHogg: Pessoa = {
@@ -4598,7 +3928,7 @@ export const HerbertWHogg: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlicePittaluga: Pessoa = {
@@ -4611,7 +3941,7 @@ export const AlicePittaluga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GlaucoRodrigues: Pessoa = {
@@ -4624,7 +3954,7 @@ export const GlaucoRodrigues: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaHelenaVasco: Pessoa = {
@@ -4637,7 +3967,7 @@ export const MariaHelenaVasco: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaLuciaPivetti: Pessoa = {
@@ -4650,7 +3980,7 @@ export const MariaLuciaPivetti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LucioCosta: Pessoa = {
@@ -4663,7 +3993,7 @@ export const LucioCosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VincenzoLarocca: Pessoa = {
@@ -4676,7 +4006,7 @@ export const VincenzoLarocca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandoThauby: Pessoa = {
@@ -4689,7 +4019,7 @@ export const FernandoThauby: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HenockdeAlmeida: Pessoa = {
@@ -4702,7 +4032,7 @@ export const HenockdeAlmeida: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArnaldoValilo: Pessoa = {
@@ -4715,7 +4045,7 @@ export const ArnaldoValilo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AndreRedont: Pessoa = {
@@ -4728,7 +4058,7 @@ export const AndreRedont: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MiguelNoreña: Pessoa = {
@@ -4741,7 +4071,7 @@ export const MiguelNoreña: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseCustodiodeSaeFaria: Pessoa = {
@@ -4754,7 +4084,7 @@ export const JoseCustodiodeSaeFaria: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosObregonSantacilia: Pessoa = {
@@ -4767,7 +4097,7 @@ export const CarlosObregonSantacilia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoTurin: Pessoa = {
@@ -4780,7 +4110,7 @@ export const JoaoTurin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AnisioMederios: Pessoa = {
@@ -4793,7 +4123,7 @@ export const AnisioMederios: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AristocherBenjamimMeschessi: Pessoa = {
@@ -4806,7 +4136,7 @@ export const AristocherBenjamimMeschessi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EgistoBertozzi: Pessoa = {
@@ -4819,7 +4149,7 @@ export const EgistoBertozzi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JorgeMarioJauregui: Pessoa = {
@@ -4832,7 +4162,7 @@ export const JorgeMarioJauregui: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GiuseppeNavone: Pessoa = {
@@ -4845,7 +4175,7 @@ export const GiuseppeNavone: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LouisSauvageau: Pessoa = {
@@ -4858,7 +4188,7 @@ export const LouisSauvageau: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaquimMoreiraJunior: Pessoa = {
@@ -4871,7 +4201,7 @@ export const JoaquimMoreiraJunior: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RuffoFanucchi: Pessoa = {
@@ -4884,7 +4214,7 @@ export const RuffoFanucchi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaquimCorrea: Pessoa = {
@@ -4897,7 +4227,7 @@ export const JoaquimCorrea: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CaroccabaThor: Pessoa = {
@@ -4910,7 +4240,7 @@ export const CaroccabaThor: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LeonardoLima: Pessoa = {
@@ -4923,7 +4253,7 @@ export const LeonardoLima: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RodolfoPintoCouto: Pessoa = {
@@ -4936,7 +4266,7 @@ export const RodolfoPintoCouto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DanteCroce: Pessoa = {
@@ -4949,7 +4279,7 @@ export const DanteCroce: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VHabegger: Pessoa = {
@@ -4962,7 +4292,7 @@ export const VHabegger: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AscanioMMM: Pessoa = {
@@ -4997,7 +4327,7 @@ export const LourillandSan: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JeanMagrou: Pessoa = {
@@ -5010,7 +4340,7 @@ export const JeanMagrou: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WalterCurvelodeMendonca: Pessoa = {
@@ -5023,7 +4353,7 @@ export const WalterCurvelodeMendonca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HenriWeigele: Pessoa = {
@@ -5036,7 +4366,7 @@ export const HenriWeigele: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AndrewHandyside: Pessoa = {
@@ -5049,7 +4379,7 @@ export const AndrewHandyside: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CelsoAntonio: Pessoa = {
@@ -5062,7 +4392,7 @@ export const CelsoAntonio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EdsonJannuzzi: Pessoa = {
@@ -5075,7 +4405,7 @@ export const EdsonJannuzzi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarcosAndreSales: Pessoa = {
@@ -5088,7 +4418,7 @@ export const MarcosAndreSales: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ABraga: Pessoa = {
@@ -5101,7 +4431,7 @@ export const ABraga: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarliMazeredo: Pessoa = {
@@ -5170,7 +4500,7 @@ export const JoseRangel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioTeixeiraLopes: Pessoa = {
@@ -5183,7 +4513,7 @@ export const AntonioTeixeiraLopes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FelixMauriceCharpentier: Pessoa = {
@@ -5196,7 +4526,7 @@ export const FelixMauriceCharpentier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ChicaGranchi: Pessoa = {
@@ -5209,7 +4539,7 @@ export const ChicaGranchi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizFigueiredo: Pessoa = {
@@ -5222,7 +4552,7 @@ export const LuizFigueiredo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AngeloVenosa: Pessoa = {
@@ -5235,24 +4565,7 @@ export const AngeloVenosa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const FrancoiseSchein: Pessoa = {
@@ -5265,7 +4578,7 @@ export const FrancoiseSchein: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MillorFernandes: Pessoa = {
@@ -5278,7 +4591,7 @@ export const MillorFernandes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ClaudioCavalcanti: Pessoa = {
@@ -5291,7 +4604,7 @@ export const ClaudioCavalcanti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoBologna: Pessoa = {
@@ -5304,7 +4617,7 @@ export const FranciscoBologna: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LeoSantana: Pessoa = {
@@ -5317,7 +4630,7 @@ export const LeoSantana: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FArynkiewicz: Pessoa = {
@@ -5330,7 +4643,7 @@ export const FArynkiewicz: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ChristinaMotta: Pessoa = {
@@ -5343,7 +4656,7 @@ export const ChristinaMotta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SandraGuinle: Pessoa = {
@@ -5356,7 +4669,7 @@ export const SandraGuinle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ChicoCaruso: Pessoa = {
@@ -5369,7 +4682,7 @@ export const ChicoCaruso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JaimeLenner: Pessoa = {
@@ -5382,7 +4695,7 @@ export const JaimeLenner: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuciaGuerreiro: Pessoa = {
@@ -5395,7 +4708,7 @@ export const LuciaGuerreiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HomeroBrito: Pessoa = {
@@ -5408,7 +4721,7 @@ export const HomeroBrito: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DanielCrow: Pessoa = {
@@ -5421,7 +4734,7 @@ export const DanielCrow: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoSa: Pessoa = {
@@ -5434,7 +4747,7 @@ export const RobertoSa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioCaringi: Pessoa = {
@@ -5447,7 +4760,7 @@ export const AntonioCaringi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ClaraSa: Pessoa = {
@@ -5460,7 +4773,7 @@ export const ClaraSa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseCesarBranquinho: Pessoa = {
@@ -5473,7 +4786,7 @@ export const JoseCesarBranquinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RicardoVillar: Pessoa = {
@@ -5486,7 +4799,7 @@ export const RicardoVillar: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AzevedoNeto: Pessoa = {
@@ -5499,7 +4812,7 @@ export const AzevedoNeto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Ique: Pessoa = {
@@ -5512,7 +4825,7 @@ export const Ique: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FredericoMoraes: Pessoa = {
@@ -5525,7 +4838,7 @@ export const FredericoMoraes: Pessoa = {
     Descriçao: undefined,
     Profissoes: [CriticoDeArte],
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ReynaldoRoels: Pessoa = {
@@ -5538,7 +4851,7 @@ export const ReynaldoRoels: Pessoa = {
     Descriçao: undefined,
     Profissoes: [CriticoDeArte],
     Especialidades: undefined,
-    Fatos: [new Fato('', '', 'Comissão de Seleção', 'Projeto Esculturas Urbanas', [], 'Rio de Janeiro')],
+    Fatos: undefined,
 };
 
 export const AmilcardeCastro: Pessoa = {
@@ -5552,102 +4865,22 @@ export const AmilcardeCastro: Pessoa = {
     Profissoes: [Artista],
     Especialidades: undefined,
     Fatos: [
-        new Fato(
-            '',
-            '',
-            'Aluno',
-            'Foi aluno de ',
-            [
-                pessoas.FranzWeissmann,
-                pessoas.AlbertodaVeigaGuignard,
-            ],
-            'cidade',
-        ),
-        new Fato('', '', 'Tradição', 'Tradição construtiva', [], ''),
-        new Fato(
-            '1959',
-            '',
-            'I Exposição Neoconcreta',
-            'Entre as obras expostas, havia um escultura constituída apenas de uma chapa de ferro que se abria em planos inclinados, para cima e para baixo, e que anunciava o futuro dsenvolvimento de sua obra. Tratava-se de uma chapa cortada ao meio e submetida a uma torça precisa e expressiva que deflagrava um dinamismo novo no espaço, transfigurando a forma e a matéria.',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FranzWeissmann,
-            ],
-            'cidade',
-        ),
-        new Fato(
-            '1959',
-            '',
-            'Manifesto Neoconcreto',
-            'Publicado no suplemento dominical do Jornal do Brasil',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FerreiraGullar,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.LygiaClark,
-                pessoas.ReynaldoJardim,
-                pessoas.TheonSpanudis,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('1959', '1959', 'Designer', 'Fez a reforma gráfica do Jornal do Brasil', [], 'Rio de Janeiro'),
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-        new Fato('11/06/1996', '11/06/1996', 'Exposição', 'Galeria Silvia Cintra', [], 'Rio de Janeiro'),
-        new Fato(
-            '05/12/1995',
-            '05/12/1995',
-            'Prêmio Nacional de Arte',
-            'Amilcar é o terceiro artista brasileiro a receber o prêmio, criado em 1993 pelo então Ministro da Cultura, Antonio Houaiss, a pedido de Ferreira Gullar, na época presidente da Ibac, hoje FUNARTE',
-            [],
-            'Rio de Janeiro',
-        ),
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Tradição',
+            Descrição: 'Tradição construtiva',
+            Pessoas: undefined,
+            Cidade: undefined,
+        },
+        {
+            DataInicio: '1959',
+            DataFim: undefined,
+            Tipo: 'Designer',
+            Descrição: 'Fez a reforma gráfica do Jornal do Brasil',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
     ],
 };
 
@@ -5661,39 +4894,7 @@ export const VascoPrado: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ClaudioMaciel: Pessoa = {
@@ -5706,39 +4907,7 @@ export const ClaudioMaciel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const PauloRobertodeChristo: Pessoa = {
@@ -5751,39 +4920,7 @@ export const PauloRobertodeChristo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const MarliAmadoAraujo: Pessoa = {
@@ -5796,39 +4933,7 @@ export const MarliAmadoAraujo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AnaNorogrando: Pessoa = {
@@ -5841,39 +4946,7 @@ export const AnaNorogrando: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const FernandoLindote: Pessoa = {
@@ -5886,39 +4959,7 @@ export const FernandoLindote: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const GaudencioFidelis: Pessoa = {
@@ -5931,39 +4972,7 @@ export const GaudencioFidelis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const GustavoNakle: Pessoa = {
@@ -5976,39 +4985,7 @@ export const GustavoNakle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const XicoStockinger: Pessoa = {
@@ -6021,39 +4998,7 @@ export const XicoStockinger: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const CarlosdeBrittoVelho: Pessoa = {
@@ -6066,39 +5011,7 @@ export const CarlosdeBrittoVelho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const PatricioFarias: Pessoa = {
@@ -6111,39 +5024,7 @@ export const PatricioFarias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ClaudioTozzi: Pessoa = {
@@ -6156,39 +5037,7 @@ export const ClaudioTozzi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const JorgeFranciscoSoto: Pessoa = {
@@ -6201,39 +5050,7 @@ export const JorgeFranciscoSoto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const MieyaBaglietto: Pessoa = {
@@ -6246,39 +5063,7 @@ export const MieyaBaglietto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const ServuloEsmeraldo: Pessoa = {
@@ -6291,39 +5076,7 @@ export const ServuloEsmeraldo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const PepAdmetlla: Pessoa = {
@@ -6336,39 +5089,7 @@ export const PepAdmetlla: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const JosedeGuimaraes: Pessoa = {
@@ -6381,39 +5102,7 @@ export const JosedeGuimaraes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const JulianAgosta: Pessoa = {
@@ -6426,39 +5115,7 @@ export const JulianAgosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1996',
-            '1996',
-            'SESC Escultura 96',
-            '1 Exposição Internacional de Esculturas ao Ar Livre',
-            [
-                pessoas.VascoPrado,
-                pessoas.ClaudioMaciel,
-                pessoas.PauloRobertodeChristo,
-                pessoas.MarliAmadoAraujo,
-                pessoas.AnaNorogrando,
-                pessoas.FernandoLindote,
-                pessoas.GaudencioFidelis,
-                pessoas.GustavoNakle,
-                pessoas.XicoStockinger,
-                pessoas.CarlosdeBrittoVelho,
-                pessoas.PatricioFarias,
-                pessoas.ClaudioTozzi,
-                pessoas.JorgeFranciscoSoto,
-                pessoas.MieyaBaglietto,
-                pessoas.SironFranco,
-                pessoas.ServuloEsmeraldo,
-                pessoas.JoseResende,
-                pessoas.PepAdmetlla,
-                pessoas.JulianAgosta,
-                pessoas.FranzWeissmann,
-                pessoas.JosedeGuimaraes,
-                pessoas.AmilcardeCastro,
-            ],
-            'Porto Alegre',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const AlbertodaVeigaGuignard: Pessoa = {
@@ -6471,7 +5128,7 @@ export const AlbertodaVeigaGuignard: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GabrielDubray: Pessoa = {
@@ -6484,7 +5141,7 @@ export const GabrielDubray: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Azevedo: Pessoa = {
@@ -6497,7 +5154,7 @@ export const Azevedo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloCase: Pessoa = {
@@ -6510,7 +5167,7 @@ export const PauloCase: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SergioDias: Pessoa = {
@@ -6523,7 +5180,7 @@ export const SergioDias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EFCochet: Pessoa = {
@@ -6536,7 +5193,7 @@ export const EFCochet: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoaoJacoParana: Pessoa = {
@@ -6549,7 +5206,7 @@ export const JoaoJacoParana: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlfredoBrito: Pessoa = {
@@ -6562,7 +5219,7 @@ export const AlfredoBrito: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FloryGama: Pessoa = {
@@ -6575,7 +5232,7 @@ export const FloryGama: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LouisJosephDaumas: Pessoa = {
@@ -6588,7 +5245,7 @@ export const LouisJosephDaumas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AndreaVerrocchio: Pessoa = {
@@ -6601,7 +5258,7 @@ export const AndreaVerrocchio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SamuelMartinsRibeiro: Pessoa = {
@@ -6614,7 +5271,7 @@ export const SamuelMartinsRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HCunhaMelo: Pessoa = {
@@ -6627,7 +5284,7 @@ export const HCunhaMelo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioCravo: Pessoa = {
@@ -6640,7 +5297,7 @@ export const MarioCravo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FransKrajcberg: Pessoa = {
@@ -6653,24 +5310,7 @@ export const FransKrajcberg: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [
-        new Fato(
-            '1992',
-            '1992',
-            'Exposição Coletiva',
-            'Exposição Escultura 92/ Sete Expressões, Galeria RB1',
-            [
-                pessoas.AmilcardeCastro,
-                pessoas.FransKrajcberg,
-                pessoas.FranzWeissmann,
-                pessoas.LygiaPape,
-                pessoas.Tunga,
-                pessoas.AngeloVenosa,
-                pessoas.CristinaSalgado,
-            ],
-            'Rio de Janeiro',
-        ),
-    ],
+    Fatos: undefined,
 };
 
 export const FranciscoStockinger: Pessoa = {
@@ -6683,7 +5323,7 @@ export const FranciscoStockinger: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaGuilherminaFernandes: Pessoa = {
@@ -6696,7 +5336,7 @@ export const MariaGuilherminaFernandes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HeloisaDolabella: Pessoa = {
@@ -6709,7 +5349,7 @@ export const HeloisaDolabella: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SergioCamargo: Pessoa = {
@@ -6722,7 +5362,7 @@ export const SergioCamargo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlfredoAlfredoCeschiatti: Pessoa = {
@@ -6735,7 +5375,7 @@ export const AlfredoAlfredoCeschiatti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MelindaGarcia: Pessoa = {
@@ -6748,7 +5388,7 @@ export const MelindaGarcia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioManuelOliveira: Pessoa = {
@@ -6761,7 +5401,7 @@ export const AntonioManuelOliveira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CeleidaTostes: Pessoa = {
@@ -6774,7 +5414,7 @@ export const CeleidaTostes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseRaulAllegretti: Pessoa = {
@@ -6787,7 +5427,7 @@ export const JoseRaulAllegretti: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const TatiMoreno: Pessoa = {
@@ -6800,7 +5440,7 @@ export const TatiMoreno: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Marmura: Pessoa = {
@@ -6813,7 +5453,7 @@ export const Marmura: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const IvanPaulPaccini: Pessoa = {
@@ -6826,7 +5466,7 @@ export const IvanPaulPaccini: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Caribe: Pessoa = {
@@ -6839,7 +5479,7 @@ export const Caribe: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EvandroCarneiro: Pessoa = {
@@ -6852,7 +5492,7 @@ export const EvandroCarneiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandoCasas: Pessoa = {
@@ -6865,7 +5505,7 @@ export const FernandoCasas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SoniaEbling: Pessoa = {
@@ -6878,7 +5518,7 @@ export const SoniaEbling: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlencastroGraca: Pessoa = {
@@ -6891,7 +5531,7 @@ export const AlencastroGraca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JorgeMartinsCancela: Pessoa = {
@@ -6904,7 +5544,7 @@ export const JorgeMartinsCancela: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroCorreiadeAraujo: Pessoa = {
@@ -6917,7 +5557,7 @@ export const PedroCorreiadeAraujo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MoemaBranquinho: Pessoa = {
@@ -6930,7 +5570,7 @@ export const MoemaBranquinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JeanJacquesPradier: Pessoa = {
@@ -6943,7 +5583,7 @@ export const JeanJacquesPradier: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const EmilioGiannelle: Pessoa = {
@@ -6956,7 +5596,7 @@ export const EmilioGiannelle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GabrielFonseca: Pessoa = {
@@ -6969,7 +5609,7 @@ export const GabrielFonseca: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandoCorreiaDias: Pessoa = {
@@ -6982,7 +5622,7 @@ export const FernandoCorreiaDias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FrancoiseShein: Pessoa = {
@@ -6995,7 +5635,7 @@ export const FrancoiseShein: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JesperNeewgaard: Pessoa = {
@@ -7008,7 +5648,7 @@ export const JesperNeewgaard: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HelioPelegrino: Pessoa = {
@@ -7021,7 +5661,7 @@ export const HelioPelegrino: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AluisioCarvao: Pessoa = {
@@ -7034,7 +5674,7 @@ export const AluisioCarvao: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarcosKonderNetto: Pessoa = {
@@ -7047,7 +5687,7 @@ export const MarcosKonderNetto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RomeoAlves: Pessoa = {
@@ -7060,7 +5700,7 @@ export const RomeoAlves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VilmaNoel: Pessoa = {
@@ -7073,7 +5713,7 @@ export const VilmaNoel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WainoAaltonem: Pessoa = {
@@ -7086,7 +5726,7 @@ export const WainoAaltonem: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugustZamoiski: Pessoa = {
@@ -7099,7 +5739,7 @@ export const AugustZamoiski: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HBertazzoni: Pessoa = {
@@ -7112,7 +5752,7 @@ export const HBertazzoni: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HeitordaSilvaCosta: Pessoa = {
@@ -7125,7 +5765,7 @@ export const HeitordaSilvaCosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CesarDoria: Pessoa = {
@@ -7138,7 +5778,7 @@ export const CesarDoria: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioPintodeMattos: Pessoa = {
@@ -7151,7 +5791,7 @@ export const AntonioPintodeMattos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugusteLebourg: Pessoa = {
@@ -7164,7 +5804,7 @@ export const AugusteLebourg: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizRey: Pessoa = {
@@ -7177,7 +5817,7 @@ export const LuizRey: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ProfetaGentileza: Pessoa = {
@@ -7190,7 +5830,7 @@ export const ProfetaGentileza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FranciscoJoaquimBethencourtdaSilva: Pessoa = {
@@ -7203,7 +5843,7 @@ export const FranciscoJoaquimBethencourtdaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HenriFredericIselin: Pessoa = {
@@ -7216,7 +5856,7 @@ export const HenriFredericIselin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GiulioStarace: Pessoa = {
@@ -7229,7 +5869,7 @@ export const GiulioStarace: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NicolinaVazdeAssisPintodoCouto: Pessoa = {
@@ -7242,7 +5882,7 @@ export const NicolinaVazdeAssisPintodoCouto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JulesSegal: Pessoa = {
@@ -7255,7 +5895,7 @@ export const JulesSegal: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArquimedesJosedaSilva: Pessoa = {
@@ -7268,7 +5908,7 @@ export const ArquimedesJosedaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertAdams: Pessoa = {
@@ -7281,7 +5921,7 @@ export const RobertAdams: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GianPietroZanni: Pessoa = {
@@ -7294,7 +5934,7 @@ export const GianPietroZanni: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FreiGeraldoRoberfeld: Pessoa = {
@@ -7307,7 +5947,7 @@ export const FreiGeraldoRoberfeld: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JaimeSampaio: Pessoa = {
@@ -7320,7 +5960,7 @@ export const JaimeSampaio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PinedoParis: Pessoa = {
@@ -7333,7 +5973,7 @@ export const PinedoParis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MateusFernandes: Pessoa = {
@@ -7346,7 +5986,7 @@ export const MateusFernandes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Lana: Pessoa = {
@@ -7359,7 +5999,7 @@ export const Lana: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CurzioZani: Pessoa = {
@@ -7372,7 +6012,7 @@ export const CurzioZani: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const TorresdeOliveira: Pessoa = {
@@ -7385,7 +6025,7 @@ export const TorresdeOliveira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PaulodeTarso: Pessoa = {
@@ -7398,7 +6038,7 @@ export const PaulodeTarso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugusteMartin: Pessoa = {
@@ -7411,7 +6051,7 @@ export const AugusteMartin: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugusteHenriVictorGrandjeandeMontigny: Pessoa = {
@@ -7424,7 +6064,7 @@ export const AugusteHenriVictorGrandjeandeMontigny: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MauricioBentes: Pessoa = {
@@ -7437,7 +6077,7 @@ export const MauricioBentes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlfredoHerculanoFreixo: Pessoa = {
@@ -7450,7 +6090,7 @@ export const AlfredoHerculanoFreixo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const OrlandoMagdalena: Pessoa = {
@@ -7463,7 +6103,7 @@ export const OrlandoMagdalena: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NewtonSa: Pessoa = {
@@ -7476,7 +6116,7 @@ export const NewtonSa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseMagalhaes: Pessoa = {
@@ -7489,7 +6129,7 @@ export const JoseMagalhaes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MiguelPastor: Pessoa = {
@@ -7502,7 +6142,7 @@ export const MiguelPastor: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioCarlosBettiniLiboredo: Pessoa = {
@@ -7515,7 +6155,7 @@ export const AntonioCarlosBettiniLiboredo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuciomardeJesus: Pessoa = {
@@ -7528,7 +6168,7 @@ export const LuciomardeJesus: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 export const MarcosChaves: Pessoa = {
     ID: undefined,
@@ -7540,7 +6180,7 @@ export const MarcosChaves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VicenteDelRio: Pessoa = {
@@ -7553,7 +6193,7 @@ export const VicenteDelRio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizCarlosToledo: Pessoa = {
@@ -7566,7 +6206,7 @@ export const LuizCarlosToledo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroFernandesVianadaSilva: Pessoa = {
@@ -7579,7 +6219,7 @@ export const PedroFernandesVianadaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const OscarTecidio: Pessoa = {
@@ -7592,7 +6232,7 @@ export const OscarTecidio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MayerhogereToledo: Pessoa = {
@@ -7605,7 +6245,7 @@ export const MayerhogereToledo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NivaldoRodrigues: Pessoa = {
@@ -7618,7 +6258,7 @@ export const NivaldoRodrigues: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RenatoPrimaveraMarinho: Pessoa = {
@@ -7631,7 +6271,7 @@ export const RenatoPrimaveraMarinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlmirdeLimaMachado: Pessoa = {
@@ -7644,7 +6284,7 @@ export const AlmirdeLimaMachado: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloCelsoPrado: Pessoa = {
@@ -7657,7 +6297,7 @@ export const PauloCelsoPrado: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArquimedesJdaSilva: Pessoa = {
@@ -7670,7 +6310,7 @@ export const ArquimedesJdaSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RonaldoBenevello: Pessoa = {
@@ -7683,7 +6323,7 @@ export const RonaldoBenevello: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AdilsonRoquedosSantos: Pessoa = {
@@ -7696,7 +6336,7 @@ export const AdilsonRoquedosSantos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JulesJeanJulesSalmson: Pessoa = {
@@ -7709,7 +6349,7 @@ export const JulesJeanJulesSalmson: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JoseBranquinho: Pessoa = {
@@ -7722,7 +6362,7 @@ export const JoseBranquinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VeraLuciaCardim: Pessoa = {
@@ -7735,7 +6375,7 @@ export const VeraLuciaCardim: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RuiLeal: Pessoa = {
@@ -7748,7 +6388,7 @@ export const RuiLeal: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Marlota: Pessoa = {
@@ -7761,7 +6401,7 @@ export const Marlota: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LauraTaves: Pessoa = {
@@ -7774,7 +6414,7 @@ export const LauraTaves: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JairdeSouza: Pessoa = {
@@ -7787,7 +6427,7 @@ export const JairdeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AdoAzevedo: Pessoa = {
@@ -7800,7 +6440,7 @@ export const AdoAzevedo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HuangJian: Pessoa = {
@@ -7813,7 +6453,7 @@ export const HuangJian: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MaritzaOrleans: Pessoa = {
@@ -7826,7 +6466,7 @@ export const MaritzaOrleans: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CeliaLamelle: Pessoa = {
@@ -7839,7 +6479,7 @@ export const CeliaLamelle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RuyRezende: Pessoa = {
@@ -7852,7 +6492,7 @@ export const RuyRezende: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SergioBertoni: Pessoa = {
@@ -7865,7 +6505,7 @@ export const SergioBertoni: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FredericAugustoBartholdi: Pessoa = {
@@ -7878,7 +6518,7 @@ export const FredericAugustoBartholdi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ClecioRegis: Pessoa = {
@@ -7891,7 +6531,7 @@ export const ClecioRegis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LuizVerdugo: Pessoa = {
@@ -7904,7 +6544,7 @@ export const LuizVerdugo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroAugusto: Pessoa = {
@@ -7917,7 +6557,7 @@ export const PedroAugusto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FernandodaSilvaAbreu: Pessoa = {
@@ -7930,7 +6570,7 @@ export const FernandodaSilvaAbreu: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MaxGrossman: Pessoa = {
@@ -7943,7 +6583,7 @@ export const MaxGrossman: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NiltonMontarroyos: Pessoa = {
@@ -7956,7 +6596,16 @@ export const NiltonMontarroyos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', 'Arquiteto', 'Urbanização do bairro de Campo Grande', [], '')],
+    Fatos: [
+        {
+            DataInicio: undefined,
+            DataFim: undefined,
+            Tipo: 'Arquiteto',
+            Descrição: 'Urbanização do bairro de Campo Grande',
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
+    ],
 };
 
 export const GeorgeGuerra: Pessoa = {
@@ -7969,7 +6618,7 @@ export const GeorgeGuerra: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GeorgeLopes: Pessoa = {
@@ -7982,7 +6631,7 @@ export const GeorgeLopes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ElzaOsborne: Pessoa = {
@@ -7995,7 +6644,7 @@ export const ElzaOsborne: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroPaulinoGuimaraes: Pessoa = {
@@ -8008,7 +6657,7 @@ export const PedroPaulinoGuimaraes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaphCyriloDias: Pessoa = {
@@ -8021,7 +6670,7 @@ export const RaphCyriloDias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CLinel: Pessoa = {
@@ -8034,7 +6683,7 @@ export const CLinel: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DaviLeal: Pessoa = {
@@ -8047,7 +6696,7 @@ export const DaviLeal: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VictorBrecheret: Pessoa = {
@@ -8060,7 +6709,7 @@ export const VictorBrecheret: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JASiqueiraFilho: Pessoa = {
@@ -8073,7 +6722,7 @@ export const JASiqueiraFilho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ErnaniFreire: Pessoa = {
@@ -8086,7 +6735,7 @@ export const ErnaniFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CarlosWerneckdeCarvalho: Pessoa = {
@@ -8099,7 +6748,7 @@ export const CarlosWerneckdeCarvalho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DavidXavierdeAzambuja: Pessoa = {
@@ -8112,7 +6761,7 @@ export const DavidXavierdeAzambuja: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RebecaMatteIñiguez: Pessoa = {
@@ -8125,7 +6774,7 @@ export const RebecaMatteIñiguez: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RicoReis: Pessoa = {
@@ -8138,7 +6787,7 @@ export const RicoReis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BenevenutaBerna: Pessoa = {
@@ -8151,7 +6800,7 @@ export const BenevenutaBerna: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AnaluNabuco: Pessoa = {
@@ -8164,7 +6813,7 @@ export const AnaluNabuco: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoKenjiFukuda: Pessoa = {
@@ -8177,7 +6826,7 @@ export const RobertoKenjiFukuda: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloFreire: Pessoa = {
@@ -8190,7 +6839,7 @@ export const PauloFreire: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VaniaVilela: Pessoa = {
@@ -8203,7 +6852,7 @@ export const VaniaVilela: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GianCarloPatuzzi: Pessoa = {
@@ -8216,7 +6865,7 @@ export const GianCarloPatuzzi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const VeraTorres: Pessoa = {
@@ -8229,7 +6878,7 @@ export const VeraTorres: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ArmandoAmaya: Pessoa = {
@@ -8242,7 +6891,7 @@ export const ArmandoAmaya: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SMartinsRibeiro: Pessoa = {
@@ -8255,7 +6904,7 @@ export const SMartinsRibeiro: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroMMartinezCorada: Pessoa = {
@@ -8268,7 +6917,7 @@ export const PedroMMartinezCorada: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SimoneGiacobbo: Pessoa = {
@@ -8281,7 +6930,7 @@ export const SimoneGiacobbo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SergioMoreiraDias: Pessoa = {
@@ -8294,7 +6943,7 @@ export const SergioMoreiraDias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BeneditoAbbud: Pessoa = {
@@ -8307,7 +6956,7 @@ export const BeneditoAbbud: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const LeilahCosta: Pessoa = {
@@ -8320,7 +6969,7 @@ export const LeilahCosta: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const UrbanoAlvesIglesias: Pessoa = {
@@ -8333,7 +6982,7 @@ export const UrbanoAlvesIglesias: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PedroBruno: Pessoa = {
@@ -8346,7 +6995,7 @@ export const PedroBruno: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaimundoReis: Pessoa = {
@@ -8359,7 +7008,7 @@ export const RaimundoReis: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AntonioMoreiradeSouza: Pessoa = {
@@ -8372,7 +7021,7 @@ export const AntonioMoreiradeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const Helmano: Pessoa = {
@@ -8385,7 +7034,7 @@ export const Helmano: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CyniraNDantas: Pessoa = {
@@ -8398,7 +7047,7 @@ export const CyniraNDantas: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugustoSilva: Pessoa = {
@@ -8411,7 +7060,7 @@ export const AugustoSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MestreSaul: Pessoa = {
@@ -8424,7 +7073,7 @@ export const MestreSaul: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AlbertoNunesBorges: Pessoa = {
@@ -8437,7 +7086,7 @@ export const AlbertoNunesBorges: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioCravoNeto: Pessoa = {
@@ -8450,7 +7099,7 @@ export const MarioCravoNeto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloSantos: Pessoa = {
@@ -8463,7 +7112,7 @@ export const PauloSantos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloPires: Pessoa = {
@@ -8476,7 +7125,7 @@ export const PauloPires: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaimundoRodrigues: Pessoa = {
@@ -8489,7 +7138,7 @@ export const RaimundoRodrigues: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CelsoAntônio: Pessoa = {
@@ -8502,7 +7151,7 @@ export const CelsoAntônio: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PaulodeSouzaPires: Pessoa = {
@@ -8515,7 +7164,7 @@ export const PaulodeSouzaPires: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const GilsonNascimento: Pessoa = {
@@ -8528,7 +7177,7 @@ export const GilsonNascimento: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PaulLandowski: Pessoa = {
@@ -8541,7 +7190,7 @@ export const PaulLandowski: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PauloVillon: Pessoa = {
@@ -8554,7 +7203,7 @@ export const PauloVillon: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WladimirAlvesdeSouza: Pessoa = {
@@ -8567,7 +7216,7 @@ export const WladimirAlvesdeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JobdeAlcântara: Pessoa = {
@@ -8580,7 +7229,7 @@ export const JobdeAlcântara: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RSilva: Pessoa = {
@@ -8593,7 +7242,7 @@ export const RSilva: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaymundodeCastroMaia: Pessoa = {
@@ -8606,7 +7255,7 @@ export const RaymundodeCastroMaia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WladimirAlvesdeSousa: Pessoa = {
@@ -8619,7 +7268,7 @@ export const WladimirAlvesdeSousa: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RaymundodeCastroMaya: Pessoa = {
@@ -8632,7 +7281,7 @@ export const RaymundodeCastroMaya: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const WaldimirAlvesdeSouza: Pessoa = {
@@ -8645,7 +7294,7 @@ export const WaldimirAlvesdeSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CharlesAugusteLebourg: Pessoa = {
@@ -8658,7 +7307,7 @@ export const CharlesAugusteLebourg: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarcioPintanguy: Pessoa = {
@@ -8671,7 +7320,7 @@ export const MarcioPintanguy: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ElzaCasancaodeMedeiros: Pessoa = {
@@ -8684,7 +7333,7 @@ export const ElzaCasancaodeMedeiros: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AffonsoEduardoReidy: Pessoa = {
@@ -8697,7 +7346,7 @@ export const AffonsoEduardoReidy: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarcosKonderNeto: Pessoa = {
@@ -8710,7 +7359,7 @@ export const MarcosKonderNeto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HelioRibasMarinho: Pessoa = {
@@ -8723,7 +7372,7 @@ export const HelioRibasMarinho: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HaroldoBarroso: Pessoa = {
@@ -8736,7 +7385,7 @@ export const HaroldoBarroso: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SylvioAzevedo: Pessoa = {
@@ -8749,7 +7398,7 @@ export const SylvioAzevedo: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BrunoPires: Pessoa = {
@@ -8762,7 +7411,7 @@ export const BrunoPires: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PharraBuarque: Pessoa = {
@@ -8775,7 +7424,7 @@ export const PharraBuarque: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const SidneyGomesdosSantos: Pessoa = {
@@ -8788,7 +7437,7 @@ export const SidneyGomesdosSantos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarioSophia: Pessoa = {
@@ -8801,7 +7450,7 @@ export const MarioSophia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RichardKelly: Pessoa = {
@@ -8814,7 +7463,7 @@ export const RichardKelly: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JorgedosAnjos: Pessoa = {
@@ -8827,7 +7476,7 @@ export const JorgedosAnjos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DSantosLeal: Pessoa = {
@@ -8840,7 +7489,7 @@ export const DSantosLeal: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const TeresaOliveiraSantos: Pessoa = {
@@ -8853,7 +7502,7 @@ export const TeresaOliveiraSantos: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const ProvinSerres: Pessoa = {
@@ -8866,7 +7515,7 @@ export const ProvinSerres: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AugusteMartins: Pessoa = {
@@ -8879,7 +7528,7 @@ export const AugusteMartins: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const IvensMachado: Pessoa = {
@@ -8892,7 +7541,7 @@ export const IvensMachado: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const HelenaTownsend: Pessoa = {
@@ -8905,7 +7554,7 @@ export const HelenaTownsend: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const BernavenutoBerna: Pessoa = {
@@ -8918,7 +7567,7 @@ export const BernavenutoBerna: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RobertoMoriconi: Pessoa = {
@@ -8931,7 +7580,7 @@ export const RobertoMoriconi: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const CGibson: Pessoa = {
@@ -8944,7 +7593,7 @@ export const CGibson: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const DVillan: Pessoa = {
@@ -8957,7 +7606,7 @@ export const DVillan: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const AnthonyHowe: Pessoa = {
@@ -8970,7 +7619,7 @@ export const AnthonyHowe: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MariaCouto: Pessoa = {
@@ -8983,7 +7632,7 @@ export const MariaCouto: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const RonaldoPereiraRego: Pessoa = {
@@ -8996,7 +7645,7 @@ export const RonaldoPereiraRego: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const NataliaReyesNagle: Pessoa = {
@@ -9009,7 +7658,7 @@ export const NataliaReyesNagle: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const JohnSouza: Pessoa = {
@@ -9022,7 +7671,7 @@ export const JohnSouza: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const MarthaSophia: Pessoa = {
@@ -9035,7 +7684,7 @@ export const MarthaSophia: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const PeroFernandes: Pessoa = {
@@ -9048,7 +7697,7 @@ export const PeroFernandes: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('', '', '', '', [], '')],
+    Fatos: undefined,
 };
 
 export const FlavioFerreira: Pessoa = {
@@ -9061,13 +7710,83 @@ export const FlavioFerreira: Pessoa = {
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,
-    Fatos: [new Fato('11/09/1986', '30/12/1988', 'Secretário', 'Secretário Municipal de Desenvolvimento Urbano', [], 'Rio de Janeiro')],
+    Fatos: [
+        {
+            DataInicio: '11/09/1986',
+            DataFim: '30/12/1988',
+            Tipo: 'Secretário',
+            Descrição: 'Secretário Municipal de Desenvolvimento Urbano', //TODO cria secretaria
+            Pessoas: undefined,
+            Cidade: 'Rio de Janeiro',
+        },
+    ],
 };
 
 export const HaruyoshiOno: Pessoa = {
     ID: undefined,
     Nome: `Haruyoshi Ono`,
     Nascimento: undefined,
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};
+
+export const RonaldoBrito: Pessoa = {
+    ID: undefined,
+    Nome: 'Ronaldo Brito',
+    Nascimento: '01/08/1949',
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};
+
+export const PauloVenancioFilho: Pessoa = {
+    Nome: 'Paulo Venancio Filho',
+    Nascimento: '1953',
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};
+
+export const LauroCavalcanti: Pessoa = {
+    Nome: 'Lauro Cavalcanti',
+    Nascimento: '14/01/1954',
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};
+
+export const PauloSergioDuarte: Pessoa = {
+    Nome: 'Paulo Sergio Duarte',
+    Nascimento: '1946',
+    CidadePaisNascimento: undefined,
+    Morte: undefined,
+    CidadePaisMorte: undefined,
+    Descriçao: undefined,
+    Profissoes: undefined,
+    Especialidades: undefined,
+    Fatos: undefined,
+};
+
+export const PauloHerkenhoff: Pessoa = {
+    Nome: 'Paulo Herkenhoff',
+    Nascimento: '1949',
     CidadePaisNascimento: undefined,
     Morte: undefined,
     CidadePaisMorte: undefined,

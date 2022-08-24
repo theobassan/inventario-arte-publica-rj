@@ -40,6 +40,7 @@ type Obra = {
     Categoria?: string;
     Remocao?: boolean;
     Realocacao?: boolean;
+    EnderecoRealocacao?: string;
     LugarRealocacao?: string;
     ZonaRealocacao?: string;
     BairroRealocacao?: string;

@@ -20,23 +20,16 @@ export const EduardoPaes: Prefeito = {
 export const LuizPauloConde: Prefeito = {
     Pessoa: pessoas.LuizPauloFernandezConde,
     Mandatos: [
-        new MandatoPrefeito(`Rio de Janeiro`, 'PFL- Partido da Frente Liberal', `01.01.1997`, `31.12.2000`),
+        new MandatoPrefeito(`Rio de Janeiro`, 'PFL- Partido da Frente Liberal', `01/01/1997`, `31/12/2000`),
     ],
 };
 
 export const CesarEpitacioMaia: Prefeito = {
     Pessoa: pessoas.CesarEpitacioMaia,
     Mandatos: [
-        new MandatoPrefeito(`Rio de Janeiro`, 'PMDB- Partido do Movimento Democrático Brasileiro', `01.01.1993`, `31.12.1996`),
-        new MandatoPrefeito(`Rio de Janeiro`, 'PTB- Partido Traballhista Brasileiro', `01.01.2001`, `31.12.2004`),
-        new MandatoPrefeito(`Rio de Janeiro`, 'PFL- Partido da Frente Liberal', `01.01.2005`, `31.12.2008`),
-    ],
-};
-
-export const JoAntonioRezende: Prefeito = {
-    Pessoa: pessoas.JoAntonioRezende,
-    Mandatos: [
-        new MandatoPrefeito(`Rio de Janeiro`, 'PDT- Partido Democrático Trabalhista', `1988`, `1989`),
+        new MandatoPrefeito(`Rio de Janeiro`, 'PMDB - Partido do Movimento Democrático Brasileiro', '01/01/1993', '31/12/1996'),
+        new MandatoPrefeito(`Rio de Janeiro`, 'PTB - Partido Traballhista Brasileiro', '01/01/2001', '31/12/2004'),
+        new MandatoPrefeito(`Rio de Janeiro`, 'PFL - Partido da Frente Liberal', '01/01/2005', '31/12/2008'),
     ],
 };
 
