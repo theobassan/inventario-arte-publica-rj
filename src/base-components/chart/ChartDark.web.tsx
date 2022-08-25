@@ -10,6 +10,7 @@ import HighchartsExporting from 'highcharts/modules/exporting';
 import HighchartsNetworkGraph from 'highcharts/modules/networkgraph';
 import HighchartsSankey from 'highcharts/modules/sankey';
 import HighchartsSeriesLabel from 'highcharts/modules/series-label';
+import HighchartsStreamgraph from 'highcharts/modules/streamgraph';
 import Theme from 'highcharts/themes/brand-dark';
 
 HighchartsData(Highcharts);
@@ -20,6 +21,7 @@ HighchartsExportData(Highcharts);
 HighchartsNetworkGraph(Highcharts);
 HighchartsSankey(Highcharts);
 HighchartsDependecyWheel(Highcharts);
+HighchartsStreamgraph(Highcharts);
 
 type ChartDarkProps = {
     options: Highcharts.Options;

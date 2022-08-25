@@ -26,6 +26,7 @@ function ChartDark({ options }: ChartProps): JSX.Element {
                 <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
                 <script src="https://code.highcharts.com/modules/sankey.js"></script>
                 <script src="https://code.highcharts.com/modules/dependencywheel.js"></script>
+                <script src="https://code.highcharts.com/modules/streamgraph.js"></script>
                 <script src="https://code.highcharts.com/themes/brand-dark.js"></script>
             </head>
 
