@@ -3,7 +3,7 @@ import { ScrollView, View } from 'react-native';
 
 import { Chart } from '@base-components';
 import { Obra } from '@domain';
-import * as dedadas from '@utils/data/dedadas';
+import * as dedadas from '@utils/data/decadas';
 
 import styles from './styles';
 

@@ -9,7 +9,7 @@ import { Table, Row, Rows } from 'react-native-table-component';
 import { Chart, Text } from '@base-components';
 import { Artista, Obra } from '@domain';
 import { useTheme } from '@utils';
-import * as dedadas from '@utils/data/dedadas';
+import * as dedadas from '@utils/data/decadas';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
 function Line({ category }: { category: string }): JSX.Element {

@@ -1,6 +1,11 @@
-export default class PlanoUrbanistico {
-    ID: number | null | undefined;
-    Nome: string | null | undefined;
-    Inicio: string | null | undefined;
-    Fim: string | null | undefined;
-}
+type PlanoUrbanistico = {
+    ID?: number;
+    Nome: string;
+    Cidade?: string;
+    Estado?: string;
+    Pais?: string;
+    DataInicio?: string;
+    DataFim?: string;
+};
+
+export default PlanoUrbanistico;

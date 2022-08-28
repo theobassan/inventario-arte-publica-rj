@@ -1,4 +1,5 @@
 type MandatoDeputadoFederal = {
+    ID?: number;
     Pais?: string;
     Estado?: string;
     Partido?: string;

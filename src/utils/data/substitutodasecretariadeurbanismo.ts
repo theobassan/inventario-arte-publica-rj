@@ -1,19 +1,47 @@
-import MandatoSecretario from '../../domain/mandato_secretario';
 import Secretario from '../../domain/secretario';
 import * as pessoas from './pessoa';
 
 export const MariaMadalenaSaintMartinAstacio: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.MariaMadalenaSaintMartinAstacio,
     Mandatos: [
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo`, `30/10/1995`, ``),
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '30/10/1995',
+            DataFim: undefined,
+        },
     ],
 };
 
 export const MauroBarataSoaresdeFigueiredo: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.MauroBarataSoaresdeFigueiredo,
     Mandatos: [
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo`, `2/06/1996`, ``),
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '2/06/1996',
+            DataFim: undefined,
+        },
+    ],
+};
+
+export const LeliaMariaBastosFraga: Secretario = {
+    ID: undefined,
+    Pessoa: pessoas.LeliaMariaBastosFraga,
+    Mandatos: [
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo e Meio Ambiente',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '03/09/1989',
+            DataFim: undefined,
+        },
     ],
 };

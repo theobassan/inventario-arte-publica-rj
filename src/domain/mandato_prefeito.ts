@@ -1,15 +1,11 @@
-class MandatoPrefeito {
-    constructor(cidade?: string, partido?: string, dataInicio?: string, dataFim?: string) {
-        this.Cidade = cidade;
-        this.Partido = partido;
-        this.DataInicio = dataInicio;
-        this.DataFim = dataFim;
-    }
+type MandatoPrefeito = {
     ID?: number;
     Cidade?: string;
+    Estado?: string;
+    Pais?: string;
     Partido?: string;
     DataInicio?: string;
     DataFim?: string;
-}
+};
 
 export default MandatoPrefeito;

@@ -20,9 +20,12 @@ type Obra = {
     Promotor?: string;
     Financiamento?: string;
     Propriedade?: string;
+    Cidade?: string;
+    Estado?: string;
+    Pais?: string;
     Zona?: string;
     Bairro?: string;
-    Endereço?: string;
+    Endereco?: string;
     Latitude?: string;
     Longitude?: string;
     SuporteEspacial?: string;

@@ -3357,13 +3357,13 @@ export const FerreiraGullar: Pessoa = {
     Fatos: undefined,
 };
 
-export const AluisioCarvão: Pessoa = {
+export const AluisioCarvao: Pessoa = {
     ID: undefined,
-    Nome: `Aluisio Carvão`,
-    Nascimento: '1018',
+    Nome: `Aluísio Carvão`,
+    Nascimento: '23/01/1920',
     CidadePaisNascimento: 'Belém, Pará',
-    Morte: undefined,
-    CidadePaisMorte: undefined,
+    Morte: '15/11/2001',
+    CidadePaisMorte: 'Rio de Janeiro',
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: [Pintor],
@@ -5658,19 +5658,6 @@ export const HelioPelegrino: Pessoa = {
     CidadePaisNascimento: undefined,
     Morte: undefined,
     CidadePaisMorte: undefined,
-    Descriçao: undefined,
-    Profissoes: undefined,
-    Especialidades: undefined,
-    Fatos: undefined,
-};
-
-export const AluisioCarvao: Pessoa = {
-    ID: undefined,
-    Nome: `Aluísio Carvão`,
-    Nascimento: '23/01/1920',
-    CidadePaisNascimento: 'Belem, Para',
-    Morte: '15/11/2001',
-    CidadePaisMorte: 'Rio de Janeiro',
     Descriçao: undefined,
     Profissoes: undefined,
     Especialidades: undefined,

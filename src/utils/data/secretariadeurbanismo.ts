@@ -1,43 +1,93 @@
-import MandatoSecretario from '../../domain/mandato_secretario';
 import Secretario from '../../domain/secretario';
 import * as pessoas from './pessoa';
 
 export const ArnaldoAssisMourthe: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.ArnaldoAssisMourthe,
-    Mandatos: [new MandatoSecretario(`Secretaria Municipal de Urbanismo e Meio Ambiente`, `01/01/1889`, `02/04/1890`)],
+    Mandatos: [
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo e Meio Ambiente',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '01/01/1889',
+            DataFim: '02/04/1890',
+        },
+    ],
 };
 
 export const LeliaMariaBastosFraga: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.LeliaMariaBastosFraga,
     Mandatos: [
-        new MandatoSecretario(`Designada para substituir o Secretario Municipal de Urbanismo e Meio Ambiente em seus impedimentos`, `03/09/1989`, ``),
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo e Meio Ambiente `, `02/06/1992`, `13/07/1992`),
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo e Meio Ambiente`, `13/07/1992`, `01/01/1993`),
+        {
+            NomeSecretaria: undefined,
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: undefined,
+            DataFim: undefined,
+        },
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo e Meio Ambiente',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '13/07/1992',
+            DataFim: '02/06/1992',
+        },
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo e Meio Ambiente',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '31/12/1992',
+            DataFim: '13/07/1992',
+        },
     ],
 };
 
 export const LuizPauloFernandezConde: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.LuizPauloFernandezConde,
     Mandatos: [
-        new MandatoSecretario(`Secretario Municipal de Urbanismo`, `01/01/1993`, `30/05/1996`),
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '01/01/1993',
+            DataFim: '30/05/1996',
+        },
     ],
 };
 
 export const AndreaAlbuquerqueGarciaRedondo: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.AndreaAlbuquerqueGarciaRedondo,
     Mandatos: [
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo`, '30/05/1996', '30/12/1996'),
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '30/05/1996',
+            DataFim: '30/12/1996',
+        },
     ],
 };
 
 export const HeliaNacifXavier: Secretario = {
-    ID: null,
+    ID: undefined,
     Pessoa: pessoas.HeliaNacifXavier,
     Mandatos: [
-        new MandatoSecretario(`Secretaria Municipal de Urbanismo`, `01/01/1997`, `29/12/2000`),
+        {
+            NomeSecretaria: 'Secretaria Municipal de Urbanismo',
+            Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
+            DataInicio: '01/01/1997',
+            DataFim: '29/12/2000',
+        },
     ],
 };

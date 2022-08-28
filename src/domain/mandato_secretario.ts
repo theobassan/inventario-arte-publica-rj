@@ -1,13 +1,11 @@
-export default class MandatoSecretario {
-    constructor(nomesecretaria: string, dataInicio: string, dataFim: string) {
-        this.ID = null;
-        this.NomeSecretaria = nomesecretaria;
-        this.DataInicio = dataInicio;
-        this.DataFim = dataFim;
-    }
+type MandatoSecretario = {
+    ID?: number;
+    NomeSecretaria?: string;
+    Cidade?: string;
+    Estado?: string;
+    Pais?: string;
+    DataInicio?: string;
+    DataFim?: string;
+};
 
-    ID: number | null | undefined;
-    NomeSecretaria: string | null | undefined;
-    DataInicio: string | null | undefined;
-    DataFim: string | null | undefined;
-}
+export default MandatoSecretario;

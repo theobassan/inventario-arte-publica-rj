@@ -2,6 +2,7 @@ import Obra from './obra';
 import Pessoa from './pessoa';
 
 type PoltíticaPublica = {
+    ID?: number;
     Titulo?: string;
     Descricao?: string;
     Orcamento?: string;
@@ -15,7 +16,8 @@ type PoltíticaPublica = {
     Tipo?: string;
     Secretaria?: string;
     Obras?: Obra[];
-    Coordenaor?: Pessoa;
+    Coordenadores?: Pessoa[];
+    Indealizadores?: Pessoa[];
     ComissaoDeSelecao?: Pessoa[];
 };
 

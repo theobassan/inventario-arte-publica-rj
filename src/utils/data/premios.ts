@@ -1,5 +1,6 @@
 import Premio from '../../domain/premio';
 import * as exposicoes from './exposicoes';
+import * as obras from './obra_artepublica';
 import * as pessoas from './pessoa';
 
 export const MedalhaDeOuroSalaoOficial1934: Premio = {
@@ -66,4 +67,35 @@ export const PremioNacionalDeArte1995: Premio = {
     ],
     Descricao:
         'Amilcar é o terceiro artista brasileiro a receber o prêmio, criado em 1993 pelo então Ministro da Cultura, Antonio Houaiss, a pedido de Ferreira Gullar, na época presidente da Ibac, hoje FUNARTE',
+};
+
+export const ViagemAoExteriorSalaoDeArteModerna1967: Premio = {
+    Nome: 'Viagem ao exterior',
+    Evento: exposicoes.SalaoDeArteModerna1967,
+    Data: '1967',
+    Pessoas: [
+        pessoas.AmilcardeCastro,
+    ],
+    Descricao: undefined,
+};
+
+export const BienalDeSaoPaulo1953: Premio = {
+    Nome: undefined,
+    Evento: exposicoes.BienalDeSaoPaulo1953,
+    Data: '1953',
+    Pessoas: [
+        pessoas.AmilcardeCastro,
+    ],
+    Obra: obras.SemTitulo_AmilcardeCastro,
+    Descricao: undefined,
+};
+
+export const PrêmioNacionalDeArteDoMinistérioDaCultura1995: Premio = {
+    Nome: 'Prêmio Nacional de Arte do Ministério da Cultura', //TODO?? esse mesmo?
+    Evento: undefined,
+    Data: '1995',
+    Pessoas: [
+        pessoas.AmilcardeCastro,
+    ],
+    Descricao: 'Amílcar de Castro recebe Prêmio Nacional de Arte. Jornal do Commercio, Rio de Janeiro, 06 de dez. de 1995',
 };

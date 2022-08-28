@@ -1,43 +1,61 @@
 import PlanoUrbanistico from '../../domain/plano_urbanistico';
 
 export const PlanoAgache: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Agache',
-    Inicio: '1926',
-    Fim: '1930',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1926',
+    DataFim: '1930',
 };
 
 export const PlanoPilotodoRiodeJaneiro: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Piloto do Rio de Janeiro',
-    Inicio: '1938',
-    Fim: '1948',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1938',
+    DataFim: '1948',
 };
 
 export const PlanoDioxiadis: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Dioxiadis',
-    Inicio: '1965',
-    Fim: '1965',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1965',
+    DataFim: '1965',
 };
 
 export const PlanoDaBaixadaDeJacarepaguá: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Da Baixada De Jacarepaguá',
-    Inicio: '1969',
-    Fim: '1969',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1969',
+    DataFim: '1969',
 };
 
 export const PlanoDiretorDaCidade: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Diretor da Cidade',
-    Inicio: '1992',
-    Fim: '1992',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1992',
+    DataFim: '1992',
 };
 
 export const PlanoEstratégico: PlanoUrbanistico = {
-    ID: null,
+    ID: undefined,
     Nome: 'Plano Estratégico',
-    Inicio: '1993',
-    Fim: '1997',
+    Cidade: 'Rio de Janeiro',
+    Estado: 'Rio de Janeiro',
+    Pais: 'Brasil',
+    DataInicio: '1993',
+    DataFim: '1997',
 };

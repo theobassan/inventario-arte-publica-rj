@@ -6,6 +6,8 @@ export const CesarEpitacioMaia: Vereador = {
     Mandatos: [
         {
             Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
             Partido: undefined,
             DataInicio: '01/02/2013',
             DataFim: undefined,

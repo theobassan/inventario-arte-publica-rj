@@ -1,226 +1,452 @@
-import MandatoPresidente from '../../domain/mandato_presidente';
 import Presidente from '../../domain/presidente';
 import * as pessoas from './pessoa';
 
 export const DeodorodaFonseca: Presidente = {
-    ID: null,
     Pessoa: pessoas.DeodorodaFonseca,
-    Mandatos: [new MandatoPresidente(`Brasil`, null, `1889`, `1891`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: undefined,
+            DataInicio: `1889`,
+            DataFim: `1891`,
+        },
+    ],
 };
 
 export const FlorianoPeixoto: Presidente = {
-    ID: null,
     Pessoa: pessoas.FlorianoPeixoto,
-    Mandatos: [new MandatoPresidente(`Brasil`, null, `1891`, `1894`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: undefined,
+            DataInicio: `1891`,
+            DataFim: `1894`,
+        },
+    ],
 };
 
 export const PrudentedeMorais: Presidente = {
-    ID: null,
     Pessoa: pessoas.PrudentedeMorais,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PR- Partido Republicano Federal`, `1894`, `1898`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PR - Partido Republicano Federal`,
+            DataInicio: `1894`,
+            DataFim: `1898`,
+        },
+    ],
 };
 
 export const CamposSales: Presidente = {
-    ID: null,
     Pessoa: pessoas.CamposSales,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRP- Partido Republicano Paulista`, `1898`, `1902`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRP - Partido Republicano Paulista`,
+            DataInicio: `1898`,
+            DataFim: `1902`,
+        },
+    ],
 };
 
 export const RodriguesAlves: Presidente = {
-    ID: null,
     Pessoa: pessoas.RodriguesAlves,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRP- Partido Republicano Paulista`, `1902`, `1906`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRP - Partido Republicano Paulista`,
+            DataInicio: `1902`,
+            DataFim: `1906`,
+        },
+    ],
 };
 
 export const AfonsoPena: Presidente = {
-    ID: null,
     Pessoa: pessoas.AfonsoPena,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRM- Partido Republicano Mineiro`, `1906`, `1909`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRM - Partido Republicano Mineiro`,
+            DataInicio: `1906`,
+            DataFim: `1909`,
+        },
+    ],
 };
 
 export const NiloPecanha: Presidente = {
-    ID: null,
     Pessoa: pessoas.NiloPecanha,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRF- Partido Republicano Fluminense`, `1909`, `1910`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRF - Partido Republicano Fluminense`,
+            DataInicio: `1909`,
+            DataFim: `1910`,
+        },
+    ],
 };
 
 export const HermesdaFonseca: Presidente = {
-    ID: null,
     Pessoa: pessoas.HermesdaFonseca,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRC- Partido Republicano Conservador`, `1910`, `1914`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRC - Partido Republicano Conservador`,
+            DataInicio: `1910`,
+            DataFim: `1914`,
+        },
+    ],
 };
 
 export const VenceslauBras: Presidente = {
-    ID: null,
     Pessoa: pessoas.VenceslauBras,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRM- Partido Republicano Mineiro`, `1914`, `1918`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRM - Partido Republicano Mineiro`,
+            DataInicio: `1914`,
+            DataFim: `1918`,
+        },
+    ],
 };
 
 export const DelfimMoreira: Presidente = {
-    ID: null,
     Pessoa: pessoas.DelfimMoreira,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRM- Partido Republicano Mineiro`, `1918`, `1919`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRM - Partido Republicano Mineiro`,
+            DataInicio: `1918`,
+            DataFim: `1919`,
+        },
+    ],
 };
 
 export const EpitacioPessoa: Presidente = {
-    ID: null,
     Pessoa: pessoas.EpitacioPessoa,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRM- Partido Republicano Mineiro`, `1919`, `1922`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRM - Partido Republicano Mineiro`,
+            DataInicio: `1919`,
+            DataFim: `1922`,
+        },
+    ],
 };
 
 export const ArturBernardes: Presidente = {
-    ID: null,
     Pessoa: pessoas.ArturBernardes,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRM- Partido Republicano Mineiro`, `1922`, `1926`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRM - Partido Republicano Mineiro`,
+            DataInicio: `1922`,
+            DataFim: `1926`,
+        },
+    ],
 };
 
 export const WashingtonLuis: Presidente = {
-    ID: null,
     Pessoa: pessoas.WashingtonLuis,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRP- Partido Republicano Paulista`, `1926`, `1930`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRP - Partido Republicano Paulista`,
+            DataInicio: `1926`,
+            DataFim: `1930`,
+        },
+    ],
 };
 
 export const JoseLinhares: Presidente = {
-    ID: null,
     Pessoa: pessoas.JoseLinhares,
-    Mandatos: [new MandatoPresidente(`Brasil`, null, `1945`, `1946`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: undefined,
+            DataInicio: `1945`,
+            DataFim: `1946`,
+        },
+    ],
 };
 
 export const EuricoGasparDutra: Presidente = {
-    ID: null,
     Pessoa: pessoas.EuricoGasparDutra,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1946`, `1951`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1946`,
+            DataFim: `1951`,
+        },
+    ],
 };
 
 export const GetulioVargas: Presidente = {
-    ID: null,
     Pessoa: pessoas.GetulioVargas,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PTB- Partido Traballhista Brasileiro`, `1951`, `1954`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PTB - Partido Traballhista Brasileiro`,
+            DataInicio: `1951`,
+            DataFim: `1954`,
+        },
+    ],
 };
 
 export const CafeFilho: Presidente = {
-    ID: null,
     Pessoa: pessoas.CafeFilho,
     Mandatos: [
-        new MandatoPresidente(`Brasil`, `PSP- Partido Social Progressista`, `1954`, `1955`),
-        new MandatoPresidente(`Brasil`, null, `1937`, `1945`),
-        new MandatoPresidente(`Brasil`, null, `1930`, `1937`),
+        {
+            Pais: `Brasil`,
+            Partido: `PSP - Partido Social Progressista`,
+            DataInicio: `1954`,
+            DataFim: `1955`,
+        },
+        {
+            Pais: `Brasil`,
+            Partido: undefined,
+            DataInicio: `1937`,
+            DataFim: `1945`,
+        },
+        {
+            Pais: `Brasil`,
+            Partido: undefined,
+            DataInicio: `1930`,
+            DataFim: `1937`,
+        },
     ],
 };
 
 export const CarlosLuz: Presidente = {
-    ID: null,
     Pessoa: pessoas.CarlosLuz,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1955`, `1955`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1955`,
+            DataFim: `1955`,
+        },
+    ],
 };
 
 export const NereuRamos: Presidente = {
-    ID: null,
     Pessoa: pessoas.NereuRamos,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1955`, `1956`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1955`,
+            DataFim: `1956`,
+        },
+    ],
 };
 
 export const JuscelinoKubitschek: Presidente = {
-    ID: null,
     Pessoa: pessoas.JuscelinoKubitschek,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1956`, `1961`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1956`,
+            DataFim: `1961`,
+        },
+    ],
 };
 
 export const JanioQuadros: Presidente = {
-    ID: null,
     Pessoa: pessoas.JanioQuadros,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PTN- Partido Traballhista Nacional`, `1961`, `1961`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PTN - Partido Traballhista Nacional`,
+            DataInicio: `1961`,
+            DataFim: `1961`,
+        },
+    ],
 };
 
 export const JoaoGoulart: Presidente = {
-    ID: null,
     Pessoa: pessoas.JoaoGoulart,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PTB- Partido Traballhista Brasileiro`, `1961`, `1964`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PTB - Partido Traballhista Brasileiro`,
+            DataInicio: `1961`,
+            DataFim: `1964`,
+        },
+    ],
 };
 
 export const RanieriMazzilli: Presidente = {
-    ID: null,
     Pessoa: pessoas.RanieriMazzilli,
     Mandatos: [
-        new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1964`, `1964`),
-        new MandatoPresidente(`Brasil`, `PSD- Partido Social Democrático`, `1961`, `1961`),
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1964`,
+            DataFim: `1964`,
+        },
+        {
+            Pais: `Brasil`,
+            Partido: `PSD - Partido Social Democrático`,
+            DataInicio: `1961`,
+            DataFim: `1961`,
+        },
     ],
 };
 
 export const HumbertoCasteloBranco: Presidente = {
-    ID: null,
     Pessoa: pessoas.HumbertoCasteloBranco,
-    Mandatos: [new MandatoPresidente(`Brasil`, `ARENA- Aliança Renovadora Nacional`, `1964`, `1967`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `ARENA - Aliança Renovadora Nacional`,
+            DataInicio: `1964`,
+            DataFim: `1967`,
+        },
+    ],
 };
 
 export const ArturdaCostaeSilva: Presidente = {
-    ID: null,
     Pessoa: pessoas.ArturdaCostaeSilva,
-    Mandatos: [new MandatoPresidente(`Brasil`, `ARENA- Aliança Renovadora Nacional`, `1967`, `1969`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `ARENA - Aliança Renovadora Nacional`,
+            DataInicio: `1967`,
+            DataFim: `1969`,
+        },
+    ],
 };
 
 export const EmilioGarrastazuMedici: Presidente = {
-    ID: null,
     Pessoa: pessoas.EmilioGarrastazuMedici,
-    Mandatos: [new MandatoPresidente(`Brasil`, `ARENA- Aliança Renovadora Nacional`, `1969`, `1974`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `ARENA - Aliança Renovadora Nacional`,
+            DataInicio: `1969`,
+            DataFim: `1974`,
+        },
+    ],
 };
 
 export const ErnestoGeisel: Presidente = {
-    ID: null,
     Pessoa: pessoas.ErnestoGeisel,
-    Mandatos: [new MandatoPresidente(`Brasil`, `ARENA- Aliança Renovadora Nacional`, `1974`, `1979`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `ARENA - Aliança Renovadora Nacional`,
+            DataInicio: `1974`,
+            DataFim: `1979`,
+        },
+    ],
 };
 
 export const JoaoFigueiredo: Presidente = {
-    ID: null,
     Pessoa: pessoas.JoaoFigueiredo,
-    Mandatos: [new MandatoPresidente(`Brasil`, `ARENA- Aliança Renovadora Nacional`, `1979`, `1985`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `ARENA - Aliança Renovadora Nacional`,
+            DataInicio: `1979`,
+            DataFim: `1985`,
+        },
+    ],
 };
 
 export const JoseSarney: Presidente = {
-    ID: null,
     Pessoa: pessoas.JoseSarney,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PMDB- Partido do Movimento Democrático Brasileiro`, `1985`, `1990`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PMDB - Partido do Movimento Democrático Brasileiro`,
+            DataInicio: `1985`,
+            DataFim: `1990`,
+        },
+    ],
 };
 
 export const FernandoCollordeMello: Presidente = {
-    ID: null,
     Pessoa: pessoas.FernandoCollordeMello,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PRN- Partido da Reconstrução Nacional`, `1990`, `1992`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PRN - Partido da Reconstrução Nacional`,
+            DataInicio: `1990`,
+            DataFim: `1992`,
+        },
+    ],
 };
 
 export const ItamarFranco: Presidente = {
-    ID: null,
     Pessoa: pessoas.ItamarFranco,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PMDB- Partido do Movimento Democrático Brasileiro`, `1992`, `1995`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PMDB - Partido do Movimento Democrático Brasileiro`,
+            DataInicio: `1992`,
+            DataFim: `1995`,
+        },
+    ],
 };
 
 export const FernandoHenriqueCardoso: Presidente = {
-    ID: null,
     Pessoa: pessoas.FernandoHenriqueCardoso,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSDB - Partido da Social Democracia Brasileira`, `1995`, `2003`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSDB - Partido da Social Democracia Brasileira`,
+            DataInicio: `1995`,
+            DataFim: `2003`,
+        },
+    ],
 };
 
 export const LuizInacioLuladaSilva: Presidente = {
-    ID: null,
     Pessoa: pessoas.LuizInacioLuladaSilva,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PT - Partido dos Trabalhadores`, `2003`, `2011`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PT - Partido dos Trabalhadores`,
+            DataInicio: `2003`,
+            DataFim: `2011`,
+        },
+    ],
 };
 
 export const DilmaRousseff: Presidente = {
-    ID: null,
     Pessoa: pessoas.DilmaRousseff,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PT - Partido dos Trabalhadores`, `2011`, `2016`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PT - Partido dos Trabalhadores`,
+            DataInicio: `2011`,
+            DataFim: `2016`,
+        },
+    ],
 };
 
 export const MichelTemer: Presidente = {
-    ID: null,
     Pessoa: pessoas.MichelTemer,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PT - Partido do Movimento Democrático Brasileiro`, `2016`, `2019`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PMDB - Partido do Movimento Democrático Brasileiro`,
+            DataInicio: `2016`,
+            DataFim: `2019`,
+        },
+    ],
 };
 
 export const JairBolsonaro: Presidente = {
-    ID: null,
     Pessoa: pessoas.JairBolsonaro,
-    Mandatos: [new MandatoPresidente(`Brasil`, `PSL- Partido Social Liberal`, `2019`, `2020`)],
+    Mandatos: [
+        {
+            Pais: `Brasil`,
+            Partido: `PSL - Partido Social Liberal`,
+            DataInicio: `2019`,
+            DataFim: `2020`,
+        },
+    ],
 };

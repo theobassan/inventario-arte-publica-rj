@@ -1,20 +1,24 @@
-import DiretorSecretaria from '../../domain/diretor_secretaria';
+import DiretorDivisaoSecretaria from '../../domain/diretor_divisao_secretaria';
 import * as pessoas from './pessoa';
 
-export const EverardoMiranda: DiretorSecretaria = {
+export const EverardoMiranda: DiretorDivisaoSecretaria = {
     Pessoa: pessoas.EverardoMiranda,
     Mandatos: [
         {
             NomeSecretaria: 'Secretaria Municipal de Cultura',
-            NomeDiretoria: 'Diretoria de Artes Visuais - RioArte',
+            NomeDivisao: 'Divisao de Artes Visuais - RioArte',
             Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
             DataInicio: '1983',
             DataFim: '1988',
         },
         {
             NomeSecretaria: 'Secretaria Municipal de Cultura',
-            NomeDiretoria: 'Diretoria de Artes Visuais - RioArte',
+            NomeDivisao: 'Divisao de Artes Visuais - RioArte',
             Cidade: 'Rio de Janeiro',
+            Estado: 'Rio de Janeiro',
+            Pais: 'Brasil',
             DataInicio: '1990',
             DataFim: '1993',
         },

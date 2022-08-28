@@ -15,7 +15,11 @@ export const ProjetoEsculturasUrbanas: PoliticaPublica = {
     Pais: 'Brasil',
     Tipo: 'Municipal',
     Secretaria: 'Secretaria Municipal de Cultura',
-    Coordenaor: pessoas.ReynaldoRoels,
+    Coordenadores: [pessoas.ReynaldoRoels],
+    Indealizadores: [
+        pessoas.HelenaMariaPortoSeverodaCosta,
+        pessoas.EverardoMiranda,
+    ],
     ComissaoDeSelecao: [
         pessoas.RonaldoBrito,
         pessoas.PauloVenancioFilho,
