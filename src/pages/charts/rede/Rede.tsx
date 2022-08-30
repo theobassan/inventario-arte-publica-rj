@@ -26,7 +26,6 @@ const networkOptions: Highcharts.Options | unknown = {
             dataLabels: {
                 enabled: true,
             },
-            id: 'lang-tree',
             data: [
                 { from: 'Proto Indo-European', to: 'Balto-Slavic', color: 'red' },
                 { from: 'Proto Indo-European', to: 'Germanic' },

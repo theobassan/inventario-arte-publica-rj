@@ -4,7 +4,7 @@ import * as pessoas from './pessoa';
 export const ComissaoDaPracaXV: Comissao = {
     Nome: 'Comissao da Praça XV',
     Descricao: undefined,
-    Cidade: 'Rio de Janeiro',
+    Cidade: undefined,
     Estado: 'Rio de Janeiro',
     Pais: 'Brasil',
     DataInicio: undefined,

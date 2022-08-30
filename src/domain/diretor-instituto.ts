@@ -1,10 +1,10 @@
 import MandatoInstituto from './mandato_instituto';
 import Pessoa from './pessoa';
 
-type ConselheiroInstituto = {
+type DiretorInstituto = {
     ID?: number;
     Pessoa?: Pessoa;
     Mandatos?: MandatoInstituto[];
 };
 
-export default ConselheiroInstituto;
+export default DiretorInstituto;

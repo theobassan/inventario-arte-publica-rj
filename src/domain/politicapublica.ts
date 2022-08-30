@@ -1,7 +1,7 @@
 import Obra from './obra';
 import Pessoa from './pessoa';
 
-type PoltíticaPublica = {
+type PoliticaPublica = {
     ID?: number;
     Titulo?: string;
     Descricao?: string;
@@ -17,8 +17,8 @@ type PoltíticaPublica = {
     Secretaria?: string;
     Obras?: Obra[];
     Coordenadores?: Pessoa[];
-    Indealizadores?: Pessoa[];
+    Idealizadores?: Pessoa[];
     ComissaoDeSelecao?: Pessoa[];
 };
 
-export default PoltíticaPublica;
+export default PoliticaPublica;

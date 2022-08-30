@@ -181,7 +181,7 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                 options={({ navigation }) => ({
                     title: 'Esculturas Urbanas',
                     headerShown: true,
-                    headerTitle: () => <Text style={style.title}>Esculturas Urbanase</Text>,
+                    headerTitle: () => <Text style={style.title}>Esculturas Urbanas</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

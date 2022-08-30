@@ -1,4 +1,4 @@
-import React, { ComponentProps } from 'react';
+import { ComponentProps } from 'react';
 
 import { makeWebshell, HandleHTMLDimensionsFeature, ForceResponsiveViewportFeature, useAutoheight } from '@formidable-webview/webshell';
 import WebView from 'react-native-webview';

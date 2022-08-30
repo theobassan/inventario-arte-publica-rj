@@ -106,6 +106,7 @@ export const ExperienciaNeoconcreta1991_MAMRJ: Exposicao = {
         pessoas.FernandoCocchiarale,
     ],
 };
+
 export const ExperienciaNeoconcreta1991_Curitiba: Exposicao = {
     Nome: 'Experiência Neoconcreta',
     Instituicao: 'Museu Municipal de Arte de Curitiba',
@@ -511,6 +512,7 @@ export const FranzWeissmann_UmaRetrospective_1998: Exposicao = {
     Curadores: undefined, //TODO
     CatalogoEscritoPor: [pessoas.ReynaldoRoels],
 };
+
 export const FranzWeissmann_UmaRetrospective_1999: Exposicao = {
     Nome: 'Franz Weissmann: uma retrospectiva',
     Instituicao: 'Museu de Arte Contemporânea da Universidade de São Paulo',

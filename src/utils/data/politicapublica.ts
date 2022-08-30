@@ -2,8 +2,8 @@ import PoliticaPublica from '../../domain/politicapublica';
 import * as obras from './obra_artepublica';
 import * as pessoas from './pessoa';
 
-export const ProjetoEsculturasUrbanas: PoliticaPublica = {
-    Titulo: 'Projeto Esculturas Urbanas',
+export const EsculturasUrbanas: PoliticaPublica = {
+    Titulo: 'Esculturas Urbanas',
     Descricao: undefined,
     Orcamento: undefined,
     ProjetoInicio: '1994',
@@ -16,7 +16,7 @@ export const ProjetoEsculturasUrbanas: PoliticaPublica = {
     Tipo: 'Municipal',
     Secretaria: 'Secretaria Municipal de Cultura',
     Coordenadores: [pessoas.ReynaldoRoels],
-    Indealizadores: [
+    Idealizadores: [
         pessoas.HelenaMariaPortoSeverodaCosta,
         pessoas.EverardoMiranda,
     ],

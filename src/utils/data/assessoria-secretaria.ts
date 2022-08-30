@@ -8,7 +8,7 @@ export const DanielaPedras: AssessorSecretaria = {
             NomeSecretaria: 'Secretaria Municipal de Cultura',
             NomeDivisao: undefined,
             NomeAssessoria: 'Assesoria de Projetos Especiais',
-            Cargo: 'Assessor',
+            Cargo: 'Assessor Chefe',
             Cidade: 'Rio de Janeiro',
             Estado: 'Rio de Janeiro',
             Pais: 'Brasil',
@@ -40,7 +40,7 @@ export const PauloSergioDuarte: AssessorSecretaria = {
     Mandatos: [
         {
             NomeSecretaria: 'Secretaria Municipal de Cultura',
-            NomeDivisao: 'Diivisao de Artes Visuais - RioArte',
+            NomeDivisao: 'Divisao de Artes Visuais - RioArte',
             NomeAssessoria: undefined,
             Cargo: 'Assessor Chefe',
             Cidade: 'Rio de Janeiro',

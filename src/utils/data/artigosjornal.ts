@@ -23,5 +23,5 @@ export const OBommOPosBoomODisBoom: ArtigoJornal = {
     Cidade: 'Rio de Janeiro', // TODO ???
     Estado: 'Rio de Janeiro',
     Pais: 'Brasil',
-    Data: undefined,
+    Data: '03/09/1976',
 };

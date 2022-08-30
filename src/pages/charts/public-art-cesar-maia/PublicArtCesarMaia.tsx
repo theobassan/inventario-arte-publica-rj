@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Highcharts, { SeriesOptionsType } from 'highcharts';
 import { ScrollView, View } from 'react-native';
 
