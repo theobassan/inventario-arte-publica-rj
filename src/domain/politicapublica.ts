@@ -15,9 +15,9 @@ type PoliticaPublica = {
     Pais?: string;
     Tipo?: string;
     Secretaria?: string;
+    Idealizadores?: Pessoa[];
     Obras?: Obra[];
     Coordenadores?: Pessoa[];
-    Idealizadores?: Pessoa[];
     ComissaoDeSelecao?: Pessoa[];
 };
 

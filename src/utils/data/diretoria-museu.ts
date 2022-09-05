@@ -1,8 +1,8 @@
 import DiretorMuseu from '../../domain/diretor_museu';
 import * as pessoas from './pessoa';
 
-export const HelenaMariaPortoSeverodaCosta_MuseuDaRepublica: DiretorMuseu = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta_MuseuDaRepublica: DiretorMuseu = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Mandatos: [
         {
             NomeMuseu: 'Museu da República',
@@ -16,8 +16,8 @@ export const HelenaMariaPortoSeverodaCosta_MuseuDaRepublica: DiretorMuseu = {
     ],
 };
 
-export const HelenaMariaPortoSeverodaCosta_CasaFrancaBrasil: DiretorMuseu = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta_CasaFrancaBrasil: DiretorMuseu = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Mandatos: [
         {
             NomeMuseu: 'Casa França-Brasil',

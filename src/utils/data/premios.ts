@@ -63,7 +63,7 @@ export const PremioNacionalDeArte1995: Premio = {
     Cidade: 'Rio de Janeiro',
     Data: '05/12/1995',
     Pessoas: [
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
     ],
     Descricao:
         'Amilcar é o terceiro artista brasileiro a receber o prêmio, criado em 1993 pelo então Ministro da Cultura, Antonio Houaiss, a pedido de Ferreira Gullar, na época presidente da Ibac, hoje FUNARTE',
@@ -74,7 +74,7 @@ export const ViagemAoExteriorSalaoDeArteModerna1967: Premio = {
     Evento: exposicoes.SalaoDeArteModerna1967,
     Data: '1967',
     Pessoas: [
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
     ],
     Descricao: undefined,
 };
@@ -84,9 +84,9 @@ export const BienalDeSaoPaulo1953: Premio = {
     Evento: exposicoes.BienalDeSaoPaulo1953,
     Data: '1953',
     Pessoas: [
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
     ],
-    Obra: obras.SemTitulo_AmilcardeCastro,
+    Obra: obras.SemTitulo_AmilcarDeCastro,
     Descricao: undefined,
 };
 
@@ -95,7 +95,7 @@ export const PrêmioNacionalDeArteDoMinistérioDaCultura1995: Premio = {
     Evento: undefined,
     Data: '1995',
     Pessoas: [
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
     ],
     Descricao: 'Amílcar de Castro recebe Prêmio Nacional de Arte. Jornal do Commercio, Rio de Janeiro, 06 de dez. de 1995',
 };

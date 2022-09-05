@@ -1,8 +1,8 @@
 import Curso from '../../domain/curso';
 import * as pessoas from './pessoa';
 
-export const AmilcardeCastro_EscolaGuinard_Desenho: Curso = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_EscolaGuinard_Desenho: Curso = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Cidade: 'Belo Horizonte',
@@ -14,8 +14,8 @@ export const AmilcardeCastro_EscolaGuinard_Desenho: Curso = {
     Finalizou: undefined,
 };
 
-export const AmilcardeCastro_EscolaGuinard_Pintura: Curso = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_EscolaGuinard_Pintura: Curso = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Cidade: 'Belo Horizonte',
@@ -27,8 +27,8 @@ export const AmilcardeCastro_EscolaGuinard_Pintura: Curso = {
     Finalizou: undefined,
 };
 
-export const AmilcardeCastro_EscolaGuinard_Escultura: Curso = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_EscolaGuinard_Escultura: Curso = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Cidade: 'Belo Horizonte',
@@ -40,8 +40,8 @@ export const AmilcardeCastro_EscolaGuinard_Escultura: Curso = {
     Finalizou: undefined,
 };
 
-export const FarnesedeAndrade_EscolaGuinard_: Curso = {
-    Pessoa: pessoas.FarnesedeAndrade,
+export const FarneseDeAndrade_EscolaGuinard_: Curso = {
+    Pessoa: pessoas.FarneseDeAndrade,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Cidade: 'Belo Horizonte',

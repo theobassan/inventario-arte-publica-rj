@@ -1,8 +1,8 @@
 import Graduacao from '../../domain/graduacao';
 import * as pessoas from './pessoa';
 
-export const HelenaMariaPortoSeverodaCosta: Graduacao = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta: Graduacao = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Faculdade: undefined,
     AbreviacaoFaculdade: undefined,
     Cidade: undefined,

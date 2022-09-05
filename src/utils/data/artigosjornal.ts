@@ -4,7 +4,7 @@ import * as pessoas from './pessoa';
 export const HelenaSevro_JornalDoBrasil_CidadeAberta: ArtigoJornal = {
     Jornal: 'Jornal do Brasil',
     Titulo: 'Cidade Aberta', // TODO ???
-    Autores: [pessoas.HelenaMariaPortoSeverodaCosta],
+    Autores: [pessoas.HelenaMariaPortoSeveroDaCosta],
     Cidade: 'Rio de Janeiro',
     Estado: 'Rio de Janeiro',
     Pais: 'Brasil',

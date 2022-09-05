@@ -142,7 +142,7 @@ export const EsculturaParaORio_WaltercioCaldas: Obra = {
     urbanista da Cidade. Acolocação das pedras foi feita manualmente pelo artesão José de Lino.`,
     Fatos: [
         new Fato('1994', '1997', 'Política Pública', 'Esculturas Urbanas', [], 'Rio de Janeiro'),
-        new Fato('1994', '1997', 'Promotor', 'Secretaria Municipal de Cultura', [pessoas.HelenaMariaPortoSeverodaCosta], 'Rio de Janeiro'),
+        new Fato('1994', '1997', 'Promotor', 'Secretaria Municipal de Cultura', [pessoas.HelenaMariaPortoSeveroDaCosta], 'Rio de Janeiro'),
         new Fato('', '', 'Patrocínio', 'O artista precisou buscar patrocínio extra para a conclusão da peça', [], 'Rio de Janeiro'),
         new Fato('1997', '1997', 'Vandalismo', 'Obra foi danificada e artista solicita reparo da peça à prefeitura.', [], 'Rio de Janeiro'),
         new Fato(
@@ -210,7 +210,7 @@ export const MarechalMachadoBittencourt_JoseOtavioCorreaLima: Obra = {
     Execucao: true,
 };
 
-export const TeixeiradeFreitas_RodolfoBernadelli: Obra = {
+export const TeixeiraDeFreitas_RodolfoBernadelli: Obra = {
     ID: 7,
     Imagem: undefined,
     Autores: [artistas.RodolfoBernadelli],
@@ -460,7 +460,7 @@ export const PereiraPassos_RodolfoBernadelli: Obra = {
     Execucao: true,
 };
 
-export const MachadodeAssis_HumbertoCozzo: Obra = {
+export const MachadoDeAssis_HumbertoCozzo: Obra = {
     ID: 13,
     Imagem: undefined,
     Autores: [artistas.HumbertoCozzo],
@@ -994,12 +994,12 @@ export const Sinho_TitoBernucci: Obra = {
     Execucao: true,
 };
 
-export const BenjaminConstant_DecioVillares_EduardodeSa_VicenteOrnelas: Obra = {
+export const BenjaminConstant_DecioVillares_EduardoDeSa_VicenteOrnelas: Obra = {
     ID: 26,
     Imagem: undefined,
     Autores: [
         artistas.DecioVilares,
-        artistas.EduardodeSa,
+        artistas.EduardoDeSa,
         artistas.VicenteOrnelas,
     ],
     Titulo: 'Benjamin Constant',
@@ -1042,7 +1042,7 @@ export const BenjaminConstant_DecioVillares_EduardodeSa_VicenteOrnelas: Obra = {
     Execucao: true,
 };
 
-export const PaulodeFrontin_UgoTaddey: Obra = {
+export const PauloDeFrontin_UgoTaddey: Obra = {
     ID: 27,
     Imagem: undefined,
     Autores: [artistas.UgoTaddey],
@@ -2360,10 +2360,10 @@ export const ChafarizdoMonroe_MathurinMoreau: Obra = {
     Execucao: true,
 };
 
-export const AshbelGreenSimentoneHelen_JoasPereiradosPassos: Obra = {
+export const AshbelGreenSimentoneHelen_JoasPereiraDosPassos: Obra = {
     ID: 58,
-    Imagem: 'AshbelGreenSimentoneHelen_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'AshbelGreenSimentoneHelen_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: 'Ashbel Green Simenton e Helen',
     Material: 'Bronze',
     Altura: undefined,
@@ -2509,7 +2509,7 @@ export const BaraodeMaua_RodolfoBernadelli: Obra = {
     Execucao: true,
 };
 
-export const PaulodeOliveiraSampaio_Desconhecida: Obra = {
+export const PauloDeOliveiraSampaio_Desconhecida: Obra = {
     ID: 61,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -3429,7 +3429,7 @@ export const IrineuMarinho_BenevenutoBernaa: Obra = {
     Execucao: true,
 };
 
-export const PlacidodeCastro_ArmandoShnoorr: Obra = {
+export const PlacidoDeCastro_ArmandoShnoorr: Obra = {
     ID: 83,
     Imagem: undefined,
     Autores: [artistas.ArmandoShnoorr],
@@ -3467,10 +3467,10 @@ export const PlacidodeCastro_ArmandoShnoorr: Obra = {
     Execucao: true,
 };
 
-export const FontedoTritao_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const FontedoTritao_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 84,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Fonte do Tritão`,
     Material: 'Bronze',
     Altura: undefined,
@@ -3627,10 +3627,10 @@ export const FranciscoBraga_PauloMazzucchelli: Obra = {
     Execucao: true,
 };
 
-export const VictorMeirelles_EduardodeSa: Obra = {
+export const VictorMeirelles_EduardoDeSa: Obra = {
     ID: 88,
     Imagem: undefined,
-    Autores: [artistas.EduardodeSa],
+    Autores: [artistas.EduardoDeSa],
     Titulo: `Victor Meirelles`,
     Material: 'Bronze',
     Altura: undefined,
@@ -3707,10 +3707,10 @@ export const MestreValentim_RomeuAlves: Obra = {
     Execucao: true,
 };
 
-export const CastroAlves_EduardodeSa: Obra = {
+export const CastroAlves_EduardoDeSa: Obra = {
     ID: 90,
     Imagem: undefined,
-    Autores: [artistas.EduardodeSa],
+    Autores: [artistas.EduardoDeSa],
     Titulo: `Castro Alves`,
     Material: 'Bronze',
     Altura: undefined,
@@ -3745,7 +3745,7 @@ export const CastroAlves_EduardodeSa: Obra = {
     Execucao: true,
 };
 
-export const FerreiradeAraujo_RodolfoBernadelli: Obra = {
+export const FerreiraDeAraujo_RodolfoBernadelli: Obra = {
     ID: 91,
     Imagem: undefined,
     Autores: [artistas.RodolfoBernadelli],
@@ -4296,10 +4296,10 @@ export const AlegoriadaMusica_RodolfoBernadelli: Obra = {
     Execucao: true,
 };
 
-export const RuiBarbosa_DeoclecianoMartinsdeOliveiraFilho: Obra = {
+export const RuiBarbosa_DeoclecianoMartinsDeOliveiraFilho: Obra = {
     ID: 105,
     Imagem: undefined,
-    Autores: [artistas.DeoclecianoMartinsdeOliveiraFilho],
+    Autores: [artistas.DeoclecianoMartinsDeOliveiraFilho],
     Titulo: `Rui Barbosa`,
     Material: 'Bronze',
     Altura: undefined,
@@ -4853,10 +4853,10 @@ export const PequenoJornaleiro_AnisioOscarMotta: Obra = {
     Execucao: true,
 };
 
-export const JoaoCalvino_JoasPereiradosPassos: Obra = {
+export const JoaoCalvino_JoasPereiraDosPassos: Obra = {
     ID: 119,
-    Imagem: 'JoaoCalvino_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'JoaoCalvino_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `João Calvino`,
     Material: 'Bronze',
     Altura: undefined,
@@ -4896,10 +4896,10 @@ export const JoaoCalvino_JoasPereiradosPassos: Obra = {
     Execucao: true,
 };
 
-export const ReverendoMathathiasGomes_JoasPereiradosPassos: Obra = {
+export const ReverendoMathathiasGomes_JoasPereiraDosPassos: Obra = {
     ID: 120,
-    Imagem: 'MonsenhorMathathiasGomes_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'MonsenhorMathathiasGomes_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Reverando Mathathias Gomes`,
     Material: 'Bronze',
     Altura: undefined,
@@ -5006,10 +5006,10 @@ export const PrincesaIsabel_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const SemTitulo_AmilcardeCastro: Obra = {
+export const SemTitulo_AmilcarDeCastro: Obra = {
     ID: 123,
     Imagem: undefined,
-    Autores: [artistas.AmilcardeCastro],
+    Autores: [artistas.AmilcarDeCastro],
     Titulo: `Sem Título`,
     Material: 'aço corten',
     Altura: '200 cm',
@@ -5059,7 +5059,7 @@ export const SemTitulo_AmilcardeCastro: Obra = {
             '10/06/1996',
             'Inauguração',
             'Segunda peça do E.U. a ser inaugurada. Amilcar de Casto esteve presente na inauguração ao lado da Secretária Municipal de Cultura',
-            [pessoas.HelenaMariaPortoSeverodaCosta],
+            [pessoas.HelenaMariaPortoSeveroDaCosta],
             'Rio de Janeiro',
         ),
     ],
@@ -6031,7 +6031,7 @@ export const Fidelidade_BenevenutoBerna: Obra = {
 export const XavierdeBrito_ElzaCansancaoMedeiros: Obra = {
     ID: 149,
     Imagem: undefined,
-    Autores: [artistas.ElzaCasancaodeMedeiros],
+    Autores: [artistas.ElzaCasancaoDeMedeiros],
     Titulo: `Coronel Xavier de Brito`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6211,9 +6211,9 @@ export const BarletJames_RuffoFanucchi: Obra = {
     Execucao: true,
 };
 
-export const ThomasDelfinodosSantos_RuffoFanucchi: Obra = {
+export const ThomasDelfinoDosSantos_RuffoFanucchi: Obra = {
     ID: 154,
-    Imagem: 'DelfinodosSantos_RuffoFanucchi.jpg',
+    Imagem: 'DelfinoDosSantos_RuffoFanucchi.jpg',
     Autores: [artistas.RuffoFanucchi],
     Titulo: `Thomas Delfino dos Santos`,
     Material: 'Bronze',
@@ -6322,10 +6322,10 @@ export const SaoCristovao_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const JoseBonifaciodeAndradaeSilva_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const JoseBonifaciodeAndradaeSilva_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 157,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `José Bonifácio de Andrade e Silva`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6357,10 +6357,10 @@ export const JoseBonifaciodeAndradaeSilva_NicolinaVazdeAssisPintodoCouto: Obra =
     Execucao: true,
 };
 
-export const NiloPecanha_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const NiloPecanha_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 158,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Nilo Peçanha`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6392,10 +6392,10 @@ export const NiloPecanha_NicolinaVazdeAssisPintodoCouto: Obra = {
     Execucao: true,
 };
 
-export const SerpentedoLago_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const SerpentedoLago_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 159,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Serpente do Lago`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6428,10 +6428,10 @@ export const SerpentedoLago_NicolinaVazdeAssisPintodoCouto: Obra = {
     Execucao: true,
 };
 
-export const CantodasSereias_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const CantodasSereias_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 160,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Canto das Sereias`,
     Material: 'mármore de carrara',
     Altura: undefined,
@@ -6463,10 +6463,10 @@ export const CantodasSereias_NicolinaVazdeAssisPintodoCouto: Obra = {
     Execucao: true,
 };
 
-export const NiloPeçanha_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const NiloPeçanha_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 161,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Nilo Peçanha`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6498,10 +6498,10 @@ export const NiloPeçanha_NicolinaVazdeAssisPintodoCouto: Obra = {
     Execucao: true,
 };
 
-export const LuizGonzaga_JoasPereiradosPassos: Obra = {
+export const LuizGonzaga_JoasPereiraDosPassos: Obra = {
     ID: 162,
-    Imagem: 'LuizGonzaga_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'LuizGonzaga_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Luiz Gonzaga`,
     Material: 'Bronze',
     Altura: undefined,
@@ -6679,7 +6679,7 @@ export const FonteMedusa_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const HelenodaCostaBrandao_HonorioPecanha: Obra = {
+export const HelenoDaCostaBrandao_HonorioPecanha: Obra = {
     ID: 167,
     Imagem: undefined,
     Autores: [artistas.HonorioPecanha],
@@ -6786,10 +6786,10 @@ export const NoelRosa_AlfredoHerculanoFreixo: Obra = {
     Execucao: true,
 };
 
-export const NoelRosa_JoasPereiradosPassos: Obra = {
+export const NoelRosa_JoasPereiraDosPassos: Obra = {
     ID: 171,
     Imagem: undefined,
-    Autores: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Noel Rosa`,
     Material: 'Bronze',
     Altura: undefined,
@@ -7125,10 +7125,10 @@ export const SaoCharbel_RomeuAlves: Obra = {
     Execucao: true,
 };
 
-export const AugusteFrancoisMarieGlaziou_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const AugusteFrancoisMarieGlaziou_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 181,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Auguste François Marie Glaziou`,
     Material: 'marmore',
     Altura: undefined,
@@ -7160,12 +7160,12 @@ export const AugusteFrancoisMarieGlaziou_NicolinaVazdeAssisPintodoCouto: Obra = 
     Execucao: true,
 };
 
-export const DomPedroII_JeanMagrou_HeitordaSilvaCosta: Obra = {
+export const DomPedroII_JeanMagrou_HeitorDaSilvaCosta: Obra = {
     ID: 182,
     Imagem: undefined,
     Autores: [
         artistas.JeanMagrou,
-        artistas.HeitordaSilvaCosta,
+        artistas.HeitorDaSilvaCosta,
     ],
     Titulo: `Dom Pedro II`,
     Material: 'Bronze',
@@ -8102,7 +8102,7 @@ export const SaoCristovao_SergioBertoni: Obra = {
     Execucao: true,
 };
 
-export const VicentedeCarvalho_RuffoFanucchi: Obra = {
+export const VicenteDeCarvalho_RuffoFanucchi: Obra = {
     ID: 207,
     Imagem: undefined,
     Autores: [artistas.RuffoFanucchi],
@@ -9052,10 +9052,10 @@ export const ChafarizDasMusas_HerbertWHogg: Obra = {
     Execucao: true,
 };
 
-export const FreiLeandroDoSacramento_RibeirodaCosta: Obra = {
+export const FreiLeandroDoSacramento_RibeiroDaCosta: Obra = {
     ID: 234,
     Imagem: undefined,
-    Autores: [artistas.RibeirodaCosta],
+    Autores: [artistas.RibeiroDaCosta],
     Titulo: `Frei Leandro Do Sacramento`,
     Material: 'Bronze',
     Altura: undefined,
@@ -9310,10 +9310,10 @@ export const OCorneteiro_Ique: Obra = {
     Execucao: true,
 };
 
-export const LouisPasteur_HeitordaSilvaCosta: Obra = {
+export const LouisPasteur_HeitorDaSilvaCosta: Obra = {
     ID: 241,
     Imagem: undefined,
-    Autores: [artistas.HeitordaSilvaCosta],
+    Autores: [artistas.HeitorDaSilvaCosta],
     Titulo: 'Louis Pasteur',
     Material: 'Bronze',
     Altura: undefined,
@@ -10655,10 +10655,10 @@ export const LagoaSolidaria_MarliMazeredo: Obra = {
     Execucao: true,
 };
 
-export const Curumim_PedroCorreiadeAraujo: Obra = {
+export const Curumim_PedroCorreiaDeAraujo: Obra = {
     ID: 276,
     Imagem: undefined,
-    Autores: [artistas.PedroCorreiadeAraujo],
+    Autores: [artistas.PedroCorreiaDeAraujo],
     Titulo: `Curumim`,
     Material: 'Bronze',
     Altura: undefined,
@@ -10741,10 +10741,10 @@ export const ATomJobimOEstudante_OttoDumovich: Obra = {
     Execucao: true,
 };
 
-export const OttoLaraResende_JoasPereiradosPassos: Obra = {
+export const OttoLaraResende_JoasPereiraDosPassos: Obra = {
     ID: 278,
-    Imagem: 'OttoLaraResende_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'OttoLaraResende_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Otto Lara Resende`,
     Material: 'Bronze',
     Altura: undefined,
@@ -11404,7 +11404,7 @@ export const RitualdoVento_GabrielFonseca: Obra = {
     Execucao: true,
 };
 
-export const AVieiraSoutoePaulodeFrontin_RodolfoBernadelli: Obra = {
+export const AVieiraSoutoePauloDeFrontin_RodolfoBernadelli: Obra = {
     ID: 296,
     Imagem: undefined,
     Autores: [artistas.RodolfoBernadelli],
@@ -11846,9 +11846,9 @@ export const MiguelCouto_HeitorUsai: Obra = {
     Execucao: true,
 };
 
-export const ZozimoBarrosodoAmaral_RobertoSa: Obra = {
+export const ZozimoBarrosoDoAmaral_RobertoSa: Obra = {
     ID: 307,
-    Imagem: 'ZozimoBarrosodoAmaral_RobertoSa.jpg',
+    Imagem: 'ZozimoBarrosoDoAmaral_RobertoSa.jpg',
     Autores: [artistas.RobertoSa],
     Titulo: `Zózimo Barroso do Amaral`,
     Material: 'Bronze',
@@ -12660,10 +12660,10 @@ export const MarechalCandidoRandon_AntonioPintodeMattos: Obra = {
     Execucao: true,
 };
 
-export const FontedoManequinho_BelmirodeAlmeida: Obra = {
+export const FontedoManequinho_BelmiroDeAlmeida: Obra = {
     ID: 331,
     Imagem: undefined,
-    Autores: [artistas.BelmirodeAlmeida],
+    Autores: [artistas.BelmiroDeAlmeida],
     Titulo: `Fonte do Manequinho`,
     Material: 'Bronze',
     Altura: undefined,
@@ -13001,7 +13001,7 @@ export const LorenzoFernandes_AristocherBenjamimMeschessi: Obra = {
     Execucao: true,
 };
 
-export const EmiliodeMenezes_JoaoTurin: Obra = {
+export const EmilioDeMenezes_JoaoTurin: Obra = {
     ID: 340,
     Imagem: undefined,
     Autores: [artistas.JoaoTurin],
@@ -13535,10 +13535,10 @@ export const MonumentoAosMortosdaIIGuerraMundial_MarcosKonderNeto_HelioRibasMari
     Execucao: true,
 };
 
-export const SemTituloI_AmilcardeCastro: Obra = {
+export const SemTituloI_AmilcarDeCastro: Obra = {
     ID: 355,
-    Imagem: 'Chapavertical_AmilcardeCastro.jpg',
-    Autores: [artistas.AmilcardeCastro],
+    Imagem: 'Chapavertical_AmilcarDeCastro.jpg',
+    Autores: [artistas.AmilcarDeCastro],
     Titulo: `Sem Titulo`,
     Material: 'aço corten',
     Altura: undefined,
@@ -13971,10 +13971,10 @@ export const CarmemGomes_JoseBarreto: Obra = {
     Execucao: true,
 };
 
-export const ChafarizdaGloria_JoseCustodiodeSaeFaria: Obra = {
+export const ChafarizDaGloria_JoseCustodioDeSaEFaria: Obra = {
     ID: 371,
     Imagem: undefined,
-    Autores: [artistas.JoseCustodiodeSaeFaria],
+    Autores: [artistas.JoseCustodioDeSaEFaria],
     Titulo: `Chafariz da Glória`,
     Material: 'pedra e cal',
     Altura: undefined,
@@ -14300,10 +14300,10 @@ export const PereiraCarneiro_EgistoBertozzi: Obra = {
     Execucao: true,
 };
 
-export const GetulioVargas_JoasPereiradosPassos: Obra = {
+export const GetulioVargas_JoasPereiraDosPassos: Obra = {
     ID: 380,
-    Imagem: 'GetulioVargas_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'GetulioVargas_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Getulio Vargas`,
     Material: 'Bronze',
     Altura: undefined,
@@ -14450,10 +14450,10 @@ export const RodolfoAmoedo_JoseOtavioCorreaLima: Obra = {
     Execucao: true,
 };
 
-export const SaoFranciscodeAssiseSantaClara_EduardodeSa: Obra = {
+export const SaoFranciscoDeAssiseSantaClara_EduardoDeSa: Obra = {
     ID: 385,
     Imagem: undefined,
-    Autores: [artistas.EduardodeSa],
+    Autores: [artistas.EduardoDeSa],
     Titulo: `São Francisco de Assis e Santa Clara`,
     Material: 'Bronze',
     Altura: undefined,
@@ -14921,7 +14921,7 @@ export const AberturadosPortos_EugeneBenet: Obra = {
     Execucao: true,
 };
 
-export const AlbertodeOliviera_PetrusVerdier: Obra = {
+export const AlbertoDeOliviera_PetrusVerdier: Obra = {
     ID: 397,
     Imagem: undefined,
     Autores: [artistas.PetrusVerdier],
@@ -16186,7 +16186,7 @@ export const QuintinoBocaiuva_HildegardoLeaoVelloso: Obra = {
     Execucao: true,
 };
 
-export const EusebiodeOliveira_CesarDoria: Obra = {
+export const EusebioDeOliveira_CesarDoria: Obra = {
     ID: 531,
     Imagem: undefined,
     Autores: [artistas.CesarDoria],
@@ -16790,9 +16790,9 @@ export const SerenaDamadoMar_LuizFigueiredo: Obra = {
     Execucao: true,
 };
 
-export const CarlosDrummonddeAndrade_LeoSantana: Obra = {
+export const CarlosDrummondDeAndrade_LeoSantana: Obra = {
     ID: 582,
-    Imagem: 'CarlosDrummonddeAndrade_LeoSantana.jpg',
+    Imagem: 'CarlosDrummondDeAndrade_LeoSantana.jpg',
     Autores: [artistas.LeoSantana],
     Titulo: `Carlos Drummond de Andrade`,
     Material: 'Bronze',
@@ -17291,10 +17291,10 @@ export const Baleia_AngeloVenosa: Obra = {
     Execucao: true,
 };
 
-export const MarechalFlorianoPeixoto_EduardodeSa: Obra = {
+export const MarechalFlorianoPeixoto_EduardoDeSa: Obra = {
     ID: 582,
     Imagem: undefined,
-    Autores: [artistas.EduardodeSa],
+    Autores: [artistas.EduardoDeSa],
     Titulo: `Marechal Floriano Peixoto`,
     Material: 'Bronze',
     Altura: undefined,
@@ -17658,9 +17658,9 @@ export const JoaquimNabuco_OttoDumovich: Obra = {
     Execucao: true,
 };
 
-export const CandidodeOliveira_LaurindoRamos: Obra = {
+export const CandidoDeOliveira_LaurindoRamos: Obra = {
     ID: 582,
-    Imagem: 'CandidodeOliveira_LaurindoRamos.jpg',
+    Imagem: 'CandidoDeOliveira_LaurindoRamos.jpg',
     Autores: [artistas.LaurindoRamos],
     Titulo: `Candido de Oliveira`,
     Material: 'Bronze',
@@ -17705,10 +17705,10 @@ export const CandidodeOliveira_LaurindoRamos: Obra = {
     Execucao: true,
 };
 
-export const SebastiaoLeme_MariadaGloriaVianaPatrasso: Obra = {
+export const SebastiaoLeme_MariaDaGloriaVianaPatrasso: Obra = {
     ID: 582,
     Imagem: undefined,
-    Autores: [artistas.MariadaGloriaVianaPatrasso],
+    Autores: [artistas.MariaDaGloriaVianaPatrasso],
     Titulo: `Sebastião Leme`,
     Material: 'Bronze',
     Altura: undefined,
@@ -17750,10 +17750,10 @@ export const SebastiaoLeme_MariadaGloriaVianaPatrasso: Obra = {
     Execucao: true,
 };
 
-export const PierreRichiereGuillaumeChartier_JoasPereiradosPassos: Obra = {
+export const PierreRichiereGuillaumeChartier_JoasPereiraDosPassos: Obra = {
     ID: 582,
-    Imagem: 'PierreRichiereGuillaumeChartier_JoasPereiradosPassos.jpg',
-    Autores: [artistas.JoasPereiradosPassos],
+    Imagem: 'PierreRichiereGuillaumeChartier_JoasPereiraDosPassos.jpg',
+    Autores: [artistas.JoasPereiraDosPassos],
     Titulo: `Pierre Richier e Guillaume Chartier`,
     Material: 'Bronze',
     Altura: undefined,
@@ -18004,10 +18004,10 @@ export const GabrielHabib_HildegardoLeaoVelloso: Obra = {
     Execucao: true,
 };
 
-export const GrandjeandeMontiny_NicolinaVazdeAssisPintodoCouto: Obra = {
+export const GrandjeandeMontiny_NicolinaVazDeAssisPintodoCouto: Obra = {
     ID: 582,
     Imagem: undefined,
-    Autores: [artistas.NicolinaVazdeAssisPintodoCouto],
+    Autores: [artistas.NicolinaVazDeAssisPintodoCouto],
     Titulo: `Grandjean de Montiny`,
     Material: 'Bronze',
     Altura: undefined,
@@ -18674,7 +18674,7 @@ export const BaraodeTaquara_BenevenutaBerna: Obra = {
     Execucao: true,
 };
 
-export const BrigadeiroAntôniodeSampaio_VictorBrecheret: Obra = {
+export const BrigadeiroAntônioDeSampaio_VictorBrecheret: Obra = {
     ID: 474,
     Imagem: undefined,
     Autores: [artistas.VictorBrecheret],
@@ -18826,10 +18826,10 @@ export const GeneralJoaoSeverianodaFonseca_Desconhecida: Obra = {
     Execucao: true,
 };
 
-export const Aviadores_RebecaMatteIñiguez: Obra = {
+export const Aviadores_RebecaMatteIniguez: Obra = {
     ID: 474,
     Imagem: undefined,
-    Autores: [artistas.RebecaMatteIñiguez], // TODO: livor n tem dois t no Matte
+    Autores: [artistas.RebecaMatteIniguez], // TODO: livor n tem dois t no Matte
     Titulo: `Aviadores`,
     Material: `Bronze`,
     Altura: undefined,

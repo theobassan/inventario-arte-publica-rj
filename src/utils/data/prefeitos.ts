@@ -79,8 +79,8 @@ export const RobertoSaturninoBraga: Prefeito = {
     ],
 };
 
-export const MarceloNunesdeAllencar: Prefeito = {
-    Pessoa: pessoas.MarceloNunesdeAllencar,
+export const MarceloNunesDeAllencar: Prefeito = {
+    Pessoa: pessoas.MarceloNunesDeAllencar,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -109,8 +109,8 @@ export const JamilHaddad: Prefeito = {
     ],
 };
 
-export const JuliodeMoraesCoutinho: Prefeito = {
-    Pessoa: pessoas.JuliodeMoraesCoutinho,
+export const JulioDeMoraesCoutinho: Prefeito = {
+    Pessoa: pessoas.JulioDeMoraesCoutinho,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -193,8 +193,8 @@ export const JoseSetteCamaraFilho: Prefeito = {
     ],
 };
 
-export const JoseJoaquimdeSaFreireAlvim: Prefeito = {
-    Pessoa: pessoas.JoseJoaquimdeSaFreireAlvim,
+export const JoseJoaquimDeSaFreireAlvim: Prefeito = {
+    Pessoa: pessoas.JoseJoaquimDeSaFreireAlvim,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -205,8 +205,8 @@ export const JoseJoaquimdeSaFreireAlvim: Prefeito = {
     ],
 };
 
-export const FranciscoNegraodeLima: Prefeito = {
-    Pessoa: pessoas.FranciscoNegraodeLima,
+export const FranciscoNegraoDeLima: Prefeito = {
+    Pessoa: pessoas.FranciscoNegraoDeLima,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -223,8 +223,8 @@ export const FranciscoNegraodeLima: Prefeito = {
     ],
 };
 
-export const FranciscodeSaLessa: Prefeito = {
-    Pessoa: pessoas.FranciscodeSaLessa,
+export const FranciscoDeSaLessa: Prefeito = {
+    Pessoa: pessoas.FranciscoDeSaLessa,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -235,8 +235,8 @@ export const FranciscodeSaLessa: Prefeito = {
     ],
 };
 
-export const EiteldeOliveiraLima: Prefeito = {
-    Pessoa: pessoas.EiteldeOliveiraLima,
+export const EitelDeOliveiraLima: Prefeito = {
+    Pessoa: pessoas.EitelDeOliveiraLima,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -259,8 +259,8 @@ export const AlimPedro: Prefeito = {
     ],
 };
 
-export const DulcidiodoEspiritoSantoCardoso: Prefeito = {
-    Pessoa: pessoas.DulcidiodoEspiritoSantoCardoso,
+export const DulcidioDoEspiritoSantoCardoso: Prefeito = {
+    Pessoa: pessoas.DulcidioDoEspiritoSantoCardoso,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -283,8 +283,8 @@ export const JoaoCarlosVital: Prefeito = {
     ],
 };
 
-export const AngeloMendesdeMorais: Prefeito = {
-    Pessoa: pessoas.AngeloMendesdeMorais,
+export const AngeloMendesDeMorais: Prefeito = {
+    Pessoa: pessoas.AngeloMendesDeMorais,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -295,8 +295,8 @@ export const AngeloMendesdeMorais: Prefeito = {
     ],
 };
 
-export const HildebrandodeAraujoGois: Prefeito = {
-    Pessoa: pessoas.HildebrandodeAraujoGois,
+export const HildebrandoDeAraujoGois: Prefeito = {
+    Pessoa: pessoas.HildebrandoDeAraujoGois,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -307,8 +307,8 @@ export const HildebrandodeAraujoGois: Prefeito = {
     ],
 };
 
-export const JoseFiladelfodeBarrosAzevedo: Prefeito = {
-    Pessoa: pessoas.JoseFiladelfodeBarrosAzevedo,
+export const JoseFiladelfoDeBarrosAzevedo: Prefeito = {
+    Pessoa: pessoas.JoseFiladelfoDeBarrosAzevedo,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -331,8 +331,8 @@ export const HenriqueDodsworth: Prefeito = {
     ],
 };
 
-export const OlimpiodeMelo: Prefeito = {
-    Pessoa: pessoas.OlimpiodeMelo,
+export const OlimpioDeMelo: Prefeito = {
+    Pessoa: pessoas.OlimpioDeMelo,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -343,8 +343,8 @@ export const OlimpiodeMelo: Prefeito = {
     ],
 };
 
-export const AugustodoAmaralPeixoto: Prefeito = {
-    Pessoa: pessoas.AugustodoAmaralPeixoto,
+export const AugustoDoAmaralPeixoto: Prefeito = {
+    Pessoa: pessoas.AugustoDoAmaralPeixoto,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -397,8 +397,8 @@ export const AdolfoBergamini: Prefeito = {
     ],
 };
 
-export const AntoniodaSilvaPradoJunior: Prefeito = {
-    Pessoa: pessoas.AntoniodaSilvaPradoJunior,
+export const AntonioDaSilvaPradoJunior: Prefeito = {
+    Pessoa: pessoas.AntonioDaSilvaPradoJunior,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -433,8 +433,8 @@ export const CarlosSampaio: Prefeito = {
     ],
 };
 
-export const MilciadesMariadeSaFreire: Prefeito = {
-    Pessoa: pessoas.MilciadesMariadeSaFreire,
+export const MilciadesMariaDeSaFreire: Prefeito = {
+    Pessoa: pessoas.MilciadesMariaDeSaFreire,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -445,8 +445,8 @@ export const MilciadesMariadeSaFreire: Prefeito = {
     ],
 };
 
-export const PaulodeFrontin: Prefeito = {
-    Pessoa: pessoas.PaulodeFrontin,
+export const PauloDeFrontin: Prefeito = {
+    Pessoa: pessoas.PauloDeFrontin,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -457,8 +457,8 @@ export const PaulodeFrontin: Prefeito = {
     ],
 };
 
-export const PeregrinodaSilva: Prefeito = {
-    Pessoa: pessoas.PeregrinodaSilva,
+export const PeregrinoDaSilva: Prefeito = {
+    Pessoa: pessoas.PeregrinoDaSilva,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -481,8 +481,8 @@ export const AmaroCavalcanti: Prefeito = {
     ],
 };
 
-export const AntonioAugustodeAzevedoSodre: Prefeito = {
-    Pessoa: pessoas.AntonioAugustodeAzevedoSodre,
+export const AntonioAugustoDeAzevedoSodre: Prefeito = {
+    Pessoa: pessoas.AntonioAugustoDeAzevedoSodre,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -493,8 +493,8 @@ export const AntonioAugustodeAzevedoSodre: Prefeito = {
     ],
 };
 
-export const RivadaviadaCunhaCorreia: Prefeito = {
-    Pessoa: pessoas.RivadaviadaCunhaCorreia,
+export const RivadaviaDaCunhaCorreia: Prefeito = {
+    Pessoa: pessoas.RivadaviaDaCunhaCorreia,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -529,8 +529,8 @@ export const SerzedeloCorreia: Prefeito = {
     ],
 };
 
-export const FranciscoMarcelinodeSousaAguiar: Prefeito = {
-    Pessoa: pessoas.FranciscoMarcelinodeSousaAguiar,
+export const FranciscoMarcelinoDeSousaAguiar: Prefeito = {
+    Pessoa: pessoas.FranciscoMarcelinoDeSousaAguiar,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -565,8 +565,8 @@ export const CarlosLeiteRibeiro: Prefeito = {
     ],
 };
 
-export const JoaquimXavierdaSilveiraJunior: Prefeito = {
-    Pessoa: pessoas.JoaquimXavierdaSilveiraJunior,
+export const JoaquimXavierDaSilveiraJunior: Prefeito = {
+    Pessoa: pessoas.JoaquimXavierDaSilveiraJunior,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -625,8 +625,8 @@ export const CesarioAlvim: Prefeito = {
     ],
 };
 
-export const LuisvanErven: Prefeito = {
-    Pessoa: pessoas.LuisvanErven,
+export const LuisVanErven: Prefeito = {
+    Pessoa: pessoas.LuisVanErven,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -637,8 +637,8 @@ export const LuisvanErven: Prefeito = {
     ],
 };
 
-export const JoseJoaquimdaRosa: Prefeito = {
-    Pessoa: pessoas.JoseJoaquimdaRosa,
+export const JoseJoaquimDaRosa: Prefeito = {
+    Pessoa: pessoas.JoseJoaquimDaRosa,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -649,8 +649,8 @@ export const JoseJoaquimdaRosa: Prefeito = {
     ],
 };
 
-export const FranciscoFurquimWerneckdeAlmeida: Prefeito = {
-    Pessoa: pessoas.FranciscoFurquimWerneckdeAlmeida,
+export const FranciscoFurquimWerneckDeAlmeida: Prefeito = {
+    Pessoa: pessoas.FranciscoFurquimWerneckDeAlmeida,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -721,8 +721,8 @@ export const NicolauJoaquimMoreira: Prefeito = {
     ],
 };
 
-export const CarneirodeFontoura: Prefeito = {
-    Pessoa: pessoas.CarneirodeFontoura,
+export const CarneiroDeFontoura: Prefeito = {
+    Pessoa: pessoas.CarneiroDeFontoura,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -733,8 +733,8 @@ export const CarneirodeFontoura: Prefeito = {
     ],
 };
 
-export const JoseFelixdaCunhaMeneses: Prefeito = {
-    Pessoa: pessoas.JoseFelixdaCunhaMeneses,
+export const JoseFelixDaCunhaMeneses: Prefeito = {
+    Pessoa: pessoas.JoseFelixDaCunhaMeneses,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -745,8 +745,8 @@ export const JoseFelixdaCunhaMeneses: Prefeito = {
     ],
 };
 
-export const UbaldinodoAmaral: Prefeito = {
-    Pessoa: pessoas.UbaldinodoAmaral,
+export const UbaldinoDoAmaral: Prefeito = {
+    Pessoa: pessoas.UbaldinoDoAmaral,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -763,8 +763,8 @@ export const UbaldinodoAmaral: Prefeito = {
     ],
 };
 
-export const FranciscoAntonioPessoadeBarros: Prefeito = {
-    Pessoa: pessoas.FranciscoAntonioPessoadeBarros,
+export const FranciscoAntonioPessoaDeBarros: Prefeito = {
+    Pessoa: pessoas.FranciscoAntonioPessoaDeBarros,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -775,8 +775,8 @@ export const FranciscoAntonioPessoadeBarros: Prefeito = {
     ],
 };
 
-export const JoaoManueldaSilvaVeiga: Prefeito = {
-    Pessoa: pessoas.JoaoManueldaSilvaVeiga,
+export const JoaoManuelDaSilvaVeiga: Prefeito = {
+    Pessoa: pessoas.JoaoManuelDaSilvaVeiga,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -787,8 +787,8 @@ export const JoaoManueldaSilvaVeiga: Prefeito = {
     ],
 };
 
-export const AugustoNunesdeLima: Prefeito = {
-    Pessoa: pessoas.AugustoNunesdeLima,
+export const AugustoNunesDeLima: Prefeito = {
+    Pessoa: pessoas.AugustoNunesDeLima,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -811,8 +811,8 @@ export const JoaoPereiraLopes: Prefeito = {
     ],
 };
 
-export const JoaoPedrodeMiranda: Prefeito = {
-    Pessoa: pessoas.JoaoPedrodeMiranda,
+export const JoaoPedroDeMiranda: Prefeito = {
+    Pessoa: pessoas.JoaoPedroDeMiranda,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -865,8 +865,8 @@ export const AntonioFerreiraViana: Prefeito = {
     ],
 };
 
-export const AdolfoBezerradeMenezes: Prefeito = {
-    Pessoa: pessoas.AdolfoBezerradeMenezes,
+export const AdolfoBezerraDeMenezes: Prefeito = {
+    Pessoa: pessoas.AdolfoBezerraDeMenezes,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -883,8 +883,8 @@ export const AdolfoBezerradeMenezes: Prefeito = {
     ],
 };
 
-export const JoaoBatistadosSantos: Prefeito = {
-    Pessoa: pessoas.JoaoBatistadosSantos,
+export const JoaoBatistaDosSantos: Prefeito = {
+    Pessoa: pessoas.JoaoBatistaDosSantos,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -895,8 +895,8 @@ export const JoaoBatistadosSantos: Prefeito = {
     ],
 };
 
-export const JoaoJosedaCunhaTeles: Prefeito = {
-    Pessoa: pessoas.JoaoJosedaCunhaTeles,
+export const JoaoJoseDaCunhaTeles: Prefeito = {
+    Pessoa: pessoas.JoaoJoseDaCunhaTeles,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -907,8 +907,8 @@ export const JoaoJosedaCunhaTeles: Prefeito = {
     ],
 };
 
-export const JoãodeOliveiraFausto: Prefeito = {
-    Pessoa: pessoas.JoãodeOliveiraFausto,
+export const JoãoDeOliveiraFausto: Prefeito = {
+    Pessoa: pessoas.JoãoDeOliveiraFausto,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -919,8 +919,8 @@ export const JoãodeOliveiraFausto: Prefeito = {
     ],
 };
 
-export const MigueldeFriaseVasconcelos: Prefeito = {
-    Pessoa: pessoas.MigueldeFriaseVasconcelos,
+export const MiguelDeFriasEVasconcelos: Prefeito = {
+    Pessoa: pessoas.MiguelDeFriasEVasconcelos,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -943,8 +943,8 @@ export const CandidoBorges: Prefeito = {
     ],
 };
 
-export const GabrielGetúlioMonteirodeMendonça: Prefeito = {
-    Pessoa: pessoas.GabrielGetúlioMonteirodeMendonça,
+export const GabrielGetúlioMonteiroDeMendonça: Prefeito = {
+    Pessoa: pessoas.GabrielGetúlioMonteiroDeMendonça,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -955,8 +955,8 @@ export const GabrielGetúlioMonteirodeMendonça: Prefeito = {
     ],
 };
 
-export const JoãoSilveiradePilar: Prefeito = {
-    Pessoa: pessoas.JoãoSilveiradePilar,
+export const JoãoSilveiraDePilar: Prefeito = {
+    Pessoa: pessoas.JoãoSilveiraDePilar,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,
@@ -967,8 +967,8 @@ export const JoãoSilveiradePilar: Prefeito = {
     ],
 };
 
-export const LuisdeMenezesVasconcelosdeDrummond: Prefeito = {
-    Pessoa: pessoas.LuisdeMenezesVasconcelosdeDrummond,
+export const LuisDeMenezesVasconcelosDeDrummond: Prefeito = {
+    Pessoa: pessoas.LuisDeMenezesVasconcelosDeDrummond,
     Mandatos: [
         {
             Cidade: `Rio de Janeiro`,

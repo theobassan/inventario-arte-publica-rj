@@ -14,8 +14,8 @@ export const LuizPauloFernandezCondArquitetura: Graduacao = {
     Finalizou: true,
 };
 
-export const HelenaMariaPortoSeverodaCosta: Graduacao = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta: Graduacao = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Faculdade: undefined,
     AbreviacaoFaculdade: undefined,
     Cidade: undefined,
@@ -117,8 +117,8 @@ export const JoseResende_Arquitetura: Graduacao = {
     Finalizou: undefined,
 };
 
-export const AmilcardeCastro: Graduacao = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro: Graduacao = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Faculdade: 'Universidade Federal de Minas Gerais',
     AbreviacaoFaculdade: 'UFMG',
     Cidade: 'Belo Horizonte',

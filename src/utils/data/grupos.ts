@@ -33,7 +33,7 @@ export const GrupoFrente: Grupo = {
         pessoas.AluisioCarvao,
         //pessoas.CarlosVal
         pessoas.DecioVieira,
-        //pessoas.JoaoJosedaSilvaCosta,
+        //pessoas.JoaoJoseDaSilvaCosta,
         pessoas.LygiaClark,
         pessoas.LygiaPape,
         //pessoas.VicentIbberson,

@@ -5,7 +5,7 @@ export const FernandoCocchiarale: CoordenadorFundacao = {
     Pessoa: pessoas.FernandoCocchiarale,
     Mandatos: [
         {
-            NomeFundacao: 'Fundaca Nacional de Arte',
+            NomeFundacao: 'Fundação Nacional de Arte',
             AbreviacaoFundacao: 'FUNARTE',
             Cidade: 'Rio de Janeiro',
             Estado: 'Rio de Janeiro',

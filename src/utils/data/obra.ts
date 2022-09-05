@@ -988,10 +988,10 @@ export const Revoada_HelioPelegrino: Obra = {
     Execucao: true,
 };
 
-export const PaineldeSantaBarbara_DjaniradaMottaeSilva: Obra = {
+export const PainelDeSantaBarbara_DjaniraDaMottaESilva: Obra = {
     ID: 27,
     Imagem: undefined,
-    Autores: [artistas.DjaniradaMottaeSilva],
+    Autores: [artistas.DjaniraDaMottaESilva],
     Promotor: undefined,
     Titulo: `Painel de Santa Bárbara`,
     Renomeacao: false,
@@ -1400,7 +1400,7 @@ export const MonumentoALiberdadeDeExpressao_FranzWeissmann: Obra = {
     ],
 };
 
-export const PortaodoCampodeSantana_Desconhecida: Obra = {
+export const PortaodoCampoDeSantana_Desconhecida: Obra = {
     ID: 146,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -1481,7 +1481,7 @@ export const Verao_PaulJeanBaptisteGasq: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const GuaritasdoCampodeSantana_Desconhecida: Obra = {
+export const GuaritasdoCampoDeSantana_Desconhecida: Obra = {
     ID: 153,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -1520,7 +1520,7 @@ No acervo do Museu Histórico da Cidade do Rio de Janeiro, foi encontrado um pro
     LugarRealocacao: undefined,
 };
 
-export const GradildoCampodeSantana_Desconhecida: Obra = {
+export const GradildoCampoDeSantana_Desconhecida: Obra = {
     ID: 154,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -1557,7 +1557,7 @@ export const GradildoCampodeSantana_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
+export const Guarda_corpoIdoCampoDeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 155,
     Imagem: undefined,
     Autores: [artistas.AugusteFrancoisMarieGlaziou],
@@ -1594,7 +1594,7 @@ export const Guarda_corpoIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoIIdoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
+export const Guarda_corpoIIdoCampoDeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 156,
     Imagem: undefined,
     Autores: [artistas.AugusteFrancoisMarieGlaziou],
@@ -2170,10 +2170,10 @@ export const PeaPe_OtavioAvancini: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const PaineldoEdificioAndorinha_BelmirodeAlmeida: Obra = {
+export const PaineldoEdificioAndorinha_BelmiroDeAlmeida: Obra = {
     ID: 180,
     Imagem: undefined,
-    Autores: [artistas.BelmirodeAlmeida],
+    Autores: [artistas.BelmiroDeAlmeida],
     Promotor: undefined,
     Titulo: `Painel do Edifício Andorinha`,
     Renomeacao: false,
@@ -2432,10 +2432,10 @@ Trata-se de uma construção de um nincho, onde esta instalada uma pequena image
     LugarRealocacao: undefined,
 };
 
-export const PortaldaCasadeCorrecao_ManoelJosedeOliviera: Obra = {
+export const PortaldaCasadeCorrecao_ManoelJoseDeOliviera: Obra = {
     ID: 191,
     Imagem: undefined,
-    Autores: [artistas.ManoelJosedeOliviera],
+    Autores: [artistas.ManoelJoseDeOliviera],
     Promotor: undefined,
     Titulo: `Portal da Casa de Correção`,
     Renomeacao: false,
@@ -2666,7 +2666,7 @@ export const ChafarizdoBNDES_RobertoBurleMarx: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CascatadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
+export const CascatadoCampoDeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 203,
     Imagem: undefined,
     Autores: [artistas.AugusteFrancoisMarieGlaziou],
@@ -2705,7 +2705,7 @@ export const CascatadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const GrutadoCampodeSantana_AugusteFrancoisMarieGlaziou: Obra = {
+export const GrutadoCampoDeSantana_AugusteFrancoisMarieGlaziou: Obra = {
     ID: 204,
     Imagem: undefined,
     Autores: [artistas.AugusteFrancoisMarieGlaziou],
@@ -3237,7 +3237,7 @@ export const ReiseSilva_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MosaicodeRosadosVentosdaGloria_Desconhecida: Obra = {
+export const MosaicodeRosadosVentosDaGloria_Desconhecida: Obra = {
     ID: 244,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -3274,7 +3274,7 @@ export const MosaicodeRosadosVentosdaGloria_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const RelogiodaGloria_Desconhecida: Obra = {
+export const RelogioDaGloria_Desconhecida: Obra = {
     ID: 243,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -3314,7 +3314,7 @@ Atendendo, com a melhor boa vontade, à solicitação do Exmo Sr. Prefeito do Di
     LugarRealocacao: undefined,
 };
 
-export const AmuradadaGloria_Desconhecida: Obra = {
+export const AmuradaDaGloria_Desconhecida: Obra = {
     ID: 245,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -3390,10 +3390,10 @@ Acima desse guarda corpo estão fixados postes decorativos.`,
     LugarRealocacao: undefined,
 };
 
-export const PortaodaPracaParis_JoseMarcioBaptistadaCunha: Obra = {
+export const PortaodaPracaParis_JoseMarcioBaptistaDaCunha: Obra = {
     ID: 248,
     Imagem: undefined,
-    Autores: [artistas.JoseMarcioBaptistadaCunha],
+    Autores: [artistas.JoseMarcioBaptistaDaCunha],
     Promotor: undefined,
     Titulo: `Portão da Praça Paris`,
     Renomeacao: false,
@@ -3462,10 +3462,10 @@ export const AquiEstao_AnnaMariaMaiolino: Obra = {
     Execucao: true,
 };
 
-export const DoraMaar_IoledeFreitas: Obra = {
+export const DoraMaar_IoleDeFreitas: Obra = {
     ID: 140,
     Imagem: undefined,
-    Autores: [artistas.IoledeFreitas],
+    Autores: [artistas.IoleDeFreitas],
     Titulo: `Dora Maar`,
     Material: 'aço e policarbonato',
     Altura: undefined,
@@ -3744,7 +3744,7 @@ export const Passarela_EduardoCoimbra: Obra = {
     Execucao: true,
 };
 
-export const AmuradadoOuteirodaGloria_LucioCosta: Obra = {
+export const AmuradadoOuteiroDaGloria_LucioCosta: Obra = {
     ID: 256,
     Imagem: undefined,
     Autores: [artistas.LucioCosta],
@@ -3781,7 +3781,7 @@ export const AmuradadoOuteirodaGloria_LucioCosta: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PlanoinclinadodoOuteirodaGloria_Desconhecida: Obra = {
+export const PlanoinclinadodoOuteiroDaGloria_Desconhecida: Obra = {
     ID: 257,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -3888,7 +3888,7 @@ export const SemTitulo_ElisaBracher: Obra = {
     Execucao: true,
 };
 
-export const ChafarizdeSaoSebastiao_Desconhecida: Obra = {
+export const ChafarizDeSaoSebastiao_Desconhecida: Obra = {
     ID: 266,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -4709,7 +4709,7 @@ export const CalcadadaFama_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const SaoFranciscodeAssis_MarliMazeredo: Obra = {
+export const SaoFranciscoDeAssis_MarliMazeredo: Obra = {
     ID: 339,
     Imagem: undefined,
     Autores: [artistas.MarliMazeredo],
@@ -5461,10 +5461,10 @@ export const Cogumelos_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const ChafarizdoVaso_WalterCurvelodeMendonca: Obra = {
+export const ChafarizdoVaso_WalterCurveloDeMendonca: Obra = {
     ID: 302,
     Imagem: undefined,
-    Autores: [artistas.WalterCurvelodeMendonca],
+    Autores: [artistas.WalterCurveloDeMendonca],
     Promotor: undefined,
     Titulo: `Chafariz do Vaso`,
     Renomeacao: false,
@@ -5722,9 +5722,9 @@ export const MarcodaIgrejaNossaSenhoradaPaz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const AfraniodeMeloFranco_BrunoGiorgi: Obra = {
+export const AfranioDeMeloFranco_BrunoGiorgi: Obra = {
     ID: 382,
-    Imagem: 'AfraniodeMeloFranco_BrunoGiorgi.jpg',
+    Imagem: 'AfranioDeMeloFranco_BrunoGiorgi.jpg',
     Autores: [artistas.BrunoGiorgi],
     Promotor: undefined,
     Titulo: `Afrânio de Melo Franco`,
@@ -5801,7 +5801,7 @@ export const AloysioMariaTeixeira_RobertoSa_ClaraSa: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra = {
+export const Guarda_corpodoCanaldaAvenidaVisconDeAlbuquerque_AzevedoNeto: Obra = {
     ID: 389,
     Imagem: undefined,
     Autores: [artistas.AzevedoNeto],
@@ -5875,7 +5875,7 @@ export const ComportadoCanaldoLeblon_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const BancodoCanaldaAvenidaViscondeAlbuquerque_AzevedoNeto: Obra = {
+export const BancodoCanaldaAvenidaVisconDeAlbuquerque_AzevedoNeto: Obra = {
     ID: 391,
     Imagem: undefined,
     Autores: [artistas.AzevedoNeto],
@@ -6629,13 +6629,13 @@ export const SemTituloIII_PauloWerneck: Obra = {
     Execucao: true,
 };
 
-export const PisonoLargoProfessorSilvaMelo_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckdeCarvalho: Obra = {
+export const PisonoLargoProfessorSilvaMelo_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckDeCarvalho: Obra = {
     ID: 425,
     Imagem: undefined,
     Autores: [
         artistas.AlencastroGraca,
         artistas.JorgeMartinsCancela,
-        artistas.CarlosWerneckdeCarvalho,
+        artistas.CarlosWerneckDeCarvalho,
     ],
     Promotor: undefined,
     Titulo: `Piso no Largo Professor Silva Melo`,
@@ -6934,13 +6934,13 @@ A fonte foi construida em 1930, para compor o espaço por sugestão da Sra. Sylv
     LugarRealocacao: undefined,
 };
 
-export const ChafarizdaPracaProfessorSilvaMello_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckdeCarvalho: Obra = {
+export const ChafarizdaPracaProfessorSilvaMello_AlencastroGraca_JorgeMartinsCancela_CarlosWerneckDeCarvalho: Obra = {
     ID: 433,
     Imagem: undefined,
     Autores: [
         artistas.AlencastroGraca,
         artistas.JorgeMartinsCancela,
-        artistas.CarlosWerneckdeCarvalho,
+        artistas.CarlosWerneckDeCarvalho,
     ],
     Promotor: undefined,
     Titulo: `Chafariz da Praça Professor Silva Mello`,
@@ -7051,7 +7051,7 @@ Peça metálica figurativa, na póstura de uma defesa de um goleiro.`,
     LugarRealocacao: undefined,
 };
 
-export const SaoFranciscodeAssis_HumbertoCozzo: Obra = {
+export const SaoFranciscoDeAssis_HumbertoCozzo: Obra = {
     ID: 472,
     Imagem: undefined,
     Autores: [artistas.HumbertoCozzo],
@@ -7092,7 +7092,7 @@ export const SaoFranciscodeAssis_HumbertoCozzo: Obra = {
     ],
 };
 
-export const OratoriodeSantaBarbara_Desconhecida: Obra = {
+export const OratorioDeSantaBarbara_Desconhecida: Obra = {
     ID: 473,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -7996,7 +7996,7 @@ O monumento está na PUC por cessão de uso pelo Município a fim de garantir a 
     LugarRealocacao: undefined,
 };
 
-export const SergioVieiradeMello_VilmaNoel: Obra = {
+export const SergioVieiraDeMelloo_VilmaNoel: Obra = {
     ID: 519,
     Imagem: undefined,
     Autores: [artistas.VilmaNoel],
@@ -11705,10 +11705,10 @@ export const Cascata_JardimdoValongo_LuizRey: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const ChafarizdaImperatriz_FranciscoJoaquimBethencourtdaSilva: Obra = {
+export const ChafarizdaImperatriz_FranciscoJoaquimBethencourtDaSilva: Obra = {
     ID: 631,
     Imagem: undefined,
-    Autores: [artistas.FranciscoJoaquimBethencourtdaSilva],
+    Autores: [artistas.FranciscoJoaquimBethencourtDaSilva],
     Promotor: undefined,
     Titulo: `Chafariz da Imperatriz`,
     Renomeacao: false,
@@ -11783,10 +11783,10 @@ O Chafariz foi inaugurado em 1906, quando começaram a ser captadas as aguas dos
     LugarRealocacao: undefined,
 };
 
-export const SerzedeloCorreia_ArquimedesJdaSilva: Obra = {
+export const SerzedeloCorreia_ArquimedesJDaSilva: Obra = {
     ID: 635,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Serzedelo Correia`,
     Renomeacao: false,
@@ -11820,10 +11820,10 @@ export const SerzedeloCorreia_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MemorialGetulioVargas_HenockdeAlmeida: Obra = {
+export const MemorialGetulioVargas_HenockDeAlmeida: Obra = {
     ID: 381,
     Imagem: undefined,
-    Autores: [artistas.HenockdeAlmeida],
+    Autores: [artistas.HenockDeAlmeida],
     Titulo: `Memorial Getulio Vargas`,
     Material: 'mármore',
     Altura: undefined,
@@ -11855,7 +11855,7 @@ export const MemorialGetulioVargas_HenockdeAlmeida: Obra = {
     Execucao: true,
 };
 
-export const EstaciodeSa_LucioCosta: Obra = {
+export const EstacioDeSa_LucioCosta: Obra = {
     ID: 353,
     Imagem: undefined,
     Autores: [artistas.LucioCosta],
@@ -11893,10 +11893,10 @@ export const EstaciodeSa_LucioCosta: Obra = {
     Execucao: true,
 };
 
-export const Obelisco_EduardodeSa: Obra = {
+export const Obelisco_EduardoDeSa: Obra = {
     ID: 17,
     Imagem: undefined,
-    Autores: [artistas.EduardodeSa],
+    Autores: [artistas.EduardoDeSa],
     Titulo: 'Obelisco',
     Material: 'granito',
     Altura: undefined,
@@ -12007,10 +12007,10 @@ export const ArcosdasPalmeiras_GeorgeLopes_GeorgeGuerra: Obra = {
     Execucao: true,
 };
 
-export const NiloPecanhaII_ArquimedesJdaSilva: Obra = {
+export const NiloPecanhaII_ArquimedesJDaSilva: Obra = {
     ID: 636,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Nilo Pecanha II`,
     Renomeacao: false,
@@ -12044,7 +12044,7 @@ export const NiloPecanhaII_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const ZeferinodeOliveira_Desconhecida: Obra = {
+export const ZeferinoDeOliveira_Desconhecida: Obra = {
     ID: 641,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -12543,10 +12543,10 @@ export const CoretodoPagodeChines_LuizRey: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const TemploemRuinasoudeApolo_ArquimedesJosedaSilva: Obra = {
+export const TemploemRuinasoudeApolo_ArquimedesJoseDaSilva: Obra = {
     ID: 660,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJosedaSilva],
+    Autores: [artistas.ArquimedesJoseDaSilva],
     Promotor: undefined,
     Titulo: `Templo em Ruinas ou de Apolo`,
     Renomeacao: false,
@@ -12581,10 +12581,10 @@ Construção reproduzindo um templo grego com colunas de estilo dórico sustenta
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const Guarda_corpoIdaPontedaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 661,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Guarda-corpo I da Ponte da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -12618,10 +12618,10 @@ export const Guarda_corpoIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoIIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const Guarda_corpoIIdaPontedaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 662,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Guarda-corpo II da Ponte da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -12692,10 +12692,10 @@ export const Guarda_corpoIIIdaPontedaQuintadaBoaVista_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoIVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const Guarda_corpoIVdaPontedaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 664,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Guarda-corpo IV da Ponte da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -12729,10 +12729,10 @@ export const Guarda_corpoIVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = 
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const Guarda_corpoVdaPontedaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 665,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Guarda-corpo V da Ponte da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -12766,10 +12766,10 @@ export const Guarda_corpoVdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpoVIdaPontedaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const Guarda_corpoVIdaPontedaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 666,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Guarda-corpo VI da Ponte da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -12840,10 +12840,10 @@ export const CapsuladoTemponaQuintadaBoaVista_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const VasoIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
+export const VasoIdoTerracodaQuinta_ArquimedesJDaSilva: Obra = {
     ID: 668,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Vaso I do Terraço da Quinta`,
     Renomeacao: false,
@@ -12877,10 +12877,10 @@ export const VasoIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const VasoIIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
+export const VasoIIdoTerracodaQuinta_ArquimedesJDaSilva: Obra = {
     ID: 669,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Vaso II do Terraço da Quinta`,
     Renomeacao: false,
@@ -12914,10 +12914,10 @@ export const VasoIIdoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const VasoMonumentaldoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
+export const VasoMonumentaldoTerracodaQuinta_ArquimedesJDaSilva: Obra = {
     ID: 670,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Vaso Monumental do Terraço da Quinta`,
     Renomeacao: false,
@@ -12951,10 +12951,10 @@ export const VasoMonumentaldoTerracodaQuinta_ArquimedesJdaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const AmuradadoTerracodaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const AmuradadoTerracodaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 671,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Amurada do Terraço da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -13026,10 +13026,10 @@ O fronstipicio foi danificado em 2016 por um onibus de turismo e transferido par
     LugarRealocacao: undefined,
 };
 
-export const PortaoMonumentaldaQuintadaBoaVista_ArquimedesJdaSilva: Obra = {
+export const PortaoMonumentaldaQuintadaBoaVista_ArquimedesJDaSilva: Obra = {
     ID: 673,
     Imagem: undefined,
-    Autores: [artistas.ArquimedesJdaSilva],
+    Autores: [artistas.ArquimedesJDaSilva],
     Promotor: undefined,
     Titulo: `Portão Monumental da Quinta da Boa Vista`,
     Renomeacao: false,
@@ -13226,9 +13226,9 @@ export const DianaaCacadora_Leocares: Obra = {
     ],
 };
 
-export const SaoFranciscodeAssis_FreiGeraldoRoberfeld: Obra = {
+export const SaoFranciscoDeAssis_FreiGeraldoRoberfeld: Obra = {
     ID: 679,
-    Imagem: 'SaoFranciscodeAssis_FreiGeraldoRoberfeld.jpg',
+    Imagem: 'SaoFranciscoDeAssis_FreiGeraldoRoberfeld.jpg',
     Autores: [artistas.FreiGeraldoRoberfeld],
     Promotor: undefined,
     Titulo: `São Francisco de Assis`,
@@ -13302,7 +13302,7 @@ O monumento simboliza a amizade entre a Nação Iraniana e Brasileira. Foi doada
     LugarRealocacao: undefined,
 };
 
-export const AmuradadoCampodeSaoCristovao_Desconhecida: Obra = {
+export const AmuradadoCampoDeSaoCristovao_Desconhecida: Obra = {
     ID: 681,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -13339,7 +13339,7 @@ export const AmuradadoCampodeSaoCristovao_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CoretodoCampodeSaoCristovao_Desconhecida: Obra = {
+export const CoretodoCampoDeSaoCristovao_Desconhecida: Obra = {
     ID: 683,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -13377,7 +13377,7 @@ Parte do guarda corpo do coreto esta no deposito para servir de modelo na restau
     LugarRealocacao: undefined,
 };
 
-export const PaineldeSaoRoque_Desconhecida: Obra = {
+export const PainelDeSaoRoque_Desconhecida: Obra = {
     ID: 684,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -13929,10 +13929,10 @@ export const IsmaelSilva_OttoDumovich: Obra = {
     ],
 };
 
-export const AlvaroReis_JoasPereiradosPassos: Obra = {
+export const AlvaroReis_JoasPereiraDosPassos: Obra = {
     ID: 716,
     Imagem: undefined,
-    Autores: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiraDosPassos],
     Promotor: undefined,
     Titulo: `Álvaro Reis`,
     Renomeacao: false,
@@ -13969,10 +13969,10 @@ A menina e o menino estão no depósito desde maio de 2016 devido a uma tentativ
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const Guarda_corpodaAvenidaMaracanaI_TorresdeOliveira: Obra = {
+export const Guarda_corpodaAvenidaMaracanaI_TorresDeOliveira: Obra = {
     ID: 717,
     Imagem: undefined,
-    Autores: [artistas.TorresdeOliveira],
+    Autores: [artistas.TorresDeOliveira],
     Promotor: undefined,
     Titulo: `Guarda-corpo da Avenida Maracanã I`,
     Renomeacao: false,
@@ -14080,7 +14080,7 @@ export const Guarda_corpodaAvenidaMaracanaII_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
+export const Guarda_corpodaAvenidaPauloDeFrontin_Desconhecida: Obra = {
     ID: 720,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -14154,10 +14154,10 @@ export const OratoriodeNossaSenhoradaMedalhaMilagrosa_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const OBarco_PaulodeTarso: Obra = {
+export const OBarco_PauloDeTarso: Obra = {
     ID: 723,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Barco`,
     Renomeacao: false,
@@ -14194,10 +14194,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ABaleiaeFilhote_PaulodeTarso: Obra = {
+export const ABaleiaeFilhote_PauloDeTarso: Obra = {
     ID: 724,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Baleia e Filhote`,
     Renomeacao: false,
@@ -14234,10 +14234,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OBeijaFlor_PaulodeTarso: Obra = {
+export const OBeijaFlor_PauloDeTarso: Obra = {
     ID: 725,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Beija Flor`,
     Renomeacao: false,
@@ -14274,10 +14274,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OBumbaMeuBoi_PaulodeTarso: Obra = {
+export const OBumbaMeuBoi_PauloDeTarso: Obra = {
     ID: 726,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Bumba Meu Boi`,
     Renomeacao: false,
@@ -14314,10 +14314,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OBurrinho_PaulodeTarso: Obra = {
+export const OBurrinho_PauloDeTarso: Obra = {
     ID: 727,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Burrinho`,
     Renomeacao: false,
@@ -14354,10 +14354,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCaju_PaulodeTarso: Obra = {
+export const OCaju_PauloDeTarso: Obra = {
     ID: 728,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Caju`,
     Renomeacao: false,
@@ -14394,10 +14394,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCanguru_PaulodeTarso: Obra = {
+export const OCanguru_PauloDeTarso: Obra = {
     ID: 729,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Canguru`,
     Renomeacao: false,
@@ -14434,10 +14434,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCamelo_PaulodeTarso: Obra = {
+export const OCamelo_PauloDeTarso: Obra = {
     ID: 730,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Camelo`,
     Renomeacao: false,
@@ -14473,10 +14473,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCaocomBola_PaulodeTarso: Obra = {
+export const OCaocomBola_PauloDeTarso: Obra = {
     ID: 731,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Cão com Bola`,
     Renomeacao: false,
@@ -14513,10 +14513,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCaoChines_PaulodeTarso: Obra = {
+export const OCaoChines_PauloDeTarso: Obra = {
     ID: 732,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Cão Chinês`,
     Renomeacao: false,
@@ -14553,10 +14553,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCaoMantoNegro_PaulodeTarso: Obra = {
+export const OCaoMantoNegro_PauloDeTarso: Obra = {
     ID: 733,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Cão Manto Negro`,
     Renomeacao: false,
@@ -14593,10 +14593,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCaoPintado_PaulodeTarso: Obra = {
+export const OCaoPintado_PauloDeTarso: Obra = {
     ID: 734,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Cão Pintado`,
     Renomeacao: false,
@@ -14632,10 +14632,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OCavaloBranco_PaulodeTarso: Obra = {
+export const OCavaloBranco_PauloDeTarso: Obra = {
     ID: 735,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Cavalo Branco`,
     Renomeacao: false,
@@ -14671,10 +14671,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ACobraeoPorco_PaulodeTarso: Obra = {
+export const ACobraeoPorco_PauloDeTarso: Obra = {
     ID: 736,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Cobra e o Porco`,
     Renomeacao: false,
@@ -14710,10 +14710,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ACobraeoSapo_PaulodeTarso: Obra = {
+export const ACobraeoSapo_PauloDeTarso: Obra = {
     ID: 737,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Cobra e o Sapo`,
     Renomeacao: false,
@@ -14749,10 +14749,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OMacaco_PaulodeTarso: Obra = {
+export const OMacaco_PauloDeTarso: Obra = {
     ID: 738,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Macaco`,
     Renomeacao: false,
@@ -14788,10 +14788,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ODuende_PaulodeTarso: Obra = {
+export const ODuende_PauloDeTarso: Obra = {
     ID: 740,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Duende`,
     Renomeacao: false,
@@ -14827,10 +14827,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ODuendecomAcordeon_PaulodeTarso: Obra = {
+export const ODuendecomAcordeon_PauloDeTarso: Obra = {
     ID: 741,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Duende com Acordeon`,
     Renomeacao: false,
@@ -14866,10 +14866,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OElefante_PaulodeTarso: Obra = {
+export const OElefante_PauloDeTarso: Obra = {
     ID: 742,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Elefante`,
     Renomeacao: false,
@@ -14905,10 +14905,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const EsculturaNaif_OElefante_PaulodeTarso: Obra = {
+export const EsculturaNaif_OElefante_PauloDeTarso: Obra = {
     ID: 742,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Escultura Naif - O Elefante`,
     Renomeacao: false,
@@ -14943,10 +14943,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     LugarRealocacao: undefined,
 };
 
-export const OElefanteFilhote_PaulodeTarso: Obra = {
+export const OElefanteFilhote_PauloDeTarso: Obra = {
     ID: 743,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Elefante Filhote`,
     Renomeacao: false,
@@ -14982,10 +14982,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AEmilia_PaulodeTarso: Obra = {
+export const AEmilia_PauloDeTarso: Obra = {
     ID: 744,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Emilia`,
     Renomeacao: false,
@@ -15021,10 +15021,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OEsquilo_PaulodeTarso: Obra = {
+export const OEsquilo_PauloDeTarso: Obra = {
     ID: 745,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Esquilo`,
     Renomeacao: false,
@@ -15060,10 +15060,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AFoca_PaulodeTarso: Obra = {
+export const AFoca_PauloDeTarso: Obra = {
     ID: 746,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Foca`,
     Renomeacao: false,
@@ -15099,10 +15099,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AGalinha_PaulodeTarso: Obra = {
+export const AGalinha_PauloDeTarso: Obra = {
     ID: 747,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Galinha`,
     Renomeacao: false,
@@ -15138,10 +15138,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000`
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OGalo_PaulodeTarso: Obra = {
+export const OGalo_PauloDeTarso: Obra = {
     ID: 748,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Galo`,
     Renomeacao: false,
@@ -15177,10 +15177,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OGanso_PaulodeTarso: Obra = {
+export const OGanso_PauloDeTarso: Obra = {
     ID: 749,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Ganso`,
     Renomeacao: false,
@@ -15216,10 +15216,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OGato_PaulodeTarso: Obra = {
+export const OGato_PauloDeTarso: Obra = {
     ID: 750,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Gato`,
     Renomeacao: false,
@@ -15255,10 +15255,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AGirafa_PaulodeTarso: Obra = {
+export const AGirafa_PauloDeTarso: Obra = {
     ID: 751,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Girafa`,
     Renomeacao: false,
@@ -15294,10 +15294,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OHipopotamo_PaulodeTarso: Obra = {
+export const OHipopotamo_PauloDeTarso: Obra = {
     ID: 752,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Hipopótamo`,
     Renomeacao: false,
@@ -15333,10 +15333,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OIndio_PaulodeTarso: Obra = {
+export const OIndio_PauloDeTarso: Obra = {
     ID: 753,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Indio`,
     Renomeacao: false,
@@ -15372,10 +15372,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OJacareI_PaulodeTarso: Obra = {
+export const OJacareI_PauloDeTarso: Obra = {
     ID: 754,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Jacaré I`,
     Renomeacao: false,
@@ -15411,10 +15411,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const JacareII_PaulodeTarso: Obra = {
+export const JacareII_PauloDeTarso: Obra = {
     ID: 755,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Jacaré II`,
     Renomeacao: false,
@@ -15450,10 +15450,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OJogadorBrasileiro_PaulodeTarso: Obra = {
+export const OJogadorBrasileiro_PauloDeTarso: Obra = {
     ID: 756,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Jogador Brasileiro`,
     Renomeacao: false,
@@ -15489,10 +15489,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OLeao_PaulodeTarso: Obra = {
+export const OLeao_PauloDeTarso: Obra = {
     ID: 757,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Leão`,
     Renomeacao: false,
@@ -15528,10 +15528,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const Lontra_PaulodeTarso: Obra = {
+export const Lontra_PauloDeTarso: Obra = {
     ID: 758,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Lontra`,
     Renomeacao: false,
@@ -15567,10 +15567,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const MaeeFilhoteDinossauro_PaulodeTarso: Obra = {
+export const MaeeFilhoteDinossauro_PauloDeTarso: Obra = {
     ID: 759,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Mãe e Filhote Dinossauro`,
     Renomeacao: false,
@@ -15606,10 +15606,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OPapagaio_PaulodeTarso: Obra = {
+export const OPapagaio_PauloDeTarso: Obra = {
     ID: 760,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Papagaio`,
     Renomeacao: false,
@@ -15645,10 +15645,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OsPatinhos_PaulodeTarso: Obra = {
+export const OsPatinhos_PauloDeTarso: Obra = {
     ID: 761,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Os Patinhos`,
     Renomeacao: false,
@@ -15684,10 +15684,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OPavao_PaulodeTarso: Obra = {
+export const OPavao_PauloDeTarso: Obra = {
     ID: 762,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Pavão`,
     Renomeacao: false,
@@ -15723,10 +15723,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OPinguim_PaulodeTarso: Obra = {
+export const OPinguim_PauloDeTarso: Obra = {
     ID: 763,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Pinguim`,
     Renomeacao: false,
@@ -15762,10 +15762,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const APiramide_PaulodeTarso: Obra = {
+export const APiramide_PauloDeTarso: Obra = {
     ID: 764,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Pirâmide`,
     Renomeacao: false,
@@ -15801,10 +15801,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OPolvo_PaulodeTarso: Obra = {
+export const OPolvo_PauloDeTarso: Obra = {
     ID: 765,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Polvo`,
     Renomeacao: false,
@@ -15840,10 +15840,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OTamandua_PaulodeTarso: Obra = {
+export const OTamandua_PauloDeTarso: Obra = {
     ID: 766,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Tamandua`,
     Renomeacao: false,
@@ -15880,10 +15880,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ORinoceronte_PaulodeTarso: Obra = {
+export const ORinoceronte_PauloDeTarso: Obra = {
     ID: 768,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Rinoceronte`,
     Renomeacao: false,
@@ -15920,10 +15920,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OSaciPerere_PaulodeTarso: Obra = {
+export const OSaciPerere_PauloDeTarso: Obra = {
     ID: 769,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Saci Perere`,
     Renomeacao: false,
@@ -15960,10 +15960,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ASereia_PaulodeTarso: Obra = {
+export const ASereia_PauloDeTarso: Obra = {
     ID: 770,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Sereia`,
     Renomeacao: false,
@@ -15999,10 +15999,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AsTartarugas_PaulodeTarso: Obra = {
+export const AsTartarugas_PauloDeTarso: Obra = {
     ID: 771,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `As Tartarugas`,
     Renomeacao: false,
@@ -16038,10 +16038,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const ATartarugaGigante_PaulodeTarso: Obra = {
+export const ATartarugaGigante_PauloDeTarso: Obra = {
     ID: 772,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Tartaruga Gigante`,
     Renomeacao: false,
@@ -16078,10 +16078,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const OUrso_PaulodeTarso: Obra = {
+export const OUrso_PauloDeTarso: Obra = {
     ID: 773,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `O Urso`,
     Renomeacao: false,
@@ -16118,10 +16118,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AVaca_PaulodeTarso: Obra = {
+export const AVaca_PauloDeTarso: Obra = {
     ID: 774,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Vaca`,
     Renomeacao: false,
@@ -16158,10 +16158,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AViscondedeSabugosa_PaulodeTarso: Obra = {
+export const AViscondeDeSabugosa_PauloDeTarso: Obra = {
     ID: 775,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Visconde de Sabugosa`,
     Renomeacao: false,
@@ -16198,10 +16198,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AZebra_PaulodeTarso: Obra = {
+export const AZebra_PauloDeTarso: Obra = {
     ID: 776,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `A Zebra`,
     Renomeacao: false,
@@ -16237,7 +16237,7 @@ export const AZebra_PaulodeTarso: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const MarcodaInauguracaodaAvenidaPaulodeFrontin_Desconhecida: Obra = {
+export const MarcodaInauguracaodaAvenidaPauloDeFrontin_Desconhecida: Obra = {
     ID: 777,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -16311,10 +16311,10 @@ export const PisodePedeMolequedaLadeiraSouzaDoca_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const BancodaPracadosBichinhosI_PaulodeTarso: Obra = {
+export const BancodaPracadosBichinhosI_PauloDeTarso: Obra = {
     ID: 779,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Banco da Praça dos Bichinhos I`,
     Renomeacao: false,
@@ -16349,10 +16349,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     LugarRealocacao: undefined,
 };
 
-export const BancodaPracadosBichinhosII_PaulodeTarso: Obra = {
+export const BancodaPracadosBichinhosII_PauloDeTarso: Obra = {
     ID: 780,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Banco da Praça dos Bichinhos II`,
     Renomeacao: false,
@@ -16387,10 +16387,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     LugarRealocacao: undefined,
 };
 
-export const BancodaPracadosBichinhosIII_PaulodeTarso: Obra = {
+export const BancodaPracadosBichinhosIII_PauloDeTarso: Obra = {
     ID: 781,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Banco da Praça dos Bichinhos III`,
     Renomeacao: false,
@@ -16425,10 +16425,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     LugarRealocacao: undefined,
 };
 
-export const BancodaPracadosBichinhosIV_PaulodeTarso: Obra = {
+export const BancodaPracadosBichinhosIV_PauloDeTarso: Obra = {
     ID: 782,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Banco da Praça dos Bichinhos IV`,
     Renomeacao: false,
@@ -16463,10 +16463,10 @@ A peça foi executada a partir dos anos de 1970 do seculo XX até o ano de 2000.
     LugarRealocacao: undefined,
 };
 
-export const BancodaPracadosBichinhosV_PaulodeTarso: Obra = {
+export const BancodaPracadosBichinhosV_PauloDeTarso: Obra = {
     ID: 783,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Banco da Praça dos Bichinhos V`,
     Renomeacao: false,
@@ -16768,10 +16768,10 @@ Originariamente existia uma peça em ferro fundido produzido nas Fundições do 
     LugarRealocacao: undefined,
 };
 
-export const ChafarizdeGrandjeandeMontigny_AugusteHenriVictorGrandjeandeMontigny: Obra = {
+export const ChafarizdeGrandjeanDeMontigny_AugusteHenriVictorGrandjeanDeMontigny: Obra = {
     ID: 792,
     Imagem: undefined,
-    Autores: [artistas.AugusteHenriVictorGrandjeandeMontigny],
+    Autores: [artistas.AugusteHenriVictorGrandjeanDeMontigny],
     Promotor: undefined,
     Titulo: `Chafariz de Grandjean de Montigny`,
     Renomeacao: false,
@@ -17592,7 +17592,7 @@ export const LagodoRecantodoTrovador_JoseMagalhaes: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcodaInauguracaoPracaEdmundoRego_Desconhecida: Obra = {
+export const MarcodaInauguracaoPracaEdmunDoRego_Desconhecida: Obra = {
     ID: 822,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -17629,7 +17629,7 @@ export const MarcodaInauguracaoPracaEdmundoRego_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CaramanchaodaPracaEdmundoRego_AzevedoNeto: Obra = {
+export const CaramanchaodaPracaEdmunDoRego_AzevedoNeto: Obra = {
     ID: 823,
     Imagem: undefined,
     Autores: [artistas.AzevedoNeto],
@@ -17883,7 +17883,7 @@ export const Zagallo_EdgarDuvivier: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PaulodeFrontinnaCidadeNova_AntonioCarlosBettiniLiboredo_LuciomardeJesus: Obra = {
+export const PauloDeFrontinnaCidadeNova_AntonioCarlosBettiniLiboredo_LuciomardeJesus: Obra = {
     ID: 834,
     Imagem: undefined,
     Autores: [
@@ -18148,7 +18148,7 @@ export const LampadarioSuspensodoCorredorCultural_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Guarda_corpodoCampodeSaoCristovao_Desconhecida: Obra = {
+export const Guarda_corpodoCampoDeSaoCristovao_Desconhecida: Obra = {
     ID: 836,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -18222,7 +18222,7 @@ export const LampadariodaAssembleiaLegislativa_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const LampadariodoCampodeSantana_Desconhecida: Obra = {
+export const LampadariodoCampoDeSantana_Desconhecida: Obra = {
     ID: 846,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -19001,7 +19001,7 @@ export const LampadariodoMinisteriodaFazenda_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const LampadariodaAmuradapeloCampodeSaoCristovao_Desconhecida: Obra = {
+export const LampadariodaAmuradapeloCampoDeSaoCristovao_Desconhecida: Obra = {
     ID: 872,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -19150,10 +19150,10 @@ export const AryBarroso_LeoSantana: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const CoretodoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
+export const CoretodoJardimdoMeier_PedroFernandesVianaDaSilva: Obra = {
     ID: 878,
     Imagem: undefined,
-    Autores: [artistas.PedroFernandesVianadaSilva],
+    Autores: [artistas.PedroFernandesVianaDaSilva],
     Promotor: undefined,
     Titulo: `Coreto do Jardim do Méier`,
     Renomeacao: false,
@@ -19299,10 +19299,10 @@ export const AtenadoJardimdoMeier_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const RelogiodoMeierI_MayerhogereToledo: Obra = {
+export const RelogiodoMeierI_MayerhogerEToledo: Obra = {
     ID: 882,
     Imagem: undefined,
-    Autores: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogerEToledo],
     Promotor: undefined,
     Titulo: `Relógio do Méier I`,
     Renomeacao: false,
@@ -19336,10 +19336,10 @@ export const RelogiodoMeierI_MayerhogereToledo: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcodoMeier_MayerhogereToledo: Obra = {
+export const MarcodoMeier_MayerhogerEToledo: Obra = {
     ID: 883,
     Imagem: undefined,
-    Autores: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogerEToledo],
     Promotor: undefined,
     Titulo: `Marco do Méier`,
     Renomeacao: false,
@@ -19559,10 +19559,10 @@ export const OratorioaSaoJorgedoCachambiII_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CascatadoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
+export const CascatadoJardimdoMeier_PedroFernandesVianaDaSilva: Obra = {
     ID: 891,
     Imagem: undefined,
-    Autores: [artistas.PedroFernandesVianadaSilva],
+    Autores: [artistas.PedroFernandesVianaDaSilva],
     Promotor: undefined,
     Titulo: `Cascata do Jardim do Méier`,
     Renomeacao: false,
@@ -19596,14 +19596,14 @@ export const CascatadoJardimdoMeier_PedroFernandesVianadaSilva: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CascatadoParqueAriBarroso_PedroPaulinoGuimaraes_RenatoPrimaveraMarinho_WalterCurvelodeMendonca_AlmirdeLimaMachado_PauloCelsoPrado: Obra = {
+export const CascatadoParqueAriBarroso_PedroPaulinoGuimaraes_RenatoPrimaveraMarinho_WalterCurveloDeMendonca_AlmirDeLimaMachado_PauloCelsoPrado: Obra = {
     ID: 894,
     Imagem: undefined,
     Autores: [
         artistas.PedroPaulinoGuimaraes,
         artistas.RenatoPrimaveraMarinho,
-        artistas.WalterCurvelodeMendonca,
-        artistas.AlmirdeLimaMachado,
+        artistas.WalterCurveloDeMendonca,
+        artistas.AlmirDeLimaMachado,
         artistas.PauloCelsoPrado,
     ],
     Promotor: undefined,
@@ -19752,10 +19752,10 @@ Esta desativado desde maio de 2017.`,
     LugarRealocacao: undefined,
 };
 
-export const ChafarizdaPracaJoaoBerchemman_AdilsonRoquedosSantos: Obra = {
+export const ChafarizdaPracaJoaoBerchemman_AdilsonRoqueDosSantos: Obra = {
     ID: 898,
     Imagem: undefined,
-    Autores: [artistas.AdilsonRoquedosSantos],
+    Autores: [artistas.AdilsonRoqueDosSantos],
     Promotor: undefined,
     Titulo: `Chafariz da Praça João Berchemman`,
     Renomeacao: false,
@@ -20088,7 +20088,7 @@ export const MarcodeVilaKosmos_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MonsenhorAlvesdaRocha_Desconhecida: Obra = {
+export const MonsenhorAlvesDaRocha_Desconhecida: Obra = {
     ID: 909,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -20720,11 +20720,11 @@ export const OratorioaSaoJorgedeQuintino_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcoàPrimeirafotonaÀmericadoSul_Daguerreotipo_JairdeSouza_AdoAzevedo: Obra = {
+export const MarcoàPrimeirafotonaÀmericadoSul_Daguerreotipo_JairDeSouza_AdoAzevedo: Obra = {
     ID: 927,
     Imagem: undefined,
     Autores: [
-        artistas.JairdeSouza,
+        artistas.JairDeSouza,
         artistas.AdoAzevedo,
     ],
     Promotor: undefined,
@@ -20912,10 +20912,10 @@ export const HonorioGurgel_ChristinaMotta: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CoelhoNeto_JoasPereiradosPassos: Obra = {
+export const CoelhoNeto_JoasPereiraDosPassos: Obra = {
     ID: 932,
     Imagem: undefined,
-    Autores: [artistas.JoasPereiradosPassos],
+    Autores: [artistas.JoasPereiraDosPassos],
     Promotor: undefined,
     Titulo: `Coelho Neto`,
     Renomeacao: false,
@@ -20987,7 +20987,7 @@ Coreto octogonal, sobre embasamento em concreto, com leve estrutura em ferro fun
     LugarRealocacao: undefined,
 };
 
-export const CoretodeRicardodeAlbuquerque_CeliaLamelle: Obra = {
+export const CoretodeRicardoDeAlbuquerque_CeliaLamelle: Obra = {
     ID: 934,
     Imagem: undefined,
     Autores: [artistas.CeliaLamelle],
@@ -21101,7 +21101,7 @@ export const DomHelderCamara_OttoDumovich: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const OratorioaSaoJorgedePilares_Desconhecida: Obra = {
+export const OratorioaSaoJorgeDePilares_Desconhecida: Obra = {
     ID: 937,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -21400,7 +21400,7 @@ export const MarcoaCopernico_Archi5ArquitetosAssociados: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Marco6daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const Marco6daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 947,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -21666,7 +21666,7 @@ Na placa original rende homenagem "Ao Divino Mestre, a Prefeitura e aos moraoore
     ],
 };
 
-export const GuilhermedaSilveira_LeonardoLima: Obra = {
+export const GuilhermeDaSilveira_LeonardoLima: Obra = {
     ID: 954,
     Imagem: undefined,
     Autores: [artistas.LeonardoLima],
@@ -21855,12 +21855,12 @@ Desativado em data desconhecida`,
     LugarRealocacao: undefined,
 };
 
-export const OratorioaEscravaAnastaciaeNossaSenhoraAparecida_PedroAugusto_FernandodaSilvaAbreu: Obra = {
+export const OratorioaEscravaAnastaciaeNossaSenhoraAparecida_PedroAugusto_FernandoDaSilvaAbreu: Obra = {
     ID: 959,
     Imagem: undefined,
     Autores: [
         artistas.PedroAugusto,
-        artistas.FernandodaSilvaAbreu,
+        artistas.FernandoDaSilvaAbreu,
     ],
     Promotor: undefined,
     Titulo: `Oratório a Escrava Anastácia e Nossa Senhora Aparecida ...`,
@@ -22459,7 +22459,7 @@ export const SantaSofia_MiguelPastor: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Marco11daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const Marco11daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 977,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22496,7 +22496,7 @@ export const Marco11daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcodaFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const MarcodaFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 978,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22533,7 +22533,7 @@ export const MarcodaFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CruzeirodeSantaCruz_Desconhecida: Obra = {
+export const CruzeiroDeSantaCruz_Desconhecida: Obra = {
     ID: 979,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22572,7 +22572,7 @@ export const CruzeirodeSantaCruz_Desconhecida: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const PainelaosExpedicionariosdeSantaCruz_Desconhecida: Obra = {
+export const PainelaosExpedicionariosDeSantaCruz_Desconhecida: Obra = {
     ID: 980,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22798,7 +22798,7 @@ export const MarcoICC_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcodoAbastecimentodeSantaCruz_Desconhecida: Obra = {
+export const MarcodoAbastecimentoDeSantaCruz_Desconhecida: Obra = {
     ID: 992,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22874,7 +22874,7 @@ Funcionando como comporta com arcos de dimensões variadas que eram deixados abe
     LugarRealocacao: undefined,
 };
 
-export const Marco9daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const Marco9daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 994,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22911,7 +22911,7 @@ export const Marco9daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const Marco10daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const Marco10daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 995,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22948,7 +22948,7 @@ export const Marco10daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const BicadeCantariadeSantaCruz_Desconhecida: Obra = {
+export const BicadeCantariaDeSantaCruz_Desconhecida: Obra = {
     ID: 996,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -22986,7 +22986,7 @@ Desativado em data desconhecida.`,
     LugarRealocacao: undefined,
 };
 
-export const MarcoComemorativodeSantaCruz_Desconhecida: Obra = {
+export const MarcoComemorativoDeSantaCruz_Desconhecida: Obra = {
     ID: 997,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -23101,7 +23101,7 @@ export const JoseAntonioCiraudo_Desconhecida: Obra = {
     Fatos: [new Fato('data', 'data', 'fato', 'descrição', [], 'cidade')],
 };
 
-export const CesariodeMelo_CLinel: Obra = {
+export const CesarioDeMelo_CLinel: Obra = {
     ID: 1000,
     Imagem: undefined,
     Autores: [artistas.CLinel],
@@ -23255,7 +23255,7 @@ export const CoronelVillagranCabrita_Desconhecida: Obra = {
     ],
 };
 
-export const CoronelHonoriodosSantosPimentel_Desconhecida: Obra = {
+export const CoronelHonorioDosSantosPimentel_Desconhecida: Obra = {
     ID: 1005,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -24049,7 +24049,7 @@ Esse marco marcava as distancias da antiga denominação da Estrada da Pedra`,
     LugarRealocacao: undefined,
 };
 
-export const OratoriodeSaoPedrodeBarradeGuaratiba_Desconhecida: Obra = {
+export const OratorioDeSaoPedrodeBarradeGuaratiba_Desconhecida: Obra = {
     ID: 1032,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -24237,10 +24237,10 @@ Em 2018 a esfera superior foi retirada devido a corrosão. O destino da peça é
     LugarRealocacao: undefined,
 };
 
-export const MarcodaVitoriadaRochaMiranda_CarlosWerneckdeCarvalho: Obra = {
+export const MarcodaVitoriaDaRochaMiranda_CarlosWerneckDeCarvalho: Obra = {
     ID: 1038,
     Imagem: undefined,
-    Autores: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckDeCarvalho],
     Promotor: undefined,
     Titulo: `Marco da Vitória da Rocha Miranda`,
     Renomeacao: false,
@@ -24593,11 +24593,11 @@ export const PisodePedeMolequedaPontedosJesuitas_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CaramanchaodaPracaBaraodeTaquara_DavidXavierdeAzambuja_AzevedoNeto: Obra = {
+export const CaramanchaodaPracaBaraodeTaquara_DavidXavierDeAzambuja_AzevedoNeto: Obra = {
     ID: 1053,
     Imagem: undefined,
     Autores: [
-        artistas.DavidXavierdeAzambuja,
+        artistas.DavidXavierDeAzambuja,
         artistas.AzevedoNeto,
     ],
     Promotor: undefined,
@@ -25194,10 +25194,10 @@ export const PedraTalhada_Desconhecida: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const Capivaras_PaulodeTarso: Obra = {
+export const Capivaras_PauloDeTarso: Obra = {
     ID: 1079,
     Imagem: undefined,
-    Autores: [artistas.PaulodeTarso],
+    Autores: [artistas.PauloDeTarso],
     Promotor: undefined,
     Titulo: `Capivaras`,
     Renomeacao: false,
@@ -26448,10 +26448,10 @@ export const BancodaRuaPadreJuvenal_PedroBruno: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CoretodePaquetaaRenatoAntunes_CarlosWerneckdeCarvalho: Obra = {
+export const CoretodePaquetaaRenatoAntunes_CarlosWerneckDeCarvalho: Obra = {
     ID: 1125,
     Imagem: undefined,
-    Autores: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckDeCarvalho],
     Promotor: undefined,
     Titulo: `Coreto  de Paquetá à Renato Antunes`,
     Renomeacao: false,
@@ -26523,7 +26523,7 @@ export const CruzeirodePaqueta_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PocodeSaoRoque_Desconhecida: Obra = {
+export const PocoDeSaoRoque_Desconhecida: Obra = {
     ID: 1127,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -27958,7 +27958,7 @@ export const AdelinoMoreira_MestreSaul: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const Marco7daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
+export const Marco7daFazendaImperialDeSantaCruz_Desconhecida: Obra = {
     ID: 1168,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -27995,7 +27995,7 @@ export const Marco7daFazendaImperialdeSantaCruz_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const CaisdosPescadoresPierdaPraiadeSaoBento_Desconhecida: Obra = {
+export const CaisdosPescadoresPierdaPraiaDeSaoBento_Desconhecida: Obra = {
     ID: 1169,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -28707,10 +28707,10 @@ export const ManuelBandeira_CelsoAntonio: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const ChafarizMarcodaIlhadoGovernador_PaulodeSouzaPires: Obra = {
+export const ChafarizMarcodaIlhadoGovernador_PauloDeSouzaPires: Obra = {
     ID: 1197,
     Imagem: undefined,
-    Autores: [artistas.PaulodeSouzaPires],
+    Autores: [artistas.PauloDeSouzaPires],
     Promotor: undefined,
     Titulo: `Chafariz Marco da Ilha do Governador`,
     Renomeacao: false,
@@ -29520,10 +29520,10 @@ Bloco maciço esculpido.`,
     LugarRealocacao: undefined,
 };
 
-export const PortaoMonumentaldaFlorestadaTijuca_WladimirAlvesdeSouza: Obra = {
+export const PortaoMonumentaldaFlorestadaTijuca_WladimirAlvesDeSouza: Obra = {
     ID: 1222,
     Imagem: undefined,
-    Autores: [artistas.WladimirAlvesdeSouza],
+    Autores: [artistas.WladimirAlvesDeSouza],
     Promotor: undefined,
     Titulo: `Portão Monumental da Floresta da Tijuca`,
     Renomeacao: false,
@@ -29600,7 +29600,7 @@ Frades esculpidos em gnaisse.`,
 export const PontedeJobdeAlcantara_JobdeAlcantara: Obra = {
     ID: 1223,
     Imagem: undefined,
-    Autores: [artistas.JobdeAlcântara],
+    Autores: [artistas.JobDeAlcantara],
     Promotor: undefined,
     Titulo: `Ponte de Job de Alcântara`,
     Renomeacao: false,
@@ -29713,10 +29713,10 @@ Fonte composta por um mural, onde está instalado um painel de azulejaria com o 
     LugarRealocacao: undefined,
 };
 
-export const BancodoLargodaCascatinha_RaymundodeCastroMaia: Obra = {
+export const BancodoLargodaCascatinha_RaymundoDeCastroMaia: Obra = {
     ID: 1226,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundoDeCastroMaia],
     Promotor: undefined,
     Titulo: `Banco do Largo da Cascatinha`,
     Renomeacao: false,
@@ -29865,10 +29865,10 @@ Pequena ponte para a travessia dos pedestres sobre o rio.`,
     LugarRealocacao: undefined,
 };
 
-export const CampanariodaCapelaMayrink_WladimirAlvesdeSousa: Obra = {
+export const CampanariodaCapelaMayrink_WladimirAlvesDeSousa: Obra = {
     ID: 1231,
     Imagem: undefined,
-    Autores: [artistas.WladimirAlvesdeSousa],
+    Autores: [artistas.WladimirAlvesDeSousa],
     Promotor: undefined,
     Titulo: `Campanário da Capela Mayrink`,
     Renomeacao: false,
@@ -29903,10 +29903,10 @@ Campanário com sino em bronze. Foi edificado na época da reforma na Capela May
     LugarRealocacao: undefined,
 };
 
-export const BancodoJardimdaCapelaMayrink_RaymundodeCastroMaia: Obra = {
+export const BancodoJardimdaCapelaMayrink_RaymundoDeCastroMaia: Obra = {
     ID: 1232,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundoDeCastroMaia],
     Promotor: undefined,
     Titulo: `Banco do Jardim da Capela Mayrink`,
     Renomeacao: false,
@@ -29941,10 +29941,10 @@ Banco revestido por um mosaico de cacos de azulejos.`,
     LugarRealocacao: undefined,
 };
 
-export const AmuradadoJardimdaCapelaMayrink_RaymundodeCastroMaia: Obra = {
+export const AmuradadoJardimdaCapelaMayrink_RaymundoDeCastroMaia: Obra = {
     ID: 1233,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaia],
+    Autores: [artistas.RaymundoDeCastroMaia],
     Promotor: undefined,
     Titulo: `Amurada do Jardim da Capela Mayrink`,
     Renomeacao: false,
@@ -30170,10 +30170,10 @@ Placa comemorativa de uma restauração do lago`,
     LugarRealocacao: undefined,
 };
 
-export const PortaodoAcudeSolidao_WladimirAlvesdeSouza: Obra = {
+export const PortaodoAcudeSolidao_WladimirAlvesDeSouza: Obra = {
     ID: 1239,
     Imagem: undefined,
-    Autores: [artistas.WladimirAlvesdeSouza],
+    Autores: [artistas.WladimirAlvesDeSouza],
     Promotor: undefined,
     Titulo: `Portão do Açude Solidão`,
     Renomeacao: false,
@@ -30980,7 +30980,7 @@ export const MarcoRodoviariodoCampodeMarte_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcoRodoviarioIdaAvenidaCesariodeMelo_Desconhecida: Obra = {
+export const MarcoRodoviarioIdaAvenidaCesarioDeMelo_Desconhecida: Obra = {
     ID: 1260,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -31092,7 +31092,7 @@ export const MarcoRodoviariodoLargodaMaconaria_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcoRodoviarioIIdaAvenidaCesariodeMelo_Desconhecida: Obra = {
+export const MarcoRodoviarioIIdaAvenidaCesarioDeMelo_Desconhecida: Obra = {
     ID: 1263,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -31130,7 +31130,7 @@ Esse marco marcava as distâncias da Estrada Rio-São Paulo`,
     LugarRealocacao: undefined,
 };
 
-export const MarcoRodoviarioIIIdeAvenidaCesariodeMelo_Desconhecida: Obra = {
+export const MarcoRodoviarioIIIdeAvenidaCesarioDeMelo_Desconhecida: Obra = {
     ID: 1264,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -32106,10 +32106,10 @@ Vaso fixada em um muro.`,
     LugarRealocacao: undefined,
 };
 
-export const FontedeAzulejosIdaCascatinha_RaymundodeCastroMaya: Obra = {
+export const FontedeAzulejosIdaCascatinha_RaymundoDeCastroMaya: Obra = {
     ID: 1293,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundoDeCastroMaya],
     Promotor: undefined,
     Titulo: `Fonte de Azulejos I da Cascatinha`,
     Renomeacao: false,
@@ -32258,10 +32258,10 @@ O Lago das Fadas, nome dado pelo Barão d&rsquo;Escragnolle, foi construído num
     LugarRealocacao: undefined,
 };
 
-export const FontedoLagodasFadas_WaldimirAlvesdeSouza: Obra = {
+export const FontedoLagodasFadas_WaldimirAlvesDeSouza: Obra = {
     ID: 1298,
     Imagem: undefined,
-    Autores: [artistas.WaldimirAlvesdeSouza],
+    Autores: [artistas.WaldimirAlvesDeSouza],
     Promotor: undefined,
     Titulo: `Fonte do Lago das Fadas`,
     Renomeacao: false,
@@ -32337,10 +32337,10 @@ Desativado em data desconhecida.`,
     LugarRealocacao: undefined,
 };
 
-export const FontedoLargodoBomRetiro_RaymundodeCastroMaya: Obra = {
+export const FontedoLargodoBomRetiro_RaymundoDeCastroMaya: Obra = {
     ID: 1300,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundoDeCastroMaya],
     Promotor: undefined,
     Titulo: `Fonte do Largo do Bom Retiro`,
     Renomeacao: false,
@@ -32605,7 +32605,7 @@ Busto com a figura do homenageado.`,
     LugarRealocacao: undefined,
 };
 
-export const HeitordaSilvaCosta_EdgarDuvivier: Obra = {
+export const HeitorDaSilvaCosta_EdgarDuvivier: Obra = {
     ID: 1308,
     Imagem: undefined,
     Autores: [artistas.EdgarDuvivier],
@@ -32757,10 +32757,10 @@ export const BancodaFontedoChororo_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarechalMascarenhasdeMorais_ElzaCasancaodeMedeiros: Obra = {
+export const MarechalMascarenhasDeMorais_ElzaCasancaoDeMedeiros: Obra = {
     ID: 1315,
     Imagem: undefined,
-    Autores: [artistas.ElzaCasancaodeMedeiros],
+    Autores: [artistas.ElzaCasancaoDeMedeiros],
     Promotor: undefined,
     Titulo: `Marechal Mascarenhas de Morais`,
     Renomeacao: false,
@@ -33249,10 +33249,10 @@ export const PontedoRestaurantedoParquedoFlamengo_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PassarelaFernandoMorcorvo_SidneyGomesdosSantos: Obra = {
+export const PassarelaFernandoMorcorvo_SidneyGomesDosSantos: Obra = {
     ID: 1335,
     Imagem: undefined,
-    Autores: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesDosSantos],
     Promotor: undefined,
     Titulo: `Passarela Fernando Morcorvo`,
     Renomeacao: false,
@@ -33287,10 +33287,10 @@ Tem cerca de 85 metros de extensão e obedece, como as outras do Parque, num arc
     LugarRealocacao: undefined,
 };
 
-export const PassarelaAercioSampaio_SidneyGomesdosSantos: Obra = {
+export const PassarelaAercioSampaio_SidneyGomesDosSantos: Obra = {
     ID: 1336,
     Imagem: undefined,
-    Autores: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesDosSantos],
     Promotor: undefined,
     Titulo: `Passarela Aércio Sampaio`,
     Renomeacao: false,
@@ -33324,10 +33324,10 @@ export const PassarelaAercioSampaio_SidneyGomesdosSantos: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PassarelaGeneralCaiadodeCastro_SidneyGomesdosSantos: Obra = {
+export const PassarelaGeneralCaiadoDeCastro_SidneyGomesDosSantos: Obra = {
     ID: 1337,
     Imagem: undefined,
-    Autores: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesDosSantos],
     Promotor: undefined,
     Titulo: `Passarela General Caiado de Castro`,
     Renomeacao: false,
@@ -33361,10 +33361,10 @@ export const PassarelaGeneralCaiadodeCastro_SidneyGomesdosSantos: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const PassarelaIrineuMarinho_SidneyGomesdosSantos: Obra = {
+export const PassarelaIrineuMarinho_SidneyGomesDosSantos: Obra = {
     ID: 1338,
     Imagem: undefined,
-    Autores: [artistas.SidneyGomesdosSantos],
+    Autores: [artistas.SidneyGomesDosSantos],
     Promotor: undefined,
     Titulo: `Passarela Irineu Marinho`,
     Renomeacao: false,
@@ -33620,10 +33620,10 @@ export const Guarda_corpodaCidadedasCriancas_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const LabirintodaCidadedasCriancas_CarlosWerneckdeCarvalho: Obra = {
+export const LabirintodaCidadedasCriancas_CarlosWerneckDeCarvalho: Obra = {
     ID: 1345,
     Imagem: undefined,
-    Autores: [artistas.CarlosWerneckdeCarvalho],
+    Autores: [artistas.CarlosWerneckDeCarvalho],
     Promotor: undefined,
     Titulo: `Labirinto da Cidade das Crianças`,
     Renomeacao: false,
@@ -33842,10 +33842,10 @@ export const Lampadario_Poste_doParquedoFlamengo_RichardKelly: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const EsculturadaPraiadoFlamengo_JorgedosAnjos: Obra = {
+export const EsculturadaPraiadoFlamengo_JorgeDosAnjos: Obra = {
     ID: 1351,
     Imagem: undefined,
-    Autores: [artistas.JorgedosAnjos],
+    Autores: [artistas.JorgeDosAnjos],
     Promotor: undefined,
     Titulo: `Escultura da Praia do Flamengo`,
     Renomeacao: false,
@@ -34030,7 +34030,7 @@ Inaugurado nos anos de 1930, omarco tem na sua face frontal, a indicação ERF (
     LugarRealocacao: undefined,
 };
 
-export const MoacirdeAlmeida_deposito_HonorioPecanha: Obra = {
+export const MoacirDeAlmeida_deposito_HonorioPecanha: Obra = {
     ID: 1357,
     Imagem: undefined,
     Autores: [artistas.HonorioPecanha],
@@ -34181,10 +34181,10 @@ export const AtaulfodePaiva_deposito_UgoTaddei: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const RelogiodoMeierII_MayerhogereToledo: Obra = {
+export const RelogiodoMeierII_MayerhogerEToledo: Obra = {
     ID: 1363,
     Imagem: undefined,
-    Autores: [artistas.MayerhogereToledo],
+    Autores: [artistas.MayerhogerEToledo],
     Promotor: undefined,
     Titulo: `Relógio do Méier II`,
     Renomeacao: false,
@@ -34442,7 +34442,7 @@ export const ChafarizNetuno_GabrielDubray: Obra = {
     Execucao: true,
 };
 
-export const ChafarizdoCampodeSaoCristovao_deposito_AugusteMartins: Obra = {
+export const ChafarizdoCampoDeSaoCristovao_deposito_AugusteMartins: Obra = {
     ID: 1373,
     Imagem: undefined,
     Autores: [artistas.AugusteMartins],
@@ -34672,7 +34672,7 @@ Desativado desde o ano de 2004.`,
     LugarRealocacao: undefined,
 };
 
-export const MarechalMascarenhasdeMoraisemBonsucesso_Desconhecida: Obra = {
+export const MarechalMascarenhasDeMoraisemBonsucesso_Desconhecida: Obra = {
     ID: 1390,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -34754,7 +34754,7 @@ export const Quorus_HelenaTownsend: Obra = {
 export const RelogiodaTaquara_deposito_FlavioFerreira: Obra = {
     ID: 1393,
     Imagem: undefined,
-    Autores: [artistas.FlavioFerreira],
+    Autores: [artistas.FlavioDeOliveiraFerreira],
     Promotor: undefined,
     Titulo: `Relógio da Taquara - depósito`,
     Renomeacao: false,
@@ -35772,10 +35772,10 @@ Construção em arco em pedra para a passagem do rio do lago do Açude Solidão`
     LugarRealocacao: undefined,
 };
 
-export const FontedaPonteJobdeAlcantara_RaymundodeCastroMaya: Obra = {
+export const FontedaPonteJobdeAlcantara_RaymundoDeCastroMaya: Obra = {
     ID: 1425,
     Imagem: undefined,
-    Autores: [artistas.RaymundodeCastroMaya],
+    Autores: [artistas.RaymundoDeCastroMaya],
     Promotor: undefined,
     Titulo: `Fonte da Ponte Job de Alcântara`,
     Renomeacao: false,
@@ -35895,7 +35895,7 @@ export const Cazuza_ChristinaMotta_HelioPelegrino: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const PisodeParalelepipedodaRuaRibeiradeAlmeida_Desconhecida: Obra = {
+export const PisodeParalelepipedodaRuaRibeiraDeAlmeida_Desconhecida: Obra = {
     ID: 1430,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -35932,7 +35932,7 @@ export const PisodeParalelepipedodaRuaRibeiradeAlmeida_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcoRodoviarioIVdeAvenidaCesariodeMelo_Desconhecida: Obra = {
+export const MarcoRodoviarioIVdeAvenidaCesarioDeMelo_Desconhecida: Obra = {
     ID: 1431,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -36308,7 +36308,7 @@ export const ArturRios_Desconhecida: Obra = {
     Fatos: [new Fato('', '', 'Propriedade', 'Pública', [], 'Rio de Janeiro')],
 };
 
-export const AMariadoCarmoNabuco_Desconhecida: Obra = {
+export const AMariaDoCarmoNabuco_Desconhecida: Obra = {
     ID: 1444,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],
@@ -37038,7 +37038,7 @@ export const MarcodaPracaJoaoEsberard_Desconhecida: Obra = {
     LugarRealocacao: undefined,
 };
 
-export const MarcodoCaminhodeSantiago_Desconhecida: Obra = {
+export const MarcodoCaminhoDeSantiago_Desconhecida: Obra = {
     ID: 1467,
     Imagem: undefined,
     Autores: [artistas.Desconhecida],

@@ -18,9 +18,9 @@ export const ReynaldoRoels: DiretorCurso = {
     ],
 };
 
-export const AmilcardeCastro: DiretorCurso = {
+export const AmilcarDeCastro: DiretorCurso = {
     // TODO: n seria reitor??
-    Pessoa: pessoas.AmilcardeCastro,
+    Pessoa: pessoas.AmilcarDeCastro,
     Mandatos: [
         {
             Instituicao: 'Escola Guinard',

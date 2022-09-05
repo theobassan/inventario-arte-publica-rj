@@ -47,9 +47,9 @@ export const CarlosEduardoAgostiniNovaes: Secretario = {
     ],
 };
 
-export const HelenaMariaPortoSeverodaCosta: Secretario = {
+export const HelenaMariaPortoSeveroDaCosta: Secretario = {
     ID: undefined,
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Mandatos: [
         {
             NomeSecretaria: 'Secretaria Municipal de Cultura, Turismo e Esportes',

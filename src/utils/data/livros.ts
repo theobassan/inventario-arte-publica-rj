@@ -11,7 +11,7 @@ export const Neoconcretismo_RonaldoBrito: Livro = {
     Data: '1985',
     Citados: [
         pessoas.FerreiraGullar,
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
         pessoas.FranzWeissmann,
         pessoas.LygiaClark,
         pessoas.LygiaPape,

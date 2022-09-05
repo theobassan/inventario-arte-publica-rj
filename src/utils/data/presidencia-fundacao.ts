@@ -1,8 +1,8 @@
 import PresidenteFundacao from '../../domain/presidente_fundacao';
 import * as pessoas from './pessoa';
 
-export const HelenaMariaPortoSeverodaCosta: PresidenteFundacao = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta: PresidenteFundacao = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Mandatos: [
         {
             NomeFundacao: 'Fundação Biblioteca Nacional',

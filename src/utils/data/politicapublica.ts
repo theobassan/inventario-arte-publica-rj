@@ -15,9 +15,11 @@ export const EsculturasUrbanas: PoliticaPublica = {
     Pais: 'Brasil',
     Tipo: 'Municipal',
     Secretaria: 'Secretaria Municipal de Cultura',
-    Coordenadores: [pessoas.ReynaldoRoels],
+    Coordenadores: [
+        pessoas.ReynaldoRoels,
+    ],
     Idealizadores: [
-        pessoas.HelenaMariaPortoSeverodaCosta,
+        pessoas.HelenaMariaPortoSeveroDaCosta,
         pessoas.EverardoMiranda,
     ],
     ComissaoDeSelecao: [
@@ -25,12 +27,10 @@ export const EsculturasUrbanas: PoliticaPublica = {
         pessoas.PauloVenancioFilho,
         pessoas.LauroCavalcanti,
         pessoas.FernandoCocchiarale,
-        pessoas.PauloSergioDuarte,
-        pessoas.PauloHerkenhoff,
     ],
     Obras: [
         obras.OPassante_JoseResende,
-        obras.SemTitulo_AmilcardeCastro,
+        obras.SemTitulo_AmilcarDeCastro,
         obras.RetanguloVazado_FranzWeissmann,
         obras.SemTitulo_IvensMachado,
         obras.EsculturaParaORio_WaltercioCaldas,

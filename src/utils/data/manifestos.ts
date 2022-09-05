@@ -13,7 +13,7 @@ export const ManisfestoNeoconcreto1959: Manifesto = {
         pessoas.FerreiraGullar,
     ],
     Assinantes: [
-        pessoas.AmilcardeCastro,
+        pessoas.AmilcarDeCastro,
         pessoas.FranzWeissmann,
         pessoas.LygiaClark,
         pessoas.LygiaPape,

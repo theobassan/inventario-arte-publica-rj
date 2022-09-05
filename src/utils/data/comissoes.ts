@@ -9,7 +9,7 @@ export const ComissaoDaPracaXV: Comissao = {
     Pais: 'Brasil',
     DataInicio: undefined,
     DataFim: undefined,
-    Coordenadores: [pessoas.HelenaMariaPortoSeverodaCosta],
+    Coordenadores: [pessoas.HelenaMariaPortoSeveroDaCosta],
     Participantes: undefined,
     IntituicsoesEnvolvidas: [
         'Centro Cultural Banco do Brasil',

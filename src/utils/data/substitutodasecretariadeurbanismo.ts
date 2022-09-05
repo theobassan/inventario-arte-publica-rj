@@ -16,9 +16,9 @@ export const MariaMadalenaSaintMartinAstacio: Secretario = {
     ],
 };
 
-export const MauroBarataSoaresdeFigueiredo: Secretario = {
+export const MauroBarataSoaresDeFigueiredo: Secretario = {
     ID: undefined,
-    Pessoa: pessoas.MauroBarataSoaresdeFigueiredo,
+    Pessoa: pessoas.MauroBarataSoaresDeFigueiredo,
     Mandatos: [
         {
             NomeSecretaria: 'Secretaria Municipal de Urbanismo',

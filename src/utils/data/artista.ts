@@ -9,8 +9,8 @@ export const FundicaoValDOsne: Artista = {
     Pessoa: pessoas.FundicaoValDOsne,
 };
 
-export const IoledeFreitas: Artista = {
-    Pessoa: pessoas.IoledeFreitas,
+export const IoleDeFreitas: Artista = {
+    Pessoa: pessoas.IoleDeFreitas,
 };
 
 export const Leocares: Artista = {
@@ -76,8 +76,8 @@ export const EscritorioPontualAssociados: Artista = {
     Pessoa: pessoas.Desconhecida,
 };
 
-export const EduardodeSa: Artista = {
-    Pessoa: pessoas.EduardodeSa,
+export const EduardoDeSa: Artista = {
+    Pessoa: pessoas.EduardoDeSa,
 };
 
 export const IrmãosBernardini: Artista = {
@@ -192,8 +192,8 @@ export const TitoBernucci: Artista = {
     Pessoa: pessoas.TitoBernucci,
 };
 
-export const MariadaGloriaVianaPatrasso: Artista = {
-    Pessoa: pessoas.MariadaGloriaVianaPatrasso,
+export const MariaDaGloriaVianaPatrasso: Artista = {
+    Pessoa: pessoas.MariaDaGloriaVianaPatrasso,
 };
 
 export const JoaoFilgueirasLima: Artista = {
@@ -224,8 +224,8 @@ export const LouisRochet: Artista = {
     Pessoa: pessoas.LouisRochet,
 };
 
-export const JoasPereiradosPassos: Artista = {
-    Pessoa: pessoas.JoasPereiradosPassos,
+export const JoasPereiraDosPassos: Artista = {
+    Pessoa: pessoas.JoasPereiraDosPassos,
 };
 
 export const Joceil: Artista = {
@@ -276,8 +276,8 @@ export const PierreLaviron: Artista = {
     Pessoa: pessoas.PierreLaviron,
 };
 
-export const DeoclecianoMartinsdeOliveiraFilho: Artista = {
-    Pessoa: pessoas.DeoclecianoMartinsdeOliveiraFilho,
+export const DeoclecianoMartinsDeOliveiraFilho: Artista = {
+    Pessoa: pessoas.DeoclecianoMartinsDeOliveiraFilho,
 };
 
 export const PhilippeGarnier: Artista = {
@@ -316,8 +316,8 @@ export const AugusteFrancoisMarieGlaziou: Artista = {
     Pessoa: pessoas.AugusteFrancoisMarieGlaziou,
 };
 
-export const DjaniradaMottaeSilva: Artista = {
-    Pessoa: pessoas.DjaniradaMottaeSilva,
+export const DjaniraDaMottaESilva: Artista = {
+    Pessoa: pessoas.DjaniraDaMottaESilva,
 };
 
 export const MarioMatos: Artista = {
@@ -412,8 +412,8 @@ export const JulioCesarPesssolaniZavala: Artista = {
     Pessoa: pessoas.JulioCesarPesssolaniZavala,
 };
 
-export const ManoelJosedeOliviera: Artista = {
-    Pessoa: pessoas.CoronelManoelJosedeOliviera,
+export const ManoelJoseDeOliviera: Artista = {
+    Pessoa: pessoas.CoronelManoelJoseDeOliviera,
 };
 
 export const OscarNiemeyer: Artista = {
@@ -464,16 +464,16 @@ export const EugeneBenet: Artista = {
     Pessoa: pessoas.EugeneBenet,
 };
 
-export const JoseMarcioBaptistadaCunha: Artista = {
-    Pessoa: pessoas.JoseMarcioBaptistadaCunha,
+export const JoseMarcioBaptistaDaCunha: Artista = {
+    Pessoa: pessoas.JoseMarcioBaptistaDaCunha,
 };
 
 export const Mazerdo: Artista = {
     Pessoa: pessoas.Mazerdo,
 };
 
-export const RibeirodaCosta: Artista = {
-    Pessoa: pessoas.RibeirodaCosta,
+export const RibeiroDaCosta: Artista = {
+    Pessoa: pessoas.RibeiroDaCosta,
 };
 
 export const Merzio: Artista = {
@@ -512,20 +512,20 @@ export const FernandoThauby: Artista = {
     Pessoa: pessoas.FernandoThauby,
 };
 
-export const HenockdeAlmeida: Artista = {
-    Pessoa: pessoas.HenockdeAlmeida,
+export const HenockDeAlmeida: Artista = {
+    Pessoa: pessoas.HenockDeAlmeida,
 };
 
-export const JoseCustodiodeSaeFaria: Artista = {
-    Pessoa: pessoas.JoseCustodiodeSaeFaria,
+export const JoseCustodioDeSaEFaria: Artista = {
+    Pessoa: pessoas.JoseCustodioDeSaEFaria,
 };
 
 export const AndreRedont: Artista = {
     Pessoa: pessoas.AndreRedont,
 };
 
-export const MiguelNoreña: Artista = {
-    Pessoa: pessoas.MiguelNoreña,
+export const MiguelNorena: Artista = {
+    Pessoa: pessoas.MiguelNorena,
 };
 
 export const SimonHurtvelle: Artista = {
@@ -533,7 +533,7 @@ export const SimonHurtvelle: Artista = {
 };
 
 export const JacquesHouzeau: Artista = {
-    Pessoa: pessoas.MiguelNoreña,
+    Pessoa: pessoas.MiguelNorena,
 };
 
 export const PierreLeGros: Artista = {
@@ -620,8 +620,8 @@ export const DanteCroce: Artista = {
     Pessoa: pessoas.DanteCroce,
 };
 
-export const WalterCurvelodeMendonca: Artista = {
-    Pessoa: pessoas.WalterCurvelodeMendonca,
+export const WalterCurveloDeMendonca: Artista = {
+    Pessoa: pessoas.WalterCurveloDeMendonca,
 };
 
 export const HenriWeigele: Artista = {
@@ -736,8 +736,8 @@ export const LuciaGuerreiro: Artista = {
     Pessoa: pessoas.LuciaGuerreiro,
 };
 
-export const BelmirodeAlmeida: Artista = {
-    Pessoa: pessoas.BelmirodeAlmeida,
+export const BelmiroDeAlmeida: Artista = {
+    Pessoa: pessoas.BelmiroDeAlmeida,
 };
 
 export const HomeroBrito: Artista = {
@@ -772,8 +772,8 @@ export const Ique: Artista = {
     Pessoa: pessoas.Ique,
 };
 
-export const AmilcardeCastro: Artista = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro: Artista = {
+    Pessoa: pessoas.AmilcarDeCastro,
 };
 
 export const Azevedo: Artista = {
@@ -900,8 +900,8 @@ export const GabrielFonseca: Artista = {
     Pessoa: pessoas.GabrielFonseca,
 };
 
-export const PedroCorreiadeAraujo: Artista = {
-    Pessoa: pessoas.PedroCorreiadeAraujo,
+export const PedroCorreiaDeAraujo: Artista = {
+    Pessoa: pessoas.PedroCorreiaDeAraujo,
 };
 
 export const MoemaBranquinho: Artista = {
@@ -972,8 +972,8 @@ export const NewtonSa: Artista = {
     Pessoa: pessoas.NewtonSa,
 };
 
-export const HeitordaSilvaCosta: Artista = {
-    Pessoa: pessoas.HeitordaSilvaCosta,
+export const HeitorDaSilvaCosta: Artista = {
+    Pessoa: pessoas.HeitorDaSilvaCosta,
 };
 
 export const CesarDoria: Artista = {
@@ -993,11 +993,11 @@ export const LuizRey: Artista = {
 };
 
 export const ProfetaGentileza: Artista = {
-    Pessoa: pessoas.ProfetaGentileza,
+    Pessoa: pessoas.JoseDatrino,
 };
 
-export const FranciscoJoaquimBethencourtdaSilva: Artista = {
-    Pessoa: pessoas.FranciscoJoaquimBethencourtdaSilva,
+export const FranciscoJoaquimBethencourtDaSilva: Artista = {
+    Pessoa: pessoas.FranciscoJoaquimBethencourtDaSilva,
 };
 
 export const Archi5: Artista = {
@@ -1008,20 +1008,20 @@ export const HenriFredericIselin: Artista = {
     Pessoa: pessoas.HenriFredericIselin,
 };
 
-export const ArquimedesJdaSilva: Artista = {
-    Pessoa: pessoas.ArquimedesJdaSilva,
+export const ArquimedesJDaSilva: Artista = {
+    Pessoa: pessoas.ArquimedesJDaSilva,
 };
 
-export const NicolinaVazdeAssisPintodoCouto: Artista = {
-    Pessoa: pessoas.NicolinaVazdeAssisPintodoCouto,
+export const NicolinaVazDeAssisPintodoCouto: Artista = {
+    Pessoa: pessoas.NicolinaVazDeAssisPintodoCouto,
 };
 
 export const JulesSegal: Artista = {
     Pessoa: pessoas.JulesSegal,
 };
 
-export const ArquimedesJosedaSilva: Artista = {
-    Pessoa: pessoas.ArquimedesJosedaSilva,
+export const ArquimedesJoseDaSilva: Artista = {
+    Pessoa: pessoas.ArquimedesJoseDaSilva,
 };
 
 export const RobertAdams: Artista = {
@@ -1056,20 +1056,20 @@ export const CurzioZani: Artista = {
     Pessoa: pessoas.CurzioZani,
 };
 
-export const TorresdeOliveira: Artista = {
-    Pessoa: pessoas.TorresdeOliveira,
+export const TorresDeOliveira: Artista = {
+    Pessoa: pessoas.TorresDeOliveira,
 };
 
-export const PaulodeTarso: Artista = {
-    Pessoa: pessoas.PaulodeTarso,
+export const PauloDeTarso: Artista = {
+    Pessoa: pessoas.PauloDeTarso,
 };
 
 export const AugusteMartin: Artista = {
     Pessoa: pessoas.AugusteMartin,
 };
 
-export const AugusteHenriVictorGrandjeandeMontigny: Artista = {
-    Pessoa: pessoas.AugusteHenriVictorGrandjeandeMontigny,
+export const AugusteHenriVictorGrandjeanDeMontigny: Artista = {
+    Pessoa: pessoas.AugusteHenriVictorGrandjeanDeMontigny,
 };
 
 export const MauricioBentes: Artista = {
@@ -1116,8 +1116,8 @@ export const LuizCarlosToledo: Artista = {
     Pessoa: pessoas.LuizCarlosToledo,
 };
 
-export const PedroFernandesVianadaSilva: Artista = {
-    Pessoa: pessoas.PedroFernandesVianadaSilva,
+export const PedroFernandesVianaDaSilva: Artista = {
+    Pessoa: pessoas.PedroFernandesVianaDaSilva,
 };
 
 export const RicardoVillar: Artista = {
@@ -1136,8 +1136,8 @@ export const RenatoPrimaveraMarinho: Artista = {
     Pessoa: pessoas.RenatoPrimaveraMarinho,
 };
 
-export const AlmirdeLimaMachado: Artista = {
-    Pessoa: pessoas.AlmirdeLimaMachado,
+export const AlmirDeLimaMachado: Artista = {
+    Pessoa: pessoas.AlmirDeLimaMachado,
 };
 
 export const PauloCelsoPrado: Artista = {
@@ -1152,8 +1152,8 @@ export const RonaldoBenevello: Artista = {
     Pessoa: pessoas.RonaldoBenevello,
 };
 
-export const AdilsonRoquedosSantos: Artista = {
-    Pessoa: pessoas.AdilsonRoquedosSantos,
+export const AdilsonRoqueDosSantos: Artista = {
+    Pessoa: pessoas.AdilsonRoqueDosSantos,
 };
 
 export const JulesJeanJulesSalmson: Artista = {
@@ -1184,16 +1184,16 @@ export const LauraTaves: Artista = {
     Pessoa: pessoas.LauraTaves,
 };
 
-export const JairdeSouza: Artista = {
-    Pessoa: pessoas.JairdeSouza,
+export const JairDeSouza: Artista = {
+    Pessoa: pessoas.JairDeSouza,
 };
 
 export const AdoAzevedo: Artista = {
     Pessoa: pessoas.AdoAzevedo,
 };
 
-export const MayerhogereToledo: Artista = {
-    Pessoa: pessoas.MayerhogereToledo,
+export const MayerhogerEToledo: Artista = {
+    Pessoa: pessoas.MayerhogerEToledo,
 };
 
 export const MaritzaOrleans: Artista = {
@@ -1228,8 +1228,8 @@ export const PedroAugusto: Artista = {
     Pessoa: pessoas.PedroAugusto,
 };
 
-export const FernandodaSilvaAbreu: Artista = {
-    Pessoa: pessoas.FernandodaSilvaAbreu,
+export const FernandoDaSilvaAbreu: Artista = {
+    Pessoa: pessoas.FernandoDaSilvaAbreu,
 };
 
 export const MaxGrossman: Artista = {
@@ -1280,16 +1280,16 @@ export const ErnaniFreire: Artista = {
     Pessoa: pessoas.ErnaniFreire,
 };
 
-export const CarlosWerneckdeCarvalho: Artista = {
-    Pessoa: pessoas.CarlosWerneckdeCarvalho,
+export const CarlosWerneckDeCarvalho: Artista = {
+    Pessoa: pessoas.CarlosWerneckDeCarvalho,
 };
 
-export const DavidXavierdeAzambuja: Artista = {
-    Pessoa: pessoas.DavidXavierdeAzambuja,
+export const DavidXavierDeAzambuja: Artista = {
+    Pessoa: pessoas.DavidXavierDeAzambuja,
 };
 
-export const RebecaMatteIñiguez: Artista = {
-    Pessoa: pessoas.RebecaMatteIñiguez,
+export const RebecaMatteIniguez: Artista = {
+    Pessoa: pessoas.RebecaMatteIniguez,
 };
 
 export const RicoReis: Artista = {
@@ -1368,8 +1368,8 @@ export const RaimundoReis: Artista = {
     Pessoa: pessoas.RaimundoReis,
 };
 
-export const AntonioMoreiradeSouza: Artista = {
-    Pessoa: pessoas.AntonioMoreiradeSouza,
+export const AntonioMoreiraDeSouza: Artista = {
+    Pessoa: pessoas.AntonioMoreiraDeSouza,
 };
 
 export const Helmano: Artista = {
@@ -1416,8 +1416,8 @@ export const ModestinoKanto: Artista = {
     Pessoa: pessoas.ModestinoKanto,
 };
 
-export const PaulodeSouzaPires: Artista = {
-    Pessoa: pessoas.PaulodeSouzaPires,
+export const PauloDeSouzaPires: Artista = {
+    Pessoa: pessoas.PauloDeSouzaPires,
 };
 
 export const GilsonNascimento: Artista = {
@@ -1432,32 +1432,32 @@ export const PauloVillon: Artista = {
     Pessoa: pessoas.PauloVillon,
 };
 
-export const WladimirAlvesdeSouza: Artista = {
-    Pessoa: pessoas.WladimirAlvesdeSouza,
+export const WladimirAlvesDeSouza: Artista = {
+    Pessoa: pessoas.WladimirAlvesDeSouza,
 };
 
-export const JobdeAlcântara: Artista = {
-    Pessoa: pessoas.JobdeAlcântara,
+export const JobDeAlcantara: Artista = {
+    Pessoa: pessoas.JobDeAlcantara,
 };
 
 export const RSilva: Artista = {
     Pessoa: pessoas.RSilva,
 };
 
-export const RaymundodeCastroMaia: Artista = {
-    Pessoa: pessoas.RaymundodeCastroMaia,
+export const RaymundoDeCastroMaia: Artista = {
+    Pessoa: pessoas.RaymundoDeCastroMaia,
 };
 
-export const WladimirAlvesdeSousa: Artista = {
-    Pessoa: pessoas.WladimirAlvesdeSousa,
+export const WladimirAlvesDeSousa: Artista = {
+    Pessoa: pessoas.WladimirAlvesDeSousa,
 };
 
-export const RaymundodeCastroMaya: Artista = {
-    Pessoa: pessoas.RaymundodeCastroMaya,
+export const RaymundoDeCastroMaya: Artista = {
+    Pessoa: pessoas.RaymundoDeCastroMaya,
 };
 
-export const WaldimirAlvesdeSouza: Artista = {
-    Pessoa: pessoas.WaldimirAlvesdeSouza,
+export const WaldimirAlvesDeSouza: Artista = {
+    Pessoa: pessoas.WaldimirAlvesDeSouza,
 };
 
 export const CharlesAugusteLebourg: Artista = {
@@ -1468,8 +1468,8 @@ export const HuangJian: Artista = {
     Pessoa: pessoas.HuangJian,
 };
 
-export const ElzaCasancaodeMedeiros: Artista = {
-    Pessoa: pessoas.ElzaCasancaodeMedeiros,
+export const ElzaCasancaoDeMedeiros: Artista = {
+    Pessoa: pessoas.ElzaCasancaoDeMedeiros,
 };
 
 export const AffonsoEduardoReidy: Artista = {
@@ -1500,8 +1500,8 @@ export const BrunoPires: Artista = {
     Pessoa: pessoas.BrunoPires,
 };
 
-export const SidneyGomesdosSantos: Artista = {
-    Pessoa: pessoas.SidneyGomesdosSantos,
+export const SidneyGomesDosSantos: Artista = {
+    Pessoa: pessoas.SidneyGomesDosSantos,
 };
 
 export const MarioSophia: Artista = {
@@ -1512,8 +1512,8 @@ export const RichardKelly: Artista = {
     Pessoa: pessoas.RichardKelly,
 };
 
-export const JorgedosAnjos: Artista = {
-    Pessoa: pessoas.JorgedosAnjos,
+export const JorgeDosAnjos: Artista = {
+    Pessoa: pessoas.JorgeDosAnjos,
 };
 
 export const DSantosLeal: Artista = {
@@ -1540,8 +1540,8 @@ export const HelenaTownsend: Artista = {
     Pessoa: pessoas.HelenaTownsend,
 };
 
-export const FlavioFerreira: Artista = {
-    Pessoa: pessoas.FlavioFerreira,
+export const FlavioDeOliveiraFerreira: Artista = {
+    Pessoa: pessoas.FlavioDeOliveiraFerreira,
 };
 
 export const RobertoMoriconi: Artista = {

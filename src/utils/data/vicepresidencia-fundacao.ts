@@ -1,8 +1,8 @@
 import VicePresidenteFundacao from '../../domain/vicepresidente_fundacao';
 import * as pessoas from './pessoa';
 
-export const HelenaMariaPortoSeverodaCosta: VicePresidenteFundacao = {
-    Pessoa: pessoas.HelenaMariaPortoSeverodaCosta,
+export const HelenaMariaPortoSeveroDaCosta: VicePresidenteFundacao = {
+    Pessoa: pessoas.HelenaMariaPortoSeveroDaCosta,
     Mandatos: [
         {
             NomeFundacao: 'Fundação Anita Mantuano de Artes do Estado do Rio de Janeiro',

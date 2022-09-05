@@ -27,8 +27,8 @@ export const FranzWeissmann_EscolaGuinard_Escultura: Professor = {
     DataFim: '1956',
 };
 
-export const AlbertodaVeigaGuignard_EscolaGuinard_Desenho: Professor = {
-    Pessoa: pessoas.AlbertodaVeigaGuignard,
+export const AlbertoDaVeigaGuignard_EscolaGuinard_Desenho: Professor = {
+    Pessoa: pessoas.AlbertoDaVeigaGuignard,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Departamento: undefined,
@@ -40,8 +40,8 @@ export const AlbertodaVeigaGuignard_EscolaGuinard_Desenho: Professor = {
     DataFim: '1956',
 };
 
-export const AlbertodaVeigaGuignard_EscolaGuinard_Pintura: Professor = {
-    Pessoa: pessoas.AlbertodaVeigaGuignard,
+export const AlbertoDaVeigaGuignard_EscolaGuinard_Pintura: Professor = {
+    Pessoa: pessoas.AlbertoDaVeigaGuignard,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Departamento: undefined,
@@ -274,8 +274,8 @@ export const JoseResende_PUCCampinas: Professor = {
     DataFim: '1986',
 };
 
-export const AmilcardeCastro_EscolaGuinard_Composicao: Professor = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_EscolaGuinard_Composicao: Professor = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Departamento: undefined,
@@ -287,8 +287,8 @@ export const AmilcardeCastro_EscolaGuinard_Composicao: Professor = {
     DataFim: '1977',
 };
 
-export const AmilcardeCastro_EscolaGuinard_Escultura: Professor = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_EscolaGuinard_Escultura: Professor = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Escola Guinard',
     AbreviacaoInstituicao: undefined,
     Departamento: undefined,
@@ -300,8 +300,8 @@ export const AmilcardeCastro_EscolaGuinard_Escultura: Professor = {
     DataFim: '1977',
 };
 
-export const AmilcardeCastro_UFMG: Professor = {
-    Pessoa: pessoas.AmilcardeCastro,
+export const AmilcarDeCastro_UFMG: Professor = {
+    Pessoa: pessoas.AmilcarDeCastro,
     Instituicao: 'Universidade Federal de Minas Gerais',
     AbreviacaoInstituicao: 'UFMG',
     Departamento: 'Faculdade de Belas Artes',

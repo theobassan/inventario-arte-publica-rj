@@ -17,6 +17,11 @@ type Exposicao = {
     CatalogoEscritoPor?: Pessoa[];
     Juri?: Pessoa[];
     JuriDeSelecao?: Pessoa[];
+    Montadores?: Pessoa[];
+    Organizadores?: Pessoa[];
+    ComissaoDePremiacao?: Pessoa[];
+    ComissaoDeSelecao?: Pessoa[];
+    ArtistasConvidados?: Pessoa[];
 };
 
 export default Exposicao;

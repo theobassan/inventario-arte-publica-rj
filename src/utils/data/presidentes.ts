@@ -1,8 +1,8 @@
 import Presidente from '../../domain/presidente';
 import * as pessoas from './pessoa';
 
-export const DeodorodaFonseca: Presidente = {
-    Pessoa: pessoas.DeodorodaFonseca,
+export const DeodoroDaFonseca: Presidente = {
+    Pessoa: pessoas.DeodoroDaFonseca,
     Mandatos: [
         {
             Pais: `Brasil`,
@@ -25,8 +25,8 @@ export const FlorianoPeixoto: Presidente = {
     ],
 };
 
-export const PrudentedeMorais: Presidente = {
-    Pessoa: pessoas.PrudentedeMorais,
+export const PrudenteDeMorais: Presidente = {
+    Pessoa: pessoas.PrudenteDeMorais,
     Mandatos: [
         {
             Pais: `Brasil`,
@@ -307,8 +307,8 @@ export const HumbertoCasteloBranco: Presidente = {
     ],
 };
 
-export const ArturdaCostaeSilva: Presidente = {
-    Pessoa: pessoas.ArturdaCostaeSilva,
+export const ArturDaCostaESilva: Presidente = {
+    Pessoa: pessoas.ArturDaCostaESilva,
     Mandatos: [
         {
             Pais: `Brasil`,
@@ -367,8 +367,8 @@ export const JoseSarney: Presidente = {
     ],
 };
 
-export const FernandoCollordeMello: Presidente = {
-    Pessoa: pessoas.FernandoCollordeMello,
+export const FernandoCollorDeMello: Presidente = {
+    Pessoa: pessoas.FernandoCollorDeMello,
     Mandatos: [
         {
             Pais: `Brasil`,
@@ -403,8 +403,8 @@ export const FernandoHenriqueCardoso: Presidente = {
     ],
 };
 
-export const LuizInacioLuladaSilva: Presidente = {
-    Pessoa: pessoas.LuizInacioLuladaSilva,
+export const LuizInacioLulaDaSilva: Presidente = {
+    Pessoa: pessoas.LuizInacioLulaDaSilva,
     Mandatos: [
         {
             Pais: `Brasil`,
