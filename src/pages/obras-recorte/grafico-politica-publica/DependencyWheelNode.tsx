@@ -6,6 +6,7 @@ import juntarDependencyWheel from '@utils/analises/dependency-wheel/juntar-depen
 import agenteDaPolitica from '@utils/analises/politica-publica/agente-da-politica';
 import { default as autoresPoliticaPublica } from '@utils/analises/politica-publica/autores';
 import { default as coordenadoresPoliticaPublica } from '@utils/analises/politica-publica/coordenadores';
+import { default as idealizadoresPoliticaPublica } from '@utils/analises/politica-publica/idealizadores';
 import politicaPublicaX from '@utils/analises/politica-publica/politica-publica-x';
 import politicaPublicaXexposicao from '@utils/analises/politica-publica/politica-publica-x-exposicao';
 import { default as seletoresPoliticaPublica } from '@utils/analises/politica-publica/seletores';
@@ -36,6 +37,7 @@ function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: P
 
     const nosImportantes = [
         ...autoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: true } })),
+        ...idealizadoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: true } })),
         ...coordenadoresPoliticaPublica(politicaPublica).map((coordenador) => ({ id: coordenador, dataLabels: { enabled: true } })),
         ...seletoresPoliticaPublica(politicaPublica).map((seletor) => ({ id: seletor, dataLabels: { enabled: true } })),
     ];
