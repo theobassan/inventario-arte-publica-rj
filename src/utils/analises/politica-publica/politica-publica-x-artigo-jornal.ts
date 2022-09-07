@@ -3,10 +3,10 @@ import { ArtigoJornal, PoliticaPublica, TrocaCapital } from '@domain';
 import artigoJornalX from '../artigo-jornal/artigo-jornal-x';
 import { antes } from '../dataUtils';
 import agenteDaPolitica from './agente-da-politica';
-import autorDaPolitica from './autor-da-politica';
+import autorObraDaPolitica from './autor-obra-da-politica';
 
 function fazParteDaPolitica(politicaPublica: PoliticaPublica, pessoa: string): boolean {
-    return agenteDaPolitica(politicaPublica, pessoa) || autorDaPolitica(politicaPublica, pessoa);
+    return agenteDaPolitica(politicaPublica, pessoa) || autorObraDaPolitica(politicaPublica, pessoa);
 }
 
 function politicaPublicaXartigoJornal(politicaPublica: PoliticaPublica, artigoJornal: ArtigoJornal): TrocaCapital[] {

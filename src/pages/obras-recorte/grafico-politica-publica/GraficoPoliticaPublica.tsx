@@ -89,6 +89,7 @@ function GraficoPoliticaPublica(): JSX.Element {
             13,
             14,
             15,
+            16,
         ].map((key) => ({ label: key.toString(), value: key })),
     );
 

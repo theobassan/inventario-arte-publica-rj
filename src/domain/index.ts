@@ -11,3 +11,4 @@ export type { default as PoliticaPublica } from './politicapublica';
 export { default as TipoCapital } from './tipo_capital';
 export type { default as TrocaCapital } from './troca_capital';
 export type { default as DependencyWheel } from './dependency-wheel';
+export type { default as Livro } from './livro';

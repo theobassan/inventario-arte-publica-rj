@@ -297,8 +297,6 @@ function Category(): JSX.Element {
         }
     }
 
-    console.log('artista', artista);
-
     const style = styles();
     return (
         <SafeAreaView style={style.container}>
