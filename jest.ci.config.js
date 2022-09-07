@@ -27,6 +27,7 @@ module.exports = {
         '!src/utils/analises/**/*.{ts,tsx}',
         '!src/utils/export-as-image/**/*.{ts,tsx}',
         '!src/utils/data/**/*.{ts,tsx}',
+        '!src/utils/list/**/*.{ts,tsx}',
         '!src/pages/**/*.{ts,tsx}',
     ],
     coverageDirectory: '.coverage',

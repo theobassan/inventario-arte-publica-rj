@@ -1,7 +1,6 @@
-import { Pessoa } from '@domain';
+import { Pessoa, Exposicao } from '@domain';
 import * as coordenadoresNucleoMuseu from '@utils/data/coordenador-nucleo-museu';
 import CoordenadorNucleoMuseu from 'src/domain/coordenador_nucleo_museu';
-import Exposicao from 'src/domain/exposicao';
 
 import { entre } from './dataUtils';
 

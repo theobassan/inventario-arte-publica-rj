@@ -11,7 +11,7 @@ export * from './obras';
 export * from './obras/mapa';
 export * from './obras-recorte';
 export * from './obras-recorte/mapa';
-export * from './obras-recorte/grafico-pulitica-publica';
+export * from './obras-recorte/grafico-politica-publica';
 export * from './not-found';
 export * from './not-match';
 export * from './tipo';

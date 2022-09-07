@@ -1,7 +1,6 @@
-import { Pessoa } from '@domain';
+import { Pessoa, Exposicao } from '@domain';
 import * as curadoresColecao from '@utils/data/curadores-colecao';
 import CuradorColecao from 'src/domain/curador_colecao';
-import Exposicao from 'src/domain/exposicao';
 
 import { entre } from './dataUtils';
 

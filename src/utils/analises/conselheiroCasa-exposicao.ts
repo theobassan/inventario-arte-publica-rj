@@ -1,7 +1,6 @@
-import { Pessoa } from '@domain';
+import { Pessoa, Exposicao } from '@domain';
 import * as conselheirosCasa from '@utils/data/coselheiro-casa';
 import ConselheiroCasa from 'src/domain/conselheiro-casa';
-import Exposicao from 'src/domain/exposicao';
 
 import { entre } from './dataUtils';
 
