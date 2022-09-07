@@ -113,7 +113,7 @@ function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: P
             <Chart options={lineOptions as Highcharts.Options} />
             <Table
                 headers={[
-                    <Text>pessoa</Text>,
+                    <Text>{`pessoa (${nosFiltrados.length})`}</Text>,
                     <Text>peso</Text>,
                 ]}
                 rows={nosFiltrados.map((no) => [
