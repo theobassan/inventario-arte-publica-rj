@@ -26,7 +26,17 @@ function getTrocasExposicoes(politicaPublica: PoliticaPublica): TrocaCapital[] {
         .reduce(reduceListOfList);
 }
 
-function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: PoliticaPublica; peso: number }): JSX.Element {
+function DependencyWheelRefactor({
+    politicaPublica,
+    peso,
+    height,
+    labelEmCima,
+}: {
+    politicaPublica: PoliticaPublica;
+    peso: number;
+    height?: number;
+    labelEmCima?: boolean;
+}): JSX.Element {
     const trocasPoliticaPublica = politicaPublicaX(politicaPublica);
     const trocasExposicoes = getTrocasExposicoes(politicaPublica);
 
@@ -36,10 +46,10 @@ function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: P
     const dependencyWheels = juntarDependencyWheel(dependencyWheelsPoliticaPublica, dependencyWheelsExposicoes);
 
     const nosImportantes = [
-        ...autoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: true } })),
-        ...idealizadoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: true } })),
-        ...coordenadoresPoliticaPublica(politicaPublica).map((coordenador) => ({ id: coordenador, dataLabels: { enabled: true } })),
-        ...seletoresPoliticaPublica(politicaPublica).map((seletor) => ({ id: seletor, dataLabels: { enabled: true } })),
+        ...autoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: peso !== 0 } })),
+        ...idealizadoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: peso !== 0 } })),
+        ...coordenadoresPoliticaPublica(politicaPublica).map((coordenador) => ({ id: coordenador, dataLabels: { enabled: peso !== 0 } })),
+        ...seletoresPoliticaPublica(politicaPublica).map((seletor) => ({ id: seletor, dataLabels: { enabled: peso !== 0 } })),
     ];
 
     const todosNodes = getNodes(dependencyWheels);
@@ -53,7 +63,7 @@ function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: P
     const shuffle = shuffleArray(dataFiltrada);
     const lineOptions = {
         chart: {
-            height: 800,
+            height: height ?? 800,
         },
         title: {
             text: '',
@@ -67,6 +77,22 @@ function DependencyWheelRefactor({ politicaPublica, peso }: { politicaPublica: P
                 dataLabels: {
                     enabled: false,
                     color: '#FFFF',
+                    textPath: !labelEmCima
+                        ? undefined
+                        : {
+                              enabled: true,
+                              attributes: {
+                                  dy: 5,
+                              },
+                          },
+                    distance: !labelEmCima ? undefined : 10,
+                },
+                size: '95%',
+                plotOptions: {
+                    dependencywheel: {
+                        showInLegend: true,
+                        colorByPoint: true,
+                    },
                 },
                 data: shuffle,
                 nodes: nosImportantes,

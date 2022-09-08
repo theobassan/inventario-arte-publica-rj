@@ -28,18 +28,35 @@ function GraficoPoliticaPublica(): JSX.Element {
     ] = useState(Object.keys(typed_politicapublicas).map((key) => ({ label: typed_politicapublicas[key].Titulo, value: key })));
 
     const [
+        dropdownAberto2,
+        tornarDropdownAberto2,
+    ] = useState(false);
+    const [
+        valorDropdown2,
+        setarValorDropdown2,
+    ] = useState(false);
+    const [
+        itemsDropdown2,
+        setarItemsDropown2,
+    ] = useState([
+        { label: 'Sim', value: true },
+        { label: 'Não', value: false },
+    ]);
+
+    const [
         dropdownAberto3,
         tornarDropdownAberto3,
     ] = useState(false);
     const [
         valorDropdown3,
         setarValorDropdown3,
-    ] = useState(4);
+    ] = useState(0);
     const [
         itemsDropdown3,
         setarItemsDropown3,
     ] = useState(
         [
+            0,
             4,
             7,
             10,
@@ -76,7 +93,20 @@ function GraficoPoliticaPublica(): JSX.Element {
                         nestedScrollEnabled: true,
                     }}
                 />
-                <DependencyWheelNode politicaPublica={typed_politicapublicas[valorDropdown]} peso={valorDropdown3} />
+                <DropDownPicker
+                    theme={theme.dark ? 'DARK' : 'LIGHT'}
+                    open={dropdownAberto2}
+                    value={valorDropdown2}
+                    items={itemsDropdown2}
+                    setOpen={tornarDropdownAberto2}
+                    setValue={setarValorDropdown2}
+                    setItems={setarItemsDropown2}
+                    listMode="SCROLLVIEW"
+                    scrollViewProps={{
+                        nestedScrollEnabled: true,
+                    }}
+                />
+                <DependencyWheelNode politicaPublica={typed_politicapublicas[valorDropdown]} peso={valorDropdown3} height={1080} labelEmCima={valorDropdown2} />
             </View>
         </ScrollView>
     );
