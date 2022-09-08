@@ -21,6 +21,7 @@ module.exports = {
     collectCoverageFrom: [
         'src/**/*.{ts,tsx}',
         '!src/app/**/*.{ts,tsx}',
+        '!src/base-components/dropdown/**/*.{ts,tsx}',
         '!src/base-components/map/**/*.{ts,tsx}',
         '!src/base-components/table/**/*.{ts,tsx}',
         '!src/componentes/tabela-tipo-obras/**/*.{ts,tsx}',

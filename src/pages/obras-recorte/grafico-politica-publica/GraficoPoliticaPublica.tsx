@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 
 import { ScrollView, View } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 
+import { Dropdown } from '@base-components';
 import { PoliticaPublica } from '@domain';
 import { useTheme } from '@utils';
 import * as politicapublicas from '@utils/data/politicapublica';
@@ -20,49 +21,33 @@ function GraficoPoliticaPublica(): JSX.Element {
     ] = useState(false);
     const [
         valorDropdown,
-        setarValorDropdown,
+        setarDropdown,
     ] = useState('EsculturasUrbanas');
     const [
         itemsDropdown,
         setarItemsDropown,
     ] = useState(Object.keys(typed_politicapublicas).map((key) => ({ label: typed_politicapublicas[key].Titulo, value: key })));
 
-    const [
-        dropdownAberto2,
-        tornarDropdownAberto2,
-    ] = useState(false);
-    const [
-        valorDropdown2,
-        setarValorDropdown2,
-    ] = useState(false);
-    const [
-        itemsDropdown2,
-        setarItemsDropown2,
-    ] = useState([
-        { label: 'Sim', value: true },
-        { label: 'Não', value: false },
-    ]);
+    function setarValorDropdown(valor: SetStateAction<string>): void {
+        if (valorDropdown !== valor) {
+            setarDropdown(valor);
+        }
+    }
 
     const [
-        dropdownAberto3,
-        tornarDropdownAberto3,
-    ] = useState(false);
+        valorDropdown2,
+        setarDropdown2,
+    ] = useState(0);
+
     const [
         valorDropdown3,
-        setarValorDropdown3,
+        setarDropdown3,
     ] = useState(0);
+
     const [
-        itemsDropdown3,
-        setarItemsDropown3,
-    ] = useState(
-        [
-            0,
-            4,
-            7,
-            10,
-            15,
-        ].map((key) => ({ label: key.toString(), value: key })),
-    );
+        valorDropdown4,
+        setarDropdown4,
+    ] = useState(false);
 
     return (
         <ScrollView style={{ width: '100%' }}>
@@ -79,34 +64,47 @@ function GraficoPoliticaPublica(): JSX.Element {
                     scrollViewProps={{
                         nestedScrollEnabled: true,
                     }}
+                    zIndex={4}
                 />
-                <DropDownPicker
-                    theme={theme.dark ? 'DARK' : 'LIGHT'}
-                    open={dropdownAberto3}
-                    value={valorDropdown3}
-                    items={itemsDropdown3}
-                    setOpen={tornarDropdownAberto3}
-                    setValue={setarValorDropdown3}
-                    setItems={setarItemsDropown3}
-                    listMode="SCROLLVIEW"
-                    scrollViewProps={{
-                        nestedScrollEnabled: true,
-                    }}
+                <Dropdown
+                    valor={valorDropdown3}
+                    setarValor={setarDropdown3}
+                    items={[
+                        { label: '0', value: 0 },
+                        { label: '4', value: 4 },
+                        { label: '7', value: 7 },
+                        { label: '10', value: 10 },
+                        { label: '13', value: 13 },
+                        { label: '16', value: 16 },
+                    ]}
+                    zIndex={3}
                 />
-                <DropDownPicker
-                    theme={theme.dark ? 'DARK' : 'LIGHT'}
-                    open={dropdownAberto2}
-                    value={valorDropdown2}
-                    items={itemsDropdown2}
-                    setOpen={tornarDropdownAberto2}
-                    setValue={setarValorDropdown2}
-                    setItems={setarItemsDropown2}
-                    listMode="SCROLLVIEW"
-                    scrollViewProps={{
-                        nestedScrollEnabled: true,
-                    }}
+                <Dropdown
+                    valor={valorDropdown2}
+                    setarValor={setarDropdown2}
+                    items={[
+                        { label: 'Sem Nome', value: 0 },
+                        { label: 'Com Nome', value: 1 },
+                        { label: 'Nome apenas da politica', value: 2 },
+                    ]}
+                    zIndex={2}
                 />
-                <DependencyWheelNode politicaPublica={typed_politicapublicas[valorDropdown]} peso={valorDropdown3} height={1080} labelEmCima={valorDropdown2} />
+                <Dropdown
+                    valor={valorDropdown4}
+                    setarValor={setarDropdown4}
+                    items={[
+                        { label: 'Nome Normal', value: false },
+                        { label: 'Nome Por Cima', value: true },
+                    ]}
+                    zIndex={1}
+                />
+                <DependencyWheelNode
+                    politicaPublica={typed_politicapublicas[valorDropdown]}
+                    peso={valorDropdown3}
+                    height={1080}
+                    showLabel={valorDropdown2}
+                    labelEmCima={valorDropdown4}
+                />
             </View>
         </ScrollView>
     );

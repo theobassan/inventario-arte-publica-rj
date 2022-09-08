@@ -1,15 +1,14 @@
-import { Chart, Table, Text } from '@base-components';
+import { useEffect, useState } from 'react';
+
+import { Button, Chart, Table, Text } from '@base-components';
 import { PoliticaPublica, Exposicao, TrocaCapital } from '@domain';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
 import juntarDependencyWheel from '@utils/analises/dependency-wheel/juntar-dependency-wheel';
 import agenteDaPolitica from '@utils/analises/politica-publica/agente-da-politica';
-import { default as autoresPoliticaPublica } from '@utils/analises/politica-publica/autores';
-import { default as coordenadoresPoliticaPublica } from '@utils/analises/politica-publica/coordenadores';
-import { default as idealizadoresPoliticaPublica } from '@utils/analises/politica-publica/idealizadores';
+import autorObraDaPolitica from '@utils/analises/politica-publica/autor-obra-da-politica';
 import politicaPublicaX from '@utils/analises/politica-publica/politica-publica-x';
 import politicaPublicaXexposicao from '@utils/analises/politica-publica/politica-publica-x-exposicao';
-import { default as seletoresPoliticaPublica } from '@utils/analises/politica-publica/seletores';
 import * as exposicoes from '@utils/data/exposicoes';
 import reduceListOfList from '@utils/list/reduce-list-of-list';
 import shuffleArray from '@utils/list/shuffleArray';
@@ -30,11 +29,13 @@ function DependencyWheelRefactor({
     politicaPublica,
     peso,
     height,
+    showLabel,
     labelEmCima,
 }: {
     politicaPublica: PoliticaPublica;
     peso: number;
     height?: number;
+    showLabel?: number;
     labelEmCima?: boolean;
 }): JSX.Element {
     const trocasPoliticaPublica = politicaPublicaX(politicaPublica);
@@ -45,22 +46,40 @@ function DependencyWheelRefactor({
 
     const dependencyWheels = juntarDependencyWheel(dependencyWheelsPoliticaPublica, dependencyWheelsExposicoes);
 
-    const nosImportantes = [
-        ...autoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: peso !== 0 } })),
-        ...idealizadoresPoliticaPublica(politicaPublica).map((autor) => ({ id: autor, dataLabels: { enabled: peso !== 0 } })),
-        ...coordenadoresPoliticaPublica(politicaPublica).map((coordenador) => ({ id: coordenador, dataLabels: { enabled: peso !== 0 } })),
-        ...seletoresPoliticaPublica(politicaPublica).map((seletor) => ({ id: seletor, dataLabels: { enabled: peso !== 0 } })),
-    ];
-
     const todosNodes = getNodes(dependencyWheels);
     const nosFiltrados = todosNodes.filter((no) => no.weight >= peso);
+
+    const nosImportantes = nosFiltrados.map((no) => ({
+        id: no.node,
+        dataLabels: {
+            enabled:
+                showLabel === 0 ? false : showLabel === 1 ? true : agenteDaPolitica(politicaPublica, no.node) || autorObraDaPolitica(politicaPublica, no.node),
+        },
+    }));
 
     const dataFiltrada = dependencyWheels.filter(
         (wheel) => nosFiltrados.find((no) => no.node === wheel.from) && nosFiltrados.find((no) => no.node === wheel.to),
     );
     nosFiltrados.sort((a, b) => b.node.localeCompare(a.node)).sort((a, b) => (a.weight < b.weight ? 1 : -1));
 
-    const shuffle = shuffleArray(dataFiltrada);
+    const [
+        shuffleDados,
+        setarShuffleDados,
+    ] = useState(dataFiltrada);
+
+    useEffect(() => {
+        setarShuffleDados(dataFiltrada);
+    }, [
+        politicaPublica,
+        peso,
+        height,
+        labelEmCima,
+    ]);
+
+    function onPress(): void {
+        setarShuffleDados(shuffleArray(shuffleDados));
+    }
+
     const lineOptions = {
         chart: {
             height: height ?? 800,
@@ -94,7 +113,7 @@ function DependencyWheelRefactor({
                         colorByPoint: true,
                     },
                 },
-                data: shuffle,
+                data: shuffleDados,
                 nodes: nosImportantes,
             },
         ],
@@ -102,6 +121,7 @@ function DependencyWheelRefactor({
 
     return (
         <>
+            <Button onPress={onPress}>Randon</Button>
             <Chart options={lineOptions as Highcharts.Options} />
             <Table
                 headers={[
