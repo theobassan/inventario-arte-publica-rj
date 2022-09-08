@@ -1,13 +1,7 @@
-import { PoliticaPublica, TipoCapital, TrocaCapital } from '@domain';
+import { TrocaCapital } from '@domain';
 
-import trocaCapital from '../capitais/troca-capital';
-import { default as autoresPoliticaPublica } from './autores';
-import { default as coordenadoresPoliticaPublica } from './coordenadores';
-import { default as idealizadoresPoliticaPublica } from './idealizadores';
-import { default as seletoresPoliticaPublica } from './seletores';
-
-function politicaPublicaX(politicaPublica: PoliticaPublica): TrocaCapital[] {
-    const coordenadores = coordenadoresPoliticaPublica(politicaPublica);
+function politicaPublicaX(): TrocaCapital[] {
+    /*const coordenadores = coordenadoresPoliticaPublica(politicaPublica);
     const idealizadores = idealizadoresPoliticaPublica(politicaPublica);
     const seletores = seletoresPoliticaPublica(politicaPublica);
     const autores = autoresPoliticaPublica(politicaPublica);
@@ -23,17 +17,9 @@ function politicaPublicaX(politicaPublica: PoliticaPublica): TrocaCapital[] {
     const seletorXautor = trocaCapital(seletores, autores, 'seletor-autor', [
         TipoCapital.Social,
         TipoCapital.Cultural,
-    ]);
+    ]);*/
 
-    return [
-        ...coordenadorXcoordenador,
-        ...coordenadorXidealizador,
-        ...coordenadorXseletor,
-        ...idealizadorXidealizador,
-        ...idealizadorXseletor,
-        ...seletorXseletor,
-        ...seletorXautor,
-    ];
+    return [];
 }
 
 export default politicaPublicaX;

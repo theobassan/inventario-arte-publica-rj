@@ -109,6 +109,8 @@ function exposicaoX(exposicao: Exposicao): TrocaCapital[] {
         ...juradoXartistaConvidados,
         ...montadorXartistaConvidados,
         ...organizadorXartistaConvidados,
+
+        //...expositorXexpositor,
     ];
 }
 

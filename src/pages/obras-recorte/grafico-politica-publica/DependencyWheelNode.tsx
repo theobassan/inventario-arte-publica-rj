@@ -1,17 +1,45 @@
 import { useEffect, useState } from 'react';
 
 import { Button, Chart, Table, Text } from '@base-components';
-import { PoliticaPublica, Exposicao, TrocaCapital } from '@domain';
+import { PoliticaPublica, Exposicao, TrocaCapital, ArtigoJornal, Livro } from '@domain';
 import converterTrocaParaDependencyWheel from '@utils/analises/capitais/converter-troca-para-dependency-wheel';
 import getNodes from '@utils/analises/dependency-wheel/get-nodes';
 import juntarDependencyWheel from '@utils/analises/dependency-wheel/juntar-dependency-wheel';
 import agenteDaPolitica from '@utils/analises/politica-publica/agente-da-politica';
 import autorObraDaPolitica from '@utils/analises/politica-publica/autor-obra-da-politica';
 import politicaPublicaX from '@utils/analises/politica-publica/politica-publica-x';
+import politicaPublicaXartigoJornal from '@utils/analises/politica-publica/politica-publica-x-artigo-jornal';
 import politicaPublicaXexposicao from '@utils/analises/politica-publica/politica-publica-x-exposicao';
+import politicaPublicaXlivro from '@utils/analises/politica-publica/politica-publica-x-livro';
+import * as artigosjornal from '@utils/data/artigosjornal';
 import * as exposicoes from '@utils/data/exposicoes';
+import * as livros from '@utils/data/livros';
 import reduceListOfList from '@utils/list/reduce-list-of-list';
 import shuffleArray from '@utils/list/shuffleArray';
+
+function getTrocasArtigosJornais(politicaPublica: PoliticaPublica): TrocaCapital[] {
+    const typed_artigosjornal: Record<string, ArtigoJornal> = artigosjornal;
+
+    return Object.keys(typed_artigosjornal)
+        .map((key) => {
+            const artigoJornal = typed_artigosjornal[key];
+
+            return politicaPublicaXartigoJornal(politicaPublica, artigoJornal);
+        })
+        .reduce(reduceListOfList);
+}
+
+function getTrocasLivros(politicaPublica: PoliticaPublica): TrocaCapital[] {
+    const typed_livros: Record<string, Livro> = livros;
+
+    return Object.keys(typed_livros)
+        .map((key) => {
+            const livro = typed_livros[key];
+
+            return politicaPublicaXlivro(politicaPublica, livro);
+        })
+        .reduce(reduceListOfList);
+}
 
 function getTrocasExposicoes(politicaPublica: PoliticaPublica): TrocaCapital[] {
     const typed_exposicoes: Record<string, Exposicao> = exposicoes;
@@ -38,13 +66,19 @@ function DependencyWheelRefactor({
     showLabel?: number;
     labelEmCima?: boolean;
 }): JSX.Element {
-    const trocasPoliticaPublica = politicaPublicaX(politicaPublica);
+    const trocasPoliticaPublica = politicaPublicaX();
+    const trocasArtigosJornais = getTrocasArtigosJornais(politicaPublica);
+    const trocasLivros = getTrocasLivros(politicaPublica);
     const trocasExposicoes = getTrocasExposicoes(politicaPublica);
 
     const dependencyWheelsPoliticaPublica = trocasPoliticaPublica.map((troca) => converterTrocaParaDependencyWheel(troca));
+    const dependencyWheelsArtigosJornais = trocasArtigosJornais.map((troca) => converterTrocaParaDependencyWheel(troca));
+    const dependencyWheelsLivros = trocasLivros.map((troca) => converterTrocaParaDependencyWheel(troca));
     const dependencyWheelsExposicoes = trocasExposicoes.map((troca) => converterTrocaParaDependencyWheel(troca));
 
-    const dependencyWheels = juntarDependencyWheel(dependencyWheelsPoliticaPublica, dependencyWheelsExposicoes);
+    const dep1 = juntarDependencyWheel(dependencyWheelsPoliticaPublica, dependencyWheelsArtigosJornais);
+    const dep2 = juntarDependencyWheel(dep1, dependencyWheelsLivros);
+    const dependencyWheels = juntarDependencyWheel(dep2, dependencyWheelsExposicoes);
 
     const todosNodes = getNodes(dependencyWheels);
     const nosFiltrados = todosNodes.filter((no) => no.weight >= peso);
