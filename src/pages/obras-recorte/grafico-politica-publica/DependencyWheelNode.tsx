@@ -137,7 +137,6 @@ function DependencyWheelRefactor({
                     50,
                 ]}
             />
-            ;
         </>
     );
 }
