@@ -9,6 +9,7 @@ function livroX(livro: Livro): TrocaCapital[] {
     const citados = citadosLivro(livro);
 
     const autorXcitado = trocaCapital(autores, citados, 'autor-citado', [
+        TipoCapital.Social,
         TipoCapital.Cultural,
     ]);
 
