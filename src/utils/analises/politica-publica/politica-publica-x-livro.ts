@@ -17,7 +17,9 @@ function politicaPublicaXlivro(politicaPublica: PoliticaPublica, livro: Livro): 
         livro.Data !== '' &&
         antes(livro.Data, politicaPublica.ProjetoInicio)
     ) {
-        return livroX(livro).filter((troca) => fazParteDaPolitica(politicaPublica, troca.pessoa1) || fazParteDaPolitica(politicaPublica, troca.pessoa2));
+        return livroX(livro, politicaPublica).filter(
+            (troca) => fazParteDaPolitica(politicaPublica, troca.pessoa1) || fazParteDaPolitica(politicaPublica, troca.pessoa2),
+        );
     }
     return [];
 }

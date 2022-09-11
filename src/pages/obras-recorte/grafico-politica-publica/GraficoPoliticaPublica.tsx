@@ -9,6 +9,7 @@ import { useTheme } from '@utils';
 import * as politicapublicas from '@utils/data/politicapublica';
 
 import DependencyWheelNode from './DependencyWheelNode';
+import Sankey from './Sankey';
 
 function GraficoPoliticaPublica(): JSX.Element {
     const { theme } = useTheme();
@@ -99,6 +100,13 @@ function GraficoPoliticaPublica(): JSX.Element {
                     zIndex={1}
                 />
                 <DependencyWheelNode
+                    politicaPublica={typed_politicapublicas[valorDropdown]}
+                    peso={valorDropdown3}
+                    height={1080}
+                    showLabel={valorDropdown2}
+                    labelEmCima={valorDropdown4}
+                />
+                <Sankey
                     politicaPublica={typed_politicapublicas[valorDropdown]}
                     peso={valorDropdown3}
                     height={1080}

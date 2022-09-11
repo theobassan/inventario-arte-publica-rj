@@ -4,7 +4,7 @@ import { DrawerActions, NavigatorScreenParams } from '@react-navigation/native';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
 import { Text } from '@base-components';
-import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte } from '@pages';
+import { GraficoPoliticaPublica, ObrasRecorte, MapaRecorte, MapaTodasXRecorte } from '@pages';
 import { autoresRecorte, categoriasRecorte, enderecosRecorte, naturezasRecorte, statusRecorte, Theme, tipologiasRecorte, useTheme, zonasRecorte } from '@utils';
 
 import { TipoMenuNavigator, TipoMenuNavigatorParamList } from './TipoMenuNavigator';
@@ -22,6 +22,7 @@ export type ObrasRecorteNavigatorParamsList = {
     Categorias: NavigatorScreenParams<TipoMenuNavigatorParamList>;
     Mapa: undefined;
     GraficoPoliticaPublica: undefined;
+    MapaTodasXRecorte: undefined;
 };
 
 type ObrasRecorteNavigatorProps = {
@@ -182,6 +183,20 @@ export function ObrasRecorteNavigator({ testOnly_initialRouteName }: ObrasRecort
                     title: 'Esculturas Urbanas',
                     headerShown: true,
                     headerTitle: () => <Text style={style.title}>Esculturas Urbanas</Text>,
+                    headerLeft: () => (
+                        <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
+                            <Entypo name="menu" size={24} color={theme.text.textColor} />
+                        </TouchableOpacity>
+                    ),
+                })}
+            />
+            <DrawerNavigator.Screen
+                name="MapaTodasXRecorte"
+                component={MapaTodasXRecorte}
+                options={({ navigation }) => ({
+                    title: 'Todas as Obras x Arte Pública',
+                    headerShown: true,
+                    headerTitle: () => <Text style={style.title}>Todas as Obras x Arte Pública</Text>,
                     headerLeft: () => (
                         <TouchableOpacity testID="todas-obras-menu" style={{ paddingLeft: 16 }} onPress={() => navigation.dispatch(DrawerActions.openDrawer())}>
                             <Entypo name="menu" size={24} color={theme.text.textColor} />

@@ -17,7 +17,7 @@ function politicaPublicaXartigoJornal(politicaPublica: PoliticaPublica, artigoJo
         artigoJornal.Data !== '' &&
         antes(artigoJornal.Data, politicaPublica.ProjetoInicio)
     ) {
-        return artigoJornalX(artigoJornal).filter(
+        return artigoJornalX(artigoJornal, politicaPublica).filter(
             (troca) => fazParteDaPolitica(politicaPublica, troca.pessoa1) || fazParteDaPolitica(politicaPublica, troca.pessoa2),
         );
     }

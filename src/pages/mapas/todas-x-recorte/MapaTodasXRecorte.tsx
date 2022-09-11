@@ -3,7 +3,7 @@ import { Obra } from '@domain';
 import * as obra from '@utils/data/obra';
 import * as obra_artepublica from '@utils/data/obra_artepublica';
 
-function MapAllVsPublicArt(): JSX.Element {
+function MapaTodasXRecorte(): JSX.Element {
     const typed_obra: Record<string, Obra> = obra;
     const typed_obra_artepublica: Record<string, Obra> = obra_artepublica;
 
@@ -14,7 +14,7 @@ function MapAllVsPublicArt(): JSX.Element {
                 latitude: typed_obra[key].Latitude ?? '0',
                 longitude: typed_obra[key].Longitude ?? '0',
             },
-            color: 'black',
+            color: 'red',
         }));
 
     const markers_obra_artepublica = Object.keys(typed_obra_artepublica)
@@ -37,4 +37,4 @@ function MapAllVsPublicArt(): JSX.Element {
     return <Map markers={markers} />;
 }
 
-export default MapAllVsPublicArt;
+export default MapaTodasXRecorte;

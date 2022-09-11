@@ -1,19 +1,25 @@
-import { Livro, TipoCapital, TrocaCapital } from '@domain';
+import { Livro, PoliticaPublica, TipoCapital, TrocaCapital } from '@domain';
 import onlyUniqueNotUndefinedString from '@utils/list/unique-not-undefined-string';
 
 import trocaCapital from '../capitais/troca-capital';
+import agenteDaPolitica from '../politica-publica/agente-da-politica';
 import { default as citadosLivro } from './citados';
 
-function livroX(livro: Livro): TrocaCapital[] {
+function livroX(livro: Livro, politicaPublica: PoliticaPublica): TrocaCapital[] {
     const autores = [livro.Autor?.Nome].filter(onlyUniqueNotUndefinedString);
     const citados = citadosLivro(livro);
 
-    const autorXcitado = trocaCapital(autores, citados, 'autor-citado', [
-        TipoCapital.Social,
-        TipoCapital.Cultural,
-    ]);
+    const autorXautor = trocaCapital(
+        autores.filter((autor) => agenteDaPolitica(politicaPublica, autor)),
+        citados,
+        'autor-citado',
+        [
+            TipoCapital.Social,
+            TipoCapital.Cultural,
+        ],
+    );
 
-    return autorXcitado;
+    return autorXautor;
 }
 
 export default livroX;

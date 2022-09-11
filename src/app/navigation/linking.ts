@@ -317,16 +317,8 @@ const linking: LinkingOptions<RootNavigatorParamList> = {
                             GraficoPoliticaPublica: {
                                 path: 'politicas-publicas',
                             },
-                        },
-                    },
-                    Maps: {
-                        path: 'maps',
-                        screens: {
-                            Home: {
-                                path: '',
-                            },
-                            AllVsPublicArt: {
-                                path: 'all-vs-public-art',
+                            MapaTodasXRecorte: {
+                                path: 'mapa-todas-x-recorte',
                             },
                         },
                     },
