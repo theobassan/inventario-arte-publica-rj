@@ -83,13 +83,41 @@ function DependencyWheelRefactor({
     const todosNodes = getNodes(dependencyWheels);
     const nosFiltrados = todosNodes.filter((no) => no.weight >= peso);
 
-    const nosImportantes = nosFiltrados.map((no) => ({
-        id: no.node,
-        dataLabels: {
-            enabled:
-                showLabel === 0 ? false : showLabel === 1 ? true : agenteDaPolitica(politicaPublica, no.node) || autorObraDaPolitica(politicaPublica, no.node),
-        },
-    }));
+    function color(node: string): string | undefined {
+        switch (node) {
+            case 'Everardo Miranda':
+                return '#2B61C6';
+            case 'Reynaldo Roels':
+                return '#D0A639';
+            case 'Fernando Cocchiarale':
+                return '#761E5B';
+            case 'Lauro Cavalcanti':
+                return '#C1281B';
+            case 'Paulo Venancio Filho':
+                return '#CD7D2F';
+            case 'Ronaldo Brito':
+                return '#ABBD50';
+            default:
+                return undefined;
+        }
+    }
+
+    const nosImportantes = nosFiltrados.map((no) => {
+        const colorByPoint = agenteDaPolitica(politicaPublica, no.node);
+
+        return {
+            id: no.node,
+            dataLabels: {
+                enabled:
+                    showLabel === 0
+                        ? false
+                        : showLabel === 1
+                        ? true
+                        : agenteDaPolitica(politicaPublica, no.node) || autorObraDaPolitica(politicaPublica, no.node),
+            },
+            color: colorByPoint ? color(no.node) : undefined,
+        };
+    });
 
     const dataFiltrada = dependencyWheels.filter(
         (wheel) => nosFiltrados.find((no) => no.node === wheel.from) && nosFiltrados.find((no) => no.node === wheel.to),
